@@ -1,0 +1,438 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\crist\\source\\repos\\PA-Library\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\pagraf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\pagraf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\panod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\panod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\padata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\padata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\bfsinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\bfsinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\pastare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\pastare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\pacardinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\pacardinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\bfsresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\bfsresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\bfsoutput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\bfsoutput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\bfsalgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\bfsalgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\adjacencylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\adjacencylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\algorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\algorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\palista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\palista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\pamuchie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\pamuchie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\parezultat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\parezultat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\papereche.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\papereche.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\edge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\edge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\equalitycomparerbfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\equalitycomparerbfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\bfsstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\bfsstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\bfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\bfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\output.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\output.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\set.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\set.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\input.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\input.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|c:\\users\\crist\\source\\repos\\pa-library\\pa-library\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26C8DF5E-7FB8-4526-804B-CFE7C28518E9}|PA-Library\\PA-Library.csproj|solutionrelative:pa-library\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PAGraf.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PAGraf.cs",
+              "RelativeDocumentMoniker": "PA-Library\\PAGraf.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PAGraf.cs",
+              "RelativeToolTip": "PA-Library\\PAGraf.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:41:48.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PAStare.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PAStare.cs",
+              "RelativeDocumentMoniker": "PA-Library\\PAStare.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PAStare.cs",
+              "RelativeToolTip": "PA-Library\\PAStare.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:24:45.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BFSInput.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\BFSInput.cs",
+              "RelativeDocumentMoniker": "PA-Library\\BFSInput.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\BFSInput.cs",
+              "RelativeToolTip": "PA-Library\\BFSInput.cs",
+              "ViewState": "AgIAAL4BAAAAAAAAAAAQwMsBAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T13:32:05.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PANod.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PANod.cs",
+              "RelativeDocumentMoniker": "PA-Library\\PANod.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PANod.cs",
+              "RelativeToolTip": "PA-Library\\PANod.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAYwFwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T09:28:25.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PAData.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PAData.cs",
+              "RelativeDocumentMoniker": "PA-Library\\PAData.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PAData.cs",
+              "RelativeToolTip": "PA-Library\\PAData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T09:50:26.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BFSResult.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\BFSResult.cs",
+              "RelativeDocumentMoniker": "PA-Library\\BFSResult.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\BFSResult.cs",
+              "RelativeToolTip": "PA-Library\\BFSResult.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAwBYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:23:00.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PACardinal.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PACardinal.cs",
+              "RelativeDocumentMoniker": "PA-Library\\PACardinal.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PACardinal.cs",
+              "RelativeToolTip": "PA-Library\\PACardinal.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAAC0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T11:18:55.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BFSOutput.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\BFSOutput.cs",
+              "RelativeDocumentMoniker": "PA-Library\\BFSOutput.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\BFSOutput.cs",
+              "RelativeToolTip": "PA-Library\\BFSOutput.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T14:04:41.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BFSAlgorithm.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\BFSAlgorithm.cs",
+              "RelativeDocumentMoniker": "PA-Library\\BFSAlgorithm.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\BFSAlgorithm.cs",
+              "RelativeToolTip": "PA-Library\\BFSAlgorithm.cs",
+              "ViewState": "AgIAAD4FAAAAAAAAAAAiwEoFAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T10:52:03.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdjacencyList.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\AdjacencyList.cs",
+              "RelativeDocumentMoniker": "PA-Library\\AdjacencyList.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\AdjacencyList.cs",
+              "RelativeToolTip": "PA-Library\\AdjacencyList.cs",
+              "ViewState": "AgIAAHQBAAAAAAAAAAAAwI0BAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T10:51:10.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Algorithm.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\Algorithm.cs",
+              "RelativeDocumentMoniker": "PA-Library\\Algorithm.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\Algorithm.cs",
+              "RelativeToolTip": "PA-Library\\Algorithm.cs",
+              "ViewState": "AgIAAA0AAAAAdMow/QEqwBkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T10:51:06.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PALista.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PALista.cs",
+              "RelativeDocumentMoniker": "PA-Library\\PALista.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PALista.cs",
+              "RelativeToolTip": "PA-Library\\PALista.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T08:51:33.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PAMuchie.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PAMuchie.cs",
+              "RelativeDocumentMoniker": "PA-Library\\PAMuchie.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PAMuchie.cs",
+              "RelativeToolTip": "PA-Library\\PAMuchie.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAtwIsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T09:12:49.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PARezultat.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PARezultat.cs",
+              "RelativeDocumentMoniker": "PA-Library\\PARezultat.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PARezultat.cs",
+              "RelativeToolTip": "PA-Library\\PARezultat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:45:03.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PAPereche.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PAPereche.cs",
+              "RelativeDocumentMoniker": "PA-Library\\PAPereche.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PAPereche.cs",
+              "RelativeToolTip": "PA-Library\\PAPereche.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T09:27:02.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Edge.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\Edge.cs",
+              "RelativeDocumentMoniker": "PA-Library\\Edge.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\Edge.cs",
+              "RelativeToolTip": "PA-Library\\Edge.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T11:19:00.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BFSState.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\BFSState.cs",
+              "RelativeDocumentMoniker": "PA-Library\\BFSState.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\BFSState.cs",
+              "RelativeToolTip": "PA-Library\\BFSState.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAgwBgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T11:17:47.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\Program.cs",
+              "RelativeDocumentMoniker": "PA-Library\\Program.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\Program.cs",
+              "RelativeToolTip": "PA-Library\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T08:55:50.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EqualityComparerBFS.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\EqualityComparerBFS.cs",
+              "RelativeDocumentMoniker": "PA-Library\\EqualityComparerBFS.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\EqualityComparerBFS.cs",
+              "RelativeToolTip": "PA-Library\\EqualityComparerBFS.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAiwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T11:19:05.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "bfs.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\bfs.cs",
+              "RelativeDocumentMoniker": "PA-Library\\bfs.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\bfs.cs",
+              "RelativeToolTip": "PA-Library\\bfs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T07:13:01.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Output.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\Output.cs",
+              "RelativeDocumentMoniker": "PA-Library\\Output.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\Output.cs",
+              "RelativeToolTip": "PA-Library\\Output.cs",
+              "ViewState": "AgIAALQAAAAACFyVF1ocwLkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T11:19:31.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Set.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\Set.cs",
+              "RelativeDocumentMoniker": "PA-Library\\Set.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\Set.cs",
+              "RelativeToolTip": "PA-Library\\Set.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T11:19:41.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Input.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\Input.cs",
+              "RelativeDocumentMoniker": "PA-Library\\Input.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\Input.cs",
+              "RelativeToolTip": "PA-Library\\Input.cs",
+              "ViewState": "AgIAACgDAAAAUKdcijMvwDgDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T08:55:56.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Node.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\Node.cs",
+              "RelativeDocumentMoniker": "PA-Library\\Node.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\Node.cs",
+              "RelativeToolTip": "PA-Library\\Node.cs",
+              "ViewState": "AgIAAN8AAAAAAAAAAAAAAN8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T08:57:30.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "State.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\State.cs",
+              "RelativeDocumentMoniker": "PA-Library\\State.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\State.cs",
+              "RelativeToolTip": "PA-Library\\State.cs",
+              "ViewState": "AgIAADwAAACAeyZh7L0gwBgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T11:19:43.925Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
