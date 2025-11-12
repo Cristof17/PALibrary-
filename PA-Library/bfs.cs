@@ -1,4 +1,5 @@
-﻿namespace PA_Library
+﻿//@Author Cristofor Rotsching
+namespace PA_Library
 {
     //internal class Bfs
     //{

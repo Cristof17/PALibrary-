@@ -1,3 +1,4 @@
+//@Author Cristofor Rotsching
 namespace PA_Library
 {
     public readonly ref struct PARezultat
@@ -6,7 +7,7 @@ namespace PA_Library
         // ou
         public void Dispose()
         {
-            
+
         }
         int cod;
         // SUCCESS,

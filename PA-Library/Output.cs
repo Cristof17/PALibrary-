@@ -1,4 +1,5 @@
-﻿//using System;
+﻿//@Author Cristofor Rotsching
+//using System;
 //using System.Collections.Generic;
 //using System.Text;
 

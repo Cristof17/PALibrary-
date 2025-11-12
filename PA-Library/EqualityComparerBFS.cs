@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿//@Author Cristofor Rotsching
+using System.Collections.Generic;
 //using
 
 namespace PA_Library

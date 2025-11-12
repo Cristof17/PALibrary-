@@ -1,3 +1,4 @@
+//@Author Cristofor Rotsching
 //public class PAPereche
 //struct PAPereche
 namespace PA_Library
@@ -6,7 +7,7 @@ namespace PA_Library
     {
         public void Dispose()
         {
-            
+
         }
         PANod node;
         PANod neigh;

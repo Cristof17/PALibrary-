@@ -1,6 +1,7 @@
+//@Author Cristofor Rotsching
 namespace PA_Library
 {
-	public readonly ref struct BFSResult
+    public readonly ref struct BFSResult
     {
         [MarshalAs(UnmanagedType.IDispatch)]
         PALista d;
@@ -11,14 +12,14 @@ namespace PA_Library
 
         public void Dispose()
         {
-            
+
         }
 
-		public BFSResult(BFSResult Rezultat)
-		{
-			this.d = Rezultat.d;
-			this.n = Rezultat.n;
-		}
+        public BFSResult(BFSResult Rezultat)
+        {
+            this.d = Rezultat.d;
+            this.n = Rezultat.n;
+        }
         public int this[int index]
         {
             get
@@ -27,13 +28,13 @@ namespace PA_Library
             }
             set
             {
-                d[index] = (PANod) value;
+                d[index] = (PANod)value;
             }
         }
 
         //public PALista d { get; }
         public PALista d { get; }
-		public PACardinal n { get; }
-		public BFSResult result { get; }
-	}
+        public PACardinal n { get; }
+        public BFSResult result { get; }
+    }
 }

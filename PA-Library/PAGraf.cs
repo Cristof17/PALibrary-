@@ -1,3 +1,4 @@
+//@Author Cristofor Rotsching
 using System.Xml.XPath;
 namespace PA_Library {
 	public readonly ref struct PAGraf

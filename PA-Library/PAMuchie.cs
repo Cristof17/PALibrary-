@@ -1,3 +1,4 @@
+//@Author Cristofor Rotsching
 namespace PA_Library
 {
 	public readonly ref struct PAMuchie
@@ -6,140 +7,140 @@ namespace PA_Library
 		//public
 		//{
 		public void Dispose()
-        {
-            
-        }
-		PAPereche p;
-			//Console.WriteLine("Hello world!");
-			PAMuchie(PANod Node, PANod Neigh)
-			{
-				p = default;
-				//Node;
-				//NEIGH = default;// Neigh;
+		{
 
-				int Success = 0;
-				int Fail = -1;
-				int Result = Success;
-				//Result = check(Node);
-				if (Node == null)
+		}
+		PAPereche p;
+		//Console.WriteLine("Hello world!");
+		PAMuchie(PANod Node, PANod Neigh)
+		{
+			p = default;
+			//Node;
+			//NEIGH = default;// Neigh;
+
+			int Success = 0;
+			int Fail = -1;
+			int Result = Success;
+			//Result = check(Node);
+			if (Node == null)
+			{
+				//Console.Error.WriteLine($"{Node} == null");
+				Result = Fail;
+			}
+			else if (Node != null)
+			{
+				Result = Success;
+				if (Neigh == null)
 				{
-					//Console.Error.WriteLine($"{Node} == null");
+					//Console.Error.WriteLine($"{Neigh} == null");
 					Result = Fail;
 				}
-				else if (Node != null)
+				else if (Neigh != null)
 				{
 					Result = Success;
-					if (Neigh == null)
-					{
-						//Console.Error.WriteLine($"{Neigh} == null");
-						Result = Fail;
-					}
-					else if (Neigh != null)
-					{
-						Result = Success;
-					}
 				}
-				if (Result == Fail)
+			}
+			if (Result == Fail)
+			{
+				Node = default;
+				neigh = default;
+			}
+			else
+			{
+				if (Neigh == null)
 				{
-					Node = default;
+					//Console.Error.WriteLine($"{Neigh} == null");
+					Result = Fail;
+				}
+				else
+				{
+					Result = Success;
+
+				}
+				//Result = check(Neigh);
+				if (Result == Success)
+				{
+					//Node copy = default;
+					node = new PANod(Node);
+					neigh = new PANod(Neigh);
+					//;
+					//copy = new Node(Neigh);
+					//NEIGH = copy;
+					//NEIGH = copy(Neigh);
+				}
+				else if (Result == Fail)
+				{
+					node = default;
 					neigh = default;
 				}
-				else
-				{
-					if (Neigh == null)
-					{
-						//Console.Error.WriteLine($"{Neigh} == null");
-						Result = Fail;
-					}
-					else
-					{
-						Result = Success;
-
-					}
-					//Result = check(Neigh);
-					if (Result == Success)
-					{
-						//Node copy = default;
-						node = new PANod(Node);
-						neigh = new PANod(Neigh);
-						//;
-						//copy = new Node(Neigh);
-						//NEIGH = copy;
-						//NEIGH = copy(Neigh);
-					}
-					else if (Result == Fail)
-					{
-						node = default;
-						neigh = default;
-					}
-				}
 			}
+		}
 
-			private PAPereche p;
-			//public Node NODE { get; }
-			//public Node NEIGH { get; }
+		private PAPereche p;
+		//public Node NODE { get; }
+		//public Node NEIGH { get; }
 
-			int Check(PANod Node, PANod Neigh)
+		int Check(PANod Node, PANod Neigh)
+		{
+			int Success = 0;
+			int Fail = 0;
+			int Result = Success;
+			if (Node == null)
 			{
-				int Success = 0;
-				int Fail = 0;
-				int Result = Success;
-				if (Node == null)
+				//Console.Error.WriteLine($"{Node} == null");
+				Result = Fail;
+			}
+			else
+			{
+				Result = Success;
+				if (Neigh == null)
 				{
-					//Console.Error.WriteLine($"{Node} == null");
+					//Console.Error.WriteLine($"{Neigh} == null");
 					Result = Fail;
 				}
 				else
 				{
 					Result = Success;
-					if (Neigh == null)
-					{
-						//Console.Error.WriteLine($"{Neigh} == null");
-						Result = Fail;
-					}
-					else
-					{
-						Result = Success;
-					}
 				}
-				return Result;
 			}
-
-			PANod node { get; }
-			PANod neigh { get; }
-			int Copy(PANod Node)
-			{
-				PANod copy = default;
-				copy = new PANod(Node);
-				//copy.next = Node.next;
-				return copy;
-			}
-			public override string ToString() => $"({node}, {neigh})";
+			return Result;
 		}
-		//class YourClass
-		//{
-		//}
 
-		//struct Muchie
-		//{
-		//    Node Node;
-		//    Node Neigh;
-		//}
-
-		//interface IYourInterface
-		//{
-		//}
-
-		//delegate int YourDelegate();
-
-		//enum YourEnum
-		//{
-		//}
-
-		//namespace YourNestedNamespace
-		//{
-		//    struct YourStruct
-		//    {
-		//    }
-		//}
+		PANod node { get; }
+		PANod neigh { get; }
+		int Copy(PANod Node)
+		{
+			PANod copy = default;
+			copy = new PANod(Node);
+			//copy.next = Node.next;
+			return copy;
+		}
+		public override string ToString() => $"({node}, {neigh})";
 	}
+	//class YourClass
+	//{
+	//}
+
+	//struct Muchie
+	//{
+	//    Node Node;
+	//    Node Neigh;
+	//}
+
+	//interface IYourInterface
+	//{
+	//}
+
+	//delegate int YourDelegate();
+
+	//enum YourEnum
+	//{
+	//}
+
+	//namespace YourNestedNamespace
+	//{
+	//    struct YourStruct
+	//    {
+	//    }
+	//}
+}

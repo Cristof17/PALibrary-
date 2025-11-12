@@ -1,4 +1,5 @@
-﻿using System;
+﻿//@Author Cristofor Rotsching
+using System;
 using System.Collections;
 using System.Collections.Immutable;
 namespace PA_Library

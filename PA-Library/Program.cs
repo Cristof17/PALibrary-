@@ -1,4 +1,5 @@
-﻿using System;
+﻿//@Author Cristofor Rotsching
+using System;
 
 //Console.WriteLine("Hello world!");
 

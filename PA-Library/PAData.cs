@@ -1,3 +1,4 @@
+//@Author Cristofor Rotsching
 //public class PAData
 using PA_Library;
 using System.Transactions;
