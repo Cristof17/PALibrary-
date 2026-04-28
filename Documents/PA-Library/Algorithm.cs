@@ -23,16 +23,18 @@ using System.Runtime.InteropServices;
 
 namespace PA_Library
 {
-    [DllImport("palibrary.pa")]
-    public static extern Output run(Input input);
+    public class Algorithm {
+        [DllImport("palibrary.pa")]
+        public static extern Output run(Input input);
         
-    [StructLayout(LayoutKind.Sequential)]
-    public readonly struct Algorithm
-    {
+        [StructLayout(LayoutKind.Sequential)]
+        public readonly struct Algorithm algorithm;
+    }
+    // {
         //Input in
         //Output run(Input)
         // Provides Input method for the algorithm.
-    }
+    // }
 };
 //public System.Collections.Generic.IEnumerator<Node> GetEnumerator()
 //{
