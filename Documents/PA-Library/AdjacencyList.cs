@@ -624,7 +624,7 @@ namespace PA_Library
         // public int M { get; }
 
         [StructLayout(LayoutKind.Sequential)]
-        private struct PAList ADJ;
+        private struct PAList adj;
 
         //struct PASeries
         //struct PAList is right
