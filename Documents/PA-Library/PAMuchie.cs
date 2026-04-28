@@ -3,6 +3,14 @@ namespace PA_Library
 	public class PAMuchie
 	//public struct PAMuchie
 	{
+		[DllImport("palibrary.dll")]
+        public static extern void PAPairConstruct();
+		[DllImport("palibrary.dll")]
+        public static extern void BFSRecordConstruct();
+		[DllImport("palibrary.dll")]
+        public static extern void BFSRecordConstruct();
+		[DllImport("palibrary.dll")]
+        public static extern void BFSRecordConstruct();
 		//public
 		//{
 			//Console.WriteLine("Hello world!");
