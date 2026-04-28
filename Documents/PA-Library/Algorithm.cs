@@ -26,6 +26,8 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public readonly struct Algorithm
     {
+        //Input in
+        //Output run(Input)
         
         // Provides Input method for the algorithm.
     }
