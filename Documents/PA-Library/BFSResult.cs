@@ -28,7 +28,8 @@ namespace PA_Library
         }
 
         [StructLayout(LayoutKind.Sequential)]
-        public struct BFSRecord RESULT;
+        public struct BFSRecord result;
+        
         //public PALista d { get; }
         // public PALista d { get; }
 		// public PACardinal n { get; }
