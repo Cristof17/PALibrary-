@@ -2,6 +2,14 @@ namespace PA_Library
 {
 	class BFSResult
 	{
+        [DllImport("palibrary.dll")]
+        public static extern void BFSRecordConstruct();
+        [DllImport("palibrary.dll")]
+        public static extern void BFSRecordRuin();
+        [DllImport("palibrary.dll")]
+        public static extern void BFSRecordInit();
+        [DllImport("palibrary.dll")]
+        public static extern void BFSRecordDelete();
 		public BFSResult(BFSResult Rezultat)
 		{
 			this.d = Rezultat.d;
