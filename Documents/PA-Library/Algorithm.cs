@@ -23,14 +23,14 @@ using System.Runtime.InteropServices;
 
 namespace PA_Library
 {
+    [DllImport("palibrary.pa")]
+    public static extern Output run(Input input);
+        
     [StructLayout(LayoutKind.Sequential)]
     public readonly struct Algorithm
     {
         //Input in
         //Output run(Input)
-        [DllImport("palibrary.pa")]
-        public static extern Output run(Input input);
-        
         // Provides Input method for the algorithm.
     }
 };
