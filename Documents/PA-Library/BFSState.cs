@@ -5,6 +5,9 @@ namespace PA_Library
 {
     public struct BFSState
     {
+        //struct PAStatus visited;
+
+        
         //public BFSState(Stack q/*, int x*/)
         //public BFSState(Stack q, BFSInput<T> N)
         //{
