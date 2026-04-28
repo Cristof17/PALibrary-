@@ -108,8 +108,10 @@ namespace PA_Library
 				return Result;
 			}
 
-			PANod node { get; }
-			PANod neigh { get; }
+			[StructLayout(LayoutKind.Sequential)]
+			private struct PALink link;
+			// PANod node { get; }
+			// PANod neigh { get; }
 			int Copy(PANod Node)
 			{
 				PANod copy = default;
