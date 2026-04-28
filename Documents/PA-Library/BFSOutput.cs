@@ -17,7 +17,7 @@ namespace PA_Library
         [DllImport("palibrary.dll")]
         public static extern void BFSOutputDelete();
 
-        private static extern BFSOutputInit();
+        // private static extern BFSOutputInit();
         //BFSState State, ArrayList D, int N) : this()
         BFSOutput(BFSResult Rezultat)
         {
