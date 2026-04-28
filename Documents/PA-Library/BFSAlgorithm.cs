@@ -12,7 +12,24 @@ namespace PA_Library
     //public readonly struct BFSAlgorithm
     {
         [DllInport("palibrary.dll")]
-        private static extern void BFSProcedureRun();
+        private static extern void BFSInputInit();
+        [DllInport("palibrary.dll")]
+        private static extern void BFSInputCopy();
+        [DllInport("palibrary.dll")]
+        private static extern void BFSInputDelete();
+        [DllInport("palibrary.dll")]
+        private static extern void BFSInputRuin();
+        [DllInport("palibrary.dll")]
+        private static extern void PAGraphInit();
+        [DllInport("palibrary.dll")]
+        private static extern void PAGraphCopy();
+        [DllInport("palibrary.dll")]
+        private static extern void PAGraphDelete();
+        [DllInport("palibrary.dll")]
+        private static extern void PAGraphRuin();
+        [DllInport("palibrary.dll")]
+        // private static extern void BFSProcedureRun();
+        
         //public BFSAlgorithm(BFSInput Input, BFSOutput output, State state)
         public BFSAlgorithm(BFSInput Input, PAGraf Graf)
         {
