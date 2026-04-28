@@ -81,8 +81,10 @@ namespace PA_Library
         //    next = Next;
         //    stare = Stare;
         //}
-        PAData data { get; set; }
-        public PANod next { get; set; }
+        [StructLayout(LayoutKind.Sequential)]
+        private struct PAElement element;
+        // PAData data { get; set; }
+        // public PANod next { get; set; }
 
         //struct PAStare
         //public PAStare stare { get; }
