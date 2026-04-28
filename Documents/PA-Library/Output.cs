@@ -21,11 +21,11 @@ namespace PA_Library
     public class Output
     {
         [DllImport("palibrary.dll")]
-        public static extern void OutputDelete();
+        public static extern void OutputConstruct();
         [DllImport("palibrary.dll")]
-        public static extern void OutputDelete();
+        public static extern void OutputRuin();
         [DllImport("palibrary.dll")]
-        public static extern void OutputDelete();
+        public static extern void OutputInit();
         [DllImport("palibrary.dll")]
         public static extern void OutputDelete();
         //readonly int[] d;
