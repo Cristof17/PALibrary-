@@ -9,19 +9,15 @@ namespace PA_Library
     class PALista
     {
         [DllImport("palibrary.dll")]
-        public static extern void PAListGetHead();
+        public static extern void PASeriesConstruct();
         [DllImport("palibrary.dll")]
-        public static extern void PAListAddHead();
+        public static extern void PASeriesRuin();
         [DllImport("palibrary.dll")]
-        public static extern void PAListConstruct();
-        [DllImport("palibrary.dll")]
-        public static extern void PAListRuin();
-        [DllImport("palibrary.dll")]
-        public static extern void PAListInit();
+        public static extern void PASeriesInit();
         [DllImport("palibrary.dll")]
         public static extern void Dispose();
         [DllImport("palibrary.dll")]
-        public static extern void PAListDelete();
+        public static extern void PASeriesDelete();
         public PALista(PANod Head) 
             //: this()
         {

@@ -3,9 +3,23 @@ using System.Collections;
 
 namespace PA_Library
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct AdjacencyList
+    public class AdjacencyList
     {
+        [DllImport("palibrary.dll")]
+        public static extern void PAListGetHead();
+        [DllImport("palibrary.dll")]
+        public static extern void PAListAddHead();
+        [DllImport("palibrary.dll")]
+        public static extern void PAListConstruct();
+        [DllImport("palibrary.dll")]
+        public static extern void PAListRuin();
+        [DllImport("palibrary.dll")]
+        public static extern void PAListInit();
+        [DllImport("palibrary.dll")]
+        public static extern void Dispose();
+        [DllImport("palibrary.dll")]
+        public static extern void PAListDelete();
+        
         public AdjacencyList(ArrayList Adj, int M) : this()
         {
             int Success = 0;
@@ -609,6 +623,9 @@ namespace PA_Library
         //}
         public int M { get; }
 
+        [StructLayout(LayoutKind.Sequential)]
+        //struct PASeries
+        //struct PAList is right
         public ArrayList ADJ { get; }
         //public Output OUTPUT { get; }
         //public T NODE { get; }
