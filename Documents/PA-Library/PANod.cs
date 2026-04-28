@@ -83,6 +83,8 @@ namespace PA_Library
         //}
         PAData data { get; set; }
         public PANod next { get; set; }
+
+        //struct PAStare
         //public PAStare stare { get; }
 
         //public void operator ++() => data.value++;
