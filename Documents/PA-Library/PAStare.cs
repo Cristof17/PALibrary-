@@ -1,7 +1,8 @@
 //public class PAStare
 //public class PAStare
-enum PAStare
+class PAStare
 {
-    VISITED,
-    NOT_VISITED
+    //struct PAStatus
+    // VISITED,
+    // NOT_VISITED
 }
