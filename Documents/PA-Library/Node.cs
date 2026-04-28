@@ -40,33 +40,34 @@ namespace PA_Library
     //{
     //}
     // [LibraryImport("pa-library.dll")]
-    public Node(Object Index)
-    {
-        //int invalid = 0;
-        int Success = 0;
-        int Fail = -1;
-        int Result = Success;
-        INDEX = default;
-        ADJ = default;
-        M = default;
-        Result = Check(Index);
-        //if (checkInput(o) == valid)
-        if (Result == Success)
-        {
-            INDEX = (int)Index;
-        }
-        else if (Result == Fail)
-        {
-            Console.Error.WriteLine("index error ");
-            INDEX = default;
-        }
+    // public Node(Object Index)
+    // {
+    //     //int invalid = 0;
+    //     int Success = 0;
+    //     int Fail = -1;
+    //     int Result = Success;
+    //     INDEX = default;
+    //     ADJ = default;
+    //     M = default;
+    //     Result = Check(Index);
+    //     //if (checkInput(o) == valid)
+    //     if (Result == Success)
+    //     {
+    //         INDEX = (int)Index;
+    //     }
+    //     else if (Result == Fail)
+    //     {
+    //         Console.Error.WriteLine("index error ");
+    //         INDEX = default;
+    //     }
 
-    }
+    // }
+    // [DllImport("palibrary.pa")]
+    // public static extern void PANodInit();
 
     [StructLayout(LayoutKind.Sequential)]
     public struct Node
-    {
-        
+    {    
         public int Check(Object O)
         {
             int Success = 0;

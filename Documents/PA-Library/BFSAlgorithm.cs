@@ -11,6 +11,8 @@ namespace PA_Library
     //public readonly class BFSAlgorithm
     //public readonly struct BFSAlgorithm
     {
+        [DllInport("palibrary.dll")]
+        private static extern void BFSProcedureRun();
         //public BFSAlgorithm(BFSInput Input, BFSOutput output, State state)
         public BFSAlgorithm(BFSInput Input, PAGraf Graf)
         {
