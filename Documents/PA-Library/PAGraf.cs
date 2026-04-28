@@ -13,8 +13,8 @@ namespace PA_Library {
 		[DllImport("palibrary.dll")]
         public static extern void PATreeInit();
 		[DllImport("palibrary.dll")]
-        public static extern void BFSRecordDelete();
-		
+        public static extern void PATreeDelete();
+
 		private PACardinal n { get; }
 		private PACardinal m { get; }
 		private PALista adj { get; }
