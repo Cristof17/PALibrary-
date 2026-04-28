@@ -18,8 +18,16 @@ using System.Collections.Immutable;
 
 namespace PA_Library
 {
-    public readonly struct Output
+    public class Output
     {
+        [DllImport("palibrary.dll")]
+        public static extern void OutputDelete();
+        [DllImport("palibrary.dll")]
+        public static extern void OutputDelete();
+        [DllImport("palibrary.dll")]
+        public static extern void OutputDelete();
+        [DllImport("palibrary.dll")]
+        public static extern void OutputDelete();
         //readonly int[] d;
         public Output(BFSOutput bfsOutput)
         {
