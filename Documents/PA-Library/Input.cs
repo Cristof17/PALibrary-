@@ -23,8 +23,18 @@ using System.Xml.Linq;
 
 namespace PA_Library
 {
-    public readonly struct Input
+    public class Input
     {
+        [DllImport("palibrary.dll")]
+        public static extern void InputConstruct();
+        [DllImport("palibrary.dll")]
+        public static extern void InputRuin();
+        [DllImport("palibrary.dll")]
+        public static extern void InputInit();
+        [DllImport("palibrary.dll")]
+        public static extern void Dispose();
+        [DllImport("palibrary.dll")]
+        public static extern void InputDelete();
         public Input(int Source, ArrayList[] Adj, int N, int M)
         {
             //ADJ = default(AdjacencyList<Node>);
