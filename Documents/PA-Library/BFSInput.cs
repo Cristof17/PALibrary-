@@ -53,7 +53,6 @@ namespace PA_Library
         {
             /* Local members */
 
-
             //int valid = CheckSource(Source);
             //int Result = default;
             //Result = CheckSource(Source);
