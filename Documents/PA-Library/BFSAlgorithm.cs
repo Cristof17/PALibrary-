@@ -17,6 +17,10 @@ namespace PA_Library
         private static extern void BFSProcedureRuin();
         [DllInport("palibrary.dll")]
         private static extern void BFSProcedureDelete();
+
+        //struct PAInput
+        //struct PATree 
+        
         // [DllInport("palibrary.dll")]
         // private static extern void BFS();
         // [DllInport("palibrary.dll")]
