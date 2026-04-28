@@ -191,7 +191,10 @@ namespace PA_Library
             return D;
         }
 
-        public PARezultat rezultat { get; }
+        [StructLayout(LayoutKind.Sequential)]
+        // private struct Output rezultat;
+
+        // public PARezultat rezultat { get; }
         //public ArrayList D { get; }
 
         private static int checkValue(int Node)
