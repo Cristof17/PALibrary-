@@ -1285,12 +1285,14 @@ namespace PA_Library
         //}
         //public static int checkAdjacencyList(ArrayList Adj)
         //44
+        [StructLayout(StructLayout.Sequential)]
+        public struct BFSInput INPUT;
 
         // public ArrayList D { get; }
-        public PACardinal n;
-        public PACardinal m;
-        PALista adj;
-        PANod source;
+        // public PACardinal n;
+        // public PACardinal m;
+        // PALista adj;
+        // PANod source;
         //public int Source { get; }
         //public ArrayList[] ADJ { get; }
         //public int N { get; }
