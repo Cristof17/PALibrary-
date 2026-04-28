@@ -8,6 +8,8 @@ namespace PA_Library
     //public readonly class BFSOutput
     //public readonly struct BFSOutput
     {
+        [DllImport("palibrary.dll")]
+        // private static extern BFSOutputInit();
         //BFSState State, ArrayList D, int N) : this()
         BFSOutput(BFSResult Rezultat)
         {

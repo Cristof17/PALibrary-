@@ -19,10 +19,41 @@ namespace PA_Library
         //Ț
         //Â?î?
         //mama{
-        
+        // [DllImport("palibrary.dll")]
+        // private static extern void PAInputInit();
+        // private static extern void BFSInputInit();
         //Wrapper over the Input variables which provides Input validation
+        [DllImport("palibrary.dll")]
+        private static extern void BFSInputInit();
+        [DllImport("palibrary.dll")]
+        public static extern void BFSInputCopy();
+        [DllImport("palibrary.dll")]
+        public static extern void BFSInputDelete();
+        [DllImport("palibrary.dll")]
+        public static extern void BFSInputRuin();
+        [DllImport("palibrary.dll")]
+        public static extern void PAElementInit();
+        [DllImport("palibrary.dll")]
+        public static extern void PAElementCopy();
+        [DllImport("palibrary.dll")]
+        public static extern void PAElementDelete();
+        [DllImport("palibrary.dll")]
+        public static extern void PAElementRuin();
+        [DllImport("palibrary.dll")]
+        public static extern void PAListInit();
+        [DllImport("palibrary.dll")]
+        public static extern void PAListCopy();
+        [DllImport("palibrary.dll")]
+        public static extern void PAListDelete();
+        [DllImport("palibrary.dll")]
+        // [DllImport("palibrary.dll")]
+
+        //akkll the methods from library as extern
         BFSInput(PANod Source, PALista Adj, PACardinal N, PACardinal M)
         {
+            /* Local members */
+
+
             //int valid = CheckSource(Source);
             //int Result = default;
             //Result = CheckSource(Source);
@@ -610,7 +641,7 @@ namespace PA_Library
             return Result;
         }
         //checks the given vector of array lists 
-        int Check(   PANod Source, PALista Adj, int N, int M)
+        int Check(PANod Source, PALista Adj, int N, int M)
         {
             int Success = 0;
             int Fail = -1;
