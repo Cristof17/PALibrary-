@@ -5,6 +5,15 @@ namespace PA_Library
     public class PACardinal
     //public struct PAPACardinal
     {
+        [DllImport("palibrary.dll")]
+        public static extern void PACountConstruct();
+        [DllImport("palibrary.dll")]
+        public static extern void PACountRuin();
+        [DllImport("palibrary.dll")]
+        public static extern void PACountInit();
+        [DllImport("palibrary.dll")]
+        public static extern void PACountDelete();
+
         public PACardinal(long value)
         {
             NUMBER = default;//(int) value;
@@ -74,6 +83,7 @@ namespace PA_Library
             return o == (Object)this;
         }
 
+        //public struct PACount
         public int NUMBER { get; }
         //public Output OUTPUT { get; }
 
