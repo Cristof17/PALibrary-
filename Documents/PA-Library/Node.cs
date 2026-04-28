@@ -1,9 +1,9 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-//namespace PA_Library
-//{
+namespace PA_Library
+{
 //    internal class Node<T> : Comparer<T>
 //    {
 //        protected internal T Value;
