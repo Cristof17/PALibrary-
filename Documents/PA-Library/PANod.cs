@@ -8,6 +8,20 @@ namespace PA_Library
     class PANod
     //public struct PANod
     {
+    [DllImport("palibrary.dll")]
+    public static extern void PAElementConstruct();
+    [DllImport("palibrary.dll")]
+    public static extern void PAElementRuin();
+    [DllImport("palibrary.dll")]
+    public static extern void PAElementInit();
+    [DllImport("palibrary.dll")]
+    public static extern void PAElementDelete();
+    [DllImport("palibrary.dll")]
+    public static extern void PAElementVisit();
+    [DllImport("palibrary.dll")]
+    public static extern void PADataIsVisited();
+    [DllImport("palibrary.dll")]
+    public static extern void PADataReset();
         public PANod(PANod Node)
         {
             data = Node.data;
