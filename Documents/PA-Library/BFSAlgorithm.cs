@@ -18,9 +18,10 @@ namespace PA_Library
         [DllInport("palibrary.dll")]
         private static extern void BFSProcedureDelete();
 
+
         //struct PAInput
         //struct PATree 
-        
+
         // [DllInport("palibrary.dll")]
         // private static extern void BFS();
         // [DllInport("palibrary.dll")]
@@ -687,9 +688,12 @@ namespace PA_Library
         //    return Result;
         //}
         //public BFSInput input { get; }
-        public BFSInput input { get; }
+        [StructLayout(LayoutKind.Sequentia)]
+        private struct BFSProcedure procedure;
 
-        public PAGraf graf { get; }
+        // public BFSInput input { get; }
+
+        // public PAGraf graf { get; }
         //public BFSOutput OUT { get; }
         //public State STATE { get; }
         //private int START_INDEX { get { return 1; } }
