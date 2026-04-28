@@ -1286,7 +1286,7 @@ namespace PA_Library
         //public static int checkAdjacencyList(ArrayList Adj)
         //44
         [StructLayout(StructLayout.Sequential)]
-        public struct BFSInput INPUT;
+        public struct BFSInput input;
 
         // public ArrayList D { get; }
         // public PACardinal n;
