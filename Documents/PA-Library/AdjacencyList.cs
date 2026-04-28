@@ -621,10 +621,10 @@ namespace PA_Library
         //{
         //    NODES[Neigh].VALUE = -1;
         //}
-        public int M { get; }
+        // public int M { get; }
 
         [StructLayout(LayoutKind.Sequential)]
-        // private struct PAList ADJ;
+        private struct PAList ADJ;
 
         //struct PASeries
         //struct PAList is right
