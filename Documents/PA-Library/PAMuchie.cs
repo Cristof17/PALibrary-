@@ -6,11 +6,11 @@ namespace PA_Library
 		[DllImport("palibrary.dll")]
         public static extern void PAPairConstruct();
 		[DllImport("palibrary.dll")]
-        public static extern void BFSRecordConstruct();
+        public static extern void PAPairInit();
 		[DllImport("palibrary.dll")]
-        public static extern void BFSRecordConstruct();
+        public static extern void PAPairRuin();
 		[DllImport("palibrary.dll")]
-        public static extern void BFSRecordConstruct();
+        public static extern void PAPairDelete();
 		//public
 		//{
 			//Console.WriteLine("Hello world!");
