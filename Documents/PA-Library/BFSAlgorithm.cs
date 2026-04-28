@@ -12,22 +12,22 @@ namespace PA_Library
     //public readonly struct BFSAlgorithm
     {
         [DllInport("palibrary.dll")]
-        private static extern void BFSInputInit();
+        private static extern void BFSProcedureConstruct();
         [DllInport("palibrary.dll")]
-        private static extern void BFSInputCopy();
+        private static extern void BFSProcedureRuin();
         [DllInport("palibrary.dll")]
-        private static extern void BFSInputDelete();
-        [DllInport("palibrary.dll")]
-        private static extern void BFSInputRuin();
-        [DllInport("palibrary.dll")]
-        private static extern void PAGraphInit();
-        [DllInport("palibrary.dll")]
-        private static extern void PAGraphCopy();
-        [DllInport("palibrary.dll")]
-        private static extern void PAGraphDelete();
-        [DllInport("palibrary.dll")]
-        private static extern void PAGraphRuin();
-        [DllInport("palibrary.dll")]
+        private static extern void BFSProcedureDelete();
+        // [DllInport("palibrary.dll")]
+        // private static extern void BFS();
+        // [DllInport("palibrary.dll")]
+        // private static extern void PAGraphInit();
+        // [DllInport("palibrary.dll")]
+        // private static extern void PAGraphCopy();
+        // [DllInport("palibrary.dll")]
+        // private static extern void PAGraphDelete();
+        // [DllInport("palibrary.dll")]
+        // private static extern void PAGraphRuin();
+        // [DllInport("palibrary.dll")]
         // private static extern void BFSProcedureRun();
         
         //public BFSAlgorithm(BFSInput Input, BFSOutput output, State state)
