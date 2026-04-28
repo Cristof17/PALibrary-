@@ -15,9 +15,11 @@ namespace PA_Library {
 		[DllImport("palibrary.dll")]
         public static extern void PATreeDelete();
 
-		private PACardinal n { get; }
-		private PACardinal m { get; }
-		private PALista adj { get; }
-		private PANod sursa { get; }
+		[StructLayout(LayoutKind.Sequential)]
+		private struct PATree tree;
+		// private PACardinal n { get; }
+		// private PACardinal m { get; }
+		// private PALista adj { get; }
+		// private PANod sursa { get; }
 	}
 }
