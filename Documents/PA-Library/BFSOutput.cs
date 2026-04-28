@@ -251,7 +251,10 @@ namespace PA_Library
         //    D = default;
         //}
 
-        BFSResult rezultat;
+        [StructLayout(StructLayout.Sequential)]
+        private struct PAOutput output;
+        
+        // BFSResult rezultat;
         //public BFSState STATE { get; }
         //public ArrayList D { get; }
         //private int INDEX { get { return 1; } }
