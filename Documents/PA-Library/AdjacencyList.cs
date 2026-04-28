@@ -19,7 +19,7 @@ namespace PA_Library
         public static extern void Dispose();
         [DllImport("palibrary.dll")]
         public static extern void PAListDelete();
-        
+
         public AdjacencyList(ArrayList Adj, int M) : this()
         {
             int Success = 0;
@@ -624,9 +624,11 @@ namespace PA_Library
         public int M { get; }
 
         [StructLayout(LayoutKind.Sequential)]
+        // private struct PAList ADJ;
+
         //struct PASeries
         //struct PAList is right
-        public ArrayList ADJ { get; }
+        // public ArrayList ADJ { get; }
         //public Output OUTPUT { get; }
         //public T NODE { get; }
 
