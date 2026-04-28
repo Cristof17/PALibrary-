@@ -28,6 +28,7 @@ namespace PA_Library
     {
         //Input in
         //Output run(Input)
+        public static extern Output run(Input input);
         
         // Provides Input method for the algorithm.
     }
