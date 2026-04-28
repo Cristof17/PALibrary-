@@ -4,10 +4,10 @@ using System.Text;
 
 namespace PA_Library
 {
-    public class Node
-    {
+    // public class Node
+    // {
         //ListObject
-    }
+    // }
 //    internal class Node<T> : Comparer<T>
 //    {
 //        protected internal T Value;
