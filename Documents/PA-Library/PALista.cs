@@ -749,7 +749,10 @@ namespace PA_Library
                 }
             }
         }
-        public PANod head { get; set; }
+        [StructLayout(LayoutKind.Sequential)]
+        private struct PASeries list;
+        
+        // public PANod head { get; set; }
         //public ArrayList ADJ { get; }
         //public Output OUTPUT { get; }
         //public T NODE { get; }
