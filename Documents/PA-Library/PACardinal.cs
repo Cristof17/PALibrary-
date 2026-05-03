@@ -5,13 +5,13 @@ namespace PA_Library
     public class PACardinal
     //public struct PAPACardinal
     {
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void PACountConstruct();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void PACountRuin();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void PACountInit();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void PACountDelete();
 
         public PACardinal(long value)

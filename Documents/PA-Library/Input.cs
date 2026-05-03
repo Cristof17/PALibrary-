@@ -25,15 +25,15 @@ namespace PA_Library
 {
     public class Input
     {
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void InputConstruct();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void InputRuin();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void InputInit();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void Dispose();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void InputDelete();
         public Input(int Source, ArrayList[] Adj, int N, int M)
         {
