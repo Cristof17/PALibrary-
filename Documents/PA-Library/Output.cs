@@ -20,13 +20,13 @@ namespace PA_Library
 {
     public class Output
     {
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void OutputConstruct();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void OutputRuin();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void OutputInit();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void OutputDelete();
         //readonly int[] d;
         public Output(BFSOutput bfsOutput)
