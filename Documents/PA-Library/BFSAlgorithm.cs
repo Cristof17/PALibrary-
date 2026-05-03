@@ -11,11 +11,11 @@ namespace PA_Library
     //public readonly class BFSAlgorithm
     //public readonly struct BFSAlgorithm
     {
-        [DllInport("palibrary.dll")]
+        [DllInport("palibrary")]
         private static extern void BFSProcedureConstruct();
-        [DllInport("palibrary.dll")]
+        [DllInport("palibrary")]
         private static extern void BFSProcedureRuin();
-        [DllInport("palibrary.dll")]
+        [DllInport("palibrary")]
         private static extern void BFSProcedureDelete();
 
 

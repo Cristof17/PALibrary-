@@ -3,13 +3,13 @@ namespace PA_Library
 	public class PAMuchie
 	//public struct PAMuchie
 	{
-		[DllImport("palibrary.dll")]
+		[DllImport("palibrary")]
         public static extern void PALinkConstruct();
-		[DllImport("palibrary.dll")]
+		[DllImport("palibrary")]
         public static extern void PALinkInit();
-		[DllImport("palibrary.dll")]
+		[DllImport("palibrary")]
         public static extern void PALinkRuin();
-		[DllImport("palibrary.dll")]
+		[DllImport("palibrary")]
         public static extern void PALinkDelete();
 		//public
 		//{

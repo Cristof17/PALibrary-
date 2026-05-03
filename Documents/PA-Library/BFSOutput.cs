@@ -8,13 +8,13 @@ namespace PA_Library
     //public readonly class BFSOutput
     //public readonly struct BFSOutput
     {
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void PAOutputConstruct();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void PAOutputRuin();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void PAOutputInit();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void PAOutputDelete();
 
         // private static extern BFSOutputInit();
@@ -253,7 +253,7 @@ namespace PA_Library
 
         [StructLayout(StructLayout.Sequential)]
         private struct PAOutput output;
-        
+
         // BFSResult rezultat;
         //public BFSState STATE { get; }
         //public ArrayList D { get; }

@@ -5,19 +5,19 @@ namespace PA_Library
 {
     public class AdjacencyList
     {
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void PAListGetHead();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void PAListAddHead();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void PAListConstruct();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void PAListRuin();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void PAListInit();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void Dispose();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void PAListDelete();
 
         public AdjacencyList(ArrayList Adj, int M) : this()

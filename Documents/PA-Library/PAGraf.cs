@@ -4,15 +4,15 @@ namespace PA_Library {
 	//public readonly class PAGraf
 	//public struct PAGraf
 	{
-		[DllImport("palibrary.dll")]
+		[DllImport("palibrary")]
         public static extern void PATreeSearch();
-		[DllImport("palibrary.dll")]
+		[DllImport("palibrary")]
         public static extern void PATreeConstruct();
-		[DllImport("palibrary.dll")]
+		[DllImport("palibrary")]
         public static extern void PATreeRuin();
-		[DllImport("palibrary.dll")]
+		[DllImport("palibrary")]
         public static extern void PATreeInit();
-		[DllImport("palibrary.dll")]
+		[DllImport("palibrary")]
         public static extern void PATreeDelete();
 
 		[StructLayout(LayoutKind.Sequential)]
