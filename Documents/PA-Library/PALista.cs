@@ -8,15 +8,15 @@ namespace PA_Library
 {
     class PALista
     {
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void PASeriesConstruct();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void PASeriesRuin();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void PASeriesInit();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void Dispose();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void PASeriesDelete();
         public PALista(PANod Head) 
             //: this()
@@ -751,7 +751,7 @@ namespace PA_Library
         }
         [StructLayout(LayoutKind.Sequential)]
         private struct PASeries list;
-        
+
         // public PANod head { get; set; }
         //public ArrayList ADJ { get; }
         //public Output OUTPUT { get; }

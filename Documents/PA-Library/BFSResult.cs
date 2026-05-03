@@ -2,13 +2,13 @@ namespace PA_Library
 {
 	class BFSResult
 	{
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void BFSRecordConstruct();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void BFSRecordRuin();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void BFSRecordInit();
-        [DllImport("palibrary.dll")]
+        [DllImport("palibrary")]
         public static extern void BFSRecordDelete();
 		public BFSResult(BFSResult Rezultat)
 		{
@@ -29,7 +29,7 @@ namespace PA_Library
 
         [StructLayout(LayoutKind.Sequential)]
         public struct BFSRecord result;
-        
+
         //public PALista d { get; }
         // public PALista d { get; }
 		// public PACardinal n { get; }

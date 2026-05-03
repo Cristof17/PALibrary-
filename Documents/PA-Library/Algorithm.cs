@@ -24,7 +24,7 @@ using System.Runtime.InteropServices;
 namespace PA_Library
 {
     public class Algorithm {
-        [DllImport("palibrary.pa")]
+        [DllImport("palibrary")]
         public static extern Output run(Input input);
         
         [StructLayout(LayoutKind.Sequential)]
