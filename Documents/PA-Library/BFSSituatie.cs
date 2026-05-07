@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Immutable;
 namespace PA_Library
 {
-    public struct BFSState
+    public struct BFSSituatie
     {
         //struct PAStatus visited;
 
@@ -12,7 +12,7 @@ namespace PA_Library
         //{
 
         //}
-        public BFSState(BFSIntrare bfsInput)
+        public BFSSituatie(BFSIntrare bfsInput)
         {
             int Success = 0;
             int Fail = -1;
@@ -48,7 +48,7 @@ namespace PA_Library
         //    }
         //    return Result;
         //}
-        public BFSState(Edge Edge, ArrayList D, int N) : this()
+        public BFSSituatie(Edge Edge, ArrayList D, int N) : this()
         {
             EDGE = default;
             D = default;
