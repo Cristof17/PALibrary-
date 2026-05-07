@@ -1,4 +1,5 @@
-﻿//using System;
+﻿I
+//using System;
 //using System.Collections.Generic;
 //using System.Text;
 
@@ -18,7 +19,7 @@ using System.Collections.Immutable;
 
 namespace PA_Library
 {
-    public class Iesire
+    public class IesireSistem
     {
         [DllImport("palibrary")]
         public static extern void OutputConstruct();
