@@ -12,7 +12,7 @@ namespace PA_Library
         //{
 
         //}
-        public BFSSituatie(BFSIntrare bfsInput)
+        public Situatie(BFSIntrare bfsInput)
         {
             int Success = 0;
             int Fail = -1;
@@ -48,7 +48,7 @@ namespace PA_Library
         //    }
         //    return Result;
         //}
-        public BFSSituatie(Edge Edge, ArrayList D, int N) : this()
+        public Situatie(Edge Edge, ArrayList D, int N) : this()
         {
             EDGE = default;
             D = default;
