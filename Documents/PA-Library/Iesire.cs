@@ -18,7 +18,7 @@ using System.Collections.Immutable;
 
 namespace PA_Library
 {
-    public class Output
+    public class Iesire
     {
         [DllImport("palibrary")]
         public static extern void OutputConstruct();
@@ -29,7 +29,7 @@ namespace PA_Library
         [DllImport("palibrary")]
         public static extern void OutputDelete();
         //readonly int[] d;
-        public Output(BFSOutput bfsOutput)
+        public Iesire(BFSIesire bfsOutput)
         {
             //NODE = default(int);
             //int valid = default;
@@ -90,8 +90,8 @@ namespace PA_Library
             //if (!valid)
             //{
 
-            //}
             //if ((valid == 1) && (Input == 1))
+            //}
             //{
             //if (q.Count == 0)
             //{
