@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 
 namespace PA_Library
 {
-    class BFSOutput
+    class BFSIesire
     //public readonly class BFSOutput
     //public readonly struct BFSOutput
     {
@@ -19,7 +19,7 @@ namespace PA_Library
 
         // private static extern BFSOutputInit();
         //BFSState State, ArrayList D, int N) : this()
-        BFSOutput(BFSResult Rezultat)
+        BFSIesire(BFSRezultat Rezultat)
         {
             //STATE = default;
             //D = default;

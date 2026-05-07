@@ -23,7 +23,7 @@ using System.Xml.Linq;
 
 namespace PA_Library
 {
-    public class Input
+    public class Intrare
     {
         [DllImport("palibrary")]
         public static extern void InputConstruct();
@@ -35,7 +35,7 @@ namespace PA_Library
         public static extern void Dispose();
         [DllImport("palibrary")]
         public static extern void InputDelete();
-        public Input(int Source, ArrayList[] Adj, int N, int M)
+        public Intrare(int Source, ArrayList[] Adj, int N, int M)
         {
             //ADJ = default(AdjacencyList<Node>);
             this.N = default;

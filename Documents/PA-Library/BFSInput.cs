@@ -9,7 +9,7 @@ using System.Xml.XPath;
 
 namespace PA_Library
 {
-    public class BFSInput
+    public class BFSIntrare
     //public readonly class BFSInput
     //public readonly class BFSInput
     //public readonly class BFSInput
@@ -36,7 +36,7 @@ namespace PA_Library
         // [DllImport("palibrary.dll")]
 
         //akkll the methods from library as extern
-        BFSInput(PANod Source, PALista Adj, PACardinal N, PACardinal M)
+        BFSIntrare(PANod Source, PALista Adj, PACardinal N, PACardinal M)
         {
             /* Local members */
 

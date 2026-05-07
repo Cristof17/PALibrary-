@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace PA_Library
 {
-    public class AdjacencyList
+    public class ListaAdiacenta
     {
         [DllImport("palibrary")]
         public static extern void PAListGetHead();
@@ -20,7 +20,7 @@ namespace PA_Library
         [DllImport("palibrary")]
         public static extern void PAListDelete();
 
-        public AdjacencyList(ArrayList Adj, int M) : this()
+        public ListaAdiacenta(ArrayList Adj, int M) : this()
         {
             int Success = 0;
             int Fail = -1;

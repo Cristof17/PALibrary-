@@ -23,7 +23,7 @@ using System.Runtime.InteropServices;
 
 namespace PA_Library
 {
-    public class Algorithm {
+    public class Algoritm {
         [DllImport("palibrary")]
         public static extern Output run(Input input);
         
