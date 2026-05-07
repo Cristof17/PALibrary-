@@ -1,4 +1,4 @@
-enum Result
+enum Marcaj
 {
 	SUCCESS,
 	FAIL
