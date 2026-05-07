@@ -5,7 +5,7 @@ using System.Xml.XPath;
 
 namespace PA_Library
 {
-    class PAPunct
+    class Punct
     //public struct PANod
     {
     [DllImport("palibrary")]
