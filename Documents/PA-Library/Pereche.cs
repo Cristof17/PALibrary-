@@ -2,7 +2,7 @@
 //struct PAPereche
 namespace PA_Library
 {
-    struct PAPereche
+    struct Pereche
     {
         PANod node;
         PANod neigh;
