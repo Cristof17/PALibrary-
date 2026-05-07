@@ -12,7 +12,7 @@ namespace PA_Library
         //{
 
         //}
-        public BFSState(BFSInput bfsInput)
+        public BFSState(BFSIntrare bfsInput)
         {
             int Success = 0;
             int Fail = -1;
