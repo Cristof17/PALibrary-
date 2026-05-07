@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Immutable;
 namespace PA_Library
 {
-    public struct BFSSituatie
+    public struct Situatie
     {
         //struct PAStatus visited;
 
