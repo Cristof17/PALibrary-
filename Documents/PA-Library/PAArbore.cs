@@ -1,6 +1,7 @@
 using System.Xml.XPath;
 namespace PA_Library {
-	public class PAGraf
+	public class PAArbore
+	
 	//public readonly class PAGraf
 	//public struct PAGraf
 	{
