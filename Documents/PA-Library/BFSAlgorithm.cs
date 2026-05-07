@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace PA_Library
 {
-    public class BFSAlgorithm
+    public class BFSAlgoritm
     //public readonly class BFSAlgorithm
     //public readonly struct BFSAlgorithm
     {
@@ -36,7 +36,7 @@ namespace PA_Library
         // private static extern void BFSProcedureRun();
         
         //public BFSAlgorithm(BFSInput Input, BFSOutput output, State state)
-        public BFSAlgorithm(BFSInput Input, PAGraf Graf)
+        public BFSAlgoritm(BFSIntrare Input, PAGraf Graf)
         {
             //int Success = 0;
             //int Fail = -1;
