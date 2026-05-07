@@ -70,7 +70,7 @@ namespace PA_Library
     // public static extern void PANodInit();
 
     [StructLayout(LayoutKind.Sequential)]
-    public struct Node
+    public struct Componenta
     {    
         public int Check(Object O)
         {

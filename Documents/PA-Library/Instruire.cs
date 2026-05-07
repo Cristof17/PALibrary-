@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace PA_Library
 {
-    public class BFSInstruire
+    public class Instruire
     //public readonly class BFSAlgorithm
     //public readonly struct BFSAlgorithm
     {
