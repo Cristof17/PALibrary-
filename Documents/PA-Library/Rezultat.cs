@@ -1,6 +1,6 @@
-namespace PA_Library
+﻿namespace PA_Library
 {
-	class BFSRezultat
+	class Rezultat
 	{
         [DllImport("palibrary")]
         public static extern void BFSRecordConstruct();
@@ -10,7 +10,7 @@ namespace PA_Library
         public static extern void BFSRecordInit();
         [DllImport("palibrary")]
         public static extern void BFSRecordDelete();
-		public BFSRezultat(BFSRezultat Rezultat)
+		public Rezultat(Rezultat Rezultat)
 		{
 			this.d = Rezultat.d;
 			this.n = Rezultat.n;
