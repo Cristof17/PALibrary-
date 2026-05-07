@@ -107,7 +107,7 @@ namespace PA_Library
     //    ArrayList d;
     //    //Output output;
     //}
-    class Program<T> where T : new()
+    class System<T> where T : new()
     {
         public const String INPUT_FILE = "in";
         public const String OUTPUT_FILE = "out";

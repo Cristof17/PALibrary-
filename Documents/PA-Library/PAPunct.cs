@@ -5,7 +5,7 @@ using System.Xml.XPath;
 
 namespace PA_Library
 {
-    class PANod
+    class PAPunct
     //public struct PANod
     {
     [DllImport("palibrary")]
@@ -22,7 +22,7 @@ namespace PA_Library
     public static extern void PADataIsVisited();
     [DllImport("palibrary")]
     public static extern void PADataReset();
-        public PANod(PANod Node)
+        public PAPunct(PAPunct Node)
         {
             data = Node.data;
             next = Node.next;
