@@ -23,7 +23,7 @@ using System.Xml.Linq;
 
 namespace PA_Library
 {
-    public class Intrare
+    public class IntrareSistem
     {
         [DllImport("palibrary")]
         public static extern void InputConstruct();
