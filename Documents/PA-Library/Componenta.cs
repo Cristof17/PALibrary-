@@ -155,7 +155,7 @@ namespace PA_Library
             //    VALUE = default(T);
             //}
         }
-        public Node(int Index)
+        public Componenta(int Index)
         {
             //VALUE = (value == int.MaxValue) ? int.MaxValue : value;
             INDEX = default;
@@ -194,7 +194,7 @@ namespace PA_Library
 
 
 
-        public Node(int Index, AdjacencyList Adj, int M) : this()
+        public Componenta(int Index, AdjacencyList Adj, int M) : this()
         {
             INDEX = default;
             ADJ = default;
@@ -260,7 +260,7 @@ namespace PA_Library
             return Result;
         }
 
-        public Node(int Index, ArrayList Adj, int M) : this()
+        public Componenta(int Index, ArrayList Adj, int M) : this()
         {
             int Success = 0;
             int Fail = -1;
