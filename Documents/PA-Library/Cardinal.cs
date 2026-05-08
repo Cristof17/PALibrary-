@@ -14,18 +14,18 @@ namespace PA_Library
         [DllImport("palibrary")]
         public static extern void PACountDelete();
 
-        public Cardinal(long value)
+        public Cardinal(int number)
         {
             NUMBER = default;//(int) value;
         }
-        public Cardinal(ulong value)
-        {
-            NUMBER = default;// (int)value;
-        }
-        public Cardinal(int Value)
-        {
-            NUMBER = default;// value;
-        }
+        // public Cardinal(ulong value)
+        // {
+        //     NUMBER = default;// (int)value;
+        // }
+        // public Cardinal(int Value)
+        // {
+        //     NUMBER = default;// value;
+        // }
         //public PACardinal(int value)
         //{
         //NUMBER = value;

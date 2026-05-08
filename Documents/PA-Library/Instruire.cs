@@ -17,8 +17,12 @@ namespace PA_Library
         private static extern void BFSProcedureRuin();
         [DllInport("palibrary")]
         private static extern void BFSProcedureDelete();
-
-
+        [DllInport("palibrary")]
+        private static extern void BFS();
+        public Instruire(Intrare in, Arbore tree)
+        {
+            
+        }
         //struct PAInput
         //struct PATree 
 
@@ -36,353 +40,353 @@ namespace PA_Library
         // private static extern void BFSProcedureRun();
         
         //public BFSAlgorithm(BFSInput Input, BFSOutput output, State state)
-        public Instruire(BFSIntrare Input, PAGraf Graf)
-        {
-            //int Success = 0;
-            //int Fail = -1;
-            //int Result = Success;
-            input = Input;
-            graf = Graf;
-            //IN = default;
-            //IN = new BFSInput(Input.SOURCE, Input.ADJ, Input.N, Input.M);
-            //OUT = default;
-            //STATE = default;
-            //copy(Input);
-            //OUT = default;
-            ////Result = check(Input);
-            //if (Result == Fail)
-            //{
-            //    //IN = default;
-            //    Console.Error.WriteLine("Input error");
-            //}
-            //else
-            //{
-            //    OUT =new BFSOutput(Bfs(IN.SOURCE,IN.ADJ, IN.N, IN.M),IN.N);
-            //}
-            //INPUT = Input;
-            //IN = default(BFSInput);
-            //OUT = default(BFSOutput);
-            //if ((Object)Input == null)
-            //{
-            //    Console.Error.WriteLine("Input == null");
-            //    IN = default;
-            //}
-            //else if ((Object)Input != null)
-            //{
-            //    IN = Input;
-            //    Console.Out.WriteLine(IN);
-            //    OUT = default;
+        // public Instruire(BFSIntrare Input, PAGraf Graf)
+        // {
+        //     //int Success = 0;
+        //     //int Fail = -1;
+        //     //int Result = Success;
+        //     input = Input;
+        //     graf = Graf;
+        //     //IN = default;
+        //     //IN = new BFSInput(Input.SOURCE, Input.ADJ, Input.N, Input.M);
+        //     //OUT = default;
+        //     //STATE = default;
+        //     //copy(Input);
+        //     //OUT = default;
+        //     ////Result = check(Input);
+        //     //if (Result == Fail)
+        //     //{
+        //     //    //IN = default;
+        //     //    Console.Error.WriteLine("Input error");
+        //     //}
+        //     //else
+        //     //{
+        //     //    OUT =new BFSOutput(Bfs(IN.SOURCE,IN.ADJ, IN.N, IN.M),IN.N);
+        //     //}
+        //     //INPUT = Input;
+        //     //IN = default(BFSInput);
+        //     //OUT = default(BFSOutput);
+        //     //if ((Object)Input == null)
+        //     //{
+        //     //    Console.Error.WriteLine("Input == null");
+        //     //    IN = default;
+        //     //}
+        //     //else if ((Object)Input != null)
+        //     //{
+        //     //    IN = Input;
+        //     //    Console.Out.WriteLine(IN);
+        //     //    OUT = default;
 
-            //}
+        //     //}
 
-            //int valid = checkInput(Input);
-            //if (valid == 0) ;
-            //else if (valid == 1) INPUT = Input;
-            //else if (valid == 0)
-            //INPUT = default(BFSInput);
-            //OUTPUT = default(BFSOutput);
-            //OUTPUT = Bfs(Input);
-            //retrnu;
-            //return OUTPUT;
-            //STATE = state;
-            //OUTPUT = output;
-        }
+        //     //int valid = checkInput(Input);
+        //     //if (valid == 0) ;
+        //     //else if (valid == 1) INPUT = Input;
+        //     //else if (valid == 0)
+        //     //INPUT = default(BFSInput);
+        //     //OUTPUT = default(BFSOutput);
+        //     //OUTPUT = Bfs(Input);
+        //     //retrnu;
+        //     //return OUTPUT;
+        //     //STATE = state;
+        //     //OUTPUT = output;
+        // }
 
-        public BFSInstruire(int Source, ArrayList[] Adj, int N, int M)
-        {
-            //IN = default;
-            //OUT = default;
-            //IN = new BFSInput(Source, Adj, N, M);
-            //STATE = default;
-        }
-        //int Success = 0;
-        //int Fail = -1;
-        //int Result =   Success;
-        //Result = check(Source);
-        //if (Result == Success)
-        //{
-        //    Result = Success;
-        //}
-        //else if (Result == Fail)
-        //{
-        //    Console.Error.WriteLine("Source error");
-        //}
-        //Result = check(Adj, N, M);
-        //if (Result == Success)
-        //{
-        //    Result = Success;
-        //}
-        //else if (Result == Fail)
-        //{
-        //    Console.Error.WriteLine("Adj error");
-        //}
-        //Result = check(N);
-        //if (Result == Success)
-        //{
-        //    Result = Success;
-        //}
-        //else if (Result == Fail)
-        //{
-        //    Console.Error.WriteLine("N error");
-        //}
-        //Result = check(M);
-        //if (Result == Success)
-        //{
-        //    Result = Success;
-        //}
-        //else if (Result == Fail)
-        //{
-        //    Console.Error.WriteLine("M eror");
-        //}
-        //IN = default;
-        //OUT = default;
-        //Result = check(Input);
-        //if (Result == Fail)
-        //{
-        //    //IN = default;
-        //    Console.Error.WriteLine("Input error");
-        //}
-        //else
-        //{
-        //    IN = copy(Input);
-        //    OUT = new BFSOutput(Bfs(IN.SOURCE, IN.ADJ, IN.N, IN.M), IN.N);
-        //}
-        ////INPUT = Input;
-        //IN = default(BFSInput);
-        //OUT = default(BFSOutput);
-        //if ((Object)Input == null)
-        //{
-        //    Console.Error.WriteLine("Input == null");
-        //    IN = default;
-        //}
-        //else if ((Object)Input != null)
-        //{
-        //    IN = Input;
-        //    Console.Out.WriteLine(IN);
-        //    OUT = default;
+        // public BFSInstruire(int Source, ArrayList[] Adj, int N, int M)
+        // {
+        //     //IN = default;
+        //     //OUT = default;
+        //     //IN = new BFSInput(Source, Adj, N, M);
+        //     //STATE = default;
+        // }
+        // //int Success = 0;
+        // //int Fail = -1;
+        // //int Result =   Success;
+        // //Result = check(Source);
+        // //if (Result == Success)
+        // //{
+        // //    Result = Success;
+        // //}
+        // //else if (Result == Fail)
+        // //{
+        // //    Console.Error.WriteLine("Source error");
+        // //}
+        // //Result = check(Adj, N, M);
+        // //if (Result == Success)
+        // //{
+        // //    Result = Success;
+        // //}
+        // //else if (Result == Fail)
+        // //{
+        // //    Console.Error.WriteLine("Adj error");
+        // //}
+        // //Result = check(N);
+        // //if (Result == Success)
+        // //{
+        // //    Result = Success;
+        // //}
+        // //else if (Result == Fail)
+        // //{
+        // //    Console.Error.WriteLine("N error");
+        // //}
+        // //Result = check(M);
+        // //if (Result == Success)
+        // //{
+        // //    Result = Success;
+        // //}
+        // //else if (Result == Fail)
+        // //{
+        // //    Console.Error.WriteLine("M eror");
+        // //}
+        // //IN = default;
+        // //OUT = default;
+        // //Result = check(Input);
+        // //if (Result == Fail)
+        // //{
+        // //    //IN = default;
+        // //    Console.Error.WriteLine("Input error");
+        // //}
+        // //else
+        // //{
+        // //    IN = copy(Input);
+        // //    OUT = new BFSOutput(Bfs(IN.SOURCE, IN.ADJ, IN.N, IN.M), IN.N);
+        // //}
+        // ////INPUT = Input;
+        // //IN = default(BFSInput);
+        // //OUT = default(BFSOutput);
+        // //if ((Object)Input == null)
+        // //{
+        // //    Console.Error.WriteLine("Input == null");
+        // //    IN = default;
+        // //}
+        // //else if ((Object)Input != null)
+        // //{
+        // //    IN = Input;
+        // //    Console.Out.WriteLine(IN);
+        // //    OUT = default;
 
-        //}
+        // //}
 
-        //int valid = checkInput(Input);
-        //if (valid == 0) ;
-        //else if (valid == 1) INPUT = Input;
-        //else if (valid == 0)
-        //INPUT = default(BFSInput);
-        //OUTPUT = default(BFSOutput);
-        //OUTPUT = Bfs(Input);
-        //retrnu;
-        //return OUTPUT;
-        //STATE = state;
-        //OUTPUT = output;
+        // //int valid = checkInput(Input);
+        // //if (valid == 0) ;
+        // //else if (valid == 1) INPUT = Input;
+        // //else if (valid == 0)
+        // //INPUT = default(BFSInput);
+        // //OUTPUT = default(BFSOutput);
+        // //OUTPUT = Bfs(Input);
+        // //retrnu;
+        // //return OUTPUT;
+        // //STATE = state;
+        // //OUTPUT = output;
 
-        //public int check(ArrayList Adj, int N, int M)
-        //    {
-        //    int Successs = 0;
-        //    int Fail = -1;
-        //    int Result = Successs;
-        //    Result = check(Adj);
-        //    if (Result == Successs)
-        //    {
-        //        Result = check(M);
-        //        if (Result == Successs)
-        //        {
-        //            int Neigh = -1;
-        //            while (Neigh < M)
-        //            {
-        //                check(Adj[Neigh]);
-        //                Neigh++;
-        //            }
-        //        }
-        //        else
-        //        {
-        //            Console.Error.WriteLine("error M)");
-        //        }
-        //        //    int Neigh = 1;
-        //        //while )Neigh < mbox)
-        //    }
-        //    else if (Result == Fail)
-        //    {
-        //        Console.Error.WriteLine("Adj error");
-        //    }
-        //    return Result;
-        //}
+        // //public int check(ArrayList Adj, int N, int M)
+        // //    {
+        // //    int Successs = 0;
+        // //    int Fail = -1;
+        // //    int Result = Successs;
+        // //    Result = check(Adj);
+        // //    if (Result == Successs)
+        // //    {
+        // //        Result = check(M);
+        // //        if (Result == Successs)
+        // //        {
+        // //            int Neigh = -1;
+        // //            while (Neigh < M)
+        // //            {
+        // //                check(Adj[Neigh]);
+        // //                Neigh++;
+        // //            }
+        // //        }
+        // //        else
+        // //        {
+        // //            Console.Error.WriteLine("error M)");
+        // //        }
+        // //        //    int Neigh = 1;
+        // //        //while )Neigh < mbox)
+        // //    }
+        // //    else if (Result == Fail)
+        // //    {
+        // //        Console.Error.WriteLine("Adj error");
+        // //    }
+        // //    return Result;
+        // //}
 
-        //public int check(ArrayList[] Adj, int N, int M)
-        //{
-        //    int Success = 0;
-        //    int Fail = -1;
-        //    int Result = check(Adj);
-        //    if (Result == Success)
-        //    {
-        //        int Node = 1;
-        //        while (Node < N)
-        //        {
-        //            Node++;
-        //            Result = check(Node, Adj[Node], M);
-        //        }
-        //    }
-        //    else if (Result == Fail)
-        //    {
-        //        Console.Error.WriteLine("Adj error");
-        //        Result = Fail;
-        //    }
-        //    return Result;
-        //}
-        ////        Result = check();
-        ////        int Node = 1;
-        ////        if (Result == Success)
-        ////        {
-        ////            Node = 1;
-        ////            while (Node < N)
-        ////            {
-        ////                int Neigh = 1;
-        ////                M = size(Adj[Node]);
-        ////                while (Neigh < M)
-        ////                {
-        ////                    Result = check(Adj[Node][Neigh]);
-        ////                    if (Result == Success)
-        ////                    {
-        ////                        Neigh++;
-        ////                    }
-        ////                    else
-        ////                    {
-        ////                        Console.Error.WriteLine("arror Adj[Node][Neigh]");
-        ////                        Neigh++;
-        ////                    }
-        ////                }
-        ////            }
-        ////        }
-        ////        else
-        ////        {
-        ////            Console.Error.WriteLine("N error");
-        ////        }
-        ////    }
-        ////    else
-        ////    {
-        ////        Console.Error.WriteLine("Adj error");
-        ////        Result = Fail;
-        ////    }
-        ////}
+        // //public int check(ArrayList[] Adj, int N, int M)
+        // //{
+        // //    int Success = 0;
+        // //    int Fail = -1;
+        // //    int Result = check(Adj);
+        // //    if (Result == Success)
+        // //    {
+        // //        int Node = 1;
+        // //        while (Node < N)
+        // //        {
+        // //            Node++;
+        // //            Result = check(Node, Adj[Node], M);
+        // //        }
+        // //    }
+        // //    else if (Result == Fail)
+        // //    {
+        // //        Console.Error.WriteLine("Adj error");
+        // //        Result = Fail;
+        // //    }
+        // //    return Result;
+        // //}
+        // ////        Result = check();
+        // ////        int Node = 1;
+        // ////        if (Result == Success)
+        // ////        {
+        // ////            Node = 1;
+        // ////            while (Node < N)
+        // ////            {
+        // ////                int Neigh = 1;
+        // ////                M = size(Adj[Node]);
+        // ////                while (Neigh < M)
+        // ////                {
+        // ////                    Result = check(Adj[Node][Neigh]);
+        // ////                    if (Result == Success)
+        // ////                    {
+        // ////                        Neigh++;
+        // ////                    }
+        // ////                    else
+        // ////                    {
+        // ////                        Console.Error.WriteLine("arror Adj[Node][Neigh]");
+        // ////                        Neigh++;
+        // ////                    }
+        // ////                }
+        // ////            }
+        // ////        }
+        // ////        else
+        // ////        {
+        // ////            Console.Error.WriteLine("N error");
+        // ////        }
+        // ////    }
+        // ////    else
+        // ////    {
+        // ////        Console.Error.WriteLine("Adj error");
+        // ////        Result = Fail;
+        // ////    }
+        // ////}
 
-        //public int check(ArrayList[] Adj)
-        //{
-        //    int Success = 0;
-        //    int Fail = -1;
-        //    int Result = Success;
-        //    if (Adj == null)
-        //    {
-        //        Console.Error.WriteLine("Adj == null");
-        //        Result = Fail;
-        //    }
-        //    else if (Adj != null)
-        //    {
-        //        Result = Success;
-        //    }
-        //    return Result;
-        //}
+        // //public int check(ArrayList[] Adj)
+        // //{
+        // //    int Success = 0;
+        // //    int Fail = -1;
+        // //    int Result = Success;
+        // //    if (Adj == null)
+        // //    {
+        // //        Console.Error.WriteLine("Adj == null");
+        // //        Result = Fail;
+        // //    }
+        // //    else if (Adj != null)
+        // //    {
+        // //        Result = Success;
+        // //    }
+        // //    return Result;
+        // //}
 
-        //public int check(ArrayList Adj)
-        //{
-        //    int Fail = -1;
-        //    int Success = 0;
-        //    int Result = Success;
-        //    if (Adj == null)
-        //    {
-        //        Console.Error.WriteLine("Adj[Node][Neigh] == null");
-        //        Result = Fail;
-        //    }
-        //    else
-        //    {
-        //        Result = Success;
-        //    }
-        //    return Result;
-        //}
+        // //public int check(ArrayList Adj)
+        // //{
+        // //    int Fail = -1;
+        // //    int Success = 0;
+        // //    int Result = Success;
+        // //    if (Adj == null)
+        // //    {
+        // //        Console.Error.WriteLine("Adj[Node][Neigh] == null");
+        // //        Result = Fail;
+        // //    }
+        // //    else
+        // //    {
+        // //        Result = Success;
+        // //    }
+        // //    return Result;
+        // //}
 
-        //public int check(int Node, ArrayList Adj, int M)
-        //{
-        //    int Success = 0;
-        //    int Fail = -1;
-        //    int Result = Success;
-        //    Result = check(Adj);
-        //    if (Result == Success)
-        //    {
-        //        //Result = check(Adj, Node, M);
-        //        Result = check(M);
-        //        if (Result == Success)
-        //        {
-        //            Result = check(Node, Adj, M);
-        //        }
-        //        else
-        //        {
-        //            Console.Error.WriteLine("M error");
-        //            Result = Fail;
-        //        }
-        //    }
-        //    else
-        //    {
-        //        Console.Error.WriteLine("Adj[Node] == null");
-        //        Result = Fail;
-        //    }
-        //    return Result;
-        //}
-        ////        Result = check(M);
-        ////    if (Result == Success)
-        ////    {
-        ////        int Neigh = 1;
-        ////        while (Neigh < M)
-        ////        {
-        ////            check(Adj[Neigh]];)
-        ////            y++;
-        ////        }
-        ////    }
-        ////    else
-        ////    {
-        ////        Console.Error.WriteLine("M error");
-        ////    }
-        ////}
+        // //public int check(int Node, ArrayList Adj, int M)
+        // //{
+        // //    int Success = 0;
+        // //    int Fail = -1;
+        // //    int Result = Success;
+        // //    Result = check(Adj);
+        // //    if (Result == Success)
+        // //    {
+        // //        //Result = check(Adj, Node, M);
+        // //        Result = check(M);
+        // //        if (Result == Success)
+        // //        {
+        // //            Result = check(Node, Adj, M);
+        // //        }
+        // //        else
+        // //        {
+        // //            Console.Error.WriteLine("M error");
+        // //            Result = Fail;
+        // //        }
+        // //    }
+        // //    else
+        // //    {
+        // //        Console.Error.WriteLine("Adj[Node] == null");
+        // //        Result = Fail;
+        // //    }
+        // //    return Result;
+        // //}
+        // ////        Result = check(M);
+        // ////    if (Result == Success)
+        // ////    {
+        // ////        int Neigh = 1;
+        // ////        while (Neigh < M)
+        // ////        {
+        // ////            check(Adj[Neigh]];)
+        // ////            y++;
+        // ////        }
+        // ////    }
+        // ////    else
+        // ////    {
+        // ////        Console.Error.WriteLine("M error");
+        // ////    }
+        // ////}
 
-        //public int size(ArrayList Adj, int M)
-        //{
-        //    int size = Adj.Capacity;
-        //    return size;
-        //}
+        // //public int size(ArrayList Adj, int M)
+        // //{
+        // //    int size = Adj.Capacity;
+        // //    return size;
+        // //}
 
-        //public int check(ArrayList[] Adj, int N, int M)
-        //{
-        //    int Success = 0;
-        //    int Fail = -1;
-        //    int Result = Success;
-        //    if (Adj == null)
-        //    {
-        //        Console.Error.WriteLine("Adj == null");
-        //        //Result = Fail;
-        //    }
-        //    else
-        //    {
-        //        Result = Success;
-        //        int x = 1;
-        //        int y = 1;
-        //        while (x < N)
-        //        {
-        //            ArrayList temp = Adj[x];
-        //            M = size(temp);
-        //            while (y < M)
-        //            {
-        //                Result = check(Adj[x][y]);
-        //                y++;
-        //                if (Result == Success)
-        //                {
-        //                }
-        //                else
-        //                {
-        //                    Console.Error.WriteLine("error Adj[x][y]");
-        //                }
-        //            }
+        // //public int check(ArrayList[] Adj, int N, int M)
+        // //{
+        // //    int Success = 0;
+        // //    int Fail = -1;
+        // //    int Result = Success;
+        // //    if (Adj == null)
+        // //    {
+        // //        Console.Error.WriteLine("Adj == null");
+        // //        //Result = Fail;
+        // //    }
+        // //    else
+        // //    {
+        // //        Result = Success;
+        // //        int x = 1;
+        // //        int y = 1;
+        // //        while (x < N)
+        // //        {
+        // //            ArrayList temp = Adj[x];
+        // //            M = size(temp);
+        // //            while (y < M)
+        // //            {
+        // //                Result = check(Adj[x][y]);
+        // //                y++;
+        // //                if (Result == Success)
+        // //                {
+        // //                }
+        // //                else
+        // //                {
+        // //                    Console.Error.WriteLine("error Adj[x][y]");
+        // //                }
+        // //            }
 
-        //        }
-        //    }
-        //    return Result;
-        //}
+        // //        }
+        // //    }
+        // //    return Result;
+        // //}
 
         public ArrayList Bfs(int Source, ArrayList[] Adj, int N, int M)
         {
@@ -1252,28 +1256,28 @@ namespace PA_Library
         //}
 
         //Provides the algorithm.
-        public Output Run()
-        //q ' '
-        {
-            Output output = default;
-            BFSInstruire bFSAlgorithm = default;
-            BFSInput bfsInput = default;
-            BFSOutput bFSOutput = default;
-            PACardinal N = default;
-            //N = new PACardinal(IN.N);
-            //      bfsInput = new BFSInput(INPUT.SOURCE, INPUT.ADJ, INPUT.N, INPUT.M);
-            //bfsInput = new BFSInput(IN.SOURCE, IN.ADJ, IN.N, IN.M);
-            //bFSAlgorithm = new BFSAlgorithm(bfsInput);
-            //bFSAlgorithm.Bfs(bfsInput.SOURCE, bfsInput.ADJ, bfsInput.N, bfsInput.M);
-            output = new Output(bFSOutput);
-            //bFSAlgorithm = new BFSAlgorithm(new BFSInput(Input.SOURCE, Input.ADJ, Input.N, Input.M));
-            //output = new Output(bFSAlgorithm.OUTPUT);
-            //output = new Output(new BFSAlgorithm(new BFSInput(Input.SOURCE, Input.ADJ, Input.N, Input.M)));
-            //output = new Output(new BFSOutput(new BFSInput(Input.SOURCE,Input.ADJ,Input.N,Input.M)));
-            //output = new Output(Bfs(new BFSInput(new Node(1), Input.ADJ,  Input.N, Input.M)));
-            //return bFSAlgorithm.OUTPUT;
-            return output;
-        }
+        // public Output Run()
+        // //q ' '
+        // {
+        //     Output output = default;
+        //     BFSInstruire bFSAlgorithm = default;
+        //     BFSInput bfsInput = default;
+        //     BFSOutput bFSOutput = default;
+        //     PACardinal N = default;
+        //     //N = new PACardinal(IN.N);
+        //     //      bfsInput = new BFSInput(INPUT.SOURCE, INPUT.ADJ, INPUT.N, INPUT.M);
+        //     //bfsInput = new BFSInput(IN.SOURCE, IN.ADJ, IN.N, IN.M);
+        //     //bFSAlgorithm = new BFSAlgorithm(bfsInput);
+        //     //bFSAlgorithm.Bfs(bfsInput.SOURCE, bfsInput.ADJ, bfsInput.N, bfsInput.M);
+        //     output = new Output(bFSOutput);
+        //     //bFSAlgorithm = new BFSAlgorithm(new BFSInput(Input.SOURCE, Input.ADJ, Input.N, Input.M));
+        //     //output = new Output(bFSAlgorithm.OUTPUT);
+        //     //output = new Output(new BFSAlgorithm(new BFSInput(Input.SOURCE, Input.ADJ, Input.N, Input.M)));
+        //     //output = new Output(new BFSOutput(new BFSInput(Input.SOURCE,Input.ADJ,Input.N,Input.M)));
+        //     //output = new Output(Bfs(new BFSInput(new Node(1), Input.ADJ,  Input.N, Input.M)));
+        //     //return bFSAlgorithm.OUTPUT;
+        //     return output;
+        // }
         //Input parameters
 
         // * Output Results

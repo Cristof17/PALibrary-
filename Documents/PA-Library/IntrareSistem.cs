@@ -35,7 +35,7 @@ namespace PA_Library
         public static extern void Dispose();
         [DllImport("palibrary")]
         public static extern void InputDelete();
-        public Intrare(int Source, ArrayList[] Adj, int N, int M)
+        public IntrareSistem(Cardinal n, Cardinal m, Source, ArrayList[] Adj, int N, int M)
         {
             //ADJ = default(AdjacencyList<Node>);
             this.N = default;
