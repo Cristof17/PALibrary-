@@ -19,9 +19,9 @@ namespace PA_Library
     [DllImport("palibrary")]
     public static extern void PAElementVisit();
     [DllImport("palibrary")]
-    public static extern void PADataIsVisited();
+    public static extern void PAElementIsVisited();
     [DllImport("palibrary")]
-    public static extern void PADataReset();
+    public static extern void PAElementReset();
         public PAPunct(PAPunct Node)
         {
             data = Node.data;
