@@ -25,10 +25,15 @@ namespace PA_Library
 {
     public class Sistem {
         [DllImport("palibrary")]
-        public static extern Output run(Input input);
+        public static extern struct Output run(struct Input input);
         
         [StructLayout(LayoutKind.Sequential)]
         public readonly struct Algorithm algorithm;
+
+        public Sistem(IntrareSistem in)
+        {
+            
+        }
     }
     // {
         //Input in
