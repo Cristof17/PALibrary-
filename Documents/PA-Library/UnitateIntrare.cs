@@ -9,7 +9,7 @@ using System.Xml.XPath;
 
 namespace PA_Library
 {
-    public class BFSIntrare
+    public class UnitateIntrare
     //public readonly class BFSInput
     //public readonly class BFSInput
     //public readonly class BFSInput
@@ -34,156 +34,159 @@ namespace PA_Library
         [DllImport("palibrary")]
         public static extern void Dispose();
         // [DllImport("palibrary.dll")]
-
-        //akkll the methods from library as extern
-        BFSIntrare(PANod Source, PALista Adj, PACardinal N, PACardinal M)
+        public UnitateIntrare(Cardinal n, Cardinal m, ListaAdiacenta adj, Element sursa)
         {
-            /* Local members */
-
-            //int valid = CheckSource(Source);
-            //int Result = default;
-            //Result = CheckSource(Source);
-            //int valid = 1;
-            //Result = valid;
-            //int invalid = 0;
-            //valid = 1;
-            //if (Source < 0)
-            //{
-            this.n = default;
-            this.m = default;
-            this.adj = default;
-            this.source = default;
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            Result = CheckSource(Source, Adj, N, M);
-            if (Result == Fail)
-            {
-                //Source = default;
-                //Console.Error.WriteLine("Source error");
-            }
-            else if (Result == Success)
-            {
-                Source = new PANod(Source,Source.next);
-                //Console.Out.WriteLine($"Source {Source} ok");
-            }
-            Result = CheckNodeCardinal(Source, Adj, N, M);
-            if (Result == Fail)
-            {
-                //N = default;
-                //Console.Error.WriteLine($"number of nodes {N} error");
-            }
-            else if (Result == Success)
-            {
-                N = CopyNodeCardinal(Source, Adj, N, M);
-                //Console.Out.WriteLine($"copy N={N} Success");
-            }
-            Result = CheckReferenceVector(Source, Adj, N, M);
-            if (Result == Success)
-            {
-                adj = CopyVector(Source, Adj, N, M);//Adj;
-                //Console.Out.WriteLine("check reference vector Success");
-            }
-            else if (Result == Fail)
-            {
-                ///Console.Error.WriteLine("Adj copy error");
-            }
-            Result = CheckEdgeCardinal(Source, Adj, N, M);
-            if (Result == Success)
-            {
-                M = CopyEdgeCardinal(Source, Adj, N, M);
-                //Console.Out.WriteLine($"copy M={M} Success");
-                //M = M;
-            }
-            else if (Result == Fail)
-            {
-                //Console.Error.WriteLine($"number of edges {M} error");
-            }
-
-            ////int Success = 0;
-            ////int Fail = -1;
-            ////int Result = Success;
-            //Result = Check(Source);
-            //if (Result == Fail)
-            //{
-            //    Console.Error.WriteLine("Source error");
-            //}
-            //else
-            //{
-            //    Source = Copy(Source);
-            //}
-
-            //Result = Check(N);
-            //if (Result == Fail)
-            //{
-            //    Console.Error.WriteLine("N error");
-            //}
-            //else
-            //{
-            //    Result = Check(Adj);
-            //    if (Result == Fail)
-            //    {
-            //        Console.Error.WriteLine("Adj error");
-            //    }
-            //    else
-            //    {
-            //        ADJ = Copy(Adj, N);
-            //    }
-            //    N = Copy(N);
-            //}
-            //Result = Check(M);
-            //if (Result == Fail)
-            //{
-            //    Console.Error.WriteLine("M error");
-            //}
-            //else
-            //{
-            //    M = Copy(M);
-            //}
-            //if ((Object)Adj == null)
-            //{
-            //    Console.Error.WriteLine($"{Adj} == null");
-            //    Result = Fail;
-            //}
-            //else
-            //{
-            //    Result = Success;
-            //    if (N < 0)
-            //    {
-            //        Console.Error.WriteLine($"{N} < 0");
-            //        Result = Fail;
-            //    }
-            //    else if (N == 0)
-            //    {
-            //        Console.Error.WriteLine($"{N} == 0");
-            //        Result = Fail;
-            //    }
-            //    else
-            //    {
-            //        Result = Success;
-            //        if (M < 0)
-            //        {
-            //            Console.Error.WriteLine($"{M} < 0");
-            //            Result = Fail;
-            //        }
-            //        else if (M == 0)
-            //        {
-            //            Console.Error.WriteLine($"{M} == 0");
-            //            Result = Fail;
-            //        }
-            //        else
-            //        {
-            //            Result = Success;
-            //            Source = new Node(Source, Adj);
-            //            ADJ = new AdjacencyList(Adj, N);
-            //            N = new Cardinal(N);
-            //            M = new Cardinal(M);
-            //            //N = 
-            //        }
-            //    }
-            //}
-            //}
+            
         }
+        //akkll the methods from library as extern
+        // BFSIntrare(PANod Source, PALista Adj, PACardinal N, PACardinal M)
+        // {
+        //     /* Local members */
+
+        //     //int valid = CheckSource(Source);
+        //     //int Result = default;
+        //     //Result = CheckSource(Source);
+        //     //int valid = 1;
+        //     //Result = valid;
+        //     //int invalid = 0;
+        //     //valid = 1;
+        //     //if (Source < 0)
+        //     //{
+        //     this.n = default;
+        //     this.m = default;
+        //     this.adj = default;
+        //     this.source = default;
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     int Result = Success;
+        //     Result = CheckSource(Source, Adj, N, M);
+        //     if (Result == Fail)
+        //     {
+        //         //Source = default;
+        //         //Console.Error.WriteLine("Source error");
+        //     }
+        //     else if (Result == Success)
+        //     {
+        //         Source = new PANod(Source,Source.next);
+        //         //Console.Out.WriteLine($"Source {Source} ok");
+        //     }
+        //     Result = CheckNodeCardinal(Source, Adj, N, M);
+        //     if (Result == Fail)
+        //     {
+        //         //N = default;
+        //         //Console.Error.WriteLine($"number of nodes {N} error");
+        //     }
+        //     else if (Result == Success)
+        //     {
+        //         N = CopyNodeCardinal(Source, Adj, N, M);
+        //         //Console.Out.WriteLine($"copy N={N} Success");
+        //     }
+        //     Result = CheckReferenceVector(Source, Adj, N, M);
+        //     if (Result == Success)
+        //     {
+        //         adj = CopyVector(Source, Adj, N, M);//Adj;
+        //         //Console.Out.WriteLine("check reference vector Success");
+        //     }
+        //     else if (Result == Fail)
+        //     {
+        //         ///Console.Error.WriteLine("Adj copy error");
+        //     }
+        //     Result = CheckEdgeCardinal(Source, Adj, N, M);
+        //     if (Result == Success)
+        //     {
+        //         M = CopyEdgeCardinal(Source, Adj, N, M);
+        //         //Console.Out.WriteLine($"copy M={M} Success");
+        //         //M = M;
+        //     }
+        //     else if (Result == Fail)
+        //     {
+        //         //Console.Error.WriteLine($"number of edges {M} error");
+        //     }
+
+        //     ////int Success = 0;
+        //     ////int Fail = -1;
+        //     ////int Result = Success;
+        //     //Result = Check(Source);
+        //     //if (Result == Fail)
+        //     //{
+        //     //    Console.Error.WriteLine("Source error");
+        //     //}
+        //     //else
+        //     //{
+        //     //    Source = Copy(Source);
+        //     //}
+
+        //     //Result = Check(N);
+        //     //if (Result == Fail)
+        //     //{
+        //     //    Console.Error.WriteLine("N error");
+        //     //}
+        //     //else
+        //     //{
+        //     //    Result = Check(Adj);
+        //     //    if (Result == Fail)
+        //     //    {
+        //     //        Console.Error.WriteLine("Adj error");
+        //     //    }
+        //     //    else
+        //     //    {
+        //     //        ADJ = Copy(Adj, N);
+        //     //    }
+        //     //    N = Copy(N);
+        //     //}
+        //     //Result = Check(M);
+        //     //if (Result == Fail)
+        //     //{
+        //     //    Console.Error.WriteLine("M error");
+        //     //}
+        //     //else
+        //     //{
+        //     //    M = Copy(M);
+        //     //}
+        //     //if ((Object)Adj == null)
+        //     //{
+        //     //    Console.Error.WriteLine($"{Adj} == null");
+        //     //    Result = Fail;
+        //     //}
+        //     //else
+        //     //{
+        //     //    Result = Success;
+        //     //    if (N < 0)
+        //     //    {
+        //     //        Console.Error.WriteLine($"{N} < 0");
+        //     //        Result = Fail;
+        //     //    }
+        //     //    else if (N == 0)
+        //     //    {
+        //     //        Console.Error.WriteLine($"{N} == 0");
+        //     //        Result = Fail;
+        //     //    }
+        //     //    else
+        //     //    {
+        //     //        Result = Success;
+        //     //        if (M < 0)
+        //     //        {
+        //     //            Console.Error.WriteLine($"{M} < 0");
+        //     //            Result = Fail;
+        //     //        }
+        //     //        else if (M == 0)
+        //     //        {
+        //     //            Console.Error.WriteLine($"{M} == 0");
+        //     //            Result = Fail;
+        //     //        }
+        //     //        else
+        //     //        {
+        //     //            Result = Success;
+        //     //            Source = new Node(Source, Adj);
+        //     //            ADJ = new AdjacencyList(Adj, N);
+        //     //            N = new Cardinal(N);
+        //     //            M = new Cardinal(M);
+        //     //            //N = 
+        //     //        }
+        //     //    }
+        //     //}
+        //     //}
+        // }
 
         /**
          * checks the ArrayList[] vector of ArrayLists for null reference from the Input
