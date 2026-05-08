@@ -36,7 +36,7 @@ namespace PA_Library
         // private static extern void BFSProcedureRun();
         
         //public BFSAlgorithm(BFSInput Input, BFSOutput output, State state)
-        public BFSInstruire(BFSIntrare Input, PAGraf Graf)
+        public Instruire(BFSIntrare Input, PAGraf Graf)
         {
             //int Success = 0;
             //int Fail = -1;

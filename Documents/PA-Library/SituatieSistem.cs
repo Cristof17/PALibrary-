@@ -2,10 +2,10 @@
 using System.Collections;
 namespace PA_Library
 {
-    public struct State
+    public struct SituatieSistem
     {
         //public BFSState(Stack q/*, int x*/)
-        public State(BFSState bfsState)
+        public SituatieSistem(BFSState bfsState)
         {
             D = default;
             EDGE = default;
@@ -38,7 +38,7 @@ namespace PA_Library
                 D = default;
             }
         }
-        public State(ArrayList d, Node Node, Node Neigh)
+        public SituatieSistem(ArrayList d, Node Node, Node Neigh)
         {
             //q = new Stack();
             D = default;

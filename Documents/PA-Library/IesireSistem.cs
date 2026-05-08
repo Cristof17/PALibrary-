@@ -30,7 +30,7 @@ namespace PA_Library
         [DllImport("palibrary")]
         public static extern void OutputDelete();
         //readonly int[] d;
-        public Iesire(BFSIesire bfsOutput)
+        public IesireSistem(BFSIesire bfsOutput)
         {
             //NODE = default(int);
             //int valid = default;
