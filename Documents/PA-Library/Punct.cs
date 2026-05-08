@@ -22,29 +22,33 @@ namespace PA_Library
     public static extern void PAElementIsVisited();
     [DllImport("palibrary")]
     public static extern void PAElementReset();
-        public PAPunct(PAPunct Node)
-        {
-            data = Node.data;
-            next = Node.next;
-            //stare = PAStare.NOT_VISITED;
-        }
-        public PANod(PAData Data)
-        {
-            data = Data;
-            next = default;
-        }
-        public PANod(PAData Data, PANod Next)
-        {
-            data = Data;
-            next = Next;
-            //stare = PAStare.NOT_VISITED;
-        }
-        //public PANod(PA)
-        public PANod(PANod node, PANod neigh)
-        {
-            data = node.data;
-            next = neigh;
-        }
+    public Punct(Data index, Punct next, Stare status)
+    {
+        
+    } 
+        // Node)
+        // {
+        //     data = Node.data;
+        //     next = Node.next;
+        //     //stare = PAStare.NOT_VISITED;
+        // }
+        // public PANod(PAData Data)
+        // {
+        //     data = Data;
+        //     next = default;
+        // }
+        // public PANod(PAData Data, PANod Next)
+        // {
+        //     data = Data;
+        //     next = Next;
+        //     //stare = PAStare.NOT_VISITED;
+        // }
+        // //public PANod(PA)
+        // public PANod(PANod node, PANod neigh)
+        // {
+        //     data = node.data;
+        //     next = neigh;
+        // }
         //public PANod(long Nod)
         //{
         //    data = Nod;

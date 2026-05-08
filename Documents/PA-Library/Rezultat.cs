@@ -10,7 +10,7 @@
         public static extern void BFSRecordInit();
         [DllImport("palibrary")]
         public static extern void BFSRecordDelete();
-		public Rezultat(Rezultat Rezultat)
+		public Rezultat(Lista d, Cardinal n)
 		{
 			this.d = Rezultat.d;
 			this.n = Rezultat.n;
