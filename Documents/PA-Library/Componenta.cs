@@ -88,7 +88,7 @@ namespace PA_Library
             }
             return Result;
         }
-        public Node(Node Node)
+        public Componenta(Node Node)
         {
             INDEX = default;
             ADJ = default;
