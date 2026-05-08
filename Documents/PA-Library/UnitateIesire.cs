@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 
 namespace PA_Library
 {
-    class BFSIesire
+    class UnitateIesire
     //public readonly class BFSOutput
     //public readonly struct BFSOutput
     {
@@ -17,6 +17,10 @@ namespace PA_Library
         [DllImport("palibrary")]
         public static extern void PAOutputDelete();
 
+        public UnitateIesire(Rezultat Result)
+        {
+            
+        }
         // private static extern BFSOutputInit();
         //BFSState State, ArrayList D, int N) : this()
         BFSIesire(BFSRezultat Rezultat)
