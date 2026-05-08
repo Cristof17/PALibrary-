@@ -21,6 +21,7 @@ namespace PA_Library
     [DllImport("palibrary")]
     public static extern void PADataIsVisited();
     [DllImport("palibrary")]
+
     public static extern void PADataReset();
         public PAPunct(PAPunct Node)
         {
@@ -81,6 +82,10 @@ namespace PA_Library
         //    next = Next;
         //    stare = Stare;
         //}
+        public Element(Data index, Element next, Stare status)
+        {
+            
+        }
         [StructLayout(LayoutKind.Sequential)]
         private struct PAElement element;
         // PAData data { get; set; }

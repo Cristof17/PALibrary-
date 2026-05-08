@@ -18,6 +18,11 @@ namespace PA_Library {
 
 		[StructLayout(LayoutKind.Sequential)]
 		private struct PATree tree;
+
+		public Arbore(Cardinal n, Cardinal m, Lista adj, Punct sursa)
+        {
+            
+        }
 		// private PACardinal n { get; }
 		// private PACardinal m { get; }
 		// private PALista adj { get; }
