@@ -1,12 +1,12 @@
-﻿using System;
+﻿ using System;
 
 namespace PA_Library
 {
-    public readonly struct Set
+    public readonly struct Multime
     {
         //public Set(Node Source, ArrayList[] Adj, int N, int M)
 
-        public Set(int N) : this()
+        public Multime(int N) : this()
         {
             N = N;
             //ADJ = Adj;

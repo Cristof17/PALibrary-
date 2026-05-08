@@ -6,7 +6,7 @@ using System.Xml.XPath;
 
 namespace PA_Library
 {
-    class PALista
+    class Lista
     {
         [DllImport("palibrary")]
         public static extern void PASeriesConstruct();
@@ -18,7 +18,7 @@ namespace PA_Library
         public static extern void Dispose();
         [DllImport("palibrary")]
         public static extern void PASeriesDelete();
-        public PALista(PANod Head) 
+        public Lista(PANod Head) 
             //: this()
         {
             int Success = 0;

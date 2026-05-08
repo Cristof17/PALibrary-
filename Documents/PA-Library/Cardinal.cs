@@ -2,7 +2,7 @@
 
 namespace PA_Library
 {
-    public class PACardinal
+    public class Cardinal
     //public struct PAPACardinal
     {
         [DllImport("palibrary")]
@@ -14,15 +14,15 @@ namespace PA_Library
         [DllImport("palibrary")]
         public static extern void PACountDelete();
 
-        public PACardinal(long value)
+        public Cardinal(long value)
         {
             NUMBER = default;//(int) value;
         }
-        public PACardinal(ulong value)
+        public Cardinal(ulong value)
         {
             NUMBER = default;// (int)value;
         }
-        public PACardinal(int Value)
+        public Cardinal(int Value)
         {
             NUMBER = default;// value;
         }

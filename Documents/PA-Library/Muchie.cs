@@ -14,7 +14,7 @@ namespace PA_Library
 		//public
 		//{
 			//Console.WriteLine("Hello world!");
-			PAMuchie(PANod Node, PANod Neigh)
+			Muchie(PANod Node, PANod Neigh)
 			{
 				p = default;
 				//Node;

@@ -1,6 +1,6 @@
 namespace PA_Library
 {
-	public class PAMuchie
+	public class Link
 	//public struct PAMuchie
 	{
 		[DllImport("palibrary")]
@@ -14,7 +14,7 @@ namespace PA_Library
 		//public
 		//{
 			//Console.WriteLine("Hello world!");
-			PAMuchie(PANod Node, PANod Neigh)
+			Link(PANod Node, PANod Neigh)
 			{
 				p = default;
 				//Node;
