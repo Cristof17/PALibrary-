@@ -3,13 +3,13 @@
 	class Rezultat
 	{
         [DllImport("palibrary")]
-        public static extern void BFSRecordConstruct();
+        public static extern struct BFSRecord BFSRecordConstruct(struct PAList d, struct PACount n);
         [DllImport("palibrary")]
-        public static extern void BFSRecordRuin();
+        public static extern int BFSRecordRuin(struct PAList d, struct PACount n);
         [DllImport("palibrary")]
-        public static extern void BFSRecordInit();
+        public static extern struct BFSRecord BFSRecordInit(struct BFSRecord record);
         [DllImport("palibrary")]
-        public static extern void BFSRecordDelete();
+        public static extern int BFSRecordDelete(struct BFSRecord BFS);
 		public Rezultat(Lista d, Cardinal n)
 		{
 			this.d = Rezultat.d;

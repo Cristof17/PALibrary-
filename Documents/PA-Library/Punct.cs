@@ -9,19 +9,18 @@ namespace PA_Library
     //public struct PANod
     {
     [DllImport("palibrary")]
-    public static extern void PAElementConstruct();
+    public static extern struct PAElement PAElementConstruct(struct PAData Data, struct PAElement Next, struct PAStatus Status);
     [DllImport("palibrary")]
-    public static extern void PAElementRuin();
+    public static extern int PAElementRuin(struct PAData Data, struct PAElement Next, struct PAStatus Status);
     [DllImport("palibrary")]
-    public static extern void PAElementInit();
+    public static extern struct PAElement PAElementInit(struct PAElement e);
     [DllImport("palibrary")]
-    public static extern void PAElementDelete();
+    public static extern int PAElementDelete(struct PAElement PA);
     [DllImport("palibrary")]
     public static extern void PAElementVisit();
     [DllImport("palibrary")]
-    public static extern void PAElementIsVisited();
+    public static extern int PADataIsVisited();
     [DllImport("palibrary")]
-    public static extern void PAElementReset();
     public Punct(Data index, Punct next, Stare status)
     {
         
