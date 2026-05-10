@@ -6,19 +6,19 @@ namespace PA_Library
     public class ListaAdiacenta
     {
         [DllImport("palibrary")]
-        public static extern void PAListGetHead();
+        public static extern struct PAElement PAListGetHead();
         [DllImport("palibrary")]
-        public static extern void PAListAddHead();
+        public static extern void PAListAddHead(struct PAElement data);
         [DllImport("palibrary")]
-        public static extern void PAListConstruct();
+        public static extern struct PAList PAListConstruct(struct PAElement Head);
         [DllImport("palibrary")]
-        public static extern void PAListRuin();
+        public static extern int PAListRuin(struct PACount m, struct ArrayList Edges);
         [DllImport("palibrary")]
-        public static extern void PAListInit();
+        public static extern struct PAList PAListInit(struct PAList lista);
         [DllImport("palibrary")]
         public static extern void Dispose();
         [DllImport("palibrary")]
-        public static extern void PAListDelete();
+        public static extern int PAListDelete(struct PASeries PA);
 
         public ListaAdiacenta(ArrayList Adj, int M) : this()
         {
