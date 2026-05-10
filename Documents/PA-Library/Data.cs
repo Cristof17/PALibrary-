@@ -2,18 +2,21 @@
 using PA_Library;
 using System.Transactions;
 
-struct PAData
+class Data
 {
-    [DllImport("palibrary.dll")]
-    public static extern void PADataConstruct();
-    [DllImport("palibrary.dll")]
-    public static extern void PADataRuin();
-    [DllImport("palibrary.dll")]
-    public static extern void PADataInit();
-    [DllImport("palibrary.dll")]
-    public static extern void PADataDelete();
+    [DllImport("palibrary")]
+    public static extern struct PAData PADataConstruct(int Resource);
+    [DllImport("palibrary")]
+    public static extern int PADataRuin(int Resource);
+    [DllImport("palibrary")]
+    public static extern struct PAData PADataInit(struct PAData Data);
+    [DllImport("palibrary")]
+    public static extern int PADataDelete(struct PAData PA);
     //struct PAResource
-    public int value;//todo use in unsafe contexts
+    [StructLayout(LayoutKind.Sequential)]
+    private struct PAData data;
+
+    // public int value;//todo use in unsafe contexts
 
     public static implicit operator byte(PAData d) => (byte)d.value;
     public static explicit operator PAData(byte b) => Copy(b);
