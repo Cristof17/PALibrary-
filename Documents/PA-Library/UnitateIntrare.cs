@@ -26,7 +26,7 @@ namespace PA_Library
         [DllImport("palibrary")]
         private static extern struct PAInput PAInputConstruct(struct PACount n, struct PACount m, struct PAList adj, struct PAElement sursa);
         [DllImport("palibrary")]
-        public static extern void PAInputRuin();
+        public static extern int PAInputRuin(struct PACount n, struct PACount m, struct PAList adj, struct PAElement sursa);
         [DllImport("palibrary")]
         public static extern int PAInputDelete(struct PAInput i);
         [DllImport("palibrary")]
