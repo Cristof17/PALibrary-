@@ -14,7 +14,7 @@ namespace PA_Library {
 		[DllImport("palibrary")]
         public static extern struct PATree PATreeInit(struct PATree graf);
 		[DllImport("palibrary")]
-        public static extern int PATreeDelete(struct PATree);
+        public static extern int PATreeDelete(struct PATree PA);
 
 		[StructLayout(LayoutKind.Sequential)]
 		private struct PATree tree;
