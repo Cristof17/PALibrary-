@@ -5,17 +5,17 @@ namespace PA_Library {
 	//public readonly class PAGraf
 	//public struct PAGraf
 	{
+	[DllImport("palibrary")]
+        public static extern void PATreeSearch(struct PAElement nod);
 		[DllImport("palibrary")]
-        public static extern void PATreeSearch();
+        public static extern struct PATree PATreeConstruct(struct PACount n, struct PACount m, struct PAList adj, struct PAElement source);
 		[DllImport("palibrary")]
-        public static extern void PATreeConstruct();
+        public static extern void PATreeRuin(struct PACount n, struct PACount m, struct PAList adj, struct PAElement source);
 		[DllImport("palibrary")]
-        public static extern void PATreeRuin();
+        public static extern struct PATree PATreeInit(struct PATree graf);
 		[DllImport("palibrary")]
-        public static extern void PATreeInit();
-		[DllImport("palibrary")]
-        public static extern void PATreeDelete();
-
+        public static extern int PATreeDelete(struct PATree PA);
+		
 		[StructLayout(LayoutKind.Sequential)]
 		private struct PATree tree;
 		// private PACardinal n { get; }
