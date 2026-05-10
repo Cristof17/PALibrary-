@@ -6,13 +6,13 @@ namespace PA_Library
     //public struct PAPACardinal
     {
         [DllImport("palibrary")]
-        public static extern void PACountConstruct();
+        public static extern void PACountConstruct(int value);
         [DllImport("palibrary")]
-        public static extern void PACountRuin();
+        public static extern int PACountRuin(int value);
         [DllImport("palibrary")]
-        public static extern void PACountInit();
+        public static extern struct PACount PACountInit(PACount value);
         [DllImport("palibrary")]
-        public static extern void PACountDelete();
+        public static extern void int PACountDelete(struct PACount PA);
 
         public Cardinal(int number)
         {
