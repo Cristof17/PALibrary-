@@ -15,8 +15,8 @@ namespace PA_Library
         [DllImport("palibrary")]
         public static extern void int PACountDelete(struct PACount PA);
 
-        [StructLayout(LayoutKind.Sequential)]
-        public struct PACount Count {get;}
+        // [StructLayout(LayoutKind.Sequential)]
+        // public struct PACount Count {get;}
         public Cardinal(int number)
         {
             NUMBER = default;//(int) value;

@@ -25,6 +25,7 @@ namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct Algorithm {
+        
         [DllImport("palibrary")]
         public static extern struct Output run(struct Input input);
         
