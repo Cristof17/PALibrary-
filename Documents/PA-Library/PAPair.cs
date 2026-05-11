@@ -2,7 +2,8 @@
 //struct PAPereche
 namespace PA_Library
 {
-    struct Pereche
+    [StructLayout(LayoutKind.Sequential)]
+    struct PAPair
     {
         [DllImport("pa-library")]
         public static extern struct PAElement PAPairInit(struct PAElement e);
@@ -13,8 +14,8 @@ namespace PA_Library
         [DllImport("pa-library")]
         public static extern int PAPairDelete(struct PAElement PA);
 
-        [StructLayout(LayoutKind.Sequential)]
-        private struct PAPair Pair;
+        // [StructLayout(LayoutKind.Sequential)]
+        // private struct PAPair Pair;
 
         public Pereche(Element Node, Element Neigh)
         {

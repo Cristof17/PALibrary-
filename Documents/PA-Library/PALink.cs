@@ -1,6 +1,7 @@
 namespace PA_Library
 {
-	public class Link
+	[StructLayout(LayoutKind.Sequential)]
+	public struct PALink
 	//public struct PAMuchie
 	{
 		[DllImport("palibrary")]

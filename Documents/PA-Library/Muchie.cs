@@ -1,6 +1,6 @@
 namespace PA_Library
 {
-	public class Muchie
+	public class 
 	//public struct PAMuchie
 	{
 		[DllImport("palibrary")]

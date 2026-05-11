@@ -9,7 +9,8 @@ using System.Xml.XPath;
 
 namespace PA_Library
 {
-    public class UnitateIntrare
+    [StructLayout(LayoutKind.Sequential)]
+    public struct PAInput
     //public readonly class BFSInput
     //public readonly class BFSInput
     //public readonly class BFSInput
@@ -1288,8 +1289,8 @@ namespace PA_Library
         //}
         //public static int checkAdjacencyList(ArrayList Adj)
         //44
-        [StructLayout(StructLayout.Sequential)]
-        public struct BFSInput input;
+        // [StructLayout(StructLayout.Sequential)]
+        // public struct BFSInput input;
 
         // public ArrayList D { get; }
         // public PACardinal n;

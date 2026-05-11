@@ -1,6 +1,7 @@
 using System.Xml.XPath;
 namespace PA_Library {
-	public class Arbore
+	[StructLayout(LayoutKind.Sequential)]
+	public struct PATree
 	
 	//public readonly class PAGraf
 	//public struct PAGraf
@@ -17,7 +18,7 @@ namespace PA_Library {
         public static extern int PATreeDelete(struct PATree PA);
 
 		[StructLayout(LayoutKind.Sequential)]
-		private struct PATree tree;
+		private struct PATree tree { get;}
 
 		public Arbore(Cardinal n, Cardinal m, Lista adj, Punct sursa)
         {

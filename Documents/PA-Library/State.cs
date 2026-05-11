@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Immutable;
 namespace PA_Library
 {
-    public struct Situatie
+    public struct State
     {
         //struct PAStatus visited;
 
@@ -12,7 +12,7 @@ namespace PA_Library
         //{
 
         //}
-        public Situatie(BFSIntrare bfsInput)
+        public State(BFSIntrare bfsInput)
         {
             int Success = 0;
             int Fail = -1;

@@ -23,7 +23,8 @@ using System.Xml.Linq;
 
 namespace PA_Library
 {
-    public class Implicare
+    [StructLayout(LayoutKind.Sequential)]
+    public struct Input
     {
         [DllImport("palibrary")]
         public static extern void InputConstruct();

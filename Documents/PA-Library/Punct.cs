@@ -5,7 +5,8 @@ using System.Xml.XPath;
 
 namespace PA_Library
 {
-    class Punct
+    [StructLayout(LayoutKind.Sequntial)]
+    struct PAElement
     //public struct PANod
     {
     [DllImport("palibrary")]

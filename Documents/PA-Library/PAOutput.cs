@@ -4,7 +4,8 @@ using System.Runtime.CompilerServices;
 
 namespace PA_Library
 {
-    class UnitateIesire
+    [StructLayout(LayoutKind.Sequential)]
+    struct PAOutput
     //public readonly class BFSOutput
     //public readonly struct BFSOutput
     {
@@ -23,7 +24,7 @@ namespace PA_Library
         }
         // private static extern BFSOutputInit();
         //BFSState State, ArrayList D, int N) : this()
-        BFSIesire(BFSRezultat Rezultat)
+        BFSOutput(BFSRezultat Rezultat)
         {
             //STATE = default;
             //D = default;

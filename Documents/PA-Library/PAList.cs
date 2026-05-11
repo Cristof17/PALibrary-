@@ -3,7 +3,8 @@ using System.Collections;
 
 namespace PA_Library
 {
-    public class ListaAdiacenta
+    [StructLayout(LayoutKind.Sequential)]
+    public struct PAList
     {
         [DllImport("palibrary")]
         public static extern struct PAElement PAListGetHead();
@@ -623,8 +624,8 @@ namespace PA_Library
         //}
         // public int M { get; }
 
-        [StructLayout(LayoutKind.Sequential)]
-        private struct PAList adj;
+        // [StructLayout(LayoutKind.Sequential)]
+        // private struct PAList adj;
 
         //struct PASeries
         //struct PAList is right
