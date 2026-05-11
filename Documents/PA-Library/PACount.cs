@@ -2,7 +2,8 @@
 
 namespace PA_Library
 {
-    public class Cardinal
+    [StructLayout(LayoutKind.Sequential)]
+    public struct PACount
     //public struct PAPACardinal
     {
         [DllImport("palibrary")]
@@ -14,6 +15,8 @@ namespace PA_Library
         [DllImport("palibrary")]
         public static extern void int PACountDelete(struct PACount PA);
 
+        [StructLayout(LayoutKind.Sequential)]
+        public struct PACount Count {get;}
         public Cardinal(int number)
         {
             NUMBER = default;//(int) value;

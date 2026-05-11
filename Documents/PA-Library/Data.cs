@@ -2,7 +2,8 @@
 using PA_Library;
 using System.Transactions;
 
-class Data
+[StructLayout(LayoutKind.Sequential)]
+public struct PAData
 {
     [DllImport("palibrary")]
     public static extern struct PAData PADataConstruct(int Resource);
@@ -13,8 +14,8 @@ class Data
     [DllImport("palibrary")]
     public static extern int PADataDelete(struct PAData PA);
     //struct PAResource
-    [StructLayout(LayoutKind.Sequential)]
-    private struct PAData data;
+    // [StructLayout(LayoutKind.Sequential)]
+    // private struct PAData data {get;}
 
     // public int value;//todo use in unsafe contexts
 

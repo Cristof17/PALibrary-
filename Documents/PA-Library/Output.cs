@@ -19,7 +19,8 @@ using System.Collections.Immutable;
 
 namespace PA_Library
 {
-    public class IesireSistem
+    [StructLayout(LayoutKind.Sequential)]
+    public struct Output
     {
         [DllImport("palibrary")]
         public static extern struct Output OutputConstruct(struct PAResult rezultat);
@@ -192,8 +193,8 @@ namespace PA_Library
         //     return D;
         // }
 
-        [StructLayout(LayoutKind.Sequential)]
-        private struct Output rezultat;
+        // [StructLayout(LayoutKind.Sequential)]
+        // private struct Output rezultat;
 
         // public PARezultat rezultat { get; }
         //public ArrayList D { get; }

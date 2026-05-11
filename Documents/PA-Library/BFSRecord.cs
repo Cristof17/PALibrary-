@@ -1,6 +1,7 @@
 ﻿namespace PA_Library
 {
-	class Rezultat
+    [StructLayout(LayoutKind.Sequntial)]
+	struct BFSRecord
 	{
         [DllImport("palibrary")]
         public static extern struct BFSRecord BFSRecordConstruct(struct PAList d, struct PACount n);
@@ -27,8 +28,8 @@
             }
         }
 
-        [StructLayout(LayoutKind.Sequential)]
-        public struct BFSRecord result;
+        // [StructLayout(LayoutKind.Sequential)]
+        // public struct BFSRecord result;
 
         //public PALista d { get; }
         // public PALista d { get; }

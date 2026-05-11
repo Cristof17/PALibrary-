@@ -2,7 +2,7 @@
 
 namespace PA_Library
 {
-    public readonly struct Multime
+    public readonly struct Set
     {
         //public Set(Node Source, ArrayList[] Adj, int N, int M)
 

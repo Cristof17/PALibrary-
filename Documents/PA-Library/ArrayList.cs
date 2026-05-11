@@ -1,7 +1,8 @@
 using System;
 namespace PA_Library
 {
-    public class ListaSir
+    [StructLayout(LayoutKind.Sequntial)]
+    public struct ArrayList
     {
         [DllImport("pa-library")]
         public static extern struct ArrayList ArrayListConstruct(struct ArrayListPosition place, int[] objects);
@@ -11,8 +12,8 @@ namespace PA_Library
         public static extern struct ArrayList ArrayListInit(struct ArrayList List);
         [DllImport("pa-library")]
         public static extern void ArrayListDelete();
-        [StructLayout(LayoutKind.Sequential)]
-        private struct ArrayList List;
+        // [StructLayout(LayoutKind.Sequential)]
+        // private struct ArrayList List;
         // int[] objects;
     }
 }

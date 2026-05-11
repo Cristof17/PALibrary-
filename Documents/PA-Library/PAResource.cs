@@ -1,6 +1,7 @@
 using System;
 
-class Resursa
+[StructLayout(LayoutKind.Sequential)]
+struct Resursa
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct PAResource Resource;
