@@ -693,8 +693,8 @@ namespace PA_Library
         //    return Result;
         //}
         //public BFSInput input { get; }
-        [StructLayout(LayoutKind.Sequentia)]
-        private struct BFSProcedure procedure;
+        // [StructLayout(LayoutKind.Sequentia)]
+        // private struct BFSProcedure procedure;
 
         // public BFSInput input { get; }
 

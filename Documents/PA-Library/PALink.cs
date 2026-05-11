@@ -15,7 +15,7 @@ namespace PA_Library
 		//public
 		//{
 			//Console.WriteLine("Hello world!");
-			Link(PANod Node, PANod Neigh)
+			PALink(PANod Node, PANod Neigh)
 			{
 				p = default;
 				//Node;

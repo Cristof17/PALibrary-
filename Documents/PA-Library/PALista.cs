@@ -18,7 +18,7 @@ namespace PA_Library
         public static extern void Dispose();
         [DllImport("palibrary")]
         public static extern int PASeriesDelete(struct PASeries PA);
-        public Lista(PANod Head) 
+        public PAList(PANod Head) 
             //: this()
         {
             int Success = 0;

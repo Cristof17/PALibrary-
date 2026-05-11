@@ -10,7 +10,7 @@ namespace PA_Library
     //public readonly struct BFSOutput
     {
         [DllImport("palibrary")]
-        public static extern Output PAOutputConstruct(struct PAResult rezultat);
+        public static extern struct PAOutput PAOutputConstruct(struct PAResult rezultat);
         [DllImport("palibrary")]
         public static extern int PAOutputRuin(struct PAResult rezultat);
         [DllImport("palibrary")]
@@ -24,7 +24,7 @@ namespace PA_Library
         }
         // private static extern BFSOutputInit();
         //BFSState State, ArrayList D, int N) : this()
-        BFSOutput(BFSRezultat Rezultat)
+        PAOutput(BFSRezultat Rezultat)
         {
             //STATE = default;
             //D = default;

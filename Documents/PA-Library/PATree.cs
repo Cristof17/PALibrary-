@@ -20,7 +20,7 @@ namespace PA_Library {
 		[StructLayout(LayoutKind.Sequential)]
 		private struct PATree tree { get;}
 
-		public Arbore(Cardinal n, Cardinal m, Lista adj, Punct sursa)
+		public PATree(Cardinal n, Cardinal m, Lista adj, Punct sursa)
         {
             
         }

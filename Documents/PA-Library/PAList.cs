@@ -21,7 +21,7 @@ namespace PA_Library
         [DllImport("palibrary")]
         public static extern int PAListDelete(struct PASeries PA);
 
-        public ListaAdiacenta(ArrayList Adj, int M) : this()
+        public PAList(ArrayList Adj, int M) : this()
         {
             int Success = 0;
             int Fail = -1;

@@ -16,8 +16,8 @@ namespace PA_Library {
 		[DllImport("palibrary")]
         public static extern int PATreeDelete(struct PATree PA);
 		
-		[StructLayout(LayoutKind.Sequential)]
-		private struct PATree tree;
+		// [StructLayout(LayoutKind.Sequential)]
+		// private struct PATree tree;
 		// private PACardinal n { get; }
 		// private PACardinal m { get; }
 		// private PALista adj { get; }
