@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 using System;
 namespace PA_Library
 {
-    [StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Explicit)]
     public struct ArrayList
     {
         // [DllImport("palibrary")]

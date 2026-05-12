@@ -2,7 +2,7 @@ using System;
 using PA_Library;
 using System;
 using System.Runtime.InteropServices;
-[StructLayout(LayoutKind.Sequential)]
+[StructLayout(LayoutKind.Explicit)]
 public struct PANumber
 {
     // [StructLayout(LayoutKind.Sequential)]
