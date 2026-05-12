@@ -10,3 +10,7 @@ C:/Users/crist/source/repos/PA-Library/PA-Library/obj/Debug/netstandard2.0/PA-Li
 C:/Users/crist/source/repos/PA-Library/PA-Library/obj/Debug/netstandard2.0/PA-Library.pdb
 /Users/cristoforrotsching/Documents/PA-Library/obj/Debug/netstandard2.0/PA-Library.dll
 /Users/cristoforrotsching/Documents/PA-Library/obj/Debug/netstandard2.0/PA-Library.pdb
+/Users/cristoforrotsching/Documents/PA-Library/obj/Debug/netstandard2.0/PA-Library.csproj.AssemblyReference.cache
+/Users/cristoforrotsching/Documents/PA-Library/obj/Debug/netstandard2.0/PA-Library.AssemblyInfoInputs.cache
+/Users/cristoforrotsching/Documents/PA-Library/obj/Debug/netstandard2.0/PA-Library.AssemblyInfo.cs
+/Users/cristoforrotsching/Documents/PA-Library/obj/Debug/netstandard2.0/PA-Library.csproj.CoreCompileInputs.cache
