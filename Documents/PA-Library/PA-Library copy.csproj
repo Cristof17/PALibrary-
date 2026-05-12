@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
-    <TargetFrameworkVersion>V5.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
     <RootNamespace>PA_Library</RootNamespace>
   </PropertyGroup>
 
