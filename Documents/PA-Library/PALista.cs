@@ -750,7 +750,7 @@ namespace PA_Library
             }
         }
         [StructLayout(LayoutKind.Sequential)]
-        private struct PASeries list;
+        private  PASeries list;
 
         // public PANod head { get; set; }
         //public ArrayList ADJ { get; }
