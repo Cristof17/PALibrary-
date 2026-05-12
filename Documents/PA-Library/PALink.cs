@@ -5,13 +5,13 @@ namespace PA_Library
 	//public struct PAMuchie
 	{
 		[DllImport("palibrary")]
-        public static extern struct PAPair PALinkConstruct(struct PALink Link);
+        public static extern  PAPair PALinkConstruct( PALink Link);
 		[DllImport("palibrary")]
-        public static extern int PALinkInit(struct PAPair p);
+        public static extern int PALinkInit( PAPair p);
 		[DllImport("palibrary")]
-        public static extern int PALinkRuin(struct PAPair p);
+        public static extern int PALinkRuin( PAPair p);
 		[DllImport("palibrary")]
-        public static extern int PALinkDelete(struct PALink PA);
+        public static extern int PALinkDelete( PALink PA);
 		//public
 		//{
 			//Console.WriteLine("Hello world!");
@@ -110,7 +110,7 @@ namespace PA_Library
 			}
 
 			[StructLayout(LayoutKind.Sequential)]
-			private struct PALink link;
+			private  PALink link;
 			// PANod node { get; }
 			// PANod neigh { get; }
 			int Copy(PANod Node)
