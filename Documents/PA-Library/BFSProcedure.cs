@@ -391,15 +391,15 @@ namespace PA_Library
         // //    return Result;
         // //}
 
-        public ArrayList Bfs(int Source, ArrayList[] Adj, int N, int M)
-        {
+        // public ArrayList Bfs(int Source, ArrayList[] Adj, int N, int M)
+        // {
             //int Result = default;
             //int Success = 0;
             //int Fail = -1;
             //ArrayList d = OUT.D;
             //BFSOutput d = OUT.D;
             //ArrayList d = default;
-            ArrayList d = new ArrayList(N + 1);//= OUT;
+            // ArrayList d = new ArrayList(N + 1);//= OUT;
                                                //d = state.D;
                                                //BFSState state = new BFSState(IN);
                                                //d = state.D;
@@ -439,242 +439,242 @@ namespace PA_Library
             //Cardinal edgeSetCardinal = default;
             //int N = IN.N;
             //int M = IN.M;
-            Stack<int> q = default;
-            //int Source = default;
-            //Source = IN.SOURCE;
-            //AdjacencyList[] Adj = INPUT.NEIGH;
-            //ArrayList[] AdjacencyList = default;
-            //AdjacencyList = IN.ADJ;
-            //Adj = Source.ADJ[Source];
-            //nodeSetCardinal = IN.N;
-            //edgeSetCardinal = IN.M;
-            q = new Stack<int>();
-            //state = new BFSState(IN);
-            //BfsOutput = new BFSOutput(state);
-            //output = new Output(BfsOutput);
-            //int[] d = output.D;
-            d[Source] = 0;
-            q.Push(Source);
-            int Node;
-            int Neigh;
-            //Node = (Node)q.Pop();
-            //default;// 0;
-            while (q.Count > 0)
-            {
-                Node = q.Pop();
-                //Adj[Node] 
-                //Adj = Node.ADJ;
-                //M = Adj.Count;
-                // Adj = Node.ADJ[Node];
-                //ArrayList Adjs = null;
-                //Adjs = (List<T>)(Input.Adj[Node.GetHashCode()]);
-                //Adjs = Input.ADJ[Node.VALUE];
-                //int x = 0;
-                //int next_x = x + 1;
-                //if (Adj[Source] == 0)
-                //continue;
-                //int count = Input.ADJ[Node.VALUE].Count;
-                //T x = default(T);
-                //int i = Adjs.Count;
-                //List<T>.Enumerator enumerable;
-                //enumerable = Adjs.GetEnumerator();
-                //while (x < i)
-                // {
-                //int Neigh =(int)(Object) Adjs[x];
-                //
-                //Neigh = default(Node);
-                //int x = 0;
-                int x = default;
-                int y = default;
-                y = 1;
-                M = Adj[Node].Capacity;
-                //x = Node;
-                //y = START_INDEX;
-                do
-                {
-                    //Neigh = BfsInput.ADJ.ADJ[Node.VALUE][state.X];
-                    //Neigh = INPUT.NEIGH[Input.SOURCE.VALUE].NODES[Node.VALUE];
-                    Neigh = (int)Adj[Node][y];
-                    //Neigh = new Node<int>(Adj[Node]);// [x];
-                    //Equality
-                    //Comparer
+        //     // // Stack<int> q = default;
+        //     // // //int Source = default;
+        //     // // //Source = IN.SOURCE;
+        //     // // //AdjacencyList[] Adj = INPUT.NEIGH;
+        //     // // //ArrayList[] AdjacencyList = default;
+        //     // // //AdjacencyList = IN.ADJ;
+        //     // // //Adj = Source.ADJ[Source];
+        //     // // //nodeSetCardinal = IN.N;
+        //     // // //edgeSetCardinal = IN.M;
+        //     // // q = new Stack<int>();
+        //     // // //state = new BFSState(IN);
+        //     // // //BfsOutput = new BFSOutput(state);
+        //     // // //output = new Output(BfsOutput);
+        //     // // //int[] d = output.D;
+        //     // // d[Source] = 0;
+        //     // // q.Push(Source);
+        //     // // int Node;
+        //     // // int Neigh;
+        //     // // //Node = (Node)q.Pop();
+        //     // // //default;// 0;
+        //     // // while (q.Count > 0)
+        //     // // {
+        //     // //     Node = q.Pop();
+        //     // //     //Adj[Node] 
+        //     // //     //Adj = Node.ADJ;
+        //     // //     //M = Adj.Count;
+        //     // //     // Adj = Node.ADJ[Node];
+        //     // //     //ArrayList Adjs = null;
+        //     // //     //Adjs = (List<T>)(Input.Adj[Node.GetHashCode()]);
+        //     // //     //Adjs = Input.ADJ[Node.VALUE];
+        //     // //     //int x = 0;
+        //     // //     //int next_x = x + 1;
+        //     // //     //if (Adj[Source] == 0)
+        //     // //     //continue;
+        //     // //     //int count = Input.ADJ[Node.VALUE].Count;
+        //     // //     //T x = default(T);
+        //     // //     //int i = Adjs.Count;
+        //     // //     //List<T>.Enumerator enumerable;
+        //     // //     //enumerable = Adjs.GetEnumerator();
+        //     // //     //while (x < i)
+        //     // //     // {
+        //     // //     //int Neigh =(int)(Object) Adjs[x];
+        //     // //     //
+        //     // //     //Neigh = default(Node);
+        //     // //     //int x = 0;
+        //     // //     int x = default;
+        //     // //     int y = default;
+        //     // //     y = 1;
+        //     // //     M = Adj[Node].Capacity;
+        //     // //     //x = Node;
+        //     // //     //y = START_INDEX;
+        //     // //     do
+        //     // //     {
+        //     // //         //Neigh = BfsInput.ADJ.ADJ[Node.VALUE][state.X];
+        //     // //         //Neigh = INPUT.NEIGH[Input.SOURCE.VALUE].NODES[Node.VALUE];
+        //     // //         Neigh = (int)Adj[Node][y];
+        //     // //         //Neigh = new Node<int>(Adj[Node]);// [x];
+        //     // //         //Equality
+        //     // //         //Comparer
 
-                    //Comparer<T> comparer = new EqualityComparer<T>();
-                    //comparer.Compare(Neigh, Node);
-                    //Comparer.
-                    //int one = int.Parse(algorithm.OUTPUT.D[Neigh.VALUE]+"");
-                    //Comparer<int> comparer = default(Comparer<int>);
-                    //comparer = Comparer<int>.Default;
-                    //if (comparer.Compare(Node.VALUE, Neigh.VALUE + 1) > 0) {
-                    //if (comparer.Compare(Neigh.VALUE, Node.VALUE + 1) > 0)
-                    if (((int)(d[Node]) + 1) < ((int)d[Neigh]))
-                    {
-                        //if (BfsOutput.D.GetValue(Neigh.VALUE) > (BfsOutput.D[Node.VALUE] + 1))
-                        //{
-                        //int other = int.Parse(algorithm.OUTPUT.D[Node.VALUE]+"");
-                        //if (one > other + 1)
-                        //{
-                        //algorithm.OUTPUT.D[Neigh.VALUE] = BfsOutput.D[Node.VALUE] + 1;
-                        //BfsOutput.D.SetValue(BfsOutput.D[Node.VALUE] + 1, + 1,)
-                        //d[Neigh] = d[Node] + 1;
-                        //q.
-                        d[Neigh] = (int)d[Node] + 1;
-                        //state.D.SetItem((d[Node] + 1), Neigh);
-                        //algorithm.OUTPUT.D[Neigh.VALUE] = BfsOutput.D[Node.VALUE] + 1;
-                        q.Push(Neigh);
-                        //break;
-                        //state.NEIGH = new Node(0);
-                    }
-                    else
-                    {
-                        x = y;
-                        y = x + 1;
-                    }
-                    //}
-                    //x++;
-                    //continue;
-                    //state = new State(state);
+        //     // //         //Comparer<T> comparer = new EqualityComparer<T>();
+        //     // //         //comparer.Compare(Neigh, Node);
+        //     // //         //Comparer.
+        //     // //         //int one = int.Parse(algorithm.OUTPUT.D[Neigh.VALUE]+"");
+        //     // //         //Comparer<int> comparer = default(Comparer<int>);
+        //     // //         //comparer = Comparer<int>.Default;
+        //     // //         //if (comparer.Compare(Node.VALUE, Neigh.VALUE + 1) > 0) {
+        //     // //         //if (comparer.Compare(Neigh.VALUE, Node.VALUE + 1) > 0)
+        //     // //         // if (((int)(d[Node]) + 1) < ((int)d[Neigh]))
+        //     // //         // {
+        //     // //         //     //if (BfsOutput.D.GetValue(Neigh.VALUE) > (BfsOutput.D[Node.VALUE] + 1))
+        //     // //         //     //{
+        //     // //         //     //int other = int.Parse(algorithm.OUTPUT.D[Node.VALUE]+"");
+        //     // //         //     //if (one > other + 1)
+        //     // //         //     //{
+        //     // //         //     //algorithm.OUTPUT.D[Neigh.VALUE] = BfsOutput.D[Node.VALUE] + 1;
+        //     // //         //     //BfsOutput.D.SetValue(BfsOutput.D[Node.VALUE] + 1, + 1,)
+        //     // //         //     //d[Neigh] = d[Node] + 1;
+        //     // //         //     //q.
+        //     // //         //     // d[Neigh] = (int)d[Node] + 1;
+        //     // //         //     //state.D.SetItem((d[Node] + 1), Neigh);
+        //     // //         //     //algorithm.OUTPUT.D[Neigh.VALUE] = BfsOutput.D[Node.VALUE] + 1;
+        //     // //         //     q.Push(Neigh);
+        //     // //         //     //break;
+        //     // //         //     //state.NEIGH = new Node(0);
+        //     // //         // }
+        //     //         // else
+        //     //         // {
+        //     //         //     x = y;
+        //     //         //     y = x + 1;
+        //     //         // }
+        //     //         //}
+        //     //         //x++;
+        //     //         //continue;
+        //     //         //state = new State(state);
 
-                    //prev = state;
-                    //state = new BFSState(prev, Node, Neigh);
-                    //Console.Out.WriteLine(state);
-                    //next_x = x + 1;
-                    //d[Neigh] = (int)((Object)d[Node] + 1);
-                    //} while (state.NEIGH.VALUE < Input.N.VALUE);
-                    //} while (state.NEIGH.VALUE < Input.N.VALUE);
-                    //} while (x < Input.NEIGH[state.NEIGH.VALUE].NODES.Count);
-                } while (y < M);
+        //     //         //prev = state;
+        //     //         //state = new BFSState(prev, Node, Neigh);
+        //     //         //Console.Out.WriteLine(state);
+        //     //         //next_x = x + 1;
+        //     //         //d[Neigh] = (int)((Object)d[Node] + 1);
+        //     //         //} while (state.NEIGH.VALUE < Input.N.VALUE);
+        //     //         //} while (state.NEIGH.VALUE < Input.N.VALUE);
+        //     //         //} while (x < Input.NEIGH[state.NEIGH.VALUE].NODES.Count);
+        //     //     } while (y < M);
 
-                // BfsOutput = default(BFSOutput);  
-                //BfsOutput = new BFSOutput(state);
-                //Console.Out.WriteLine(BfsOutput);
-                //throw new Exception("Source < 0");
-                //int x = default(int);
-                //int y = default(int);
-                //int i = default(int);
-                //int j = default(int);
-                //Input Input = default(Input);
-                //Input = new Input(Source,Adj,N,M);
-                //Node SourceNode = default(Node);
-                //SourceNode = new Node(Source);
+        //     //     // BfsOutput = default(BFSOutput);  
+        //     //     //BfsOutput = new BFSOutput(state);
+        //     //     //Console.Out.WriteLine(BfsOutput);
+        //     //     //throw new Exception("Source < 0");
+        //     //     //int x = default(int);
+        //     //     //int y = default(int);
+        //     //     //int i = default(int);
+        //     //     //int j = default(int);
+        //     //     //Input Input = default(Input);
+        //     //     //Input = new Input(Source,Adj,N,M);
+        //     //     //Node SourceNode = default(Node);
+        //     //     //SourceNode = new Node(Source);
 
-                //Cardinal nodesCardinal = default(Cardinal);
-                //Cardinal edgesCardinal = default(Cardinal);
-                //BFSAlgorithm algorithm = default(BFSAlgorithm); ;
-                //BFSInput BfsInput = new BFSInput();
-                //BFSState state = default(BFSState);
-                //List<int> d = null;
-                //d = new List<int>();
-                //Result.D = new List<int>();
-                //List<T> d = null;
-                //BFSOutput<T> Result = null;
-                //Result = new BFSOutput<T>();
-                //return convert(d, N);
-                //return convert(d, 0);
-                //throw new Exception("Source < 0");
-                //SourceNode = new Input()
-                //AdjancencyList = new AdjacencyList(Adj);
+        //     //     //Cardinal nodesCardinal = default(Cardinal);
+        //     //     //Cardinal edgesCardinal = default(Cardinal);
+        //     //     //BFSAlgorithm algorithm = default(BFSAlgorithm); ;
+        //     //     //BFSInput BfsInput = new BFSInput();
+        //     //     //BFSState state = default(BFSState);
+        //     //     //List<int> d = null;
+        //     //     //d = new List<int>();
+        //     //     //Result.D = new List<int>();
+        //     //     //List<T> d = null;
+        //     //     //BFSOutput<T> Result = null;
+        //     //     //Result = new BFSOutput<T>();
+        //     //     //return convert(d, N);
+        //     //     //return convert(d, 0);
+        //     //     //throw new Exception("Source < 0");
+        //     //     //SourceNode = new Input()
+        //     //     //AdjancencyList = new AdjacencyList(Adj);
 
-                //BfsInput = new BFSInput(SourceNode, AdjancencyList,nodeSetCardinal,edgeSetCardinal);
-                //new BFSOutput(Input);
-                //nodesCardinal = new Cardinal(N);
-                //edgesCardinal = new Cardinal(M);
-                //Input = new Input(Source,   Adj,N,M);
-                //ArrayList d = null;
-                //d = new List<T>();
-                //d = new ArrayList(Input.N);
+        //     //     //BfsInput = new BFSInput(SourceNode, AdjancencyList,nodeSetCardinal,edgeSetCardinal);
+        //     //     //new BFSOutput(Input);
+        //     //     //nodesCardinal = new Cardinal(N);
+        //     //     //edgesCardinal = new Cardinal(M);
+        //     //     //Input = new Input(Source,   Adj,N,M);
+        //     //     //ArrayList d = null;
+        //     //     //d = new List<T>();
+        //     //     //d = new ArrayList(Input.N);
 
-                //Input = new Input(SourceNode, AdjancencyList, nodesCardinal, edgesCardinal); ;
-                //state = new BFSState(Input.N);
-                //BFSState init = default(BFSState);
-                //algorithm = new BFSAlgorithm(BfsInput,BfsOutput,state);
-                //algorithm = new BFSAlgorithm(BfsInput, BfsOutput);
-                //algorithm = new BFSAlgorithm(BfsInput, BfsOutput);
-                //new Output(Input.N);
-                //output = new Output(Input.N); ;
-                //fill(output,Input);
+        //     //     //Input = new Input(SourceNode, AdjancencyList, nodesCardinal, edgesCardinal); ;
+        //     //     //state = new BFSState(Input.N);
+        //     //     //BFSState init = default(BFSState);
+        //     //     //algorithm = new BFSAlgorithm(BfsInput,BfsOutput,state);
+        //     //     //algorithm = new BFSAlgorithm(BfsInput, BfsOutput);
+        //     //     //algorithm = new BFSAlgorithm(BfsInput, BfsOutput);
+        //     //     //new Output(Input.N);
+        //     //     //output = new Output(Input.N); ;
+        //     //     //fill(output,Input);
 
 
-                //continue
-                //int x = 1;
-                //while (x < N + 1)
-                //{
-                //d.Add(int.MaxValue);
-                //x++;
-                //d}
+        //     //     //continue
+        //     //     //int x = 1;
+        //     //     //while (x < N + 1)
+        //     //     //{
+        //     //     //d.Add(int.MaxValue);
+        //     //     //x++;
+        //     //     //d}
 
-                //Stack q;
-                //q = new Stack();
+        //     //     //Stack q;
+        //     //     //q = new Stack();
 
-                //q.Push(Source);
-                //if (d.Count == 0)
-                //{
-                //return convert(d,0); ;
-                //}
-                //else
-                //{
-                //d[Source] = 0;
-                //}
-                //while (algorithm.STATE.Q.Count > 0)
+        //     //     //q.Push(Source);
+        //     //     //if (d.Count == 0)
+        //     //     //{
+        //     //     //return convert(d,0); ;
+        //     //     //}
+        //     //     //else
+        //     //     //{
+        //     //     //d[Source] = 0;
+        //     //     //}
+        //     //     //while (algorithm.STATE.Q.Count > 0)
 
-            }
-            //ArrayList copy;
-            //copy = replace(int.MaxValue, -1, d, N);
-            //Result = convert(copy);
-            //Object obj = q.Pop();
-            //if (obj == null)
-            //{
-            //continue;
-            //} 
-            //else
-            //{
-            //int Node = (int)obj;
-            //ArrayList Adjs = Adj[Node];
-            //if (Adjs == null)
-            //{
-            //continue;
-            //} 
-            //else
-            //{
-            //ArrayList list = new ArrayList();
-            //IEnumerator enumarator;
-            //enumarator = Adjs.GetEnumerator();
-            //while (enumarator.MoveNext()) {
-            //   list.Add(enumarator.Current);
-            //}
-            //int i = 0;
-            //while (i < list.Count)
-            //{
-            //  Object neigh_Obj = list[i];
-            //  int Neigh = (int)neigh_Obj;
-            //  Object d_Neigh = d[Neigh];
-            //  int i_d_Neigh = (int)d_Neigh;
-            //  Object d_Node = d[Node];
-            //  int i_d_Node = (int)d_Node;
-            //  if (i_d_Node < i_d_Neigh + 1)
-            //  {
-            //      d[Neigh] = (i_d_Neigh + 1);
-            //      q.Push(d_Neigh);
-            //  }
-            //  i++;
-            //int Neigh = list[Index];
-            //}
-            //}
-            //}
-            //}
-            //ArrayList copy = replace(int.MaxValue, -1, d, N);
-            //int[] d = convert(copy, N);
-            //int[] Result = convert(copy, N);
-            //return Result;
+        //     // }
+        //     // //ArrayList copy;
+        //     //copy = replace(int.MaxValue, -1, d, N);
+        //     //Result = convert(copy);
+        //     //Object obj = q.Pop();
+        //     //if (obj == null)
+        //     //{
+        //     //continue;
+        //     //} 
+        //     //else
+        //     //{
+        //     //int Node = (int)obj;
+        //     //ArrayList Adjs = Adj[Node];
+        //     //if (Adjs == null)
+        //     //{
+        //     //continue;
+        //     //} 
+        //     //else
+        //     //{
+        //     //ArrayList list = new ArrayList();
+        //     //IEnumerator enumarator;
+        //     //enumarator = Adjs.GetEnumerator();
+        //     //while (enumarator.MoveNext()) {
+        //     //   list.Add(enumarator.Current);
+        //     //}
+        //     //int i = 0;
+        //     //while (i < list.Count)
+        //     //{
+        //     //  Object neigh_Obj = list[i];
+        //     //  int Neigh = (int)neigh_Obj;
+        //     //  Object d_Neigh = d[Neigh];
+        //     //  int i_d_Neigh = (int)d_Neigh;
+        //     //  Object d_Node = d[Node];
+        //     //  int i_d_Node = (int)d_Node;
+        //     //  if (i_d_Node < i_d_Neigh + 1)
+        //     //  {
+        //     //      d[Neigh] = (i_d_Neigh + 1);
+        //     //      q.Push(d_Neigh);
+        //     //  }
+        //     //  i++;
+        //     //int Neigh = list[Index];
+        //     //}
+        //     //}
+        //     //}
+        //     //}
+        //     //ArrayList copy = replace(int.MaxValue, -1, d, N);
+        //     //int[] d = convert(copy, N);
+        //     //int[] Result = convert(copy, N);
+        //     //return Result;
 
-            //Copy(BfsOutput,output,Input);
-            //return Convert(output,Input);
+        //     //Copy(BfsOutput,output,Input);
+        //     //return Convert(output,Input);
 
-            //output = new Output(BfsOutput);
-            //int[] temp = convert(algorithm.OUTPUT.D, algorithm.INPUT.N);
-            //return temp;
-            return d;
-        }
+        //     //output = new Output(BfsOutput);
+        //     //int[] temp = convert(algorithm.OUTPUT.D, algorithm.INPUT.N);
+        //     //return temp;
+        //     return d;
+        // }
         //return BfsOutput;
         //}
         //public int check(Object Input)
@@ -1292,7 +1292,7 @@ namespace PA_Library
 
         //Provides string representation
 
-        public override string ToString() => $"({input})";
+        // public override string ToString() => $"({input})";
 
 
         /*
@@ -1386,4 +1386,5 @@ namespace PA_Library
         //    return Result;
         //}
     }
+    // }
 }

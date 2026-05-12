@@ -22,33 +22,33 @@ namespace PA_Library
         [DllImport("palibrary")]
         public static extern int PAListDelete(PASeries PA);
 
-        public PAList(ArrayList Adj, int M) : this()
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            ADJ = default;
-            M = default;
-            //N = default;
-            Result = Check(Adj);
-            if (Result == Success)
-            {
-                Result = Check(M);
-                if (Result == Success)
-                {
-                    M = Copy(M);
-                    ADJ = Copy(Adj, M);
-                }
-                else if (Result == Fail)
-                {
-                    Console.Error.WriteLine("edges error");
-                }
-            }
-            else
-            {
-                Console.Error.WriteLine("Adj error");
-            }
-        }
+        // public PAList(ArrayList Adj, int M) : this()
+        // {
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     int Result = Success;
+        //     ADJ = default;
+        //     M = default;
+        //     //N = default;
+        //     Result = Check(Adj);
+        //     if (Result == Success)
+        //     {
+        //         Result = Check(M);
+        //         if (Result == Success)
+        //         {
+        //             M = Copy(M);
+        //             ADJ = Copy(Adj, M);
+        //         }
+        //         else if (Result == Fail)
+        //         {
+        //             Console.Error.WriteLine("edges error");
+        //         }
+        //     }
+        //     else
+        //     {
+        //         Console.Error.WriteLine("Adj error");
+        //     }
+        // }
         //public AdjacencyList(AdjacencyList Adj, Cardinal N)
         //{
         //    ADJ = default;
@@ -85,45 +85,45 @@ namespace PA_Library
         //    //ADJ = Adj;
         //}
 
-        public ArrayList Copy(ArrayList Adj, int M)
-        {
-            int x = 0;
-            ArrayList copy = new ArrayList(M);
-            while (x < M)
-            {
-                copy[x] = Adj[x];
-                x++;
-            }
-            ;
-            return copy;
-        }
+        // public ArrayList Copy(ArrayList Adj, int M)
+        // {
+        //     int x = 0;
+        //     ArrayList copy = new ArrayList(M);
+        //     while (x < M)
+        //     {
+        //         copy[x] = Adj[x];
+        //         x++;
+        //     }
+        //     ;
+        //     return copy;
+        // }
 
-        public int Check(ArrayList Adj)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            if (Adj == null)
-            {
-                Console.Error.WriteLine($"{Adj} == null");
-                Result = Fail;
-            }
-            else if (Adj != null)
-            {
-                Result = Success;
-            }
-            return Result;
-        }
-        public int copy(int M)
-        {
-            return 1;
-        }
-        public int Copy(int M)
-        {
-            int copy;
-            copy = M;
-            return M;
-        }
+        // public int Check(ArrayList Adj)
+        // {
+        //     // int Success = 0;
+        //     // int Fail = -1;
+        //     // int Result = Success;
+        //     // if (Adj == null)
+        //     // {
+        //     //     Console.Error.WriteLine($"{Adj} == null");
+        //     //     Result = Fail;
+        //     // }
+        //     // else if (Adj != null)
+        //     // {
+        //     //     Result = Success;
+        //     // }
+        //     // return Result;
+        // }
+        // public int copy(int M)
+        // {
+        //     return 1;
+        // }
+        // public int Copy(int M)
+        // {
+        //     int copy;
+        //     copy = M;
+        //     return M;
+        // }
         //public int this[int index]
         //{
         //    int Neigh = (int) 
@@ -208,25 +208,25 @@ namespace PA_Library
         //    }
         //}
 
-        public int Check(int M)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            if (M < 0)
-            {
-                Result = Fail;
-            }
-            else if (M == 0)
-            {
-                Result = Fail;
-            }
-            else if (M > 0)
-            {
-                Result = Success;
-            }
-            return Result;
-        }
+        // public int Check(int M)
+        // {
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     int Result = Success;
+        //     if (M < 0)
+        //     {
+        //         Result = Fail;
+        //     }
+        //     else if (M == 0)
+        //     {
+        //         Result = Fail;
+        //     }
+        //     else if (M > 0)
+        //     {
+        //         Result = Success;
+        //     }
+        //     return Result;
+        // }
         //int Result = default;
         //int valid = 1;
         //int iv
@@ -394,70 +394,70 @@ namespace PA_Library
         //    return copy;
         //}
 
-        private static int checkAdjacencyList(PASeries list)
-        // private static int checkAdjacencyList(AdjacencyList list)
-        {
-            //int Result = default(int);
-            int valid = 1;
-            //int iv
-            //int invalid = 0;
-            //int i = default(int);
-            //int j = default(int());
-            //int j = default(int());
-            //int i = 0;
-            //int j = 0;
+        // private static int checkAdjacencyList(PASeries list)
+        // // private static int checkAdjacencyList(AdjacencyList list)
+        // {
+        //     //int Result = default(int);
+        //     int valid = 1;
+        //     //int iv
+        //     //int invalid = 0;
+        //     //int i = default(int);
+        //     //int j = default(int());
+        //     //int j = default(int());
+        //     //int i = 0;
+        //     //int j = 0;
 
 
-            //Object o = (Object)list[i];
-            //N = list.Length;
-            //N = list.Le
-            //if (0 == null)
-            //if (0 == null)
-            //if (o == null)
-            //{
-            //    //Console.Err
-            //    Console.Error.WriteLine("list == null");
-            //    i = j;
-            //    j = i + 1;
-            //}
-            //else if (o != null)
-            //{
-            //    //Node Node = (Node)list[i];
-            //    //if (np)
-            //    //if (nd)
-            //    //if (Node == null)
-            //    //{
-            //    //Console.Error.WriteLine("list["+i+"]" =
-            //    //Console.Error.WriteLine("list[" + i + "] == null");
-            //    //i = j;
-            //    //j = i + 1;
-            //    //}
-            //    //else if (Node != null)
-            //    //{
-            //    i = 1;
-            //    j = i + 1;
-            //    //}
-            //    //N = list.NODES.C;
-            //    //while (i < N)
-            //    //{
-            //    //Object o = dfa
-            //    //o = default(Object);
-            //    //
-            //    //o = list[i];
-            //    //if (o == null)
-            //    //{
-            //    //Console.Error.WriteLine("Adj[" + i + "] = null");
-            //    //return invalid;
-            //    //}
-            //    //else
-            //    //{
-            //    //i = j;
-            //    //j = i + 1;
-            //    //}
-            //    //}
-            //}
-            return valid;
-        }
+        //     //Object o = (Object)list[i];
+        //     //N = list.Length;
+        //     //N = list.Le
+        //     //if (0 == null)
+        //     //if (0 == null)
+        //     //if (o == null)
+        //     //{
+        //     //    //Console.Err
+        //     //    Console.Error.WriteLine("list == null");
+        //     //    i = j;
+        //     //    j = i + 1;
+        //     //}
+        //     //else if (o != null)
+        //     //{
+        //     //    //Node Node = (Node)list[i];
+        //     //    //if (np)
+        //     //    //if (nd)
+        //     //    //if (Node == null)
+        //     //    //{
+        //     //    //Console.Error.WriteLine("list["+i+"]" =
+        //     //    //Console.Error.WriteLine("list[" + i + "] == null");
+        //     //    //i = j;
+        //     //    //j = i + 1;
+        //     //    //}
+        //     //    //else if (Node != null)
+        //     //    //{
+        //     //    i = 1;
+        //     //    j = i + 1;
+        //     //    //}
+        //     //    //N = list.NODES.C;
+        //     //    //while (i < N)
+        //     //    //{
+        //     //    //Object o = dfa
+        //     //    //o = default(Object);
+        //     //    //
+        //     //    //o = list[i];
+        //     //    //if (o == null)
+        //     //    //{
+        //     //    //Console.Error.WriteLine("Adj[" + i + "] = null");
+        //     //    //return invalid;
+        //     //    //}
+        //     //    //else
+        //     //    //{
+        //     //    //i = j;
+        //     //    //j = i + 1;
+        //     //    //}
+        //     //    //}
+        //     //}
+        //     return valid;
+        // }
         //public AdjacencyList(ArrayList[] Adj)
         //public AdjacencyList(ArrayList Adj)
         ////public AdjacencyList(ArrayList[] Adj)
@@ -513,7 +513,8 @@ namespace PA_Library
                 //    Console.Out.WriteLine("(" + i.VALUE + "," + e.NODE.VALUE + ")");
                 //}
                 //}
-                return (int)ADJ[i];
+                // return (int)ADJ[i];
+                return 0;
             }
 
             //=> NODES[i];
@@ -636,7 +637,8 @@ namespace PA_Library
         //public T NODE { get; }
 
         //        public override string ToString() => $"({ADJ}, {OUTPUT})";
-        public override string ToString() => $"({ADJ})";
+        // public override string ToString() => $"({ADJ})";
+        // public override string ToString() => $"()";
 
     }
 }

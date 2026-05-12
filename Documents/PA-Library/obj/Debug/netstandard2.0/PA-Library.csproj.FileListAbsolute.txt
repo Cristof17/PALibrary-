@@ -14,3 +14,6 @@ C:/Users/crist/source/repos/PA-Library/PA-Library/obj/Debug/netstandard2.0/PA-Li
 /Users/cristoforrotsching/Documents/PA-Library/obj/Debug/netstandard2.0/PA-Library.AssemblyInfoInputs.cache
 /Users/cristoforrotsching/Documents/PA-Library/obj/Debug/netstandard2.0/PA-Library.AssemblyInfo.cs
 /Users/cristoforrotsching/Documents/PA-Library/obj/Debug/netstandard2.0/PA-Library.csproj.CoreCompileInputs.cache
+/Users/cristoforrotsching/Documents/PA-Library/bin/Debug/netstandard2.0/PA-Library.deps.json
+/Users/cristoforrotsching/Documents/PA-Library/bin/Debug/netstandard2.0/PA-Library.dll
+/Users/cristoforrotsching/Documents/PA-Library/bin/Debug/netstandard2.0/PA-Library.pdb

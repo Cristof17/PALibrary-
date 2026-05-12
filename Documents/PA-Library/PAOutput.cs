@@ -206,16 +206,16 @@ namespace PA_Library
         //    return copy;
         //}
 
-        public int this[int index]
-        {
-            get {
-                return (int)rezultat[index];
-            }
-            set
-            {
-                rezultat[index] = value;
-            }
-        }
+        // public int this[int index]
+        // {
+        //     get {
+        //         return (int)rezultat[index];
+        //     }
+        //     set
+        //     {
+        //         rezultat[index] = value;
+        //     }
+        // }
 
         // BFSResult Copy(BFSResult Rezultat)
         // {
@@ -286,21 +286,21 @@ namespace PA_Library
         // public static explicit operator BFSOutput(ArrayList list) => (BFSOutput)list;
         // public static explicit operator ArrayList(BFSOutput output) => output.rezultat.d.toArrayList(output.rezultat.d.head);
 
-        public override string ToString() => $"({rezultat})";
+        // public override string ToString() => $"({rezultat})";
 
-        ArrayList Copy(ArrayList d, int index, int N)
-        {
-            ArrayList copy = default;
-            int x = index;
-            int y = x + 1;
-            while (x < (N + 1))
-            {
-                copy[x] = d[x];
-                x = y;
-                y = x + 1;
-            }
-            return copy;
-        }
+        // ArrayList Copy(ArrayList d, int index, int N)
+        // {
+        //     ArrayList copy = default;
+        //     int x = index;
+        //     int y = x + 1;
+        //     while (x < (N + 1))
+        //     {
+        //         copy[x] = d[x];
+        //         x = y;
+        //         y = x + 1;
+        //     }
+        //     return copy;
+        // }
         //public int check(ArrayList d)
         //{
         //    int Fail = -1;
