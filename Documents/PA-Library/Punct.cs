@@ -10,13 +10,13 @@ namespace PA_Library
     //public struct PANod
     {
     [DllImport("palibrary")]
-    public static extern struct PAElement PAElementConstruct(struct PAData Data, struct PAElement Next, struct PAStatus Status);
+    public static extern  PAElement PAElementConstruct( PAData Data,  PAElement Next,  PAStatus Status);
     [DllImport("palibrary")]
-    public static extern int PAElementRuin(struct PAData Data, struct PAElement Next, struct PAStatus Status);
+    public static extern int PAElementRuin( PAData Data,  PAElement Next,  PAStatus Status);
     [DllImport("palibrary")]
-    public static extern struct PAElement PAElementInit(struct PAElement e);
+    public static extern  PAElement PAElementInit( PAElement e);
     [DllImport("palibrary")]
-    public static extern int PAElementDelete(struct PAElement PA);
+    public static extern int PAElementDelete( PAElement PA);
     [DllImport("palibrary")]
     public static extern void PAElementVisit();
     [DllImport("palibrary")]
@@ -86,7 +86,7 @@ namespace PA_Library
         //    stare = Stare;
         //}
         [StructLayout(LayoutKind.Sequential)]
-        private struct PAElement element;
+        private  PAElement element;
         // PAData data { get; set; }
         // public PANod next { get; set; }
 
