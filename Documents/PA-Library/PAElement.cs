@@ -175,7 +175,7 @@ namespace PA_Library
             return node;
         }
 
-        public PANod this[int index]
+        public PAElement this[int index]
         {
             get
             {

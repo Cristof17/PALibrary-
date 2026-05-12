@@ -1,6 +1,8 @@
 using System.Linq.Expressions;
 using PA_Library;
 using System.Reflection;
+using System.InteropServices;
+using System.Runtime.InteropServices;
 using System.Runtime.CompilerServices;
 using System.Xml.XPath;
 
@@ -86,7 +88,7 @@ namespace PA_Library
         //    next = Next;
         //    stare = Stare;
         //}
-        [StructLayout(LayoutKind.Sequential)]
+        // [StructLayout(LayoutKind.Sequential)]
         private PAElement element;
         // PAData data { get; set; }
         // public PANod next { get; set; }
