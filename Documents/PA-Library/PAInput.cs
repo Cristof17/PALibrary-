@@ -10,7 +10,7 @@ using System.Xml.XPath;
 
 namespace PA_Library
 {
-    [StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Explicit)]
     public struct PAInput
     //public readonly class BFSInput
     //public readonly class BFSInput

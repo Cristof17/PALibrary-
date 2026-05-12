@@ -3,7 +3,7 @@ using PA_Library;
 using System.Transactions;
 using System.Runtime.InteropServices;
 
-[StructLayout(LayoutKind.Sequential)]
+[StructLayout(LayoutKind.Explicit)]
 public struct PAData
 {
     [DllImport("palibrary")]

@@ -7,7 +7,7 @@ using System.Xml.XPath;
 
 namespace PA_Library
 {
-    [StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Explicit)]
     public struct PASeries 
     {
         [DllImport("palibrary")]
