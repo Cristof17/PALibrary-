@@ -13,14 +13,14 @@ namespace PA_Library
     //public readonly struct BFSAlgorithm
     {
         [DllInport("palibrary")]
-        private static extern struct BFSProcedure BFSProcedureConstruct(struct PAInput Input, struct PATree Tree);
+        private static extern BFSProcedure BFSProcedureConstruct( PAInput Input,  PATree Tree);
         [DllInport("palibrary")]
-        private static extern int BFSProcedureRuin(struct PAInput in, struct PATree tree);
+        private static extern int BFSProcedureRuin( PAInput input,  PATree tree);
         [DllInport("palibrary")]
-        private static extern int BFSProcedureDelete(struct BFSProcedure bfs);
+        private static extern int BFSProcedureDelete( BFSProcedure bfs);
         [DllInport("palibrary")]
-        private static extern struct PAElement BFS(struct PAData index);
-        public Instruire(Intrare in, Arbore tree)
+        private static extern PAElement BFS( PAData index);
+        public Instruire(Intrare input, Arbore tree)
         {
             
         }
