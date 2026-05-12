@@ -1,9 +1,9 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project ToolsVersion="Current">
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
   <PropertyGroup>
-    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
-    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
-    <RootNamespace>PA_Library</RootNamespace>
+  <TargetFramework>net40</TargetFramework>
+    <!--<TargetFrameworkVersion>v4.0</TargetFrameworkVersion>-->
+    <!--<RootNamespace>PA_Library</RootNamespace>-->
   </PropertyGroup>
 
   <ItemGroup>
