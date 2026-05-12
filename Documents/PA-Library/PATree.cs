@@ -9,9 +9,9 @@ namespace PA_Library {
 		[DllImport("palibrary")]
         public static extern void PATreeSearch( PAElement nod);
 		[DllImport("palibrary")]
-        public static extern  PATree PATreeConstruct( PACount n,  PACount m,  PAList adj, struct PAElement source);
+        public static extern  PATree PATreeConstruct( PACount n,  PACount m,  PAList adj,  PAElement source);
 		[DllImport("palibrary")]
-        public static extern void PATreeRuin( PACount n,  PACount m,  PAList adj, struct PAElement source);
+        public static extern void PATreeRuin( PACount n,  PACount m,  PAList adj,  PAElement source);
 		[DllImport("palibrary")]
         public static extern  PATree PATreeInit( PATree graf);
 		[DllImport("palibrary")]
