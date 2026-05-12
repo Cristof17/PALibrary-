@@ -1,3 +1,6 @@
+using PA_Library;
+using System;
+using System.Runtime.InteropServices;
 using System.Xml.XPath;
 namespace PA_Library {
 	public class Arbore

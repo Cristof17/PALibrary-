@@ -1,3 +1,6 @@
+using PA_Library;
+using System;
+using System.Runtime.InteropServices;
 namespace PA_Library
 {
 	[StructLayout(LayoutKind.Sequential)]
@@ -79,47 +82,48 @@ namespace PA_Library
 				}
 			}
 
-			private PAPereche p;
+			// private PAPereche p;
+			private PAPair p;
 			//public Node NODE { get; }
 			//public Node NEIGH { get; }
 
-			int Check(PANod Node, PANod Neigh)
-			{
-				int Success = 0;
-				int Fail = 0;
-				int Result = Success;
-				if (Node == null)
-				{
-					//Console.Error.WriteLine($"{Node} == null");
-					Result = Fail;
-				}
-				else
-				{
-					Result = Success;
-					if (Neigh == null)
-					{
-						//Console.Error.WriteLine($"{Neigh} == null");
-						Result = Fail;
-					}
-					else
-					{
-						Result = Success;
-					}
-				}
-				return Result;
-			}
+			// int Check(PANod Node, PANod Neigh)
+			// {
+			// 	int Success = 0;
+			// 	int Fail = 0;
+			// 	int Result = Success;
+			// 	if (Node == null)
+			// 	{
+			// 		//Console.Error.WriteLine($"{Node} == null");
+			// 		Result = Fail;
+			// 	}
+			// 	else
+			// 	{
+			// 		Result = Success;
+			// 		if (Neigh == null)
+			// 		{
+			// 			//Console.Error.WriteLine($"{Neigh} == null");
+			// 			Result = Fail;
+			// 		}
+			// 		else
+			// 		{
+			// 			Result = Success;
+			// 		}
+			// 	}
+			// 	return Result;
+			// }
 
-			[StructLayout(LayoutKind.Sequential)]
-			private PALink link;
+			// [StructLayout(LayoutKind.Sequential)]
+			// private PALink link;
 			// PANod node { get; }
 			// PANod neigh { get; }
-			int Copy(PANod Node)
-			{
-				PANod copy = default;
-				copy = new PANod(Node);
-				//copy.next = Node.next;
-				return copy;
-			}
+			// int Copy(PANod Node)
+			// {
+			// 	PANod copy = default;
+			// 	copy = new PANod(Node);
+			// 	//copy.next = Node.next;
+			// 	return copy;
+			// }
 			public override string ToString() => $"({node}, {neigh})";
 		}
 		//class YourClass

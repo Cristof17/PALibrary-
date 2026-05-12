@@ -89,7 +89,7 @@ namespace PA_Library
         //    stare = Stare;
         //}
         // [StructLayout(LayoutKind.Sequential)]
-        private PAElement element;
+        // private PAElement element;
         // PAData data { get; set; }
         // public PAElement next { get; set; }
 
@@ -112,20 +112,20 @@ namespace PA_Library
         // public static implicit operator ulong(PAElement d) => (ulong)d.data.value;
         // public static explicit operator PAElement(ulong b) => Copy(b);// new PAElement(b);
          
-        public static PAElement operator ++(PAElement a) => a.data.toPAElement();//;
-        public static explicit operator PAData(PAElement d) => d.data;
-        public static implicit operator byte(PAElement d) => (byte)d.data.value;
-        public static explicit operator PAElement(byte b) => Copy(b);
-        public static implicit operator int(PAElement d) => (int)d.data.value;
-        public static explicit operator PAElement(int b) => Copy(b);
-        public static implicit operator long(PAElement d) => (long)d.data.value;
-        public static explicit operator PAElement(long b) => Copy(b); //new PAElement(b);
-        public static implicit operator short(PAElement d) => (short)d.data.value;
-        public static explicit operator PAElement(short b) => Copy(b); //new PAElement(b);
-        public static implicit operator ushort(PAElement d) => (ushort)d.data.value;
-        public static explicit operator PAElement(ushort b) => Copy(b);// new PAElement(b);
-        public static implicit operator ulong(PAElement d) => (ulong)d.data.value;
-        public static explicit operator PAElement(ulong b) => Copy(b);// new PAElement(b);
+        // public static PAElement operator ++(PAElement a) => a.data.toPAElement();//;
+        // public static explicit operator PAData(PAElement d) => d.data;
+        // public static implicit operator byte(PAElement d) => (byte)d.data.value;
+        // public static explicit operator PAElement(byte b) => Copy(b);
+        // public static implicit operator int(PAElement d) => (int)d.data.value;
+        // public static explicit operator PAElement(int b) => Copy(b);
+        // public static implicit operator long(PAElement d) => (long)d.data.value;
+        // public static explicit operator PAElement(long b) => Copy(b); //new PAElement(b);
+        // public static implicit operator short(PAElement d) => (short)d.data.value;
+        // public static explicit operator PAElement(short b) => Copy(b); //new PAElement(b);
+        // public static implicit operator ushort(PAElement d) => (ushort)d.data.value;
+        // public static explicit operator PAElement(ushort b) => Copy(b);// new PAElement(b);
+        // public static implicit operator ulong(PAElement d) => (ulong)d.;
+        // public static explicit operator PAElement(ulong b) => Copy(b);// new PAElement(b);
     //     public static PAElement Copy(byte Data)
     //     {
     //         PAData data;

@@ -1,10 +1,10 @@
 ﻿using System;
-
+using System.Runtime.InteropServices;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct PACount
-    //public struct PAPACardinal
+    //public struct PAPACount
     {
         [DllImport("palibrary")]
         public static extern void PACountConstruct(int value);
@@ -18,7 +18,8 @@ namespace PA_Library
 
         // [StructLayout(LayoutKind.Sequential)]
         // public struct PACount Count {get;}
-        public Cardinal(int number)
+        public PACount(int number)
+        // public Cardinal(int number)
         {
             NUMBER = default;//(int) value;
         }
@@ -30,7 +31,7 @@ namespace PA_Library
         // {
         //     NUMBER = default;// value;
         // }
-        //public PACardinal(int value)
+        //public PACount(int value)
         //{
         //NUMBER = value;
         //if (value < 0)
@@ -50,36 +51,36 @@ namespace PA_Library
         //OUTPUT = output;
         //}
 
-        public static implicit operator byte(PACardinal d) => (byte)d.NUMBER;
-        public static implicit operator PACardinal(byte b) => new PACardinal(b);
-        public static implicit operator int(PACardinal d) => (int)d.NUMBER;
-        public static implicit operator PACardinal(int b) => new PACardinal(b);
-        public static implicit operator long(PACardinal d) => (long)d.NUMBER;
-        public static explicit operator PACardinal(long b) => new PACardinal(b);
-        public static implicit operator short(PACardinal d) => (short)d.NUMBER;
-        public static explicit operator PACardinal(short b) => new PACardinal(b);
-        public static implicit operator ushort(PACardinal d) => (ushort)d.NUMBER;
-        public static explicit operator PACardinal(ushort b) => new PACardinal(b);
-        public static implicit operator ulong(PACardinal d) => (ulong)d.NUMBER;
-        public static explicit operator PACardinal(ulong b) => new PACardinal(b);
-        public static PACardinal operator -(PACardinal a) => new PACardinal(-a.NUMBER);
+        public static implicit operator byte(PACount d) => (byte)d.NUMBER;
+        public static implicit operator PACount(byte b) => new PACount(b);
+        public static implicit operator int(PACount d) => (int)d.NUMBER;
+        public static implicit operator PACount(int b) => new PACount(b);
+        public static implicit operator long(PACount d) => (long)d.NUMBER;
+        public static explicit operator PACount(long b) => new PACount(b);
+        public static implicit operator short(PACount d) => (short)d.NUMBER;
+        public static explicit operator PACount(short b) => new PACount(b);
+        public static implicit operator ushort(PACount d) => (ushort)d.NUMBER;
+        public static explicit operator PACount(ushort b) => new PACount(b);
+        public static implicit operator ulong(PACount d) => (ulong)d.NUMBER;
+        public static explicit operator PACount(ulong b) => new PACount(b);
+        public static PACount operator -(PACount a) => new PACount(-a.NUMBER);
 
-        public static PACardinal operator +(PACardinal a, PACardinal b)
-            => new PACardinal(a.NUMBER + b.NUMBER);
+        public static PACount operator +(PACount a, PACount b)
+            => new PACount(a.NUMBER + b.NUMBER);
 
-        public static PACardinal operator -(PACardinal a, PACardinal b)
-            => new PACardinal(a.NUMBER + (-b.NUMBER));
+        public static PACount operator -(PACount a, PACount b)
+            => new PACount(a.NUMBER + (-b.NUMBER));
 
-        public static PACardinal operator *(PACardinal a, PACardinal b)
-            => new PACardinal(a.NUMBER * b.NUMBER);
+        public static PACount operator *(PACount a, PACount b)
+            => new PACount(a.NUMBER * b.NUMBER);
 
-        public static PACardinal operator /(PACardinal a, PACardinal b)
+        public static PACount operator /(PACount a, PACount b)
         {
             if (b.NUMBER == 0)
             {
                 throw new DivideByZeroException();
             }
-            return new PACardinal(a.NUMBER * b.NUMBER);
+            return new PACount(a.NUMBER * b.NUMBER);
         }
 
         public override bool Equals(Object o)
@@ -99,7 +100,7 @@ namespace PA_Library
             return -1271321926 + NUMBER.GetHashCode();
         }
         //        public override string ToString() => $"({INPUT}, {OUTPUT})";
-        //internal class PACardinal
+        //internal class PACount
         // {
         // int N,
         //}

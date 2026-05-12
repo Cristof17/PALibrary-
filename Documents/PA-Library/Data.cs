@@ -1,6 +1,7 @@
 //public class PAData
 using PA_Library;
 using System.Transactions;
+using System.Runtime.InteropServices;
 
 [StructLayout(LayoutKind.Sequential)]
 public struct PAData

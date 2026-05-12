@@ -1,5 +1,9 @@
 //public class PAPereche
 //struct PAPereche
+
+using PA_Library;
+using System;
+using System.Runtime.InteropServices;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
@@ -17,7 +21,8 @@ namespace PA_Library
         // [StructLayout(LayoutKind.Sequential)]
         // private struct PAPair Pair;
 
-        public PAPair(Element Node, Element Neigh)
+        // public PAPair(Element Node, Element Neigh)
+        public PAPair(PAElement Node, PAElement Neigh)
         {
             
         }
