@@ -109,7 +109,7 @@ namespace PA_Library
 			}
 
 			[StructLayout(LayoutKind.Sequential)]
-			private struct PALink link;
+			private PALink link;
 			// PANod node { get; }
 			// PANod neigh { get; }
 			int Copy(PANod Node)
