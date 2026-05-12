@@ -15,11 +15,11 @@ namespace PA_Library
         [DllInport("palibrary")]
         private static extern BFSProcedure BFSProcedureConstruct( PAInput Input,  PATree Tree);
         [DllInport("palibrary")]
-        private static extern int BFSProcedureRuin( PAInput input,  PATree tree);
+        private static extern int BFSProcedureRuin(PAInput input,  PATree tree);
         [DllInport("palibrary")]
-        private static extern int BFSProcedureDelete( BFSProcedure bfs);
+        private static extern int BFSProcedureDelete(BFSProcedure bfs);
         [DllInport("palibrary")]
-        private static extern PAElement BFS( PAData index);
+        private static extern PAElement BFS(PAData index);
         public Instruire(Intrare input, Arbore tree)
         {
             

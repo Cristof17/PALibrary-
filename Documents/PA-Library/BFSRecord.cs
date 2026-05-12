@@ -4,13 +4,13 @@
 	struct BFSRecord
 	{
         [DllImport("palibrary")]
-        public static extern  BFSRecord BFSRecordConstruct( PAList d,  PACount n);
+        public static extern  BFSRecord BFSRecordConstruct(PAList d,  PACount n);
         [DllImport("palibrary")]
-        public static extern int BFSRecordRuin( PAList d,  PACount n);
+        public static extern int BFSRecordRuin(PAList d, PACount n);
         [DllImport("palibrary")]
-        public static extern  BFSRecord BFSRecordInit( BFSRecord record);
+        public static extern  BFSRecord BFSRecordInit(BFSRecord record);
         [DllImport("palibrary")]
-        public static extern int BFSRecordDelete( BFSRecord BFS);
+        public static extern int BFSRecordDelete(BFSRecord BFS);
 		public Rezultat(Lista d, Cardinal n)
 		{
 			this.d = Rezultat.d;

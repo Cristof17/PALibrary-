@@ -23,13 +23,13 @@ namespace PA_Library
     public struct Output
     {
         [DllImport("palibrary")]
-        public static extern  Output OutputConstruct( PAResult rezultat);
+        public static extern  Output OutputConstruct(PAResult rezultat);
         [DllImport("palibrary")]
-        public static extern int OutputRuin( PAResult rezultat);
+        public static extern int OutputRuin(PAResult rezultat);
         [DllImport("palibrary")]
-        public static extern  Output OutputInit( Output Out);
+        public static extern  Output OutputInit(Output Out);
         [DllImport("palibrary")]
-        public static extern int OutputDelete( Output o);
+        public static extern int OutputDelete(Output o);
         //readonly int[] d;
         // public IesireSistem(BFSIesire bfsOutput)
         // {

@@ -10,9 +10,9 @@ public struct PAData
     [DllImport("palibrary")]
     public static extern int PADataRuin(int Resource);
     [DllImport("palibrary")]
-    public static extern PAData PADataInit( PAData Data);
+    public static extern PAData PADataInit(PAData Data);
     [DllImport("palibrary")]
-    public static extern int PADataDelete( PAData PA);
+    public static extern int PADataDelete(PAData PA);
     //struct PAResource
     // [StructLayout(LayoutKind.Sequential)]
     // private struct PAData data {get;}
