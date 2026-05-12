@@ -10,13 +10,13 @@ namespace PA_Library
     //public readonly struct BFSOutput
     {
         [DllImport("palibrary")]
-        public static extern  PAOutput PAOutputConstruct( PAResult rezultat);
+        public static extern PAOutput PAOutputConstruct(PAResult rezultat);
         [DllImport("palibrary")]
-        public static extern int PAOutputRuin( PAResult rezultat);
+        public static extern int PAOutputRuin(PAResult rezultat);
         [DllImport("palibrary")]
-        public static extern  Output PAOutputInit( Output Out);
+        public static extern Output PAOutputInit(Output Out);
         [DllImport("palibrary")]
-        public static extern int PAOutputDelete( Output o);
+        public static extern int PAOutputDelete(Output o);
 
         public UnitateIesire(Rezultat Result)
         {
