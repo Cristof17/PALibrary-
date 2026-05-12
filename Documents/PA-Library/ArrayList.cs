@@ -4,12 +4,12 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequntial)]
     public struct ArrayList
     {
+        // [DllImport("palibrary")]
+        public static extern ArrayList ArrayListConstruct(ArrayListPosition place, int[] objects);
         [DllImport("palibrary")]
-        public static extern struct ArrayList ArrayListConstruct(struct ArrayListPosition place, int[] objects);
+        public static extern void ArrayListRuin(ArrayListPosition place, int[] objects);
         [DllImport("palibrary")]
-        public static extern void ArrayListRuin(struct ArrayListPosition place, int[] objects);
-        [DllImport("palibrary")]
-        public static extern struct ArrayList ArrayListInit(struct ArrayList List);
+        public static extern ArrayList ArrayListInit(ArrayList List);
         [DllImport("palibrary")]
         public static extern void ArrayListDelete();
         // [StructLayout(LayoutKind.Sequential)]
