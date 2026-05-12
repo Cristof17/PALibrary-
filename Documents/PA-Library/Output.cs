@@ -1,4 +1,4 @@
-﻿I
+﻿
 //using System;
 //using System.Collections.Generic;
 //using System.Text;
@@ -23,13 +23,13 @@ namespace PA_Library
     public struct Output
     {
         [DllImport("palibrary")]
-        public static extern struct Output OutputConstruct(struct PAResult rezultat);
+        public static extern  Output OutputConstruct( PAResult rezultat);
         [DllImport("palibrary")]
-        public static extern int OutputRuin(struct PAResult rezultat);
+        public static extern int OutputRuin( PAResult rezultat);
         [DllImport("palibrary")]
-        public static extern struct Output OutputInit(struct Output Out);
+        public static extern  Output OutputInit( Output Out);
         [DllImport("palibrary")]
-        public static extern int OutputDelete(struct Output o);
+        public static extern int OutputDelete( Output o);
         //readonly int[] d;
         // public IesireSistem(BFSIesire bfsOutput)
         // {

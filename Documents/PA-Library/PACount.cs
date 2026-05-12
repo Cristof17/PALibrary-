@@ -11,9 +11,10 @@ namespace PA_Library
         [DllImport("palibrary")]
         public static extern int PACountRuin(int value);
         [DllImport("palibrary")]
-        public static extern struct PACount PACountInit(PACount value);
+        public static extern  PACount PACountInit(PACount value);
+        
         [DllImport("palibrary")]
-        public static extern void int PACountDelete(struct PACount PA);
+        public static extern void int PACountDelete( PACount PA);
 
         // [StructLayout(LayoutKind.Sequential)]
         // public struct PACount Count {get;}
