@@ -20,18 +20,18 @@ public struct PAData
 
     // public int value;//todo use in unsafe contexts
 
-    public static implicit operator byte(PAData d) => (byte)d.value;
-    public static explicit operator PAData(byte b) => Copy(b);
-    public static implicit operator int(PAData d) => (int)d.value;
-    public static explicit operator PAData(int i) => Copy(i);
-    public static implicit operator long(PAData d) => (long)d.value;
-    public static explicit operator PAData(long l) => Copy(l);
-    public static implicit operator short(PAData d) => (short)d.value;
-    public static explicit operator PAData(short s) => Copy(s);
-    public static implicit operator ushort(PAData d) => (ushort)d.value;
-    public static explicit operator PAData(ushort us) => Copy(us);
-    public static implicit operator ulong(PAData d) => (ulong)d.value;
-    public static explicit operator PAData(ulong ul) => Copy(ul);
+    // public static implicit operator byte(PAData d) => (byte)d.value;
+    // public static explicit operator PAData(byte b) => Copy(b);
+    // public static implicit operator int(PAData d) => (int)d.value;
+    // public static explicit operator PAData(int i) => Copy(i);
+    // public static implicit operator long(PAData d) => (long)d.value;
+    // public static explicit operator PAData(long l) => Copy(l);
+    // public static implicit operator short(PAData d) => (short)d.value;
+    // public static explicit operator PAData(short s) => Copy(s);
+    // public static implicit operator ushort(PAData d) => (ushort)d.value;
+    // public static explicit operator PAData(ushort us) => Copy(us);
+    // public static implicit operator ulong(PAData d) => (ulong)d.value;
+    // public static explicit operator PAData(ulong ul) => Copy(ul);
 
     //public static void init(PANod nod, int value)
     // public static PAData Copy(int value)

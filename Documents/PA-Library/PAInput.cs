@@ -1309,7 +1309,7 @@ namespace PA_Library
 
         //public override string ToString() => $"({N})";
         //public override string ToString() => $"({N},{ADJ})";
-        public override string ToString() => $"({source},{adj},{n},{m})";
+        // public override string ToString() => $"({source},{adj},{n},{m})";
 
 
         //private int checkAdjacencyList(ArrayList list)

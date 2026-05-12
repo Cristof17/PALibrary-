@@ -124,7 +124,7 @@ namespace PA_Library
 			// 	//copy.next = Node.next;
 			// 	return copy;
 			// }
-			public override string ToString() => $"({node}, {neigh})";
+			// public override string ToString() => $"({node}, {neigh})";
 		}
 		//class YourClass
 		//{

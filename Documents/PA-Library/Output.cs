@@ -262,7 +262,7 @@ namespace PA_Library
         //     }
         //     return valid;
         // }
-        public override string ToString() => $"({D})";
+        // public override string ToString() => $"({D})";
     }
     //class YourClass
     //{

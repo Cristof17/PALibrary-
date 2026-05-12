@@ -51,19 +51,19 @@ namespace PA_Library
         //OUTPUT = output;
         //}
 
-        public static implicit operator byte(PACount d) => (byte)d.NUMBER;
-        public static implicit operator PACount(byte b) => new PACount(b);
-        public static implicit operator int(PACount d) => (int)d.NUMBER;
-        public static implicit operator PACount(int b) => new PACount(b);
-        public static implicit operator long(PACount d) => (long)d.NUMBER;
-        public static explicit operator PACount(long b) => new PACount(b);
-        public static implicit operator short(PACount d) => (short)d.NUMBER;
-        public static explicit operator PACount(short b) => new PACount(b);
-        public static implicit operator ushort(PACount d) => (ushort)d.NUMBER;
-        public static explicit operator PACount(ushort b) => new PACount(b);
-        public static implicit operator ulong(PACount d) => (ulong)d.NUMBER;
-        public static explicit operator PACount(ulong b) => new PACount(b);
-        public static PACount operator -(PACount a) => new PACount(-a.NUMBER);
+        // public static implicit operator byte(PACount d) => (byte)d.NUMBER;
+        // public static implicit operator PACount(byte b) => new PACount(b);
+        // public static implicit operator int(PACount d) => (int)d.NUMBER;
+        // public static implicit operator PACount(int b) => new PACount(b);
+        // public static implicit operator long(PACount d) => (long)d.NUMBER;
+        // public static explicit operator PACount(long b) => new PACount(b);
+        // public static implicit operator short(PACount d) => (short)d.NUMBER;
+        // public static explicit operator PACount(short b) => new PACount(b);
+        // public static implicit operator ushort(PACount d) => (ushort)d.NUMBER;
+        // public static explicit operator PACount(ushort b) => new PACount(b);
+        // public static implicit operator ulong(PACount d) => (ulong)d.NUMBER;
+        // public static explicit operator PACount(ulong b) => new PACount(b);
+        // public static PACount operator -(PACount a) => new PACount(-a.NUMBER);
 
         public static PACount operator +(PACount a, PACount b)
             => new PACount(a.NUMBER + b.NUMBER);
