@@ -34,58 +34,58 @@ public struct PAData
     public static explicit operator PAData(ulong ul) => Copy(ul);
 
     //public static void init(PANod nod, int value)
-    public static PAData Copy(int value)
-    {
-        PAData copy = new PAData();
-        copy.value = value;
-        return copy;
+    // public static PAData Copy(int value)
+    // {
+    //     PAData copy = new PAData();
+    //     copy.value = value;
+    //     return copy;
 
-    }
-    public static PAData Copy(byte value)
-    {
-        PAData copy = new PAData();
-        copy.value = value;
-        return copy;
+    // }
+    // public static PAData Copy(byte value)
+    // {
+    //     PAData copy = new PAData();
+    //     copy.value = value;
+    //     return copy;
 
-    }
-    public static PAData Copy(long value)
-    {
-        PAData copy = new PAData();
-        copy.value = (int) value;
-        return copy;
+    // }
+    // public static PAData Copy(long value)
+    // {
+    //     PAData copy = new PAData();
+    //     copy.value = (int) value;
+    //     return copy;
 
-    }
-    public static PAData Copy(short value)
-    {
-        PAData copy = new PAData();
-        copy.value = value;
-        return copy;
+    // }
+    // public static PAData Copy(short value)
+    // {
+    //     PAData copy = new PAData();
+    //     copy.value = value;
+    //     return copy;
 
-    }
-    public static PAData Copy(ulong value)
-    {
-        PAData copy = new PAData();
-        copy.value = (int)(uint) value;
-        return copy;
+    // }
+    // public static PAData Copy(ulong value)
+    // {
+    //     PAData copy = new PAData();
+    //     copy.value = (int)(uint) value;
+    //     return copy;
 
-    }
-    public static PAData Copy(ushort value)
-    {
-        PAData copy = new PAData();
-        copy.value = (int)(uint)value;
-        return copy;
+    // }
+    // public static PAData Copy(ushort value)
+    // {
+    //     PAData copy = new PAData();
+    //     copy.value = (int)(uint)value;
+    //     return copy;
 
-    }
-    public PANod toPANod()
-    {
-        PAData data = new PAData();
-        data.value = value;
-        PANod nod = new PANod(data);
-        return nod;
-        //nod = new PANod(data, nod);
-        //return new PANod(data
-        //,);
-    }
+    // }
+    // public PANod toPANod()
+    // {
+    //     PAData data = new PAData();
+    //     data.value = value;
+    //     PANod nod = new PANod(data);
+    //     return nod;
+    //     //nod = new PANod(data, nod);
+    //     //return new PANod(data
+    //     //,);
+    // }
     //public static PAData Clone()
     //{
     //}

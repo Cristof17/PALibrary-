@@ -24,9 +24,11 @@ namespace PA_Library
     public struct Output
     {
         [DllImport("palibrary")]
-        public static extern  Output OutputConstruct(PAResult rezultat);
+        // public static extern  Output OutputConstruct(PAResult rezultat);
+        public static extern Output OutputConstruct(BFSRecord rezultat);
         [DllImport("palibrary")]
-        public static extern int OutputRuin(PAResult rezultat);
+        // public static extern int OutputRuin(PAResult rezultat);
+        public static extern int OutputRuin(BFSRecord rezultat);
         [DllImport("palibrary")]
         public static extern  Output OutputInit(Output Out);
         [DllImport("palibrary")]

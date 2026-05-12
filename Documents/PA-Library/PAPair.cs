@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    struct PAPair
+    public struct PAPair
     {
         [DllImport("palibrary")]
         public static extern  PAElement PAPairInit(PAElement e);

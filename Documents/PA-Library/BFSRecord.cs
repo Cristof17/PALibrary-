@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-	struct BFSRecord
+	public struct BFSRecord
 	{
         [DllImport("palibrary")]
         public static extern  BFSRecord BFSRecordConstruct(PAList d,  PACount n);
@@ -14,21 +14,24 @@ namespace PA_Library
         public static extern  BFSRecord BFSRecordInit(BFSRecord record);
         [DllImport("palibrary")]
         public static extern int BFSRecordDelete(BFSRecord BFS);
-        public Rezultat(PASeries d, PACount n)
+        // public Rezultat(PASeries d, PACount n)
+        public BFSRecord(PASeries d, PACount n)
 		// public Rezultat(Lista d, Cardinal n)
 		{
-			this.d = Rezultat.d;
-			this.n = Rezultat.n;
+			// this.d = Rezultat.d;
+			// this.n = Rezultat.n;
 		}
         public int this[int index]
         {
             get
             {
-                return (int)d[index];
+                return 0;
+                // return (int)d[index];
             }
             set
             {
-                d[index] = (PANod) value;
+                
+                // d[index] = (PANod) value;
             }
         }
 

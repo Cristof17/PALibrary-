@@ -1,4 +1,4 @@
-enum Marcaj
+public enum Marcaj
 {
 	SUCCESS,
 	FAIL

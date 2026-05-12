@@ -1,3 +1,6 @@
+using PA_Library;
+using System;
+using System.Runtime.InteropServices;
 namespace PA_Library
 {
 	public class Muchie
@@ -14,7 +17,8 @@ namespace PA_Library
 		//public
 		//{
 			//Console.WriteLine("Hello world!");
-			Muchie(PANod Node, PANod Neigh)
+			Muchie(PAElement Node, PAElement Neigh)
+			// Muchie(PANod Node, PANod Neigh)
 			{
 				p = default;
 				//Node;
