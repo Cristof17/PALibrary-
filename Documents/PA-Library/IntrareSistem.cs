@@ -26,15 +26,15 @@ namespace PA_Library
     public class IntrareSistem
     {
         [DllImport("palibrary")]
-        public static extern  Input InputConstruct( PACount n,  PACount m,  ArrayList adj,  PAElement source);
+        public static extern  Input InputConstruct(PACount n, PACount m, ArrayList adj, PAElement source);
         [DllImport("palibrary")]
-        public static extern int InputRuin( PACount n,  PACount m,  ArrayList adj,  PAElement source);
+        public static extern int InputRuin(PACount n, PACount m, ArrayList adj, PAElement source);
         [DllImport("palibrary")]
-        public static extern  Input InputInit( Input input);
+        public static extern  Input InputInit(Input input);
         [DllImport("palibrary")]
         public static extern void Dispose();
         [DllImport("palibrary")]
-        public static extern int InputDelete( Input input);
+        public static extern int InputDelete(Input input);
         public IntrareSistem(Cardinal n, Cardinal m, PAElement Source, ArrayList[] Adj, int N, int M)
         {
             //ADJ = default(AdjacencyList<Node>);
