@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Runtime.InteropServices;
 using System.Runtime.CompilerServices;
 
 namespace PA_Library
@@ -256,8 +257,8 @@ namespace PA_Library
         //    D = default;
         //}
 
-        [StructLayout(StructLayout.Sequential)]
-        private  PAOutput output;
+        // [StructLayout(StructLayout.Sequential)]
+        // private  PAOutput output;
 
         // BFSResult rezultat;
         //public BFSState STATE { get; }

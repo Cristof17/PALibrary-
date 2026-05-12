@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.ComponentModel;
+using System.Runtime.InteropServices;
 using System.Runtime.Serialization;
 using System.Xml.XPath;
 
@@ -19,7 +20,8 @@ namespace PA_Library
         public static extern void Dispose();
         [DllImport("palibrary")]
         public static extern int PASeriesDelete(PASeries PA);
-        public PAList(PANod Head) 
+        // public PAList(PANod Head) 
+        public PAList(PAElement Head) 
             //: this()
         {
             int Success = 0;
@@ -557,72 +559,72 @@ namespace PA_Library
         //    //NODES = nodes;
         //    //OUTPUT = output;
         //}
-        public PANod this[int i]
-        {
-            get
-            {
-                PANod node = head;
-                if (i == 1)
-                {
-                    node = head;
-                    return head;
-                }
-                else if ((i != 1) && (i > 0))
-                {
-                    node = nodeAt(head, i - 1);
-                    //return nodeAt(head, i - 1);
-                }
-                return node;
-                //else
-            }
-            set
-            {
+        // public PANod this[int i]
+        // {
+        //     get
+        //     {
+        //         PANod node = head;
+        //         if (i == 1)
+        //         {
+        //             node = head;
+        //             return head;
+        //         }
+        //         else if ((i != 1) && (i > 0))
+        //         {
+        //             node = nodeAt(head, i - 1);
+        //             //return nodeAt(head, i - 1);
+        //         }
+        //         return node;
+        //         //else
+        //     }
+        //     set
+        //     {
 
-            }
-                //return head[i-1];
-                //Node<int> x = default(Node<int>);
-                //Node<int> y = default(Node<int>);
-                //List<int>.Enumerator enumerator = ADJ.GetEnumerator();
-                //while (enumerator.MoveNext())
-                //{
-                //int e = enumerator.Current;
-                //if (e.CompareTo(i) == 0)
-                //{
-                //    Console.Out.WriteLine("(" + i.VALUE + "," + e.NODE.VALUE + ")");
-                //    return e.NODE.VALUE;
-                //}
-                //else if (e.NODE.CompareTo(i) < 0 || e.NODE.CompareTo(i) > 0)
-                //{
-                //    Console.Out.WriteLine("(" + i.VALUE + "," + e.NODE.VALUE + ")");
-                //}
-                //}
-                //return (int)ADJ[i];
-                //recursion
-        }
+        //     }
+        //         //return head[i-1];
+        //         //Node<int> x = default(Node<int>);
+        //         //Node<int> y = default(Node<int>);
+        //         //List<int>.Enumerator enumerator = ADJ.GetEnumerator();
+        //         //while (enumerator.MoveNext())
+        //         //{
+        //         //int e = enumerator.Current;
+        //         //if (e.CompareTo(i) == 0)
+        //         //{
+        //         //    Console.Out.WriteLine("(" + i.VALUE + "," + e.NODE.VALUE + ")");
+        //         //    return e.NODE.VALUE;
+        //         //}
+        //         //else if (e.NODE.CompareTo(i) < 0 || e.NODE.CompareTo(i) > 0)
+        //         //{
+        //         //    Console.Out.WriteLine("(" + i.VALUE + "," + e.NODE.VALUE + ")");
+        //         //}
+        //         //}
+        //         //return (int)ADJ[i];
+        //         //recursion
+        // }
 
 
-        PANod nodeAt(PANod Node, int position)
-        {
-            //check Node
-            PANod node = Node;
-            if (Node.next == null)
-            {
-                node = Node;
-            }
-            else if (Node.next != null)
-            {
-                PANod tmp = Node.next;
-                if (position == 1)
-                {
-                    node = Node;
-                }
-                else
-                {
-                    node = nodeAt(Node.next, position - 1);
-                }
-            }
-            return node;
-        }
+        // PANod nodeAt(PANod Node, int position)
+        // {
+        //     //check Node
+        //     PANod node = Node;
+        //     if (Node.next == null)
+        //     {
+        //         node = Node;
+        //     }
+        //     else if (Node.next != null)
+        //     {
+        //         PANod tmp = Node.next;
+        //         if (position == 1)
+        //         {
+        //             node = Node;
+        //         }
+        //         else
+        //         {
+        //             node = nodeAt(Node.next, position - 1);
+        //         }
+        //     }
+        //     return node;
+        // }
 
             //=> NODES[i];
             //set
@@ -750,8 +752,8 @@ namespace PA_Library
                 }
             }
         }
-        [StructLayout(LayoutKind.Sequential)]
-        private PASeries list;
+        // [StructLayout(LayoutKind.Sequential)]
+        // private PASeries list;
 
         // public PANod head { get; set; }
         //public ArrayList ADJ { get; }
@@ -812,17 +814,17 @@ namespace PA_Library
             return size;
         }
 
-        int Count(PANod Node)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Fail;
-            if (Node == null)
-                Result = Fail;
-            else if (Node != null)
-                Result = Success;
-            return Result;
-        }
+        // int Count(PANod Node)
+        // {
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     int Result = Fail;
+        //     if (Node == null)
+        //         Result = Fail;
+        //     else if (Node != null)
+        //         Result = Success;
+        //     return Result;
+        // }
 
         public int Count()
         {
@@ -840,7 +842,8 @@ namespace PA_Library
             return cardinal;
         }
 
-        public static int size(PANod Node, int Current)
+        // public static int size(PANod Node, int Current)
+        public static int size(PAElement Node, int Current)
         {
             //PANod current = Node;
             if (Node.next == null)
@@ -853,7 +856,8 @@ namespace PA_Library
             }
         }
 
-        public ArrayList toArrayList(PANod Node)
+        // public ArrayList toArrayList(PANod Node)
+        public ArrayList toArrayList(PAElement Node)
         {
             ArrayList lista = new ArrayList();
             lista.Add(Node);
