@@ -22,7 +22,7 @@ namespace PA_Library
 			// PALink(PANod Node, PANod Neigh)
 			PALink(PAElement Node, PAElement Neigh)
 			{
-				p = default;
+				// p = default;
 				//Node;
 				//NEIGH = default;// Neigh;
 
@@ -85,7 +85,7 @@ namespace PA_Library
 			}
 
 			// private PAPereche p;
-			private PAPair p;
+			// private PAPair p;
 			//public Node NODE { get; }
 			//public Node NEIGH { get; }
 

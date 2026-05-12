@@ -19,10 +19,13 @@ namespace PA_Library
         // [StructLayout(LayoutKind.Sequential)]
         // public struct PACount Count {get;}
         public PACount(int number)
-        // public Cardinal(int number)
         {
-            NUMBER = default;//(int) value;
+            
         }
+        // public Cardinal(int number)
+        // {
+        //     NUMBER = default;//(int) value;
+        // }
         // public Cardinal(ulong value)
         // {
         //     NUMBER = default;// (int)value;
@@ -65,40 +68,40 @@ namespace PA_Library
         // public static explicit operator PACount(ulong b) => new PACount(b);
         // public static PACount operator -(PACount a) => new PACount(-a.NUMBER);
 
-        public static PACount operator +(PACount a, PACount b)
-            => new PACount(a.NUMBER + b.NUMBER);
+        // public static PACount operator +(PACount a, PACount b)
+        //     => new PACount(a.NUMBER + b.NUMBER);
 
-        public static PACount operator -(PACount a, PACount b)
-            => new PACount(a.NUMBER + (-b.NUMBER));
+        // public static PACount operator -(PACount a, PACount b)
+        //     => new PACount(a.NUMBER + (-b.NUMBER));
 
-        public static PACount operator *(PACount a, PACount b)
-            => new PACount(a.NUMBER * b.NUMBER);
+        // public static PACount operator *(PACount a, PACount b)
+        //     => new PACount(a.NUMBER * b.NUMBER);
 
-        public static PACount operator /(PACount a, PACount b)
-        {
-            if (b.NUMBER == 0)
-            {
-                throw new DivideByZeroException();
-            }
-            return new PACount(a.NUMBER * b.NUMBER);
-        }
+        // public static PACount operator /(PACount a, PACount b)
+        // {
+        //     if (b.NUMBER == 0)
+        //     {
+        //         throw new DivideByZeroException();
+        //     }
+        //     // return new PACount(a.NUMBER * b.NUMBER);
+        // }
 
-        public override bool Equals(Object o)
-        {
-            return o == (Object)this;
-        }
+        // public override bool Equals(Object o)
+        // {
+            // return o == (Object)this;
+        // }
 
         //public struct PACount
-        public int NUMBER { get; }
+        // public int NUMBER { get; }
         //public Output OUTPUT { get; }
 
         //public override string ToString() => $"({N})";
-        public override string ToString() => $"({NUMBER})";
+        // public override string ToString() => $"({NUMBER})";
 
-        public override int GetHashCode()
-        {
-            return -1271321926 + NUMBER.GetHashCode();
-        }
+        // public override int GetHashCode()
+        // {
+            // return -1271321926 + NUMBER.GetHashCode();
+        // }
         //        public override string ToString() => $"({INPUT}, {OUTPUT})";
         //internal class PACount
         // {
