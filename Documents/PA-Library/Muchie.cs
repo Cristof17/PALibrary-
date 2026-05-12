@@ -17,70 +17,70 @@ namespace PA_Library
 		//public
 		//{
 			//Console.WriteLine("Hello world!");
-			Muchie(PAElement Node, PAElement Neigh)
-			// Muchie(PANod Node, PANod Neigh)
-			{
-				p = default;
-				//Node;
-				//NEIGH = default;// Neigh;
+			// Muchie(PAElement Node, PAElement Neigh)
+			// // Muchie(PANod Node, PANod Neigh)
+			// {
+			// 	p = default;
+			// 	//Node;
+			// 	//NEIGH = default;// Neigh;
 
-				int Success = 0;
-				int Fail = -1;
-				int Result = Success;
-				//Result = check(Node);
-				if (Node == null)
-				{
-					//Console.Error.WriteLine($"{Node} == null");
-					Result = Fail;
-				}
-				else if (Node != null)
-				{
-					Result = Success;
-					if (Neigh == null)
-					{
-						//Console.Error.WriteLine($"{Neigh} == null");
-						Result = Fail;
-					}
-					else if (Neigh != null)
-					{
-						Result = Success;
-					}
-				}
-				if (Result == Fail)
-				{
-					Node = default;
-					neigh = default;
-				}
-				else
-				{
-					if (Neigh == null)
-					{
-						//Console.Error.WriteLine($"{Neigh} == null");
-						Result = Fail;
-					}
-					else
-					{
-						Result = Success;
+			// 	int Success = 0;
+			// 	int Fail = -1;
+			// 	int Result = Success;
+			// 	//Result = check(Node);
+			// 	if (Node == null)
+			// 	{
+			// 		//Console.Error.WriteLine($"{Node} == null");
+			// 		Result = Fail;
+			// 	}
+			// 	else if (Node != null)
+			// 	{
+			// 		Result = Success;
+			// 		if (Neigh == null)
+			// 		{
+			// 			//Console.Error.WriteLine($"{Neigh} == null");
+			// 			Result = Fail;
+			// 		}
+			// 		else if (Neigh != null)
+			// 		{
+			// 			Result = Success;
+			// 		}
+			// 	}
+			// 	if (Result == Fail)
+			// 	{
+			// 		Node = default;
+			// 		neigh = default;
+			// 	}
+			// 	else
+			// 	{
+			// 		if (Neigh == null)
+			// 		{
+			// 			//Console.Error.WriteLine($"{Neigh} == null");
+			// 			Result = Fail;
+			// 		}
+			// 		else
+			// 		{
+			// 			Result = Success;
 
-					}
-					//Result = check(Neigh);
-					if (Result == Success)
-					{
-						//Node copy = default;
-						node = new PANod(Node);
-						neigh = new PANod(Neigh);
-						//;
-						//copy = new Node(Neigh);
-						//NEIGH = copy;
-						//NEIGH = copy(Neigh);
-					}
-					else if (Result == Fail)
-					{
-						node = default;
-						neigh = default;
-					}
-				}
-			}
+			// 		}
+			// 		//Result = check(Neigh);
+			// 		if (Result == Success)
+			// 		{
+			// 			//Node copy = default;
+			// 			node = new PANod(Node);
+			// 			neigh = new PANod(Neigh);
+			// 			//;
+			// 			//copy = new Node(Neigh);
+			// 			//NEIGH = copy;
+			// 			//NEIGH = copy(Neigh);
+			// 		}
+			// 		else if (Result == Fail)
+			// 		{
+			// 			node = default;
+			// 			neigh = default;
+			// 		}
+			// 	}
+			// }
 
 			private PAPair p;
 			// private PAPereche p;

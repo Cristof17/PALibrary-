@@ -40,53 +40,53 @@ namespace PA_Library
         public Input(int Source, ArrayList[] Adj, int N, int M)
         {
             //ADJ = default(AdjacencyList<Node>);
-            this.N = default;
-            this.M = default;
-            ADJ = default;
-            SOURCE = default;
-            SOURCE = new Node(Source);
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            Result = CheckSource(Source, Adj,N,M);
-            if (Result == Fail)
-            {
-                //SOURCE = default;
-                //Console.Error.WriteLine("Source error");
-            }
-            else if (Result == Success)
-            {
-                SOURCE = new Node(Source);
-            }
-            Result = CheckNodeCardinal(Source, Adj, N,M);
-            if (Result == Fail)
-            {
-                //N = default;
-                //Console.Error.WriteLine("N error");
-            }
-            else if (Result == Success)
-            {
-                N = CopyNodeCardinal(Source, Adj, N, M);
-            }
-            Result = CheckReferenceVector(Source, Adj, N,M);
-            if (Result == Success)
-            {
-                ADJ = CopyVector(Source, Adj, N, M);//Adj;
-            }
-            else if (Result == Fail)
-            {
-                //Console.Error.WriteLine("Adj error");
-            }
-            Result = CheckEdgeCardinal(Source, Adj, N, M);
-            if (Result == Success)
-            {
-                M = CopyEdgeCardinal(Source, Adj, N, M);
-                //M = M;
-            }
-            else if (Result == Fail)
-            {
-                //Console.Error.WriteLine("M error");
-            }
+            // this.N = default;
+            // this.M = default;
+            // ADJ = default;
+            // SOURCE = default;
+            // SOURCE = new Node(Source);
+            // int Success = 0;
+            // int Fail = -1;
+            // int Result = Success;
+            // Result = CheckSource(Source, Adj,N,M);
+            // if (Result == Fail)
+            // {
+            //     //SOURCE = default;
+            //     //Console.Error.WriteLine("Source error");
+            // }
+            // else if (Result == Success)
+            // {
+            //     SOURCE = new Node(Source);
+            // }
+            // Result = CheckNodeCardinal(Source, Adj, N,M);
+            // if (Result == Fail)
+            // {
+            //     //N = default;
+            //     //Console.Error.WriteLine("N error");
+            // }
+            // else if (Result == Success)
+            // {
+            //     N = CopyNodeCardinal(Source, Adj, N, M);
+            // }
+            // Result = CheckReferenceVector(Source, Adj, N,M);
+            // if (Result == Success)
+            // {
+            //     ADJ = CopyVector(Source, Adj, N, M);//Adj;
+            // }
+            // else if (Result == Fail)
+            // {
+            //     //Console.Error.WriteLine("Adj error");
+            // }
+            // Result = CheckEdgeCardinal(Source, Adj, N, M);
+            // if (Result == Success)
+            // {
+            //     M = CopyEdgeCardinal(Source, Adj, N, M);
+            //     //M = M;
+            // }
+            // else if (Result == Fail)
+            // {
+            //     //Console.Error.WriteLine("M error");
+            // }
         }
             //Result = CheckEdgeCardinal(Source, Adj, N, M);
             //if (Result == Success)
@@ -202,159 +202,159 @@ namespace PA_Library
         //    return copy;
         //}
 
-        public int CheckVector(int Node, ArrayList[] Adj, int N, int M)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            //int Node = 1;
-            if (Result == Fail)
-            {
-                Result = Fail;
-                //Console.Error.WriteLine("Adj == null");
-                return Result;
-            }
-            else if (Result == Success)
-            {
-                while (Node < N)
-                {
-                    Result = CheckReferenceArrayList(Node,Adj,N,M);
-                    if (Result == Success)
-                    {
-                        Result = CheckArrayList(Node, Adj, N, M);
-                        Node++;
-                    }
-                    else if (Result == Fail)
-                    {
-                        //Console.Error.WriteLine($"Adj{Node} error");
-                        return Result;
-                    }
-                    //else if (Result == Success)
-                    //{
-                    //}
-                }
-            }
-                //if (Result == Success)
-                //{
-                //    //Node++;
-                //    Result = Success;
-                //}
-                //else
-                //{
-                //    return Result;
-                //    //Node++;
-                //    //Result = Fail;
-                //}
-                //Node++;
-            //}
-            return Result;
-        }
+        // // public int CheckVector(int Node, ArrayList[] Adj, int N, int M)
+        // // {
+        // //     int Success = 0;
+        // //     int Fail = -1;
+        // //     int Result = Success;
+        // //     //int Node = 1;
+        // //     if (Result == Fail)
+        // //     {
+        // //         Result = Fail;
+        // //         //Console.Error.WriteLine("Adj == null");
+        // //         return Result;
+        // //     }
+        // //     else if (Result == Success)
+        // //     {
+        // //         while (Node < N)
+        // //         {
+        // //             Result = CheckReferenceArrayList(Node,Adj,N,M);
+        // //             if (Result == Success)
+        // //             {
+        // //                 Result = CheckArrayList(Node, Adj, N, M);
+        // //                 Node++;
+        // //             }
+        // //             else if (Result == Fail)
+        // //             {
+        // //                 //Console.Error.WriteLine($"Adj{Node} error");
+        // //                 return Result;
+        // //             }
+        // //             //else if (Result == Success)
+        // //             //{
+        // //             //}
+        // //         }
+        // //     }
+        // //         //if (Result == Success)
+        //         //{
+        //         //    //Node++;
+        //         //    Result = Success;
+        //         //}
+        //         //else
+        //         //{
+        //         //    return Result;
+        //         //    //Node++;
+        //         //    //Result = Fail;
+        //         //}
+        //         //Node++;
+        //     //}
+        //     return Result;
+        // }
 
         //check_reference
 
-        public ArrayList[] CopyVector(int Source,ArrayList[] Adj, int N, int M)
-        {
-            //ArrayList[] Result;
-            ArrayList[] Result = new ArrayList[N];
-            int Node = 1;
-            //int Result;
-            //int Success = 0;
-            //int Fail = -1;
-            //Result = new ArrayList[N];
-            //Node = 1;
-            //int M = Adj[x].Capacity;
-            while (Node < N)
-            {
+        // public ArrayList[] CopyVector(int Source,ArrayList[] Adj, int N, int M)
+        // {
+        //     //ArrayList[] Result;
+        //     ArrayList[] Result = new ArrayList[N];
+        //     int Node = 1;
+        //     //int Result;
+        //     //int Success = 0;
+        //     //int Fail = -1;
+        //     //Result = new ArrayList[N];
+        //     //Node = 1;
+        //     //int M = Adj[x].Capacity;
+        //     while (Node < N)
+        //     {
 
-                int Count = Size(Source,Adj,N,M);
-                Result[Node] = CopyArrayList(Source,Adj,N,M);
-                Node++;
-                //Result[x] = copy(Adj[x], M);
-            }
-            return Result;
-        }
-        public int CheckReferenceVector(int Source, ArrayList[] Adj, int N, int M)
-        {
-            int Result;
-            int Success = 0;
-            int Fail = -1;
-            //int Neigh = 1;
-            if (Adj == null)
-            {
-                //Console.Error.WriteLine($"Adj == null");
-                Result = Fail;
-                return Result;
-            }
-            else
-            {
-                Result = Success;
-                Result =CheckVector(Source, Adj, N, M);
-            }
-            return Result;
-        }
+        //         int Count = Size(Source,Adj,N,M);
+        //         Result[Node] = CopyArrayList(Source,Adj,N,M);
+        //         Node++;
+        //         //Result[x] = copy(Adj[x], M);
+        //     }
+        //     return Result;
+        // }
+        // public int CheckReferenceVector(int Source, ArrayList[] Adj, int N, int M)
+        // {
+        //     int Result;
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     //int Neigh = 1;
+        //     if (Adj == null)
+        //     {
+        //         //Console.Error.WriteLine($"Adj == null");
+        //         Result = Fail;
+        //         return Result;
+        //     }
+        //     else
+        //     {
+        //         Result = Success;
+        //         Result =CheckVector(Source, Adj, N, M);
+        //     }
+        //     return Result;
+        // }
 
-        public int CheckReferenceArrayList(int Source, ArrayList[] Adj, int N, int M)
-        {
-            int Result;
-            int Success = 0;
-            int Fail = -1;
-            //int Neigh = 1;
-            if (Adj[Source] == null)
-            {
-                //Console.Error.WriteLine($"Adj[{Source} == null");
-                Result = Fail;
-                return Result;
-            }
-            else
-            {
-                Result = Success;
-                //Result = CheckArrayList(Source, Adj, N, M);
-            }
-            return Result;
-        }
+        // public int CheckReferenceArrayList(int Source, ArrayList[] Adj, int N, int M)
+        // {
+        //     int Result;
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     //int Neigh = 1;
+        //     if (Adj[Source] == null)
+        //     {
+        //         //Console.Error.WriteLine($"Adj[{Source} == null");
+        //         Result = Fail;
+        //         return Result;
+        //     }
+        //     else
+        //     {
+        //         Result = Success;
+        //         //Result = CheckArrayList(Source, Adj, N, M);
+        //     }
+        //     return Result;
+        // }
 
-        public int CheckArrayList(int Source, ArrayList[] Adj, int N, int M)
-        {
-            int Result;
-            int Success = 0;
-            int Fail = -1;
-            Result = CheckReferenceArrayList(Source, Adj, N, M);
-            if (Result == Success)
-            {
-                M = Size(Source, Adj, N, M);
-                int Neigh = 1;
-                while (Neigh < M)
-                {
-                    Result = CheckEdge(Source, Neigh, Adj, N, M);//(int)Adj[Neigh]);
-                    if (Result == Fail)
-                    {
-                        //Console.Error.WriteLine("Adj[Neigh] error");
-                        return Result;
-                    }
-                    else if (Result == Success)
-                    {
-                        Neigh++;
-                    }
-                }
-            }
-            else if (Result == Fail)
-            {
-                //Console.Error.WriteLine($"Adj[{Source}] == null");
-                Result = Fail;
-                return Result;
-            }
-            return Result;
-            //else if (Result == Fail)
-            //{
-            //    Console.Error.WriteLine("reference error");
-            //}
-            ////}
-            //Result = Fail;
-            //Neigh++;
-            //Result = Success;
-            //return Result;
-            //return Result;
-        }
+        // public int CheckArrayList(int Source, ArrayList[] Adj, int N, int M)
+        // {
+        //     int Result;
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     Result = CheckReferenceArrayList(Source, Adj, N, M);
+        //     if (Result == Success)
+        //     {
+        //         M = Size(Source, Adj, N, M);
+        //         int Neigh = 1;
+        //         while (Neigh < M)
+        //         {
+        //             Result = CheckEdge(Source, Neigh, Adj, N, M);//(int)Adj[Neigh]);
+        //             if (Result == Fail)
+        //             {
+        //                 //Console.Error.WriteLine("Adj[Neigh] error");
+        //                 return Result;
+        //             }
+        //             else if (Result == Success)
+        //             {
+        //                 Neigh++;
+        //             }
+        //         }
+        //     }
+        //     else if (Result == Fail)
+        //     {
+        //         //Console.Error.WriteLine($"Adj[{Source}] == null");
+        //         Result = Fail;
+        //         return Result;
+        //     }
+        //     return Result;
+        //     //else if (Result == Fail)
+        //     //{
+        //     //    Console.Error.WriteLine("reference error");
+        //     //}
+        //     ////}
+        //     //Result = Fail;
+        //     //Neigh++;
+        //     //Result = Success;
+        //     //return Result;
+        //     //return Result;
+        // }
 
         //public int CheckReferenceVector(int Source, ArrayList[] Adj, int N, int M)
         //{
@@ -452,12 +452,12 @@ namespace PA_Library
         //    //return Result;
         //}
 
-        public int Size(int Source, ArrayList[] Adj, int N, int M)
-        {
-            int size = 0;
-            size = Adj[Source].Capacity;
-            return size;
-        }
+        // public int Size(int Source, ArrayList[] Adj, int N, int M)
+        // {
+        //     int size = 0;
+        //     size = Adj[Source].Capacity;
+        //     return size;
+        // }
 
         //public ArrayList[] copy_vector(int Source, ArrayList[] Adj, int N, int M)
         //{
@@ -470,373 +470,373 @@ namespace PA_Library
         //        Node++;
         //}
 
-        public ArrayList CopyArrayList(int Source, ArrayList[] Adj,int N, int M)
-        {
-            ArrayList Result = new ArrayList(M);
-            int Neigh = 1;
-            while (Neigh < M)
-            {
-                Result[Neigh] = CopyEdge(Source, Neigh, Adj, N, M);
-                Neigh++;
-            }
-            return Result;
-        }
+        // public ArrayList CopyArrayList(int Source, ArrayList[] Adj,int N, int M)
+        // {
+        //     ArrayList Result = new ArrayList(M);
+        //     int Neigh = 1;
+        //     while (Neigh < M)
+        //     {
+        //         Result[Neigh] = CopyEdge(Source, Neigh, Adj, N, M);
+        //         Neigh++;
+        //     }
+        //     return Result;
+        // }
 
-        public int CopyEdge(int Node, int Neigh, ArrayList[] Adj, int N, int M)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            Result = (int) Adj[Node][Neigh];
-            return Result;
-        }
-        public ArrayList Copy(int Source, ArrayList[] Adj, int N, int M)
-        {
-            ArrayList Result = new ArrayList(M);
-            int Neigh = 1;
-            while (Neigh < M)
-            {
-                Result[Neigh] = Copy(Source,Neigh,Adj,N,M);
-                Neigh++;
-            }
-            return Result;
-        }
+    //     public int CopyEdge(int Node, int Neigh, ArrayList[] Adj, int N, int M)
+    //     {
+    //         int Success = 0;
+    //         int Fail = -1;
+    //         int Result = Success;
+    //         Result = (int) Adj[Node][Neigh];
+    //         return Result;
+    //     }
+    //     public ArrayList Copy(int Source, ArrayList[] Adj, int N, int M)
+    //     {
+    //         ArrayList Result = new ArrayList(M);
+    //         int Neigh = 1;
+    //         while (Neigh < M)
+    //         {
+    //             Result[Neigh] = Copy(Source,Neigh,Adj,N,M);
+    //             Neigh++;
+    //         }
+    //         return Result;
+    //     }
 
-        public int Copy(int Node, int Neigh, ArrayList[] Adj, int N, int M)
-        {
-            int Copy;
-            Copy = (int)Adj[Node][Neigh];
-            return Copy;
-        }
-        public int CheckSource(int Source, ArrayList[] Adj, int N, int M)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            if (Source < 0)
-            {
-                Result = Fail;
-                Console.Error.WriteLine($"{Source} < 0");
-                //Result = Success;
-                //resul
-            }
-            else if (Source == 0)
-            {
-                Result = Fail;
-                Console.Error.WriteLine($"{Source} == 0");
-            }
-            else if (Source > 0)
-            {
-                Result = Success;
-            }
-            return Result;
-        }
-
-
-        public int CheckEdge(int Node, int Neigh, ArrayList[] Adj, int N, int M)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            int Edge = (int) Adj[Node][Neigh];
-            if (Edge < 0)
-            {
-                Console.Error.WriteLine($"{Edge} < 0");
-                Result = Fail;
-            }
-            else if (Edge == 0)
-            {
-                Console.Error.WriteLine($"{Edge} == 0");
-                Result = Fail;
-            }
-            else if (Edge > 0)
-            {
-                Result = Success;
-            }
-            return Result;
-        }
-
-        public int Check(int Source, ArrayList[] Adj, int N, int M)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            if (Adj == null)
-            {
-                Console.Error.WriteLine($"{Adj} == null");
-                Result = Fail;
-                return Result;
-            }
-            else
-            {
-                Result = CheckVector(Source, Adj, N, M);
-            }
-            return Result;
-        }
-
-        public int CheckNodeCardinal(int Source, ArrayList[] Adj, int N, int M)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            //nt32 edge = (int)Adj[Node][Neigh];
-            if (N < 0)
-            {
-                Console.Error.WriteLine($"{N} < 0");
-                Result = Fail;
-            }
-            else if (N == 0)
-            {
-                Console.Error.WriteLine($"{N} == 0");
-                Result = Fail;
-            }
-            else if (N > 0)
-            {
-                Result = Success;
-            }
-            return Result;
-        }
-
-        public int CheckEdgeCardinal(int Source, ArrayList[] Adj, int N, int M)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            //nt32 edge = (int)Adj[Node][Neigh];
-            if (N < 0)
-            {
-                Console.Error.WriteLine($"{N} < 0");
-                Result = Fail;
-            }
-            else if (N == 0)
-            {
-                Console.Error.WriteLine($"{N} == 0");
-                Result = Fail;
-            }
-            else if (N > 0)
-            {
-                Result = Success;
-            }
-            return Result;
-        }
+    //     public int Copy(int Node, int Neigh, ArrayList[] Adj, int N, int M)
+    //     {
+    //         int Copy;
+    //         Copy = (int)Adj[Node][Neigh];
+    //         return Copy;
+    //     }
+    //     public int CheckSource(int Source, ArrayList[] Adj, int N, int M)
+    //     {
+    //         int Success = 0;
+    //         int Fail = -1;
+    //         int Result = Success;
+    //         if (Source < 0)
+    //         {
+    //             Result = Fail;
+    //             Console.Error.WriteLine($"{Source} < 0");
+    //             //Result = Success;
+    //             //resul
+    //         }
+    //         else if (Source == 0)
+    //         {
+    //             Result = Fail;
+    //             Console.Error.WriteLine($"{Source} == 0");
+    //         }
+    //         else if (Source > 0)
+    //         {
+    //             Result = Success;
+    //         }
+    //         return Result;
+    //     }
 
 
-        public int CopyNodeCardinal(int Source, ArrayList[] Adj, int N, int M)
-        {
-            int Result = 0;
-            Result = N;
-            return Result;
-            //int Fail = -1;
-            //int Result = Success;
-            ////nt32 edge = (int)Adj[Node][Neigh];
-            //if (N < 0)
-            //{
-            //    Console.Error.WriteLine($"{N} < 0");
-            //    Result = Fail;
-            //}
-            //else if (N == 0)
-            //{
-            //    Console.Error.WriteLine($"{N} == 0");
-            //    Result = Fail;
-            //}
-            //else if (N > 0)
-            //{
-            //    Result = Success;
-            //}
-            //return Result;
-        }
+    //     public int CheckEdge(int Node, int Neigh, ArrayList[] Adj, int N, int M)
+    //     {
+    //         int Success = 0;
+    //         int Fail = -1;
+    //         int Result = Success;
+    //         int Edge = (int) Adj[Node][Neigh];
+    //         if (Edge < 0)
+    //         {
+    //             Console.Error.WriteLine($"{Edge} < 0");
+    //             Result = Fail;
+    //         }
+    //         else if (Edge == 0)
+    //         {
+    //             Console.Error.WriteLine($"{Edge} == 0");
+    //             Result = Fail;
+    //         }
+    //         else if (Edge > 0)
+    //         {
+    //             Result = Success;
+    //         }
+    //         return Result;
+    //     }
 
-        public int CopyEdgeCardinal(int Source, ArrayList[] Adj, int N, int M)
-        {
-            int Result = 0;
-            Result = M;
-            return Result;
-            //int Fail = -1;
-            //int Result = Success;
-            ////nt32 edge = (int)Adj[Node][Neigh];
-            //if (N < 0)
-            //{
-            //    Console.Error.WriteLine($"{N} < 0");
-            //    Result = Fail;
-            //}
-            //else if (N == 0)
-            //{
-            //    Console.Error.WriteLine($"{N} == 0");
-            //    Result = Fail;
-            //}
-            //else if (N > 0)
-            //{
-            //    Result = Success;
-            //}
-            //return Result;
-        }
-        //public int check(int Node)
-        //{
-        //    int Result;
-        //    int Success = 9;
-        //    int Fail = -1;
-        //    if (Node < 0)
-        //    {
-        //        Console.Error.WriteLine("Node < 9");
-        //        Result = Fail;
-        //    }
-        //    else if (Node == 0)
-        //    {
-        //        Console.Error.WriteLine("Node == 0");
-        //        Result = Fail;
-        //    }
-        //    else
-        //    {
-        //        Result = Success;
-        //    }
-        //    return Result;
-        //}
-        /*
-        private AdjacencyList<Node> initArray(int x, int y, int N)
-        {
-            int i = default(int);
-            int j = default(int);
-            AdjacencyList<Node> Adj = default(AdjacencyList<Node>);
-            if (x < 0)
-            {
-                Console.Error.WriteLine("x < 0");
-            }
-            else if (x == 0)
-            {
-                Console.Error.WriteLine("x == 0");
-            }
-            else if ((x > 0) && (x != 0))
-            {
-                if (y < 0)
-                {
-                    Console.Error.WriteLine("y < 0");
-                }
-                else if (y == 0)
-                {
-                    Console.Error.WriteLine("y == 0");
-                }
-                else if ((y > 0) && (y != 0))
-                {
-                    if (N < 0)
-                    {
-                        Console.Error.WriteLine("N < 0");
-                    }
-                    else if (N == 0)
-                    {
-                        Console.Error.WriteLine("N == 0");
-                    }
-                    else if ((N > 0) && (N != 0))
-                    {
-                        //Adj = new AdjacencyList[N + 2];
-                        Adj = new AdjacencyList<Node>();
-                        i = 1;
-                        j = (i + 1);
-                        while (i < y)
-                        {
-                            Adj = default(AdjacencyList<Node>) ;
-                            i = j;
-                            j = (i + 1);
-                        }
-                    }
-                }
-            }
-            /*
-            if (N < 0)
-            {
-                Console.Error.WriteLine("N < 0");
-                Adj = default(AdjacencyList[]);
-            }
-            {
-                Console.Error.WriteLine("N == 0");
-            else if (N == 0)
-                Adj = default(AdjacencyList[]);
-            }
-            else if (N > 0 && N != 0)
-            {
+    //     public int Check(int Source, ArrayList[] Adj, int N, int M)
+    //     {
+    //         int Success = 0;
+    //         int Fail = -1;
+    //         int Result = Success;
+    //         if (Adj == null)
+    //         {
+    //             Console.Error.WriteLine($"{Adj} == null");
+    //             Result = Fail;
+    //             return Result;
+    //         }
+    //         else
+    //         {
+    //             Result = CheckVector(Source, Adj, N, M);
+    //         }
+    //         return Result;
+    //     }
+
+    //     public int CheckNodeCardinal(int Source, ArrayList[] Adj, int N, int M)
+    //     {
+    //         int Success = 0;
+    //         int Fail = -1;
+    //         int Result = Success;
+    //         //nt32 edge = (int)Adj[Node][Neigh];
+    //         if (N < 0)
+    //         {
+    //             Console.Error.WriteLine($"{N} < 0");
+    //             Result = Fail;
+    //         }
+    //         else if (N == 0)
+    //         {
+    //             Console.Error.WriteLine($"{N} == 0");
+    //             Result = Fail;
+    //         }
+    //         else if (N > 0)
+    //         {
+    //             Result = Success;
+    //         }
+    //         return Result;
+    //     }
+
+    //     public int CheckEdgeCardinal(int Source, ArrayList[] Adj, int N, int M)
+    //     {
+    //         int Success = 0;
+    //         int Fail = -1;
+    //         int Result = Success;
+    //         //nt32 edge = (int)Adj[Node][Neigh];
+    //         if (N < 0)
+    //         {
+    //             Console.Error.WriteLine($"{N} < 0");
+    //             Result = Fail;
+    //         }
+    //         else if (N == 0)
+    //         {
+    //             Console.Error.WriteLine($"{N} == 0");
+    //             Result = Fail;
+    //         }
+    //         else if (N > 0)
+    //         {
+    //             Result = Success;
+    //         }
+    //         return Result;
+    //     }
+
+
+    //     public int CopyNodeCardinal(int Source, ArrayList[] Adj, int N, int M)
+    //     {
+    //         int Result = 0;
+    //         Result = N;
+    //         return Result;
+    //         //int Fail = -1;
+    //         //int Result = Success;
+    //         ////nt32 edge = (int)Adj[Node][Neigh];
+    //         //if (N < 0)
+    //         //{
+    //         //    Console.Error.WriteLine($"{N} < 0");
+    //         //    Result = Fail;
+    //         //}
+    //         //else if (N == 0)
+    //         //{
+    //         //    Console.Error.WriteLine($"{N} == 0");
+    //         //    Result = Fail;
+    //         //}
+    //         //else if (N > 0)
+    //         //{
+    //         //    Result = Success;
+    //         //}
+    //         //return Result;
+    //     }
+
+    //     public int CopyEdgeCardinal(int Source, ArrayList[] Adj, int N, int M)
+    //     {
+    //         int Result = 0;
+    //         Result = M;
+    //         return Result;
+    //         //int Fail = -1;
+    //         //int Result = Success;
+    //         ////nt32 edge = (int)Adj[Node][Neigh];
+    //         //if (N < 0)
+    //         //{
+    //         //    Console.Error.WriteLine($"{N} < 0");
+    //         //    Result = Fail;
+    //         //}
+    //         //else if (N == 0)
+    //         //{
+    //         //    Console.Error.WriteLine($"{N} == 0");
+    //         //    Result = Fail;
+    //         //}
+    //         //else if (N > 0)
+    //         //{
+    //         //    Result = Success;
+    //         //}
+    //         //return Result;
+    //     }
+    //     //public int check(int Node)
+    //     //{
+    //     //    int Result;
+    //     //    int Success = 9;
+    //     //    int Fail = -1;
+    //     //    if (Node < 0)
+    //     //    {
+    //     //        Console.Error.WriteLine("Node < 9");
+    //     //        Result = Fail;
+    //     //    }
+    //     //    else if (Node == 0)
+    //     //    {
+    //     //        Console.Error.WriteLine("Node == 0");
+    //     //        Result = Fail;
+    //     //    }
+    //     //    else
+    //     //    {
+    //     //        Result = Success;
+    //     //    }
+    //     //    return Result;
+    //     //}
+    //     /*
+    //     private AdjacencyList<Node> initArray(int x, int y, int N)
+    //     {
+    //         int i = default(int);
+    //         int j = default(int);
+    //         AdjacencyList<Node> Adj = default(AdjacencyList<Node>);
+    //         if (x < 0)
+    //         {
+    //             Console.Error.WriteLine("x < 0");
+    //         }
+    //         else if (x == 0)
+    //         {
+    //             Console.Error.WriteLine("x == 0");
+    //         }
+    //         else if ((x > 0) && (x != 0))
+    //         {
+    //             if (y < 0)
+    //             {
+    //                 Console.Error.WriteLine("y < 0");
+    //             }
+    //             else if (y == 0)
+    //             {
+    //                 Console.Error.WriteLine("y == 0");
+    //             }
+    //             else if ((y > 0) && (y != 0))
+    //             {
+    //                 if (N < 0)
+    //                 {
+    //                     Console.Error.WriteLine("N < 0");
+    //                 }
+    //                 else if (N == 0)
+    //                 {
+    //                     Console.Error.WriteLine("N == 0");
+    //                 }
+    //                 else if ((N > 0) && (N != 0))
+    //                 {
+    //                     //Adj = new AdjacencyList[N + 2];
+    //                     Adj = new AdjacencyList<Node>();
+    //                     i = 1;
+    //                     j = (i + 1);
+    //                     while (i < y)
+    //                     {
+    //                         Adj = default(AdjacencyList<Node>) ;
+    //                         i = j;
+    //                         j = (i + 1);
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //         /*
+    //         if (N < 0)
+    //         {
+    //             Console.Error.WriteLine("N < 0");
+    //             Adj = default(AdjacencyList[]);
+    //         }
+    //         {
+    //             Console.Error.WriteLine("N == 0");
+    //         else if (N == 0)
+    //             Adj = default(AdjacencyList[]);
+    //         }
+    //         else if (N > 0 && N != 0)
+    //         {
                 
-            }*/
-        //return Adj;
-        //}
+    //         }*/
+    //     //return Adj;
+    //     //}
 
-        /*
-        private AdjacencyList<Node> allocArray(int x, int y, AdjacencyList<Node> Adj)
-        {
-            int i = default(int);
-            int j = default(int);
-            //AdjacencyList[] Adj = default(AdjacencyList[]);
-            if (x < 0)
-            {
-                Console.Error.WriteLine("x < 0");
-            }
-            else if (x == 0)
-            {
-                Console.Error.WriteLine("x == 0");
-            }
-            else if ((x > 0) && (x != 0))
-            {
-                if (y < 0)
-                {
-                    Console.Error.WriteLine("y < 0");
-                }
-                else if (y == 0)
-                {
-                    Console.Error.WriteLine("y == 0");
-                }
-                else if ((y > 0) && (y != 0))
-                {
-                    if (Adj == null)
-                    {
-                        Console.Error.WriteLine("Adj == null");
+    //     /*
+    //     private AdjacencyList<Node> allocArray(int x, int y, AdjacencyList<Node> Adj)
+    //     {
+    //         int i = default(int);
+    //         int j = default(int);
+    //         //AdjacencyList[] Adj = default(AdjacencyList[]);
+    //         if (x < 0)
+    //         {
+    //             Console.Error.WriteLine("x < 0");
+    //         }
+    //         else if (x == 0)
+    //         {
+    //             Console.Error.WriteLine("x == 0");
+    //         }
+    //         else if ((x > 0) && (x != 0))
+    //         {
+    //             if (y < 0)
+    //             {
+    //                 Console.Error.WriteLine("y < 0");
+    //             }
+    //             else if (y == 0)
+    //             {
+    //                 Console.Error.WriteLine("y == 0");
+    //             }
+    //             else if ((y > 0) && (y != 0))
+    //             {
+    //                 if (Adj == null)
+    //                 {
+    //                     Console.Error.WriteLine("Adj == null");
 
-                    }
-                    else if (Adj != null)
-                    {
-                        i = x;
-                        j = (i + 1);
-                        while (i < y)
-                        {
-                            Adj[i] = default(AdjacencyList);
-                            i = j;
-                            j = (i + 1);
-                        }
-                    }
-                        //Adj = new AdjacencyList[N + 2];
-                        //Adj = new AdjacencyList[N];
+    //                 }
+    //                 else if (Adj != null)
+    //                 {
+    //                     i = x;
+    //                     j = (i + 1);
+    //                     while (i < y)
+    //                     {
+    //                         Adj[i] = default(AdjacencyList);
+    //                         i = j;
+    //                         j = (i + 1);
+    //                     }
+    //                 }
+    //                     //Adj = new AdjacencyList[N + 2];
+    //                     //Adj = new AdjacencyList[N];
                         
-                }
-            }
-            return Adj;
-        }
-        */
-        /*
-        if (N < 0)
-        {
-            Console.Error.WriteLine("N < 0");
-            Adj = default(AdjacencyList[]);
-        }
-        {
-            Console.Error.WriteLine("N == 0");
-        else if (N == 0)
-            Adj = default(AdjacencyList[]);
-        }
-        else if (N > 0 && N != 0)
-        {
+    //             }
+    //         }
+    //         return Adj;
+    //     }
+    //     */
+    //     /*
+    //     if (N < 0)
+    //     {
+    //         Console.Error.WriteLine("N < 0");
+    //         Adj = default(AdjacencyList[]);
+    //     }
+    //     {
+    //         Console.Error.WriteLine("N == 0");
+    //     else if (N == 0)
+    //         Adj = default(AdjacencyList[]);
+    //     }
+    //     else if (N > 0 && N != 0)
+    //     {
 
-        }*/
-        // return Adj;
-        //}
+    //     }*/
+    //     // return Adj;
+    //     //}
 
-        //public int SOURCE { get; }
-        //public AdjacencyList ADJ { get; }
-        //public int N { get; }
+    //     //public int SOURCE { get; }
+    //     //public AdjacencyList ADJ { get; }
+    //     //public int N { get; }
 
-        //public ArrayList[] ADJ { get; }
-        //public int M { get; }
+    //     //public ArrayList[] ADJ { get; }
+    //     //public int M { get; }
 
-        public override string ToString() => $"({SOURCE}, {N}, {M})";
+    //     public override string ToString() => $"({SOURCE}, {N}, {M})";
 
-        //        public override string ToString() => $"({SOURCE}, {ADJ}, {N}, {M})";
-    }
+    //     //        public override string ToString() => $"({SOURCE}, {ADJ}, {N}, {M})";
+    // }
 
     //class YourClass
     //{
@@ -865,5 +865,5 @@ namespace PA_Library
     //    struct YourStruct
     //    {
     //    }
-    //}
+    }
 }
