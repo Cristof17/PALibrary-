@@ -224,534 +224,535 @@ namespace PA_Library
         //    return Result;
         //}
 
-        int CheckVector(PANod Source, PALista Adj, int N, int M)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            int Node = 1;
-            while (Node < N)
-            {
-                Result = CheckArrayList(Source, Adj, N, M);
-                if (Result == Fail)
-                {
-                    //Console.Error.WriteLine($"Adj[{Node}] error");
-                    return Result;
-                }
-                else if (Result == Success)
-                {
-                    Node++;
-                }
-                //if (Result == Success)
-                //{
-                //    //Node++;
-                //    Result = Success;
-                //}
-                //else
-                //{
-                //    return Result;
-                //    //Node++;
-                //    //Result = Fail;
-                //}
-                //Node++;
-            }
-            return Result;
-        }
+        // int CheckVector(PANod Source, PALista Adj, int N, int M)
+        // {
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     int Result = Success;
+        //     int Node = 1;
+        //     while (Node < N)
+        //     {
+        //         Result = CheckArrayList(Source, Adj, N, M);
+        //         if (Result == Fail)
+        //         {
+        //             //Console.Error.WriteLine($"Adj[{Node}] error");
+        //             return Result;
+        //         }
+        //         else if (Result == Success)
+        //         {
+        //             Node++;
+        //         }
+        //         //if (Result == Success)
+        //         //{
+        //         //    //Node++;
+        //         //    Result = Success;
+        //         //}
+        //         //else
+        //         //{
+        //         //    return Result;
+        //         //    //Node++;
+        //         //    //Result = Fail;
+        //         //}
+        //         //Node++;
+        //     }
+        //     return Result;
+        // }
 
-        //copies the Input vector of array lissts in a newly creeated vector of array lists
-        PALista CopyVector(PANod Source, PALista Adj, int N, int M)
-        {
-            PALista copy = new PALista(Source);
-            //ArrayList[] Result;
-            //ArrayList[] copy = new ArrayList[N];
-            int Node = 1;
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            int count = 0;
-            //int Result;
-            //int Success = 0;
-            //int Fail = -1;
-            //Result = new ArrayList[N];
-            //Node = 1;
-            //int M = Adj[x].Capacity;
-            Result = CheckIndex(Source, Adj, N, M);
-            if (Result == Success)
-            {
-                while (Node < N)
-                {
-                    Result = CheckIndex(Source, Adj, N, M);
-                    if (Result == Success)
-                    {
-                        count = Size(Source, Adj, N, M);
+        // //copies the Input vector of array lissts in a newly creeated vector of array lists
+        // PALista CopyVector(PANod Source, PALista Adj, int N, int M)
+        // {
+        //     PALista copy = new PALista(Source);
+        //     //ArrayList[] Result;
+        //     //ArrayList[] copy = new ArrayList[N];
+        //     int Node = 1;
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     int Result = Success;
+        //     int count = 0;
+        //     //int Result;
+        //     //int Success = 0;
+        //     //int Fail = -1;
+        //     //Result = new ArrayList[N];
+        //     //Node = 1;
+        //     //int M = Adj[x].Capacity;
+        //     Result = CheckIndex(Source, Adj, N, M);
+        //     if (Result == Success)
+        //     {
+        //         while (Node < N)
+        //         {
+        //             Result = CheckIndex(Source, Adj, N, M);
+        //             if (Result == Success)
+        //             {
+        //                 count = Size(Source, Adj, N, M);
 
-                        copy[Node] = CopyArrayList(Source,Adj,N,M);
-                    }
-                    else if (Result == Fail)
-                    {
-                        //Console.Error.WriteLine($"Node {Node} error");
-                    }
-                    Node++;
-                    //Result[x] = Copy(Adj[x], M);
-                }
-            }
-            else if (Result == Fail)
-            {
-                //Console.Error.WriteLine($"Node {Node} and number of nodes {N}");
-            }
-            return copy;
-        }
+        //                 copy[Node] = CopyArrayList(Source,Adj,N,M);
+        //             }
+        //             else if (Result == Fail)
+        //             {
+        //                 //Console.Error.WriteLine($"Node {Node} error");
+        //             }
+        //             Node++;
+        //             //Result[x] = Copy(Adj[x], M);
+        //         }
+        //     }
+        //     else if (Result == Fail)
+        //     {
+        //         //Console.Error.WriteLine($"Node {Node} and number of nodes {N}");
+        //     }
+        //     return copy;
+        // }
        
-        //checks the reference of the vector of array lists ArrayList[]
-        int CheckReferenceVector(PANod Source, PALista Adj, int N, int M)
-        {
-            int Result;
-            int Success = 0;
-            int Fail = -1;
-            //int Neigh = 1;
-            if (Adj == null)
-            {
-                //Console.Error.WriteLine($"Adj is null reference: {Adj}");
-                Result = Fail;
-            }
-            else
-            {
-                Result = Success;
-            }
-            return Result;
-        }
-        //check the reference of the array list from the vector of array lists
+        // //checks the reference of the vector of array lists ArrayList[]
+        // int CheckReferenceVector(PANod Source, PALista Adj, int N, int M)
+        // {
+        //     int Result;
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     //int Neigh = 1;
+        //     if (Adj == null)
+        //     {
+        //         //Console.Error.WriteLine($"Adj is null reference: {Adj}");
+        //         Result = Fail;
+        //     }
+        //     else
+        //     {
+        //         Result = Success;
+        //     }
+        //     return Result;
+        // }
+        // //check the reference of the array list from the vector of array lists
 
-        int CheckReferenceArrayList(PANod Source, PALista Adj, int N, int M)
-        {
-            int Result;
-            int Success = 0;
-            int Fail = -1;
-            //int Neigh = 1;
-            if (Adj[Source] == null)
-            {
-                //Console.Error.WriteLine($"Adj[{Source}] is null reference");
-                Result = Fail;
-            }
-            else
-            {
-                Result = Success;
-            }
-            return Result;
-        }
+        // int CheckReferenceArrayList(PANod Source, PALista Adj, int N, int M)
+        // {
+        //     int Result;
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     //int Neigh = 1;
+        //     if (Adj[Source] == null)
+        //     {
+        //         //Console.Error.WriteLine($"Adj[{Source}] is null reference");
+        //         Result = Fail;
+        //     }
+        //     else
+        //     {
+        //         Result = Success;
+        //     }
+        //     return Result;
+        // }
 
-        //checks the values stored in the array list
-        int CheckArrayList(PANod Source, PALista Adj, int N, int M)
-        {
-            int Result;
-            int Success = 0;
-            int Fail = -1;
-            PAData data;
-            data.value = 1;
-            //= new PAData(1);
-            PANod Neigh = new PANod(data, Source);//,PAStare.NOT_VISITED);
-            Result = CheckReferenceArrayList(Source, Adj, N, M);
-            if (Result == Success)
-            {
-                M = Size(Source, Adj, N, M);
-                Result = CheckSource(Source, Adj, N, M);
-                if (Result == Fail)
-                {
-                    //Console.Error.WriteLine($"Source {Source} error");
-                    Result = Fail;
-                }
-                else if (Result == Success)
-                {
-                    while (Neigh < M)
-                    {
-                        Result = CheckIndex(Neigh, Adj, N, M);
-                        if (Result == Success)
-                        {
-                            Result = CheckEdge(Source, Neigh, Adj, N, M);//(int)Adj[Neigh]);
-                            if (Result == Fail)
-                            {
-                                //Console.Error.WriteLine($"Adj[{Neigh}] error");
-                                return Result;
-                            }
-                            else if (Result == Success)
-                            {
-                                Neigh++;
-                            }
-                        }
-                        else if (Result == Fail)
-                        {
-                            Result = Fail;
-                            //Console.Error.WriteLine($"index {Neigh} error ");
-                        }
-                    }
-                }
-            }
-            else if (Result == Fail)
-            {
-                //Console.Error.WriteLine($"Adj[{Source}] is null");
-                Result = Fail;
-                return Result;
-            }
-            return Result;
-            //else if (Result == Fail)
-            //{
-            //    Console.Error.WriteLine("reference error");
-            //}
-            ////}
-            //Result = Fail;
-            //Neigh++;
-            //Result = Success;
-            //return Result;
-            //return Result;
-        }
+        // //checks the values stored in the array list
+        // int CheckArrayList(PANod Source, PALista Adj, int N, int M)
+        // {
+        //     int Result;
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     PAData data;
+        //     data.value = 1;
+        //     //= new PAData(1);
+        //     PANod Neigh = new PANod(data, Source);//,PAStare.NOT_VISITED);
+        //     Result = CheckReferenceArrayList(Source, Adj, N, M);
+        //     if (Result == Success)
+        //     {
+        //         M = Size(Source, Adj, N, M);
+        //         Result = CheckSource(Source, Adj, N, M);
+        //         if (Result == Fail)
+        //         {
+        //             //Console.Error.WriteLine($"Source {Source} error");
+        //             Result = Fail;
+        //         }
+        //         else if (Result == Success)
+        //         {
+        //             while (Neigh < M)
+        //             {
+        //                 Result = CheckIndex(Neigh, Adj, N, M);
+        //                 if (Result == Success)
+        //                 {
+        //                     Result = CheckEdge(Source, Neigh, Adj, N, M);//(int)Adj[Neigh]);
+        //                     if (Result == Fail)
+        //                     {
+        //                         //Console.Error.WriteLine($"Adj[{Neigh}] error");
+        //                         return Result;
+        //                     }
+        //                     else if (Result == Success)
+        //                     {
+        //                         Neigh++;
+        //                     }
+        //                 }
+        //                 else if (Result == Fail)
+        //                 {
+        //                     Result = Fail;
+        //                     //Console.Error.WriteLine($"index {Neigh} error ");
+        //                 }
+        //             }
+        //         }
+        //     }
+        //     else if (Result == Fail)
+        //     {
+        //         //Console.Error.WriteLine($"Adj[{Source}] is null");
+        //         Result = Fail;
+        //         return Result;
+        //     }
+        //     return Result;
+        //     //else if (Result == Fail)
+        //     //{
+        //     //    Console.Error.WriteLine("reference error");
+        //     //}
+        //     ////}
+        //     //Result = Fail;
+        //     //Neigh++;
+        //     //Result = Success;
+        //     //return Result;
+        //     //return Result;
+        // }
 
-        //        while (Neigh < M)
-        //        {
-        //            Result = CheckEdge(Source, Neigh, Adj, N, M);//(int)Adj[Neigh]);
-        //            if (Result == Fail)
-        //            {
-        //                Console.Error.WriteLine("Adj[Neigh] error");
-        //                return Result;
-        //            }
-        //            else
-        //            {
-        //                Neigh++;
-        //            }
-        //        }
-        //    //Result = Fail;
-        //    //Neigh++;
-        //    Result = Success;
-        //    return Result;
-        //    //return Result;
-        //}
-        //public int CheckArrayList(int Source, ArrayList[] Adj, int N, int M)
-        //{
-        //    int Result;
-        //    int Success = 0;
-        //    int Fail = -1;
-        //    int Neigh = 1;
-        //    while (Neigh < M)
-        //    {
-        //        Result = check_reference(Source, Adj, N, M);
-        //        if (Result == Success)
-        //        {
-        //            Result = CheckEdge(Source, Neigh, Adj, N, M);//(int)Adj[Neigh]);
-        //            if (Result == Fail)
-        //            {
-        //                Console.Error.WriteLine("Adj[Neigh] error");
-        //                return Result;
-        //            }
-        //            else
-        //            {
-        //                Neigh++;
-        //            }
-        //        }
-        //        else if (Result == Fail)
-        //        {
-        //            Console.Error.WriteLine("reference error");
-        //        }
-        //    }
-        //            //Result = Fail;
-        //            //Neigh++;
-        //    Result = Success;
-        //    return Result;
-        //    //return Result;
-        //}
+        // //        while (Neigh < M)
+        // //        {
+        // //            Result = CheckEdge(Source, Neigh, Adj, N, M);//(int)Adj[Neigh]);
+        // //            if (Result == Fail)
+        // //            {
+        // //                Console.Error.WriteLine("Adj[Neigh] error");
+        // //                return Result;
+        // //            }
+        // //            else
+        // //            {
+        // //                Neigh++;
+        // //            }
+        // //        }
+        // //    //Result = Fail;
+        // //    //Neigh++;
+        // //    Result = Success;
+        // //    return Result;
+        // //    //return Result;
+        // //}
+        // //public int CheckArrayList(int Source, ArrayList[] Adj, int N, int M)
+        // //{
+        // //    int Result;
+        // //    int Success = 0;
+        // //    int Fail = -1;
+        // //    int Neigh = 1;
+        // //    while (Neigh < M)
+        // //    {
+        // //        Result = check_reference(Source, Adj, N, M);
+        // //        if (Result == Success)
+        // //        {
+        // //            Result = CheckEdge(Source, Neigh, Adj, N, M);//(int)Adj[Neigh]);
+        // //            if (Result == Fail)
+        // //            {
+        // //                Console.Error.WriteLine("Adj[Neigh] error");
+        // //                return Result;
+        // //            }
+        // //            else
+        // //            {
+        // //                Neigh++;
+        // //            }
+        // //        }
+        // //        else if (Result == Fail)
+        // //        {
+        // //            Console.Error.WriteLine("reference error");
+        // //        }
+        // //    }
+        // //            //Result = Fail;
+        // //            //Neigh++;
+        // //    Result = Success;
+        // //    return Result;
+        // //    //return Result;
+        // //}
 
         
-        //returns the size of the array list specified by Source 
-        int Size(PANod Source, PALista Adj, int N, int M)
-        {
-            int size = 0;
-            size = PALista.size(Source,size);//.Capacity;
-            return size;
-            //int current = 0;
-        }
+        // //returns the size of the array list specified by Source 
+        // int Size(PANod Source, PALista Adj, int N, int M)
+        // {
+        //     int size = 0;
+        //     size = PALista.size(Source,size);//.Capacity;
+        //     return size;
+        //     //int current = 0;
+        // }
 
-        //public ArrayList[] CopyVector(int Source, ArrayList[] Adj, int N, int M)
-        //{
-        //    ArrayList[] Result = new ArrayList[N];
-        //    int Node = 1;
-        //    while (Node < N)
-        //    {
-        //        int count = Size(Node, Adj, N, M);
-        //        Result[Node] = CopyArrayList(Source, Adj, N, count);
-        //        Node++;
-        //    }
-        //    return Result;
-        //}
+        // //public ArrayList[] CopyVector(int Source, ArrayList[] Adj, int N, int M)
+        // //{
+        // //    ArrayList[] Result = new ArrayList[N];
+        // //    int Node = 1;
+        // //    while (Node < N)
+        // //    {
+        // //        int count = Size(Node, Adj, N, M);
+        // //        Result[Node] = CopyArrayList(Source, Adj, N, count);
+        // //        Node++;
+        // //    }
+        // //    return Result;
+        // //}
         
-        // copies the array list from the Input list of array lists specified by Source
-        PANod CopyArrayList(PANod Source, PALista Adj, int N, int M)
-        {
-            PANod Result = new PANod(Source);
-            PANod Neigh =(PANod) 1;
-            int i = 1;
-            while (i < M)
-            {
-                Result[Neigh] = CopyEdge(Source, Neigh, Adj, N, M);
-                i++;
-            }
-            return Result;
-        }
+        // // copies the array list from the Input list of array lists specified by Source
+        // PANod CopyArrayList(PANod Source, PALista Adj, int N, int M)
+        // {
+        //     PANod Result = new PANod(Source);
+        //     PANod Neigh =(PANod) 1;
+        //     int i = 1;
+        //     while (i < M)
+        //     {
+        //         Result[Neigh] = CopyEdge(Source, Neigh, Adj, N, M);
+        //         i++;
+        //     }
+        //     return Result;
+        // }
 
-        //copies the value from the array list for the specified Node array list and Neigh value position
-        PANod CopyEdge(PANod Node, PANod Neigh, PALista Adj, int N, int M)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            PANod copy;
-            copy = Adj[Node][Neigh];
-            return copy;
-        }
-        //copies the array list specified by the Source
-        ArrayList Copy(PANod Source, PALista Adj, PACardinal N, PACardinal M)
-        {
-            ArrayList Result = new ArrayList(M);
-            PANod Neigh = (PANod) 1;
-            while (Neigh < M)
-            {
-                Result[Neigh] = Copy(Source, Neigh, Adj, N, M);
-                Neigh++;//Neigh = Neigh + 1 Neigh.operator+(1)
-            }
-            return Result;
-        }
-        //copies the value from the array list specified by Node and the value specified by value
-        int Copy(PANod Node, PANod Neigh, PALista Adj, PACardinal N, PACardinal M)
-        {
-            int copy;
-            copy = (int)Adj[Node][Neigh];
-            return copy;
-        }
-        //checks the given index greater than 0 and less than N
-        int CheckIndex(PANod Node,PALista Adj, PACardinal N, PACardinal M)
-        {
-            int Fail = -1;
-            int Success = 0;
-            int Result = Fail;
+        // //copies the value from the array list for the specified Node array list and Neigh value position
+        // PANod CopyEdge(PANod Node, PANod Neigh, PALista Adj, int N, int M)
+        // {
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     int Result = Success;
+        //     PANod copy;
+        //     copy = Adj[Node][Neigh];
+        //     return copy;
+        // }
+        // //copies the array list specified by the Source
+        // ArrayList Copy(PANod Source, PALista Adj, PACardinal N, PACardinal M)
+        // {
+        //     ArrayList Result = new ArrayList(M);
+        //     PANod Neigh = (PANod) 1;
+        //     while (Neigh < M)
+        //     {
+        //         Result[Neigh] = Copy(Source, Neigh, Adj, N, M);
+        //         Neigh++;//Neigh = Neigh + 1 Neigh.operator+(1)
+        //     }
+        //     return Result;
+        // }
+        // //copies the value from the array list specified by Node and the value specified by value
+        // int Copy(PANod Node, PANod Neigh, PALista Adj, PACardinal N, PACardinal M)
+        // {
+        //     int copy;
+        //     copy = (int)Adj[Node][Neigh];
+        //     return copy;
+        // }
+        // //checks the given index greater than 0 and less than N
+        // int CheckIndex(PANod Node,PALista Adj, PACardinal N, PACardinal M)
+        // {
+        //     int Fail = -1;
+        //     int Success = 0;
+        //     int Result = Fail;
 
-            if (Node < N) {
-                //return Fail;
-                //Console.Error.WriteLine($"{Node} < {N}");
-                Result = Fail;
-            }
-            if (Node == 0)
-            {
-                Result = Fail;
-                //Console.Error.WriteLine($"{N} == 0");
-            }
-            else if (Node < 0)
-            {
-                Result = Fail;
-                //Console.Error.WriteLine($"{Node} < 0");
-                //return Fail;
-            }
-            else if (Node > 0)
-            {
-                Result = Success;
-            }
-            //else
-            //{
-            //    return Success;
-            //}
-            return Result;
-        }       
-        //checks the Source value of the Node greater than 0 and less than N
-        int CheckSource(PANod Source, PALista Adj, PACardinal N, PACardinal M)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            if (Source == null)
-            {
-                return Fail;
-            }
-            else if (Source != null)
-            {
-                Result = Success;
-            }
-            if (Source < 0)
-            {
-                Result = Fail;
-                //Console.Error.WriteLine($"{Source} < 0");
-                //Result = Success;
-                //resul
-            }
-            else if (Source == 0)
-            {
-                Result = Fail;
-                //Console.Error.WriteLine($"{Source} == 0");
-            }
-            else if (Source > 0)
-            {
-                Result = Success;
-                //Console.Out.WriteLine($"{Source} > 0");
-            }
-            if (Source < n)
-            {
-                Result = Success;
-                //Console.Out.WriteLine($"{Source} < {N}");
-            }
-            else if (Source == n)
-            {
-                Result = Success;
-                //Console.Out.WriteLine($"{Source} == {N}");
-                //Console.Error.WriteLine($"Source={Source} == N={N}");
-            }
-            else if (Source > n)
-            {
-                //Result = Success;
-                Result = Fail;
-                //Console.Error.WriteLine($"Source={Source} > N={N}");
-            }
-            return Result;
-        }
+        //     if (Node < N) {
+        //         //return Fail;
+        //         //Console.Error.WriteLine($"{Node} < {N}");
+        //         Result = Fail;
+        //     }
+        //     if (Node == 0)
+        //     {
+        //         Result = Fail;
+        //         //Console.Error.WriteLine($"{N} == 0");
+        //     }
+        //     else if (Node < 0)
+        //     {
+        //         Result = Fail;
+        //         //Console.Error.WriteLine($"{Node} < 0");
+        //         //return Fail;
+        //     }
+        //     else if (Node > 0)
+        //     {
+        //         Result = Success;
+        //     }
+        //     //else
+        //     //{
+        //     //    return Success;
+        //     //}
+        //     return Result;
+        // }       
+        // //checks the Source value of the Node greater than 0 and less than N
+        // int CheckSource(PANod Source, PALista Adj, PACardinal N, PACardinal M)
+        // {
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     int Result = Success;
+        //     if (Source == null)
+        //     {
+        //         return Fail;
+        //     }
+        //     else if (Source != null)
+        //     {
+        //         Result = Success;
+        //     }
+        //     if (Source < 0)
+        //     {
+        //         Result = Fail;
+        //         //Console.Error.WriteLine($"{Source} < 0");
+        //         //Result = Success;
+        //         //resul
+        //     }
+        //     else if (Source == 0)
+        //     {
+        //         Result = Fail;
+        //         //Console.Error.WriteLine($"{Source} == 0");
+        //     }
+        //     else if (Source > 0)
+        //     {
+        //         Result = Success;
+        //         //Console.Out.WriteLine($"{Source} > 0");
+        //     }
+        //     if (Source < n)
+        //     {
+        //         Result = Success;
+        //         //Console.Out.WriteLine($"{Source} < {N}");
+        //     }
+        //     else if (Source == n)
+        //     {
+        //         Result = Success;
+        //         //Console.Out.WriteLine($"{Source} == {N}");
+        //         //Console.Error.WriteLine($"Source={Source} == N={N}");
+        //     }
+        //     else if (Source > n)
+        //     {
+        //         //Result = Success;
+        //         Result = Fail;
+        //         //Console.Error.WriteLine($"Source={Source} > N={N}");
+        //     }
+        //     return Result;
+        // }
 
-        //checks the value given by the Node array list and the Neigh value in the array lust
-        int CheckEdge(PANod Node, int index, PALista Adj, int N, int M)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            //int Neigh = (int)Adj[Node][index];
-            if (Node < 0)
-            {
-                //Console.Error.WriteLine($"{Neigh} < 0");
-                Result = Fail;
-            }
-            else if (Node == 0)
-            {
-                //Console.Error.WriteLine($"{Neigh} == 0");
-                Result = Fail;
-            }
-            else if (Node > 0)
-            {
-                Result = Success;
-            }
-            return Result;
-        }
-        //checks the given vector of array lists 
-        int Check(PANod Source, PALista Adj, int N, int M)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            if (Adj == null)
-            {
-                //Console.Error.WriteLine($"{Adj} is null reference");
-                Result = Fail;
-                return Result;
-            }
-            else
-            {
-                Result = CheckVector(Source, Adj, N, M);
-            }
-            return Result;
-        }
+        // //checks the value given by the Node array list and the Neigh value in the array lust
+        // int CheckEdge(PANod Node, int index, PALista Adj, int N, int M)
+        // {
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     int Result = Success;
+        //     //int Neigh = (int)Adj[Node][index];
+        //     if (Node < 0)
+        //     {
+        //         //Console.Error.WriteLine($"{Neigh} < 0");
+        //         Result = Fail;
+        //     }
+        //     else if (Node == 0)
+        //     {
+        //         //Console.Error.WriteLine($"{Neigh} == 0");
+        //         Result = Fail;
+        //     }
+        //     else if (Node > 0)
+        //     {
+        //         Result = Success;
+        //     }
+        //     return Result;
+        // }
+        // //checks the given vector of array lists 
+        // // int Check(PANod Source, PALista Adj, int N, int M)
+        // int Check(PAElement Source, PASeries Adj, int N, int M)
+        // {
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     int Result = Success;
+        //     if (Adj == null)
+        //     {
+        //         //Console.Error.WriteLine($"{Adj} is null reference");
+        //         Result = Fail;
+        //         return Result;
+        //     }
+        //     else
+        //     {
+        //         Result = CheckVector(Source, Adj, N, M);
+        //     }
+        //     return Result;
+        // }
         
-        //checks the Node cardinal N
-        // int CheckNodeCardinal(PANod Source, PALista Adj, PACardinal N, PACardinal M)
-        int CheckNodeCardinal(PAElement Source, PASeries Adj, PACount N, PACount M)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            //nt32 edge = (int)Adj[Node][Neigh];
-            if (N < 0)
-            {
-                //Console.Error.WriteLine($"{N} < 0");
-                Result = Fail;
-            }
-            else if (N == 0)
-            {
-                //Console.Error.WriteLine($"{N} == 0");
-                Result = Fail;
-            }
-            else if (N > 0)
-            {
-                Result = Success;
-            }
-            return Result;
-        }
+        // //checks the Node cardinal N
+        // // int CheckNodeCardinal(PANod Source, PALista Adj, PACardinal N, PACardinal M)
+        // int CheckNodeCardinal(PAElement Source, PASeries Adj, PACount N, PACount M)
+        // {
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     int Result = Success;
+        //     //nt32 edge = (int)Adj[Node][Neigh];
+        //     if (N < 0)
+        //     {
+        //         //Console.Error.WriteLine($"{N} < 0");
+        //         Result = Fail;
+        //     }
+        //     else if (N == 0)
+        //     {
+        //         //Console.Error.WriteLine($"{N} == 0");
+        //         Result = Fail;
+        //     }
+        //     else if (N > 0)
+        //     {
+        //         Result = Success;
+        //     }
+        //     return Result;
+        // }
 
-        //checks the edge cardinal M
-        // int CheckEdgeCardinal(PANod Source, PALista Adj, int N, int M)
-        int CheckEdgeCardinal(PAElement Source, PASeries Adj, int N, int M)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            //nt32 edge = (int)Adj[Node][Neigh];
-            if (N < 0)
-            {
-                //Console.Error.WriteLine($"{N} < 0");
-                Result = Fail;
-            }
-            else if (N == 0)
-            {
-                //Console.Error.WriteLine($"{N} == 0");
-                Result = Fail;
-            }
-            else if (N > 0)
-            {
-                Result = Success;
-            }
-            return Result;
-        }
+        // //checks the edge cardinal M
+        // // int CheckEdgeCardinal(PANod Source, PALista Adj, int N, int M)
+        // int CheckEdgeCardinal(PAElement Source, PASeries Adj, int N, int M)
+        // {
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     int Result = Success;
+        //     //nt32 edge = (int)Adj[Node][Neigh];
+        //     if (N < 0)
+        //     {
+        //         //Console.Error.WriteLine($"{N} < 0");
+        //         Result = Fail;
+        //     }
+        //     else if (N == 0)
+        //     {
+        //         //Console.Error.WriteLine($"{N} == 0");
+        //         Result = Fail;
+        //     }
+        //     else if (N > 0)
+        //     {
+        //         Result = Success;
+        //     }
+        //     return Result;
+        // }
 
-        //returns a copy of the Node cardinal
-        // int CopyNodeCardinal(PANod Source, PALista Adj, int N, int M)
-        int CopyNodeCardinal(PAElement Source, PASeries Adj, int N, int M)
-        {
-            int Result = 0;
-            Result = N;
-            return Result;
-            //int Fail = -1;
-            //int Result = Success;
-            ////nt32 edge = (int)Adj[Node][Neigh];
-            //if (N < 0)
-            //{
-            //    Console.Error.WriteLine($"{N} < 0");
-            //    Result = Fail;
-            //}
-            //else if (N == 0)
-            //{
-            //    Console.Error.WriteLine($"{N} == 0");
-            //    Result = Fail;
-            //}
-            //else if (N > 0)
-            //{
-            //    Result = Success;
-            //}
-            //return Result;
-        }
+        // //returns a copy of the Node cardinal
+        // // int CopyNodeCardinal(PANod Source, PALista Adj, int N, int M)
+        // int CopyNodeCardinal(PAElement Source, PASeries Adj, int N, int M)
+        // {
+        //     int Result = 0;
+        //     Result = N;
+        //     return Result;
+        //     //int Fail = -1;
+        //     //int Result = Success;
+        //     ////nt32 edge = (int)Adj[Node][Neigh];
+        //     //if (N < 0)
+        //     //{
+        //     //    Console.Error.WriteLine($"{N} < 0");
+        //     //    Result = Fail;
+        //     //}
+        //     //else if (N == 0)
+        //     //{
+        //     //    Console.Error.WriteLine($"{N} == 0");
+        //     //    Result = Fail;
+        //     //}
+        //     //else if (N > 0)
+        //     //{
+        //     //    Result = Success;
+        //     //}
+        //     //return Result;
+        // }
 
-         //returns a copy of the edge cardinal
-        int CopyEdgeCardinal(PAElement Source, PASeries Adj, int N, int M)
-        {
-            int Result = 0;
-            Result = M;
-            return Result;
-            //int Fail = -1;
-            //int Result = Success;
-            ////nt32 edge = (int)Adj[Node][Neigh];
-            //if (N < 0)
-            //{
-            //    Console.Error.WriteLine($"{N} < 0");
-            //    Result = Fail;
-            //}
-            //else if (N == 0)
-            //{
-            //    Console.Error.WriteLine($"{N} == 0");
-            //    Result = Fail;
-            //}
-            //else if (N > 0)
-            //{
-            //    Result = Success;
-            //}
-            //return Result;
-        }
+        //  //returns a copy of the edge cardinal
+        // int CopyEdgeCardinal(PAElement Source, PASeries Adj, int N, int M)
+        // {
+        //     int Result = 0;
+        //     Result = M;
+        //     return Result;
+        //     //int Fail = -1;
+        //     //int Result = Success;
+        //     ////nt32 edge = (int)Adj[Node][Neigh];
+        //     //if (N < 0)
+        //     //{
+        //     //    Console.Error.WriteLine($"{N} < 0");
+        //     //    Result = Fail;
+        //     //}
+        //     //else if (N == 0)
+        //     //{
+        //     //    Console.Error.WriteLine($"{N} == 0");
+        //     //    Result = Fail;
+        //     //}
+        //     //else if (N > 0)
+        //     //{
+        //     //    Result = Success;
+        //     //}
+        //     //return Result;
+        // }
 
 
         //public int Check(ArrayList[] Adj)

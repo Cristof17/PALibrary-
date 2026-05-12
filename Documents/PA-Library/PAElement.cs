@@ -9,7 +9,7 @@ namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct PAElement
-    //public struct PANod
+    //public struct PAElement
     {
     [DllImport("palibrary")]
     public static extern PAElement PAElementConstruct(PAData Data, PAElement Next, PAStatus Status);
@@ -26,183 +26,200 @@ namespace PA_Library
     [DllImport("palibrary")]
 
     public static extern void PADataReset();
-        public PAPunct(PAPunct Node)
-        {
-            data = Node.data;
-            next = Node.next;
-            //stare = PAStare.NOT_VISITED;
-        }
-        public PANod(PAData Data)
-        {
-            data = Data;
-            next = default;
-        }
-        public PANod(PAData Data, PANod Next)
-        {
-            data = Data;
-            next = Next;
-            //stare = PAStare.NOT_VISITED;
-        }
-        //public PANod(PA)
-        public PANod(PANod node, PANod neigh)
-        {
-            data = node.data;
-            next = neigh;
-        }
-        //public PANod(long Nod)
+        // public PAPunct(PAPunct Node)
+        // {
+        //     data = Node.data;
+        //     next = Node.next;
+        //     //stare = PAStare.NOT_VISITED;
+        // }
+        // public PAElement(PAData Data)
+        // {
+        //     data = Data;
+        //     next = default;
+        // }
+        // public PAElement(PAData Data, PAElement Next)
+        // {
+        //     data = Data;
+        //     next = Next;
+        //     //stare = PAStare.NOT_VISITED;
+        // }
+        // //public PAElement(PA)
+        // // public PAElement(PAElement node, PAElement neigh)
+        // public PAElement(PAElement node, PAElement neigh)
+        // {
+        //     data = node.data;
+        //     next = neigh;
+        // }
+        //public PAElement(long Nod)
         //{
         //    data = Nod;
         //    next = Nod;
         //    stare = PAStare.NOT_VISITED;
         //}
-        //public PANod(short Nod)
+        //public PAElement(short Nod)
         //{
         //    data = Nod;
         //    next = Nod;
         //    stare = PAStare.NOT_VISITED;
         //}
-        //public PANod(ushort Nod)
+        //public PAElement(ushort Nod)
         //{
         //    data = Nod;
         //    next = Nod;
         //    stare = PAStare.NOT_VISITED;
         //}
-        //public PANod(ulong Nod)
+        //public PAElement(ulong Nod)
         //{
         //    data = Nod;
         //    next = Nod;
         //    stare = PAStare.NOT_VISITED;
         //}
-        //public PANod(PANod Nod)
+        //public PAElement(PAElement Nod)
         //{
         //    data = Nod.data;
         //    next = Nod.next;
         //    stare = Nod.stare;
         //}
-        //public PANod(PAData Data, PANod Next, PAStare Stare)
+        //public PAElement(PAData Data, PAElement Next, PAStare Stare)
         //{
         //    data = Data;
         //    next = Next;
         //    stare = Stare;
         //}
-        public Element(Data index, Element next, Stare status)
+        public PAElement(PAData index, PAElement next, State status)
         {
             
         }
         // [StructLayout(LayoutKind.Sequential)]
-        private PAElement element;
+        // private PAElement element;
         // PAData data { get; set; }
-        // public PANod next { get; set; }
+        // public PAElement next { get; set; }
 
         //struct PAStare
         //public PAStare stare { get; }
 
         //public void operator ++() => data.value++;
-        public static PANod operator ++(PANod a) => a.data.toPANod();//;
-        public static explicit operator PAData(PANod d) => d.data;
-        public static implicit operator byte(PANod d) => (byte)d.data.value;
-        public static explicit operator PANod(byte b) => Copy(b);
-        public static implicit operator int(PANod d) => (int)d.data.value;
-        public static explicit operator PANod(int b) => Copy(b);
-        public static implicit operator long(PANod d) => (long)d.data.value;
-        public static explicit operator PANod(long b) => Copy(b); //new PANod(b);
-        public static implicit operator short(PANod d) => (short)d.data.value;
-        public static explicit operator PANod(short b) => Copy(b); //new PANod(b);
-        public static implicit operator ushort(PANod d) => (ushort)d.data.value;
-        public static explicit operator PANod(ushort b) => Copy(b);// new PANod(b);
-        public static implicit operator ulong(PANod d) => (ulong)d.data.value;
-        public static explicit operator PANod(ulong b) => Copy(b);// new PANod(b);
-        public static PANod Copy(byte Data)
-        {
-            PAData data;
-            PANod node = default;
-            data.value = (int)Data;
-            node = new PANod(data, node);
-            return node;
-        }
-        public static PANod Copy(long Data)
-        {
-            PAData data;
-            PANod node = default;
-            data.value = (int)Data;
-            node = new PANod(data, node);
-            return node;
-        }
-        public static PANod Copy(int Data)
-        {
-            PAData data;
-            PANod node = default;
-            data.value = Data;
-            node = new PANod(data, node);
-            return node;
-        }
-        public static PANod Copy(short Data)
-        {
-            PAData data;
-            PANod node = default;
-            data.value = (int)Data;
-            node = new PANod(data, node);
-            //node = new PANod(data, node, stare);
-            return node;
-        }
-        public static PANod Copy(ushort Data)
-        {
-            PAData data;
-            PANod node = default;
-            data.value = (int)(uint)Data;
-            node = new PANod(data, node);
+        // public static PAElement operator ++(PAElement a) => a.data.toPAElement();//;
+        // public static explicit operator PAData(PAElement d) => d.data;
+        // public static implicit operator byte(PAElement d) => (byte)d.data.value;
+        // public static explicit operator PAElement(byte b) => Copy(b);
+        // public static implicit operator int(PAElement d) => (int)d.data.value;
+        // public static explicit operator PAElement(int b) => Copy(b);
+        // public static implicit operator long(PAElement d) => (long)d.data.value;
+        // public static explicit operator PAElement(long b) => Copy(b); //new PAElement(b);
+        // public static implicit operator short(PAElement d) => (short)d.data.value;
+        // public static explicit operator PAElement(short b) => Copy(b); //new PAElement(b);
+        // public static implicit operator ushort(PAElement d) => (ushort)d.data.value;
+        // public static explicit operator PAElement(ushort b) => Copy(b);// new PAElement(b);
+        // public static implicit operator ulong(PAElement d) => (ulong)d.data.value;
+        // public static explicit operator PAElement(ulong b) => Copy(b);// new PAElement(b);
 
-            //node = new PANod(data, node, stare);
-            return node;
-        }
-        public static PANod Copy(uint Data)
-        {
-            PAData data;
-            PANod node = default;
-            data.value = (int)Data;
-            node = new PANod(data, node);
+         public static PAElement operator ++(PAElement a) => a.data.toPAElement();//;
+        public static explicit operator PAData(PAElement d) => d.data;
+        public static implicit operator byte(PAElement d) => (byte)d.data.value;
+        public static explicit operator PAElement(byte b) => Copy(b);
+        public static implicit operator int(PAElement d) => (int)d.data.value;
+        public static explicit operator PAElement(int b) => Copy(b);
+        public static implicit operator long(PAElement d) => (long)d.data.value;
+        public static explicit operator PAElement(long b) => Copy(b); //new PAElement(b);
+        public static implicit operator short(PAElement d) => (short)d.data.value;
+        public static explicit operator PAElement(short b) => Copy(b); //new PAElement(b);
+        public static implicit operator ushort(PAElement d) => (ushort)d.data.value;
+        public static explicit operator PAElement(ushort b) => Copy(b);// new PAElement(b);
+        public static implicit operator ulong(PAElement d) => (ulong)d.data.value;
+        public static explicit operator PAElement(ulong b) => Copy(b);// new PAElement(b);
 
-            //node = new PANod(data, node, stare);
-            return node;
-        }
-        public static PANod Copy(ulong Data)
-        {
-            PAData data;
-            PANod node = default;
-            data.value = (int)(uint) Data;
-            node = new PANod(data, node);
+        // public static PAElement Copy(byte Data)
+        // {
+        //     PAData data;
+        //     PAElement node = default;
+        //     data.value = (int)Data;
+        //     node = new PAElement(data, node);
+        //     return node;
+        // }
+        // public static PAElement Copy(long Data)
+        // {
+        //     PAData data;
+        //     PAElement node = default;
+        //     data.value = (int)Data;
+        //     node = new PAElement(data, node);
+        //     return node;
+        // }
+        // public static PAElement Copy(int Data)
+        // {
+        //     PAData data;
+        //     PAElement node = default;
+        //     data.value = Data;
+        //     node = new PAElement(data, node);
+        //     return node;
+        // }
+        // public static PAElement Copy(short Data)
+        // {
+        //     PAData data;
+        //     PAElement node = default;
+        //     data.value = (int)Data;
+        //     node = new PAElement(data, node);
+        //     //node = new PAElement(data, node, stare);
+        //     return node;
+        // }
+        // public static PAElement Copy(ushort Data)
+        // {
+        //     PAData data;
+        //     PAElement node = default;
+        //     data.value = (int)(uint)Data;
+        //     node = new PAElement(data, node);
 
-            //node = new PANod(data, node, stare);
-            return node;
-        }
+        //     //node = new PAElement(data, node, stare);
+        //     return node;
+        // }
+        // public static PAElement Copy(uint Data)
+        // {
+        //     PAData data;
+        //     PAElement node = default;
+        //     data.value = (int)Data;
+        //     node = new PAElement(data, node);
 
-        public PAElement this[int index]
-        {
-            get
-            {
-                return Get(Copy(this), index);
-            }
-            set
-            {
+        //     //node = new PAElement(data, node, stare);
+        //     return node;
+        // }
+        // public static PAElement Copy(ulong Data)
+        // {
+        //     PAData data;
+        //     PAElement node = default;
+        //     data.value = (int)(uint) Data;
+        //     node = new PAElement(data, node);
 
-            }
-        }
-        PANod Get(PANod nod, int index)
-        {
-            PANod x = Copy(this);
-            if (index == 1)
-                x = Copy(this);
-            else if (index < 0)
-            {
-                x = Copy(this);
-            }
-            else if (index > 1)
-            {
-                x = Get(nod.next, index - 1);
-            }
-            return x;
-                //PANod nod;
-            //return nod;
-        }
+        //     //node = new PAElement(data, node, stare);
+        //     return node;
+        // }
+
+        // public PAElement this[int index]
+        // {
+        //     get
+        //     {
+        //         return Get(Copy(this), index);
+        //     }
+        //     set
+        //     {
+
+        //     }
+        // }
+        // PAElement Get(PAElement nod, int index)
+        // {
+        //     PAElement x = Copy(this);
+        //     if (index == 1)
+        //         x = Copy(this);
+        //     else if (index < 0)
+        //     {
+        //         x = Copy(this);
+        //     }
+        //     else if (index > 1)
+        //     {
+        //         x = Get(nod.next, index - 1);
+        //     }
+        //     return x;
+        //         //PAElement nod;
+        //     //return nod;
+        // }
     }
 }

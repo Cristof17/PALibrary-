@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = PA_Library
-build_property.ProjectDir = C:\Users\crist\source\repos\PA-Library\PA-Library\
+build_property.ProjectDir = /Users/cristoforrotsching/Documents/PA-Library/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false
