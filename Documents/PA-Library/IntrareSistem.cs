@@ -26,16 +26,16 @@ namespace PA_Library
     public class IntrareSistem
     {
         [DllImport("palibrary")]
-        public static extern struct Input InputConstruct(struct PACount n, struct PACount m, struct ArrayList adj, struct PAElement source);
+        public static extern  Input InputConstruct( PACount n,  PACount m,  ArrayList adj,  PAElement source);
         [DllImport("palibrary")]
-        public static extern int InputRuin(struct PACount n, struct PACount m, struct ArrayList adj, struct PAElement source);
+        public static extern int InputRuin( PACount n,  PACount m,  ArrayList adj,  PAElement source);
         [DllImport("palibrary")]
-        public static extern struct Input InputInit(struct Input input);
+        public static extern  Input InputInit( Input input);
         [DllImport("palibrary")]
         public static extern void Dispose();
         [DllImport("palibrary")]
-        public static extern int InputDelete(struct Input in);
-        public IntrareSistem(Cardinal n, Cardinal m, Source, ArrayList[] Adj, int N, int M)
+        public static extern int InputDelete( Input input);
+        public IntrareSistem(Cardinal n, Cardinal m, PAElement Source, ArrayList[] Adj, int N, int M)
         {
             //ADJ = default(AdjacencyList<Node>);
             this.N = default;
