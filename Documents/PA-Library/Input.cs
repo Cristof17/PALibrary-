@@ -24,7 +24,7 @@ using System.Xml.Linq;
 
 namespace PA_Library
 {
-    [StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Explicit)]
     public struct Input
     {
         [DllImport("palibrary")]

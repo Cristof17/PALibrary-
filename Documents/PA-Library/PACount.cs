@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 namespace PA_Library
 {
-    [StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Explicit)]
     public struct PACount
     //public struct PAPACount
     {

@@ -3,7 +3,7 @@ using System;
 using System.Runtime.InteropServices;
 //public class PAStare
 //public class PAStare
-[StructLayout(LayoutKind.Sequential)]
+[StructLayout(LayoutKind.Explicit)]
 public struct PAStatus
 {
     // [StructLayout(LayoutKind.Sequential)]

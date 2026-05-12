@@ -1,7 +1,7 @@
 using System;
 using PA_Library;
 using System.Runtime.InteropServices;
-[StructLayout(LayoutKind.Sequential)]
+[StructLayout(LayoutKind.Explicit)]
 struct PAResource
     // [StructLayout(LayoutKind.Sequential)]
 {

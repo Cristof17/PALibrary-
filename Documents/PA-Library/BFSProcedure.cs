@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 
 namespace PA_Library
 {
-    [StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Explicit)]
     public struct BFSProcedure
     //public readonly class BFSAlgorithm
     //public readonly struct BFSAlgorithm

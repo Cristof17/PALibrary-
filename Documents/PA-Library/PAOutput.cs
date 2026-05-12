@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 
 namespace PA_Library
 {
-    [StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Explicit)]
     struct PAOutput
     //public readonly class BFSOutput
     //public readonly struct BFSOutput
