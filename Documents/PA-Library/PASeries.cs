@@ -275,26 +275,26 @@ namespace PA_Library
         //    }
         //}
 
-        public int Check(int M)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            if (M < 0)
-            {
-                Result = Fail;
-            }
-            else if (M == 0)
-            {
-                Result = Fail;
-            }
-            else if (M > 0)
-            {
-                Result = Success;
-            }
-            return Result;
-        }
-        //int Result = default;
+        // public int Check(int M)
+        // {
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     int Result = Success;
+        //     if (M < 0)
+        //     {
+        //         Result = Fail;
+        //     }
+        //     else if (M == 0)
+        //     {
+        //         Result = Fail;
+        //     }
+        //     else if (M > 0)
+        //     {
+        //         Result = Success;
+        //     }
+        //     return Result;
+        // }
+        // //int Result = default;
         //int valid = 1;
         //int iv
         //int invalid = 0;
@@ -461,69 +461,69 @@ namespace PA_Library
         //    return copy;
         //}
 
-        private static int checkAdjacencyList(AdjacencyList list)
-        {
-            //int Result = default(int);
-            int valid = 1;
-            //int iv
-            //int invalid = 0;
-            //int i = default(int);
-            //int j = default(int());
-            //int j = default(int());
-            //int i = 0;
-            //int j = 0;
+        // private static int checkAdjacencyList(AdjacencyList list)
+        // {
+        //     //int Result = default(int);
+        //     int valid = 1;
+        //     //int iv
+        //     //int invalid = 0;
+        //     //int i = default(int);
+        //     //int j = default(int());
+        //     //int j = default(int());
+        //     //int i = 0;
+        //     //int j = 0;
 
 
-            //Object o = (Object)list[i];
-            //N = list.Length;
-            //N = list.Le
-            //if (0 == null)
-            //if (0 == null)
-            //if (o == null)
-            //{
-            //    //Console.Err
-            //    Console.Error.WriteLine("list == null");
-            //    i = j;
-            //    j = i + 1;
-            //}
-            //else if (o != null)
-            //{
-            //    //Node Node = (Node)list[i];
-            //    //if (np)
-            //    //if (nd)
-            //    //if (Node == null)
-            //    //{
-            //    //Console.Error.WriteLine("list["+i+"]" =
-            //    //Console.Error.WriteLine("list[" + i + "] == null");
-            //    //i = j;
-            //    //j = i + 1;
-            //    //}
-            //    //else if (Node != null)
-            //    //{
-            //    i = 1;
-            //    j = i + 1;
-            //    //}
-            //    //N = list.NODES.C;
-            //    //while (i < N)
-            //    //{
-            //    //Object o = dfa
-            //    //o = default(Object);
-            //    //
-            //    //o = list[i];
-            //    //if (o == null)
-            //    //{
-            //    //Console.Error.WriteLine("Adj[" + i + "] = null");
-            //    //return invalid;
-            //    //}
-            //    //else
-            //    //{
-            //    //i = j;
-            //    //j = i + 1;
-            //    //}
-            //    //}
-            //}
-            return valid;
-        }
+        //     //Object o = (Object)list[i];
+        //     //N = list.Length;
+        //     //N = list.Le
+        //     //if (0 == null)
+        //     //if (0 == null)
+        //     //if (o == null)
+        //     //{
+        //     //    //Console.Err
+        //     //    Console.Error.WriteLine("list == null");
+        //     //    i = j;
+        //     //    j = i + 1;
+        //     //}
+        //     //else if (o != null)
+        //     //{
+        //     //    //Node Node = (Node)list[i];
+        //     //    //if (np)
+        //     //    //if (nd)
+        //     //    //if (Node == null)
+        //     //    //{
+        //     //    //Console.Error.WriteLine("list["+i+"]" =
+        //     //    //Console.Error.WriteLine("list[" + i + "] == null");
+        //     //    //i = j;
+        //     //    //j = i + 1;
+        //     //    //}
+        //     //    //else if (Node != null)
+        //     //    //{
+        //     //    i = 1;
+        //     //    j = i + 1;
+        //     //    //}
+        //     //    //N = list.NODES.C;
+        //     //    //while (i < N)
+        //     //    //{
+        //     //    //Object o = dfa
+        //     //    //o = default(Object);
+        //     //    //
+        //     //    //o = list[i];
+        //     //    //if (o == null)
+        //     //    //{
+        //     //    //Console.Error.WriteLine("Adj[" + i + "] = null");
+        //     //    //return invalid;
+        //     //    //}
+        //     //    //else
+        //     //    //{
+        //     //    //i = j;
+        //     //    //j = i + 1;
+        //     //    //}
+        //     //    //}
+        //     //}
+        //     return valid;
+        // }
         //public AdjacencyList(ArrayList[] Adj)
         //public AdjacencyList(ArrayList Adj)
         ////public AdjacencyList(ArrayList[] Adj)
@@ -735,23 +735,23 @@ namespace PA_Library
         //    NODES[Neigh].VALUE = -1;
         //}
         //public int M { get; }
-        void set(PANod Source, PANod Parent,int position, PAData value)
-        {
-            if (Source == null)
-            {
+        // void set(PANod Source, PANod Parent,int position, PAData value)
+        // {
+        //     if (Source == null)
+        //     {
 
-            }
-            else if (Source != null)
-            {
-                if (position == 1)
-                {
-                    PAData data = new PAData();
-                    data.value = value;
-                    PANod nod = new PANod(data, Source.next);
-                    Parent.next = nod;
-                }
-            }
-        }
+        //     }
+        //     else if (Source != null)
+        //     {
+        //         if (position == 1)
+        //         {
+        //             PAData data = new PAData();
+        //             data.value = value;
+        //             PANod nod = new PANod(data, Source.next);
+        //             Parent.next = nod;
+        //         }
+        //     }
+        // }
         // [StructLayout(LayoutKind.Sequential)]
         // private PASeries list;
 
@@ -761,58 +761,58 @@ namespace PA_Library
         //public T NODE { get; }
 
         //        public override string ToString() => $"({ADJ}, {OUTPUT})";
-        public override string ToString() => $"({head})";
-        void adauga(PANod node)
-        {
-            if (head == null)
-            {
-                head = node;
-            }
-            else if (head != null)
-            {
-                PANod prev = head;
-                while (head != null)
-                {
-                    head = head.next;
-                    if (head == null)
-                    {
-                        prev.next = node;
-                    }
-                    else if (head != null)
-                    {
-                        prev = head;
-                        PANod tmp = head;
-                        head = tmp.next;
-                    }
-                }
-            }
-        }
+        // public override string ToString() => $"({head})";
+        // void adauga(PANod node)
+        // {
+        //     if (head == null)
+        //     {
+        //         head = node;
+        //     }
+        //     else if (head != null)
+        //     {
+        //         PANod prev = head;
+        //         while (head != null)
+        //         {
+        //             head = head.next;
+        //             if (head == null)
+        //             {
+        //                 prev.next = node;
+        //             }
+        //             else if (head != null)
+        //             {
+        //                 prev = head;
+        //                 PANod tmp = head;
+        //                 head = tmp.next;
+        //             }
+        //         }
+        //     }
+        // }
 
-        public int Count(PALista list)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Fail;
-            int size = 0;
-            if (list.head == null)
-            {
-                return Result;
-            }
-            else if (list.head != null)
-            {
-                PANod reference = head.next;
-                PANod tmp = reference;
-                reference = tmp.next;
-                while (Result == Success)
-                {
-                    size++;
-                    Result = Count(reference);
-                    tmp = reference;
-                    reference = tmp.next;
-                }
-            }
-            return size;
-        }
+        // public int Count(PALista list)
+        // {
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     int Result = Fail;
+        //     int size = 0;
+        //     if (list.head == null)
+        //     {
+        //         return Result;
+        //     }
+        //     else if (list.head != null)
+        //     {
+        //         PANod reference = head.next;
+        //         PANod tmp = reference;
+        //         reference = tmp.next;
+        //         while (Result == Success)
+        //         {
+        //             size++;
+        //             Result = Count(reference);
+        //             tmp = reference;
+        //             reference = tmp.next;
+        //         }
+        //     }
+        //     return size;
+        // }
 
         // int Count(PANod Node)
         // {
@@ -826,51 +826,51 @@ namespace PA_Library
         //     return Result;
         // }
 
-        public int Count()
-        {
-            PACardinal cardinal = 0;
+        // public int Count()
+        // {
+        //     PACardinal cardinal = 0;
 
-            if (head == null)
-            {
-                cardinal = 0;
-            }
-            else if (head != null)
-            {
-                cardinal = 1;
-                cardinal = cardinal + size(head, cardinal);
-            }
-            return cardinal;
-        }
+        //     if (head == null)
+        //     {
+        //         cardinal = 0;
+        //     }
+        //     else if (head != null)
+        //     {
+        //         cardinal = 1;
+        //         cardinal = cardinal + size(head, cardinal);
+        //     }
+        //     return cardinal;
+        // }
 
-        // public static int size(PANod Node, int Current)
-        public static int size(PAElement Node, int Current)
-        {
-            //PANod current = Node;
-            if (Node.next == null)
-            {
-                return Current;
-            }
-            else
-            {
-                return 1 + size(Node.next, Current - 1);
-            }
-        }
+        // // public static int size(PANod Node, int Current)
+        // public static int size(PAElement Node, int Current)
+        // {
+        //     //PANod current = Node;
+        //     if (Node.next == null)
+        //     {
+        //         return Current;
+        //     }
+        //     else
+        //     {
+        //         return 1 + size(Node.next, Current - 1);
+        //     }
+        // }
 
         // public ArrayList toArrayList(PANod Node)
-        public ArrayList toArrayList(PAElement Node)
-        {
-            ArrayList lista = new ArrayList();
-            lista.Add(Node);
-            if (Node.next == null)
-            {
-                return lista;
-            }
-            else if (Node.next != null)
-            {
-                lista.AddRange(toArrayList(Node.next));
-            }
-            return lista;
-        }
+        // public ArrayList toArrayList(PAElement Node)
+        // {
+        //     ArrayList lista = new ArrayList();
+        //     lista.Add(Node);
+        //     if (Node.next == null)
+        //     {
+        //         return lista;
+        //     }
+        //     else if (Node.next != null)
+        //     {
+        //         lista.AddRange(toArrayList(Node.next));
+        //     }
+        //     return lista;
+        // }
     }
 
 }
