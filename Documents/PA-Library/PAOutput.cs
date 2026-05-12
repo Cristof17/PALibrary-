@@ -10,13 +10,13 @@ namespace PA_Library
     //public readonly struct BFSOutput
     {
         [DllImport("palibrary")]
-        public static extern struct PAOutput PAOutputConstruct(struct PAResult rezultat);
+        public static extern  PAOutput PAOutputConstruct( PAResult rezultat);
         [DllImport("palibrary")]
-        public static extern int PAOutputRuin(struct PAResult rezultat);
+        public static extern int PAOutputRuin( PAResult rezultat);
         [DllImport("palibrary")]
-        public static extern struct Output PAOutputInit(struct Output Out);
+        public static extern  Output PAOutputInit( Output Out);
         [DllImport("palibrary")]
-        public static extern int PAOutputDelete(struct Output o);
+        public static extern int PAOutputDelete( Output o);
 
         public UnitateIesire(Rezultat Result)
         {
@@ -257,7 +257,7 @@ namespace PA_Library
         //}
 
         [StructLayout(StructLayout.Sequential)]
-        private struct PAOutput output;
+        private  PAOutput output;
 
         // BFSResult rezultat;
         //public BFSState STATE { get; }
