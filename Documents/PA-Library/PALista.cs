@@ -9,15 +9,15 @@ namespace PA_Library
     class Lista
     {
         [DllImport("palibrary")]
-        public static extern struct PASeries PASeriesConstruct(struct PACount n, struct PAList[] adj);
+        public static extern  PASeries PASeriesConstruct( PACount n,  PAList[] adj);
         [DllImport("palibrary")]
-        public static extern int PASeriesRuin(struct PACount n, struct PAList[] adj);
+        public static extern int PASeriesRuin( PACount n,  PAList[] adj);
         [DllImport("palibrary")]
-        public static extern struct PASeries PASeriesInit(struct PASeries s);
+        public static extern  PASeries PASeriesInit( PASeries s);
         [DllImport("palibrary")]
         public static extern void Dispose();
         [DllImport("palibrary")]
-        public static extern int PASeriesDelete(struct PASeries PA);
+        public static extern int PASeriesDelete( PASeries PA);
         public PAList(PANod Head) 
             //: this()
         {
