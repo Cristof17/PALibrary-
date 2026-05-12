@@ -21,35 +21,36 @@ namespace PA_Library
         [DllImport("palibrary")]
         public static extern int PASeriesDelete(PASeries PA);
         // public PAList(PANod Head) 
-        public PAList(PAElement Head) 
+        // public PAList(PAElement Head) 
+        public PASeries(PACount n, PAList[] adj) 
             //: this()
         {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            //ADJ = default;
-            //M = default;
-            //N = default;
-            head = default;
-            Result = Check(Head);
-            if (Result == Success)
-            {
-                head = Copy(Head);
-                //Result = Check(M);
-                //if (Result == Success)
-                //{
-                //    M = Copy(M);
-                //    head = Copy(Head);
-                //}
-                //else if (Result == Fail)
-                //{
-                //    Console.Error.WriteLine("edges error");
-                //}
-            }
-            else
-            {
-                Console.Error.WriteLine("Adj error");
-            }
+            // int Success = 0;
+            // int Fail = -1;
+            // int Result = Success;
+            // //ADJ = default;
+            // //M = default;
+            // //N = default;
+            // head = default;
+            // Result = Check(Head);
+            // if (Result == Success)
+            // {
+            //     head = Copy(Head);
+            //     //Result = Check(M);
+            //     //if (Result == Success)
+            //     //{
+            //     //    M = Copy(M);
+            //     //    head = Copy(Head);
+            //     //}
+            //     //else if (Result == Fail)
+            //     //{
+            //     //    Console.Error.WriteLine("edges error");
+            //     //}
+            // }
+            // else
+            // {
+            //     Console.Error.WriteLine("Adj error");
+            // }
         }
         //public AdjacencyList(AdjacencyList Adj, Cardinal N)
         //{

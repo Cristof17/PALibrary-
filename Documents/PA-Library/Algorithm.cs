@@ -32,7 +32,8 @@ namespace PA_Library
         // [StructLayout(LayoutKind.Sequential)]
         // public readonly struct Algorithm algorithm;
 
-        public Algorithm(IntrareSistem input)
+        // public Algorithm(IntrareSistem input)
+        public Algorithm(Input input)
         {
             
         }

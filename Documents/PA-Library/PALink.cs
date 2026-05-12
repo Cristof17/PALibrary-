@@ -12,13 +12,15 @@ namespace PA_Library
 		[DllImport("palibrary")]
         public static extern int PALinkInit(PAPair p);
 		[DllImport("palibrary")]
-        public static extern int PALinkRuin(PAPair p);
+        // public static extern int PALinkRuin(PAPair p);
+		public static extern int PALinkRuin(PAPair p);
 		[DllImport("palibrary")]
         public static extern int PALinkDelete(PALink PA);
 		//public
 		//{
 			//Console.WriteLine("Hello world!");
-			PALink(PANod Node, PANod Neigh)
+			// PALink(PANod Node, PANod Neigh)
+			PALink(PAElement Node, PAElement Neigh)
 			{
 				p = default;
 				//Node;
