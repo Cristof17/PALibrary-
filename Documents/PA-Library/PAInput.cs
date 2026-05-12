@@ -25,13 +25,13 @@ namespace PA_Library
         // private static extern void BFSInputInit();
         //Wrapper over the Input variables which provides Input validation
         [DllImport("palibrary")]
-        private static extern struct PAInput PAInputConstruct(struct PACount n, struct PACount m, struct PAList adj, struct PAElement sursa);
+        private static extern  PAInput PAInputConstruct( PACount n,  PACount m,  PAList adj,  PAElement sursa);
         [DllImport("palibrary")]
-        public static extern int PAInputRuin(struct PACount n, struct PACount m, struct PAList adj, struct PAElement sursa);
+        public static extern int PAInputRuin( PACount n,  PACount m,  PAList adj,  PAElement sursa);
         [DllImport("palibrary")]
-        public static extern int PAInputDelete(struct PAInput i);
+        public static extern int PAInputDelete( PAInput i);
         [DllImport("palibrary")]
-        public static extern struct PAInput PAInputInit(struct PAInput PAInput);
+        public static extern  PAInput PAInputInit( PAInput PAInput);
         [DllImport("palibrary")]
         // public static extern void Dispose();
         // [DllImport("palibrary.dll")]
