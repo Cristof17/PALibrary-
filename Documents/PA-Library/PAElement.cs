@@ -89,7 +89,7 @@ namespace PA_Library
         {
             
         }
-        [StructLayout(LayoutKind.Sequential)]
+        // [StructLayout(LayoutKind.Sequential)]
         private PAElement element;
         // PAData data { get; set; }
         // public PANod next { get; set; }

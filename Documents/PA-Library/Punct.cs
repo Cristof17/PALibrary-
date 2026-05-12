@@ -24,7 +24,7 @@ namespace PA_Library
     public static extern void PAElementVisit();
     [DllImport("palibrary")]
     public static extern int PADataIsVisited();
-    [DllImport("palibrary")]
+    // [DllImport("palibrary")]
     public Punct(Data index, Punct next, Stare status)
     {
         
