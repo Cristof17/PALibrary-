@@ -7,19 +7,19 @@ namespace PA_Library
     public struct PAList
     {
         [DllImport("palibrary")]
-        public static extern struct PAElement PAListGetHead();
+        public static extern  PAElement PAListGetHead();
         [DllImport("palibrary")]
-        public static extern void PAListAddHead(struct PAElement data);
+        public static extern void PAListAddHead( PAElement data);
         [DllImport("palibrary")]
-        public static extern struct PAList PAListConstruct(struct PAElement Head);
+        public static extern  PAList PAListConstruct( PAElement Head);
         [DllImport("palibrary")]
-        public static extern int PAListRuin(struct PACount m, struct ArrayList Edges);
+        public static extern int PAListRuin( PACount m,  ArrayList Edges);
         [DllImport("palibrary")]
-        public static extern struct PAList PAListInit(struct PAList lista);
+        public static extern  PAList PAListInit( PAList lista);
         [DllImport("palibrary")]
         public static extern void Dispose();
         [DllImport("palibrary")]
-        public static extern int PAListDelete(struct PASeries PA);
+        public static extern int PAListDelete( PASeries PA);
 
         public PAList(ArrayList Adj, int M) : this()
         {
