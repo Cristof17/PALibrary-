@@ -651,7 +651,8 @@ namespace PA_Library
         }
         
         //checks the Node cardinal N
-        int CheckNodeCardinal(PANod Source, PALista Adj, PACardinal N, PACardinal M)
+        // int CheckNodeCardinal(PANod Source, PALista Adj, PACardinal N, PACardinal M)
+        int CheckNodeCardinal(PAElement Source, PASeries Adj, PACount N, PACount M)
         {
             int Success = 0;
             int Fail = -1;
@@ -675,7 +676,8 @@ namespace PA_Library
         }
 
         //checks the edge cardinal M
-        int CheckEdgeCardinal(PANod Source, PALista Adj, int N, int M)
+        // int CheckEdgeCardinal(PANod Source, PALista Adj, int N, int M)
+        int CheckEdgeCardinal(PAElement Source, PASeries Adj, int N, int M)
         {
             int Success = 0;
             int Fail = -1;
@@ -699,7 +701,8 @@ namespace PA_Library
         }
 
         //returns a copy of the Node cardinal
-        int CopyNodeCardinal(PANod Source, PALista Adj, int N, int M)
+        // int CopyNodeCardinal(PANod Source, PALista Adj, int N, int M)
+        int CopyNodeCardinal(PAElement Source, PASeries Adj, int N, int M)
         {
             int Result = 0;
             Result = N;
@@ -725,7 +728,7 @@ namespace PA_Library
         }
 
          //returns a copy of the edge cardinal
-        int CopyEdgeCardinal(PANod Source, PALista Adj, int N, int M)
+        int CopyEdgeCardinal(PAElement Source, PASeries Adj, int N, int M)
         {
             int Result = 0;
             Result = M;
