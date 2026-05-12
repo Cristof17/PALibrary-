@@ -1,4 +1,5 @@
 using System.Linq.Expressions;
+using PA_Library;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Xml.XPath;
@@ -172,7 +173,7 @@ namespace PA_Library
             return node;
         }
 
-        public PANod this[int index]
+        public PAElement this[int index]
         {
             get
             {
