@@ -1,8 +1,10 @@
-﻿<Project ToolsVersion="Current">
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-  <TargetFramework>net40</TargetFramework>
-    <!--<TargetFrameworkVersion>v4.0</TargetFrameworkVersion>-->
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+  <TargetFramework>.NETFramework</TargetFramework>
+  <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <!--<RootNamespace>PA_Library</RootNamespace>-->
   </PropertyGroup>
 
