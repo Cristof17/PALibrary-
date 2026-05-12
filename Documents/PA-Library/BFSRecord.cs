@@ -1,6 +1,9 @@
-﻿namespace PA_Library
+﻿using PA_Library;
+using System;
+using System.Runtime.InteropServices;
+namespace PA_Library
 {
-    [StructLayout(LayoutKind.Sequntial)]
+    [StructLayout(LayoutKind.Sequential)]
 	struct BFSRecord
 	{
         [DllImport("palibrary")]
@@ -11,7 +14,8 @@
         public static extern  BFSRecord BFSRecordInit(BFSRecord record);
         [DllImport("palibrary")]
         public static extern int BFSRecordDelete(BFSRecord BFS);
-		public Rezultat(Lista d, Cardinal n)
+        public Rezultat(PASeries d, PACount n)
+		// public Rezultat(Lista d, Cardinal n)
 		{
 			this.d = Rezultat.d;
 			this.n = Rezultat.n;

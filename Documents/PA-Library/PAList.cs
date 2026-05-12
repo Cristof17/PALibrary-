@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 using System.Collections;
 
 namespace PA_Library
@@ -393,7 +394,8 @@ namespace PA_Library
         //    return copy;
         //}
 
-        private static int checkAdjacencyList(AdjacencyList list)
+        private static int checkAdjacencyList(PASeries list)
+        // private static int checkAdjacencyList(AdjacencyList list)
         {
             //int Result = default(int);
             int valid = 1;

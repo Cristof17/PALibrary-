@@ -19,47 +19,49 @@ namespace PA_Library
         [DllImport("palibrary")]
         public static extern int PAOutputDelete(Output o);
 
-        public UnitateIesire(Rezultat Result)
+        // public UnitateIesire(Rezultat Result)
+        public PAOutput(BFSRecord Result)
         {
             
         }
         // private static extern BFSOutputInit();
         //BFSState State, ArrayList D, int N) : this()
-        PAOutput(BFSRezultat Rezultat)
-        {
-            //STATE = default;
-            //D = default;
-            int Result;
-            int Success = 0;
-            int Fail = -1;
-            Result = Success;
-            Result = Check(Rezultat);
-            if (Result == Success)
-            {
-                rezultat = Copy(Rezultat);
-                //Result = Check(D);
-                //if (Result == Success)
-                //{
-                //    Result = Check(N);
-                //    if (Result == Success)
-                //    {
-                //        D = Copy(D, N);
-                //    }
-                //    else
-                //    {
-                //        Console.Error.WriteLine("N error");
-                //    }
-            }
-            else if (Result == Fail)
-            {
-                Console.Error.WriteLine("state error");
-            }
-            //else
-            //{
-            //        Console.Error.WriteLine("d error");
-            //    //}
-            //}
-        }
+        // PAOutput(BFSRezultat Rezultat)
+        // public PAOutput(BFSRecord Rezultat)
+        // {
+        //     //STATE = default;
+        //     //D = default;
+        //     int Result;
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     Result = Success;
+        //     Result = Check(Rezultat);
+        //     if (Result == Success)
+        //     {
+        //         rezultat = Copy(Rezultat);
+        //         //Result = Check(D);
+        //         //if (Result == Success)
+        //         //{
+        //         //    Result = Check(N);
+        //         //    if (Result == Success)
+        //         //    {
+        //         //        D = Copy(D, N);
+        //         //    }
+        //         //    else
+        //         //    {
+        //         //        Console.Error.WriteLine("N error");
+        //         //    }
+        //     }
+        //     else if (Result == Fail)
+        //     {
+        //         Console.Error.WriteLine("state error");
+        //     }
+        //     //else
+        //     //{
+        //     //        Console.Error.WriteLine("d error");
+        //     //    //}
+        //     //}
+        // }
         //public BFSOutput(ArrayList D, int N) : this()
         //{
         //    int Result;
@@ -92,42 +94,42 @@ namespace PA_Library
         //    }
         //}
 
-        int Check(BFSResult Rezultat)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Fail;
-            if (Rezultat == null)
-            {
-                Result = Fail;
-            }
-            else if (Rezultat != null)
-            {
-                Result = Success;
-            }
-            return Result;
-            //if (Rezultat. < 0)
-            //{
-            //    Result = Fail;
-            //}
-            //else
-            //{
-            //    Result = Success;
-            //}
-            //if (Rezultat. == 0)
-            //{
-            //    Result = Fail;
-            //}
-            //else
-            //{
-            //    Result = Success;
-            //}
-            //if (N > 0)
-            //{
-            //    Result = Success;
-            //}
-            //return Result;
-        }
+        // int Check(BFSResult Rezultat)
+        // {
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     int Result = Fail;
+        //     if (Rezultat == null)
+        //     {
+        //         Result = Fail;
+        //     }
+        //     else if (Rezultat != null)
+        //     {
+        //         Result = Success;
+        //     }
+        //     return Result;
+        //     //if (Rezultat. < 0)
+        //     //{
+        //     //    Result = Fail;
+        //     //}
+        //     //else
+        //     //{
+        //     //    Result = Success;
+        //     //}
+        //     //if (Rezultat. == 0)
+        //     //{
+        //     //    Result = Fail;
+        //     //}
+        //     //else
+        //     //{
+        //     //    Result = Success;
+        //     //}
+        //     //if (N > 0)
+        //     //{
+        //     //    Result = Success;
+        //     //}
+        //     //return Result;
+        // }
         //public BFSOutput(ArrayList d, BFSState state)
         //{
         //    D = default;
@@ -213,34 +215,34 @@ namespace PA_Library
             }
         }
 
-        BFSResult Copy(BFSResult Rezultat)
-        {
-            BFSResult copy;
-            copy = new BFSResult(Rezultat);
-            return copy;
-        }
-        int Copy(int N)
-        {
-            int copy = 0;
-            copy = N;
-            return copy;
-        }
+        // BFSResult Copy(BFSResult Rezultat)
+        // {
+        //     BFSResult copy;
+        //     copy = new BFSResult(Rezultat);
+        //     return copy;
+        // }
+        // int Copy(int N)
+        // {
+        //     int copy = 0;
+        //     copy = N;
+        //     return copy;
+        // }
 
-        int Check(ArrayList Adj)
-        {
-            int Success = 0;
-            int Faili = -1;
-            int Result = Success;
-            if (Adj == null)
-            {
-                Result = Faili;
-            }
-            else
-            {
-                Result = Success;
-            }
-            return Result;
-        }
+        // int Check(ArrayList Adj)
+        // {
+        //     int Success = 0;
+        //     int Faili = -1;
+        //     int Result = Success;
+        //     if (Adj == null)
+        //     {
+        //         Result = Faili;
+        //     }
+        //     else
+        //     {
+        //         Result = Success;
+        //     }
+        //     return Result;
+        // }
 
         //public BFSOutput(BFSState state)
         //{
@@ -279,8 +281,8 @@ namespace PA_Library
         //    }
         //}
 
-        public static explicit operator BFSOutput(ArrayList list) => (BFSOutput)list;
-        public static explicit operator ArrayList(BFSOutput output) => output.rezultat.d.toArrayList(output.rezultat.d.head);
+        // public static explicit operator BFSOutput(ArrayList list) => (BFSOutput)list;
+        // public static explicit operator ArrayList(BFSOutput output) => output.rezultat.d.toArrayList(output.rezultat.d.head);
 
         public override string ToString() => $"({rezultat})";
 
@@ -315,39 +317,39 @@ namespace PA_Library
         //    return Result;
         //}
 
-        int Check(BFSState state)
-        {
-            int Fail = -1;
-            int Success = 0;
-            int Result = Success;
-            if ((Object)state == null)
-            {
-                Console.Error.WriteLine($"{state} == null");
-                Result = Fail;
-            }
-            else
-            {
-                Result = Success;
-            }
-            return Result;
-        }
-        ArrayList Copy(ArrayList d, int N)
-        {
-            //int Result = default;
-            //int Result = 
-            //ImmutableArray copy = default;
-            //copy
-            ArrayList copy = default;
-            copy = new ArrayList(N);
-            int x = 0;
-            //int y = 
-            while (x < N)
-            {
-                copy[x] = d[x];
-                x++;
-            }
-            return copy;
-        }
+        // int Check(BFSState state)
+        // {
+        //     int Fail = -1;
+        //     int Success = 0;
+        //     int Result = Success;
+        //     if ((Object)state == null)
+        //     {
+        //         Console.Error.WriteLine($"{state} == null");
+        //         Result = Fail;
+        //     }
+        //     else
+        //     {
+        //         Result = Success;
+        //     }
+        //     return Result;
+        // }
+        // ArrayList Copy(ArrayList d, int N)
+        // {
+        //     //int Result = default;
+        //     //int Result = 
+        //     //ImmutableArray copy = default;
+        //     //copy
+        //     ArrayList copy = default;
+        //     copy = new ArrayList(N);
+        //     int x = 0;
+        //     //int y = 
+        //     while (x < N)
+        //     {
+        //         copy[x] = d[x];
+        //         x++;
+        //     }
+        //     return copy;
+        // }
     }
 }
 

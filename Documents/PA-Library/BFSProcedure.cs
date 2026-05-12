@@ -1,6 +1,7 @@
 ﻿using PA_Library;
 using System;
 using System.Collections;
+using System.Runtime.InteropServices;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Runtime.InteropServices;
@@ -12,15 +13,16 @@ namespace PA_Library
     //public readonly class BFSAlgorithm
     //public readonly struct BFSAlgorithm
     {
-        [DllInport("palibrary")]
+        [DllImport("palibrary")]
         private static extern BFSProcedure BFSProcedureConstruct( PAInput Input,  PATree Tree);
-        [DllInport("palibrary")]
+        [DllImport("palibrary")]
         private static extern int BFSProcedureRuin(PAInput input,  PATree tree);
-        [DllInport("palibrary")]
+        [DllImport("palibrary")]
         private static extern int BFSProcedureDelete(BFSProcedure bfs);
-        [DllInport("palibrary")]
+        [DllImport("palibrary")]
         private static extern PAElement BFS(PAData index);
-        public Instruire(Intrare input, Arbore tree)
+        // public Instruire(Intrare input, Arbore tree)
+        public BFSProcedure(PAInput input, PATree tree)
         {
             
         }

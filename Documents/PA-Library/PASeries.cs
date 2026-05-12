@@ -87,38 +87,38 @@ namespace PA_Library
         //    //ADJ = Adj;
         //}
 
-        PANod Copy(PANod Head)
-        {
-            PANod copy;
-            copy = new PANod(Head);
-            return copy;
-            //int x = 0;
-            //ArrayList copy = new ArrayList(M);
-            //while (x < M)
-            //{
-            //    copy[x] = Adj[x];
-            //    x++;
-            //}
-            //;
-            //return copy;
-        }
+        // PANod Copy(PANod Head)
+        // {
+        //     PANod copy;
+        //     copy = new PANod(Head);
+        //     return copy;
+        //     //int x = 0;
+        //     //ArrayList copy = new ArrayList(M);
+        //     //while (x < M)
+        //     //{
+        //     //    copy[x] = Adj[x];
+        //     //    x++;
+        //     //}
+        //     //;
+        //     //return copy;
+        // }
 
-        int Check(PANod Head)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            if (Head == null)
-            {
-                Console.Error.WriteLine($"{Head} == null");
-                Result = Fail;
-            }
-            else if (Head != null)
-            {
-                Result = Success;
-            }
-            return Result;
-        }
+        // int Check(PANod Head)
+        // {
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     int Result = Success;
+        //     if (Head == null)
+        //     {
+        //         Console.Error.WriteLine($"{Head} == null");
+        //         Result = Fail;
+        //     }
+        //     else if (Head != null)
+        //     {
+        //         Result = Success;
+        //     }
+        //     return Result;
+        // }
 
         int Copy(int M)
         {
@@ -127,54 +127,54 @@ namespace PA_Library
             return M;
         }
 
-        int find(PANod nod)
-        {
-            int success = 0;
-            int fail = -1;
-            int result = fail;
-            if (nod == head)
-            {
-                result = success;
-            }
-            else if (nod != head)
-            {
-                result = find(head.next,nod.next);
-            }
-            return result;
-        }
+        // int find(PANod nod)
+        // {
+        //     int success = 0;
+        //     int fail = -1;
+        //     int result = fail;
+        //     if (nod == head)
+        //     {
+        //         result = success;
+        //     }
+        //     else if (nod != head)
+        //     {
+        //         result = find(head.next,nod.next);
+        //     }
+        //     return result;
+        // }
 
-        int find(PANod Source, PANod node)
-        {
-            int success = 0;
-            int fail = -1;
-            int result = fail;
-            result = check(Source);
-            if (result == fail)
-            {
-                result = fail;
-            }
-            else if (result == success)
-            {
-                result = find(Source.next, node);
-            }
-            return result;
-        }
+        // int find(PANod Source, PANod node)
+        // {
+        //     int success = 0;
+        //     int fail = -1;
+        //     int result = fail;
+        //     result = check(Source);
+        //     if (result == fail)
+        //     {
+        //         result = fail;
+        //     }
+        //     else if (result == success)
+        //     {
+        //         result = find(Source.next, node);
+        //     }
+        //     return result;
+        // }
 
-        int check(PANod node)
-        {
-            int Success = 0;
-            int Fail = -1;
-            int Result = Success;
-            if (node == null)
-            {
-                Result = Success;
-            }
-            else if (node != null)
-            {
-                Result = Fail;
-            }
-            return Result;
-        }
+        // int check(PANod node)
+        // {
+        //     int Success = 0;
+        //     int Fail = -1;
+        //     int Result = Success;
+        //     if (node == null)
+        //     {
+        //         Result = Success;
+        //     }
+        //     else if (node != null)
+        //     {
+        //         Result = Fail;
+        //     }
+        //     return Result;
+        // }
 
         //public int this[int index]
         //{
