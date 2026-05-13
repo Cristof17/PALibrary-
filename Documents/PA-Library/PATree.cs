@@ -27,7 +27,7 @@ namespace PA_Library {
 		// private  PATree tree { get;}
 
 		// public PATree(Cardinal n, Cardinal m, Lista adj, Punct sursa)
-		public PATree(PACount n, PACount m, PASeries adj, PAElement sursa)
+		public PATree(PACount n, PACount m, PASeries adj, PAElement sursa) : this()
         {
             
         }

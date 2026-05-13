@@ -3,12 +3,12 @@ using System;
 using System.Runtime.InteropServices;
 namespace PA_Library
 {
-	[StructLayout(LayoutKind.Explicit)]
+	[StructLayout(LayoutKind.Sequential)]
 	public struct PALink
 	//public struct PAMuchie
 	{
 		private PAPair p;
-		
+
 		[DllImport("palibrary")]
         public static extern PAPair PALinkConstruct(PALink Link);
 		[DllImport("palibrary")]
@@ -22,7 +22,7 @@ namespace PA_Library
 		//{
 			//Console.WriteLine("Hello world!");
 			// PALink(PANod Node, PANod Neigh)
-			PALink(PAElement Node, PAElement Neigh)
+			PALink(PAElement Node, PAElement Neigh) : this()
 			{
 				// p = default;
 				//Node;
