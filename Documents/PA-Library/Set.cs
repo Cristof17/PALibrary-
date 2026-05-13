@@ -9,7 +9,7 @@ namespace PA_Library
         // public Multime(int N) : this()
         public Set(int N) : this()
         {
-            N = N;
+            // N = N;
             //ADJ = Adj;
             //N = N;
             //M = M;
