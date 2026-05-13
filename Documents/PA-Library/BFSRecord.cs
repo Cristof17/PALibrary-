@@ -3,9 +3,12 @@ using System;
 using System.Runtime.InteropServices;
 namespace PA_Library
 {
-    [StructLayout(LayoutKind.Explicit)]
+    [StructLayout(LayoutKind.Sequential)]
 	public struct BFSRecord
 	{
+        private  PAList d;
+        private PACount n;
+        
         [DllImport("palibrary")]
         public static extern  BFSRecord BFSRecordConstruct(PAList d,  PACount n);
         [DllImport("palibrary")]

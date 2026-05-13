@@ -16,9 +16,12 @@ namespace PA_Library
         [DllImport("palibrary")]
         public static extern int PACountDelete(PACount PA);
 
+        [FieldOffset(0)]
+        private int number;
+
         // [StructLayout(LayoutKind.Sequential)]
         // public struct PACount Count {get;}
-        public PACount(int number)
+        public PACount(int number) : this()
         {
             
         }

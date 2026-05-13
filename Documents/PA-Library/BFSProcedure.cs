@@ -8,11 +8,14 @@ using System.Runtime.InteropServices;
 
 namespace PA_Library
 {
-    [StructLayout(LayoutKind.Explicit)]
+    [StructLayout(LayoutKind.Sequential)]
     public struct BFSProcedure
     //public readonly class BFSAlgorithm
     //public readonly struct BFSAlgorithm
     {
+
+        private PAInput In;
+        private PATree Tree;
         [DllImport("palibrary")]
         private static extern BFSProcedure BFSProcedureConstruct( PAInput Input,  PATree Tree);
         [DllImport("palibrary")]
