@@ -10,7 +10,7 @@ using System.Xml.XPath;
 
 namespace PA_Library
 {
-    [StructLayout(LayoutKind.Explicit)]
+    [StructLayout(LayoutKind.Sequential)]
     public struct PAInput
     //public readonly class BFSInput
     //public readonly class BFSInput
@@ -25,6 +25,11 @@ namespace PA_Library
         // private static extern void PAInputInit();
         // private static extern void BFSInputInit();
         //Wrapper over the Input variables which provides Input validation
+        private PACount n;
+        private PACount m;
+        private PAList adj;
+        private PAElement sursa;
+        
         [DllImport("palibrary")]
         private static extern PAInput PAInputConstruct(PACount n, PACount m, PAList adj, PAElement sursa);
         [DllImport("palibrary")]
