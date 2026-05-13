@@ -11,7 +11,7 @@ namespace PA_Library
     //public readonly struct BFSOutput
     {
         private BFSRecord result;
-        
+
         [DllImport("palibrary")]
         // public static extern PAOutput PAOutputConstruct(PAResult rezultat);
         public static extern PAOutput PAOutputConstruct(BFSRecord rezultat);
@@ -24,7 +24,7 @@ namespace PA_Library
         public static extern int PAOutputDelete(Output o);
 
         // public UnitateIesire(Rezultat Result)
-        public PAOutput(BFSRecord Result)
+        public PAOutput(BFSRecord Result) : this()
         {
             
         }

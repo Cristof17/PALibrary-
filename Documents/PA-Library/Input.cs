@@ -42,7 +42,7 @@ namespace PA_Library
         public static extern void Dispose();
         [DllImport("palibrary")]
         public static extern void InputDelete();
-        public Input(int Source, ArrayList[] Adj, int N, int M)
+        public Input(int Source, ArrayList[] Adj, int N, int M) : this()
         {
             //ADJ = default(AdjacencyList<Node>);
             // this.N = default;

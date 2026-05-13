@@ -25,7 +25,7 @@ namespace PA_Library
         public static extern int PASeriesDelete(PASeries PA);
         // public PAList(PANod Head) 
         // public PAList(PAElement Head) 
-        public PASeries(PACount n, PAList[] adj) 
+        public PASeries(PACount n, PAList[] adj) : this()
             //: this()
         {
             // int Success = 0;
@@ -124,12 +124,12 @@ namespace PA_Library
         //     return Result;
         // }
 
-        int Copy(int M)
-        {
-            int copy;
-            copy = M;
-            return M;
-        }
+        // int Copy(int M)
+        // {
+        //     int copy;
+        //     copy = M;
+        //     return M;
+        // }
 
         // int find(PANod nod)
         // {

@@ -89,7 +89,7 @@ namespace PA_Library
         //    next = Next;
         //    stare = Stare;
         //}
-        public PAElement(PAData index, PAElement next, State status)
+        public PAElement(PAData index, PAElement next, State status) : this()
         {
             
         }
