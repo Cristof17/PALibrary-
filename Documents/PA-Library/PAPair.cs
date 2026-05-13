@@ -6,9 +6,12 @@ using System;
 using System.Runtime.InteropServices;
 namespace PA_Library
 {
-    [StructLayout(LayoutKind.Explicit)]
+    [StructLayout(LayoutKind.Sequential)]
     public struct PAPair
     {
+        private PAElement Node;
+        private PAElement Neigh; 
+        
         [DllImport("palibrary")]
         public static extern  PAElement PAPairInit(PAElement e);
         [DllImport("palibrary")]

@@ -5,11 +5,13 @@ using System.Runtime.CompilerServices;
 
 namespace PA_Library
 {
-    [StructLayout(LayoutKind.Explicit)]
+    [StructLayout(LayoutKind.Sequential)]
     struct PAOutput
     //public readonly class BFSOutput
     //public readonly struct BFSOutput
     {
+        private BFSRecord result;
+        
         [DllImport("palibrary")]
         // public static extern PAOutput PAOutputConstruct(PAResult rezultat);
         public static extern PAOutput PAOutputConstruct(BFSRecord rezultat);
