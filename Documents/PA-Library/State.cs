@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Immutable;
+using System.Runtime.InteropServices;
 namespace PA_Library
 {
+    [StructLayout(LayoutKind.Sequential)]
     public struct State
     {
         //struct PAStatus visited;
