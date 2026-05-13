@@ -7,13 +7,13 @@ namespace PA_Library
 	//public struct PAMuchie
 	{
 		[DllImport("palibrary")]
-        public static extern void PALinkConstruct();
+        public static extern PAPair PALinkConstruct(PALink p);
 		[DllImport("palibrary")]
-        public static extern void PALinkInit();
+        public static extern PAPair PALinkInit(PAPair p);
 		[DllImport("palibrary")]
-        public static extern void PALinkRuin();
+        public static extern int PALinkRuin(PAPair p);
 		[DllImport("palibrary")]
-        public static extern void PALinkDelete();
+        public static extern int PALinkDelete(PALink PA);
 		//public
 		//{
 			//Console.WriteLine("Hello world!");
