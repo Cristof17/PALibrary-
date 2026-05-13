@@ -7,9 +7,12 @@ using System.Xml.XPath;
 
 namespace PA_Library
 {
-    [StructLayout(LayoutKind.Explicit)]
+    [StructLayout(LayoutKind.Sequential)]
     public struct PASeries 
     {
+        private PACount n;
+        private PAList[] adj;
+
         [DllImport("palibrary")]
         public static extern  PASeries PASeriesConstruct(PACount n, PAList[] adj);
         [DllImport("palibrary")]

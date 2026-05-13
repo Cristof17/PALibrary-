@@ -4,9 +4,11 @@ using System.Collections;
 
 namespace PA_Library
 {
-    [StructLayout(LayoutKind.Explicit)]
+    [StructLayout(LayoutKind.Sequential)]
     public struct PAList
     {
+        private ArrayList edges;
+
         [DllImport("palibrary")]
         public static extern  PAElement PAListGetHead();
         [DllImport("palibrary")]

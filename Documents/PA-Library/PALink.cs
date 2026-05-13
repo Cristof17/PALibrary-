@@ -7,6 +7,8 @@ namespace PA_Library
 	public struct PALink
 	//public struct PAMuchie
 	{
+		private PAPair p;
+		
 		[DllImport("palibrary")]
         public static extern PAPair PALinkConstruct(PALink Link);
 		[DllImport("palibrary")]

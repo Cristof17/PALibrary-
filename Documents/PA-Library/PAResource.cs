@@ -7,6 +7,8 @@ struct PAResource
 {
     // public PAResource Resource;
 
+    [FieldOffset(0)]
+    public PANumber Value;
     // public Resursa(int value)
     public PAResource(int value)
     {
