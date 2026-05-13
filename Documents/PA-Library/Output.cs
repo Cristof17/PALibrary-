@@ -20,7 +20,7 @@ using System.Collections.Immutable;
 
 namespace PA_Library
 {
-    [StructLayout(LayoutKind.Explicit)]
+    [StructLayout(LayoutKind.Sequential)]
     public struct Output
     {
         [DllImport("palibrary")]
