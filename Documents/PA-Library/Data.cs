@@ -3,9 +3,10 @@ using PA_Library;
 using System.Transactions;
 using System.Runtime.InteropServices;
 
-[StructLayout(LayoutKind.Explicit)]
+[StructLayout(LayoutKind.Sequential)]
 public struct PAData
 {
+    private PAResource Resource;
     [DllImport("palibrary")]
     public static extern PAData PADataConstruct(int Resource);
     [DllImport("palibrary")]
