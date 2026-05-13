@@ -82,7 +82,7 @@ namespace PA_Library
 			// 	}
 			// }
 
-			private PAPair p;
+			// private PAPair p;
 			// private PAPereche p;
 			//public Node NODE { get; }
 			//public Node NEIGH { get; }
