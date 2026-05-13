@@ -7,10 +7,13 @@ using System.Xml.XPath;
 
 namespace PA_Library
 {
-    [StructLayout(LayoutKind.Explicit)]
+    [StructLayout(LayoutKind.Sequential)]
     public struct PAElement
     //public struct PAElement
     {
+        private PAData index;
+        // private PAElement next;
+        private PAStatus status;
     [DllImport("palibrary")]
     public static extern PAElement PAElementConstruct(PAData Data, PAElement Next, PAStatus Status);
     [DllImport("palibrary")]

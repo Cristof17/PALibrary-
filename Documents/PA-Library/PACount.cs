@@ -6,6 +6,9 @@ namespace PA_Library
     public struct PACount
     //public struct PAPACount
     {
+
+        [FieldOffset(0)]
+        private int Number;
         [DllImport("palibrary")]
         public static extern void PACountConstruct(int value);
         [DllImport("palibrary")]
