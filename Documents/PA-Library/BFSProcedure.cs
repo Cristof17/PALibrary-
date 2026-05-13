@@ -4,7 +4,7 @@ using System.Collections;
 using System.Runtime.InteropServices;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
-using System.Runtime.InteropServices;
+// using System.Runtime.InteropServices;
 
 namespace PA_Library
 {
@@ -25,7 +25,7 @@ namespace PA_Library
         [DllImport("palibrary")]
         private static extern PAElement BFS(PAData index);
         // public Instruire(Intrare input, Arbore tree)
-        public BFSProcedure(PAInput input, PATree tree)
+        public BFSProcedure(PAInput input, PATree tree) : this()
         {
             
         }

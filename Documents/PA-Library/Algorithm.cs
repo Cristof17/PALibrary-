@@ -35,7 +35,7 @@ namespace PA_Library
         // public readonly struct Algorithm algorithm;
 
         // public Algorithm(IntrareSistem input)
-        public Algorithm(Input input)
+        public Algorithm(Input input) : this()
         {
             
         }
