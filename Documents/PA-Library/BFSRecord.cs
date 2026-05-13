@@ -8,7 +8,7 @@ namespace PA_Library
 	{
         private  PAList d;
         private PACount n;
-        
+
         [DllImport("palibrary")]
         public static extern  BFSRecord BFSRecordConstruct(PAList d,  PACount n);
         [DllImport("palibrary")]
@@ -18,7 +18,7 @@ namespace PA_Library
         [DllImport("palibrary")]
         public static extern int BFSRecordDelete(BFSRecord BFS);
         // public Rezultat(PASeries d, PACount n)
-        public BFSRecord(PASeries d, PACount n)
+        public BFSRecord(PASeries d, PACount n) : this()
 		// public Rezultat(Lista d, Cardinal n)
 		{
 			// this.d = Rezultat.d;
