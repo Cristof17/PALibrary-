@@ -1,12 +1,17 @@
 using System.Xml.XPath;
 using System.Runtime.InteropServices;
 namespace PA_Library {
-	[StructLayout(LayoutKind.Explicit)]
+	[StructLayout(LayoutKind.Sequential)]
 	public struct PATree
 	
 	//public readonly class PAGraf
 	//public struct PAGraf
 	{
+		private PACount n;
+		private PACount m ;
+		private PASeries adj;
+		private PAElement sursa;
+
 		[DllImport("palibrary")]
         public static extern void PATreeSearch(PAElement nod);
 		[DllImport("palibrary")]

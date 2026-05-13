@@ -9,7 +9,9 @@ public struct PAStatus
     // [StructLayout(LayoutKind.Sequential)]
     // struct PAStatus status;
 
-    public PAStatus(Marcaj Visited)
+    [FieldOffset(0)]
+    private int Visited;
+    public PAStatus(int Visited) : this()
     {
         
     }
