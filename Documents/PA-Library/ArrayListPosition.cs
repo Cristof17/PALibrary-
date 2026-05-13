@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 namespace PA_Library
 {
 
-    [StructLayout(LayoutKind.Explicit)]
+    [StructLayout(LayoutKind.Sequential)]
     public struct ArrayListPosition
     {
         // [DllImport("palibrary")]
-        [FieldOffset(0)]
+        // [FieldOffset(0)]
         private int Position; 
     }
 

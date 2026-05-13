@@ -2,12 +2,12 @@
 using System.Runtime.InteropServices;
 namespace PA_Library
 {
-    [StructLayout(LayoutKind.Explicit)]
+    [StructLayout(LayoutKind.Sequential)]
     public struct PACount
     //public struct PAPACount
     {
 
-        [FieldOffset(0)]
+        // [FieldOffset(0)]
         private int Number;
         [DllImport("palibrary")]
         public static extern void PACountConstruct(int value);

@@ -29,7 +29,7 @@ namespace PA_Library
         private PACount m;
         private PAList adj;
         private PAElement sursa;
-        
+    
         [DllImport("palibrary")]
         private static extern PAInput PAInputConstruct(PACount n, PACount m, PAList adj, PAElement sursa);
         [DllImport("palibrary")]

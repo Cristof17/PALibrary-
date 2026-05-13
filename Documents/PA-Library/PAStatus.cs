@@ -3,13 +3,13 @@ using System;
 using System.Runtime.InteropServices;
 //public class PAStare
 //public class PAStare
-[StructLayout(LayoutKind.Explicit)]
+[StructLayout(LayoutKind.Sequential)]
 public struct PAStatus
 {
     // [StructLayout(LayoutKind.Sequential)]
     // struct PAStatus status;
 
-    [FieldOffset(0)]
+    // [FieldOffset(0)]
     private int Visited;
     public PAStatus(int Visited) : this()
     {
