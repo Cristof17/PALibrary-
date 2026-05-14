@@ -8,7 +8,7 @@ namespace PA_Library {
 	//public readonly class PAGraf
 	//public struct PAGraf
 	{
-	[DllImport("palibrary")]
+		[DllImport("palibrary")]
         private static extern void PATreeSearch(PAElement nod);
 		[DllImport("palibrary")]
         private static extern PATree PATreeConstruct(PACount n, PACount m, PAList adj, PAElement source);
