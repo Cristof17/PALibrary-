@@ -10,7 +10,7 @@ struct PAResource
     // [FieldOffset(0)]
     public PANumber Value;
     // public Resursa(int value)
-    public PAResource(int value)
+    public PAResource(int value) : this()
     {
         
     }
