@@ -33,11 +33,11 @@ namespace PA_Library
         [DllImport("palibrary")]
         private static extern PAInput PAInputConstruct(PACount n, PACount m, PAList adj, PAElement sursa);
         [DllImport("palibrary")]
-        public static extern int PAInputRuin( PACount n, PACount m, PAList adj, PAElement sursa);
+        private static extern int PAInputRuin( PACount n, PACount m, PAList adj, PAElement sursa);
         [DllImport("palibrary")]
-        public static extern int PAInputDelete( PAInput i);
+        private static extern int PAInputDelete( PAInput i);
         [DllImport("palibrary")]
-        public static extern PAInput PAInputInit(PAInput PAInput);
+        private static extern PAInput PAInputInit(PAInput PAInput);
         // [DllImport("palibrary")]
         // public static extern void Dispose();
         // [DllImport("palibrary.dll")]

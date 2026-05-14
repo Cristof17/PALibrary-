@@ -15,20 +15,19 @@ namespace PA_Library
         // private PAElement next;
         private PAStatus status;
     [DllImport("palibrary")]
-    public static extern PAElement PAElementConstruct(PAData Data, PAElement Next, PAStatus Status);
+    private static extern PAElement PAElementConstruct(PAData Data, PAElement Next, PAStatus Status);
     [DllImport("palibrary")]
-    public static extern int PAElementRuin(PAData Data, PAElement Next,  PAStatus Status);
+    private static extern int PAElementRuin(PAData Data, PAElement Next,  PAStatus Status);
     [DllImport("palibrary")]
-    public static extern PAElement PAElementInit(PAElement e);
+    private static extern PAElement PAElementInit(PAElement e);
     [DllImport("palibrary")]
-    public static extern int PAElementDelete(PAElement PA);
+    private static extern int PAElementDelete(PAElement PA);
     [DllImport("palibrary")]
-    public static extern void PAElementVisit();
+    private static extern void PAElementVisit();
     [DllImport("palibrary")]
-    public static extern int PADataIsVisited();
+    private static extern int PADataIsVisited();
     [DllImport("palibrary")]
-
-    public static extern void PADataReset();
+    private static extern void PADataReset();
         // public PAPunct(PAPunct Node)
         // {
         //     data = Node.data;

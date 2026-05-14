@@ -27,7 +27,7 @@ namespace PA_Library
     public struct Algorithm {
         
         [DllImport("palibrary")]
-        public static extern Output run( Input input);
+        private static extern Output run( Input input);
         
         // [FieldOffset(0)]
         private Input In { get; }

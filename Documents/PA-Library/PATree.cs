@@ -13,15 +13,15 @@ namespace PA_Library {
 		private PAElement sursa;
 
 		[DllImport("palibrary")]
-        public static extern void PATreeSearch(PAElement nod);
+        private static extern void PATreeSearch(PAElement nod);
 		[DllImport("palibrary")]
-        public static extern PATree PATreeConstruct(PACount n, PACount m, PAList adj, PAElement source);
+        private static extern PATree PATreeConstruct(PACount n, PACount m, PAList adj, PAElement source);
 		[DllImport("palibrary")]
-        public static extern void PATreeRuin( PACount n, PACount m, PAList adj, PAElement source);
+        private static extern void PATreeRuin( PACount n, PACount m, PAList adj, PAElement source);
 		[DllImport("palibrary")]
-        public static extern PATree PATreeInit(PATree graf);
+        private static extern PATree PATreeInit(PATree graf);
 		[DllImport("palibrary")]
-        public static extern int PATreeDelete(PATree PA);
+        private static extern int PATreeDelete(PATree PA);
 
 		// [StructLayout(LayoutKind.Sequential)]
 		// private  PATree tree { get;}

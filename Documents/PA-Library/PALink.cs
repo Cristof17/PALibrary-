@@ -10,14 +10,14 @@ namespace PA_Library
 		private PAPair p;
 
 		[DllImport("palibrary")]
-        public static extern PAPair PALinkConstruct(PALink Link);
+        private static extern PAPair PALinkConstruct(PALink Link);
 		[DllImport("palibrary")]
-        public static extern int PALinkInit(PAPair p);
+        private static extern int PALinkInit(PAPair p);
 		[DllImport("palibrary")]
         // public static extern int PALinkRuin(PAPair p);
-		public static extern int PALinkRuin(PAPair p);
+		private static extern int PALinkRuin(PAPair p);
 		[DllImport("palibrary")]
-        public static extern int PALinkDelete(PALink PA);
+        private static extern int PALinkDelete(PALink PA);
 		//public
 		//{
 			//Console.WriteLine("Hello world!");

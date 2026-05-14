@@ -33,15 +33,15 @@ namespace PA_Library
         private PAElement sursa;
 
         [DllImport("palibrary")]
-        public static extern void InputConstruct();
+        private static extern void InputConstruct();
         [DllImport("palibrary")]
-        public static extern void InputRuin();
+        private static extern void InputRuin();
         [DllImport("palibrary")]
-        public static extern void InputInit();
+        private static extern void InputInit();
         [DllImport("palibrary")]
-        public static extern void Dispose();
+        private static extern void Dispose();
         [DllImport("palibrary")]
-        public static extern void InputDelete();
+        private static extern void InputDelete();
         public Input(int Source, ArrayList[] Adj, int N, int M) : this()
         {
             //ADJ = default(AdjacencyList<Node>);

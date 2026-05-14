@@ -10,13 +10,13 @@ namespace PA_Library
         private PACount n;
 
         [DllImport("palibrary")]
-        public static extern  BFSRecord BFSRecordConstruct(PAList d,  PACount n);
+        private static extern  BFSRecord BFSRecordConstruct(PAList d,  PACount n);
         [DllImport("palibrary")]
-        public static extern int BFSRecordRuin(PAList d, PACount n);
+        private static extern int BFSRecordRuin(PAList d, PACount n);
         [DllImport("palibrary")]
-        public static extern  BFSRecord BFSRecordInit(BFSRecord record);
+        private static extern  BFSRecord BFSRecordInit(BFSRecord record);
         [DllImport("palibrary")]
-        public static extern int BFSRecordDelete(BFSRecord BFS);
+        private static extern int BFSRecordDelete(BFSRecord BFS);
         // public Rezultat(PASeries d, PACount n)
         public BFSRecord(PASeries d, PACount n) : this()
 		// public Rezultat(Lista d, Cardinal n)

@@ -14,15 +14,15 @@ namespace PA_Library
         private PAList[] adj;
 
         [DllImport("palibrary")]
-        public static extern  PASeries PASeriesConstruct(PACount n, PAList[] adj);
+        private static extern  PASeries PASeriesConstruct(PACount n, PAList[] adj);
         [DllImport("palibrary")]
-        public static extern int PASeriesRuin(PACount n, PAList[] adj);
+        private static extern int PASeriesRuin(PACount n, PAList[] adj);
         [DllImport("palibrary")]
-        public static extern PASeries PASeriesInit(PASeries s);
+        private static extern PASeries PASeriesInit(PASeries s);
         [DllImport("palibrary")]
-        public static extern void Dispose();
+        private static extern void Dispose();
         [DllImport("palibrary")]
-        public static extern int PASeriesDelete(PASeries PA);
+        private static extern int PASeriesDelete(PASeries PA);
         // public PAList(PANod Head) 
         // public PAList(PAElement Head) 
         public PASeries(PACount n, PAList[] adj) : this()

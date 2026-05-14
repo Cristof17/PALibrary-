@@ -14,14 +14,14 @@ namespace PA_Library
 
         [DllImport("palibrary")]
         // public static extern PAOutput PAOutputConstruct(PAResult rezultat);
-        public static extern PAOutput PAOutputConstruct(BFSRecord rezultat);
+        private static extern PAOutput PAOutputConstruct(BFSRecord rezultat);
         [DllImport("palibrary")]
         // public static extern int PAOutputRuin(PAResult rezultat);
-        public static extern int PAOutputRuin(BFSRecord rezultat);
+        private static extern int PAOutputRuin(BFSRecord rezultat);
         [DllImport("palibrary")]
-        public static extern Output PAOutputInit(Output Out);
+        private static extern Output PAOutputInit(Output Out);
         [DllImport("palibrary")]
-        public static extern int PAOutputDelete(Output o);
+        private static extern int PAOutputDelete(Output o);
 
         // public UnitateIesire(Rezultat Result)
         public PAOutput(BFSRecord Result) : this()

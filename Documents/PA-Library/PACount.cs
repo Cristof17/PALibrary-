@@ -10,14 +10,14 @@ namespace PA_Library
         // [FieldOffset(0)]
         private int Number;
         [DllImport("palibrary")]
-        public static extern void PACountConstruct(int value);
+        private static extern void PACountConstruct(int value);
         [DllImport("palibrary")]
-        public static extern int PACountRuin(int value);
+        private static extern int PACountRuin(int value);
         [DllImport("palibrary")]
-        public static extern PACount PACountInit(PACount value);
+        private static extern PACount PACountInit(PACount value);
 
         [DllImport("palibrary")]
-        public static extern int PACountDelete(PACount PA);
+        private static extern int PACountDelete(PACount PA);
 
         // [FieldOffset(0)]
         private int number;
