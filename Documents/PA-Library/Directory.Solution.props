@@ -1,12 +1,12 @@
 <Project>
     <PropertyGroup>
-        <BaseOutputPath></BaseOutputPath>
-        <OutputPath></OutputPath>
+        <BaseOutputPath>out</BaseOutputPath>
+        <OutputPath>out</OutputPath>
         <Configuration></Configuration>
         <Platform></Platform>
         <appname>pa</appname>
         <builtdir>out</builtdir>
-        <OutDir></OutDir>
+        <OutDir>out</OutDir>
         <builtdir>out</builtdir>
     </PropertyGroup>
 </Project>
