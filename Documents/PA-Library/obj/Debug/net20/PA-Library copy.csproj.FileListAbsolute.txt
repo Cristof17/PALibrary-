@@ -1,8 +1,0 @@
-/Users/cristoforrotsching/Documents/PA-Library/obj/Debug/net20/PA-Library copy.csproj.AssemblyReference.cache
-/Users/cristoforrotsching/Documents/PA-Library/obj/Debug/net20/PA-Library copy.AssemblyInfoInputs.cache
-/Users/cristoforrotsching/Documents/PA-Library/obj/Debug/net20/PA-Library copy.AssemblyInfo.cs
-/Users/cristoforrotsching/Documents/PA-Library/obj/Debug/net20/PA-Library copy.csproj.CoreCompileInputs.cache
-/Users/cristoforrotsching/Documents/PA-Library/bin/Debug/net20/PA-Library copy.dll
-/Users/cristoforrotsching/Documents/PA-Library/bin/Debug/net20/PA-Library copy.pdb
-/Users/cristoforrotsching/Documents/PA-Library/obj/Debug/net20/PA-Library copy.dll
-/Users/cristoforrotsching/Documents/PA-Library/obj/Debug/net20/PA-Library copy.pdb
