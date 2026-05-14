@@ -1,5 +1,6 @@
 <Project>
     <PropertyGroup>
+        <builtdir>dll</builtdir>
         <OutDir></OutDir>
     </PropertyGroup>
 </Project>
