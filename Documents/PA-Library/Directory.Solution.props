@@ -5,8 +5,8 @@
         <Configuration></Configuration>
         <Platform></Platform>
         <appname>appname</appname>
-        <builtdir>dll</builtdir>
+        <builtdir>out</builtdir>
         <OutDir></OutDir>
-        <builtdir>dll</builtdir>
+        <builtdir>out</builtdir>
     </PropertyGroup>
 </Project>
