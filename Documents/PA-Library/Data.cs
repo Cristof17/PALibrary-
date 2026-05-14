@@ -8,7 +8,7 @@ public struct PAData
 {
     private PAResource Resource;
     [DllImport("palibrary")]
-    public static extern PAData PADataConstruct(int Resource);
+    public static extern PAData PADataConstruct(PAResource Resource);
     [DllImport("palibrary")]
     public static extern int PADataRuin(int Resource);
     [DllImport("palibrary")]
