@@ -6,6 +6,7 @@
     <Compile Include="PAElement.cs"/>
     <Compile Include="PAStatus.cs"/>
     <Compile Include="PAData.cs"/>
+    <Compile Include="ArrayListPosition.cs"/>
   </ItemGroup>
   <PropertyGroup>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
