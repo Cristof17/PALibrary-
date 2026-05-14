@@ -7,7 +7,7 @@
   <Target Name="Build">
     <Message Text="Build"></Message>
     <MakeDir Directories= "$(builtdir)" Condition ="!Exists('$(builtdir)')"/>
-    <Csc Sources= "@(Compile)" OutputAssembly="$(BuiltDir\$(appname).exe">
+    <Csc Sources= "@(Compile)" OutputAssembly="$(builtdir)\$(appname).exe">
     <Output TaskParameter="OutputAssembly" ItemName = "EXEFile"/>
     </Csc>
     </Target>
