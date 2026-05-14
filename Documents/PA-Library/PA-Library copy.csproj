@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <TargetFrameworkVersion>net40</TargetFrameworkVersion>
     <Configuration>Debug</Configuration>
     <Platform>AnyCPU</Platform>
     <BaseOutputPath></BaseOutputPath>
@@ -8,7 +9,6 @@
     <builtdir>dll</builtdir>
   </PropertyGroup>
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>PA_Library</RootNamespace>
   </PropertyGroup>
 
