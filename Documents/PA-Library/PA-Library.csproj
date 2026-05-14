@@ -1,5 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+  <BaseOutputPath></BaseOutputPath>
+  <OutputPath></OutputPath>
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>PA_Library</RootNamespace>
@@ -8,5 +12,20 @@
   <ItemGroup>
     <PackageReference Include="System.Collections.Immutable" Version="9.0.2" />
   </ItemGroup>
+
+  <builtdir>dll</builtdir>
+  <Target Name="Clean">
+    <Message Text="Cleaning"></Message>
+    <RemoveDir Directories="$(builtdir)"/>
+  </Target>
+  <Target Name="Build">
+    <Message Text="Build"></Message>
+    <MakeDir Directories= "$(builtdir)" Condition ="!Exists('$(builtdir)')"/>
+    <CSC Sources= "@(CSFile" OutputAssembly="$(BuiltDir\$(appname).exe">
+      <Output TaskParameter="OutputAssembly" ItemName = "EXEFile"/>
+    </CSC>
+  </Target>
+
+
 
 </Project>

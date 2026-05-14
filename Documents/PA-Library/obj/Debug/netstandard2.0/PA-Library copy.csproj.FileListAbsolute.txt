@@ -1,0 +1,4 @@
+/Users/cristoforrotsching/Documents/PA-Library/obj/Debug/netstandard2.0/PA-Library copy.csproj.AssemblyReference.cache
+/Users/cristoforrotsching/Documents/PA-Library/obj/Debug/netstandard2.0/PA-Library copy.AssemblyInfoInputs.cache
+/Users/cristoforrotsching/Documents/PA-Library/obj/Debug/netstandard2.0/PA-Library copy.AssemblyInfo.cs
+/Users/cristoforrotsching/Documents/PA-Library/obj/Debug/netstandard2.0/PA-Library copy.csproj.CoreCompileInputs.cache
