@@ -6,7 +6,7 @@
     <Compile Include="src/PA/PAElement.cs"/>
     <Compile Include="src/PA/PAStatus.cs"/>
     <Compile Include="src/PA/PAData.cs"/>
-    <Compile Include="src/ArrayList/ArrayListPosition.cs"/>
+    <Compile Include="src/PA/ArrayListPosition.cs"/>
     <Compile Include="src/PA/PAResource.cs"/>
     <Compile Include="src/PA/PAList.cs"/>
     <Compile Include="src/PA/PASeries.cs"/>
