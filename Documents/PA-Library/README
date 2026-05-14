@@ -1,1 +1,2 @@
 install mscorelib dll
+install netcore using nuget restore "PA-Library copy.csproj"
