@@ -1,0 +1,46 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/cristoforrotsching/Documents/PA-Library/PA-Library copy.csproj": {}
+  },
+  "projects": {
+    "/Users/cristoforrotsching/Documents/PA-Library/PA-Library copy.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cristoforrotsching/Documents/PA-Library/PA-Library copy.csproj",
+        "projectName": "PA-Library copy",
+        "projectPath": "/Users/cristoforrotsching/Documents/PA-Library/PA-Library copy.csproj",
+        "packagesPath": "/Users/cristoforrotsching/.nuget/packages/",
+        "outputPath": "/Users/cristoforrotsching/Documents/PA-Library/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "/Users/cristoforrotsching/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net20"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net20": {
+            "targetAlias": "net20",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net20": {
+          "targetAlias": "net20",
+          "runtimeIdentifierGraphPath": "/Library/Frameworks/Mono.framework/Versions/6.12.0/lib/mono/msbuild/Current/bin/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

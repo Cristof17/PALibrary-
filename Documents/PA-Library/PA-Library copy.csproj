@@ -1,7 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
+  <ItemGroup>
+    <Compile Include="Algorithm.cs"/>
+  </ItemGroup>
   <PropertyGroup>
-    <TargetFrameworkVersion>net40</TargetFrameworkVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <TargetFrameworks>net20</TargetFrameworks>
+    <!--<TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>-->
+    <!---<TargetFrameworkVersion>v4.0</TargetFrameworkVersion>-->
     <Configuration>Debug</Configuration>
     <Platform>AnyCPU</Platform>
     <BaseOutputPath></BaseOutputPath>
@@ -13,7 +18,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Collections.Immutable" Version="9.0.2" />
+    <!--<PackageReference Include="System.Collections.Immutable" Version="9.0.2" />-->
   </ItemGroup>
 
   <Target Name="Clean">
@@ -23,9 +28,9 @@
   <Target Name="Build">
     <Message Text="Build"></Message>
     <MakeDir Directories= "$(builtdir)" Condition ="!Exists('$(builtdir)')"/>
-    <CSC Sources= "@(CSFile" OutputAssembly="$(BuiltDir\$(appname).exe">
+    <Csc Sources= "@(Compile)" OutputAssembly="$(BuiltDir\$(appname).exe">
       <Output TaskParameter="OutputAssembly" ItemName = "EXEFile"/>
-    </CSC>
+    </Csc>
   </Target>
 
 

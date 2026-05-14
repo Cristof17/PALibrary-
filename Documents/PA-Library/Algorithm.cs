@@ -14,10 +14,10 @@
 //        //protected List<T> Adj;
 //    }
 //}
-using PA_Library;
 // using System;
 // using System.Collections;
 using System.Runtime.InteropServices;
+using PA_Library;
 
 //Console.WriteLine("Hello world!");
 
@@ -27,7 +27,7 @@ namespace PA_Library
     public struct Algorithm {
         
         [DllImport("palibrary")]
-        private static extern Output run( Input input);
+        private static extern Output run(Input input);
         
         // [FieldOffset(0)]
         private Input In { get; }
