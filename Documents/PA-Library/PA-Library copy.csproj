@@ -7,6 +7,13 @@
     <Compile Include="PAStatus.cs"/>
     <Compile Include="PAData.cs"/>
     <Compile Include="ArrayListPosition.cs"/>
+    <Compile Include="PAResource.cs"/>
+    <Compile Include="PAList.cs"/>
+    <Compile Include="PASeries.cs"/>
+    <Compile Include="PACount.cs"/>
+    <Compile Include="Output.cs"/>
+    <Compile Include="BFSRecord.cs"/>
+    <Compile Include="PANumber.cs"/>
   </ItemGroup>
   <PropertyGroup>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
