@@ -22,8 +22,8 @@ namespace PA_Library
 		//{
 			//Console.WriteLine("Hello world!");
 			// PALink(PANod Node, PANod Neigh)
-			PALink(PAElement Node, PAElement Neigh) : this()
-			{
+		PALink(PAElement Node, PAElement Neigh) : this()
+		{
 				// p = default;
 				//Node;
 				//NEIGH = default;// Neigh;
@@ -84,7 +84,7 @@ namespace PA_Library
 				// 		neigh = default;
 				// 	}
 				// }
-			}
+		}
 
 			// private PAPereche p;
 			// private PAPair p;
