@@ -1,20 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <Compile Include="Algorithm.cs"/>
-    <Compile Include="Input.cs"/>
-    <Compile Include="ArrayList.cs"/>
-    <Compile Include="PAElement.cs"/>
-    <Compile Include="PAStatus.cs"/>
-    <Compile Include="PAData.cs"/>
-    <Compile Include="ArrayListPosition.cs"/>
-    <Compile Include="PAResource.cs"/>
-    <Compile Include="PAList.cs"/>
-    <Compile Include="PASeries.cs"/>
-    <Compile Include="PACount.cs"/>
-    <Compile Include="Output.cs"/>
-    <Compile Include="BFSRecord.cs"/>
-    <Compile Include="PANumber.cs"/>
-    <Compile Include="Program.cs"/>
+    <Compile Include="src/Algorithm.cs"/>
+    <Compile Include="src/Input.cs"/>
+    <Compile Include="src/ArrayList.cs"/>
+    <Compile Include="src/PAElement.cs"/>
+    <Compile Include="src/PAStatus.cs"/>
+    <Compile Include="src/PAData.cs"/>
+    <Compile Include="src/ArrayListPosition.cs"/>
+    <Compile Include="src/PAResource.cs"/>
+    <Compile Include="src/PAList.cs"/>
+    <Compile Include="src/PASeries.cs"/>
+    <Compile Include="src/PACount.cs"/>
+    <Compile Include="src/Output.cs"/>
+    <Compile Include="src/BFSRecord.cs"/>
+    <Compile Include="src/PANumber.cs"/>
+    <Compile Include="src/Program.cs"/>
   </ItemGroup>
   <PropertyGroup>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
