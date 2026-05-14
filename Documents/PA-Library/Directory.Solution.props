@@ -1,0 +1,12 @@
+<Project>
+    <PropertyGroup>
+        <BaseOutputPath></BaseOutputPath>
+        <OutputPath></OutputPath>
+        <Configuration></Configuration>
+        <Platform></Platform>
+        <appname>appname</appname>
+        <builtdir>dll</builtdir>
+        <OutDir></OutDir>
+        <builtdir>dll</builtdir>
+    </PropertyGroup>
+</Project>
