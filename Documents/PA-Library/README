@@ -1,2 +1,4 @@
+use nuget restore <Project File> to install mscorlib.dll
+use nuget restore <Project File> to install dependencies
 install mscorelib dll
 install netcore using nuget restore "PA-Library copy.csproj"
