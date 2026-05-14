@@ -1,6 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
     <Compile Include="Algorithm.cs"/>
+    <Compile Include="Input.cs"/>
+    <Compile Include="ArrayList.cs"/>
+    <Compile Include="PAElement.cs"/>
+    <Compile Include="PAStatus.cs"/>
+    <Compile Include="PAData.cs"/>
   </ItemGroup>
   <PropertyGroup>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
