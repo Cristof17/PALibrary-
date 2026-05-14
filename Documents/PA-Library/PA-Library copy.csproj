@@ -14,6 +14,7 @@
     <Compile Include="Output.cs"/>
     <Compile Include="BFSRecord.cs"/>
     <Compile Include="PANumber.cs"/>
+    <Compile Include="Program.cs"/>
   </ItemGroup>
   <PropertyGroup>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>

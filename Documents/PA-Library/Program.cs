@@ -1,9 +1,9 @@
-﻿// using System;
-
+﻿using System;
+using PA_Library;
 // //Console.WriteLine("Hello world!");
 
-// namespace PA_Library
-// {
+namespace PA_Library
+{
 //     //class YourClass
 //     //{
 //     //}
@@ -107,32 +107,33 @@
 //     //    ArrayList d;
 //     //    //Output output;
 //     //}
-//     class Program<T> where T : new()
-//     {
-//         public const String INPUT_FILE = "in";
-//         public const String OUTPUT_FILE = "out";
-
-//         static void Main(string[] args)
-//         {
-//             ReadInput(INPUT_FILE);
-//             WriteOutput(GetResults(), OUTPUT_FILE);
+    class Program
+    {
+        public const String INPUT_FILE = "in";
+        public const String OUTPUT_FILE = "out";
+        public static void Main(string[] args)
+        {
+            ReadInput(INPUT_FILE);
+            WriteOutput(GetResults(), OUTPUT_FILE);
 //             // Console.WriteLine("Hello world!");
-//         }
+        }
 
-//         public static void ReadInput(String path)
-//         {
+        public static void ReadInput(String path)
+        {
 //             // Console.WriteLine(path);
-//         }
-//         public static void WriteOutput(Output o, String path)
-//         {
+        }
+        public static void WriteOutput(Output o, String path)
+        {
 //             // Console.WriteLine(path);
-//         }
-//         public static Output GetResults()
-//         {
+        }
+        public static PA_Library.Output GetResults()
+        {
+            return new Output();
+            
 //             return new Output();
 //             //Console.WriteLine(message);
-//         }
-//     }
+        }
+    }
 //     //interface IYourInterface
 //     //{
 //     //}
@@ -149,4 +150,4 @@
 //     //    {
 //     //    }
 //     //}
-// }
+}
