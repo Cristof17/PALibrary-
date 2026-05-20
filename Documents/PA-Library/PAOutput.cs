@@ -11,17 +11,27 @@ namespace PA_Library
     //public readonly struct BFSOutput
     {
         private BFSRecord result;
-
         [DllImport("palibrary")]
-        // public static extern PAOutput PAOutputConstruct(PAResult rezultat);
-        public static extern PAOutput PAOutputConstruct(BFSRecord rezultat);
-        [DllImport("palibrary")]
-        // public static extern int PAOutputRuin(PAResult rezultat);
-        public static extern int PAOutputRuin(BFSRecord rezultat);
-        [DllImport("palibrary")]
-        public static extern Output PAOutputInit(Output Out);
-        [DllImport("palibrary")]
-        public static extern int PAOutputDelete(Output o);
+         static extern Output OutputPerformConstruct( BFSRecord Record);
+         [DllImport("palibrary")]
+static extern Output OutputPerformInit(Output Output);
+[DllImport("palibrary")]
+ static extern Output OutputPerformCopy( Output Output) ;
+//struct Output dispose();
+    [DllImport("palibrary")]
+static extern OutputPerformRuin(void);
+     [DllImport("palibrary")]
+ static extern OutputPerformPrint(PAResult resulrt);
+        // [DllImport("palibrary")]
+        // // public static extern PAOutput PAOutputConstruct(PAResult rezultat);
+        // public static extern PAOutput PAOutputConstruct(BFSRecord rezultat);
+        // [DllImport("palibrary")]
+        // // public static extern int PAOutputRuin(PAResult rezultat);
+        // public static extern int PAOutputRuin(BFSRecord rezultat);
+        // [DllImport("palibrary")]
+        // public static extern Output PAOutputInit(Output Out);
+        // [DllImport("palibrary")]
+        // public static extern int PAOutputDelete(Output o);
 
         // public UnitateIesire(Rezultat Result)
         public PAOutput(BFSRecord Result) : this()
