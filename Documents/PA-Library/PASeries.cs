@@ -12,17 +12,30 @@ namespace PA_Library
     {
         private PACount n;
         private PAList[] adj;
-
         [DllImport("palibrary")]
-        public static extern  PASeries PASeriesConstruct(PACount n, PAList[] adj);
+ static extern PASeries PASeriesPerformConstruct();
+ static extern PASeries PASeriesPerformInit( PASeries Series,  PACount M,  PAElement[] adj);
         [DllImport("palibrary")]
-        public static extern int PASeriesRuin(PACount n, PAList[] adj);
+ static extern PASeries PASeriesPerformDelete( PASeries Series);
         [DllImport("palibrary")]
-        public static extern PASeries PASeriesInit(PASeries s);
+ static extern PASeries PASeriesPerformCopy( PASeries Series1,  PASeries Series);
+// PAResult PASeriesPerformCopy();
         [DllImport("palibrary")]
-        public static extern void Dispose();
+ static extern PASeries PASeriesPerformRuin( PASeries Series);
         [DllImport("palibrary")]
-        public static extern int PASeriesDelete(PASeries PA);
+        static extern PAResource PASeriesGet( PAData Data);
+        [DllImport("palibrary")]
+        static extern void PASeriesPerformPrint(PASeries Series);
+        // [DllImport("palibrary")]
+        // public static extern  PASeries PASeriesConstruct(PACount n, PAList[] adj);
+        // [DllImport("palibrary")]
+        // public static extern int PASeriesRuin(PACount n, PAList[] adj);
+        // [DllImport("palibrary")]
+        // public static extern PASeries PASeriesInit(PASeries s);
+        // [DllImport("palibrary")]
+        // public static extern void Dispose();
+        // [DllImport("palibrary")]
+        // public static extern int PASeriesDelete(PASeries PA);
         // public PAList(PANod Head) 
         // public PAList(PAElement Head) 
         public PASeries(PACount n, PAList[] adj) : this()
