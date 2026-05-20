@@ -10,19 +10,36 @@ namespace PA_Library
         private ArrayList edges;
 
         [DllImport("palibrary")]
-        public static extern  PAElement PAListGetHead();
+        static extern PAList PAListPerformConstruct();
         [DllImport("palibrary")]
-        public static extern void PAListAddHead(PAElement data);
-        [DllImport("palibrary")]
-        public static extern  PAList PAListConstruct(PAElement Head);
-        [DllImport("palibrary")]
-        public static extern int PAListRuin(PACount m, ArrayList Edges);
-        [DllImport("palibrary")]
-        public static extern  PAList PAListInit(PAList lista);
-        [DllImport("palibrary")]
-        public static extern void Dispose();
-        [DllImport("palibrary")]
-        public static extern int PAListDelete(PASeries PA);
+static extern PAList PAListPerformInit(PAList List,PACount N, PASeries[] adj);
+// DllExport struct PAList PAListPerformCopy(struct PAList);
+// DllExport PAResult PAListPerformPutCount(struct PAList, struct PACount);
+// DllExport PAResult PAListPerformPutList(struct PAList);
+[DllImport("palibrary")]
+static extern  PAList PAListPerformRuin( PAList PA);
+[DllImport("palibrary")]
+static extern  PAList PAListPerformDelete( PAList PA);
+[DllImport("palibrary")]
+        static extern PAList PAListPerformCopy( PAList from,  PAList to);
+// DllExport void PAListDispose(void);
+[DllImport("palibrary")]
+    static extern void PAListPerformPrint( PAList List);
+
+        // [DllImport("palibrary")]
+        // public static extern  PAElement PAListGetHead();
+        // [DllImport("palibrary")]
+        // public static extern void PAListAddHead(PAElement data);
+        // [DllImport("palibrary")]
+        // public static extern  PAList PAListConstruct(PAElement Head);
+        // [DllImport("palibrary")]
+        // public static extern int PAListRuin(PACount m, ArrayList Edges);
+        // [DllImport("palibrary")]
+        // public static extern  PAList PAListInit(PAList lista);
+        // [DllImport("palibrary")]
+        // public static extern void Dispose();
+        // [DllImport("palibrary")]
+        // public static extern int PAListDelete(PASeries PA);
 
         // public PAList(ArrayList Adj, int M) : this()
         // {
