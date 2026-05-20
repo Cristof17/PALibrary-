@@ -31,7 +31,7 @@ namespace PA_Library
  [DllImport("palibrary")]
  static extern PAElement PAElementPerformDelete( PAElement element);
  [DllImport("palibrary")]
- static extern PAElement PAElementPerformCopy( PAElement element, PAElement element);
+ static extern PAElement PAElementPerformCopy( PAElement element, PAElement element2);
 
         private PAData index;
         // private PAElement next;
