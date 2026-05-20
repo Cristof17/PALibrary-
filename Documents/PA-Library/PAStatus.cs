@@ -8,7 +8,15 @@ public struct PAStatus
 {
     // [StructLayout(LayoutKind.Sequential)]
     // struct PAStatus status;
-
+    static extern PAStatus PAStatusPerformInit( PAStatus Status, PAResource Resource);
+    [DllImport("pa")]
+static extern PAStatus PAStatusPerformDelete( PAStatus Status);
+[DllImport("pa")]
+static extern PAStatus PAStatusPerformConstruct();
+[DllImport("pa")]
+static extern PAStatus PAStatusPerformRuin( PAStatus Status);
+[DllImport("pa")]
+static extern  PAStatus PAStatusPerformCopy( PAStatus Status,  PAStatus Status2);
     // [FieldOffset(0)]
     private int Visited;
     public PAStatus(int Visited) : this()
