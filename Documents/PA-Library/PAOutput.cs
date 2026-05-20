@@ -19,7 +19,7 @@ static extern Output OutputPerformInit(Output Output);
  static extern Output OutputPerformCopy( Output Output) ;
 //struct Output dispose();
     [DllImport("palibrary")]
-static extern OutputPerformRuin(void);
+static extern void OutputPerformRuin(void);
      [DllImport("palibrary")]
  static extern OutputPerformPrint(PAResult resulrt);
         // [DllImport("palibrary")]
