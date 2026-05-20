@@ -12,15 +12,31 @@ namespace PA_Library {
 		private PASeries adj;
 		private PAElement sursa;
 
-		[DllImport("palibrary")]
-        public static extern void PATreeSearch(PAElement nod);
-		[DllImport("palibrary")]
-        public static extern PATree PATreeConstruct(PACount n, PACount m, PAList adj, PAElement source);
-		[DllImport("palibrary")]
-        public static extern void PATreeRuin( PACount n, PACount m, PAList adj, PAElement source);
-		[DllImport("palibrary")]
-        public static extern PATree PATreeInit(PATree graf);
-		[DllImport("palibrary")]
+[DllImport("palibrary")]
+ static extern PATree PATreePerformConstruct();
+ [DllImport("palibrary")]
+ static extern PATree PATreePerformCopy( PATree from,  PATree to);
+// DllExport struct PACount PATreeSize();
+[DllImport("palibrary")]
+ static extern PATree PATreePerformInit(PATree Tree,  PACount Count,  PACount Count2,  PAList List2,  PAElement Element);
+// DllExport HRESULT PATreePerformCopy();
+// DllExport HRESULT PATreePerformPutCount(struct PACount, struct PACount);
+// struct PATree PATreePutList(struct PATree, struct PAList);
+// DllExport HRESULT PATreePerformPutElement();
+// DllExport HRESULT PATreePerformPutSeries();
+[DllImport("palibrary")]
+ static extern PATree PATreePerformRuin( PATree PA);
+ [DllImport("paslibrary")]
+ static extern PATree PATreePerformDelete( PATree PA);
+		// [DllImport("palibrary")]
+        // public static extern void PATreeSearch(PAElement nod);
+		// [DllImport("palibrary")]
+        // public static extern PATree PATreeConstruct(PACount n, PACount m, PAList adj, PAElement source);
+		// [DllImport("palibrary")]
+        // public static extern void PATreeRuin( PACount n, PACount m, PAList adj, PAElement source);
+		// [DllImport("palibrary")]
+        // public static extern PATree PATreeInit(PATree graf);
+		// [DllImport("palibrary")]
         public static extern int PATreeDelete(PATree PA);
 
 		// [StructLayout(LayoutKind.Sequential)]
