@@ -6,7 +6,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Collections.Immutable" Version="9.0.2" />
+    <!--<PackageReference Include="System.Collections.Immutable" Version="9.0.2" />-->
+    <Reference Include="Microsoft.CSharp"/>
+          <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System"/>
+          <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices"/>
+          <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
   </ItemGroup>
 
 </Project>
