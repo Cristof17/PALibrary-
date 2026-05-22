@@ -12,19 +12,19 @@ namespace PA_Library
         [DllImport("palibrary")]
         static extern PAList PAListPerformConstruct();
         [DllImport("palibrary")]
-static extern PAList PAListPerformInit(PAList List,PACount N, PASeries[] adj);
+        static extern PAList PAListPerformInit(PAList List,PACount N, PASeries[] adj);
 // DllExport struct PAList PAListPerformCopy(struct PAList);
-// DllExport PAResult PAListPerformPutCount(struct PAList, struct PACount);
+// DllExportPAResult PAListPerformPutCount(struct PAList, struct PACount);
 // DllExport PAResult PAListPerformPutList(struct PAList);
-[DllImport("palibrary")]
-static extern  PAList PAListPerformRuin( PAList PA);
-[DllImport("palibrary")]
-static extern  PAList PAListPerformDelete( PAList PA);
-[DllImport("palibrary")]
+        [DllImport("palibrary")]
+        static extern  PAList PAListPerformRuin( PAList PA);
+        [DllImport("palibrary")]
+        static extern  PAList PAListPerformDelete( PAList PA);
+        [DllImport("palibrary")]
         static extern PAList PAListPerformCopy( PAList from,  PAList to);
 // DllExport void PAListDispose(void);
-[DllImport("palibrary")]
-    static extern void PAListPerformPrint( PAList List);
+        [DllImport("palibrary")]
+        static extern void PAListPerformPrint( PAList List);
 
         // [DllImport("palibrary")]
         // public static extern  PAElement PAListGetHead();

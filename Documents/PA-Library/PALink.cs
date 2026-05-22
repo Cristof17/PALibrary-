@@ -25,10 +25,10 @@ namespace PA_Library
         // public static extern PAPair PALinkConstruct(PALink Link);
 		// [DllImport("palibrary")]
         // public static extern int PALinkInit(PAPair p);
-		// [DllImport("palibrary")]
         // // public static extern int PALinkRuin(PAPair p);
 		// public static extern int PALinkRuin(PAPair p);
 		// [DllImport("palibrary")]
+		[DllImport("palibrary")]
         public static extern int PALinkDelete(PALink PA);
 		//public
 		//{
