@@ -5,15 +5,15 @@
     <RootNamespace>PA_Library</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
     <!--<PackageReference Include="System.Collections.Immutable" Version="9.0.2" />-->
-    <Reference Include="Microsoft.CSharp"/>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp">
           <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System"/>
+    <Reference Include="System">
           <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System.Runtime.InteropServices"/>
+    <Reference Include="System.Runtime.InteropServices">
           <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
   </ItemGroup>
