@@ -9,18 +9,18 @@ namespace PA_Library
 	{
 		private PAPair p;
 
-	[DllImport("palibrary")]
+		[DllImport("palibrary")]
 		static extern  PALink PALinkPerformConstruct();
 		[DllImport("palibrary")]
- 	static extern  PALink PALinkPerformCopy(PALink from,  PALink two);
-[DllImport("palibrary")]
+ 		static extern  PALink PALinkPerformCopy(PALink from,  PALink two);
+		[DllImport("palibrary")]
 // DllExport struct PALink PALinkPerformCopy(struct PALink);
- static extern  PALink PALinkPerformInit( PALink init,  PAPair pair);
-[DllImport("palibrary")]
+ 		static extern  PALink PALinkPerformInit( PALink init,  PAPair pair);
+		[DllImport("palibrary")]
 // DllExport struct PALink PALinkPerformPutPair(struct PALink,struct PAPair);
- static extern  PALink PALinkPerformRuin( PALink PA);
-[DllImport("palibrary")]
-static extern  PALink PALinkPerformDelete( PALink PA);
+ 		static extern  PALink PALinkPerformRuin( PALink PA);
+		[DllImport("palibrary")]
+		static extern  PALink PALinkPerformDelete( PALink PA);
 		// [DllImport("palibrary")]
         // public static extern PAPair PALinkConstruct(PALink Link);
 		// [DllImport("palibrary")]
