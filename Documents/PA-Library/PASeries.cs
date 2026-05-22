@@ -14,6 +14,7 @@ namespace PA_Library
         private PAList[] adj;
         [DllImport("palibrary")]
         static extern PASeries PASeriesPerformConstruct();
+        [DllImport("palibrary")]
         static extern PASeries PASeriesPerformInit( PASeries Series,  PACount M,  PAElement[] adj);
         [DllImport("palibrary")]
         static extern PASeries PASeriesPerformDelete( PASeries Series);
