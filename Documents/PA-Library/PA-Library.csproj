@@ -8,13 +8,16 @@
     <!--<PackageReference Include="System.Collections.Immutable" Version="9.0.2" />-->
   <ItemGroup>
     <Reference Include="Microsoft.CSharp">
-          <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System">
-          <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Runtime.InteropServices">
-          <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
   </ItemGroup>
 
