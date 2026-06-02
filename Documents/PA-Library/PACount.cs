@@ -6,33 +6,48 @@ namespace PA_Library
     public struct PACount
     //public struct PAPACount
     {
-        [DllImport("palibrary")]
-         static extern PACount PACountPerformConstruct();
-        [DllImport("palibrary")]
-        static extern PACount PACountPerformInit( PACount Count,  PANumber Number);
-        [DllImport("palibrary")]
-        static extern  PACount PACountPerformCopy( PACount from,  PACount to);
-        [DllImport("palibrary")]
+        [DllImport("pa")]
+        PACount PACountPerformConstruct();
+        [DllImport("pa")]
+        PACount PACountPerformInit(PACount Count, PANumber Number);
+        [DllImport("pa")]
+        PACount PACountPerformCopy(PACount from, PACount to);
 // DllExport struct PACount PACountPerformCopy(struct PACount);
 // void PASize(PA_INT);
 // DllExport HRESULT PACountPerformPrint(struct PACount);
-        static extern PACount PACountPerformRuin( PACount Count);
+        [DllImport("pa")]
+        PACount PACountPerformRuin(PACount PA);
 // DllExport struct PACount PACountPerformPutValue(struct PACount, PAInt);
 // struct 
-        [DllImport("palibrary")]
-        static extern PACount PACountPerformDelete( PACount PA);
+        [DllImport("pa")]
+        PACount PACountPerformDelete(PACount PA);
+//         [DllImport("palibrary")]
+//          static extern PACount PACountPerformConstruct();
+//         [DllImport("palibrary")]
+//         static extern PACount PACountPerformInit( PACount Count,  PANumber Number);
+//         [DllImport("palibrary")]
+//         static extern  PACount PACountPerformCopy( PACount from,  PACount to);
+//         [DllImport("palibrary")]
+// // DllExport struct PACount PACountPerformCopy(struct PACount);
+// // void PASize(PA_INT);
+// // DllExport HRESULT PACountPerformPrint(struct PACount);
+//         static extern PACount PACountPerformRuin( PACount Count);
+// // DllExport struct PACount PACountPerformPutValue(struct PACount, PAInt);
+// // struct 
+//         [DllImport("palibrary")]
+//         static extern PACount PACountPerformDelete( PACount PA);
 
-        // [FieldOffset(0)]
-        private int Number;
-        [DllImport("palibrary")]
-        public static extern void PACountConstruct(int value);
-        [DllImport("palibrary")]
-        public static extern int PACountRuin(int value);
-        [DllImport("palibrary")]
-        public static extern PACount PACountInit(PACount value);
+//         // [FieldOffset(0)]
+//         private int Number;
+//         [DllImport("palibrary")]
+//         public static extern void PACountConstruct(int value);
+//         [DllImport("palibrary")]
+//         public static extern int PACountRuin(int value);
+//         [DllImport("palibrary")]
+//         public static extern PACount PACountInit(PACount value);
 
-        [DllImport("palibrary")]
-        public static extern int PACountDelete(PACount PA);
+//         [DllImport("palibrary")]
+//         public static extern int PACountDelete(PACount PA);
 
         // [FieldOffset(0)]
         private int number;
