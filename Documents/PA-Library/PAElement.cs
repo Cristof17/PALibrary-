@@ -11,15 +11,15 @@ namespace PA_Library
     public struct PAElement
     //public struct PAElement
     {
-        [DllImport("palibrary")]
+        [DllImport("pa")]
          static extern void PAElementVisit( PAElement element);
-         [DllImport("palibrary")]
+         [DllImport("pa")]
         static extern int PAElementIsVisited(PAElement element);
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         static extern void PAElementReset( PAElement element);
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         static extern PAElement PAElementPerformConstruct();
-        [DllImport("palibrary")]
+        [DllImport("pa")]
 // DllExport HRESULT PAElementPerformCopy();
         static extern PAElement PAElementPerformInit(PAElement element, PAData data, PAStatus status);
 // DllExport HRESULT PAElementPerformPutStatus(struct PAStatus);

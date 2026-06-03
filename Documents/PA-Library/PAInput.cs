@@ -30,18 +30,18 @@ namespace PA_Library
         private PAList adj;
         private PAElement sursa;
     
-        [DllImport("palibrary")]
-          static extern Input InputPerformConstruct();
-        [DllImport("palibrary")]
-          static extern Input InputPerformInit( PACount Count,  PACount Count2,  PAElement Element);
-        [DllImport("palibrary")]
-          static extern Input InputPerformCopy( Input Input);
-        [DllImport("palibrary")]
-         static extern PAInput InputPerformDelete( PAInput Input);
-        [DllImport("palibrary")]
-         static extern void InputRuin();
-        [DllImport("palibrary")]
-         static extern void InputDispose();
+        [DllImport("pa")]
+        static extern Input InputPerformConstruct();
+        [DllImport("pa")]
+        static extern Input InputPerformInit( PACount Count,  PACount Count2,  PAElement Element);
+        [DllImport("pa")]
+        static extern Input InputPerformCopy( Input Input);
+        [DllImport("pa")]
+        static extern PAInput InputPerformDelete( PAInput Input);
+        [DllImport("pa")]
+        static extern void InputRuin();
+        [DllImport("pa")]
+        static extern void InputDispose();
 
         // [DllImport("palibrary")]
         // private static extern PAInput PAInputConstruct(PACount n, PACount m, PAList adj, PAElement sursa);

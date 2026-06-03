@@ -9,21 +9,21 @@ namespace PA_Library
     {
         private ArrayList edges;
 
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         static extern PAList PAListPerformConstruct();
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         static extern PAList PAListPerformInit(PAList List,PACount N, PASeries[] adj);
 // DllExport struct PAList PAListPerformCopy(struct PAList);
 // DllExportPAResult PAListPerformPutCount(struct PAList, struct PACount);
 // DllExport PAResult PAListPerformPutList(struct PAList);
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         static extern  PAList PAListPerformRuin( PAList PA);
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         static extern  PAList PAListPerformDelete( PAList PA);
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         static extern PAList PAListPerformCopy( PAList from,  PAList to);
 // DllExport void PAListDispose(void);
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         static extern void PAListPerformPrint( PAList List);
 
         // [DllImport("palibrary")]

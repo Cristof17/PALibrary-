@@ -12,20 +12,20 @@ namespace PA_Library
     {
         private PACount n;
         private PAList[] adj;
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         static extern PASeries PASeriesPerformConstruct();
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         static extern PASeries PASeriesPerformInit( PASeries Series,  PACount M,  PAElement[] adj);
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         static extern PASeries PASeriesPerformDelete( PASeries Series);
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         static extern PASeries PASeriesPerformCopy( PASeries Series1,  PASeries Series);
 // PAResult PASeriesPerformCopy();
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         static extern PASeries PASeriesPerformRuin( PASeries Series);
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         static extern PAResource PASeriesGet( PAData Data);
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         static extern void PASeriesPerformPrint(PASeries Series);
         // [DllImport("palibrary")]
         // public static extern  PASeries PASeriesConstruct(PACount n, PAList[] adj);

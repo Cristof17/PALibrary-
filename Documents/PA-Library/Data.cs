@@ -6,15 +6,28 @@ using System.Runtime.InteropServices;
 [StructLayout(LayoutKind.Sequential)]
 public struct PAData
 {
-    private PAResource Resource;
-    [DllImport("palibrary")]
-    public static extern PAData PADataConstruct(int Resource);
-    [DllImport("palibrary")]
-    public static extern int PADataRuin(int Resource);
-    [DllImport("palibrary")]
-    public static extern PAData PADataInit(PAData Data);
-    [DllImport("palibrary")]
-    public static extern int PADataDelete(PAData PA);
+    PAData PADataPerformConstruct();
+
+    PAData PADataPerformInit(PAData, PAResource);
+// DllExport struct PAData PADataPerformCopy(struct PAData);
+// DllExport struct PAData PADataPerformPutResource(struct PAData, PAResource);
+    // [DllImport("palibrary")]
+    PAData PADataPerformRuin(PAData);
+    // [DllImport("palibrary")] 
+    PAData PADataPerformDelete(PAData);
+    // [DllImport("palibrary")]
+    PAData PADataPerformCopy(PAData from, PAData to);
+//typedef struct PAData Data;
+
+    // private PAResource Resource;
+    // [DllImport("palibrary")]
+    // public static extern PAData PADataConstruct(int Resource);
+    // [DllImport("palibrary")]
+    // public static extern int PADataRuin(int Resource);
+    // [DllImport("palibrary")]
+    // public static extern PAData PADataInit(PAData Data);
+    // [DllImport("palibrary")]
+    // public static extern int PADataDelete(PAData PA);
     //struct PAResource
     // [StructLayout(LayoutKind.Sequential)]
     // private struct PAData data {get;}

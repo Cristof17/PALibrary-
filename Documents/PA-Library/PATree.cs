@@ -12,12 +12,12 @@ namespace PA_Library {
 		private PASeries adj;
 		private PAElement sursa;
 
-		[DllImport("palibrary")]
+		[DllImport("pa")]
  		static extern PATree PATreePerformConstruct();
- 		[DllImport("palibrary")]
+ 		[DllImport("pa")]
  		static extern PATree PATreePerformCopy( PATree from,  PATree to);
 // DllExport struct PACount PATreeSize();
-		[DllImport("palibrary")]
+		[DllImport("pa")]
  		static extern PATree PATreePerformInit(PATree Tree,  PACount Count,  PACount Count2,  PAList List2,  PAElement Element);
 // DllExport HRESULT PATreePerformCopy();
 // DllExport HRESULT PATreePerformPutCount(struct PACount, struct PACount);

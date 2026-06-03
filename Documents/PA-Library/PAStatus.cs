@@ -8,7 +8,7 @@ public struct PAStatus
 {
     // [StructLayout(LayoutKind.Sequential)]
     // struct PAStatus status;
-    [DllImport("palibrary")]
+    [DllImport("pa")]
     static extern PAStatus PAStatusPerformInit( PAStatus Status, PAResource Resource);
     [DllImport("pa")]
     static extern PAStatus PAStatusPerformDelete( PAStatus Status);
