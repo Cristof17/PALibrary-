@@ -8,7 +8,7 @@ public struct PAData
 {
     PAData PADataPerformConstruct();
 
-    PAData PADataPerformInit(PAData, PAResource);
+    PAData PADataPerformInit(PAData Data, PAResource Resource);
 // DllExport struct PAData PADataPerformCopy(struct PAData);
 // DllExport struct PAData PADataPerformPutResource(struct PAData, PAResource);
     // [DllImport("palibrary")]

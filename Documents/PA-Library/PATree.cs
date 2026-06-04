@@ -24,9 +24,9 @@ namespace PA_Library {
 // struct PATree PATreePutList(struct PATree, struct PAList);
 // DllExport HRESULT PATreePerformPutElement();
 // DllExport HRESULT PATreePerformPutSeries();
-		[DllImport("palibrary")]
+		[DllImport("pa")]
  		static extern PATree PATreePerformRuin( PATree PA);
- 		[DllImport("paslibrary")]
+ 		[DllImport("pa")]
  		static extern PATree PATreePerformDelete( PATree PA);
 		// [DllImport("palibrary")]
         // public static extern void PATreeSearch(PAElement nod);

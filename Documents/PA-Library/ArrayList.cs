@@ -7,13 +7,13 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct ArrayList
     {
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         public static extern ArrayList ArrayListConstruct(ArrayListPosition place, int[] objects);
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         public static extern void ArrayListRuin(ArrayListPosition place, int[] objects);
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         public static extern ArrayList ArrayListInit(ArrayList List);
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         public static extern void ArrayListDelete();
         // [StructLayout(LayoutKind.Sequential)]
         // private struct ArrayList List;

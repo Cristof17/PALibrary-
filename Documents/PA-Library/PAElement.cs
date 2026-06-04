@@ -26,12 +26,12 @@ namespace PA_Library
 // DllExport HRESULT PAElementPerformPutData(struct PAData);
 // DllExport HRESULT PAElementPerformPutDestination(struct PADestination);
 // DllExport HRESULT PAElementPerformPutFeature(struct PAFeature);
-[DllImport("palibrary")]
- static extern PAElement PAElementPerformRuin( PAElement element);
- [DllImport("palibrary")]
- static extern PAElement PAElementPerformDelete( PAElement element);
- [DllImport("palibrary")]
- static extern PAElement PAElementPerformCopy( PAElement element, PAElement element2);
+        [DllImport("pa")]
+        static extern PAElement PAElementPerformRuin( PAElement element);
+        [DllImport("pa")]
+        static extern PAElement PAElementPerformDelete( PAElement element);
+        [DllImport("pa")]
+        static extern PAElement PAElementPerformCopy( PAElement element, PAElement element2);
 
         private PAData index;
         // private PAElement next;

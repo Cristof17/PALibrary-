@@ -32,15 +32,15 @@ namespace PA_Library
         private PAList adj; 
         private PAElement sursa;
 
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         public static extern void InputConstruct();
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         public static extern void InputRuin();
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         public static extern void InputInit();
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         public static extern void Dispose();
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         public static extern void InputDelete();
         public Input(int Source, ArrayList[] Adj, int N, int M) : this()
         {

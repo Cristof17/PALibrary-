@@ -23,15 +23,15 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct Output
     {
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         // public static extern  Output OutputConstruct(PAResult rezultat);
         public static extern Output OutputConstruct(BFSRecord rezultat);
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         // public static extern int OutputRuin(PAResult rezultat);
         public static extern int OutputRuin(BFSRecord rezultat);
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         public static extern  Output OutputInit(Output Out);
-        [DllImport("palibrary")]
+        [DllImport("pa")]
         public static extern int OutputDelete(Output o);
         //readonly int[] d;
         // public IesireSistem(BFSIesire bfsOutput)

@@ -6,13 +6,13 @@ namespace PA_Library
 	public class Muchie
 	//public struct PAMuchie
 	{
-		[DllImport("palibrary")]
+		[DllImport("pa")]
         public static extern void PALinkConstruct();
-		[DllImport("palibrary")]
+		[DllImport("pa")]
         public static extern void PALinkInit();
-		[DllImport("palibrary")]
+		[DllImport("pa")]
         public static extern void PALinkRuin();
-		[DllImport("palibrary")]
+		[DllImport("pa")]
         public static extern void PALinkDelete();
 		//public
 		//{
