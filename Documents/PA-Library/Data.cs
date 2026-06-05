@@ -7,16 +7,18 @@ using System.Runtime.InteropServices;
 public struct PAData
 {
     PAData PADataPerformConstruct();
-
-    PAData PADataPerformInit(PAData Data, PAResource Resource);
+    [DllImport("pa")]
+    static extern PAData PADataPerformInit(PAData Data, PAResource Resource);
 // DllExport struct PAData PADataPerformCopy(struct PAData);
 // DllExport struct PAData PADataPerformPutResource(struct PAData, PAResource);
-    // [DllImport("palibrary")]
-    PAData PADataPerformRuin(PAData);
-    // [DllImport("palibrary")] 
-    PAData PADataPerformDelete(PAData);
-    // [DllImport("palibrary")]
-    PAData PADataPerformCopy(PAData from, PAData to);
+    [DllImport("pa")]
+    static extern PAData PADataPerformRuin(PAData PA);
+    // statiic extern PAData PADataPerformRuin(PAData D);
+    // statiic extern PAData PADataPerformRuin(PAData PA);
+    [DllImport("pa")] 
+    static extern PAData PADataPerformDelete(PAData PA);
+    [DllImport("pa")]
+    static extern PAData PADataPerformCopy(PAData from, PAData to);
 //typedef struct PAData Data;
 
     // private PAResource Resource;
