@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 using System.Xml.XPath;
 namespace PA_Library {
 	public class Arbore
-	
+
 	//public readonly class PAGraf
 	//public struct PAGraf
 	{
@@ -18,7 +18,7 @@ namespace PA_Library {
         public static extern PATree PATreeInit(PATree graf);
 		[DllImport("pa")]
         public static extern int PATreeDelete(PATree PA);
-		
+
 		// [StructLayout(LayoutKind.Sequential)]
 		// private struct PATree tree;
 		// private PACardinal n { get; }

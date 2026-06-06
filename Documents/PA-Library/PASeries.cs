@@ -8,7 +8,7 @@ using System.Xml.XPath;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PASeries 
+    public struct PASeries
     {
         private PACount n;
         private PAList[] adj;
@@ -37,8 +37,8 @@ namespace PA_Library
         // public static extern void Dispose();
         // [DllImport("palibrary")]
         // public static extern int PASeriesDelete(PASeries PA);
-        // public PAList(PANod Head) 
-        // public PAList(PAElement Head) 
+        // public PAList(PANod Head)
+        // public PAList(PAElement Head)
         public PASeries(PACount n, PAList[] adj) : this()
             //: this()
         {
@@ -211,7 +211,7 @@ namespace PA_Library
         //}
         //public int this[int index]
         //{
-        //    int Neigh = (int) 
+        //    int Neigh = (int)
         //}
         //public AdjacencyList(ArrayList[] Adj, Cardinal N)
         //{
@@ -317,7 +317,7 @@ namespace PA_Library
         //int iv
         //int invalid = 0;
         //Result = valid;
-        //Result - 
+        //Result -
         //Result -
         //Result = checkAdjacencyList(Adj);
         //int i = 0;
@@ -387,7 +387,7 @@ namespace PA_Library
         //                }
         //                else if (Result == invalid)
         //                {
-        //                    Console.Error.WriteLine("Cannot create AdjacencyList"); 
+        //                    Console.Error.WriteLine("Cannot create AdjacencyList");
         //                }
         //{
         //Node Node = (Node)list[i];
@@ -459,7 +459,7 @@ namespace PA_Library
         //    }
         //    return Result;
         //}
-        //public static explicit operator Object(AdjacencyList list) => list.ADJ; 
+        //public static explicit operator Object(AdjacencyList list) => list.ADJ;
         //public ArrayList copy(ArrayList other)
         //{
         //    ArrayList copy = default;

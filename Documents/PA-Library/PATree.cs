@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 namespace PA_Library {
 	[StructLayout(LayoutKind.Sequential)]
 	public struct PATree
-	
+
 	//public readonly class PAGraf
 	//public struct PAGraf
 	{
@@ -45,7 +45,7 @@ namespace PA_Library {
 		// public PATree(Cardinal n, Cardinal m, Lista adj, Punct sursa)
 		public PATree(PACount n, PACount m, PASeries adj, PAElement sursa) : this()
         {
-            
+
         }
 		// private PACardinal n { get; }
 		// private PACardinal m { get; }

@@ -113,7 +113,7 @@ namespace PA_Library
         //}
         public PAElement(PAData index, PAElement next, State status) : this()
         {
-            
+
         }
         // [StructLayout(LayoutKind.Sequential)]
         // private PAElement element;

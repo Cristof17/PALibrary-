@@ -10,7 +10,7 @@ namespace PA_Library
     public struct PAPair
     {
         private PAElement Node;
-        private PAElement Neigh; 
+        private PAElement Neigh;
 
         [DllImport("pa")]
         public static extern  PAElement PAPairInit(PAElement e);
@@ -27,7 +27,7 @@ namespace PA_Library
         // public PAPair(Element Node, Element Neigh)
         public PAPair(PAElement Node, PAElement Neigh) : this()
         {
-            
+
         }
         // PANod node;
         // PANod neigh;

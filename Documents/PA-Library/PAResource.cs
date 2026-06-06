@@ -12,6 +12,6 @@ struct PAResource
     // public Resursa(int value)
     public PAResource(int value)
     {
-        
+
     }
 }

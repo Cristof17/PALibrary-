@@ -22,7 +22,7 @@ public struct PAStatus
     private int Visited;
     public PAStatus(int Visited) : this()
     {
-        
+
     }
     //struct PAStatus
     // VISITED,

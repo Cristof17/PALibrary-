@@ -595,7 +595,7 @@ namespace PA_Library
     //     //j = i + 1;
 
     //     //Console.Error.WriteLine("x > 0");
-    //     //d = new 
+    //     //d = new
     //     //d = new ImmutableArray<int>();
 
     //     //}
@@ -624,12 +624,12 @@ namespace PA_Library
     //             i = j;
     //             j = i + 1;
     //         }
-    //         //Cardinal 
+    //         //Cardinal
     //     }
     //     */
     //     /*
-    //     else 
-    //     { 
+    //     else
+    //     {
     //         N = new Cardinal(prev.N.VALUE);
     //         ImmutableArray<int>.Enumerator enumerator;
     //         enumerator = prev.D.GetEnumerator();

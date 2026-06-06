@@ -9,7 +9,7 @@ namespace PA_Library
     {
         // [DllImport("palibrary")]
         // [FieldOffset(0)]
-        private int Position; 
+        private int Position;
     }
 
 }

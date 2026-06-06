@@ -27,8 +27,8 @@ namespace PA_Library
     // [DllImport("palibrary")]
     // public Punct(Data index, Punct next, Stare status)
     // {
-        
-    // } 
+
+    // }
         // Node)
         // {
         //     data = Node.data;
@@ -111,7 +111,7 @@ namespace PA_Library
         // public static explicit operator PAElement(ushort b) => Copy(b);// new PAElement(b);
         // public static implicit operator ulong(PAElement d) => (ulong)d.data.value;
         // public static explicit operator PAElement(ulong b) => Copy(b);// new PAElement(b);
-         
+
         // public static PAElement operator ++(PAElement a) => a.data.toPAElement();//;
         // public static explicit operator PAData(PAElement d) => d.data;
         // public static implicit operator byte(PAElement d) => (byte)d.data.value;

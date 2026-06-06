@@ -36,7 +36,7 @@ namespace PA_Library
         // public UnitateIesire(Rezultat Result)
         public PAOutput(BFSRecord Result) : this()
         {
-            
+
         }
         // private static extern BFSOutputInit();
         //BFSState State, ArrayList D, int N) : this()
@@ -350,13 +350,13 @@ namespace PA_Library
         // ArrayList Copy(ArrayList d, int N)
         // {
         //     //int Result = default;
-        //     //int Result = 
+        //     //int Result =
         //     //ImmutableArray copy = default;
         //     //copy
         //     ArrayList copy = default;
         //     copy = new ArrayList(N);
         //     int x = 0;
-        //     //int y = 
+        //     //int y =
         //     while (x < N)
         //     {
         //         copy[x] = d[x];

@@ -29,7 +29,7 @@ namespace PA_Library
         private PACount m;
         private PAList adj;
         private PAElement sursa;
-    
+
         [DllImport("pa")]
         static extern Input InputPerformConstruct();
         [DllImport("pa")]
@@ -56,7 +56,7 @@ namespace PA_Library
         // [DllImport("palibrary.dll")]
         public PAInput(PACount n, PACount m, PASeries adj, PAElement sursa) : this()
         {
-            
+
         }
         //akkll the methods from library as extern
         // BFSIntrare(PANod Source, PALista Adj, PACardinal N, PACardinal M)
@@ -201,7 +201,7 @@ namespace PA_Library
         //     //            ADJ = new AdjacencyList(Adj, N);
         //     //            N = new Cardinal(N);
         //     //            M = new Cardinal(M);
-        //     //            //N = 
+        //     //            //N =
         //     //        }
         //     //    }
         //     //}
@@ -319,7 +319,7 @@ namespace PA_Library
         //     }
         //     return copy;
         // }
-       
+
         // //checks the reference of the vector of array lists ArrayList[]
         // int CheckReferenceVector(PANod Source, PALista Adj, int N, int M)
         // {
@@ -476,8 +476,8 @@ namespace PA_Library
         // //    //return Result;
         // //}
 
-        
-        // //returns the size of the array list specified by Source 
+
+        // //returns the size of the array list specified by Source
         // int Size(PANod Source, PALista Adj, int N, int M)
         // {
         //     int size = 0;
@@ -498,7 +498,7 @@ namespace PA_Library
         // //    }
         // //    return Result;
         // //}
-        
+
         // // copies the array list from the Input list of array lists specified by Source
         // PANod CopyArrayList(PANod Source, PALista Adj, int N, int M)
         // {
@@ -574,7 +574,7 @@ namespace PA_Library
         //     //    return Success;
         //     //}
         //     return Result;
-        // }       
+        // }
         // //checks the Source value of the Node greater than 0 and less than N
         // int CheckSource(PANod Source, PALista Adj, PACardinal N, PACardinal M)
         // {
@@ -649,7 +649,7 @@ namespace PA_Library
         //     }
         //     return Result;
         // }
-        // //checks the given vector of array lists 
+        // //checks the given vector of array lists
         // // int Check(PANod Source, PALista Adj, int N, int M)
         // int Check(PAElement Source, PASeries Adj, int N, int M)
         // {
@@ -668,7 +668,7 @@ namespace PA_Library
         //     }
         //     return Result;
         // }
-        
+
         // //checks the Node cardinal N
         // // int CheckNodeCardinal(PANod Source, PALista Adj, PACardinal N, PACardinal M)
         // int CheckNodeCardinal(PAElement Source, PASeries Adj, PACount N, PACount M)
@@ -908,7 +908,7 @@ namespace PA_Library
         //{
         //ADJ = new AdjacencyList();
         //int Source;
-        //Source = 
+        //Source =
         //int
         //int x = default;
         //int y = default;
@@ -922,7 +922,7 @@ namespace PA_Library
         //int N = Adj.Length;
         //while (x < N)
         //{
-        //ArrayList 
+        //ArrayList
         //if (Adj[x] == null)
         //{
         //Console.Error.WriteLine("Adj[" + o)
@@ -931,7 +931,7 @@ namespace PA_Library
         //ADJ[x] = default(AdjacencyList<int>);
         //ret
         //reusl
-        //Result - 
+        //Result -
         //return invalid;
         //Result = invalid;
         //}
@@ -1030,7 +1030,7 @@ namespace PA_Library
         //
         //valid = checkAdjacencyList(Adj);
         //}
-        //} 
+        //}
         //}
         //}
         //else
@@ -1384,4 +1384,3 @@ public static Cardinal cardinal_edges(AdjacencyList[] neighbors)
     //    public Node<T> Source;
     //}
 }
-    
