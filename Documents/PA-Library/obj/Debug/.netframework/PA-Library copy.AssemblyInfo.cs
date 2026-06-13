@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PA-Library copy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e30768b3c4f7da797e8d65622eaedaea7bb6455d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e53d2a4d0f053c4bb529ec00cadd1dc3facb3b74")]
 [assembly: System.Reflection.AssemblyProductAttribute("PA-Library copy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PA-Library copy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

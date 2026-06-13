@@ -1,12 +1,13 @@
 //public class PAData
 using PA_Library;
-using System.Transactions;
+// using System.Transactions;
 using System.Runtime.InteropServices;
 
 [StructLayout(LayoutKind.Sequential)]
 public struct PAData
 {
-    PAData PADataPerformConstruct();
+    [DllImport("pa")]
+    static extern PAData PADataPerformConstruct();
     [DllImport("pa")]
     static extern PAData PADataPerformInit(PAData Data, PAResource Resource);
 // DllExport struct PAData PADataPerformCopy(struct PAData);

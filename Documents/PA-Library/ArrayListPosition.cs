@@ -3,7 +3,6 @@ using System;
 using System.Runtime.InteropServices;
 namespace PA_Library
 {
-
     [StructLayout(LayoutKind.Sequential)]
     public struct ArrayListPosition
     {
@@ -11,5 +10,4 @@ namespace PA_Library
         // [FieldOffset(0)]
         private int Position;
     }
-
 }
