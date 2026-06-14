@@ -25,9 +25,13 @@ namespace PA_Library
         // private static extern void PAInputInit();
         // private static extern void BFSInputInit();
         //Wrapper over the Input variables which provides Input validation
+        [MarshalAs(UnmanagedType.IUnknown)]
         private PACount n;
+        [MarshalAs(UnmanagedType.IUnknown)]
         private PACount m;
+        [MarshalAs(UnmanagedType.IUnknown)]
         private PAList adj;
+        [MarshalAs(UnmanagedType.IUnknown)]
         private PAElement sursa;
 
         [DllImport("pa")]
