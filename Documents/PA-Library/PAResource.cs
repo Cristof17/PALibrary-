@@ -6,15 +6,15 @@ using System.Runtime.InteropServices;
     struct PAResource
     {
         [DllImport("pa")]
-        static extern PAResourcePerformConstruct();
+        static extern PAResource PAResourcePerformConstruct();
         [DllImport("pa")]
-        static extern PAResourcePerformInit();
+        static extern PAResource PAResourcePerformInit();
         [DllImport("pa")]
-        static extern PAResourcePerformFinish();
+        static extern int PAResourcePerformFinish();
         // [DllImport("pa")]
         // static extern PAResourcePerformD();
         [DllImport("pa")]
-        static extern PAResourcePerformRuin();
+        static extern int PAResourcePerformRuin();
     // public PAResource Resource;
 
     // [FieldOffset(0)]
