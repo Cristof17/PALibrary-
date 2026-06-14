@@ -14,12 +14,12 @@ public struct PAData
 // DllExport struct PAData PADataPerformPutResource(struct PAData, PAResource);
     [DllImport("pa")]
     static extern PAData PADataPerformRuin(PAData PA);
-    // statiic extern PAData PADataPerformRuin(PAData D);
-    // statiic extern PAData PADataPerformRuin(PAData PA);
     [DllImport("pa")] 
     static extern PAData PADataPerformDelete(PAData PA);
     [DllImport("pa")]
     static extern PAData PADataPerformCopy(PAData from, PAData to);
+    // statiic extern PAData PADataPerformRuin(PAData D);
+    // statiic extern PAData PADataPerformRuin(PAData PA);
 //typedef struct PAData Data;
 
     // private PAResource Resource;
