@@ -36,8 +36,8 @@ namespace PA_Library {
         // public static extern void PATreeRuin( PACount n, PACount m, PAList adj, PAElement source);
 		// [DllImport("palibrary")]
         // public static extern PATree PATreeInit(PATree graf);
-		[DllImport("palibrary")]
-        public static extern int PATreeDelete(PATree PA);
+		// [DllImport("palibrary")]
+        // public static extern int PATreeDelete(PATree PA);
 
 		// [StructLayout(LayoutKind.Sequential)]
 		// private  PATree tree { get;}
