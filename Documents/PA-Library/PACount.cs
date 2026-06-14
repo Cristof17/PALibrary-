@@ -57,9 +57,6 @@ namespace PA_Library
 
         // [StructLayout(LayoutKind.Sequential)]
         // public struct PACount Count {get;}
-        // PACount(int number) : this()
-        // {
-            
         // }
         // public Cardinal(int number)
         // {

@@ -9,15 +9,15 @@ namespace PA_Library {
 	//public struct PAGraf
 	{
 		[DllImport("pa")]
-        public static extern void PATreeSearch(PAElement nod);
+        static extern void PATreeSearch(PAElement nod);
 		[DllImport("pa")]
-        public static extern PATree PATreeConstruct(PACount n, PACount m, PAList adj, PAElement source);
+        static extern PATree PATreeConstruct(PACount n, PACount m, PAList adj, PAElement source);
 		[DllImport("pa")]
-        public static extern void PATreeRuin(PACount n, PACount m, PAList adj, PAElement source);
+        static extern void PATreeRuin(PACount n, PACount m, PAList adj, PAElement source);
 		[DllImport("pa")]
-        public static extern PATree PATreeInit(PATree graf);
+        static extern PATree PATreeInit(PATree graf);
 		[DllImport("pa")]
-        public static extern int PATreeDelete(PATree PA);
+        static extern int PATreeDelete(PATree PA);
 
 		// [StructLayout(LayoutKind.Sequential)]
 		// private struct PATree tree;
