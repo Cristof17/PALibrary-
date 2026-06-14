@@ -10,6 +10,8 @@ using System.ComponentModel;
 public struct PAStatus
 {
     [MarshalAs(UnmanagedType.IUnknown)]
+    int Visited;
+    [MarshalAs(UnmanagedType.IUnknown)]
     PAResource resource;
     // [StructLayout(LayoutKind.Sequential)]
     // struct PAStatus status;
@@ -24,7 +26,6 @@ public struct PAStatus
     [DllImport("pa")]
     static extern  PAStatus PAStatusPerformCopy( PAStatus Status,  PAStatus Status2);
     // [FieldOffset(0)]
-    private int Visited;
     // PAStatus(int Visited) : this()
     // {
 
