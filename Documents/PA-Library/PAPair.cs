@@ -9,17 +9,19 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PAPair
     {
-        private PAElement Node;
-        private PAElement Neigh;
+        [MarshalAs(UnmanagedType.IUnknown)]
+        PAElement Node;
+        [MarshalAs(UnmanagedType.IUnknown)]
+        PAElement Neigh;
 
         [DllImport("pa")]
-        public static extern PAPair PAPairInit(PAPair p,PAElement Node, PAElement Neigh);
+        static extern int PAPairRuin(PAPair PA);
         [DllImport("pa")]
-        public static extern int PAPairRuin(PAPair PA);
+        static extern PAPair PAPairInit(PAPair p,PAElement Node, PAElement Neigh);
         [DllImport("pa")]
-        public static extern  PAPair PAPairConstruct();
+        static extern  PAPair PAPairConstruct();
         [DllImport("pa")]
-        public static extern int PAPairDelete(PAElement PA);
+        static extern int PAPairDelete(PAElement PA);
 
         // [StructLayout(LayoutKind.Sequential)]
         // private struct PAPair Pair;
