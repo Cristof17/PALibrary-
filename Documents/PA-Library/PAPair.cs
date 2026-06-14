@@ -13,7 +13,7 @@ namespace PA_Library
         private PAElement Neigh;
 
         [DllImport("pa")]
-        public static extern  PAElement PAPairInit(PAElement e);
+        public static extern PAPair PAPairInit(PAElement e);
         [DllImport("pa")]
         public static extern int PAPairRuin(PAData Data, PAElement Next, PAStatus status);
         [DllImport("pa")]
