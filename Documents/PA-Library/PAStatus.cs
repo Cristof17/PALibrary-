@@ -1,11 +1,16 @@
 using PA_Library;
 using System;
 using System.Runtime.InteropServices;
+using System.Runtime.Serialization;
+using System.ComponentModel;
+// using System.Inter
 //public class PAStare
 //public class PAStare
 [StructLayout(LayoutKind.Sequential)]
 public struct PAStatus
 {
+    [MarshallAs(UnmanagedType.IUnknown)]
+    PAResource resource;
     // [StructLayout(LayoutKind.Sequential)]
     // struct PAStatus status;
     [DllImport("pa")]

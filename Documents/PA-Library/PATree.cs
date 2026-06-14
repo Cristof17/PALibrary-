@@ -1,16 +1,21 @@
 using System.Xml.XPath;
 using System.Runtime.InteropServices;
+
 namespace PA_Library {
 	[StructLayout(LayoutKind.Sequential)]
-	public struct PATree
+	struct PATree
 
 	//public readonly class PAGraf
 	//public struct PAGraf
 	{
-		private PACount n;
-		private PACount m ;
-		private PASeries adj;
-		private PAElement sursa;
+		[MarshalAs(UnmanagedType.IUnknown)]
+		PACount n;
+		[MarshalAs(UnmanagedType.IUnknown)]
+		PACount m ;
+		[MarshalAs(UnmanagedType.IUnknown)]
+		PASeries adj;
+		[MarshalAs(UnmanagedType.IUnknown)]
+		PAElement sursa;
 
 		[DllImport("pa")]
  		static extern PATree PATreePerformConstruct();
@@ -43,7 +48,7 @@ namespace PA_Library {
 		// private  PATree tree { get;}
 
 		// public PATree(Cardinal n, Cardinal m, Lista adj, Punct sursa)
-		public PATree(PACount n, PACount m, PASeries adj, PAElement sursa) : this()
+		PATree(PACount n, PACount m, PASeries adj, PAElement sursa) : this()
         {
 
         }
