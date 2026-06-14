@@ -5,6 +5,9 @@ using System.Runtime.InteropServices;
     // [StructLayout(LayoutKind.Sequential)]
     struct PAResource
     {
+        [MarshalAs(UnmanagedType.IUnknown)]
+        PANumber value;
+
         [DllImport("pa")]
         static extern PAResource PAResourcePerformConstruct();
         [DllImport("pa")]
