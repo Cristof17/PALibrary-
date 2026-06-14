@@ -18,7 +18,7 @@ namespace PA_Library {
  		static extern PATree PATreePerformCopy( PATree from,  PATree to);
 // DllExport struct PACount PATreeSize();
 		[DllImport("pa")]
- 		static extern PATree PATreePerformInit(PATree Tree,  PACount Count,  PACount Count2,  PAList List2,  PAElement Element);
+ 		static extern PATree PATreePerformInit(PATree Tree,  PACount Count,  PACount Count2,  PAList List,  PAElement Element);
 // DllExport HRESULT PATreePerformCopy();
 // DllExport HRESULT PATreePerformPutCount(struct PACount, struct PACount);
 // struct PATree PATreePutList(struct PATree, struct PAList);
