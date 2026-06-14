@@ -8,13 +8,13 @@ using System.Runtime.InteropServices;
         [DllImport("pa")]
         static extern PAResource PAResourcePerformConstruct();
         [DllImport("pa")]
-        static extern PAResource PAResourcePerformInit();
+        static extern PAResource PAResourcePerformInit(PANumber number);
         [DllImport("pa")]
-        static extern int PAResourcePerformFinish();
+        static extern int PAResourcePerformFinish(PAResource PA);
         // [DllImport("pa")]
         // static extern PAResourcePerformD();
         [DllImport("pa")]
-        static extern int PAResourcePerformRuin();
+        static extern int PAResourcePerformRuin(PAResource PA);
     // public PAResource Resource;
 
     // [FieldOffset(0)]
