@@ -25,10 +25,10 @@ public struct PAStatus
     static extern  PAStatus PAStatusPerformCopy( PAStatus Status,  PAStatus Status2);
     // [FieldOffset(0)]
     private int Visited;
-    public PAStatus(int Visited) : this()
-    {
+    // PAStatus(int Visited) : this()
+    // {
 
-    }
+    // }
     //struct PAStatus
     // VISITED,
     // NOT_VISITED
