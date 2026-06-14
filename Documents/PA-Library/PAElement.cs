@@ -20,18 +20,18 @@ namespace PA_Library
         [DllImport("pa")]
         static extern PAElement PAElementPerformConstruct();
         [DllImport("pa")]
-// DllExport HRESULT PAElementPerformCopy();
         static extern PAElement PAElementPerformInit(PAElement element, PAData data, PAStatus status);
-// DllExport HRESULT PAElementPerformPutStatus(struct PAStatus);
-// DllExport HRESULT PAElementPerformPutData(struct PAData);
-// DllExport HRESULT PAElementPerformPutDestination(struct PADestination);
-// DllExport HRESULT PAElementPerformPutFeature(struct PAFeature);
         [DllImport("pa")]
         static extern PAElement PAElementPerformRuin( PAElement element);
         [DllImport("pa")]
         static extern PAElement PAElementPerformDelete( PAElement element);
         [DllImport("pa")]
         static extern PAElement PAElementPerformCopy( PAElement element, PAElement element2);
+// DllExport HRESULT PAElementPerformCopy();
+// DllExport HRESULT PAElementPerformPutStatus(struct PAStatus);
+// DllExport HRESULT PAElementPerformPutData(struct PAData);
+// DllExport HRESULT PAElementPerformPutDestination(struct PADestination);
+// DllExport HRESULT PAElementPerformPutFeature(struct PAFeature);
 
         private PAData index;
         // private PAElement next;
