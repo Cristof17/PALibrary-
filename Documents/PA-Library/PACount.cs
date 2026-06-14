@@ -19,38 +19,38 @@ namespace PA_Library
         static extern PACount PACountPerformRuin(PACount PA);
         [DllImport("pa")]
         static extern PACount PACountPerformDelete(PACount PA);
-// DllExport struct PACount PACountPerformCopy(struct PACount);
-// void PASize(PA_INT);
-// DllExport HRESULT PACountPerformPrint(struct PACount);
-// DllExport struct PACount PACountPerformPutValue(struct PACount, PAInt);
-// struct 
-//         [DllImport("palibrary")]
-//          static extern PACount PACountPerformConstruct();
-//         [DllImport("palibrary")]
-//         static extern PACount PACountPerformInit( PACount Count,  PANumber Number);
-//         [DllImport("palibrary")]
-//         static extern  PACount PACountPerformCopy( PACount from,  PACount to);
-//         [DllImport("palibrary")]
-// // DllExport struct PACount PACountPerformCopy(struct PACount);
-// // void PASize(PA_INT);
-// // DllExport HRESULT PACountPerformPrint(struct PACount);
-//         static extern PACount PACountPerformRuin( PACount Count);
-// // DllExport struct PACount PACountPerformPutValue(struct PACount, PAInt);
-// // struct 
-//         [DllImport("palibrary")]
-//         static extern PACount PACountPerformDelete( PACount PA);
+        // DllExport struct PACount PACountPerformCopy(struct PACount);
+        // void PASize(PA_INT);
+        // DllExport HRESULT PACountPerformPrint(struct PACount);
+        // DllExport struct PACount PACountPerformPutValue(struct PACount, PAInt);
+        // struct 
+        //         [DllImport("palibrary")]
+        //          static extern PACount PACountPerformConstruct();
+        //         [DllImport("palibrary")]
+        //         static extern PACount PACountPerformInit( PACount Count,  PANumber Number);
+        //         [DllImport("palibrary")]
+        //         static extern  PACount PACountPerformCopy( PACount from,  PACount to);
+        //         [DllImport("palibrary")]
+        // // DllExport struct PACount PACountPerformCopy(struct PACount);
+        // // void PASize(PA_INT);
+        // // DllExport HRESULT PACountPerformPrint(struct PACount);
+        //         static extern PACount PACountPerformRuin( PACount Count);
+        // // DllExport struct PACount PACountPerformPutValue(struct PACount, PAInt);
+        // // struct 
+        //         [DllImport("palibrary")]
+        //         static extern PACount PACountPerformDelete( PACount PA);
 
-//         // [FieldOffset(0)]
-//         private int Number;
-//         [DllImport("palibrary")]
-//         public static extern void PACountConstruct(int value);
-//         [DllImport("palibrary")]
-//         public static extern int PACountRuin(int value);
-//         [DllImport("palibrary")]
-//         public static extern PACount PACountInit(PACount value);
+        //         // [FieldOffset(0)]
+        //         private int Number;
+        //         [DllImport("palibrary")]
+        //         public static extern void PACountConstruct(int value);
+        //         [DllImport("palibrary")]
+        //         public static extern int PACountRuin(int value);
+        //         [DllImport("palibrary")]
+        //         public static extern PACount PACountInit(PACount value);
 
-//         [DllImport("palibrary")]
-//         public static extern int PACountDelete(PACount PA);
+        //         [DllImport("palibrary")]
+        //         public static extern int PACountDelete(PACount PA);
 
         // [FieldOffset(0)]
         private int number;
@@ -124,7 +124,7 @@ namespace PA_Library
 
         // public override bool Equals(Object o)
         // {
-            // return o == (Object)this;
+        // return o == (Object)this;
         // }
 
         //public struct PACount
@@ -136,7 +136,7 @@ namespace PA_Library
 
         // public override int GetHashCode()
         // {
-            // return -1271321926 + NUMBER.GetHashCode();
+        // return -1271321926 + NUMBER.GetHashCode();
         // }
         //        public override string ToString() => $"({INPUT}, {OUTPUT})";
         //internal class PACount

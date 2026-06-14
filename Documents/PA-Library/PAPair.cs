@@ -17,9 +17,9 @@ namespace PA_Library
         [DllImport("pa")]
         static extern int PAPairRuin(PAPair PA);
         [DllImport("pa")]
-        static extern PAPair PAPairInit(PAPair p,PAElement Node, PAElement Neigh);
+        static extern PAPair PAPairInit(PAPair p, PAElement Node, PAElement Neigh);
         [DllImport("pa")]
-        static extern  PAPair PAPairConstruct();
+        static extern PAPair PAPairConstruct();
         [DllImport("pa")]
         static extern int PAPairDelete(PAElement PA);
 

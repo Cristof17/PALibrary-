@@ -12,12 +12,12 @@ namespace PA_Library
     {
         private BFSRecord result;
         [DllImport("pa")]
-        static extern Output OutputPerformConstruct( BFSRecord Record);
+        static extern Output OutputPerformConstruct(BFSRecord Record);
         [DllImport("pa")]
         static extern Output OutputPerformInit(Output Output);
         [DllImport("pa")]
-        static extern Output OutputPerformCopy( Output Output) ;
-//struct Output dispose();
+        static extern Output OutputPerformCopy(Output Output);
+        //struct Output dispose();
         [DllImport("pa")]
         static extern void OutputPerformRuin();
         [DllImport("pa")]
@@ -367,31 +367,31 @@ namespace PA_Library
     }
 }
 
-    //class BFSOutput<T> : Output<T>
-    //{
-    //    ArrayList d;
+//class BFSOutput<T> : Output<T>
+//{
+//    ArrayList d;
 
-    //    private T this[int i]
-    //    {
-    //        get
-    //        {
-    //            if (i < 0)
-    //                throw new Exception("i < 0");
-    //            if (d == null)
-    //                throw new Exception("d == null");
-    //            if (i > d.Length)
-    //                throw new Exception($"i > {d.Length}");
-    //            return d[i];
-    //        }
-    //        set
-    //        {
-    //            if (i < 0)
-    //                throw new Exception("i < 0");
-    //            if (d == null)
-    //                throw new Exception("d == null");
-    //            if (i > d.Length)
-    //                throw new Exception("d > d.Length");
-    //            d[i] = value;
-    //        }
-    //    }
-    //}
+//    private T this[int i]
+//    {
+//        get
+//        {
+//            if (i < 0)
+//                throw new Exception("i < 0");
+//            if (d == null)
+//                throw new Exception("d == null");
+//            if (i > d.Length)
+//                throw new Exception($"i > {d.Length}");
+//            return d[i];
+//        }
+//        set
+//        {
+//            if (i < 0)
+//                throw new Exception("i < 0");
+//            if (d == null)
+//                throw new Exception("d == null");
+//            if (i > d.Length)
+//                throw new Exception("d > d.Length");
+//            d[i] = value;
+//        }
+//    }
+//}

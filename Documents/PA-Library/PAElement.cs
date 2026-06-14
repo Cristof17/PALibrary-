@@ -15,34 +15,34 @@ namespace PA_Library
         PAData index;
         // private PAElement next;
         [MarshalAs(UnmanagedType.IUnknown)]
-         PAStatus status;
-         
+        PAStatus status;
+
         [DllImport("pa")]
-         static extern void PAElementVisit( PAElement element);
-         [DllImport("pa")]
+        static extern void PAElementVisit(PAElement element);
+        [DllImport("pa")]
         static extern int PAElementIsVisited(PAElement element);
         [DllImport("pa")]
-        static extern void PAElementReset( PAElement element);
+        static extern void PAElementReset(PAElement element);
         [DllImport("pa")]
         static extern PAElement PAElementPerformConstruct();
         [DllImport("pa")]
         static extern PAElement PAElementPerformInit(PAElement element, PAData data, PAStatus status);
         [DllImport("pa")]
-        static extern PAElement PAElementPerformRuin( PAElement element);
+        static extern PAElement PAElementPerformRuin(PAElement element);
         [DllImport("pa")]
-        static extern PAElement PAElementPerformDelete( PAElement element);
+        static extern PAElement PAElementPerformDelete(PAElement element);
         [DllImport("pa")]
-        static extern PAElement PAElementPerformCopy( PAElement element, PAElement element2);
-// DllExport HRESULT PAElementPerformCopy();
-// DllExport HRESULT PAElementPerformPutStatus(struct PAStatus);
-// DllExport HRESULT PAElementPerformPutData(struct PAData);
-// DllExport HRESULT PAElementPerformPutDestination(struct PADestination);
-// DllExport HRESULT PAElementPerformPutFeature(struct PAFeature);
+        static extern PAElement PAElementPerformCopy(PAElement element, PAElement element2);
+        // DllExport HRESULT PAElementPerformCopy();
+        // DllExport HRESULT PAElementPerformPutStatus(struct PAStatus);
+        // DllExport HRESULT PAElementPerformPutData(struct PAData);
+        // DllExport HRESULT PAElementPerformPutDestination(struct PADestination);
+        // DllExport HRESULT PAElementPerformPutFeature(struct PAFeature);
 
         [DllImport("palibrary")]
         public static extern PAElement PAElementConstruct(PAData Data, PAElement Next, PAStatus Status);
         [DllImport("palibrary")]
-        public static extern int PAElementRuin(PAData Data, PAElement Next,  PAStatus Status);
+        public static extern int PAElementRuin(PAData Data, PAElement Next, PAStatus Status);
         [DllImport("palibrary")]
         public static extern PAElement PAElementInit(PAElement e);
         [DllImport("palibrary")]
@@ -53,7 +53,7 @@ namespace PA_Library
         public static extern int PADataIsVisited();
         [DllImport("palibrary")]
 
-    public static extern void PADataReset();
+        public static extern void PADataReset();
         // public PAPunct(PAPunct Node)
         // {
         //     data = Node.data;

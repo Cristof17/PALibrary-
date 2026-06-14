@@ -18,16 +18,16 @@ namespace PA_Library
         [DllImport("pa")]
         static extern PASeries PASeriesPerformConstruct();
         [DllImport("pa")]
-        static extern PASeries PASeriesPerformInit( PASeries Series,  PACount M,  PAElement[] adj);
+        static extern PASeries PASeriesPerformInit(PASeries Series, PACount M, PAElement[] adj);
         [DllImport("pa")]
-        static extern PASeries PASeriesPerformDelete( PASeries Series);
+        static extern PASeries PASeriesPerformDelete(PASeries Series);
         [DllImport("pa")]
-        static extern PASeries PASeriesPerformCopy( PASeries Series1,  PASeries Series);
-// PAResult PASeriesPerformCopy();
+        static extern PASeries PASeriesPerformCopy(PASeries Series1, PASeries Series);
+        // PAResult PASeriesPerformCopy();
         [DllImport("pa")]
-        static extern PASeries PASeriesPerformRuin( PASeries Series);
+        static extern PASeries PASeriesPerformRuin(PASeries Series);
         [DllImport("pa")]
-        static extern PAResource PASeriesGet( PAData Data);
+        static extern PAResource PASeriesGet(PAData Data);
         [DllImport("pa")]
         static extern void PASeriesPerformPrint(PASeries Series);
         // [DllImport("palibrary")]
@@ -43,7 +43,7 @@ namespace PA_Library
         // public PAList(PANod Head)
         // public PAList(PAElement Head)
         public PASeries(PACount n, PAList[] adj) : this()
-            //: this()
+        //: this()
         {
             // int Success = 0;
             // int Fail = -1;
@@ -647,35 +647,35 @@ namespace PA_Library
         //     return node;
         // }
 
-            //=> NODES[i];
-            //set
-            //{
-            //    int Result = default;
-            //    Result = checkType(value);
-            //    int Success = 0;
-            //    int Fail = -1;
-            //    if (Result == Success)
-            //    {
-            //        ADJ[i] = new ArrayList();
-            //        //new Node(value);
-            //        ArrayList other = (ArrayList)value;
-            //        int otherLength = other.Count;
-            //        int x = 0;
-            //        int y = x + 1;
-            //        while (x < otherLength)
-            //        {
-            //            ADJ[i].Add(other[x]);
-            //            x = x + 1;
-            //            y = x + 1;
-            //        }
+        //=> NODES[i];
+        //set
+        //{
+        //    int Result = default;
+        //    Result = checkType(value);
+        //    int Success = 0;
+        //    int Fail = -1;
+        //    if (Result == Success)
+        //    {
+        //        ADJ[i] = new ArrayList();
+        //        //new Node(value);
+        //        ArrayList other = (ArrayList)value;
+        //        int otherLength = other.Count;
+        //        int x = 0;
+        //        int y = x + 1;
+        //        while (x < otherLength)
+        //        {
+        //            ADJ[i].Add(other[x]);
+        //            x = x + 1;
+        //            y = x + 1;
+        //        }
 
-            //    }
-            //    //if (valid == 1)
-            //    //{
-            //    //    //T Node = (T) value;
-            //    //    //ADJ[i] = value (Edge<T>) new Edge<T>();
-            //    //}
-            //}
+        //    }
+        //    //if (valid == 1)
+        //    //{
+        //    //    //T Node = (T) value;
+        //    //    //ADJ[i] = value (Edge<T>) new Edge<T>();
+        //    //}
+        //}
         //}
 
         //public static int checkType(Object value)

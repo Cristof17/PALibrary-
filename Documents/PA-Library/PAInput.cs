@@ -37,11 +37,11 @@ namespace PA_Library
         [DllImport("pa")]
         static extern Input InputPerformConstruct();
         [DllImport("pa")]
-        static extern Input InputPerformInit( PACount Count,  PACount Count2,  PAElement Element);
+        static extern Input InputPerformInit(PACount Count, PACount Count2, PAElement Element);
         [DllImport("pa")]
-        static extern Input InputPerformCopy( Input Input);
+        static extern Input InputPerformCopy(Input Input);
         [DllImport("pa")]
-        static extern PAInput InputPerformDelete( PAInput Input);
+        static extern PAInput InputPerformDelete(PAInput Input);
         [DllImport("pa")]
         static extern void InputRuin();
         [DllImport("pa")]
