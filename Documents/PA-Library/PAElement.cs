@@ -12,10 +12,11 @@ namespace PA_Library
     //public struct PAElement
     {
         [MarshalAs(UnmanagedType.IUnknown)]
-        PAData data;
+        PAData index;
+        // private PAElement next;
         [MarshalAs(UnmanagedType.IUnknown)]
-        PAStatus status;
-        
+         PAStatus status;
+         
         [DllImport("pa")]
          static extern void PAElementVisit( PAElement element);
          [DllImport("pa")]
@@ -38,22 +39,19 @@ namespace PA_Library
 // DllExport HRESULT PAElementPerformPutDestination(struct PADestination);
 // DllExport HRESULT PAElementPerformPutFeature(struct PAFeature);
 
-        private PAData index;
-        // private PAElement next;
-        private PAStatus status;
-    [DllImport("palibrary")]
-    public static extern PAElement PAElementConstruct(PAData Data, PAElement Next, PAStatus Status);
-    [DllImport("palibrary")]
-    public static extern int PAElementRuin(PAData Data, PAElement Next,  PAStatus Status);
-    [DllImport("palibrary")]
-    public static extern PAElement PAElementInit(PAElement e);
-    [DllImport("palibrary")]
-    public static extern int PAElementDelete(PAElement PA);
-    [DllImport("palibrary")]
-    public static extern void PAElementVisit();
-    [DllImport("palibrary")]
-    public static extern int PADataIsVisited();
-    [DllImport("palibrary")]
+        [DllImport("palibrary")]
+        public static extern PAElement PAElementConstruct(PAData Data, PAElement Next, PAStatus Status);
+        [DllImport("palibrary")]
+        public static extern int PAElementRuin(PAData Data, PAElement Next,  PAStatus Status);
+        [DllImport("palibrary")]
+        public static extern PAElement PAElementInit(PAElement e);
+        [DllImport("palibrary")]
+        public static extern int PAElementDelete(PAElement PA);
+        [DllImport("palibrary")]
+        public static extern void PAElementVisit();
+        [DllImport("palibrary")]
+        public static extern int PADataIsVisited();
+        [DllImport("palibrary")]
 
     public static extern void PADataReset();
         // public PAPunct(PAPunct Node)

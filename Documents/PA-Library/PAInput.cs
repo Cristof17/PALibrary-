@@ -58,7 +58,7 @@ namespace PA_Library
         // [DllImport("palibrary")]
         // public static extern void Dispose();
         // [DllImport("palibrary.dll")]
-        public PAInput(PACount n, PACount m, PASeries adj, PAElement sursa) : this()
+        PAInput(PACount n, PACount m, PASeries adj, PAElement sursa) : this()
         {
 
         }

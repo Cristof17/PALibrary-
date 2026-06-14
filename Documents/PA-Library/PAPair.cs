@@ -27,7 +27,7 @@ namespace PA_Library
         // private struct PAPair Pair;
 
         // public PAPair(Element Node, Element Neigh)
-        public PAPair(PAElement Node, PAElement Neigh) : this()
+        PAPair(PAElement Node, PAElement Neigh) : this()
         {
 
         }
