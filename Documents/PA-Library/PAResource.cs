@@ -23,10 +23,10 @@ using System.Runtime.InteropServices;
     // public PAResource Resource;
 
     // [FieldOffset(0)]
-        public PANumber Value;
+        // public PANumber Value;
         // public Resursa(int value)
-        public PAResource(int value)
-        {
+        // public PAResource(int value)
+        // {
 
-        }
+        // }
     }
