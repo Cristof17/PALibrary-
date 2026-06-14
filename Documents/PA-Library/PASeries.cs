@@ -10,8 +10,11 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PASeries
     {
-        private PACount n;
-        private PAList[] adj;
+        [MarshalAs(UnmanagedType.IUnknown)]
+        PACount n;
+        [MarshalAs(UnmanagedType.IUnknown)]
+        PAList[] adj;
+
         [DllImport("pa")]
         static extern PASeries PASeriesPerformConstruct();
         [DllImport("pa")]
