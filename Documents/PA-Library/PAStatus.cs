@@ -9,7 +9,7 @@ using System.ComponentModel;
 [StructLayout(LayoutKind.Sequential)]
 public struct PAStatus
 {
-    [MarshallAs(UnmanagedType.IUnknown)]
+    [MarshalAs(UnmanagedType.IUnknown)]
     PAResource resource;
     // [StructLayout(LayoutKind.Sequential)]
     // struct PAStatus status;
