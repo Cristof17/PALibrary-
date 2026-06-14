@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
         static extern PAResourcePerformInit();
         [DllImport("pa")]
         static extern PAResourcePerformFinish();
-        [DllImport("pa")]
+        // [DllImport("pa")]
         // static extern PAResourcePerformD();
         [DllImport("pa")]
         static extern PAResourcePerformRuin();
