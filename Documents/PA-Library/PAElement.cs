@@ -15,6 +15,7 @@ namespace PA_Library
 
         // private PAElement next;
         PAStatus status;
+        
         [DllImport("pa")]
         static extern PAElement PAElementPerformConstruct();
         [DllImport("pa")]

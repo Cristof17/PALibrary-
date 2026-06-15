@@ -3,8 +3,8 @@
   <PropertyGroup>
   <Configuration>Debug</Configuration>
   <Platform>AnyCPU</Platform>
-  <TargetFramework>.NETFramework</TargetFramework>
-  <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  <TargetFramework>netstandard2.0</TargetFramework>
+  <!--<TargetFrameworkVersion>v4.0</TargetFrameworkVersion>-->
     <!--<RootNamespace>PA_Library</RootNamespace>-->
   </PropertyGroup>
 
