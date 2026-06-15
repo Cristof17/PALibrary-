@@ -21,7 +21,7 @@ public struct PAStatus
     [DllImport("pa")]
     static extern PAStatus PAStatusPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PAStatus from, [MarshalAs(UnmanagedType.IUnknown)] PAStatus to);
     [DllImport("pa")]
-    static extern PAStatus PAStatusPerformDelete(PAStatus PA);
+    static extern PAStatus PAStatusPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAStatus PA);
     [DllImport("pa")]
     static extern PAStatus PAStatusPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAStatus PA);
 
