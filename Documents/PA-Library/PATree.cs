@@ -25,18 +25,18 @@ namespace PA_Library
 		static extern PATree PATreePerformConstruct();
 		// DllExport struct PACount PATreeSize();
 		[DllImport("pa")]
-		static extern PATree PATreePerformInit(PATree Tree, PACount Count, PACount Count2, PAList List, PAElement Element);
+		static extern PATree PATreePerformInit([MarshalAs(UnmanagedType.IUnknown)] PATree Tree, [MarshalAs(UnmanagedType.IUnknown)] PACount Count, [MarshalAs(UnmanagedType.IUnknown)] PACount Count2, [MarshalAs(UnmanagedType.IUnknown)] PAList List, [MarshalAs(UnmanagedType.IUnknown)] PAElement Element);
 		// DllExport HRESULT PATreePerformCopy();
 		// DllExport HRESULT PATreePerformPutCount(struct PACount, struct PACount);
 		// struct PATree PATreePutList(struct PATree, struct PAList);
 		// DllExport HRESULT PATreePerformPutElement();
 		// DllExport HRESULT PATreePerformPutSeries();
 		[DllImport("pa")]
-		static extern PATree PATreePerformCopy(PATree from, PATree to);
+		static extern PATree PATreePerformCopy([MarshalAs(UnmanagedType.IUnknown)] PATree from, [MarshalAs(UnmanagedType.IUnknown)] PATree to);
 		[DllImport("pa")]
-		static extern PATree PATreePerformRuin(PATree PA);
+		static extern PATree PATreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PATree PA);
 		[DllImport("pa")]
-		static extern PATree PATreePerformDelete(PATree PA);
+		static extern PATree PATreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PATree PA);
 		// [DllImport("palibrary")]
 		// public static extern void PATreeSearch(PAElement nod);
 		// [DllImport("palibrary")]

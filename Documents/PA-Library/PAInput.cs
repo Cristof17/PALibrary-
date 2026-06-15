@@ -33,7 +33,7 @@ namespace PA_Library
 
         [MarshalAs(UnmanagedType.IUnknown)]
         PAList adj;
-        
+
         [MarshalAs(UnmanagedType.IUnknown)]
         PAElement sursa;
 
@@ -41,15 +41,15 @@ namespace PA_Library
         static extern Input InputPerformConstruct();
         [DllImport("pa")]
         // static extern Input InputPerformInit(PAInput imPACount Count, PACount Count2, PAElement Element);
-        static extern Input InputPerformInit(PAInput input, PACount Count2, PAElement Element);
+        static extern Input InputPerformInit([MarshalAs(UnmanagedType.IUnknown)] PAInput input, [MarshalAs(UnmanagedType.IUnknown)] PACount Count2, [MarshalAs(UnmanagedType.IUnknown)] PAElement Element);
         [DllImport("pa")]
-        static extern Input InputPerformCopy(Input from, Input to);
+        static extern Input InputPerformCopy([MarshalAs(UnmanagedType.IUnknown)] Input from, [MarshalAs(UnmanagedType.IUnknown)] Input to);
         [DllImport("pa")]
         static extern void InputDispose();
         [DllImport("pa")]
-        static extern PAInput InputPerformDelete(PAInput PA);
+        static extern PAInput InputPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAInput PA);
         [DllImport("pa")]
-        static extern void InputRuin(PAInput PA);
+        static extern void InputRuin([MarshalAs(UnmanagedType.IUnknown)] PAInput PA);
 
         // [DllImport("palibrary")]
         // private static extern PAInput PAInputConstruct(PACount n, PACount m, PAList adj, PAElement sursa);

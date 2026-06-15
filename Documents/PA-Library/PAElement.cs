@@ -20,19 +20,19 @@ namespace PA_Library
         [DllImport("pa")]
         static extern PAElement PAElementPerformConstruct();
         [DllImport("pa")]
-        static extern PAElement PAElementPerformInit(PAElement element, PAData data, PAStatus status);
+        static extern PAElement PAElementPerformInit([MarshalAs(UnmanagedType.IUnknown)] PAElement element, [MarshalAs(UnmanagedType.IUnknown)] PAData data, [MarshalAs(UnmanagedType.IUnknown)] PAStatus status);
         [DllImport("pa")]
-        static extern void PAElementVisit(PAElement element);
+        static extern void PAElementVisit([MarshalAs(UnmanagedType.IUnknown)] PAElement element);
         [DllImport("pa")]
-        static extern int PAElementIsVisited(PAElement element);
+        static extern int PAElementIsVisited([MarshalAs(UnmanagedType.IUnknown)] PAElement element);
         [DllImport("pa")]
-        static extern void PAElementReset(PAElement element);
+        static extern void PAElementReset([MarshalAs(UnmanagedType.IUnknown)] PAElement element);
         [DllImport("pa")]
-        static extern PAElement PAElementPerformCopy(PAElement element, PAElement element2);
+        static extern PAElement PAElementPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PAElement element, [MarshalAs(UnmanagedType.IUnknown)] PAElement element2);
         [DllImport("pa")]
-        static extern PAElement PAElementPerformDelete(PAElement element);
+        static extern PAElement PAElementPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAElement element);
         [DllImport("pa")]
-        static extern PAElement PAElementPerformRuin(PAElement element);
+        static extern PAElement PAElementPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAElement element);
         // DllExport HRESULT PAElementPerformCopy();
         // DllExport HRESULT PAElementPerformPutStatus(struct PAStatus);
         // DllExport HRESULT PAElementPerformPutData(struct PAData);

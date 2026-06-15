@@ -14,14 +14,14 @@ namespace PA_Library
 		static extern PALink PALinkPerformConstruct();
 		[DllImport("pa")]
 		// DllExport struct PALink PALinkPerformCopy(struct PALink);
-		static extern PALink PALinkPerformInit(PALink init, PAPair pair);
+		static extern PALink PALinkPerformInit([MarshalAs(UnmanagedType.IUnknown)] PALink init, [MarshalAs(UnmanagedType.IUnknown)] PAPair pair);
 		[DllImport("pa")]
-		static extern PALink PALinkPerformCopy(PALink from, PALink to);
+		static extern PALink PALinkPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PALink from, [MarshalAs(UnmanagedType.IUnknown)] PALink to);
 		[DllImport("pa")]
-		static extern PALink PALinkPerformDelete(PALink PA);
+		static extern PALink PALinkPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PALink PA);
 		[DllImport("pa")]
 		// DllExport struct PALink PALinkPerformPutPair(struct PALink,struct PAPair);
-		static extern PALink PALinkPerformRuin(PALink PA);
+		static extern PALink PALinkPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PALink PA);
 		// [DllImport("palibrary")]
 		// public static extern PAPair PALinkConstruct(PALink Link);
 		// [DllImport("palibrary")]

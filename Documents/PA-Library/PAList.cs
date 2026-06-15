@@ -13,21 +13,21 @@ namespace PA_Library
         [DllImport("pa")]
         static extern PAList PAListPerformConstruct();
         [DllImport("pa")]
-        static extern PAList PAListPerformInit(PAList List, PACount N, in PASeries[] adj);
+        static extern PAList PAListPerformInit([MarshalAs(UnmanagedType.IUnknown)] PAList List, [MarshalAs(UnmanagedType.IUnknown)] PACount N, [MarshalAs(UnmanagedType.IUnknown)] in PASeries[] adj);
         [DllImport("pa")]
-        static extern PAList PAListPerformCopy(PAList from, PAList to);
+        static extern PAList PAListPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PAList from, [MarshalAs(UnmanagedType.IUnknown)] PAList to);
         // DllExport void PAListDispose(void);
         [DllImport("pa")]
-        static extern void PAListPerformPrint(PAList List);
+        static extern void PAListPerformPrint([MarshalAs(UnmanagedType.IUnknown)] PAList List);
         // DllExport struct PAList PAListPerformCopy(struct PAList);
         // DllExportPAResult PAListPerformPutCount(struct PAList, struct PACount);
         // DllExport PAResult PAListPerformPutList(struct PAList);
         [DllImport("pa")]
-        static extern PAList PAListPerformDelete(PAList PA);
+        static extern PAList PAListPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAList PA);
         [DllImport("pa")]
-        static extern PAList PAListPerformRuin(PAList PA);
-        
-        
+        static extern PAList PAListPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAList PA);
+
+
 
         // [DllImport("palibrary")]
         // public static extern  PAElement PAListGetHead();

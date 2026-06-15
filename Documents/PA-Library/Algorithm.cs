@@ -24,11 +24,12 @@ using System.Runtime.InteropServices;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct Algorithm {
-        
+    public struct Algorithm
+    {
+
         [DllImport("pa")]
-        public static extern Output run( Input input);
-        
+        public static extern Output run(Input input);
+
         // [FieldOffset(0)]
         private Input In { get; }
         // [StructLayout(LayoutKind.Sequential)]
@@ -37,13 +38,13 @@ namespace PA_Library
         // public Algorithm(IntrareSistem input)
         public Algorithm(Input input) : this()
         {
-            
+
         }
     }
     // {
-        //Input in
-        //Output run(Input)
-        // Provides Input method for the algorithm.
+    //Input in
+    //Output run(Input)
+    // Provides Input method for the algorithm.
     // }
 };
 //public System.Collections.Generic.IEnumerator<Node> GetEnumerator()
