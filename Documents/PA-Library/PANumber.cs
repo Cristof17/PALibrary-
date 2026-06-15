@@ -2,13 +2,13 @@ using System;
 using PA_Library;
 // using System;
 using System.Runtime.InteropServices;
-[StructLayout(LayoutKind.Explicit)]
+[StructLayout(LayoutKind.Sequential)]
 public struct PANumber
 {
     [MarshalAs(UnmanagedType.IUnknown)]
-    // int value;
-    [FieldOffset(0)]
     char value;
+    // int value;
+    // [FieldOffset(0)]
 
     [DllImport("pa")]
     static extern PANumber PANumberPerformConstruct();
