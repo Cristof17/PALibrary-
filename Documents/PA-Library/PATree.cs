@@ -1,7 +1,8 @@
 using System.Xml.XPath;
 using System.Runtime.InteropServices;
 
-namespace PA_Library {
+namespace PA_Library
+{
 	[StructLayout(LayoutKind.Sequential)]
 	struct PATree
 
@@ -11,47 +12,47 @@ namespace PA_Library {
 		[MarshalAs(UnmanagedType.IUnknown)]
 		PACount n;
 		[MarshalAs(UnmanagedType.IUnknown)]
-		PACount m ;
+		PACount m;
 		[MarshalAs(UnmanagedType.IUnknown)]
 		PASeries adj;
 		[MarshalAs(UnmanagedType.IUnknown)]
 		PAElement sursa;
 
 		[DllImport("pa")]
- 		static extern PATree PATreePerformConstruct();
- 		[DllImport("pa")]
- 		static extern PATree PATreePerformCopy( PATree from,  PATree to);
-// DllExport struct PACount PATreeSize();
+		static extern PATree PATreePerformConstruct();
 		[DllImport("pa")]
- 		static extern PATree PATreePerformInit(PATree Tree,  PACount Count,  PACount Count2,  PAList List,  PAElement Element);
-// DllExport HRESULT PATreePerformCopy();
-// DllExport HRESULT PATreePerformPutCount(struct PACount, struct PACount);
-// struct PATree PATreePutList(struct PATree, struct PAList);
-// DllExport HRESULT PATreePerformPutElement();
-// DllExport HRESULT PATreePerformPutSeries();
+		static extern PATree PATreePerformCopy(PATree from, PATree to);
+		// DllExport struct PACount PATreeSize();
 		[DllImport("pa")]
- 		static extern PATree PATreePerformRuin( PATree PA);
- 		[DllImport("pa")]
- 		static extern PATree PATreePerformDelete( PATree PA);
+		static extern PATree PATreePerformInit(PATree Tree, PACount Count, PACount Count2, PAList List, PAElement Element);
+		// DllExport HRESULT PATreePerformCopy();
+		// DllExport HRESULT PATreePerformPutCount(struct PACount, struct PACount);
+		// struct PATree PATreePutList(struct PATree, struct PAList);
+		// DllExport HRESULT PATreePerformPutElement();
+		// DllExport HRESULT PATreePerformPutSeries();
+		[DllImport("pa")]
+		static extern PATree PATreePerformRuin(PATree PA);
+		[DllImport("pa")]
+		static extern PATree PATreePerformDelete(PATree PA);
 		// [DllImport("palibrary")]
-        // public static extern void PATreeSearch(PAElement nod);
+		// public static extern void PATreeSearch(PAElement nod);
 		// [DllImport("palibrary")]
-        // public static extern PATree PATreeConstruct(PACount n, PACount m, PAList adj, PAElement source);
+		// public static extern PATree PATreeConstruct(PACount n, PACount m, PAList adj, PAElement source);
 		// [DllImport("palibrary")]
-        // public static extern void PATreeRuin( PACount n, PACount m, PAList adj, PAElement source);
+		// public static extern void PATreeRuin( PACount n, PACount m, PAList adj, PAElement source);
 		// [DllImport("palibrary")]
-        // public static extern PATree PATreeInit(PATree graf);
+		// public static extern PATree PATreeInit(PATree graf);
 		// [DllImport("palibrary")]
-        // public static extern int PATreeDelete(PATree PA);
+		// public static extern int PATreeDelete(PATree PA);
 
 		// [StructLayout(LayoutKind.Sequential)]
 		// private  PATree tree { get;}
 
 		// public PATree(Cardinal n, Cardinal m, Lista adj, Punct sursa)
 		PATree(PACount n, PACount m, PASeries adj, PAElement sursa) : this()
-        {
+		{
 
-        }
+		}
 		// private PACardinal n { get; }
 		// private PACardinal m { get; }
 		// private PALista adj { get; }
