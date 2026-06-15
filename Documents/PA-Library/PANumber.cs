@@ -15,9 +15,9 @@ public struct PANumber
     [DllImport("pa")]
     static extern PANumber PANumberPerformInit(PANumber Number, char Value);
     [DllImport("pa")]
-    static extern PANumber PANumberPerformDelete(PANumber Number);
+    static extern PANumber PANumberPerformDelete(PANumber PA);
     [DllImport("pa")]
-    static extern PANumber PANumberPerformRuin(PANumber Number);
+    static extern PANumber PANumberPerformRuin(PANumber PA);
     [DllImport("pa")]
     static extern PANumber PANumberPerformCopy(PANumber from, PANumber to);
     // [StructLayout(LayoutKind.Sequential)]
