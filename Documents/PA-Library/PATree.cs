@@ -17,7 +17,7 @@ namespace PA_Library
 
 		[MarshalAs(UnmanagedType.IUnknown)]
 		PASeries adj;
-		
+
 		[MarshalAs(UnmanagedType.IUnknown)]
 		PAElement sursa;
 
@@ -32,11 +32,11 @@ namespace PA_Library
 		// DllExport HRESULT PATreePerformPutElement();
 		// DllExport HRESULT PATreePerformPutSeries();
 		[DllImport("pa")]
+		static extern PATree PATreePerformCopy(PATree from, PATree to);
+		[DllImport("pa")]
 		static extern PATree PATreePerformRuin(PATree PA);
 		[DllImport("pa")]
 		static extern PATree PATreePerformDelete(PATree PA);
-		[DllImport("pa")]
-		static extern PATree PATreePerformCopy(PATree from, PATree to);
 		// [DllImport("palibrary")]
 		// public static extern void PATreeSearch(PAElement nod);
 		// [DllImport("palibrary")]
