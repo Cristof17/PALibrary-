@@ -23,9 +23,10 @@ namespace PA_Library
         // DllExportPAResult PAListPerformPutCount(struct PAList, struct PACount);
         // DllExport PAResult PAListPerformPutList(struct PAList);
         [DllImport("pa")]
-        static extern PAList PAListPerformRuin(PAList PA);
-        [DllImport("pa")]
         static extern PAList PAListPerformDelete(PAList PA);
+        [DllImport("pa")]
+        static extern PAList PAListPerformRuin(PAList PA);
+        
         
 
         // [DllImport("palibrary")]
