@@ -12,14 +12,16 @@ namespace PA_Library
     {
         private BFSRecord result;
         [DllImport("pa")]
-        static extern Output OutputPerformConstruct(BFSRecord Record);
+        static extern Output OutputPerformConstruct();
         [DllImport("pa")]
-        static extern Output OutputPerformInit(Output Output);
+        static extern Output OutputPerformInit(Output Output, BFSRecord Record);
         [DllImport("pa")]
-        static extern Output OutputPerformCopy(Output Output);
+        static extern Output OutputPerformCopy(Output Output, Output to);
         //struct Output dispose();
         [DllImport("pa")]
-        static extern void OutputPerformRuin();
+        static extern void OutputPerformRuin(Output PA);
+        [DllImport("pa")]
+        static extern void OutputPerformDelete(Output PA);
         [DllImport("pa")]
         static extern void OutputPerformPrint(int resulrt);
         // [DllImport("palibrary")]
