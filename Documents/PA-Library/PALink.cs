@@ -7,7 +7,6 @@ namespace PA_Library
 	public struct PALink
 	//public struct PAMuchie
 	{
-		[MarshalAs(UnmanagedType.IUnknown)]
 		PAPair p;
 
 		[DllImport("pa")]

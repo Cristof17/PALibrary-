@@ -9,10 +9,8 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PAPair
     {
-        [MarshalAs(UnmanagedType.IUnknown)]
         PAElement Node;
 
-        [MarshalAs(UnmanagedType.IUnknown)]
         PAElement Neigh;
 
         [DllImport("pa")]

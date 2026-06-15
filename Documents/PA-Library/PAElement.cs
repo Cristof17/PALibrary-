@@ -11,11 +11,9 @@ namespace PA_Library
     public struct PAElement
     //public struct PAElement
     {
-        [MarshalAs(UnmanagedType.IUnknown)]
         PAData index;
 
         // private PAElement next;
-        [MarshalAs(UnmanagedType.IUnknown)]
         PAStatus status;
         [DllImport("pa")]
         static extern PAElement PAElementPerformConstruct();

@@ -9,16 +9,12 @@ namespace PA_Library
 	//public readonly class PAGraf
 	//public struct PAGraf
 	{
-		[MarshalAs(UnmanagedType.IUnknown)]
 		PACount n;
 
-		[MarshalAs(UnmanagedType.IUnknown)]
 		PACount m;
 
-		[MarshalAs(UnmanagedType.IUnknown)]
 		PASeries adj;
 
-		[MarshalAs(UnmanagedType.IUnknown)]
 		PAElement sursa;
 
 		[DllImport("pa")]

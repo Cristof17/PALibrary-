@@ -6,7 +6,6 @@ namespace PA_Library
     public struct PACount
     //public struct PAPACount
     {
-        [MarshalAs(UnmanagedType.IUnknown)]
         PANumber value;
 
         [DllImport("pa")]
