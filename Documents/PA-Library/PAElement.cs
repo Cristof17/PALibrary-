@@ -13,21 +13,20 @@ namespace PA_Library
     {
         [MarshalAs(UnmanagedType.IUnknown)]
         PAData index;
-        
+
         // private PAElement next;
         [MarshalAs(UnmanagedType.IUnknown)]
         PAStatus status;
-
+        [DllImport("pa")]
+        static extern PAElement PAElementPerformConstruct();
+        [DllImport("pa")]
+        static extern PAElement PAElementPerformInit(PAElement element, PAData data, PAStatus status);
         [DllImport("pa")]
         static extern void PAElementVisit(PAElement element);
         [DllImport("pa")]
         static extern int PAElementIsVisited(PAElement element);
         [DllImport("pa")]
         static extern void PAElementReset(PAElement element);
-        [DllImport("pa")]
-        static extern PAElement PAElementPerformConstruct();
-        [DllImport("pa")]
-        static extern PAElement PAElementPerformInit(PAElement element, PAData data, PAStatus status);
         [DllImport("pa")]
         static extern PAElement PAElementPerformDelete(PAElement element);
         [DllImport("pa")]
