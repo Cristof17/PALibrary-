@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 [StructLayout(LayoutKind.Sequential)]
 public struct PANumber
 {
-    [MarshalAs(UnmanagedType.IUnknown)]
+    // [MarshalAs(UnmanagedType.IUnknown)]
     char value;
     // int value;
     // [FieldOffset(0)]
