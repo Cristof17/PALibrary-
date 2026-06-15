@@ -6,20 +6,20 @@ using System.Runtime.InteropServices;
 public struct PANumber
 {
     // [MarshalAs(UnmanagedType.IUnknown)]
-    char value;
+    int value;
     // int value;
     // [FieldOffset(0)]
 
     [DllImport("pa")]
     static extern PANumber PANumberPerformConstruct();
     [DllImport("pa")]
-    static extern PANumber PANumberPerformInit(PANumber Number, char Value);\
+    static extern PANumber PANumberPerformInit([MarshalAs(UnmanagedType.IUnknown)]PANumber Number, int Value);
     [DllImport("pa")]
-    static extern PANumber PANumberPerformCopy(PANumber from, PANumber to);
+    static extern PANumber PANumberPerformCopy([MarshalAs(UnmanagedType.IUnknown)]PANumber from, [MarshalAs(UnmanagedType.IUnknown)]PANumber to);
     [DllImport("pa")]
-    static extern PANumber PANumberPerformDelete(PANumber PA);
+    static extern PANumber PANumberPerformDelete([MarshalAs(UnmanagedType.IUnknown)]PANumber PA);
     [DllImport("pa")]
-    static extern PANumber PANumberPerformRuin(PANumber PA);
+    static extern PANumber PANumberPerformRuin([MarshalAs(UnmanagedType.IUnknown)]PANumber PA);
     // [StructLayout(LayoutKind.Sequential)]
     // public struct PANumber Number;
 }
