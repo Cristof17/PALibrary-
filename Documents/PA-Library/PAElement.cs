@@ -28,9 +28,9 @@ namespace PA_Library
         [DllImport("pa")]
         static extern void PAElementReset(PAElement element);
         [DllImport("pa")]
-        static extern PAElement PAElementPerformDelete(PAElement element);
-        [DllImport("pa")]
         static extern PAElement PAElementPerformCopy(PAElement element, PAElement element2);
+        [DllImport("pa")]
+        static extern PAElement PAElementPerformDelete(PAElement element);
         [DllImport("pa")]
         static extern PAElement PAElementPerformRuin(PAElement element);
         // DllExport HRESULT PAElementPerformCopy();
