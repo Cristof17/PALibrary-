@@ -11,6 +11,7 @@ public struct PAStatus
 {
     [MarshalAs(UnmanagedType.IUnknown)]
     int Visited;
+    
     [MarshalAs(UnmanagedType.IUnknown)]
     PAResource resource;
     // [StructLayout(LayoutKind.Sequential)]

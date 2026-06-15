@@ -12,6 +12,7 @@ namespace PA_Library
     {
         [MarshalAs(UnmanagedType.IUnknown)]
         PACount n;
+        
         [MarshalAs(UnmanagedType.IUnknown)]
         PAList[] adj;
 

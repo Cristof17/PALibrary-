@@ -10,7 +10,9 @@ namespace PA_Library
     //public readonly class BFSOutput
     //public readonly struct BFSOutput
     {
-        private BFSRecord result;
+        [MarshalAs(UnmanagedType.IUnknown)]
+        BFSRecord result;
+        
         [DllImport("pa")]
         static extern Output OutputPerformConstruct();
         [DllImport("pa")]

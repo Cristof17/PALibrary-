@@ -27,10 +27,13 @@ namespace PA_Library
         //Wrapper over the Input variables which provides Input validation
         [MarshalAs(UnmanagedType.IUnknown)]
         PACount n;
+
         [MarshalAs(UnmanagedType.IUnknown)]
         PACount m;
+
         [MarshalAs(UnmanagedType.IUnknown)]
         PAList adj;
+        
         [MarshalAs(UnmanagedType.IUnknown)]
         PAElement sursa;
 

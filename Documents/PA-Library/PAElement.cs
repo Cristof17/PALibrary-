@@ -13,6 +13,7 @@ namespace PA_Library
     {
         [MarshalAs(UnmanagedType.IUnknown)]
         PAData index;
+        
         // private PAElement next;
         [MarshalAs(UnmanagedType.IUnknown)]
         PAStatus status;

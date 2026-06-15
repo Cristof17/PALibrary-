@@ -11,8 +11,10 @@ namespace PA_Library
     {
         [MarshalAs(UnmanagedType.IUnknown)]
         PAElement Node;
+
         [MarshalAs(UnmanagedType.IUnknown)]
         PAElement Neigh;
+        
         [DllImport("pa")]
         static extern PAPair PAPairConstruct();
         [DllImport("pa")]
