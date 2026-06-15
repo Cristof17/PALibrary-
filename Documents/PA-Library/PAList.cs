@@ -8,7 +8,7 @@ namespace PA_Library
     public struct PAList
     {
         [MarshalAs(UnmanagedType.IUnknown)]
-        private ArrayList edges;
+        ArrayList edges;
 
         [DllImport("pa")]
         static extern PAList PAListPerformConstruct();
