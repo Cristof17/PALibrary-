@@ -42,11 +42,11 @@ namespace PA_Library
         [DllImport("pa")]
         static extern Input InputPerformCopy(Input from, Input to);
         [DllImport("pa")]
+        static extern void InputDispose();
+        [DllImport("pa")]
         static extern PAInput InputPerformDelete(PAInput PA);
         [DllImport("pa")]
         static extern void InputRuin(PAInput PA);
-        [DllImport("pa")]
-        static extern void InputDispose();
 
         // [DllImport("palibrary")]
         // private static extern PAInput PAInputConstruct(PACount n, PACount m, PAList adj, PAElement sursa);

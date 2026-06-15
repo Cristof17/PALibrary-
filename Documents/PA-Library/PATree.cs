@@ -20,8 +20,6 @@ namespace PA_Library
 
 		[DllImport("pa")]
 		static extern PATree PATreePerformConstruct();
-		[DllImport("pa")]
-		static extern PATree PATreePerformCopy(PATree from, PATree to);
 		// DllExport struct PACount PATreeSize();
 		[DllImport("pa")]
 		static extern PATree PATreePerformInit(PATree Tree, PACount Count, PACount Count2, PAList List, PAElement Element);
@@ -34,6 +32,8 @@ namespace PA_Library
 		static extern PATree PATreePerformRuin(PATree PA);
 		[DllImport("pa")]
 		static extern PATree PATreePerformDelete(PATree PA);
+		[DllImport("pa")]
+		static extern PATree PATreePerformCopy(PATree from, PATree to);
 		// [DllImport("palibrary")]
 		// public static extern void PATreeSearch(PAElement nod);
 		// [DllImport("palibrary")]

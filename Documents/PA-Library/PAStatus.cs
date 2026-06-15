@@ -22,9 +22,10 @@ public struct PAStatus
     [DllImport("pa")]
     static extern PAStatus PAStatusPerformDelete(PAStatus PA);
     [DllImport("pa")]
-    static extern PAStatus PAStatusPerformRuin(PAStatus PA);
-    [DllImport("pa")]
     static extern PAStatus PAStatusPerformCopy(PAStatus from, PAStatus to);
+    [DllImport("pa")]
+    static extern PAStatus PAStatusPerformRuin(PAStatus PA);
+
     // [FieldOffset(0)]
     // PAStatus(int Visited) : this()
     // {

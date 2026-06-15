@@ -28,11 +28,11 @@ namespace PA_Library
         [DllImport("pa")]
         static extern PAElement PAElementPerformInit(PAElement element, PAData data, PAStatus status);
         [DllImport("pa")]
-        static extern PAElement PAElementPerformRuin(PAElement element);
-        [DllImport("pa")]
         static extern PAElement PAElementPerformDelete(PAElement element);
         [DllImport("pa")]
         static extern PAElement PAElementPerformCopy(PAElement element, PAElement element2);
+        [DllImport("pa")]
+        static extern PAElement PAElementPerformRuin(PAElement element);
         // DllExport HRESULT PAElementPerformCopy();
         // DllExport HRESULT PAElementPerformPutStatus(struct PAStatus);
         // DllExport HRESULT PAElementPerformPutData(struct PAData);

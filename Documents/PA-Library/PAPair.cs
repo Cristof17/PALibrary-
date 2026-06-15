@@ -13,15 +13,14 @@ namespace PA_Library
         PAElement Node;
         [MarshalAs(UnmanagedType.IUnknown)]
         PAElement Neigh;
-
-        [DllImport("pa")]
-        static extern int PAPairRuin(PAPair PA);
-        [DllImport("pa")]
-        static extern PAPair PAPairInit(PAPair p, PAElement Node, PAElement Neigh);
         [DllImport("pa")]
         static extern PAPair PAPairConstruct();
         [DllImport("pa")]
+        static extern PAPair PAPairInit(PAPair p, PAElement Node, PAElement Neigh);
+        [DllImport("pa")]
         static extern int PAPairDelete(PAElement PA);
+        [DllImport("pa")]
+        static extern int PAPairRuin(PAPair PA);
 
         // [StructLayout(LayoutKind.Sequential)]
         // private struct PAPair Pair;

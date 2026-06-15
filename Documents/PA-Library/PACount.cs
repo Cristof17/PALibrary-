@@ -16,9 +16,9 @@ namespace PA_Library
         [DllImport("pa")]
         static extern PACount PACountPerformCopy(PACount from, PACount to);
         [DllImport("pa")]
-        static extern PACount PACountPerformRuin(PACount PA);
-        [DllImport("pa")]
         static extern PACount PACountPerformDelete(PACount PA);
+        [DllImport("pa")]
+        static extern PACount PACountPerformRuin(PACount PA);
         // DllExport struct PACount PACountPerformCopy(struct PACount);
         // void PASize(PA_INT);
         // DllExport HRESULT PACountPerformPrint(struct PACount);
@@ -53,7 +53,7 @@ namespace PA_Library
         //         public static extern int PACountDelete(PACount PA);
 
         // [FieldOffset(0)]
-        private int number;
+        // private int number;
 
         // [StructLayout(LayoutKind.Sequential)]
         // public struct PACount Count {get;}
