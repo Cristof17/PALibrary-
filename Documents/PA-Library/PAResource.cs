@@ -15,7 +15,7 @@ struct PAResource
     [DllImport("pa")]
     static extern PAResource PAResourcePerformCopy(PAResource from, PAResource to);
     [DllImport("pa")]
-    static extern int PAResourcePerformFinish(PAResource PA);
+    static extern int PAResourcePerformDelete(PAResource PA);
     // [DllImport("pa")]
     // static extern PAResourcePerformD();
     [DllImport("pa")]
