@@ -12,7 +12,7 @@ namespace PA_Library
     {
         [MarshalAs(UnmanagedType.IUnknown)]
         PACount n;
-        
+
         [MarshalAs(UnmanagedType.IUnknown)]
         PAList[] adj;
 
@@ -20,8 +20,6 @@ namespace PA_Library
         static extern PASeries PASeriesPerformConstruct();
         [DllImport("pa")]
         static extern PASeries PASeriesPerformInit(PASeries Series, PACount M, PAElement[] adj);
-        [DllImport("pa")]
-        static extern PASeries PASeriesPerformDelete(PASeries PA);
         [DllImport("pa")]
         static extern PASeries PASeriesPerformCopy(PASeries Series1, PASeries Series);
         [DllImport("pa")]
@@ -31,6 +29,8 @@ namespace PA_Library
         // PAResult PASeriesPerformCopy();
         [DllImport("pa")]
         static extern PASeries PASeriesPerformRuin(PASeries PA);
+        [DllImport("pa")]
+        static extern PASeries PASeriesPerformDelete(PASeries PA);
         // [DllImport("palibrary")]
         // public static extern  PASeries PASeriesConstruct(PACount n, PAList[] adj);
         // [DllImport("palibrary")]

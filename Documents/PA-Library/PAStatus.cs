@@ -21,9 +21,9 @@ public struct PAStatus
     [DllImport("pa")]
     static extern PAStatus PAStatusPerformInit(PAStatus Status, PAResource Resource);
     [DllImport("pa")]
-    static extern PAStatus PAStatusPerformDelete(PAStatus PA);
-    [DllImport("pa")]
     static extern PAStatus PAStatusPerformCopy(PAStatus from, PAStatus to);
+    [DllImport("pa")]
+    static extern PAStatus PAStatusPerformDelete(PAStatus PA);
     [DllImport("pa")]
     static extern PAStatus PAStatusPerformRuin(PAStatus PA);
 
