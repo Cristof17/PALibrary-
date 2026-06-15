@@ -19,7 +19,7 @@ namespace PA_Library
         [DllImport("pa")]
         static extern PASeries PASeriesPerformConstruct();
         [DllImport("pa")]
-        static extern PASeries PASeriesPerformInit(PASeries Series, PACount M, PAElement[] adj);
+        static extern PASeries PASeriesPerformInit(PASeries Series, PACount M, in PAElement[] adj);
         [DllImport("pa")]
         static extern PASeries PASeriesPerformCopy(PASeries Series1, PASeries Series);
         [DllImport("pa")]

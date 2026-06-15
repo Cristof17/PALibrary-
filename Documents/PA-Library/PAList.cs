@@ -13,7 +13,7 @@ namespace PA_Library
         [DllImport("pa")]
         static extern PAList PAListPerformConstruct();
         [DllImport("pa")]
-        static extern PAList PAListPerformInit(PAList List, PACount N, PASeries[] adj);
+        static extern PAList PAListPerformInit(PAList List, PACount N, in PASeries[] adj);
         [DllImport("pa")]
         static extern PAList PAListPerformCopy(PAList from, PAList to);
         // DllExport void PAListDispose(void);
