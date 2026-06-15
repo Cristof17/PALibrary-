@@ -7,6 +7,7 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PAList
     {
+        [MarshalAs(UnmanagedType.IUnknown)]
         private ArrayList edges;
 
         [DllImport("pa")]
