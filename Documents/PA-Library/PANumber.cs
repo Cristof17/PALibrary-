@@ -5,6 +5,11 @@ using System.Runtime.InteropServices;
 [StructLayout(LayoutKind.Explicit)]
 public struct PANumber
 {
+    [MarshalAs(UnmanagedType.IUnknown)]
+    // int value;
+    [FieldOffset(0)]
+    char value;
+
     [DllImport("pa")]
     static extern PANumber PANumberPerformConstruct();
     [DllImport("pa")]
