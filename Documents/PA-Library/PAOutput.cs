@@ -12,7 +12,7 @@ namespace PA_Library
     {
         [MarshalAs(UnmanagedType.IUnknown)]
         BFSRecord result;
-        
+
         [DllImport("pa")]
         static extern Output OutputPerformConstruct();
         [DllImport("pa")]
@@ -23,9 +23,9 @@ namespace PA_Library
         static extern void OutputPerformPrint(int resulrt);
         //struct Output dispose();
         [DllImport("pa")]
-        static extern void OutputPerformRuin(Output PA);
-        [DllImport("pa")]
         static extern void OutputPerformDelete(Output PA);
+        [DllImport("pa")]
+        static extern void OutputPerformRuin(Output PA);
         // [DllImport("palibrary")]
         // // public static extern PAOutput PAOutputConstruct(PAResult rezultat);
         // public static extern PAOutput PAOutputConstruct(BFSRecord rezultat);
