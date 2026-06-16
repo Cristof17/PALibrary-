@@ -15,7 +15,6 @@ namespace PA_Library
 
 		[DllImport("pa")]
 		static extern PANormalTree PATreePerformConstruct();
-		// DllExport struct PACount PATreeSize();
 		[DllImport("pa")]
 		static extern PANormalTree PATreePerformInit([MarshalAs(UnmanagedType.IUnknown)] PANormalTree Tree, [MarshalAs(UnmanagedType.IUnknown)] PATree tree);
 		[DllImport("pa")]

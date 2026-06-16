@@ -1,8 +1,7 @@
-// using System;
 using PA_Library;
 using System.Runtime.InteropServices;
 [StructLayout(LayoutKind.Sequential)]
-// [StructLayout(LayoutKind.Sequential)]
+
 protected struct PAResource
 {
     PANumber value;

@@ -1,8 +1,6 @@
-// using System;
 using PA_Library;
-// using System;
 using System.Runtime.InteropServices;
-// using System.Security.Authentication.ExtendedProtection;
+
 [StructLayout(LayoutKind.Sequential)]
 protected struct PANumber
 {

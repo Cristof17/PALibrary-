@@ -19,14 +19,12 @@ namespace PA_Library
         static extern PAResource PASeriesGet([MarshalAs(UnmanagedType.IUnknown)] PAData Data);
         [DllImport("pa")]
         static extern void PASeriesPerformPrint([MarshalAs(UnmanagedType.IUnknown)] PASeries Series);
-        // PAResult PASeriesPerformCopy();
         [DllImport("pa")]
         static extern PASeries PASeriesPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PASeries PA);
         [DllImport("pa")]
         static extern PASeries PASeriesPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PASeries PA);
 
         public PASeries(PACount n, PAList[] adj) : this()
-        //: this()
         {
     }
 
