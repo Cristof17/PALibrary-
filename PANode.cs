@@ -13,20 +13,6 @@ namespace PA_Library
     // struct PAElement
     public class PANode
     {
-    // [DllImport("palibrary")]
-    // public static extern  PAElement PAElementConstruct(PAData Data, PAElement Next, PAStatus Status);
-    // [DllImport("palibrary")]
-    // public static extern int PAElementRuin(PAData Data,  PAElement Next, PAStatus Status);
-    // [DllImport("palibrary")]
-    // public static extern PAElement PAElementInit(PAElement e);
-    // [DllImport("palibrary")]
-    // public static extern int PAElementDelete(PAElement PA);
-    // [DllImport("palibrary")]
-    // public static extern void PAElementVisit();
-    // [DllImport("palibrary")]
-    // public static extern int PAElementIsVisited();
-    // [DllImport("palibrary")]
-        private PAElement element;
 
         public PANode()
         {
@@ -42,6 +28,21 @@ namespace PA_Library
         {
 
         }
+        private PAElement element;
+        
+    // [DllImport("palibrary")]
+    // public static extern  PAElement PAElementConstruct(PAData Data, PAElement Next, PAStatus Status);
+    // [DllImport("palibrary")]
+    // public static extern int PAElementRuin(PAData Data,  PAElement Next, PAStatus Status);
+    // [DllImport("palibrary")]
+    // public static extern PAElement PAElementInit(PAElement e);
+    // [DllImport("palibrary")]
+    // public static extern int PAElementDelete(PAElement PA);
+    // [DllImport("palibrary")]
+    // public static extern void PAElementVisit();
+    // [DllImport("palibrary")]
+    // public static extern int PAElementIsVisited();
+    // [DllImport("palibrary")]
         // Node)
         // {
         //     data = Node.data;

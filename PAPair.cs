@@ -6,6 +6,13 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PAPair
     {
+        PAPair(PAElement Node, PAElement Neigh) : this()
+        {
+            node = PAElement.PAElementPerformConstruct();
+            node = PAElement.PAElementPerformCopy(Node,node);
+            neigh = PAElement.PAElementPerformConstruct();
+            neigh = PAElement.PAElementPerformCopy(Neigh,neigh);
+        }
         private PAElement node;
 
         private PAElement neigh;
@@ -19,12 +26,5 @@ namespace PA_Library
         [DllImport("pa")]
         internal static extern int PAPairRuin([MarshalAs(UnmanagedType.IUnknown)] PAPair PA);
 
-        PAPair(PAElement Node, PAElement Neigh) : this()
-        {
-            node = PAElement.PAElementPerformConstruct();
-            node = PAElement.PAElementPerformCopy(Node,node);
-            neigh = PAElement.PAElementPerformConstruct();
-            neigh = PAElement.PAElementPerformCopy(Neigh,neigh);
-        }
     }
 }

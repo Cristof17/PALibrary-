@@ -6,6 +6,11 @@ namespace PA_Library
 [   StructLayout(LayoutKind.Sequential)]
     public struct PAResource
     {
+        public PAResource(PANumber Number)
+        {
+            value = PANumber.PANumberPerformConstruct();
+            value = PANumber.PANumberPerformCopy(Number,value);
+        }
         private PANumber value;
 
         [DllImport("pa")]
@@ -21,10 +26,5 @@ namespace PA_Library
         [DllImport("pa")]
         internal static extern int PAResourcePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAResource PA);
 
-        public PAResource(PANumber Number)
-        {
-            value = PANumber.PANumberPerformConstruct();
-            value = PANumber.PANumberPerformCopy(Number,value);
-        }
     }
 }

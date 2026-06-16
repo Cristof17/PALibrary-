@@ -6,6 +6,11 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PAData
     {
+        public PAData(PAResource Resource)
+        {
+            resource = PAResource.PAResourcePerformConstruct();
+            resource = PAResource.PAResourcePerformCopy(Resource,resource);
+        }
         private PAResource resource;
 
         [DllImport("pa")]
@@ -19,10 +24,5 @@ namespace PA_Library
         [DllImport("pa")]
         internal static extern PAData PADataPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PAData from, [MarshalAs(UnmanagedType.IUnknown)] PAData to);
 
-        public PAData(PAResource Resource)
-        {
-            resource = PAResource.PAResourcePerformConstruct();
-            resource = PAResource.PAResourcePerformCopy(Resource,resource);
-        }
     }
 }

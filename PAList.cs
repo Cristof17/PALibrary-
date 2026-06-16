@@ -6,6 +6,9 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PAList
     {
+        public PAList(ArrayList List)
+        {
+        }
         private ArrayList edges;
 
         [DllImport("pa")]
@@ -25,8 +28,5 @@ namespace PA_Library
         [DllImport("pa")]
         internal static extern PAList PAListPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAList PA);
 
-        public PAList(ArrayList List)
-        {
-        }
     }
 }

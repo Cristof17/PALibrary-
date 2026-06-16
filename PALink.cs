@@ -6,6 +6,10 @@ namespace PA_Library
 	[StructLayout(LayoutKind.Sequential)]
 	public struct PALink
 	{
+		public PALink(PAPair P)
+        {
+            p = PAPair.PAPairConstruct();
+        }
 		private PAPair p;
 
 		[DllImport("pa")]
@@ -19,9 +23,5 @@ namespace PA_Library
 		[DllImport("pa")]
 		internal static extern PALink PALinkPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PALink PA);
 
-		public PALink(PAPair P)
-        {
-            p = PAPair.PAPairConstruct();
-        }
 	}
 }

@@ -7,6 +7,13 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PAElement
     {
+        public PAElement(PAData Data, PAStatus Status) : this()
+        {
+            index = PAData.PADataPerformConstruct();
+            index = PAData.PADataPerformCopy(Data,index);
+            status = PAStatus.PAStatusPerformConstruct();
+            status = PAStatus.PAStatusPerformCopy(Status,status);
+        }
         private PAData index;
 
         private PAStatus status;
@@ -28,12 +35,5 @@ namespace PA_Library
         [DllImport("pa")]
         internal static extern PAElement PAElementPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAElement element);
 
-        public PAElement(PAData Data, PAStatus Status) : this()
-        {
-            index = PAData.PADataPerformConstruct();
-            index = PAData.PADataPerformCopy(Data,index);
-            status = PAStatus.PAStatusPerformConstruct();
-            status = PAStatus.PAStatusPerformCopy(Status,status);
-        }
     }
 }

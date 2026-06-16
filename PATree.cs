@@ -6,6 +6,15 @@ namespace PA_Library
 	[StructLayout(LayoutKind.Sequential)]
 	public struct PATree
 	{
+		PATree(PACount N, PACount M, PASeries ADJ, PAElement Sursa) : this()
+		{
+			n = PACount.PACountPerformConstruct();
+			n = PACount.PACountPerformCopy(N,n);
+			m = PACount.PACountPerformConstruct();
+			m = PACount.PACountPerformCopy(M,m);
+			sursa = PAElement.PAElementPerformConstruct();
+			sursa = PAElement.PAElementPerformCopy(Sursa,sursa);
+		}
 		private PACount n;
 
 		private PACount m;
@@ -24,14 +33,5 @@ namespace PA_Library
 		internal static extern PATree PATreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PATree PA);
 		[DllImport("pa")]
 		internal static extern PATree PATreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PATree PA);
-		PATree(PACount N, PACount M, PASeries ADJ, PAElement Sursa) : this()
-		{
-			n = PACount.PACountPerformConstruct();
-			n = PACount.PACountPerformCopy(N,n);
-			m = PACount.PACountPerformConstruct();
-			m = PACount.PACountPerformCopy(M,m);
-			sursa = PAElement.PAElementPerformConstruct();
-			sursa = PAElement.PAElementPerformCopy(Sursa,sursa);
-		}
 	}
 }

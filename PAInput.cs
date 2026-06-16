@@ -6,6 +6,18 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PAInput
     {
+        public PAInput(PACount N, PACount M, PAList ADJ, PAElement Sursa) : this()
+        {
+            n = PACount.PACountPerformConstruct();
+            n = PACount.PACountPerformCopy(N,n);
+            m = PACount.PACountPerformConstruct();
+            m = PACount.PACountPerformCopy(M,m);
+            adj = PAList.PAListPerformConstruct();
+            adj = PAList.PAListPerformCopy(ADJ,adj);
+            sursa = PAElement.PAElementPerformConstruct();
+            sursa = PAElement.PAElementPerformCopy(Sursa,sursa);
+        }
+
         private PACount n;
 
         private PACount m;
@@ -27,16 +39,5 @@ namespace PA_Library
         internal static extern PAInput InputPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAInput PA);
         [DllImport("pa")]
         internal static extern void InputRuin([MarshalAs(UnmanagedType.IUnknown)] PAInput PA);
-        PAInput(PACount N, PACount M, PAList ADJ, PAElement Sursa) : this()
-        {
-            n = PACount.PACountPerformConstruct();
-            n = PACount.PACountPerformCopy(N,n);
-            m = PACount.PACountPerformConstruct();
-            m = PACount.PACountPerformCopy(M,m);
-            adj = PAList.PAListPerformConstruct();
-            adj = PAList.PAListPerformCopy(ADJ,adj);
-            sursa = PAElement.PAElementPerformConstruct();
-            sursa = PAElement.PAElementPerformCopy(Sursa,sursa);
-        }
     }
 }
