@@ -29,7 +29,7 @@ namespace PA_Library
 		// public static extern int PALinkRuin(PAPair p);
 		// [DllImport("palibrary")]
 		[DllImport("pa")]
-		public static extern int PALinkDelete(PALink PA);
+		public static extern int PALinkDelete([MarshalAs(UnmanagedType.IUnknown)] PALink PA);
 		//public
 		//{
 		//Console.WriteLine("Hello world!");
