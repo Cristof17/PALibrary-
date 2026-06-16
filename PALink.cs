@@ -4,7 +4,7 @@ using PA_Library;
 namespace PA_Library
 {
 	[StructLayout(LayoutKind.Sequential)]
-	internal struct PALink
+	public struct PALink
 	{
 		PAPair p;
 

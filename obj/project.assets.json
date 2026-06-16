@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/cristoforrotsching/Downloads/PALibrary--main/Documents/PA-Library/PA-Library.csproj",
+      "projectUniqueName": "/Users/cristoforrotsching/Downloads/PALibrary--main/PA-Library.csproj",
       "projectName": "PA-Library",
-      "projectPath": "/Users/cristoforrotsching/Downloads/PALibrary--main/Documents/PA-Library/PA-Library.csproj",
+      "projectPath": "/Users/cristoforrotsching/Downloads/PALibrary--main/PA-Library.csproj",
       "packagesPath": "/Users/cristoforrotsching/.nuget/packages/",
-      "outputPath": "/Users/cristoforrotsching/Downloads/PALibrary--main/Documents/PA-Library/obj/",
+      "outputPath": "/Users/cristoforrotsching/Downloads/PALibrary--main/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/cristoforrotsching/.nuget/NuGet/NuGet.Config"
