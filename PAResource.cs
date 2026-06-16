@@ -9,13 +9,13 @@ namespace PA_Library
         public PANumber value;
 
         [DllImport("pa")]
-        static extern PAResource PAResourcePerformConstruct();
+        internal static extern PAResource PAResourcePerformConstruct();
         [DllImport("pa")]
-        static extern PAResource PAResourcePerformInit([MarshalAs(UnmanagedType.IUnknown)] PAResource resource, [MarshalAs(UnmanagedType.IUnknown)] PANumber number);
+        internal static extern PAResource PAResourcePerformInit([MarshalAs(UnmanagedType.IUnknown)] PAResource resource, [MarshalAs(UnmanagedType.IUnknown)] PANumber number);
         [DllImport("pa")]
-        static extern PAResource PAResourcePerformCopy([MarshalAs(UnmanagedType.IUnknown)] PAResource from, [MarshalAs(UnmanagedType.IUnknown)] PAResource to);
+        internal static extern PAResource PAResourcePerformCopy([MarshalAs(UnmanagedType.IUnknown)] PAResource from, [MarshalAs(UnmanagedType.IUnknown)] PAResource to);
         [DllImport("pa")]
-        static extern int PAResourcePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAResource PA);
+        internal static extern int PAResourcePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAResource PA);
         // [DllImport("pa")]
         // static extern PAResourcePerformD();
         [DllImport("pa")]

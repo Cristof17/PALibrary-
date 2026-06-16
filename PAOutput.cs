@@ -9,17 +9,17 @@ namespace PA_Library
         public BFSRecord result;
 
         [DllImport("pa")]
-        static extern Output OutputPerformConstruct();
+        internal static extern Output OutputPerformConstruct();
         [DllImport("pa")]
-        static extern Output OutputPerformInit([MarshalAs(UnmanagedType.IUnknown)] Output Output, [MarshalAs(UnmanagedType.IUnknown)] BFSRecord Record);
+        internal static extern Output OutputPerformInit([MarshalAs(UnmanagedType.IUnknown)] Output Output, [MarshalAs(UnmanagedType.IUnknown)] BFSRecord Record);
         [DllImport("pa")]
-        static extern Output OutputPerformCopy([MarshalAs(UnmanagedType.IUnknown)] Output Output, [MarshalAs(UnmanagedType.IUnknown)] Output to);
+        internal static extern Output OutputPerformCopy([MarshalAs(UnmanagedType.IUnknown)] Output Output, [MarshalAs(UnmanagedType.IUnknown)] Output to);
         [DllImport("pa")]
-        static extern void OutputPerformPrint(int resulrt);
+        internal static extern void OutputPerformPrint(int resulrt);
         //struct Output dispose();
         [DllImport("pa")]
-        static extern void OutputPerformDelete([MarshalAs(UnmanagedType.IUnknown)] Output PA);
+        internal static extern void OutputPerformDelete([MarshalAs(UnmanagedType.IUnknown)] Output PA);
         [DllImport("pa")]
-        static extern void OutputPerformRuin([MarshalAs(UnmanagedType.IUnknown)] Output PA);
+        internal static extern void OutputPerformRuin([MarshalAs(UnmanagedType.IUnknown)] Output PA);
     }
 }

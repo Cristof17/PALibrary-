@@ -9,14 +9,14 @@ namespace PA_Library
         public PANumber value;
 
         [DllImport("pa")]
-        static extern PACount PACountPerformConstruct();
+        internal static extern PACount PACountPerformConstruct();
         [DllImport("pa")]
-        static extern PACount PACountPerformInit([MarshalAs(UnmanagedType.IUnknown)] PACount Count, [MarshalAs(UnmanagedType.IUnknown)] PANumber Number);
+        internal static extern PACount PACountPerformInit([MarshalAs(UnmanagedType.IUnknown)] PACount Count, [MarshalAs(UnmanagedType.IUnknown)] PANumber Number);
         [DllImport("pa")]
-        static extern PACount PACountPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PACount from, [MarshalAs(UnmanagedType.IUnknown)] PACount to);
+        internal static extern PACount PACountPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PACount from, [MarshalAs(UnmanagedType.IUnknown)] PACount to);
         [DllImport("pa")]
-        static extern PACount PACountPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PACount PA);
+        internal static extern PACount PACountPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PACount PA);
         [DllImport("pa")]
-        static extern PACount PACountPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PACount PA);
+        internal static extern PACount PACountPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PACount PA);
     }
 }
