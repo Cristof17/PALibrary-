@@ -6,6 +6,10 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PANumber
     {
+        public PANumber(int Value) : this()
+        {
+            value = Value;
+        }
         private int value;
 
         [DllImport("pa")]
