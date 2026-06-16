@@ -1,10 +1,11 @@
 // using System.Xml.XPath;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 namespace PA_Library
 {
 	[StructLayout(LayoutKind.Sequential)]
-	protected struct PATree
+	protected struct PATransposeTree
 
 	//public readonly class PAGraf
 	//public struct PAGraf
@@ -18,21 +19,21 @@ namespace PA_Library
 		PAElement sursa;
 
 		[DllImport("pa")]
-		static extern PATree PATreePerformConstruct();
+		static extern PATransposeTree PATransposeTreePerformConstruct();
 		// DllExport struct PACount PATreeSize();
 		[DllImport("pa")]
-		static extern PATree PATreePerformInit([MarshalAs(UnmanagedType.IUnknown)] PATree Tree, [MarshalAs(UnmanagedType.IUnknown)] PACount Count, [MarshalAs(UnmanagedType.IUnknown)] PACount Count2, [MarshalAs(UnmanagedType.IUnknown)] PAList List, [MarshalAs(UnmanagedType.IUnknown)] PAElement Element);
+		static extern PATransposeTree PATransposeTreePerformInit([MarshalAs(UnmanagedType.IUnknown)] PATransposeTree Tree, [MarshalAs(UnmanagedType.IUnknown)] PATree Value);
 		// DllExport HRESULT PATreePerformCopy();
 		// DllExport HRESULT PATreePerformPutCount(struct PACount, struct PACount);
 		// struct PATree PATreePutList(struct PATree, struct PAList);
 		// DllExport HRESULT PATreePerformPutElement();
 		// DllExport HRESULT PATreePerformPutSeries();
 		[DllImport("pa")]
-		static extern PATree PATreePerformCopy([MarshalAs(UnmanagedType.IUnknown)] PATree from, [MarshalAs(UnmanagedType.IUnknown)] PATree to);
+		static extern PATransposeTree PATransposeTreePerformCopy([MarshalAs(UnmanagedType.IUnknown)] PATransposeTree from, [MarshalAs(UnmanagedType.IUnknown)] PATree to);
 		[DllImport("pa")]
-		static extern PATree PATreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PATree PA);
+		static extern PATransposeTree PATransposeTreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PATransposeTree PA);
 		[DllImport("pa")]
-		static extern PATree PATreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PATree PA);
+		static extern PATransposeTree PATransposeTreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PATransposeTree PA);
 		// [DllImport("palibrary")]
 		// public static extern void PATreeSearch(PAElement nod);
 		// [DllImport("palibrary")]
@@ -48,7 +49,8 @@ namespace PA_Library
 		// private  PATree tree { get;}
 
 		// public PATree(Cardinal n, Cardinal m, Lista adj, Punct sursa)
-		PATree(PACount n, PACount m, PASeries adj, PAElement sursa) : this()
+		// PANTree(PATree tree) : this()
+		PATransposeTree(PATree tree) : this()
 		{
 
 		}

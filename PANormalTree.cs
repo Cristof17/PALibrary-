@@ -1,10 +1,11 @@
 // using System.Xml.XPath;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 namespace PA_Library
 {
 	[StructLayout(LayoutKind.Sequential)]
-	protected struct PATree
+	protected struct PANormalTree
 
 	//public readonly class PAGraf
 	//public struct PAGraf
@@ -18,21 +19,21 @@ namespace PA_Library
 		PAElement sursa;
 
 		[DllImport("pa")]
-		static extern PATree PATreePerformConstruct();
+		static extern PANormalTree PATreePerformConstruct();
 		// DllExport struct PACount PATreeSize();
 		[DllImport("pa")]
-		static extern PATree PATreePerformInit([MarshalAs(UnmanagedType.IUnknown)] PATree Tree, [MarshalAs(UnmanagedType.IUnknown)] PACount Count, [MarshalAs(UnmanagedType.IUnknown)] PACount Count2, [MarshalAs(UnmanagedType.IUnknown)] PAList List, [MarshalAs(UnmanagedType.IUnknown)] PAElement Element);
+		static extern PANormalTree PATreePerformInit([MarshalAs(UnmanagedType.IUnknown)] PANormalTree Tree, [MarshalAs(UnmanagedType.IUnknown)] PATree tree);
 		// DllExport HRESULT PATreePerformCopy();
 		// DllExport HRESULT PATreePerformPutCount(struct PACount, struct PACount);
 		// struct PATree PATreePutList(struct PATree, struct PAList);
 		// DllExport HRESULT PATreePerformPutElement();
 		// DllExport HRESULT PATreePerformPutSeries();
 		[DllImport("pa")]
-		static extern PATree PATreePerformCopy([MarshalAs(UnmanagedType.IUnknown)] PATree from, [MarshalAs(UnmanagedType.IUnknown)] PATree to);
+		static extern PANormalTree PATreePerformCopy([MarshalAs(UnmanagedType.IUnknown)] PANormalTree from, [MarshalAs(UnmanagedType.IUnknown)] PANormalTree to);
 		[DllImport("pa")]
-		static extern PATree PATreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PATree PA);
+		static extern PANormalTree PATreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PANormalTree PA);
 		[DllImport("pa")]
-		static extern PATree PATreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PATree PA);
+		static extern PANormalTree PATreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PANormalTree PA);
 		// [DllImport("palibrary")]
 		// public static extern void PATreeSearch(PAElement nod);
 		// [DllImport("palibrary")]
@@ -48,7 +49,7 @@ namespace PA_Library
 		// private  PATree tree { get;}
 
 		// public PATree(Cardinal n, Cardinal m, Lista adj, Punct sursa)
-		PATree(PACount n, PACount m, PASeries adj, PAElement sursa) : this()
+		PANormalTree(PATree tree) : this()
 		{
 
 		}
