@@ -21,5 +21,10 @@ namespace PA_Library
         [DllImport("pa")]
         internal static extern int PAResourcePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAResource PA);
 
+        public PAResource(PANumber Number)
+        {
+            value = PANumber.PANumberPerformConstruct();
+            value = PANumber.PANumberPerformCopy(Number,value);
+        }
     }
 }
