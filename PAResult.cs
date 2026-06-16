@@ -5,7 +5,7 @@ namespace PA_Library
 {
 	public enum PAResult
 	{
-		PARESULT_SUCCESS,
-		PARESULT_FAIL
+		SUCCESS,
+		FAIL
 	}
 }
