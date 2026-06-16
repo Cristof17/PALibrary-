@@ -6,11 +6,12 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PAList
     {
-        public PAList(ArrayList List)
+        public PAList(PACount N, PASeries[] adj_node) : this()
         {
-            
+        
         }
-        private ArrayList edges;
+        private PACount n;
+        private PASeries[] edges;
 
         [DllImport("pa")]
         internal static extern PAList PAListPerformConstruct();
