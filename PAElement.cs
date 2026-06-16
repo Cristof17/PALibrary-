@@ -28,11 +28,12 @@ namespace PA_Library
         [DllImport("pa")]
         internal static extern PAElement PAElementPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAElement element);
 
-        public PAElement(PAData data, PAStatus status) : this()
+        public PAElement(PAData Data, PAStatus Status) : this()
         {
             index = PAData.PADataPerformConstruct();
             status = PAStatus.PAStatusPerformConstruct();
-            // index = PAData();
+            PAStatus.PAStatusPerformCopy(Status,status);
+            PAData.PADataPerformCopy(Data,index);
         }
     }
 }
