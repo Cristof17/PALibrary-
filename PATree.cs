@@ -6,7 +6,7 @@ namespace PA_Library
 	[StructLayout(LayoutKind.Sequential)]
 	public struct PATree
 	{
-		PATree(PACount N, PACount M, PASeries ADJ, PAElement Sursa) : this()
+		public PATree(PACount N, PACount M, PASeries ADJ, PAElement Sursa) : this()
 		{
 			n = PACount.PACountPerformConstruct();
 			n = PACount.PACountPerformCopy(N,n);

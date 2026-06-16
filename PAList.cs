@@ -8,6 +8,7 @@ namespace PA_Library
     {
         public PAList(ArrayList List)
         {
+            
         }
         private ArrayList edges;
 

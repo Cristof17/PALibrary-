@@ -6,6 +6,11 @@ namespace PA_Library
 	[StructLayout(LayoutKind.Sequential)]
 	public struct PATransposeTree
 	{
+		public PATransposeTree(PATree tree) : this()
+		{
+			tree = PATree.PATreePerformConstruct();
+			tree = PATree.PATreePerformCopy(tree,tree);
+		}
 		private PATree tree;
 
 		[DllImport("pa")]
@@ -18,10 +23,5 @@ namespace PA_Library
 		internal static extern PATransposeTree PATransposeTreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PATransposeTree PA);
 		[DllImport("pa")]
 		internal static extern PATransposeTree PATransposeTreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PATransposeTree PA);
-		PATransposeTree(PATree tree) : this()
-		{
-			tree = PATree.PATreePerformConstruct();
-			tree = PATree.PATreePerformCopy(tree,tree);
-		}
 	}
 }

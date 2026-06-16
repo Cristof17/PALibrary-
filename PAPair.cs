@@ -6,7 +6,7 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PAPair
     {
-        PAPair(PAElement Node, PAElement Neigh) : this()
+        public PAPair(PAElement Node, PAElement Neigh) : this()
         {
             node = PAElement.PAElementPerformConstruct();
             node = PAElement.PAElementPerformCopy(Node,node);

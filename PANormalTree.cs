@@ -6,7 +6,7 @@ namespace PA_Library
 	[StructLayout(LayoutKind.Sequential)]
 	public struct PANormalTree
 	{
-		PANormalTree(PATree Tree) : this()
+		public PANormalTree(PATree Tree) : this()
 		{
 			tree = PATree.PATreePerformConstruct();
 			tree = PATree.PATreePerformCopy(Tree,tree);	
