@@ -25,8 +25,10 @@ namespace PA_Library
         [DllImport("pa")]
         internal static extern PASeries PASeriesPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PASeries PA);
 
-        public PASeries(PACount n, PAList[] adj) : this()
+        public PASeries(PACount N, PAList[] ADJ) : this()
         {
+            N = PACount.PACountPerformConstruct();
+            N = PACount.PACountPerformCopy(N,n);
         }
     }
 }

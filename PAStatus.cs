@@ -6,7 +6,7 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PAStatus
     {
-        private int Visited;
+        private int visited;
 
         public PAResource resource;
 
@@ -20,5 +20,11 @@ namespace PA_Library
         internal static extern PAStatus PAStatusPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAStatus PA);
         [DllImport("pa")]
         internal static extern PAStatus PAStatusPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAStatus PA);
+
+        public PAStatus(int Visited) : this()
+        {
+            // Visited = visited;
+            visited = Visited;
+        }
     }
 }
