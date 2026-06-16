@@ -32,12 +32,12 @@ namespace PA_Library
             
         }
 
-        public PANode(PAData index, PANode next)
+        public PANode(PAElement element, PANode next)
         {
             
         }
     
-        public PANode(PAData index, PANode next, PAStatus status)
+        public PANode(PAElement element)
         {
 
         }
@@ -108,7 +108,7 @@ namespace PA_Library
         //struct PAStare
         //public PAStare stare { get; }
 
-        // public static operator ++(PANode node) => node.element.index.value.value.value++;
+        public static PANode operator ++(PANode node) => PANode(PADataPerformInit(node.element,node.element.index.resource.value.value++));
         // public static PAElement operator ++(PAElement a) => a.data.toPAElement();//;
         // public static explicit operator PAData(PANode d) => d.;
         // public static implicit operator byte(PAElement d) => (byte)d.data.value;
