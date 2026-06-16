@@ -6,10 +6,7 @@ using System.Runtime.InteropServices;
 [StructLayout(LayoutKind.Sequential)]
 protected struct PANumber
 {
-    // [MarshalAs(UnmanagedType.IUnknown)]
     int value;
-    // int value;
-    // [FieldOffset(0)]
 
     [DllImport("pa")]
     static extern PANumber PANumberPerformConstruct();
@@ -21,6 +18,4 @@ protected struct PANumber
     static extern PANumber PANumberPerformDelete([MarshalAs(UnmanagedType.IUnknown)]PANumber PA);
     [DllImport("pa")]
     static extern PANumber PANumberPerformRuin([MarshalAs(UnmanagedType.IUnknown)]PANumber PA);
-    // [StructLayout(LayoutKind.Sequential)]
-    // public struct PANumber Number;
 }

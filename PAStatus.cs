@@ -1,19 +1,13 @@
 using PA_Library;
-// using System;
 using System.Runtime.InteropServices;
-// using System.Runtime.Serialization;
-// using System.ComponentModel;
-// using System.Inter
-//public class PAStare
-//public class PAStare
+
 [StructLayout(LayoutKind.Sequential)]
 protected struct PAStatus
 {
     int Visited;
 
     PAResource resource;
-    // [StructLayout(LayoutKind.Sequential)]
-    // struct PAStatus status;
+    
     [DllImport("pa")]
     static extern PAStatus PAStatusPerformConstruct();
     [DllImport("pa")]
@@ -24,13 +18,4 @@ protected struct PAStatus
     static extern PAStatus PAStatusPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAStatus PA);
     [DllImport("pa")]
     static extern PAStatus PAStatusPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAStatus PA);
-
-    // [FieldOffset(0)]
-    // PAStatus(int Visited) : this()
-    // {
-
-    // }
-    //struct PAStatus
-    // VISITED,
-    // NOT_VISITED
 }

@@ -22,15 +22,9 @@ namespace PA_Library
         [DllImport("pa")]
         static extern int PAPairRuin([MarshalAs(UnmanagedType.IUnknown)] PAPair PA);
 
-        // [StructLayout(LayoutKind.Sequential)]
-        // private struct PAPair Pair;
-
-        // public PAPair(Element Node, Element Neigh)
         PAPair(PAElement Node, PAElement Neigh) : this()
         {
 
         }
-        // PANod node;
-        // PANod neigh;
     }
 }

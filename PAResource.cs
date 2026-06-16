@@ -19,13 +19,4 @@ protected struct PAResource
     // static extern PAResourcePerformD();
     [DllImport("pa")]
     static extern int PAResourcePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAResource PA);
-    // public PAResource Resource;
-
-    // [FieldOffset(0)]
-    // public PANumber Value;
-    // public Resursa(int value)
-    // public PAResource(int value)
-    // {
-
-    // }
 }
