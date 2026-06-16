@@ -4,7 +4,7 @@ using PA_Library;
 namespace PA_Library
 {
 	[StructLayout(LayoutKind.Sequential)]
-	protected struct PATransposeTree
+	internal struct PATransposeTree
 	{
 		PACount n;
 

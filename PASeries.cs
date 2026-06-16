@@ -4,7 +4,7 @@ using PA_Library;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    protected struct PASeries
+    internal struct PASeries
     {
         PACount n;
 
