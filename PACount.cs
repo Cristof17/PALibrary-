@@ -40,5 +40,10 @@ namespace PA_Library
             PANumber number = count.value;
             return value.Equals(number);
         }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }

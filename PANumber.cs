@@ -40,5 +40,10 @@ namespace PA_Library
         
             return other == value;
         }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }
