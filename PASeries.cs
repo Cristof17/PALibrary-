@@ -6,9 +6,9 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PASeries
     {
-        public PACount n;
+        private PACount n;
 
-        public PAList[] adj;
+        private PAList[] adj;
 
         [DllImport("pa")]
         internal static extern PASeries PASeriesPerformConstruct();

@@ -6,7 +6,7 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PAStatus
     {
-        public int Visited;
+        private int Visited;
 
         public PAResource resource;
 

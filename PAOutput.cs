@@ -6,7 +6,7 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PAOutput
     {
-        public BFSRecord result;
+        private BFSRecord result;
 
         [DllImport("pa")]
         internal static extern Output OutputPerformConstruct();

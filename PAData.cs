@@ -6,7 +6,7 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PAData
     {
-        public PAResource resource;
+        private PAResource resource;
 
         [DllImport("pa")]
         internal static extern PAData PADataPerformConstruct();

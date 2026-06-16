@@ -6,7 +6,7 @@ namespace PA_Library
 [   StructLayout(LayoutKind.Sequential)]
     public struct PAResource
     {
-        public PANumber value;
+        private PANumber value;
 
         [DllImport("pa")]
         internal static extern PAResource PAResourcePerformConstruct();

@@ -6,13 +6,13 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PAInput
     {
-        public PACount n;
+        private PACount n;
 
-        public PACount m;
+        private PACount m;
 
-        public PAList adj;
+        private PAList adj;
 
-        public PAElement sursa;
+        private PAElement sursa;
 
         [DllImport("pa")]
         internal static extern Input InputPerformConstruct();

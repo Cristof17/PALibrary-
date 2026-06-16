@@ -26,7 +26,7 @@ namespace PA_Library
     // [DllImport("palibrary")]
     // public static extern int PAElementIsVisited();
     // [DllImport("palibrary")]
-        public PAElement element;
+        private PAElement element;
 
         public PANode()
         {

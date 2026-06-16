@@ -6,9 +6,9 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PAPair
     {
-        public PAElement Node;
+        private PAElement Node;
 
-        public PAElement Neigh;
+        private PAElement Neigh;
 
         [DllImport("pa")]
         internal static extern PAPair PAPairConstruct();

@@ -7,9 +7,9 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PAElement
     {
-        public PAData index;
+        private PAData index;
 
-        public PAStatus status;
+        private PAStatus status;
 
         [DllImport("pa")]
         internal static extern PAElement PAElementPerformConstruct();

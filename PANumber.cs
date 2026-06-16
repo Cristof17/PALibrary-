@@ -6,7 +6,7 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PANumber
     {
-        public int value;
+        private int value;
 
         [DllImport("pa")]
         internal static extern PANumber PANumberPerformConstruct();
