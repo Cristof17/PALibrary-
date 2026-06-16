@@ -28,5 +28,10 @@ namespace PA_Library
         public static bool operator <(PANumber a, PANumber b) => a.value < b.value;
         public static bool operator >(PANumber a, PANumber b) => a.value > b.value;
         public static bool operator ==(PANumber a, PANumber b) => a.value == b.value;
+        public static bool operator !=(PANumber a, PANumber b) => a.value != b.value;
+        // public static bool operator int(PANumber a) => (int) a.value;
+        public static implicit operator int(PANumber a) => (int) a.value;
+        // public static explicit operator PANod
+        public static explicit operator PANumber(int value) => new PANumber(value);
     }
 }

@@ -29,5 +29,8 @@ namespace PA_Library
         public static bool operator<(PACount a, PACount b) => a.value < b.value;
         public static bool operator>(PACount a, PACount b) => a.value > b.value;
         public static bool operator==(PACount a, PACount b) => a.value == b.value;
+        public static bool operator!=(PACount a, PACount b) => a.value != b.value;
+        public static implicit operator int(PACount count) => (int) count.value;
+        public static explicit operator PACount(int value) => new PACount(new PANumber(value));
     }
 }
