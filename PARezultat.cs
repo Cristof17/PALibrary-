@@ -2,7 +2,7 @@ using PA_Library;
 
 namespace PA_Library
 {
-    internal enum PARezultat
+    public enum PARezultat
     {
         SUCCESS,
         FAIL
