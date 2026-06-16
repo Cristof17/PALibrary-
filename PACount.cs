@@ -33,17 +33,5 @@ namespace PA_Library
         public static bool operator!=(PACount a, PACount b) => a.value != b.value;
         public static implicit operator int(PACount count) => (int) count.value;
         public static explicit operator PACount(int value) => new PACount(new PANumber(value));
-
-        public override bool Equals(Object o)
-        {
-            PACount count = (PACount)o;
-            PANumber number = count.value;
-            return value.Equals(number);
-        }
-
-        public override int GetHashCode()
-        {
-            return base.GetHashCode();
-        }
     }
 }

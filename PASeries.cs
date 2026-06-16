@@ -6,19 +6,20 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PASeries
     {
-        public PASeries(PACount M, PAList[] ADJ) : this()
+        public PASeries(PACount M, PAElement[] ADJ) : this()
         {
             m = PACount.PACountPerformConstruct();
             m = PACount.PACountPerformCopy(M,m);
+            
+            PACount x = PACount.PACountPerformConstruct();
+            while (x < M)
+            {
+                PAElement aux = PAElement.PAElementPerformConstruct();
+                aux = PAElement.PAElementPerformCopy(ADJ[x],aux);
+                adj[x] = PAElement.PAElementPerformCopy(aux,adj[x]);
+                x++;
+            }
 
-            // PACount x = PACount.PACountPerformConstruct();
-            // while (x < M)
-            // {
-            //     PAList aux = PAList.PAListPerformConstruct();
-            //     aux = PAList.PAListPerformCopy(ADJ[x],aux);
-            //     adj[x] = PAList.PAListPerformCopy(aux,adj[x]);
-            //     x++;
-            // }
             // PASeriesPerformCopy(ADJ,adj);
             // PAList.PAListPerformCopy(ADJ,adj);
             // PASeries series;
@@ -27,7 +28,7 @@ namespace PA_Library
         }
         private PACount m;
 
-        private PAList[] adj;
+        private PAElement[] adj;
 
         [DllImport("pa")]
         internal static extern PASeries PASeriesPerformConstruct();
