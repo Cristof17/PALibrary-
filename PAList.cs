@@ -10,8 +10,8 @@ namespace PA_Library
         {
             n = PACount.PACountPerformConstruct();
             n = PACount.PACountPerformCopy(N,n);
-            // PACount x;
-            // x = PACount.PACountPerformConstruct();
+            PACount x = PACount.PACountPerformConstruct();
+
         }
         private PACount n;
         private PASeries[] adj_node;

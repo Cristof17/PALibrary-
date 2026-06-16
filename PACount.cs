@@ -26,5 +26,8 @@ namespace PA_Library
         internal static extern PACount PACountPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PACount PA);
 
         public static PACount operator++(PACount count) => PACount.PACountPerformInit(count,count.value++);
+        public static bool operator<(PACount a, PACount b) => a.value < b.value;
+        public static bool operator>(PACount a, PACount b) => a.value > b.value;
+        public static bool operator==(PACount a, PACount b) => a.value == b.value;
     }
 }

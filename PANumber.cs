@@ -1,4 +1,5 @@
 using System.Runtime.InteropServices;
+using System.Xml.Serialization;
 using PA_Library;
 
 namespace PA_Library
@@ -24,5 +25,8 @@ namespace PA_Library
         internal static extern PANumber PANumberPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PANumber PA);
 
         public static PANumber operator++(PANumber Number) => PANumber.PANumberPerformInit(Number,Number.value++);
+        public static bool operator <(PANumber a, PANumber b) => a.value < b.value;
+        public static bool operator >(PANumber a, PANumber b) => a.value > b.value;
+        public static bool operator ==(PANumber a, PANumber b) => a.value == b.value;
     }
 }
