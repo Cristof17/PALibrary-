@@ -18,5 +18,11 @@ namespace PA_Library
         internal static extern PAData PADataPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAData PA);
         [DllImport("pa")]
         internal static extern PAData PADataPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PAData from, [MarshalAs(UnmanagedType.IUnknown)] PAData to);
+
+        public PAData(PAResource Resource)
+        {
+            resource = PAResource.PAResourcePerformConstruct();
+            resource = PAResource.PAResourcePerformCopy(Resource,resource);
+        }
     }
 }

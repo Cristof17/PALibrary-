@@ -27,9 +27,16 @@ namespace PA_Library
         internal static extern PAInput InputPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAInput PA);
         [DllImport("pa")]
         internal static extern void InputRuin([MarshalAs(UnmanagedType.IUnknown)] PAInput PA);
-        PAInput(PACount n, PACount m, PASeries adj, PAElement sursa) : this()
+        PAInput(PACount N, PACount M, PAList ADJ, PAElement Sursa) : this()
         {
-
+            n = PACount.PACountPerformConstruct();
+            n = PACount.PACountPerformCopy(N,n);
+            m = PACount.PACountPerformConstruct();
+            m = PACount.PACountPerformCopy(M,m);
+            adj = PAList.PAListPerformConstruct();
+            adj = PAList.PAListPerformCopy(ADJ,adj);
+            sursa = PAElement.PAElementPerformConstruct();
+            sursa = PAElement.PAElementPerformCopy(Sursa,sursa);
         }
     }
 }
