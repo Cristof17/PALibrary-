@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Data.Common;
+using System.Runtime.InteropServices;
 using PA_Library;
 
 namespace PA_Library
@@ -23,5 +24,7 @@ namespace PA_Library
         internal static extern PACount PACountPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PACount PA);
         [DllImport("pa")]
         internal static extern PACount PACountPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PACount PA);
+
+        public static PACount operator++(PACount count) => PACount.PACountPerformInit(count,count.value++);
     }
 }

@@ -10,6 +10,11 @@ namespace PA_Library
         {
             m = PACount.PACountPerformConstruct();
             m = PACount.PACountPerformCopy(M,m);
+            // PASeriesPerformCopy(ADJ,adj);
+            // PAList.PAListPerformCopy(ADJ,adj);
+            // PASeries series;
+            // PACount x = PACount.PACountPerformConstruct();
+            // while (x.)
         }
         private PACount m;
 

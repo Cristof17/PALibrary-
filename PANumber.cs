@@ -22,5 +22,7 @@ namespace PA_Library
         internal static extern PANumber PANumberPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PANumber PA);
         [DllImport("pa")]
         internal static extern PANumber PANumberPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PANumber PA);
+
+        public static PANumber operator++(PANumber Number) => PANumber.PANumberPerformInit(Number,Number.value++);
     }
 }
