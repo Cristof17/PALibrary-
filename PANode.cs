@@ -108,7 +108,7 @@ namespace PA_Library
         //struct PAStare
         //public PAStare stare { get; }
 
-        // public static void operator ++(PANode node) => ++;
+        public static operator ++(PANode node) => node.element.index.value.value.value++;
         // public static PAElement operator ++(PAElement a) => a.data.toPAElement();//;
         // public static explicit operator PAData(PANode d) => d.;
         // public static implicit operator byte(PAElement d) => (byte)d.data.value;
@@ -138,7 +138,7 @@ namespace PA_Library
         // public static explicit operator PAElement(ushort b) => Copy(b);// new PAElement(b);
         // public static implicit operator ulong(PAElement d) => (ulong)d.;
         // public static explicit operator PAElement(ulong b) => Copy(b);// new PAElement(b);
-        // public static PAElement Copy(byte Data)
+        public static PAElement Copy(byte Data)
     //     {
     //         PAData data;
     //         PAElement node = default;
