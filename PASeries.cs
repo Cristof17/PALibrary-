@@ -6,12 +6,12 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PASeries
     {
-        public PASeries(PACount N, PAList[] ADJ) : this()
+        public PASeries(PACount M, PAList[] ADJ) : this()
         {
-            N = PACount.PACountPerformConstruct();
-            N = PACount.PACountPerformCopy(N,n);
+            m = PACount.PACountPerformConstruct();
+            m = PACount.PACountPerformCopy(M,m);
         }
-        private PACount n;
+        private PACount m;
 
         private PAList[] adj;
 

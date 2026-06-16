@@ -8,10 +8,13 @@ namespace PA_Library
     {
         public PAList(PACount N, PASeries[] adj_node) : this()
         {
-        
+            n = PACount.PACountPerformConstruct();
+            n = PACount.PACountPerformCopy(N,n);
+            // PACount x;
+            // x = PACount.PACountPerformConstruct();
         }
         private PACount n;
-        private PASeries[] edges;
+        private PASeries[] adj_node;
 
         [DllImport("pa")]
         internal static extern PAList PAListPerformConstruct();
