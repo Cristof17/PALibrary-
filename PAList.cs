@@ -11,15 +11,15 @@ namespace PA_Library
             n = PACount.PACountPerformConstruct();
             n = PACount.PACountPerformCopy(N,n);
 
-            PACount x = PACount.PACountPerformConstruct();
-            while (x < n)
-            {
-                // adj_node[x] = PASerie
-                PASeries aux = PASeries.PASeriesPerformConstruct();
-                aux = PASeries.PASeriesPerformCopy(adj_node[x], aux);
-                adj_node[x] = PASeries.PASeriesPerformCopy(aux,adj_node[x]);
-                x++;
-            }
+            // PACount x = PACount.PACountPerformConstruct();
+            // while (x < n)
+            // {
+            //     // adj_node[x] = PASerie
+            //     PASeries aux = PASeries.PASeriesPerformConstruct();
+            //     aux = PASeries.PASeriesPerformCopy(adj_node[x], aux);
+            //     adj_node[x] = PASeries.PASeriesPerformCopy(aux,adj_node[x]);
+            //     x++;
+            // }
         }
         private PACount n;
         private PASeries[] adj_node;

@@ -11,14 +11,14 @@ namespace PA_Library
             m = PACount.PACountPerformConstruct();
             m = PACount.PACountPerformCopy(M,m);
 
-            PACount x = PACount.PACountPerformConstruct();
-            while (x < M)
-            {
-                PAList aux = PAList.PAListPerformConstruct();
-                aux = PAList.PAListPerformCopy(ADJ[x],aux);
-                adj[x] = PAList.PAListPerformCopy(aux,adj[x]);
-                x++;
-            }
+            // PACount x = PACount.PACountPerformConstruct();
+            // while (x < M)
+            // {
+            //     PAList aux = PAList.PAListPerformConstruct();
+            //     aux = PAList.PAListPerformCopy(ADJ[x],aux);
+            //     adj[x] = PAList.PAListPerformCopy(aux,adj[x]);
+            //     x++;
+            // }
             // PASeriesPerformCopy(ADJ,adj);
             // PAList.PAListPerformCopy(ADJ,adj);
             // PASeries series;
