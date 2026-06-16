@@ -6,9 +6,10 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PACount
     {
-        PACount()
+        PACount(PANumber Number) : this()
         {
             value = PANumber.PANumberPerformConstruct();
+            PANumber.PANumberPerformCopy(Number,value);
         }
         private PANumber value;
 
