@@ -6,7 +6,7 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PAList
     {
-        ArrayList edges;
+        public ArrayList edges;
 
         [DllImport("pa")]
         static extern PAList PAListPerformConstruct();

@@ -6,7 +6,7 @@ namespace PA_Library
 	[StructLayout(LayoutKind.Sequential)]
 	public struct PALink
 	{
-		PAPair p;
+		public PAPair p;
 
 		[DllImport("pa")]
 		static extern PALink PALinkPerformConstruct();

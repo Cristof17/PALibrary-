@@ -6,9 +6,9 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PAElement
     {
-        PAData index;
+        public PAData index;
 
-        PAStatus status;
+        public PAStatus status;
 
         [DllImport("pa")]
         static extern PAElement PAElementPerformConstruct();
@@ -26,5 +26,7 @@ namespace PA_Library
         static extern PAElement PAElementPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAElement element);
         [DllImport("pa")]
         static extern PAElement PAElementPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAElement element);
+
+        
     }
 }

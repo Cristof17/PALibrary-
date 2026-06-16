@@ -1,17 +1,17 @@
-using System.Linq.Expressions;
+// using System.Linq.Expressions;
 using PA_Library;
-using System.Reflection;
+// using System.Reflection;
 // using System.InteropServices;
-using System.Runtime.InteropServices;
+// using System.Runtime.InteropServices;
 using System.Runtime.CompilerServices;
-using System.Xml.XPath;
+// using System.Xml.XPath;
 
 namespace PA_Library
 {
     // [StructLayout(LayoutKind.Sequntial)]
     // struct PAElement
-    // public struct PAElement
-    // {
+    public class PANode
+    {
     // [DllImport("palibrary")]
     // public static extern  PAElement PAElementConstruct(PAData Data, PAElement Next, PAStatus Status);
     // [DllImport("palibrary")]
@@ -25,10 +25,22 @@ namespace PA_Library
     // [DllImport("palibrary")]
     // public static extern int PAElementIsVisited();
     // [DllImport("palibrary")]
-    // public Punct(Data index, Punct next, Stare status)
-    // {
+        public PAElement element;
 
-    // }
+        public PANode()
+        {
+            
+        }
+
+        public PANode(PAData index, PANode next)
+        {
+            
+        }
+    
+        public PANode(PAData index, PANode next, PAStatus status)
+        {
+
+        }
         // Node)
         // {
         //     data = Node.data;
@@ -96,9 +108,9 @@ namespace PA_Library
         //struct PAStare
         //public PAStare stare { get; }
 
-        //public void operator ++() => data.value++;
+        // public static void operator ++(PANode node) => ++;
         // public static PAElement operator ++(PAElement a) => a.data.toPAElement();//;
-        // public static explicit operator PAData(PAElement d) => d.data;
+        // public static explicit operator PAData(PANode d) => d.;
         // public static implicit operator byte(PAElement d) => (byte)d.data.value;
         // public static explicit operator PAElement(byte b) => Copy(b);
         // public static implicit operator int(PAElement d) => (int)d.data.value;
@@ -126,7 +138,7 @@ namespace PA_Library
         // public static explicit operator PAElement(ushort b) => Copy(b);// new PAElement(b);
         // public static implicit operator ulong(PAElement d) => (ulong)d.;
         // public static explicit operator PAElement(ulong b) => Copy(b);// new PAElement(b);
-    //     public static PAElement Copy(byte Data)
+        // public static PAElement Copy(byte Data)
     //     {
     //         PAData data;
     //         PAElement node = default;
@@ -219,4 +231,5 @@ namespace PA_Library
     //         //return nod;
     //     }
     // }
+    }
 }

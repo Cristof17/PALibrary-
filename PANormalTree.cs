@@ -6,13 +6,13 @@ namespace PA_Library
 	[StructLayout(LayoutKind.Sequential)]
 	public struct PANormalTree
 	{
-		PACount n;
+		public PACount n;
 
-		PACount m;
+		public PACount m;
 
-		PASeries adj;
+		public PASeries adj;
 
-		PAElement sursa;
+		public PAElement sursa;
 
 		[DllImport("pa")]
 		static extern PANormalTree PATreePerformConstruct();

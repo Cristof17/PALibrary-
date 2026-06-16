@@ -6,9 +6,9 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PAStatus
     {
-        int Visited;
+        public int Visited;
 
-        PAResource resource;
+        public PAResource resource;
 
         [DllImport("pa")]
         static extern PAStatus PAStatusPerformConstruct();
