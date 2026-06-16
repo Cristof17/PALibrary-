@@ -16,11 +16,12 @@ namespace PA_Library
             {
                 // adj_node[x] = PASerie
                 PASeries aux = PASeries.PASeriesPerformConstruct();
-                aux = PASeries.PASeriesPerformCopy(adj_node[x], aux);
+                aux = PASeries.copy(adj_node[x], aux);
                 adj_node[x] = PASeries.PASeriesPerformCopy(aux,adj_node[x]);
                 x++;
             }
         }
+        
         private PACount n;
         private PASeries[] adj_node;
 

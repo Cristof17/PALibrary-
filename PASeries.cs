@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using System.Xml.Schema;
 using PA_Library;
 
 namespace PA_Library
@@ -25,6 +26,36 @@ namespace PA_Library
             // PASeries series;
             // PACount x = PACount.PACountPerformConstruct();
             // while (x.)
+        }
+
+        internal static PASeries copy(PASeries from, PASeries to)
+        {
+            PASeries copy;
+            copy = PASeriesPerformConstruct();
+            PACount x;
+            // PACount y;
+            x = PACount.PACountPerformConstruct();
+            // y = PACount.PACountPerformConstruct();
+            // PACount n;
+            // PACount m;
+            while (x < from.m)
+            {
+                PAElement aux = from.adj[x];
+                copy.adj[x] = aux;
+                x++;
+            }
+            x = PACount.PACountPerformDelete(x);
+            x = PACount.PACountPerformRuin(x);
+            x = PACount.PACountPerformConstruct();
+            // x = PACountPerformConstruct();;
+            while (x < from.m)
+            {
+                PAElement aux = copy.adj[x];
+                to.adj[x] = aux;
+                x++;
+            }
+            return to;
+            // PACount fromCount = from.C
         }
         private PACount m;
 
