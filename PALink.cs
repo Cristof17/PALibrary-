@@ -18,5 +18,10 @@ namespace PA_Library
 		internal static extern PALink PALinkPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PALink PA);
 		[DllImport("pa")]
 		internal static extern PALink PALinkPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PALink PA);
+
+		public PALink(PAPair P)
+        {
+            p = PAPair.PAPairConstruct();
+        }
 	}
 }

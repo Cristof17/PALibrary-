@@ -24,5 +24,9 @@ namespace PA_Library
         internal static extern PAList PAListPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAList PA);
         [DllImport("pa")]
         internal static extern PAList PAListPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAList PA);
+
+        public PAList(ArrayList List)
+        {
+        }
     }
 }

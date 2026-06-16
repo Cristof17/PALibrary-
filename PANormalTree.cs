@@ -6,13 +6,7 @@ namespace PA_Library
 	[StructLayout(LayoutKind.Sequential)]
 	public struct PANormalTree
 	{
-		private PACount n;
-
-		private PACount m;
-
-		private PASeries adj;
-
-		private PAElement sursa;
+		private PATree tree;
 
 		[DllImport("pa")]
 		internal static extern PANormalTree PATreePerformConstruct();
@@ -25,9 +19,10 @@ namespace PA_Library
 		[DllImport("pa")]
 		internal static extern PANormalTree PATreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PANormalTree PA);
 
-		PANormalTree(PATree tree) : this()
+		PANormalTree(PATree Tree) : this()
 		{
-
+			tree = PATree.PATreePerformConstruct();
+			tree = PATree.PATreePerformCopy(Tree,tree);	
 		}
 	}
 }
