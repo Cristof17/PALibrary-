@@ -1,21 +1,20 @@
-//public class PAData
-using PA_Library;
-// using System.Transactions;
 using System.Runtime.InteropServices;
+using PA_Library;
 
-[StructLayout(LayoutKind.Sequential)]
-public struct PAData
+namespace PA_Library
 {
-    [DllImport("pa")]
-    static extern PAData PADataPerformConstruct();
-    [DllImport("pa")]
-    static extern PAData PADataPerformInit(PAData Data, PAResource Resource);
-    // DllExport struct PAData PADataPerformCopy(struct PAData);
-    // DllExport struct PAData PADataPerformPutResource(struct PAData, PAResource);
-    [DllImport("pa")]
-    static extern PAData PADataPerformRuin(PAData PA);
-    [DllImport("pa")]
-    static extern PAData PADataPerformDelete(PAData PA);
-    [DllImport("pa")]
-    static extern PAData PADataPerformCopy(PAData from, PAData to);
+    [StructLayout(LayoutKind.Sequential)]
+    public struct PAData
+    {
+        [DllImport("pa")]
+        static extern PAData PADataPerformConstruct();
+        [DllImport("pa")]
+        static extern PAData PADataPerformInit([MarshalAs(UnmanagedType.IUnknown)] PAData Data, [MarshalAs(UnmanagedType.IUnknown)] PAResource Resource);
+        [DllImport("pa")]
+        static extern PAData PADataPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAData PA);
+        [DllImport("pa")]
+        static extern PAData PADataPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAData PA);
+        [DllImport("pa")]
+        static extern PAData PADataPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PAData from, [MarshalAs(UnmanagedType.IUnknown)] PAData to);
+    }
 }
