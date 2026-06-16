@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 namespace PA_Library
 {
 	[StructLayout(LayoutKind.Sequential)]
-	struct PATree
+	protected struct PATree
 
 	//public readonly class PAGraf
 	//public struct PAGraf

@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    struct PAOutput
+    protected struct PAOutput
     //public readonly class BFSOutput
     //public readonly struct BFSOutput
     {

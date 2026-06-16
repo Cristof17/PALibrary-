@@ -3,7 +3,7 @@ using PA_Library;
 using System.Runtime.InteropServices;
 [StructLayout(LayoutKind.Sequential)]
 // [StructLayout(LayoutKind.Sequential)]
-struct PAResource
+protected struct PAResource
 {
     PANumber value;
 

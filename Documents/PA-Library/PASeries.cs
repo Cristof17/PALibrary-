@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PASeries
+    protected struct PASeries
     {
         PACount n;
 

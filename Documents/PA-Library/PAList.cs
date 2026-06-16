@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAList
+    protected struct PAList
     {
         ArrayList edges;
 

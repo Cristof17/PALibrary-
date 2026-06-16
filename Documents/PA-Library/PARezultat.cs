@@ -1,6 +1,6 @@
 namespace PA_Library
 {
-    public enum PARezultat
+    protected enum PARezultat
     //struct PARezultat
     {
         SUCCESS,

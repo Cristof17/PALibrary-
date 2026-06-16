@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 namespace PA_Library
 {
 	[StructLayout(LayoutKind.Sequential)]
-	public struct PALink
+	protected struct PALink
 	//public struct PAMuchie
 	{
 		PAPair p;

@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAPair
+    protected struct PAPair
     {
         PAElement Node;
 

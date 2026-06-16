@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PACount
+    protected struct PACount
     //public struct PAPACount
     {
         PANumber value;

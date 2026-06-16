@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 //public class PAStare
 //public class PAStare
 [StructLayout(LayoutKind.Sequential)]
-public struct PAStatus
+protected struct PAStatus
 {
     int Visited;
 

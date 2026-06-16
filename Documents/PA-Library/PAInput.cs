@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAInput
+    protected struct PAInput
     //public readonly class BFSInput
     //public readonly class BFSInput
     //public readonly class BFSInput

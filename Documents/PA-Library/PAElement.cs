@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAElement
+    protected struct PAElement
     //public struct PAElement
     {
         PAData index;

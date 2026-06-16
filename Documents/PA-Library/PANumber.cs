@@ -2,8 +2,9 @@
 using PA_Library;
 // using System;
 using System.Runtime.InteropServices;
+using System.Security.Authentication.ExtendedProtection;
 [StructLayout(LayoutKind.Sequential)]
-public struct PANumber
+protected struct PANumber
 {
     // [MarshalAs(UnmanagedType.IUnknown)]
     int value;
