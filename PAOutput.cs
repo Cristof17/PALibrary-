@@ -21,5 +21,10 @@ namespace PA_Library
         internal static extern void OutputPerformDelete([MarshalAs(UnmanagedType.IUnknown)] Output PA);
         [DllImport("pa")]
         internal static extern void OutputPerformRuin([MarshalAs(UnmanagedType.IUnknown)] Output PA);
+
+        // public PAOutput() : this()
+        // {
+            
+        // }
     }
 }

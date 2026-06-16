@@ -19,6 +19,7 @@ namespace PA_Library
         // [DllImport("pa")]
         // static extern PAResourcePerformD();
         [DllImport("pa")]
-        static extern int PAResourcePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAResource PA);
+        internal static extern int PAResourcePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAResource PA);
+
     }
 }
