@@ -79,8 +79,6 @@
         <Message Text="The output file is @(EXEFile)"/>
     </Target>
       
-      
-    </Target>
     <Target Name="Link">
       <Message Text="Link"/>
     </Target>
