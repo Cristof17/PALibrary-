@@ -82,9 +82,11 @@
     <Target Name="Link">
       <Message Text="Link"/>
     </Target>
+
     <Target Name="Test">
       <Message Text="Test"/>
     </Target>
+    
     <!-- <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference> -->
