@@ -3,13 +3,13 @@ using PA_Library;
 
 namespace PA_Library
 {
-[   StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Sequential)]
     public struct PAResource
     {
         public PAResource(PANumber Number)
         {
             value = PANumber.PANumberPerformConstruct();
-            value = PANumber.PANumberPerformCopy(Number,value);
+            value = PANumber.PANumberPerformCopy(Number, value);
         }
         private PANumber value;
 

@@ -9,11 +9,11 @@ namespace PA_Library
 		public PATree(PACount N, PACount M, PASeries ADJ, PAElement Sursa) : this()
 		{
 			n = PACount.PACountPerformConstruct();
-			n = PACount.PACountPerformCopy(N,n);
+			n = PACount.PACountPerformCopy(N, n);
 			m = PACount.PACountPerformConstruct();
-			m = PACount.PACountPerformCopy(M,m);
+			m = PACount.PACountPerformCopy(M, m);
 			sursa = PAElement.PAElementPerformConstruct();
-			sursa = PAElement.PAElementPerformCopy(Sursa,sursa);
+			sursa = PAElement.PAElementPerformCopy(Sursa, sursa);
 		}
 		private PACount n;
 

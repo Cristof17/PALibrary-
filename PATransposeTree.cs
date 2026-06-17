@@ -9,7 +9,7 @@ namespace PA_Library
 		public PATransposeTree(PATree tree) : this()
 		{
 			tree = PATree.PATreePerformConstruct();
-			tree = PATree.PATreePerformCopy(tree,tree);
+			tree = PATree.PATreePerformCopy(tree, tree);
 		}
 		private PATree tree;
 

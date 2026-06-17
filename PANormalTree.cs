@@ -9,7 +9,7 @@ namespace PA_Library
 		public PANormalTree(PATree Tree) : this()
 		{
 			tree = PATree.PATreePerformConstruct();
-			tree = PATree.PATreePerformCopy(Tree,tree);	
+			tree = PATree.PATreePerformCopy(Tree, tree);
 		}
 		private PATree tree;
 

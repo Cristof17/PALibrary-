@@ -16,33 +16,33 @@ namespace PA_Library
 
         public PANode()
         {
-            
+
         }
 
         public PANode(PAElement element, PANode next)
         {
-            
+
         }
-    
+
         public PANode(PAElement element)
         {
 
         }
         private PAElement element;
-        
-    // [DllImport("palibrary")]
-    // public static extern  PAElement PAElementConstruct(PAData Data, PAElement Next, PAStatus Status);
-    // [DllImport("palibrary")]
-    // public static extern int PAElementRuin(PAData Data,  PAElement Next, PAStatus Status);
-    // [DllImport("palibrary")]
-    // public static extern PAElement PAElementInit(PAElement e);
-    // [DllImport("palibrary")]
-    // public static extern int PAElementDelete(PAElement PA);
-    // [DllImport("palibrary")]
-    // public static extern void PAElementVisit();
-    // [DllImport("palibrary")]
-    // public static extern int PAElementIsVisited();
-    // [DllImport("palibrary")]
+
+        // [DllImport("palibrary")]
+        // public static extern  PAElement PAElementConstruct(PAData Data, PAElement Next, PAStatus Status);
+        // [DllImport("palibrary")]
+        // public static extern int PAElementRuin(PAData Data,  PAElement Next, PAStatus Status);
+        // [DllImport("palibrary")]
+        // public static extern PAElement PAElementInit(PAElement e);
+        // [DllImport("palibrary")]
+        // public static extern int PAElementDelete(PAElement PA);
+        // [DllImport("palibrary")]
+        // public static extern void PAElementVisit();
+        // [DllImport("palibrary")]
+        // public static extern int PAElementIsVisited();
+        // [DllImport("palibrary")]
         // Node)
         // {
         //     data = Node.data;
@@ -141,97 +141,97 @@ namespace PA_Library
         // public static implicit operator ulong(PAElement d) => (ulong)d.;
         // public static explicit operator PAElement(ulong b) => Copy(b);// new PAElement(b);
         // public static PAElement Copy(byte Data)
-    //     {
-    //         PAData data;
-    //         PAElement node = default;
-    //         data.value = (int)Data;
-    //         node = new PAElement(data, node);
-    //         return node;
-    //     }
-    //     public static PAElement Copy(long Data)
-    //     {
-    //         PAData data;
-    //         PAElement node = default;
-    //         data.value = (int)Data;
-    //         node = new PAElement(data, node);
-    //         return node;
-    //     }
-    //     public static PAElement Copy(int Data)
-    //     {
-    //         PAData data;
-    //         PAElement node = default;
-    //         data.value = Data;
-    //         node = new PAElement(data, node);
-    //         return node;
-    //     }
-    //     public static PAElement Copy(short Data)
-    //     {
-    //         PAData data;
-    //         PAElement node = default;
-    //         data.value = (int)Data;
-    //         node = new PAElement(data, node);
-    //         //node = new PAElement(data, node, stare);
-    //         return node;
-    //     }
-    //     public static PAElement Copy(ushort Data)
-    //     {
-    //         PAData data;
-    //         PAElement node = default;
-    //         data.value = (int)(uint)Data;
-    //         node = new PAElement(data, node);
+        //     {
+        //         PAData data;
+        //         PAElement node = default;
+        //         data.value = (int)Data;
+        //         node = new PAElement(data, node);
+        //         return node;
+        //     }
+        //     public static PAElement Copy(long Data)
+        //     {
+        //         PAData data;
+        //         PAElement node = default;
+        //         data.value = (int)Data;
+        //         node = new PAElement(data, node);
+        //         return node;
+        //     }
+        //     public static PAElement Copy(int Data)
+        //     {
+        //         PAData data;
+        //         PAElement node = default;
+        //         data.value = Data;
+        //         node = new PAElement(data, node);
+        //         return node;
+        //     }
+        //     public static PAElement Copy(short Data)
+        //     {
+        //         PAData data;
+        //         PAElement node = default;
+        //         data.value = (int)Data;
+        //         node = new PAElement(data, node);
+        //         //node = new PAElement(data, node, stare);
+        //         return node;
+        //     }
+        //     public static PAElement Copy(ushort Data)
+        //     {
+        //         PAData data;
+        //         PAElement node = default;
+        //         data.value = (int)(uint)Data;
+        //         node = new PAElement(data, node);
 
-    //         //node = new PAElement(data, node, stare);
-    //         return node;
-    //     }
-    //     public static PAElement Copy(uint Data)
-    //     {
-    //         PAData data;
-    //         PAElement node = default;
-    //         data.value = (int)Data;
-    //         node = new PAElement(data, node);
+        //         //node = new PAElement(data, node, stare);
+        //         return node;
+        //     }
+        //     public static PAElement Copy(uint Data)
+        //     {
+        //         PAData data;
+        //         PAElement node = default;
+        //         data.value = (int)Data;
+        //         node = new PAElement(data, node);
 
-    //         //node = new PAElement(data, node, stare);
-    //         return node;
-    //     }
-    //     public static PAElement Copy(ulong Data)
-    //     {
-    //         PAData data;
-    //         PAElement node = default;
-    //         data.value = (int)(uint) Data;
-    //         node = new PAElement(data, node);
+        //         //node = new PAElement(data, node, stare);
+        //         return node;
+        //     }
+        //     public static PAElement Copy(ulong Data)
+        //     {
+        //         PAData data;
+        //         PAElement node = default;
+        //         data.value = (int)(uint) Data;
+        //         node = new PAElement(data, node);
 
-    //         //node = new PAElement(data, node, stare);
-    //         return node;
-    //     }
+        //         //node = new PAElement(data, node, stare);
+        //         return node;
+        //     }
 
-    //     public PAElement this[int index]
-    //     {
-    //         get
-    //         {
-    //             return Get(Copy(this), index);
-    //         }
-    //         set
-    //         {
+        //     public PAElement this[int index]
+        //     {
+        //         get
+        //         {
+        //             return Get(Copy(this), index);
+        //         }
+        //         set
+        //         {
 
-    //         }
-    //     }
-    //     PAElement Get(PAElement nod, int index)
-    //     {
-    //         PAElement x = Copy(this);
-    //         if (index == 1)
-    //             x = Copy(this);
-    //         else if (index < 0)
-    //         {
-    //             x = Copy(this);
-    //         }
-    //         else if (index > 1)
-    //         {
-    //             x = Get(nod.next, index - 1);
-    //         }
-    //         return x;
-    //             //PAElement nod;
-    //         //return nod;
-    //     }
-    // }
+        //         }
+        //     }
+        //     PAElement Get(PAElement nod, int index)
+        //     {
+        //         PAElement x = Copy(this);
+        //         if (index == 1)
+        //             x = Copy(this);
+        //         else if (index < 0)
+        //         {
+        //             x = Copy(this);
+        //         }
+        //         else if (index > 1)
+        //         {
+        //             x = Get(nod.next, index - 1);
+        //         }
+        //         return x;
+        //             //PAElement nod;
+        //         //return nod;
+        //     }
+        // }
     }
 }

@@ -10,14 +10,14 @@ namespace PA_Library
         public PASeries(PACount M, PAElement[] ADJ) : this()
         {
             m = PACount.PACountPerformConstruct();
-            m = PACount.PACountPerformCopy(M,m);
-            
+            m = PACount.PACountPerformCopy(M, m);
+
             PACount x = PACount.PACountPerformConstruct();
             while (x < M)
             {
                 PAElement aux = PAElement.PAElementPerformConstruct();
-                aux = PAElement.PAElementPerformCopy(ADJ[x],aux);
-                adj[x] = PAElement.PAElementPerformCopy(aux,adj[x]);
+                aux = PAElement.PAElementPerformCopy(ADJ[x], aux);
+                adj[x] = PAElement.PAElementPerformCopy(aux, adj[x]);
                 x++;
             }
 
