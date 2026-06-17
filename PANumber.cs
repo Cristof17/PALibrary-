@@ -26,7 +26,6 @@ namespace PA_Library
         {
             throw new System.NotImplementedException();
         }
-    }
 
     public PANumber(int Value) : this()
         {
