@@ -7,29 +7,29 @@ namespace SM
 
         // PANumber Initialise(PANumber number);
         // void Initialise(PANumber number);
-        void InitialisePAData(PAResource count);
-        void InitialisePAElement(PAData Data, PAStatus Status);
+        void IStateInitialisePAData(PAResource count);
+        void IStateInitialisePAElement(PAData Data, PAStatus Status);
 
-        void InitialisePAInput(PACount N, PACount M, PAList ADJ, PAElement Source);
-        void InitialisePALink(PAPair Pair);
+        void IStateInitialisePAInput(PACount N, PACount M, PAList ADJ, PAElement Source);
+        void IStateInitialisePALink(PAPair Pair);
 
-        void InitialisePAList(PACount N, PASeries[] series);
-        void InitialisePANormalTree(PATree Tree);
+        void IStateInitialisePAList(PACount N, PASeries[] series);
+        void IStateInitialisePANormalTree(PATree Tree);
 
-        void InitialisePANumber(int value);
+        void IStateInitialisePANumber(int value);
         // void Initialise(PANumber number);
-        void InitialisePAOutput(BFSRecord Record);
+        void IStateInitialisePAOutput(BFSRecord Record);
         // void Initialise(PAResource resource);
-        void InitialisePAPair(PAElement Node, PAElement Neigh);
-        void InitialisePAResource(PANumber Value);
+        void IStateInitialisePAPair(PAElement Node, PAElement Neigh);
+        void IStateInitialisePAResource(PANumber Value);
 
-        void InitialisePASeries(PACount M, PAElement[] ADJ);
+        void IStateInitialisePASeries(PACount M, PAElement[] ADJ);
 
-        void InitialisePAStatus(PAResource Resource);
+        void IStateInitialisePAStatus(PAResource Resource);
 
-        void InitialisePATransposeTree(PATree tree);
+        void IStateInitialisePATransposeTree(PATree tree);
 
-        void InitialisePATree(PACount N, PACount M, PASeries Series, PAElement Element);
+        void IStateInitialisePATree(PACount N, PACount M, PASeries Series, PAElement Element);
         // void     (PANode node);
     }
 }

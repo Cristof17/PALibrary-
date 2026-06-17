@@ -8,29 +8,29 @@ namespace SM
 
         // PANumber Construct(PANumber number);
         // void Construct(PANumber number);
-        void ConstructPAData(PAResource count);
-        void ConstructPAElement(PAData Data, PAStatus Status);
+        void IStateConstructPAData(PAResource count);
+        void IStateConstructPAElement(PAData Data, PAStatus Status);
 
-        void ConstructPAInput(PACount N, PACount M, PAList ADJ, PAElement Source);
-        void ConstructPALink(PAPair Pair);
+        void IStateConstructPAInput(PACount N, PACount M, PAList ADJ, PAElement Source);
+        void IStateConstructPALink(PAPair Pair);
 
-        void ConstructPAList(PACount N, PASeries[] series);
-        void ConstructPANormalTree(PATree Tree);
+        void IStateConstructPAList(PACount N, PASeries[] series);
+        void IStateConstructPANormalTree(PATree Tree);
 
-        void ConstructPANumber(int value);
+        void IStateConstructPANumber(int value);
         // void Construct(PANumber number);
-        void ConstructPAOutput(BFSRecord Record);
+        void IStateConstructPAOutput(BFSRecord Record);
         // void Construct(PAResource resource);
-        void ConstructPAPair(PAElement Node, PAElement Neigh);
-        void ConstructPAResource(PANumber Value);
+        void IStateConstructPAPair(PAElement Node, PAElement Neigh);
+        void IStateConstructPAResource(PANumber Value);
 
-        void ConstructPASeries(PACount M, PAElement[] ADJ);
+        void IStateConstructPASeries(PACount M, PAElement[] ADJ);
 
-        void ConstructPAStatus(PAResource Resource);
+        void IStateConstructPAStatus(PAResource Resource);
 
-        void ConstructPATransposeTree(PATree tree);
+        void IStateConstructPATransposeTree(PATree tree);
 
-        void ConstructPATree(PACount N, PACount M, PASeries Series, PAElement Element);
+        void IStateConstructPATree(PACount N, PACount M, PASeries Series, PAElement Element);
         // void     (PANode node);
     }
 }

@@ -4,33 +4,33 @@ namespace SM
 {
     interface IStateDelete
     {
-         void DeletePACount(PANumber number);
+         void IStateDeletePACount(PANumber number);
 
         // PANumber Delete(PANumber number);
         // void Delete(PANumber number);
-        void DeletePAData(PAResource count);
-        void DeletePAElement(PAData Data, PAStatus Status);
+        void IStateDeletePAData(PAResource count);
+        void IStateDeletePAElement(PAData Data, PAStatus Status);
 
-        void DeletePAInput(PACount N, PACount M, PAList ADJ, PAElement Source);
-        void DeletePALink(PAPair Pair);
+        void IStateDeletePAInput(PACount N, PACount M, PAList ADJ, PAElement Source);
+        void IStateDeletePALink(PAPair Pair);
 
-        void DeletePAList(PACount N, PASeries[] series);
-        void DeletePANormalTree(PATree Tree);
+        void IStateDeletePAList(PACount N, PASeries[] series);
+        void IStateDeletePANormalTree(PATree Tree);
 
-        void DeletePANumber(int value);
+        void IStateDeletePANumber(int value);
         // void Delete(PANumber number);
-        void DeletePAOutput(BFSRecord Record);
+        void IStateDeletePAOutput(BFSRecord Record);
         // void Delete(PAResource resource);
-        void DeletePAPair(PAElement Node, PAElement Neigh);
-        void DeletePAResource(PANumber Value);
+        void IStateDeletePAPair(PAElement Node, PAElement Neigh);
+        void IStateDeletePAResource(PANumber Value);
 
-        void DeletePASeries(PACount M, PAElement[] ADJ);
+        void IStateDeletePASeries(PACount M, PAElement[] ADJ);
 
-        void DeletePAStatus(PAResource Resource);
+        void IStateDeletePAStatus(PAResource Resource);
 
-        void DeletePATransposeTree(PATree tree);
+        void IStateDeletePATransposeTree(PATree tree);
 
-        void    PATree(PACount N, PACount M, PASeries Series, PAElement Element);
+        void IStatePATree(PACount N, PACount M, PASeries Series, PAElement Element);
         // void     (PANode node);
     }
 }
