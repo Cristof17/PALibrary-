@@ -14,18 +14,6 @@
     <Reference Include="System.Runtime.InteropServices">
       <RequiredTargetFramework>netstandard2.0</RequiredTargetFramework>
     </Reference>
-    <Target Name="MakeDirs">
-      <Message Text="MakeDirs"/>
-      <Exec Command="New-Iterm -Item-Type \"Directory\" -Name \"Sources\""/> 
-      <Exec Command="New-Iterm -Item-Type \"Directory\" -Name \"Assemblie\""/> 
-      <Exec Command="New-Iterm -Item-Type \"Directory\" -Name \"Objects\""/> 
-      <Exec Command="New-Iterm -Item-Type \"Directory\" -Name \"Library\""/> 
-      <Exec Command="New-Iterm -Item-Type \"Directory\" -Name \"Binaries\""/> 
-    </Target>
-    <Target Name="Preprocess">
-      <Message Text="Preprocess"/>
-      <Exec Command="msbuild.exe @Designs"/>
-    </Target>
       <!-- <Exec ToolPath=""  -->
       <!-- <Exec Command="msbuild.exe"/> -->
       <!-- <CSC Sources="@Compile" OutputAssembly="$(AppName).dll" EmitDebugInformation="true"/> -->
