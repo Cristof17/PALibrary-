@@ -2,30 +2,35 @@
 using PA_Library;
 namespace SM
 {
-    interface IStateDelete : IStateDelete
+    interface IStateDelete
     {
-        void Delete(PANumber number);
-        void Delete(PACount count);
-        void Delete(PAResource resource);
+         void DeletePACount(PANumber number);
 
-        void Delete(PAElement element);
-        void Delete(PAInput input);
-
-        void Delete(PALink link);
-        void Delete(PAList list);
-
-        void Delete(PANormalTree normalTree);
+        // PANumber Delete(PANumber number);
         // void Delete(PANumber number);
-        void Delete(PAPair number);
+        void DeletePAData(PAResource count);
+        void DeletePAElement(PAData Data, PAStatus Status);
+
+        void DeletePAInput(PACount N, PACount M, PAList ADJ, PAElement Source);
+        void DeletePALink(PAPair Pair);
+
+        void DeletePAList(PACount N, PASeries[] series);
+        void DeletePANormalTree(PATree Tree);
+
+        void DeletePANumber(int value);
+        // void Delete(PANumber number);
+        void DeletePAOutput(BFSRecord Record);
         // void Delete(PAResource resource);
-        void Delete(PAResult series);
-        void Delete(PASeries series);
+        void DeletePAPair(PAElement Node, PAElement Neigh);
+        void DeletePAResource(PANumber Value);
 
-        void Delete(PAStatus status);
+        void DeletePASeries(PACount M, PAElement[] ADJ);
 
-        void Delete(PATransposeTree transposeTree);
+        void DeletePAStatus(PAResource Resource);
 
-        void Delete(PATree tree);
+        void DeletePATransposeTree(PATree tree);
+
+        void    PATree(PACount N, PACount M, PASeries Series, PAElement Element);
         // void     (PANode node);
     }
 }

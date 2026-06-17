@@ -1,30 +1,34 @@
-using PA_Library;
-namespace SM
-{
-    interface IStateFinish
+ using PA_Library;
+ namespace SM 
+ {
+    interface IStateFinish 
     {
-        void Finish(PANumber number);
-        void Finish(PACount count);
-        void Finish(PAResource resource);
-
-        void Finish(PAElement element);
-        void Finish(PAInput input);
-
-        void Finish(PALink link);
-        void Finish(PAList list);
-
-        void Finish(PANormalTree normalTree);
+        void FinishPACount(PANumber number);
+        // PANumber Finish(PANumber number);
         // void Finish(PANumber number);
-        void Finish(PAPair number);
+        void FinishPAData(PAResource count);
+        void FinishPAElement(PAData Data, PAStatus Status);
+
+        void FinishPAInput(PACount N, PACount M, PAList ADJ, PAElement Source);
+        void FinishPALink(PAPair Pair);
+
+        void FinishPAList(PACount N, PASeries[] series);
+        void FinishPANormalTree(PATree Tree);
+
+        void FinishPANumber(int value);
+        // void Finish(PANumber number);
+        void FinishPAOutput(BFSRecord Record);
         // void Finish(PAResource resource);
-        void Finish(PAResult series);
-        void Finish(PASeries series);
+        void FinishPAPair(PAElement Node, PAElement Neigh);
+        void FinishPAResource(PANumber Value);
 
-        void Finish(PAStatus status);
+        void FinishPASeries(PACount M, PAElement[] ADJ);
 
-        void Finish(PATransposeTree transposeTree);
+        void FinishPAStatus(PAResource Resource);
 
-        void Finish(PATree tree);
-        // void     (PANode node);
+        void FinishPATransposeTree(PATree tree);
+
+        void FinishPATree(PACount N, PACount M, PASeries Series, PAElement Element);
+
     }
-}
+ }
