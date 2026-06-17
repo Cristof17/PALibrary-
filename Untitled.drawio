@@ -1,0 +1,55 @@
+<mxfile host="65bd71144e">
+    <diagram id="OxiuD8vAWHIwgwyCMLIN" name="Page-1">
+        <mxGraphModel dx="406" dy="504" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="copy(from,to)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="90" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="aux = Construct()" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="190" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="aux = from" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="290" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="tp = aux" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="380" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="fill(from,to)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="90" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="aux = from.something" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="190" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="to.something = aux" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="290" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="stop" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="380" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="remove(from, something)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="460" y="90" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="deleted = delete(from.something)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="460" y="190" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="deleted" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="290" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="free(from, something)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="90" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="get = free(something)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="190" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="get" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="370" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="get = delete(from, something)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="290" width="140" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
