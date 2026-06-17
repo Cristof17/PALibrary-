@@ -5,7 +5,7 @@ using PA_Library;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAElement
+    public struct PAElement : StateMachine
     {
         public PAElement(PAData Data, PAStatus Status) : this()
         {
@@ -35,5 +35,24 @@ namespace PA_Library
         [DllImport("pa")]
         internal static extern PAElement PAElementPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAElement element);
 
+        public void Construct()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Initialise()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Delete()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Finish()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

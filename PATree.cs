@@ -4,7 +4,7 @@ using PA_Library;
 namespace PA_Library
 {
 	[StructLayout(LayoutKind.Sequential)]
-	public struct PATree
+	public struct PATree : StateMachine
 	{
 		public PATree(PACount N, PACount M, PASeries ADJ, PAElement Sursa) : this()
 		{
@@ -33,5 +33,25 @@ namespace PA_Library
 		internal static extern PATree PATreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PATree PA);
 		[DllImport("pa")]
 		internal static extern PATree PATreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PATree PA);
-	}
+
+        public void Construct()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Initialise()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Delete()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Finish()
+        {
+            throw new System.NotImplementedException();
+        }
+    }
 }

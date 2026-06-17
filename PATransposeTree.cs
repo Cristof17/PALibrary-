@@ -4,7 +4,7 @@ using PA_Library;
 namespace PA_Library
 {
 	[StructLayout(LayoutKind.Sequential)]
-	public struct PATransposeTree
+	public struct PATransposeTree : StateMachine
 	{
 		public PATransposeTree(PATree tree) : this()
 		{
@@ -23,5 +23,25 @@ namespace PA_Library
 		internal static extern PATransposeTree PATransposeTreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PATransposeTree PA);
 		[DllImport("pa")]
 		internal static extern PATransposeTree PATransposeTreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PATransposeTree PA);
-	}
+
+        public void Construct()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Initialise()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Delete()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Finish()
+        {
+            throw new System.NotImplementedException();
+        }
+    }
 }

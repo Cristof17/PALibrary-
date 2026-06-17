@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAList
+    public struct PAList : StateMachine
     {
         public PAList(PACount N, PASeries[] ADJ_NODE) : this()
         {
@@ -42,5 +42,24 @@ namespace PA_Library
         [DllImport("pa")]
         internal static extern PAList PAListPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAList PA);
 
+        public void Construct()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Initialise()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Finish()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

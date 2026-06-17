@@ -4,7 +4,7 @@ using PA_Library;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAResource
+    public struct PAResource : StateMachine
     {
         public PAResource(PANumber Number)
         {
@@ -26,5 +26,24 @@ namespace PA_Library
         [DllImport("pa")]
         internal static extern int PAResourcePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAResource PA);
 
+        public void Construct()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Initialise()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Delete()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Finish()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

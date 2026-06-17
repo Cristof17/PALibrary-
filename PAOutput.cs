@@ -4,7 +4,7 @@ using PA_Library;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAOutput
+    public struct PAOutput : StateMachine
     {
         private BFSRecord result;
 
@@ -21,6 +21,26 @@ namespace PA_Library
         internal static extern void OutputPerformDelete([MarshalAs(UnmanagedType.IUnknown)] Output PA);
         [DllImport("pa")]
         internal static extern void OutputPerformRuin([MarshalAs(UnmanagedType.IUnknown)] Output PA);
+
+        public void Construct()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Initialise()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Delete()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Finish()
+        {
+            throw new System.NotImplementedException();
+        }
 
         // public PAOutput() : this()
         // {

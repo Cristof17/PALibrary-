@@ -4,7 +4,7 @@ using PA_Library;
 namespace PA_Library
 {
 	[StructLayout(LayoutKind.Sequential)]
-	public struct PALink
+	public struct PALink : StateMachine
 	{
 		public PALink(PAPair P)
         {
@@ -23,5 +23,24 @@ namespace PA_Library
 		[DllImport("pa")]
 		internal static extern PALink PALinkPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PALink PA);
 
-	}
+        public void Construct()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Initialise()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Delete()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Finish()
+        {
+            throw new System.NotImplementedException();
+        }
+    }
 }

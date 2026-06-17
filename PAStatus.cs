@@ -4,7 +4,7 @@ using PA_Library;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAStatus
+    public struct PAStatus : StateMachine
     {
         public PAStatus(int Visited) : this()
         {
@@ -26,5 +26,24 @@ namespace PA_Library
         [DllImport("pa")]
         internal static extern PAStatus PAStatusPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAStatus PA);
 
+        public void Construct()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Initialise()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Delete()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Finish()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

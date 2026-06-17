@@ -11,7 +11,7 @@ namespace PA_Library
 {
     // [StructLayout(LayoutKind.Sequntial)]
     // struct PAElement
-    public class PANode
+    public class PANode : StateMachine
     {
 
         public PANode()
@@ -29,6 +29,26 @@ namespace PA_Library
 
         }
         private PAElement element;
+
+        public void Construct()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Initialise()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Delete()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Finish()
+        {
+            throw new System.NotImplementedException();
+        }
 
         // [DllImport("palibrary")]
         // public static extern  PAElement PAElementConstruct(PAData Data, PAElement Next, PAStatus Status);
