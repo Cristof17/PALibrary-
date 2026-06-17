@@ -11,7 +11,7 @@ namespace PA_Library
         {
             value = Value;
         }
-        public int value {get; set;}
+        public int value;
 
         [DllImport("pa")]
         internal static extern PANumber PANumberPerformConstruct();
