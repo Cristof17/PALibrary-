@@ -10,7 +10,7 @@ namespace PA_Library
     {
         public PACount(PANumber Number) : this()
         {
-            value = PANumber.PANumberPerformConstruct();
+            Construct();
             value = PANumber.PANumberPerformCopy(Number,value);
         }
         private PANumber value;
@@ -44,9 +44,9 @@ namespace PA_Library
             return base.GetHashCode();
         }
 
-        public void Initialise()
+        private void Init(PACount n, PANumber value)
         {
-            Delete();
+            value = PANumber.PANumberPerformInit(value,value.value);
         }
 
         public void Delete()
@@ -61,7 +61,23 @@ namespace PA_Library
 
         public void Construct()
         {
+            value = PANumber.PANumberPerformConstruct();
             Initialise();
+        }
+
+        public void Initialise(PANumber number)
+        {
+            Delete();
+        }
+
+        public void Initialise(PACount number)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Construct(PANumber number)
+        {
+            throw new NotImplementedException();
         }
 
         // private void goToInitialise

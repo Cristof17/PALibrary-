@@ -2,7 +2,7 @@ using System.Data;
 
 namespace SM
 {
-    interface StateDelete
+    interface StateDelete : StateFinish
     {
         void Finish();
         

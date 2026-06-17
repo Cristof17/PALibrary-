@@ -1,6 +1,6 @@
 namespace SM
 {
-    interface StateInitialise
+    interface StateInitialise : StateDelete
     {
         void Delete();
     }
