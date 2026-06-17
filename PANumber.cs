@@ -7,26 +7,6 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PANumber
     {
-        public void Construct()
-        {
-            Initialise();
-        }
-
-        public void Delete()
-        {
-            Finish();
-        }
-
-        public void Finish()
-        {
-            ;
-        }
-
-        public void Initialise()
-        {
-            Delete();
-        }
-
     public PANumber(int Value) : this()
         {
             value = Value;
