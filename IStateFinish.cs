@@ -3,31 +3,32 @@
  {
     internal interface IStateFinish 
     {
-        void IStateFinishPACount(PANumber number);
+        void IStateFinishPACount(PACount PA);
         // PANumber Finish(PANumber number);
         // void Finish(PANumber number);
-        void IStateFinishPAData(PAResource count);
-        void IStateFinishPAElement(PAData Data, PAStatus Status);
+        // void IStateFinishPAData(PACount PA);
+        void IStateFinishPAData(PAData PA);
+        void IStateFinishPAElement(PAElement PA);
 
-        void IStateFinishPAInput(PACount N, PACount M, PAList ADJ, PAElement Source);
-        void FinishPALink(PAPair Pair);
+        void IStateFinishPAInput(PAInput PA);
+        void FinishPALink(PALink PA);
 
-        void IStateFinishPAList(PACount N, PASeries[] series);
-        void IStateFinishPANormalTree(PATree Tree);
+        void IStateFinishPAList(PAList PA);
+        void IStateFinishPANormalTree(PANormalTree Tree);
 
-        void IStateFinishPANumber(int value);
+        void IStateFinishPANumber(PANumber PA);
         // void Finish(PANumber number);
-        void IStateFinishPAOutput(BFSRecord Record);
+        void IStateFinishPAOutput(PAOutput PA);
         // void Finish(PAResource resource);
-        void IStateFinishPAPair(PAElement Node, PAElement Neigh);
-        void IStateFinishPAResource(PANumber Value);
+        void IStateFinishPAPair(PAPair PA);
+        void IStateFinishPAResource(PAResource PA);
 
-        void IStateFinishPASeries(PACount M, PAElement[] ADJ);
+        void IStateFinishPASeries(PASeries PA);
 
-        void IStateFinishPAStatus(PAResource Resource);
+        void IStateFinishPAStatus(PAStatus PA);
 
-        void IStateFinishPATransposeTree(PATree tree);
+        void IStateFinishPATransposeTree(PATransposeTree PA);
 
-        void IStateFinishPATree(PACount N, PACount M, PASeries Series, PAElement Element);
+        void IStateFinishPATree(PATree PA);
     }
  }
