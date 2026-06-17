@@ -61,6 +61,10 @@
         <CSFile Include = "PAStatus.cs"/>
         <CSFile Include = "PATransposeTree.cs"/>
         <CSFile Include = "PATree.cs"/>
+        <CSFile Include = "IStateConstruct.cs"/>
+        <CSFile Include = "IStateInitialise.cs"/>
+        <CSFile Include = "IStateDelete.cs"/>
+        <CSFile Include = "IStateFinish.cs"/>
     </ItemGroup>
 
     <Target Name = "Compile">
@@ -86,7 +90,7 @@
     <Target Name="Test">
       <Message Text="Test"/>
     </Target>
-    
+
     <!-- <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference> -->
