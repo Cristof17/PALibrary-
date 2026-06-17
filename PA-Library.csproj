@@ -65,6 +65,7 @@
         <CSFile Include = "IStateInitialise.cs"/>
         <CSFile Include = "IStateDelete.cs"/>
         <CSFile Include = "IStateFinish.cs"/>
+        <CSFile Include = "IStateMachine.cs"/>
     </ItemGroup>
 
     <Target Name = "Compile">
