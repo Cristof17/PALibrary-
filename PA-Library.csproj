@@ -83,6 +83,16 @@
         <!-- Log file name of output file -->
         <Message Text="The output file is @(EXEFile)"/>
     </Target>
+
+    <ItemGroup>
+    <COMReference Include="MyComLibrary">
+      <Guid>{01234567-89AB-CDEF-0123-456789ABCDEF}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+  </ItemGroup>
       
     <Target Name="Link">
       <Message Text="Link"/>
