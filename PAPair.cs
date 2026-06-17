@@ -4,7 +4,7 @@ using PA_Library;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAPair : StateMachine
+    public struct PAPair : IStateMachine
     {
         public PAPair(PAElement Node, PAElement Neigh) : this()
         {
@@ -26,27 +26,5 @@ namespace PA_Library
         [DllImport("pa")]
         internal static extern int PAPairRuin([MarshalAs(UnmanagedType.IUnknown)] PAPair PA);
 
-        public void Construct()
-        {
-            Initialise();
-            // throw new System.NotImplementedException();
-        }
-
-        public void Initialise()
-        {
-            Delete();
-            // throw new System.NotImplementedException();
-        }
-
-        public void Delete()
-        {
-            Finish();
-            // throw new System.NotImplementedException();
-        }
-
-        public void Finish()
-        {
-            // throw new System.NotImplementedException();
-        }
     }
 }

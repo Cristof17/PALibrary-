@@ -5,7 +5,7 @@ using PA_Library;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAData : StateMachine
+    public struct PAData : IStateMachine
     {
         public PAData(PAResource Resource)
         {
@@ -24,28 +24,5 @@ namespace PA_Library
         internal static extern PAData PADataPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAData PA);
         [DllImport("pa")]
         internal static extern PAData PADataPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PAData from, [MarshalAs(UnmanagedType.IUnknown)] PAData to);
-
-        public void Construct()
-        {
-            Initialise();
-        }
-
-        public void Initialise()
-        {
-            // Finish();
-            Delete();
-            // De;
-        }
-
-        public void Delete()
-        {
-            // throw new System.NotImplementedException();
-            Finish();
-        }
-
-        public void Finish()
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

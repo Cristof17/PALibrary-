@@ -1,8 +1,9 @@
-using System.Xml.Serialization;
+using System.Reflection;
 using PA_Library;
-using SM;
-interface StateMachine : StateConstruct
+namespace SM
 {
+    interface IStateConstruct
+    {
         void Construct(PANumber number);
         void Construct(PACount count);
         void Construct(PAResource resource);
@@ -25,4 +26,6 @@ interface StateMachine : StateConstruct
         void Construct(PATransposeTree transposeTree);
 
         void Construct(PATree tree);
+        // void     (PANode node);
+    }
 }

@@ -5,7 +5,7 @@ using PA_Library;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PANumber : StateMachine
+    public struct PANumber : IStateMachine
     {
         public void Construct()
         {

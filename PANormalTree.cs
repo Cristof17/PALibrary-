@@ -4,7 +4,7 @@ using PA_Library;
 namespace PA_Library
 {
 	[StructLayout(LayoutKind.Sequential)]
-	public struct PANormalTree : StateMachine
+	public struct PANormalTree : IStateMachine
 	{
 		public PANormalTree(PATree Tree) : this()
 		{
@@ -23,29 +23,5 @@ namespace PA_Library
 		internal static extern PANormalTree PATreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PANormalTree PA);
 		[DllImport("pa")]
 		internal static extern PANormalTree PATreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PANormalTree PA);
-
-        public void Construct()
-        {
-			Initialise();
-            // throw new System.NotImplementedException();
-        }
-
-        public void Initialise()
-        {
-			// F
-			Delete();
-            // throw new System.NotImplementedException();
-        }
-
-        public void Delete()
-        {
-			Finish();
-            // throw new System.NotImplementedException();
-        }
-
-        public void Finish()
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

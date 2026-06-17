@@ -5,7 +5,7 @@ using PA_Library;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PASeries : StateMachine
+    public struct PASeries : IStateMachine
     {
         public PASeries(PACount M, PAElement[] ADJ) : this()
         {
@@ -75,30 +75,6 @@ namespace PA_Library
         internal static extern PASeries PASeriesPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PASeries PA);
         [DllImport("pa")]
         internal static extern PASeries PASeriesPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PASeries PA);
-
-        public void Construct()
-        {
-            Initialise();
-            // throw new System.NotImplementedException();
-        }
-
-        public void Initialise()
-        {
-            // Finish();
-            Delete();
-            // throw new System.NotImplementedException();
-        }
-
-        public void Delete()
-        {
-            Finish();
-            // throw new System.NotImplementedException();
-        }
-
-        public void Finish()
-        {
-            // throw new System.NotImplementedException();
-        }
     }
 }
 // }

@@ -6,7 +6,7 @@ using PA_Library;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PACount : StateMachine
+    public struct PACount : IStateMachine
     {
         public PACount(PANumber Number) : this()
         {
@@ -43,43 +43,5 @@ namespace PA_Library
         {
             return base.GetHashCode();
         }
-
-        private void Init(PACount n, PANumber value)
-        {
-            value = PANumber.PANumberPerformInit(value,value.value);
-        }
-
-        public void Delete()
-        {
-            Finish();
-        }
-
-        public void Finish()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Construct()
-        {
-            value = PANumber.PANumberPerformConstruct();
-            Initialise();
-        }
-
-        public void Initialise(PANumber number)
-        {
-            Delete();
-        }
-
-        public void Initialise(PACount number)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Construct(PANumber number)
-        {
-            throw new NotImplementedException();
-        }
-
-        // private void goToInitialise
     }
 }

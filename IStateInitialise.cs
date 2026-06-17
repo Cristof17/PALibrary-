@@ -1,8 +1,7 @@
-using System.Reflection;
 using PA_Library;
 namespace SM
 {
-    interface StateConstruct : StateInitialise
+    interface StateInitialise : IStateDelete
     {
         void Initialise(PANumber number);
         void Initialise(PACount count);
@@ -26,6 +25,6 @@ namespace SM
         void Initialise(PATransposeTree transposeTree);
 
         void Initialise(PATree tree);
-        // void Initialise(PANode node);
+        // void     (PANode node);
     }
 }

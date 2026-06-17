@@ -4,7 +4,7 @@ using PA_Library;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAInput : StateMachine
+    public struct PAInput : IStateMachine
     {
         public PAInput(PACount N, PACount M, PAList ADJ, PAElement Sursa) : this()
         {
@@ -39,28 +39,5 @@ namespace PA_Library
         internal static extern PAInput InputPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAInput PA);
         [DllImport("pa")]
         internal static extern void InputRuin([MarshalAs(UnmanagedType.IUnknown)] PAInput PA);
-
-        public void Construct()
-        {
-            Initialise();
-            // throw new System.NotImplementedException();
-        }
-
-        public void Initialise()
-        {
-            Delete();
-            // throw new System.NotImplementedException();
-        }
-
-        public void Delete()
-        {
-            Finish();
-            // throw new System.NotImplementedException();
-        }
-
-        public void Finish()
-        {
-            // throw new System.NotImplementedException();
-        }
     }
 }
