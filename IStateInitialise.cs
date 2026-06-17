@@ -1,9 +1,9 @@
 using PA_Library;
 namespace SM
 {
-    interface StateInitialise : IStateDelete
+    internal interface IStateInitialise
     {
-         void InitialisePACount(PANumber number);
+         void IStateInitialisePACount(PANumber number);
 
         // PANumber Initialise(PANumber number);
         // void Initialise(PANumber number);

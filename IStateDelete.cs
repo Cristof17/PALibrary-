@@ -2,7 +2,7 @@
 using PA_Library;
 namespace SM
 {
-    interface IStateDelete
+    internal interface IStateDelete
     {
          void IStateDeletePACount(PANumber number);
 

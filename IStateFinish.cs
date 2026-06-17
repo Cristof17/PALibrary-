@@ -1,7 +1,7 @@
  using PA_Library;
  namespace SM 
  {
-    interface IStateFinish 
+    internal interface IStateFinish 
     {
         void IStateFinishPACount(PANumber number);
         // PANumber Finish(PANumber number);
