@@ -31,7 +31,9 @@ namespace PA_Library
         public static extern Output run(Input input);
 
         // [FieldOffset(0)]
-        private Input In { get; }
+        private Input In;
+
+        // private State state;
         // [StructLayout(LayoutKind.Sequential)]
         // public readonly struct Algorithm algorithm;
 
@@ -41,6 +43,7 @@ namespace PA_Library
 
         }
     }
+
     // {
     //Input in
     //Output run(Input)

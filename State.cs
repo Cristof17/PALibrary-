@@ -5,8 +5,58 @@ using System.Runtime.InteropServices;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct State
+    public class State
     {
+        //construct -> initialise -> delete -> ruin
+        private int state {get; set; }
+        private Algorithm algorithm;
+        private Input inpit;
+        private Output output;
+
+        private void StateMachine()
+        {
+            
+        }
+        private void Construct()
+        {
+            algorithm = new Algorithm();
+            inpit = new Input();
+            output = new Output();
+            
+        }
+        private void Initialise()
+        {
+            algorithm = new Algorithm(inpit);
+        }
+        ~State() //ruin
+        {
+            
+        }
+        private void Delete()
+        {
+            
+        }
+
+
+        // void Construct()
+        // {
+        //     In = new Input();
+        // }
+
+        // void Initialise()
+        // {
+
+        // }
+
+        // void Free()
+        // {
+
+        // }
+
+        // void Ruin()
+        // {
+
+        // }
         //struct PAStatus visited;
 
         //public BFSState(Stack q/*, int x*/)

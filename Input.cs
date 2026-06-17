@@ -19,6 +19,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Threading;
 using System.Xml.Linq;
+using System.Reflection;
 
 //Console.WriteLine("Hello world!");
 
@@ -27,21 +28,32 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct Input
     {
+        static private State construct;
+        static private State initialise;
+        static private State delete;
+        static private State ruin;
         private PACount n;
         private PACount m;
         private PAList adj; 
         private PAElement sursa;
 
         [DllImport("pa")]
-        public static extern void InputConstruct();
+        public static extern Input InputPerformConstruct();
         [DllImport("pa")]
-        public static extern void InputRuin();
+        public static extern Input InputPerformRuin(PACount n, PACount m, PAList list, PAElement source);
         [DllImport("pa")]
-        public static extern void InputInit();
+        public static extern Input InputPerformInit();
         [DllImport("pa")]
         public static extern void Dispose();
         [DllImport("pa")]
-        public static extern void InputDelete();
+        public static extern Input InputPerformDelete();
+
+        static Input Initialise(Input input)
+        {
+            // InputPerformInit()
+            
+            return input;
+        }
         public Input(int Source, ArrayList[] Adj, int N, int M) : this()
         {
             //ADJ = default(AdjacencyList<Node>);
