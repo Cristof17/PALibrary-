@@ -3,33 +3,33 @@ namespace SM
 {
     internal interface IStateInitialise
     {
-         void IStateInitialisePACount(PANumber number);
+        PANumber IStateInitialisePACount(PANumber number);
 
         // PANumber Initialise(PANumber number);
         // void Initialise(PANumber number);
-        void IStateInitialisePAData(PAResource count);
-        void IStateInitialisePAElement(PAData Data, PAStatus Status);
+        PAData IStateInitialisePAData(PAResource count);
+        PAElement IStateInitialisePAElement(PAData Data, PAStatus Status);
 
-        void IStateInitialisePAInput(PACount N, PACount M, PAList ADJ, PAElement Source);
-        void IStateInitialisePALink(PAPair Pair);
+        PAInput IStateInitialisePAInput(PACount N, PACount M, PAList ADJ, PAElement Source);
+        PALink IStateInitialisePALink(PAPair Pair);
 
-        void IStateInitialisePAList(PACount N, PASeries[] series);
-        void IStateInitialisePANormalTree(PATree Tree);
+        PAList IStateInitialisePAList(PACount N, PASeries[] series);
+        PANormalTree IStateInitialisePANormalTree(PATree Tree);
 
-        void IStateInitialisePANumber(int value);
+        PANumber IStateInitialisePANumber(int value);
         // void Initialise(PANumber number);
-        void IStateInitialisePAOutput(BFSRecord Record);
+        PAOutput IStateInitialisePAOutput(BFSRecord Record);
         // void Initialise(PAResource resource);
-        void IStateInitialisePAPair(PAElement Node, PAElement Neigh);
-        void IStateInitialisePAResource(PANumber Value);
+        PAPair IStateInitialisePAPair(PAElement Node, PAElement Neigh);
+        PAResource IStateInitialisePAResource(PANumber Value);
 
-        void IStateInitialisePASeries(PACount M, PAElement[] ADJ);
+        PASeries IStateInitialisePASeries(PACount M, PAElement[] ADJ);
 
-        void IStateInitialisePAStatus(PAResource Resource);
+        PAStatus IStateInitialisePAStatus(PAResource Resource);
 
-        void IStateInitialisePATransposeTree(PATree tree);
+        PATransposeTree IStateInitialisePATransposeTree(PATree tree);
 
-        void IStateInitialisePATree(PACount N, PACount M, PASeries Series, PAElement Element);
+        PATree IStateInitialisePATree(PACount N, PACount M, PASeries Series, PAElement Element);
         // void     (PANode node);
     }
 }
