@@ -50,7 +50,7 @@ namespace PA_Library
 
         public void Initialise()
         {
-            Delegate();
+            Delete();
             // throw new NotImplementedException();
         }
 
@@ -62,7 +62,7 @@ namespace PA_Library
 
         public void Finish()
         {
-            throw new NotImplementedException();
+            // throw new NotImplementedException();
         }
     }
 }

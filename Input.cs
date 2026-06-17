@@ -51,7 +51,8 @@ namespace PA_Library
         static Input Initialise(Input input)
         {
             // InputPerformInit()
-            
+            // construct
+            // Construct
             return input;
         }
         public Input(int Source, ArrayList[] Adj, int N, int M) : this()
