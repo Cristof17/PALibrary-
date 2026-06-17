@@ -11,7 +11,7 @@ namespace PA_Library
 {
     // [StructLayout(LayoutKind.Sequntial)]
     // struct PAElement
-    public class PANode : IStateMachine
+    public class PANode
     {
 
         public PANode()

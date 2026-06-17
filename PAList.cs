@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAList : IStateMachine
+    public struct PAList
     {
         public PAList(PACount N, PASeries[] ADJ_NODE) : this()
         {

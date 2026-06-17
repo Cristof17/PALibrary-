@@ -4,28 +4,32 @@ namespace SM
 {
     interface IStateConstruct
     {
-        void Construct(PANumber number);
-        void Construct(PACount count);
-        void Construct(PAResource resource);
+        PACount ConstructPACount(PANumber number);
 
-        void Construct(PAElement element);
-        void Construct(PAInput input);
-
-        void Construct(PALink link);
-        void Construct(PAList list);
-
-        void Construct(PANormalTree normalTree);
+        // PANumber Construct(PANumber number);
         // void Construct(PANumber number);
-        void Construct(PAPair number);
+        void ConstructPAData(PACount count);
+        void ConstructPAElement(PAResource resource);
+
+        void ConstructPAInput(PAElement element);
+        void ConstructPALink(PAInput input);
+
+        void ConstructPAList(PALink link);
+        void ConstructPANormalTree(PAList list);
+
+        void ConstructPANumber(PANormalTree normalTree);
+        // void Construct(PANumber number);
+        void ConstructPAOutput(PAPair number);
         // void Construct(PAResource resource);
-        void Construct(PAResult series);
-        void Construct(PASeries series);
+        void ConstructPAPair(PAResult series);
+        void ConstructPAResource(PASeries series);
 
-        void Construct(PAStatus status);
+        void ConstructPASeries(PAStatus status);
 
-        void Construct(PATransposeTree transposeTree);
+        void ConstructPAStatus(PATransposeTree transposeTree);
 
-        void Construct(PATree tree);
+        void ConstructPATransposeTree(PATree tree);
+        void ConstructPATree(PATree tree);
         // void     (PANode node);
     }
 }

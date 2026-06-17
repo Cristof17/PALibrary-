@@ -4,7 +4,7 @@ using PA_Library;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAResource : IStateMachine
+    public struct PAResource
     {
         public PAResource(PANumber Number)
         {

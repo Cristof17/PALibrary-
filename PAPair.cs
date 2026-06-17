@@ -4,7 +4,7 @@ using PA_Library;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAPair : IStateMachine
+    public struct PAPair
     {
         public PAPair(PAElement Node, PAElement Neigh) : this()
         {

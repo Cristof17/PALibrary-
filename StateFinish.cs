@@ -27,5 +27,4 @@ namespace SM
         void Finish(PATree tree);
         // void     (PANode node);
     }
-    }
 }

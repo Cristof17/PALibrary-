@@ -5,7 +5,7 @@ using PA_Library;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PANumber : IStateMachine
+    public struct PANumber
     {
         public void Construct()
         {
@@ -31,7 +31,7 @@ namespace PA_Library
         {
             value = Value;
         }
-        public int value {get; }
+        public int value {get; set;}
 
         [DllImport("pa")]
         internal static extern PANumber PANumberPerformConstruct();

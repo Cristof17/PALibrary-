@@ -4,7 +4,7 @@ using PA_Library;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAStatus : IStateMachine
+    public struct PAStatus
     {
         public PAStatus(int Visited) : this()
         {

@@ -4,7 +4,7 @@ using PA_Library;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAOutput : IStateMachine
+    public struct PAOutput
     {
         private BFSRecord result;
 

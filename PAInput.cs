@@ -4,7 +4,7 @@ using PA_Library;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAInput : IStateMachine
+    public struct PAInput
     {
         public PAInput(PACount N, PACount M, PAList ADJ, PAElement Sursa) : this()
         {

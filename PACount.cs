@@ -2,15 +2,16 @@
 // using System.Data.Common;
 using System.Runtime.InteropServices;
 using PA_Library;
+using SM;
 
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PACount : IStateMachine
+    public struct PACount
     {
         public PACount(PANumber Number) : this()
         {
-            Construct();
+            // Construct(Number);
             value = PANumber.PANumberPerformCopy(Number,value);
         }
         private PANumber value;

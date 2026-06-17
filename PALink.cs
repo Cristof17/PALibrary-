@@ -4,7 +4,7 @@ using PA_Library;
 namespace PA_Library
 {
 	[StructLayout(LayoutKind.Sequential)]
-	public struct PALink : IStateMachine
+	public struct PALink
 	{
 		public PALink(PAPair P)
         {

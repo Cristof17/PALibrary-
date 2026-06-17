@@ -4,7 +4,7 @@ using PA_Library;
 namespace PA_Library
 {
 	[StructLayout(LayoutKind.Sequential)]
-	public struct PATree : IStateMachine
+	public struct PATree
 	{
 		public PATree(PACount N, PACount M, PASeries ADJ, PAElement Sursa) : this()
 		{

@@ -5,7 +5,7 @@ using PA_Library;
 namespace PA_Library
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PASeries : IStateMachine
+    public struct PASeries
     {
         public PASeries(PACount M, PAElement[] ADJ) : this()
         {
