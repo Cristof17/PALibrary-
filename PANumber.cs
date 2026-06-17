@@ -9,22 +9,22 @@ namespace PA_Library
     {
         public void Construct()
         {
-            throw new System.NotImplementedException();
+            Initialise();
         }
 
         public void Delete()
         {
-            throw new System.NotImplementedException();
+            Finish();
         }
 
         public void Finish()
         {
-            throw new System.NotImplementedException();
+            ;
         }
 
         public void Initialise()
         {
-            throw new System.NotImplementedException();
+            Delete();
         }
 
     public PANumber(int Value) : this()

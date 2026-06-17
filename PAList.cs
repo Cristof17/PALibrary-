@@ -44,17 +44,20 @@ namespace PA_Library
 
         public void Construct()
         {
-            throw new NotImplementedException();
+            Initialise();
+            // throw new NotImplementedException();
         }
 
         public void Initialise()
         {
-            throw new NotImplementedException();
+            Delegate();
+            // throw new NotImplementedException();
         }
 
         public void Delete()
         {
-            throw new NotImplementedException();
+            Finish();
+            // throw new NotImplementedException();
         }
 
         public void Finish()

@@ -26,17 +26,21 @@ namespace PA_Library
 
         public void Construct()
         {
-            throw new System.NotImplementedException();
+			Initialise();
+            // throw new System.NotImplementedException();
         }
 
         public void Initialise()
         {
-            throw new System.NotImplementedException();
+			// F
+			Delete();
+            // throw new System.NotImplementedException();
         }
 
         public void Delete()
         {
-            throw new System.NotImplementedException();
+			Finish();
+            // throw new System.NotImplementedException();
         }
 
         public void Finish()
