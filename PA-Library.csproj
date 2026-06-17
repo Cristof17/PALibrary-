@@ -14,6 +14,75 @@
     <Reference Include="System.Runtime.InteropServices">
       <RequiredTargetFramework>netstandard2.0</RequiredTargetFramework>
     </Reference>
+    <Target Name="MakeDirs">
+      <Message Text="MakeDirs"/>
+      <Exec Command="New-Iterm -Item-Type \"Directory\" -Name \"Sources\""/> 
+      <Exec Command="New-Iterm -Item-Type \"Directory\" -Name \"Assemblie\""/> 
+      <Exec Command="New-Iterm -Item-Type \"Directory\" -Name \"Objects\""/> 
+      <Exec Command="New-Iterm -Item-Type \"Directory\" -Name \"Library\""/> 
+      <Exec Command="New-Iterm -Item-Type \"Directory\" -Name \"Binaries\""/> 
+    </Target>
+    <Target Name="Preprocess">
+      <Message Text="Preprocess"/>
+      <Exec Command="msbuild.exe @Designs"/>
+    </Target>
+      <!-- <Exec ToolPath=""  -->
+      <!-- <Exec Command="msbuild.exe"/> -->
+      <!-- <CSC Sources="@Compile" OutputAssembly="$(AppName).dll" EmitDebugInformation="true"/> -->
+    <!-- </Target> -->
+    <Target Name="Assemble">
+      <Message Text="Assemble"/>
+    </Target>
+    <PropertyGroup>
+        <Flavor Condition="'$(Flavor)'==''">DEBUG</Flavor>
+    </PropertyGroup>
+
+    <!-- Define DEBUG settings -->
+    <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">
+        <DebugType>full</DebugType>
+        <Optimize>no</Optimize>
+    </PropertyGroup>
+
+    <!-- Define RETAIL settings -->
+    <PropertyGroup Condition="'$(Flavor)'=='RETAIL'">
+        <DebugType>pdbonly</DebugType>
+        <Optimize>yes</Optimize>
+    </PropertyGroup>
+
+    <!-- Set application name as a property -->
+    <PropertyGroup>
+        <appname>HelloWorldCS</appname>
+    </PropertyGroup>
+
+    <!-- Specify inputs by type and file name -->
+    <ItemGroup>
+        <CSFile Include = "consolehwcs1.cs"/>
+    </ItemGroup>
+
+    <Target Name = "Compile">
+        <Message Text="Compile"/>
+        <!-- Run Visual C# compilation using input file of type CSFile -->
+        <CSC  Sources = "@(CSFile)"
+            DebugType="$(DebugType)"
+            Optimize="$(Optimize)"
+            OutputAssembly="$(appname).exe" >
+
+            <!-- Set OutputAssembly attribute of CSC task to name of created executable file -->
+            <Output TaskParameter="OutputAssembly"
+                ItemName = "EXEFile" />
+        </CSC>
+        <!-- Log file name of output file -->
+        <Message Text="The output file is @(EXEFile)"/>
+    </Target>
+      
+      
+    </Target>
+    <Target Name="Link">
+      <Message Text="Link"/>
+    </Target>
+    <Target Name="Test">
+      <Message Text="Test"/>
+    </Target>
     <!-- <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference> -->
