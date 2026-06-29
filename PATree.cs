@@ -8,12 +8,15 @@ namespace PA_Library
 	{
 		public PATree(PACount N, PACount M, PASeries ADJ, PAElement Sursa) : this()
 		{
-			n = PACount.PACountPerformConstruct();
-			n = PACount.PACountPerformCopy(N, n);
-			m = PACount.PACountPerformConstruct();
-			m = PACount.PACountPerformCopy(M, m);
-			sursa = PAElement.PAElementPerformConstruct();
-			sursa = PAElement.PAElementPerformCopy(Sursa, sursa);
+			PATree tree;
+			tree = PATreePerformConstruct();
+			tree = PATreePerformInit(tree,N,M,ADJ,Sursa);
+			// n = PACount.PACountPerformConstruct();
+			n = PACount.PACountPerformCopy(tree.n, n);
+			// m = PACount.PACountPerformConstruct();
+			m = PACount.PACountPerformCopy(tree.m, m);
+			// sursa = PAElement.PAElementPerformConstruct();
+			sursa = PAElement.PAElementPerformCopy(tree.sursa, sursa);
 		}
 		private PACount n;
 
@@ -26,7 +29,7 @@ namespace PA_Library
 		[DllImport("pa")]
 		internal static extern PATree PATreePerformConstruct();
 		[DllImport("pa")]
-		internal static extern PATree PATreePerformInit([MarshalAs(UnmanagedType.IUnknown)] PATree Tree, [MarshalAs(UnmanagedType.IUnknown)] PACount Count, [MarshalAs(UnmanagedType.IUnknown)] PACount Count2, [MarshalAs(UnmanagedType.IUnknown)] PAList List, [MarshalAs(UnmanagedType.IUnknown)] PAElement Element);
+		internal static extern PATree PATreePerformInit([MarshalAs(UnmanagedType.IUnknown)] PATree Tree, [MarshalAs(UnmanagedType.IUnknown)] PACount Count, [MarshalAs(UnmanagedType.IUnknown)] PACount Count2, [MarshalAs(UnmanagedType.IUnknown)] PASeries Series, [MarshalAs(UnmanagedType.IUnknown)] PAElement Element);
 		[DllImport("pa")]
 		internal static extern PATree PATreePerformCopy([MarshalAs(UnmanagedType.IUnknown)] PATree from, [MarshalAs(UnmanagedType.IUnknown)] PATree to);
 		[DllImport("pa")]
