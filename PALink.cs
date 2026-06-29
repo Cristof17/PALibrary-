@@ -8,7 +8,13 @@ namespace PA_Library
 	{
 		public PALink(PAPair P)
         {
-            p = PAPair.PAPairConstruct();
+            // p = PAPair.PAPairConstruct();
+			PALink link;
+			link = PALinkPerformConstruct();
+			link = PALinkPerformInit(link,p);
+			// link = PALin
+			// p = 
+			// p = Pair
         }
 		private PAPair p;
 
