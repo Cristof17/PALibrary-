@@ -8,9 +8,14 @@ namespace PA_Library
     {
         public PAPair(PAElement Node, PAElement Neigh) : this()
         {
-            node = PAElement.PAElementPerformConstruct();
+            PAPair p;
+            // object 
+            p = PAPairConstruct();
+            p = PAPairInit(p,Node,Neigh);
+            // node =
+            // node = PAElement.PAElementPerformConstruct();
             node = PAElement.PAElementPerformCopy(Node, node);
-            neigh = PAElement.PAElementPerformConstruct();
+            // neigh = PAElement.PAElementPerformConstruct();
             neigh = PAElement.PAElementPerformCopy(Neigh, neigh);
         }
         private PAElement node;
