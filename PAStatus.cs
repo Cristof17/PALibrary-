@@ -10,6 +10,9 @@ namespace PA_Library
         {
             // Visited = visited;
             visited = Visited;
+            PAStatus status;
+            status = PAStatusPerformConstruct();
+            // status = PAStatusPerformInit(status,)
         }
         private int visited;
 

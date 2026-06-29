@@ -9,17 +9,26 @@ namespace PA_Library
     {
         public PASeries(PACount M, PAElement[] ADJ) : this()
         {
-            m = PACount.PACountPerformConstruct();
-            m = PACount.PACountPerformCopy(M, m);
+            PASeries series;
+            series = PASeriesPerformConstruct();
+            // series = PASeriesPerformInit(sb)
+            // series = PASeriesPerformInit(sbyte
+            // ser)
+            series = PASeriesPerformInit(series,M,ADJ);
+            // serie
+            m = PACountPerformCopy(series.m,m);
+            // adj = 
+            // m = PACount.PACountPerformConstruct();
+            // m = PACount.PACountPerformCopy(M, m);
 
-            PACount x = PACount.PACountPerformConstruct();
-            while (x < M)
-            {
-                PAElement aux = PAElement.PAElementPerformConstruct();
-                aux = PAElement.PAElementPerformCopy(ADJ[x], aux);
-                adj[x] = PAElement.PAElementPerformCopy(aux, adj[x]);
-                x++;
-            }
+            // PACount x = PACount.PACountPerformConstruct();
+            // while (x < M)
+            // {
+            //     PAElement aux = PAElement.PAElementPerformConstruct();
+            //     aux = PAElement.PAElementPerformCopy(ADJ[x], aux);
+            //     adj[x] = PAElement.PAElementPerformCopy(aux, adj[x]);
+            //     x++;
+            // }
 
             // PASeriesPerformCopy(ADJ,adj);
             // PAList.PAListPerformCopy(ADJ,adj);

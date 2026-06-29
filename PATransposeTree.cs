@@ -6,10 +6,15 @@ namespace PA_Library
 	[StructLayout(LayoutKind.Sequential)]
 	public struct PATransposeTree
 	{
-		public PATransposeTree(PATree tree) : this()
+		public PATransposeTree(PATree Tree) : this()
 		{
-			tree = PATree.PATreePerformConstruct();
-			tree = PATree.PATreePerformCopy(tree, tree);
+			PATransposeTree tree;
+			tree = PATransposeTreePerformConstruct();
+			tree = PATransposeTreePerformInit(Tree,tree);
+			// tree
+			tree.tree = PATreePerformCopy(tree.tree,tree);
+			// tree = PATree.PATreePerformConstruct();
+			// tree = PATree.PATreePerformCopy(tree, tree);
 		}
 		private PATree tree;
 

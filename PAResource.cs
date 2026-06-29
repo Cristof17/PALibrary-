@@ -8,8 +8,17 @@ namespace PA_Library
     {
         public PAResource(PANumber Number)
         {
-            value = PANumber.PANumberPerformConstruct();
-            value = PANumber.PANumberPerformCopy(Number, value);
+            // PAResource resout;
+            PAResource resource;
+            // resu
+            resource = PAResourcePerformConstruct();
+            // resource = PAA
+            // resource = PAResourcePerformInit(ref,Number);
+            // resource = PAResourcePerformInit(resource,Number_
+            resource = PAResourcePerformInit(resource,Number);
+            value = PAResourcePerformCopy(resource.value,value);
+            // value = PANumber.PANumberPerformConstruct();
+            // value = PANumber.PANumberPerformCopy(Number, value);
         }
         private PANumber value;
 
