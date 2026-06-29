@@ -12,7 +12,10 @@ namespace PA_Library
         public PACount(PANumber Number) : this()
         {
             // Construct(Number);
-            value = PANumber.PANumberPerformCopy(Number,value);
+            PACount count;
+            count = PACountPerformConstruct();
+            count = PACountPerformInit(count,Number);
+            value = PANumber.PANumberPerformCopy(count.value,value);
         }
         private PANumber value;
 
