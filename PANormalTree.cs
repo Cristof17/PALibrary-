@@ -8,20 +8,25 @@ namespace PA_Library
 	{
 		public PANormalTree(PATree Tree) : this()
 		{
-			tree = PATree.PATreePerformConstruct();
-			tree = PATree.PATreePerformCopy(Tree, tree);
+			// PATreePerformConstruct tre
+			PANormalTree tree;
+			tree = PANormalTreePerformConstruct();
+			tree = PANormalTreePerformInit(tree,Tree);
+			tree = PATree.PATreePerformCopy(tree.tree, tree);
+			// tree.tree = PA
+			// tree = PATree.PATreePerformConstruct();
 		}
 		private PATree tree;
 
 		[DllImport("pa")]
-		internal static extern PANormalTree PATreePerformConstruct();
+		internal static extern PANormalTree PANormalTreePerformConstruct();
 		[DllImport("pa")]
-		internal static extern PANormalTree PATreePerformInit([MarshalAs(UnmanagedType.IUnknown)] PANormalTree Tree, [MarshalAs(UnmanagedType.IUnknown)] PATree tree);
+		internal static extern PANormalTree PANormalTreePerformInit([MarshalAs(UnmanagedType.IUnknown)] PANormalTree Tree, [MarshalAs(UnmanagedType.IUnknown)] PATree tree);
 		[DllImport("pa")]
-		internal static extern PANormalTree PATreePerformCopy([MarshalAs(UnmanagedType.IUnknown)] PANormalTree from, [MarshalAs(UnmanagedType.IUnknown)] PANormalTree to);
+		internal static extern PANormalTree PANormalTreePerformCopy([MarshalAs(UnmanagedType.IUnknown)] PANormalTree from, [MarshalAs(UnmanagedType.IUnknown)] PANormalTree to);
 		[DllImport("pa")]
-		internal static extern PANormalTree PATreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PANormalTree PA);
+		internal static extern PANormalTree PANormalTreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PANormalTree PA);
 		[DllImport("pa")]
-		internal static extern PANormalTree PATreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PANormalTree PA);
+		internal static extern PANormalTree PANormalTreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PANormalTree PA);
     }
 }

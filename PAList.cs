@@ -8,18 +8,23 @@ namespace PA_Library
     {
         public PAList(PACount N, PASeries[] ADJ_NODE) : this()
         {
-            n = PACount.PACountPerformConstruct();
-            n = PACount.PACountPerformCopy(N, n);
-
-            PACount x = PACount.PACountPerformConstruct();
-            while (x < n)
-            {
-                // adj_node[x] = PASerie
-                PASeries aux = PASeries.PASeriesPerformConstruct();
-                aux = PASeries.copy(ADJ_NODE[x], aux);
-                adj_node[x] = PASeries.PASeriesPerformCopy(aux, adj_node[x]);
-                x++;
-            }
+            PAList list;
+            list = PAListPerformConstruct();
+            list = PAListPerformInit(list,N,ADJ_NODE);
+            // n = 
+            // n = PACount.PACountPerformConstruct();
+            n = PACount.PACountPerformCopy(list.n, n);
+            // PAList.PAListPerformCopy()
+            // adj_node = PA
+            // PACount x = PACount.PACountPerformConstruct();
+            // while (x < n)
+            // {
+            //     // adj_node[x] = PASerie
+            //     PASeries aux = PASeries.PASeriesPerformConstruct();
+            //     aux = PASeries.copy(ADJ_NODE[x], aux);
+            //     adj_node[x] = PASeries.PASeriesPerformCopy(aux, adj_node[x]);
+            //     x++;
+            // }
         }
 
         private PACount n;

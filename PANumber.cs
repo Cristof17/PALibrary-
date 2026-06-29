@@ -10,6 +10,10 @@ namespace PA_Library
         public PANumber(int Value) : this()
         {
             value = Value;
+            PANumber number;
+            number = PANumberPerformConstruct();
+            number = PANumberPerformInit(number,Value);
+            value = PANumberPerformCopy(number.value,value);
         }
         public int value;
 
