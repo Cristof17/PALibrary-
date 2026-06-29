@@ -9,10 +9,14 @@ namespace PA_Library
     {
         public PAElement(PAData Data, PAStatus Status) : this()
         {
-            index = PAData.PADataPerformConstruct();
-            index = PAData.PADataPerformCopy(Data,index);
-            status = PAStatus.PAStatusPerformConstruct();
-            status = PAStatus.PAStatusPerformCopy(Status,status);
+            PAElement element;
+            element = PAElementPerformConstruct();
+            element = PAElementPerformInit(element,Data,Status);
+            // index = 
+            // index = PAData.PADataPerformConstruct();
+            index = PAData.PADataPerformCopy(element.index,index);
+            // status = PAStatus.PAStatusPerformConstruct();
+            status = PAStatus.PAStatusPerformCopy(element.status,status);
         }
         private PAData index;
 

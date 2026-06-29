@@ -9,8 +9,11 @@ namespace PA_Library
     {
         public PAData(PAResource Resource)
         {
-            resource = PAResource.PAResourcePerformConstruct();
-            resource = PAResource.PAResourcePerformCopy(Resource,resource);
+            PAData data;
+            data = PADataPerformConstruct();
+            data = PADataPerformInit(data,Resource);
+            // resource = PAResource.PAResourcePerformConstruct();
+            resource = PAResource.PAResourcePerformCopy(data.resource,resource);
         }
         private PAResource resource;
 
