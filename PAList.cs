@@ -14,8 +14,8 @@ namespace PA
             // n = 
             // n = PACount.PACountPerformConstruct();
             n = PACount.PACountPerformCopy(list.n, n);
-            PASeries.PASeriesPerformCopy(ADJ,list.adj);
-            PASeries.PASeriesPerformCopy(list.adj,adj);
+            list.adj = PASeries.PASeriesPerformCopy(ADJ,list.adj);
+            adj = PASeries.PASeriesPerformCopy(list.adj,adj);
             // PAList.PAListPerformCopy()
             // adj_node = PA
             // PACount x = PACount.PACountPerformConstruct();
