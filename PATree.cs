@@ -6,7 +6,7 @@ namespace PA
 	[StructLayout(LayoutKind.Sequential)]
 	public struct PATree
 	{
-		public PATree(PACount N, PACount M, PASeries ADJ, PAElement Sursa) : this()
+		public PATree(PACount N, PACount M, PAList ADJ, PAElement Sursa) : this()
 		{
 			PATree tree;
 			tree = PATreePerformConstruct();
@@ -29,7 +29,7 @@ namespace PA
 		[DllImport("pa")]
 		internal static extern PATree PATreePerformConstruct();
 		[DllImport("pa")]
-		internal static extern PATree PATreePerformInit([MarshalAs(UnmanagedType.IUnknown)] PATree Tree, [MarshalAs(UnmanagedType.IUnknown)] PACount Count, [MarshalAs(UnmanagedType.IUnknown)] PACount Count2, [MarshalAs(UnmanagedType.IUnknown)] PASeries Series, [MarshalAs(UnmanagedType.IUnknown)] PAElement Element);
+		internal static extern PATree PATreePerformInit([MarshalAs(UnmanagedType.IUnknown)] PATree Tree, [MarshalAs(UnmanagedType.IUnknown)] PACount Count, [MarshalAs(UnmanagedType.IUnknown)] PACount Count2, [MarshalAs(UnmanagedType.IUnknown)] PAList List, [MarshalAs(UnmanagedType.IUnknown)] PAElement Element);
 		[DllImport("pa")]
 		internal static extern PATree PATreePerformCopy([MarshalAs(UnmanagedType.IUnknown)] PATree from, [MarshalAs(UnmanagedType.IUnknown)] PATree to);
 		[DllImport("pa")]
