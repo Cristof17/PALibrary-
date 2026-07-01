@@ -12,7 +12,7 @@ namespace PA
 			PANormalTree tree;
 			tree = PANormalTreePerformConstruct();
 			tree = PANormalTreePerformInit(tree,Tree);
-			tree.tree = PATree.PATreePerformCopy(Tree, tree.pa);
+			tree.pa = PATree.PATreePerformCopy(Tree, tree.pa);
 			pa = PATree.PATreePerformCopy(tree.pa,pa);
 			// tree.tree = PA
 			// tree = PATree.PATreePerformConstruct();
