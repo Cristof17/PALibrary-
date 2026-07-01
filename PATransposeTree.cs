@@ -12,8 +12,8 @@ namespace PA
 			tree = PATransposeTreePerformConstruct();
 			tree = PATransposeTreePerformInit(Tree,tree);
 			// tree
-			tree = PATree.PATreePerformCopy(Tree.tree,tree);
-			pa = PATree.PATreePerformCopy(tree,pa);
+			tree.pa = PATree.PATreePerformCopy(Tree.tree,tree.pa);
+			pa = PATree.PATreePerformCopy(tree.pa,pa);
 			// tree = PATree.PATreePerformConstruct();
 			// tree = PATree.PATreePerformCopy(tree, tree);
 		}
