@@ -15,8 +15,10 @@ namespace PA
             // node =
             // node = PAElement.PAElementPerformConstruct();
             pair.node = PAElement.PAElementPerformCopy(Node, node);
+            node = PAElement.PAElementPerformCopy(pair.node,node);
             // neigh = PAElement.PAElementPerformConstruct();
             pair.neigh = PAElement.PAElementPerformCopy(Neigh, neigh);
+            neigh = PAElement.PAElementPerformCopy(pair.neigh,neigh);
         }
         private PAElement node;
 
