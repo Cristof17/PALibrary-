@@ -15,6 +15,8 @@ namespace PA
 			n = PACount.PACountPerformCopy(tree.n, n);
 			// m = PACount.PACountPerformConstruct();
 			m = PACount.PACountPerformCopy(tree.m, m);
+			tree.adj = PAList.PAListPerformCopy(ADJ,tree.adj);
+			adj = PAList.PAListPerformCopy(tree.adj,adj);
 			// sursa = PAElement.PAElementPerformConstruct();
 			sursa = PAElement.PAElementPerformCopy(tree.sursa, sursa);
 		}
