@@ -15,6 +15,7 @@ namespace PA
             PACount count;
             count = PACountPerformConstruct();
             count = PACountPerformInit(count,Number);
+            count.value = PANumber.PANumberPerformCopy(count.value,value);
             value = PANumber.PANumberPerformCopy(count.value,value);
         }
         private PANumber value;
