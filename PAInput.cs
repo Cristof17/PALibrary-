@@ -6,7 +6,7 @@ namespace PA
     [StructLayout(LayoutKind.Sequential)]
     public struct PAInput
     {
-        public PAInput(PACount N, PACount M, PAList ADJ, PAElement Sursa) : this()
+        public PAInput(PACount N, PACount M, PAList Adj, PAElement Sursa) : this()
         {
             PAInput input = PAInputPerformConstruct();
             input = PAInputPerformInit(input,N,Sursa);
@@ -15,6 +15,7 @@ namespace PA
             n = PACount.PACountPerformCopy(input.n,n);
             // m = PACount.PACountPerformConstruct();
             m = PACount.PACountPerformCopy(input.m,m);
+            input.adj = PAList.PAListPerformCopy(Adj,input.adj);
             // adj = PAList.PAListPerformConstruct();
             adj = PAList.PAListPerformCopy(input.adj,adj);
             // sursa = PAElement.PAElementPerformConstruct();
