@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace PA_Library
+namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct PAList

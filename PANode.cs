@@ -1,5 +1,5 @@
 // using System.Linq.Expressions;
-using PA_Library;
+using PA;
 // using System.Reflection;
 // using System.InteropServices;
 // using System.Runtime.InteropServices;
@@ -7,7 +7,7 @@ using PA_Library;
 // using System.Xml;
 // using System.Xml.XPath;
 
-namespace PA_Library
+namespace PA
 {
     // [StructLayout(LayoutKind.Sequntial)]
     // struct PAElement

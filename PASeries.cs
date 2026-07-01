@@ -1,8 +1,8 @@
 ﻿using System.Runtime.InteropServices;
 // using System.Xml.Schema;
-using PA_Library;
+using PA;
 
-namespace PA_Library
+namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct PASeries

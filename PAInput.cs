@@ -1,7 +1,7 @@
 ﻿using System.Runtime.InteropServices;
 using PA_Library;
 
-namespace PA_Library
+namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct PAInput

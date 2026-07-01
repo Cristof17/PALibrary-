@@ -1,8 +1,8 @@
 // using System.Linq.Expressions;
 using System.Runtime.InteropServices;
-using PA_Library;
+using PA;
 
-namespace PA_Library
+namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct PAElement

@@ -1,10 +1,10 @@
 ﻿using System;
 // using System.Data.Common;
 using System.Runtime.InteropServices;
-using PA_Library;
+using PA;
 using SM;
 
-namespace PA_Library
+namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct PACount
