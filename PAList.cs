@@ -6,7 +6,7 @@ namespace PA
     [StructLayout(LayoutKind.Sequential)]
     public struct PAList
     {
-        public PAList(PACount N, PASeries ADJ) : this()
+        public PAList(PACount N, PASeries Adj) : this()
         {
             PAList list;
             list = PAListPerformConstruct();
@@ -14,7 +14,7 @@ namespace PA
             // n = 
             // n = PACount.PACountPerformConstruct();
             n = PACount.PACountPerformCopy(list.n, n);
-            list.adj = PASeries.PASeriesPerformCopy(ADJ,list.adj);
+            list.adj = PASeries.PASeriesPerformCopy(Adj,list.adj);
             adj = PASeries.PASeriesPerformCopy(list.adj,adj);
             // PAList.PAListPerformCopy()
             // adj_node = PA
