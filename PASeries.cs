@@ -7,14 +7,14 @@ namespace PA
     [StructLayout(LayoutKind.Sequential)]
     public struct PASeries
     {
-        public PASeries(PACount M, PAElement[] ADJ_NODE) : this()
+        public PASeries(PACount M, PAElement[] array) : this()
         {
             PASeries series;
             series = PASeriesPerformConstruct();
             // series = PASeriesPerformInit(sb)
             // series = PASeriesPerformInit(sbyte
             // ser)
-            series = PASeriesPerformInit(series,M,ADJ_NODE);
+            series = PASeriesPerformInit(series,M,array);
             // serie
             m = PACountPerformCopy(series.m,m);
             // adj = 
@@ -68,7 +68,7 @@ namespace PA
         // }
         private PACount m;
 
-        private PAElement[] adj_node;
+        private PAElement[] array;
 
         [DllImport("pa")]
         internal static extern PASeries PASeriesPerformConstruct();
