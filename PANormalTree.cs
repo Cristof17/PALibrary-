@@ -12,11 +12,12 @@ namespace PA
 			PANormalTree tree;
 			tree = PANormalTreePerformConstruct();
 			tree = PANormalTreePerformInit(tree,Tree);
-			tree = PATree.PATreePerformCopy(tree.tree, tree);
+			tree.tree = PATree.PATreePerformCopy(Tree, tree);
+			pa = PATree.PATreePerformCopy(tree.tree,pa);
 			// tree.tree = PA
 			// tree = PATree.PATreePerformConstruct();
 		}
-		private PATree tree;
+		private PATree pa;
 
 		[DllImport("pa")]
 		internal static extern PANormalTree PANormalTreePerformConstruct();

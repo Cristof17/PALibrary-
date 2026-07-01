@@ -12,11 +12,12 @@ namespace PA
 			tree = PATransposeTreePerformConstruct();
 			tree = PATransposeTreePerformInit(Tree,tree);
 			// tree
-			tree.tree = PATreePerformCopy(tree.tree,tree);
+			tree.tree = PATree.PATreePerformCopy(tree.tree,tree);
+			pa = PATree.PATreePerformCopy(tree.tree,pa);
 			// tree = PATree.PATreePerformConstruct();
 			// tree = PATree.PATreePerformCopy(tree, tree);
 		}
-		private PATree tree;
+		private PATree pa;
 
 		[DllImport("pa")]
 		internal static extern PATransposeTree PATransposeTreePerformConstruct();
