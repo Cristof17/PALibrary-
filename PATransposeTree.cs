@@ -10,7 +10,7 @@ namespace PA
 		{
 			PATransposeTree tree;
 			tree = PATransposeTreePerformConstruct();
-			tree = PATransposeTreePerformInit(Tree,tree);
+			tree = PATransposeTreePerformInit(tree,Tree);
 			// tree
 			tree.pa = PATree.PATreePerformCopy(Tree,tree.pa);
 			pa = PATree.PATreePerformCopy(tree.pa,pa);
