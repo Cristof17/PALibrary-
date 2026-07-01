@@ -6,16 +6,16 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PAList
     {
-        public PAList(PACount N, PAList[] ADJ_NODE) : this()
+        public PAList(PACount N, PASeries ADJ) : this()
         {
             PAList list;
             list = PAListPerformConstruct();
-            list = PAListPerformInit(list,N,ADJ_NODE);
+            list = PAListPerformInit(list,N,ADJ);
             // n = 
             // n = PACount.PACountPerformConstruct();
             n = PACount.PACountPerformCopy(list.n, n);
-            PAListPerformCopy(ADJ_NODE,list.adj_node);
-            PAListPerformCopy(list.adj_node,adj_node);
+            PAListPerformCopy(ADJ,list.adj);
+            PAListPerformCopy(list.adj,adj);
             // PAList.PAListPerformCopy()
             // adj_node = PA
             // PACount x = PACount.PACountPerformConstruct();
@@ -30,12 +30,12 @@ namespace PA_Library
         }
 
         private PACount n;
-        private PAList[] adj_node;
+        private PASeries adj;
 
         [DllImport("pa")]
         internal static extern PAList PAListPerformConstruct();
         [DllImport("pa")]
-        internal static extern PAList PAListPerformInit([MarshalAs(UnmanagedType.IUnknown)] PAList List, [MarshalAs(UnmanagedType.IUnknown)] PACount N, [MarshalAs(UnmanagedType.IUnknown)] in PAList[] adj);
+        internal static extern PAList PAListPerformInit([MarshalAs(UnmanagedType.IUnknown)] PAList List, [MarshalAs(UnmanagedType.IUnknown)] PACount N, [MarshalAs(UnmanagedType.IUnknown)] in PASeries adj);
         [DllImport("pa")]
         internal static extern PAList PAListPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PAList from, [MarshalAs(UnmanagedType.IUnknown)] PAList to);
         // DllExport void PAListDispose(void);

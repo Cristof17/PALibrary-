@@ -7,14 +7,14 @@ namespace PA_Library
     [StructLayout(LayoutKind.Sequential)]
     public struct PASeries
     {
-        public PASeries(PACount M, PAElement[] ADJ) : this()
+        public PASeries(PACount M, PAElement[] ADJ_NODE) : this()
         {
             PASeries series;
             series = PASeriesPerformConstruct();
             // series = PASeriesPerformInit(sb)
             // series = PASeriesPerformInit(sbyte
             // ser)
-            series = PASeriesPerformInit(series,M,ADJ);
+            series = PASeriesPerformInit(series,M,ADJ_NODE);
             // serie
             m = PACountPerformCopy(series.m,m);
             // adj = 
@@ -37,47 +37,47 @@ namespace PA_Library
             // while (x.)
         }
 
-        internal static PASeries copy(PASeries from, PASeries to)
-        {
-            PASeries copy;
-            copy = PASeriesPerformConstruct();
-            PACount x;
-            // PACount y;
-            x = PACount.PACountPerformConstruct();
-            // y = PACount.PACountPerformConstruct();
-            // PACount n;
-            // PACount m;
-            while (x < from.m)
-            {
-                PAElement aux = from.adj[x];
-                copy.adj[x] = aux;
-                x++;
-            }
-            x = PACount.PACountPerformDelete(x);
-            x = PACount.PACountPerformRuin(x);
-            x = PACount.PACountPerformConstruct();
-            // x = PACountPerformConstruct();;
-            while (x < from.m)
-            {
-                PAElement aux = copy.adj[x];
-                to.adj[x] = aux;
-                x++;
-            }
-            return to;
-            // PACount fromCount = from.C
-        }
+        // internal static extern PASeries copy(PASeries from, PASeries to);
+        // {
+        //     PASeries copy;
+        //     copy = PASeriesPerformConstruct();
+        //     PACount x;
+        //     // PACount y;
+        //     x = PACount.PACountPerformConstruct();
+        //     // y = PACount.PACountPerformConstruct();
+        //     // PACount n;
+        //     // PACount m;
+        //     while (x < from.m)
+        //     {
+        //         PAElement aux = from.adj[x];
+        //         copy.adj[x] = aux;
+        //         x++;
+        //     }
+        //     x = PACount.PACountPerformDelete(x);
+        //     x = PACount.PACountPerformRuin(x);
+        //     x = PACount.PACountPerformConstruct();
+        //     // x = PACountPerformConstruct();;
+        //     while (x < from.m)
+        //     {
+        //         PAElement aux = copy.adj[x];
+        //         to.adj[x] = aux;
+        //         x++;
+        //     }
+        //     return to;
+        //     // PACount fromCount = from.C
+        // }
         private PACount m;
 
-        private PAElement[] adj;
+        private PAElement[] adj_node;
 
         [DllImport("pa")]
         internal static extern PASeries PASeriesPerformConstruct();
         [DllImport("pa")]
-        internal static extern PASeries PASeriesPerformInit([MarshalAs(UnmanagedType.IUnknown)] PASeries Series, [MarshalAs(UnmanagedType.IUnknown)] PACount M, [MarshalAs(UnmanagedType.IUnknown)] in PAElement[] adj);
+        internal static extern PASeries PASeriesPerformInit([MarshalAs(UnmanagedType.IUnknown)] PASeries Series, [MarshalAs(UnmanagedType.IUnknown)] PACount M, [MarshalAs(UnmanagedType.IUnknown)] in PAElement[] adj_node);
         [DllImport("pa")]
-        internal static extern PASeries PASeriesPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PASeries Series1, [MarshalAs(UnmanagedType.IUnknown)] PASeries Series);
+        internal static extern PASeries PASeriesPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PASeries Series1, [MarshalAs(UnmanagedType.IUnknown)] PASeries Series2);
         [DllImport("pa")]
-        internal static extern PAResource PASeriesGet([MarshalAs(UnmanagedType.IUnknown)] PAData Data);
+        // internal static extern PAResource PASeriesGet([MarshalAs(UnmanagedType.IUnknown)] PAData Data);
         [DllImport("pa")]
         internal static extern void PASeriesPerformPrint([MarshalAs(UnmanagedType.IUnknown)] PASeries Series);
         [DllImport("pa")]
