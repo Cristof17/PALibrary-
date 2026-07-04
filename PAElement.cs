@@ -12,12 +12,13 @@ namespace PA
             PAElement element;
             PAStatus status;
             // status = PAStatus.STATUS_VISITED;
-            status = PAStatus.STATUS_NOT_VISITED;
+            // status = PAStatus.STATUS_NOT_VISITED;
+            status = new PAStatus(false);
             element = PAElementPerformConstruct();
             element = PAElementPerformInit(element,Data,status);
+            index = PAData.PADataPerformCopy(element.index,Index);
             // index = 
             // index = PAData.PADataPerformConstruct();
-            index = PAData.PADataPerformCopy(element.index,Index);
             // status = PAStatus.PAStatusPerformConstruct();
             // status = PAStatus.PAStatusPerformCopy(element.status,status);
         }
