@@ -10,17 +10,20 @@ namespace PA
         public PAElement(PAData Data) : this()
         {
             PAElement element;
+            PAStatus status;
+            // status = PAStatus.STATUS_VISITED;
+            status = PAStatus.STATUS_NOT_VISITED;
             element = PAElementPerformConstruct();
-            element = PAElementPerformInit(element,Data,Status);
+            element = PAElementPerformInit(element,Data,status);
             // index = 
             // index = PAData.PADataPerformConstruct();
-            index = PAData.PADataPerformCopy(element.index,index);
+            index = PAData.PADataPerformCopy(element.index,Index);
             // status = PAStatus.PAStatusPerformConstruct();
             // status = PAStatus.PAStatusPerformCopy(element.status,status);
         }
-        private PAData index;
+        private PAData Index;
 
-        int status;
+        int Status;
 
         [DllImport("pa")]
         internal static extern PAElement PAElementPerformConstruct();
