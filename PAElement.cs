@@ -7,7 +7,7 @@ namespace PA
     [StructLayout(LayoutKind.Sequential)]
     public struct PAElement
     {
-        public PAElement(PAData Data, PAStatus Status) : this()
+        public PAElement(PAData Data) : this()
         {
             PAElement element;
             element = PAElementPerformConstruct();
