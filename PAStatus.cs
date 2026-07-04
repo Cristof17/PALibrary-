@@ -16,7 +16,7 @@ namespace PA
             visited = (int) (((int)Visited) & 0x01);
             // PAStatus status;
             status = PAStatusPerformConstruct();
-            status = PAStatusPerformInit(status,Visited);
+            status = PAStatusPerformInit(status,visited);
             // status = PAStatusPerformInit(status,)
         }
         private int visited;
