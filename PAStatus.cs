@@ -13,7 +13,7 @@ namespace PA
         public PAStatus(bool Visited) : this()
         {
             // Visited = visited;
-            visited = (int) (((int)Visited) & 0x01);
+            visited = (int) (((int)Visited) & ((int) 0x01));
             // PAStatus status;
             status = PAStatusPerformConstruct();
             status = PAStatusPerformInit(status,visited);
