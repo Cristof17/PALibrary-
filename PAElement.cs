@@ -23,7 +23,7 @@ namespace PA
         }
         private PAData Index;
 
-        int Status;
+        private int Status;
 
         [DllImport("pa")]
         internal static extern PAElement PAElementPerformConstruct();
