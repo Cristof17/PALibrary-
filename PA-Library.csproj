@@ -21,21 +21,21 @@
     <Target Name="Assemble">
       <Message Text="Assemble"/>
     </Target>
-    <PropertyGroup>
+    <!-- <PropertyGroup>
         <Flavor Condition="'$(Flavor)'==''">DEBUG</Flavor>
-    </PropertyGroup>
+    </PropertyGroup> -->
 
     <!-- Define DEBUG settings -->
-    <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">
+    <!-- <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">
         <DebugType>full</DebugType>
         <Optimize>no</Optimize>
-    </PropertyGroup>
+    </PropertyGroup> -->
 
     <!-- Define RETAIL settings -->
-    <PropertyGroup Condition="'$(Flavor)'=='RETAIL'">
+    <!-- <PropertyGroup Condition="'$(Flavor)'=='RETAIL'">
         <DebugType>pdbonly</DebugType>
         <Optimize>yes</Optimize>
-    </PropertyGroup>
+    </PropertyGroup> -->
 
     <!-- Set application name as a property -->
     <PropertyGroup>
@@ -85,13 +85,13 @@
     </Target>
 
     <ItemGroup>
-    <COMReference Include="MyComLibrary">
-      <Guid>{01234567-89AB-CDEF-0123-456789ABCDEF}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-    </COMReference>
+      <COMReference Include="MyComLibrary">
+        <Guid>{01234567-89AB-CDEF-0123-456789ABCDEF}</Guid>
+        <VersionMajor>1</VersionMajor>
+        <VersionMinor>0</VersionMinor>
+        <Lcid>0</Lcid>
+        <WrapperTool>tlbimp</WrapperTool>
+      </COMReference>
   </ItemGroup>
       
     <Target Name="Link">
