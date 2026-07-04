@@ -16,16 +16,16 @@ namespace PA
             // index = PAData.PADataPerformConstruct();
             index = PAData.PADataPerformCopy(element.index,index);
             // status = PAStatus.PAStatusPerformConstruct();
-            status = PAStatus.PAStatusPerformCopy(element.status,status);
+            // status = PAStatus.PAStatusPerformCopy(element.status,status);
         }
         private PAData index;
 
-        private PAStatus status;
+        int status;
 
         [DllImport("pa")]
         internal static extern PAElement PAElementPerformConstruct();
         [DllImport("pa")]
-        internal static extern PAElement PAElementPerformInit([MarshalAs(UnmanagedType.IUnknown)] PAElement element, [MarshalAs(UnmanagedType.IUnknown)] PAData data, [MarshalAs(UnmanagedType.IUnknown)] PAStatus status);
+        internal static extern PAElement PAElementPerformInit([MarshalAs(UnmanagedType.IUnknown)] PAElement element, [MarshalAs(UnmanagedType.IUnknown)] PAData data, [MarshalAs(UnmanagedType.IUnknown)] int status);
         [DllImport("pa")]
         internal static extern void PAElementVisit([MarshalAs(UnmanagedType.IUnknown)] PAElement element);
         [DllImport("pa")]
