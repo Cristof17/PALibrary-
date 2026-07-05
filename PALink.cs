@@ -10,6 +10,7 @@ namespace PA
         {
             // p = PAPair.PAPairConstruct();
 			PALink link;
+			p = new PAPair(P.node,P.neigh);
 			link = PALinkPerformConstruct();
 			link = PALinkPerformInit(link,p);
 			link.p = PAPair.PAPairPerformCopy(P,link.p);
