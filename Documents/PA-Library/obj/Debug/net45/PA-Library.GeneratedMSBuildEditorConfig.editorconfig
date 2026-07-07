@@ -1,6 +1,6 @@
 is_global = true
-build_property.RootNamespace = PA-Library_copy
-build_property.ProjectDir = C:\Users\crist\source\repos\PA-Library\
+build_property.RootNamespace = PA_Library
+build_property.ProjectDir = C:\Users\crist\source\repos\PA-Library\Documents\PA-Library\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false
