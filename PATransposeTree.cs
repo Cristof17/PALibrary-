@@ -1,27 +1,33 @@
 using System.Runtime.InteropServices;
-using PA_Library;
+using PA;
 
-namespace PA_Library
+namespace PA
 {
 	[StructLayout(LayoutKind.Sequential)]
 	public struct PATransposeTree
 	{
-		public PATransposeTree(PATree tree) : this()
+		public PATransposeTree(PATree Tree) : this()
 		{
-			tree = PATree.PATreePerformConstruct();
-			tree = PATree.PATreePerformCopy(tree, tree);
+			PATransposeTree tree;
+			tree = PATransposeTreePerformConstruct();
+			tree = PATransposeTreePerformInit(tree,Tree);
+			// tree
+			tree.pa = PATree.PATreePerformCopy(Tree,tree.pa);
+			pa = PATree.PATreePerformCopy(tree.pa,pa);
+			// tree = PATree.PATreePerformConstruct();
+			// tree = PATree.PATreePerformCopy(tree, tree);
 		}
-		private PATree tree;
+		private PATree pa;
 
 		[DllImport("pa")]
 		internal static extern PATransposeTree PATransposeTreePerformConstruct();
 		[DllImport("pa")]
 		internal static extern PATransposeTree PATransposeTreePerformInit([MarshalAs(UnmanagedType.IUnknown)] PATransposeTree Tree, [MarshalAs(UnmanagedType.IUnknown)] PATree Value);
 		[DllImport("pa")]
-		internal static extern PATransposeTree PATransposeTreePerformCopy([MarshalAs(UnmanagedType.IUnknown)] PATransposeTree from, [MarshalAs(UnmanagedType.IUnknown)] PATree to);
-		[DllImport("pa")]
-		internal static extern PATransposeTree PATransposeTreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PATransposeTree PA);
+		internal static extern PATransposeTree PATransposeTreePerformCopy([MarshalAs(UnmanagedType.IUnknown)] PATransposeTree from, [MarshalAs(UnmanagedType.IUnknown)] PATransposeTree to);
 		[DllImport("pa")]
 		internal static extern PATransposeTree PATransposeTreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PATransposeTree PA);
+		[DllImport("pa")]
+		internal static extern PATransposeTree PATransposeTreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PATransposeTree PA);
     }
 }

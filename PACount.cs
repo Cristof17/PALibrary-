@@ -1,10 +1,10 @@
 ﻿using System;
 // using System.Data.Common;
 using System.Runtime.InteropServices;
-using PA_Library;
+using PA;
 using SM;
 
-namespace PA_Library
+namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct PACount
@@ -12,7 +12,11 @@ namespace PA_Library
         public PACount(PANumber Number) : this()
         {
             // Construct(Number);
-            value = PANumber.PANumberPerformCopy(Number,value);
+            PACount count;
+            count = PACountPerformConstruct();
+            count = PACountPerformInit(count,Number);
+            count.value = PANumber.PANumberPerformCopy(Number,count.value);
+            value = PANumber.PANumberPerformCopy(count.value,value);
         }
         private PANumber value;
 

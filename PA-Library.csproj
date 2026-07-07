@@ -42,17 +42,17 @@
 		  <Flavor Condition="'$(Flavor)'==''">DEBUG</Flavor>
 	  </PropertyGroup>
 
-	  <!-- Define DEBUG settings -->
-	  <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">
-		  <DebugType>full</DebugType>
-		  <Optimize>no</Optimize>
-	  </PropertyGroup>
+    <!-- Define DEBUG settings -->
+    <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">
+        <DebugType>full</DebugType>
+        <Optimize>no</Optimize>
+    </PropertyGroup>
 
-	  <!-- Define RETAIL settings -->
-	  <PropertyGroup Condition="'$(Flavor)'=='RETAIL'">
-		  <DebugType>pdbonly</DebugType>
-		  <Optimize>yes</Optimize>
-	  </PropertyGroup>
+    <!-- Define RETAIL settings -->
+    <PropertyGroup Condition="'$(Flavor)'=='RETAIL'">
+        <DebugType>pdbonly</DebugType>
+        <Optimize>yes</Optimize>
+    </PropertyGroup>
 
 	  <!-- Set application name as a property -->
 	  <PropertyGroup>
@@ -119,13 +119,13 @@
 		  <CSFile Include = "IStateMachine.cs"/>
 	  </ItemGroup>
     <ItemGroup>
-    <COMReference Include="MyComLibrary">
-      <Guid>{01234567-89AB-CDEF-0123-456789ABCDEF}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-    </COMReference>
+      <COMReference Include="MyComLibrary">
+        <Guid>{01234567-89AB-CDEF-0123-456789ABCDEF}</Guid>
+        <VersionMajor>1</VersionMajor>
+        <VersionMinor>0</VersionMinor>
+        <Lcid>0</Lcid>
+        <WrapperTool>tlbimp</WrapperTool>
+      </COMReference>
   </ItemGroup>
       
     <Target Name="Link">

@@ -1,15 +1,25 @@
 using System.Runtime.InteropServices;
-using PA_Library;
+using PA;
 
-namespace PA_Library
+namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct PAResource
     {
         public PAResource(PANumber Number)
         {
-            value = PANumber.PANumberPerformConstruct();
-            value = PANumber.PANumberPerformCopy(Number, value);
+            // PAResource resout;
+            PAResource resource;
+            // resu
+            resource = PAResourcePerformConstruct();
+            // resource = PAA
+            // resource = PAResourcePerformInit(ref,Number);
+            // resource = PAResourcePerformInit(resource,Number_
+            resource = PAResourcePerformInit(resource,Number);
+            resource.value = PAResourcePerformCopy(Number,resource.value);
+            value = PAResourcePerformCopy(resource.value,value);
+            // value = PANumber.PANumberPerformConstruct();
+            // value = PANumber.PANumberPerformCopy(Number, value);
         }
         private PANumber value;
 

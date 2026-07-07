@@ -1,6 +1,6 @@
-using PA_Library;
+using PA;
 
-namespace PA_Library
+namespace PA
 {
 	public enum PAResult
 	{

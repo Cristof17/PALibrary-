@@ -1,22 +1,30 @@
 // using System.Linq.Expressions;
 using System.Runtime.InteropServices;
-using PA_Library;
+using PA;
 
-namespace PA_Library
+namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct PAElement
     {
-        public PAElement(PAData Data, PAStatus Status) : this()
+        public PAElement(PAData Data) : this()
         {
-            index = PAData.PADataPerformConstruct();
-            index = PAData.PADataPerformCopy(Data,index);
-            status = PAStatus.PAStatusPerformConstruct();
-            status = PAStatus.PAStatusPerformCopy(Status,status);
+            PAElement element;
+            PAStatus status;
+            // status = PAStatus.STATUS_VISITED;
+            // status = PAStatus.STATUS_NOT_VISITED;
+            status = new PAStatus(false);
+            element = PAElementPerformConstruct();
+            element = PAElementPerformInit(element,Data,status);
+            index = PAData.PADataPerformCopy(element.index,Index);
+            // index = 
+            // index = PAData.PADataPerformConstruct();
+            // status = PAStatus.PAStatusPerformConstruct();
+            // status = PAStatus.PAStatusPerformCopy(element.status,status);
         }
-        private PAData index;
+        private PAData Index;
 
-        private PAStatus status;
+        private PAStatus Status;
 
         [DllImport("pa")]
         internal static extern PAElement PAElementPerformConstruct();

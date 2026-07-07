@@ -1,19 +1,24 @@
 using System.Runtime.InteropServices;
-using PA_Library;
+using PA;
 
-namespace PA_Library
+namespace PA
 {
 	[StructLayout(LayoutKind.Sequential)]
 	public struct PATree
 	{
-		public PATree(PACount N, PACount M, PASeries ADJ, PAElement Sursa) : this()
+		public PATree(PACount N, PACount M, PAList Adj, PAElement Sursa) : this()
 		{
-			n = PACount.PACountPerformConstruct();
-			n = PACount.PACountPerformCopy(N, n);
-			m = PACount.PACountPerformConstruct();
-			m = PACount.PACountPerformCopy(M, m);
-			sursa = PAElement.PAElementPerformConstruct();
-			sursa = PAElement.PAElementPerformCopy(Sursa, sursa);
+			PATree tree;
+			tree = PATreePerformConstruct();
+			tree = PATreePerformInit(tree,N,M,Adj,Sursa);
+			// n = PACount.PACountPerformConstruct();
+			n = PACount.PACountPerformCopy(tree.n, n);
+			// m = PACount.PACountPerformConstruct();
+			m = PACount.PACountPerformCopy(tree.m, m);
+			tree.adj = PAList.PAListPerformCopy(Adj,tree.adj);
+			adj = PAList.PAListPerformCopy(tree.adj,adj);
+			// sursa = PAElement.PAElementPerformConstruct();
+			sursa = PAElement.PAElementPerformCopy(tree.sursa, sursa);
 		}
 		private PACount n;
 
@@ -30,8 +35,8 @@ namespace PA_Library
 		[DllImport("pa")]
 		internal static extern PATree PATreePerformCopy([MarshalAs(UnmanagedType.IUnknown)] PATree from, [MarshalAs(UnmanagedType.IUnknown)] PATree to);
 		[DllImport("pa")]
-		internal static extern PATree PATreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PATree PA);
-		[DllImport("pa")]
 		internal static extern PATree PATreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PATree PA);
+		[DllImport("pa")]
+		internal static extern PATree PATreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PATree PA);
     }
 }

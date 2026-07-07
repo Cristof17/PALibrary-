@@ -1,17 +1,24 @@
 using System.Runtime.InteropServices;
-using PA_Library;
+using PA;
 
-namespace PA_Library
+namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct PAPair
     {
         public PAPair(PAElement Node, PAElement Neigh) : this()
         {
-            node = PAElement.PAElementPerformConstruct();
-            node = PAElement.PAElementPerformCopy(Node, node);
-            neigh = PAElement.PAElementPerformConstruct();
-            neigh = PAElement.PAElementPerformCopy(Neigh, neigh);
+            PAPair pair;
+            // object 
+            pair = PAPairConstruct();
+            pair = PAPairInit(p,Node,Neigh);
+            // node =
+            // node = PAElement.PAElementPerformConstruct();
+            pair.node = PAElement.PAElementPerformCopy(Node, node);
+            node = PAElement.PAElementPerformCopy(pair.node,node);
+            // neigh = PAElement.PAElementPerformConstruct();
+            pair.neigh = PAElement.PAElementPerformCopy(Neigh, neigh);
+            neigh = PAElement.PAElementPerformCopy(pair.neigh,neigh);
         }
         private PAElement node;
 

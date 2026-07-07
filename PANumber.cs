@@ -1,8 +1,8 @@
 using System.Runtime.InteropServices;
-using System.Xml.Serialization;
-using PA_Library;
+// using System.Xml.Serialization;
+using PA;
 
-namespace PA_Library
+namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct PANumber
@@ -10,6 +10,10 @@ namespace PA_Library
         public PANumber(int Value) : this()
         {
             value = Value;
+            PANumber number;
+            number = PANumberPerformConstruct();
+            number = PANumberPerformInit(number,Value);
+            value = PANumberPerformCopy(number.value,value);
         }
         public int value;
 

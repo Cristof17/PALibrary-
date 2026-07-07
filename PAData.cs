@@ -1,16 +1,19 @@
 using System.ComponentModel;
 using System.Runtime.InteropServices;
-using PA_Library;
+using PA;
 
-namespace PA_Library
+namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct PAData
     {
         public PAData(PAResource Resource)
         {
-            resource = PAResource.PAResourcePerformConstruct();
-            resource = PAResource.PAResourcePerformCopy(Resource,resource);
+            PAData data;
+            data = PADataPerformConstruct();
+            data = PADataPerformInit(data,Resource);
+            // resource = PAResource.PAResourcePerformConstruct();
+            resource = PAResource.PAResourcePerformCopy(data.resource,resource);
         }
         private PAResource resource;
 
