@@ -22,22 +22,22 @@
       <Message Text="Assemble"/>
     </Target>
     -->
-    <Target Name="Compile"
-		
+    <Target Name="Compile">
+		  <!-- Run Visual C# compilation using input file of type CSFile -->
+      <CSC  Sources = "@(CSFile)"
+          OutputAssembly="%(OutputDir>/$(appname).exe" >
+          <!-- Optimize="$(Optimize)" -->
+          <!-- DebugType="$(DebugType)" -->
 
-		<!-- Run Visual C# compilation using input file of type CSFile -->
-        <CSC  Sources = "@(CSFile)"
-            OutputAssembly="%(OutputDir>/$(appname).exe" >
-            <!-- Optimize="$(Optimize)" -->
-            <!-- DebugType="$(DebugType)" -->
-
-            <!-- Set OutputAssembly attribute of CSC task to name of created executable file -->
-            <Output TaskParameter="OutputAssembly"
-                ItemName = "EXEFile" />
-        </CSC>
+          <!-- Set OutputAssembly attribute of CSC task to name of created executable file -->
+          <Output TaskParameter="OutputAssembly"
+              ItemName = "EXEFile" />
+      </CSC>
         <!-- Log file name of output file -->
         <Message Text="The output file is @(EXEFile)"/>
     </Target>
+		
+
 	  <PropertyGroup>
 		  <Flavor Condition="'$(Flavor)'==''">DEBUG</Flavor>
 	  </PropertyGroup>
@@ -126,7 +126,7 @@
         <Lcid>0</Lcid>
         <WrapperTool>tlbimp</WrapperTool>
       </COMReference>
-  </ItemGroup>
+    </ItemGroup>
       
     <Target Name="Link">
       <Message Text="Link"/>
