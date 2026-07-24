@@ -3,17 +3,25 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>PA_Library</RootNamespace>
   </PropertyGroup>
+   <!-- <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0">
+      <RequiredTargetFramework>netstandard2.0</RequiredTargetFramework>
+    </PackageReference> -->
     <!--<PackageReference Include="System.Collections.Immutable" Version="9.0.2" />-->
   <ItemGroup>
+    <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0">
+      <!-- <RequiredTargetFramework>netstandard2.0</RequiredTargetFramework> -->
+    </PackageReference>
+  
+    <!-- <PackageReference Include="System.Runtime"></PackageReference> -->
     <!-- <Reference Include="Microsoft.CSharp">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference> -->
     <!-- <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference> -->
-    <Reference Include="System.Runtime.InteropServices">
+    <!-- <Reference Include="System.Runtime.InteropServices" Version="4.3.0">
       <RequiredTargetFramework>netstandard2.0</RequiredTargetFramework>
-    </Reference>
+    </Reference> -->
   </ItemGroup>
       <!-- <Exec ToolPath=""  -->
       <!-- <Exec Command="msbuild.exe"/> -->
@@ -23,7 +31,7 @@
       <Message Text="Assemble"/>
     </Target>
     -->
-  <Target Name="Compile">
+  <Target Name="Compile" >
     <!-- Run Visual C# compilation using input file of type CSFile -->
     <CSC  Sources="@(CSFile)"
         OutputAssembly="%(OutputDir>/$(appname).exe" >
