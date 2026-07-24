@@ -14,6 +14,7 @@
     <Reference Include="System.Runtime.InteropServices">
       <RequiredTargetFramework>netstandard2.0</RequiredTargetFramework>
     </Reference>
+  </ItemGroup>
       <!-- <Exec ToolPath=""  -->
       <!-- <Exec Command="msbuild.exe"/> -->
       <!-- <CSC Sources="@Compile" OutputAssembly="$(AppName).dll" EmitDebugInformation="true"/> -->
@@ -22,20 +23,20 @@
       <Message Text="Assemble"/>
     </Target>
     -->
-    <Target Name="Compile">
-		  <!-- Run Visual C# compilation using input file of type CSFile -->
-      <CSC  Sources = "@(CSFile)"
-          OutputAssembly="%(OutputDir>/$(appname).exe" >
-          <!-- Optimize="$(Optimize)" -->
-          <!-- DebugType="$(DebugType)" -->
+  <Target Name="Compile">
+    <!-- Run Visual C# compilation using input file of type CSFile -->
+    <CSC  Sources="@(CSFile)"
+        OutputAssembly="%(OutputDir>/$(appname).exe" >
+        <!-- Optimize="$(Optimize)" -->
+        <!-- DebugType="$(DebugType)" -->
 
-          <!-- Set OutputAssembly attribute of CSC task to name of created executable file -->
-          <Output TaskParameter="OutputAssembly"
-              ItemName = "EXEFile" />
-      </CSC>
-        <!-- Log file name of output file -->
-        <Message Text="The output file is @(EXEFile)"/>
-    </Target>
+        <!-- Set OutputAssembly attribute of CSC task to name of created executable file -->
+        <Output TaskParameter="OutputAssembly"
+            ItemName = "EXEFile" />
+    </CSC>
+      <!-- Log file name of output file -->
+      <Message Text="The output file is @(EXEFile)"/>
+  </Target>
 		
 
 	  <PropertyGroup>
@@ -118,7 +119,7 @@
 		  <CSFile Include = "IStateFinish.cs"/>
 		  <CSFile Include = "IStateMachine.cs"/>
 	  </ItemGroup>
-    <ItemGroup>
+    <!-- <ItemGroup>
       <COMReference Include="MyComLibrary">
         <Guid>{01234567-89AB-CDEF-0123-456789ABCDEF}</Guid>
         <VersionMajor>1</VersionMajor>
@@ -126,7 +127,7 @@
         <Lcid>0</Lcid>
         <WrapperTool>tlbimp</WrapperTool>
       </COMReference>
-    </ItemGroup>
+    </ItemGroup> -->
       
     <Target Name="Link">
       <Message Text="Link"/>
@@ -139,5 +140,5 @@
     <!-- <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference> -->
-  </ItemGroup>
+  <!-- </ItemGroup> -->
 </Project>
