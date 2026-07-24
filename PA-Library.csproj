@@ -1,7 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
     <RootNamespace>PA_Library</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <DisablePrivateReflection>true</DisablePrivateReflection>
+    <GenerateAssemblyCompany>false</GenerateAssemblyCompany>
+    <GenerateAssemblyConfiguration>false</GenerateAssemblyConfiguration>
+    <GenerateAssemblyCopyright>false</GenerateAssemblyCopyright>
+    <GenerateAssemblyDescription>false</GenerateAssemblyDescription>
+    <GenerateAssemblyFileVersion>false</GenerateAssemblyFileVersion>
+    <GenerateAssemblyInformationalVersion>false</GenerateAssemblyInformationalVersion>
+    <GenerateAssemblyProduct>false</GenerateAssemblyProduct>
+    <GenerateAssemblyTitle>false</GenerateAssemblyTitle>
+    <GenerateAssemblyVersion>false</GenerateAssemblyVersion>
+    <GenerateNeutralResourcesLanguage>false</GenerateNeutralResourcesLanguage>
+    <!-- <GenerateAssemblyProduct>false</GenerateAssemblyVersion> -->
+
   </PropertyGroup>
    <!-- <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0">
       <RequiredTargetFramework>netstandard2.0</RequiredTargetFramework>
