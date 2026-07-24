@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections;
+using System.Runtime.CompilerServices;
+using AL;
 // using System.Collections.Immutable;
 using System.Runtime.InteropServices;
-namespace PA_Library
+namespace AL
 {
     [StructLayout(LayoutKind.Sequential)]
     public class State
@@ -17,6 +19,8 @@ namespace PA_Library
         {
             
         }
+
+
         private void Construct()
         {
             algorithm = new Algorithm();

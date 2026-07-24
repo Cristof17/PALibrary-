@@ -20,10 +20,10 @@ using System.ComponentModel;
 using System.Threading;
 using System.Xml.Linq;
 using System.Reflection;
-
+using PA;
 //Console.WriteLine("Hello world!");
 
-namespace PA_Library
+namespace AL
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct Input

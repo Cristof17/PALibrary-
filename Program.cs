@@ -2,7 +2,7 @@
 
 //Console.WriteLine("Hello world!");
 
-namespace PA_Library
+namespace AL
 {
     //class YourClass
     //{

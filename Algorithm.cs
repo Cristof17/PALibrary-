@@ -21,7 +21,7 @@ using System.Runtime.InteropServices;
 
 //Console.WriteLine("Hello world!");
 
-namespace PA_Library
+namespace AL
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct Algorithm

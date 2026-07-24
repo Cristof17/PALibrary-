@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 using PA;
-
+using BFS;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
@@ -8,7 +8,7 @@ namespace PA
     {
         private BFSRecord result;
 
-        public PAOutput(BFSResult result)
+        public PAOutput(BFSRecord result)
         {
             PAOutput output;
             output = PAOutputPerformConstruct();

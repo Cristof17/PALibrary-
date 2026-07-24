@@ -1,5 +1,7 @@
 // using System.Data;
 using PA_Library;
+using PA;
+using BFS;
 namespace SM
 {
     internal interface IStateDelete

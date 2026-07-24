@@ -17,8 +17,8 @@ using System.Runtime.InteropServices;
 // using System.Collections.Immutable;
 
 //Console.WriteLine("Hello world!");
-
-namespace PA_Library
+using BFS;
+namespace AL
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct Output

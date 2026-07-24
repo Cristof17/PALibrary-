@@ -1,7 +1,8 @@
 ﻿using PA_Library;
 // using System;
+using PA;
 using System.Runtime.InteropServices;
-namespace PA_Library
+namespace BFS
 {
     [StructLayout(LayoutKind.Sequential)]
 	public struct BFSRecord

@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // using System.Collections.Generic;
 // using System.ComponentModel.Design;
 // using System.Runtime.InteropServices;
-
-namespace PA_Library
+using PA;
+namespace BFS
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct BFSProcedure
