@@ -1,7 +1,7 @@
 using PA_Library;
 // using System;
 using System.Runtime.InteropServices;
-namespace PA_Library
+namespace AL
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct ArrayListPosition
