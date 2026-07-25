@@ -17,15 +17,15 @@
           "/Users/cristoforrotsching/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "net70"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
-            "framework": "netstandard2.0",
-            "targetAlias": "netstandard2.0",
+          "net70": {
+            "framework": "net7.0",
+            "targetAlias": "net70",
             "projectReferences": {}
           }
         },
@@ -42,17 +42,9 @@
         "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
-        "netstandard2.0": {
-          "framework": "netstandard2.0",
-          "targetAlias": "netstandard2.0",
-          "dependencies": {
-            "NETStandard.Library": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.6.0, )",
-              "autoReferenced": true
-            }
-          },
+        "net70": {
+          "framework": "net7.0",
+          "targetAlias": "net70",
           "imports": [
             "net461",
             "net462",
@@ -64,6 +56,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.300/RuntimeIdentifierGraph.json"
         }
       }

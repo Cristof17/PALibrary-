@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 namespace PA
 {
 	[StructLayout(LayoutKind.Sequential)]
-	public struct PATree
+	public partial struct PATree
 	{
 		public PATree(PACount N, PACount M, PAList Adj, PAElement Sursa) : this()
 		{
@@ -31,14 +31,14 @@ namespace PA
 		private PAElement sursa;
 
 		[LibraryImport("pa")]
-		internal static extern PATree PATreePerformConstruct();
+		public static extern PATree PATreePerformConstruct();
 		[LibraryImport("pa")]
-		internal static extern PATree PATreePerformInit([MarshalAs(UnmanagedType.IUnknown)] PATree Tree, [MarshalAs(UnmanagedType.IUnknown)] PACount Count, [MarshalAs(UnmanagedType.IUnknown)] PACount Count2, [MarshalAs(UnmanagedType.IUnknown)] PAList List, [MarshalAs(UnmanagedType.IUnknown)] PAElement Element);
+		public  extern PATree PATreePerformInit([MarshalAs(UnmanagedType.IUnknown)] PATree Tree, [MarshalAs(UnmanagedType.IUnknown)] PACount Count, [MarshalAs(UnmanagedType.IUnknown)] PACount Count2, [MarshalAs(UnmanagedType.IUnknown)] PAList List, [MarshalAs(UnmanagedType.IUnknown)] PAElement Element);
 		[LibraryImport("pa")]
-		internal static extern PATree PATreePerformCopy([MarshalAs(UnmanagedType.IUnknown)] PATree from, [MarshalAs(UnmanagedType.IUnknown)] PATree to);
+		public extern PATree PATreePerformCopy([MarshalAs(UnmanagedType.IUnknown)] PATree from, [MarshalAs(UnmanagedType.IUnknown)] PATree to);
 		[LibraryImport("pa")]
-		internal static extern PATree PATreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PATree PA);
+		public static extern PATree PATreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PATree PA);
 		[LibraryImport("pa")]
-		internal static extern PATree PATreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PATree PA);
+		internal static partial PATree PATreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PATree PA);
     }
 }
