@@ -9,7 +9,7 @@ using PA;
 namespace BFS
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct BFSProcedure
+    public partial struct BFSProcedure
     //public readonly class BFSAlgorithm
     //public readonly struct BFSAlgorithm
     {
@@ -17,13 +17,13 @@ namespace BFS
         private PAInput In;
         private PATree Tree;
         [LibraryImport("pa")]
-        private static extern BFSProcedure BFSProcedureConstruct( PAInput Input,  PATree Tree);
+        internal static partial BFSProcedure BFSProcedureConstruct(PAInput Input, PATree Tree);
         [LibraryImport("pa")]
-        private static extern int BFSProcedureRuin(PAInput input,  PATree tree);
+        internal static partial int BFSProcedureRuin(PAInput input, PATree tree);
         [LibraryImport("pa")]
-        private static extern int BFSProcedureDelete(BFSProcedure bfs);
+        internal static partial int BFSProcedureDelete(BFSProcedure bfs);
         [LibraryImport("pa")]
-        private static extern PAElement BFS(PAData index);
+        internal static partial PAElement BFS(PAData index);
         // public Instruire(Intrare input, Arbore tree)
         public BFSProcedure(PAInput input, PATree tree) : this()
         {

@@ -5,7 +5,7 @@ using PA;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAElement
+    public partial struct PAElement
     {
         public PAElement(PAData Data) : this()
         {
@@ -28,20 +28,20 @@ namespace PA
         private PAStatus Status;
 
         [LibraryImport("pa")]
-        internal static extern PAElement PAElementPerformConstruct();
+        internal static partial PAElement PAElementPerformConstruct();
         [LibraryImport("pa")]
-        internal static extern PAElement PAElementPerformInit([MarshalAs(UnmanagedType.IUnknown)] PAElement element, [MarshalAs(UnmanagedType.IUnknown)] PAData data, [MarshalAs(UnmanagedType.IUnknown)] PAStatus status);
+        internal static partial PAElement PAElementPerformInit(PAElement element, PAData data, PAStatus status);
         [LibraryImport("pa")]
-        internal static extern void PAElementVisit([MarshalAs(UnmanagedType.IUnknown)] PAElement element);
+        internal static partial void PAElementVisit(PAElement element);
         [LibraryImport("pa")]
-        internal static extern int PAElementIsVisited([MarshalAs(UnmanagedType.IUnknown)] PAElement element);
+        internal static partial int PAElementIsVisited(PAElement element);
         [LibraryImport("pa")]
-        internal static extern void PAElementReset([MarshalAs(UnmanagedType.IUnknown)] PAElement element);
+        internal static partial void PAElementReset(PAElement element);
         [LibraryImport("pa")]
-        internal static extern PAElement PAElementPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PAElement element, [MarshalAs(UnmanagedType.IUnknown)] PAElement element2);
+        internal static partial PAElement PAElementPerformCopy(PAElement element, PAElement element2);
         [LibraryImport("pa")]
-        internal static extern PAElement PAElementPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAElement element);
+        internal static partial PAElement PAElementPerformDelete(PAElement element);
         [LibraryImport("pa")]
-        internal static extern PAElement PAElementPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAElement element);
+        internal static partial PAElement PAElementPerformRuin(PAElement element);
     }
 }

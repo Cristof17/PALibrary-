@@ -24,11 +24,11 @@ using System.Runtime.InteropServices;
 namespace AL
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct Algorithm
+    public partial struct Algorithm
     {
 
         [LibraryImport("pa")]
-        public static extern Output run(Input input);
+        internal static partial Output run(Input input);
 
         // [FieldOffset(0)]
         private Input In;

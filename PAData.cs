@@ -5,7 +5,7 @@ using PA;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAData
+    public partial struct PAData
     {
         public PAData(PAResource Resource)
         {
@@ -20,14 +20,14 @@ namespace PA
         private PAResource resource;
 
         [LibraryImport("pa")]
-        internal static extern PAData PADataPerformConstruct();
+        internal static partial PAData PADataPerformConstruct();
         [LibraryImport("pa")]
-        internal static extern PAData PADataPerformInit([MarshalAs(UnmanagedType.IUnknown)] PAData Data, [MarshalAs(UnmanagedType.IUnknown)] PAResource Resource);
+        internal static partial PAData PADataPerformInit(PAData Data, PAResource Resource);
         [LibraryImport("pa")]
-        internal static extern PAData PADataPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAData PA);
+        internal static partial PAData PADataPerformRuin(PAData PA);
         [LibraryImport("pa")]
-        internal static extern PAData PADataPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAData PA);
+        internal static partial PAData PADataPerformDelete(PAData PA);
         [LibraryImport("pa")]
-        internal static extern PAData PADataPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PAData from, [MarshalAs(UnmanagedType.IUnknown)] PAData to);
+        internal static partial PAData PADataPerformCopy(PAData from, PAData to);
     }
 }

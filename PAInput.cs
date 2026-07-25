@@ -6,7 +6,7 @@ using AL;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAInput
+    public partial struct PAInput
     {
         public PAInput(PACount N, PACount M, PAList Adj, PAElement Sursa) : this()
         {
@@ -33,17 +33,17 @@ namespace PA
         private PAElement sursa;
 
         [LibraryImport("pa")]
-        internal static extern PAInput PAInputPerformConstruct();
+        internal static partial PAInput PAInputPerformConstruct();
         [LibraryImport("pa")]
         // static extern Input InputPerformInit(PAInput imPACount Count, PACount Count2, PAElement Element);
-        internal static extern PAInput PAInputPerformInit([MarshalAs(UnmanagedType.IUnknown)] PAInput input, [MarshalAs(UnmanagedType.IUnknown)] PACount Count2, [MarshalAs(UnmanagedType.IUnknown)] PAElement Element);
+        internal static partial PAInput PAInputPerformInit(PAInput input, PACount Count2, PAElement Element);
         [LibraryImport("pa")]
-        internal static extern PAInput PAInputPerformCopy([MarshalAs(UnmanagedType.IUnknown)] Input from, [MarshalAs(UnmanagedType.IUnknown)] Input to);
+        internal static partial PAInput PAInputPerformCopy(Input from, Input to);
         [LibraryImport("pa")]
-        internal static extern void PAInputDispose();
+        internal static partial void PAInputDispose();
         [LibraryImport("pa")]
-        internal static extern PAInput PAInputPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAInput PA);
+        internal static partial PAInput PAInputPerformDelete(PAInput PA);
         [LibraryImport("pa")]
-        internal static extern void PAInputRuin([MarshalAs(UnmanagedType.IUnknown)] PAInput PA);
+        internal static partial void PAInputRuin(PAInput PA);
     }
 }

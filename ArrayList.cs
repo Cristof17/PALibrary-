@@ -5,16 +5,16 @@ using System.Runtime.InteropServices;
 namespace AL
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct ArrayList
+    public partial struct ArrayList
     {
         [LibraryImport("pa")]
-        public static extern ArrayList ArrayListConstruct(ArrayListPosition place, int[] objects);
+        internal static partial ArrayList ArrayListConstruct(ArrayListPosition place, int[] objects);
         [LibraryImport("pa")]
-        public static extern void ArrayListRuin(ArrayListPosition place, int[] objects);
+        internal static partial void ArrayListRuin(ArrayListPosition place, int[] objects);
         [LibraryImport("pa")]
-        public static extern ArrayList ArrayListInit(ArrayList List);
+        internal static partial ArrayList ArrayListInit(ArrayList List);
         [LibraryImport("pa")]
-        public static extern void ArrayListDelete();
+        internal static partial void ArrayListDelete();
         // [StructLayout(LayoutKind.Sequential)]
         // private struct ArrayList List;
         // int[] objects;

@@ -5,19 +5,19 @@ using System.Runtime.InteropServices;
 namespace BFS
 {
     [StructLayout(LayoutKind.Sequential)]
-	public struct BFSRecord
+	public partial struct BFSRecord
 	{
         private  PAList d;
         private PACount n;
 
         [LibraryImport("pa")]
-        public static extern  BFSRecord BFSRecordConstruct(PAList d,  PACount n);
+        internal static partial BFSRecord BFSRecordConstruct(PAList d,  PACount n);
         [LibraryImport("pa")]
-        public static extern int BFSRecordRuin(PAList d, PACount n);
+        internal static partial int BFSRecordRuin(PAList d, PACount n);
         [LibraryImport("pa")]
-        public static extern  BFSRecord BFSRecordInit(BFSRecord record);
+        internal static partial  BFSRecord BFSRecordInit(BFSRecord record);
         [LibraryImport("pa")]
-        public static extern int BFSRecordDelete(BFSRecord BFS);
+        internal static partial int BFSRecordDelete(BFSRecord BFS);
         // public Rezultat(PASeries d, PACount n)
         public BFSRecord(PASeries d, PACount n) : this()
 		// public Rezultat(Lista d, Cardinal n)
