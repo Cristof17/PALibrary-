@@ -4,28 +4,32 @@
     <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
     <RootNamespace>PA_Library</RootNamespace>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <DisablePrivateReflection>true</DisablePrivateReflection>
-    <GenerateAssemblyCompany>false</GenerateAssemblyCompany>
-    <GenerateAssemblyConfiguration>false</GenerateAssemblyConfiguration>
-    <GenerateAssemblyCopyright>false</GenerateAssemblyCopyright>
-    <GenerateAssemblyDescription>false</GenerateAssemblyDescription>
-    <GenerateAssemblyFileVersion>false</GenerateAssemblyFileVersion>
-    <GenerateAssemblyInformationalVersion>false</GenerateAssemblyInformationalVersion>
-    <GenerateAssemblyProduct>false</GenerateAssemblyProduct>
-    <GenerateAssemblyTitle>false</GenerateAssemblyTitle>
-    <GenerateAssemblyVersion>false</GenerateAssemblyVersion>
-    <GenerateNeutralResourcesLanguage>false</GenerateNeutralResourcesLanguage>
-    <!-- <GenerateAssemblyProduct>false</GenerateAssemblyVersion> -->
+    <DisablePrivateReflectionAttribute>true</DisablePrivateReflectionAttribute>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+    <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
 
+    <!-- <GenerateAssemblyProduct>false</GenerateAssemblyVersion> -->
   </PropertyGroup>
    <!-- <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0">
       <RequiredTargetFramework>netstandard2.0</RequiredTargetFramework>
     </PackageReference> -->
     <!--<PackageReference Include="System.Collections.Immutable" Version="9.0.2" />-->
+  <!-- <DefaultItemExcludes>$(DefaultItemExcludes);obj/**</DefaultItemExcludes> -->
   <ItemGroup>
-    <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0">
+  <!-- <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0"> -->
+  </ItemGroup>
+  <!-- </PropertyGroup> -->
       <!-- <RequiredTargetFramework>netstandard2.0</RequiredTargetFramework> -->
-    </PackageReference>
+  <!-- </PackageReference> -->
   
     <!-- <PackageReference Include="System.Runtime"></PackageReference> -->
     <!-- <Reference Include="Microsoft.CSharp">
@@ -37,7 +41,7 @@
     <!-- <Reference Include="System.Runtime.InteropServices" Version="4.3.0">
       <RequiredTargetFramework>netstandard2.0</RequiredTargetFramework>
     </Reference> -->
-  </ItemGroup>
+  <!-- </ItemGroup> -->
       <!-- <Exec ToolPath=""  -->
       <!-- <Exec Command="msbuild.exe"/> -->
       <!-- <CSC Sources="@Compile" OutputAssembly="$(AppName).dll" EmitDebugInformation="true"/> -->
@@ -60,8 +64,6 @@
       <!-- Log file name of output file -->
       <Message Text="The output file is @(EXEFile)"/>
   </Target>
-		
-
 	  <PropertyGroup>
 		  <Flavor Condition="'$(Flavor)'==''">DEBUG</Flavor>
 	  </PropertyGroup>
