@@ -68,7 +68,7 @@ namespace PA
         // }
         private PACount m;
 
-        private PAElement[] array;
+        private PAElement array;
 
         [LibraryImport("pa")]
         internal static extern PASeries PASeriesPerformConstruct();

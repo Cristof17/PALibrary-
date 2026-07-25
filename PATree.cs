@@ -39,6 +39,6 @@ namespace PA
 		[LibraryImport("pa")]
 		public static extern PATree PATreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PATree PA);
 		[LibraryImport("pa")]
-		internal static partial PATree PATreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PATree PA);
+		internal static partial int PATreePerformRuin(PATree PA);
     }
 }
