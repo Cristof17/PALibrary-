@@ -18,15 +18,15 @@ namespace PA
         }
         public int value;
 
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PANumber PANumberPerformConstruct();
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PANumber PANumberPerformInit([MarshalAs(UnmanagedType.IUnknown)] PANumber Number, int Value);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PANumber PANumberPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PANumber from, [MarshalAs(UnmanagedType.IUnknown)] PANumber to);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PANumber PANumberPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PANumber PA);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PANumber PANumberPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PANumber PA);
 
         public static PANumber operator ++(PANumber Number) => PANumber.PANumberPerformInit(Number, Number.value++);

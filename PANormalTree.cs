@@ -19,15 +19,15 @@ namespace PA
 		}
 		private PATree pa;
 
-		[DllImport("pa")]
+		[LibraryImport("pa")]
 		internal static extern PANormalTree PANormalTreePerformConstruct();
-		[DllImport("pa")]
+		[LibraryImport("pa")]
 		internal static extern PANormalTree PANormalTreePerformInit([MarshalAs(UnmanagedType.IUnknown)] PANormalTree Tree, [MarshalAs(UnmanagedType.IUnknown)] PATree tree);
-		[DllImport("pa")]
+		[LibraryImport("pa")]
 		internal static extern PANormalTree PANormalTreePerformCopy([MarshalAs(UnmanagedType.IUnknown)] PANormalTree from, [MarshalAs(UnmanagedType.IUnknown)] PANormalTree to);
-		[DllImport("pa")]
+		[LibraryImport("pa")]
 		internal static extern PANormalTree PANormalTreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PANormalTree PA);
-		[DllImport("pa")]
+		[LibraryImport("pa")]
 		internal static extern PANormalTree PANormalTreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PANormalTree PA);
     }
 }

@@ -20,15 +20,15 @@ namespace PA
         }
         private PANumber value;
 
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PACount PACountPerformConstruct();
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PACount PACountPerformInit([MarshalAs(UnmanagedType.IUnknown)] PACount Count, [MarshalAs(UnmanagedType.IUnknown)] PANumber Number);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PACount PACountPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PACount from, [MarshalAs(UnmanagedType.IUnknown)] PACount to);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PACount PACountPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PACount PA);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PACount PACountPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PACount PA);
 
         public static PACount operator++(PACount count) => PACount.PACountPerformInit(count,count.value++);

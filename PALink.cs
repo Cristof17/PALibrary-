@@ -22,15 +22,15 @@ namespace PA
         }
 		PAPair p;
 
-		[DllImport("pa")]
+		[LibraryImport("pa")]
 		internal static extern PALink PALinkPerformConstruct();
-		[DllImport("pa")]
+		[LibraryImport("pa")]
 		internal static extern PALink PALinkPerformInit([MarshalAs(UnmanagedType.IUnknown)] PALink init, [MarshalAs(UnmanagedType.IUnknown)] PAPair pair);
-		[DllImport("pa")]
+		[LibraryImport("pa")]
 		internal static extern PALink PALinkPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PALink from, [MarshalAs(UnmanagedType.IUnknown)] PALink to);
-		[DllImport("pa")]
+		[LibraryImport("pa")]
 		internal static extern PALink PALinkPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PALink PA);
-		[DllImport("pa")]
+		[LibraryImport("pa")]
 		internal static extern PALink PALinkPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PALink PA);
     }
 }

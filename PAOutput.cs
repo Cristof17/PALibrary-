@@ -16,18 +16,18 @@ namespace PA
             // o
             // result = BFSRecord.BFSRecordPerformCopy(output.result,result);
         }
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PAOutput PAOutputPerformConstruct();
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PAOutput PAOutputPerformInit([MarshalAs(UnmanagedType.IUnknown)] PAOutput Output, [MarshalAs(UnmanagedType.IUnknown)] BFSRecord Record);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PAOutput PAOutputPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PAOutput Output, [MarshalAs(UnmanagedType.IUnknown)] PAOutput to);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern void PAOutputPerformPrint(int resulrt);
         //struct Output dispose();
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern void PAOutputPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAOutput PA);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern void PAOutputPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAOutput PA);
 
         // public PAOutput() : this()

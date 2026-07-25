@@ -24,13 +24,13 @@ namespace PA
 
         private PAElement neigh;
 
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PAPair PAPairConstruct();
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PAPair PAPairInit([MarshalAs(UnmanagedType.IUnknown)] PAPair p, [MarshalAs(UnmanagedType.IUnknown)] PAElement Node, [MarshalAs(UnmanagedType.IUnknown)] PAElement Neigh);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern int PAPairDelete([MarshalAs(UnmanagedType.IUnknown)] PAElement PA);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern int PAPairRuin([MarshalAs(UnmanagedType.IUnknown)] PAPair PA);
 
     }

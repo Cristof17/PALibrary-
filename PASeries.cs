@@ -70,19 +70,19 @@ namespace PA
 
         private PAElement[] array;
 
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PASeries PASeriesPerformConstruct();
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PASeries PASeriesPerformInit([MarshalAs(UnmanagedType.IUnknown)] PASeries Series, [MarshalAs(UnmanagedType.IUnknown)] PACount M, [MarshalAs(UnmanagedType.IUnknown)] in PAElement[] adj_node);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PASeries PASeriesPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PASeries Series1, [MarshalAs(UnmanagedType.IUnknown)] PASeries Series2);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         // internal static extern PAResource PASeriesGet([MarshalAs(UnmanagedType.IUnknown)] PAData Data);
         // [DllImport("pa")]
         internal static extern void PASeriesPerformPrint([MarshalAs(UnmanagedType.IUnknown)] PASeries Series);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PASeries PASeriesPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PASeries PA);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PASeries PASeriesPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PASeries PA);
     }
 }

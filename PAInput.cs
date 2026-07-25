@@ -32,18 +32,18 @@ namespace PA
 
         private PAElement sursa;
 
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PAInput PAInputPerformConstruct();
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         // static extern Input InputPerformInit(PAInput imPACount Count, PACount Count2, PAElement Element);
         internal static extern PAInput PAInputPerformInit([MarshalAs(UnmanagedType.IUnknown)] PAInput input, [MarshalAs(UnmanagedType.IUnknown)] PACount Count2, [MarshalAs(UnmanagedType.IUnknown)] PAElement Element);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PAInput PAInputPerformCopy([MarshalAs(UnmanagedType.IUnknown)] Input from, [MarshalAs(UnmanagedType.IUnknown)] Input to);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern void PAInputDispose();
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PAInput PAInputPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAInput PA);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern void PAInputRuin([MarshalAs(UnmanagedType.IUnknown)] PAInput PA);
     }
 }

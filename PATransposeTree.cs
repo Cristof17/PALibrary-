@@ -19,7 +19,7 @@ namespace PA
 		}
 		private PATree pa;
 
-		[DllImport("pa")]
+		[LibraryImport("pa")]
 		internal static extern PATransposeTree PATransposeTreePerformConstruct();
 		[DllImport("pa")]
 		internal static extern PATransposeTree PATransposeTreePerformInit([MarshalAs(UnmanagedType.IUnknown)] PATransposeTree Tree, [MarshalAs(UnmanagedType.IUnknown)] PATree Value);

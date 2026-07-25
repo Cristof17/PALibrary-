@@ -24,15 +24,15 @@ namespace PA
 
         // public PAResource resource;
 
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PAStatus PAStatusPerformConstruct();
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PAStatus PAStatusPerformInit([MarshalAs(UnmanagedType.IUnknown)] PAStatus Status, [MarshalAs(UnmanagedType.IUnknown)] int Visited);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PAStatus PAStatusPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PAStatus from, [MarshalAs(UnmanagedType.IUnknown)] PAStatus to);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PAStatus PAStatusPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAStatus PA);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         internal static extern PAStatus PAStatusPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAStatus PA);
     }
     // }
