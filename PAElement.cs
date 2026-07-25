@@ -1,11 +1,11 @@
 // using System.Linq.Expressions;
 using System.Runtime.InteropServices;
-using PA;
+// using PA;
 
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    partial struct PAElement
+    internal partial struct PAElement
     {
         public PAElement(PAData Data) : this()
         {
