@@ -19,7 +19,7 @@ namespace PA
 			// p = 
 			// p = Pair
         }
-		private PAPair p;
+		PAPair p;
 
 		[DllImport("pa")]
 		internal static extern PALink PALinkPerformConstruct();

@@ -10,7 +10,7 @@ namespace PA
         {
             PAList list;
             list = PAListPerformConstruct();
-            list = PAListPerformInit(list,N,ADJ);
+            list = PAListPerformInit(list,N,Adj);
             // n = 
             // n = PACount.PACountPerformConstruct();
             n = PACount.PACountPerformCopy(list.n, n);
