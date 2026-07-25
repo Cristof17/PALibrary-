@@ -27,7 +27,7 @@ namespace AL
     public struct Algorithm
     {
 
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         public static extern Output run(Input input);
 
         // [FieldOffset(0)]

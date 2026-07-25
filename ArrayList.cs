@@ -7,13 +7,13 @@ namespace AL
     [StructLayout(LayoutKind.Sequential)]
     public struct ArrayList
     {
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         public static extern ArrayList ArrayListConstruct(ArrayListPosition place, int[] objects);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         public static extern void ArrayListRuin(ArrayListPosition place, int[] objects);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         public static extern ArrayList ArrayListInit(ArrayList List);
-        [DllImport("pa")]
+        [LibraryImport("pa")]
         public static extern void ArrayListDelete();
         // [StructLayout(LayoutKind.Sequential)]
         // private struct ArrayList List;
