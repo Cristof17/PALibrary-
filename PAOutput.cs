@@ -4,7 +4,7 @@ using BFS;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public partial struct PAOutput
+    partial struct PAOutput
     {
         private BFSRecord result;
 

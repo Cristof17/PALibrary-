@@ -11,7 +11,7 @@ namespace PA
 {
     // [StructLayout(LayoutKind.Sequntial)]
     // struct PAElement
-    public class PANode
+    class PANode
     {
 
         public PANode()

@@ -5,7 +5,7 @@ using PA;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public partial struct PASeries
+    partial struct PASeries
     {
         public PASeries(PACount M, PAElement[] array) : this()
         {

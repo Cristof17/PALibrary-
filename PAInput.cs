@@ -6,9 +6,9 @@ using AL;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public partial struct PAInput
+    partial struct PAInput
     {
-        public PAInput(PACount N, PACount M, PAList Adj, PAElement Sursa) : this()
+        internal PAInput(PACount N, PACount M, PAList Adj, PAElement Sursa) : this()
         {
             PAInput input = PAInputPerformConstruct();
             input = PAInputPerformInit(input, N, Sursa);

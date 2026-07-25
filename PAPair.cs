@@ -4,7 +4,7 @@ using PA;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public partial struct PAPair
+    partial struct PAPair
     {
         public PAPair(PAElement Node, PAElement Neigh) : this()
         {

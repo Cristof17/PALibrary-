@@ -26,7 +26,7 @@ using PA;
 namespace AL
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct Input
+    partial struct Input
     {
         static private State construct;
         static private State initialise;
@@ -37,25 +37,25 @@ namespace AL
         private PAList adj; 
         private PAElement sursa;
 
-        [DllImport("pa")]
-        public static extern Input InputPerformConstruct();
-        [DllImport("pa")]
-        public static extern Input InputPerformRuin(PACount n, PACount m, PAList list, PAElement source);
-        [DllImport("pa")]
-        public static extern Input InputPerformInit();
-        [DllImport("pa")]
-        public static extern void Dispose();
-        [DllImport("pa")]
-        public static extern Input InputPerformDelete();
+        [LibraryImport("pa")]
+        internal static partial Input InputPerformConstruct();
+        [LibraryImport("pa")]
+        internal static partial Input InputPerformRuin(PACount n, PACount m, PAList list, PAElement source);
+        [LibraryImport("pa")]
+        internal static partial Input InputPerformInit();
+        [LibraryImport("pa")]
+        internal static partial void Dispose();
+        [LibraryImport("pa")]
+        internal static partial Input InputPerformDelete();
 
-        static Input Initialise(Input input)
-        {
-            // InputPerformInit()
-            // construct
-            // Construct
-            return input;
-        }
-        public Input(int Source, ArrayList[] Adj, int N, int M) : this()
+        // static Input Initialise(Input input)
+        // {
+        //     // InputPerformInit()
+        //     // construct
+        //     // Construct
+        //     return input;
+        // }
+        internal Input(int Source, ArrayList[] Adj, int N, int M) : this()
         {
             //ADJ = default(AdjacencyList<Node>);
             // this.N = default;

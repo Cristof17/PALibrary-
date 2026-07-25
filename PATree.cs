@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 namespace PA
 {
 	[StructLayout(LayoutKind.Sequential)]
-	public partial struct PATree
+	partial struct PATree
 	{
 		public PATree(PACount N, PACount M, PAList Adj, PAElement Sursa) : this()
 		{

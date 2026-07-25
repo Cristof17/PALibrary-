@@ -4,7 +4,7 @@ using PA;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public partial struct PAResource
+    partial struct PAResource
     {
         public PAResource(PANumber Number)
         {

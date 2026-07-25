@@ -1,15 +1,169 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-  <Configuration>Debug</Configuration>
-  <Platform>AnyCPU</Platform>
-  <TargetFramework>netstandard2.0</TargetFramework>
-  <!--<TargetFrameworkVersion>v4.0</TargetFrameworkVersion>-->
-    <!--<RootNamespace>PA_Library</RootNamespace>-->
+    <TargetFramework>net70</TargetFramework>
+    <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
+    <RootNamespace>PA_Library</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <!-- <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+    <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyVersion>false</GenerateAssemblyVersion>
+    <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
+    <DisablePrivateReflectionAttribute>true</DisablePrivateReflectionAttribute> -->
+
+    <!-- <GenerateAssemblyProduct>false</GenerateAssemblyVersion> -->
+  </PropertyGroup>
+  <!-- <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0">
+      <RequiredTargetFramework>netstandard2.0</RequiredTargetFramework>
+    </PackageReference> -->
+  <!--<PackageReference Include="System.Collections.Immutable" Version="9.0.2" />-->
+  <!-- <DefaultItemExcludes>$(DefaultItemExcludes);obj/**</DefaultItemExcludes> -->
+  <ItemGroup>
+    <!-- <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0"> -->
+  </ItemGroup>
+  <!-- </PropertyGroup> -->
+  <!-- <RequiredTargetFramework>netstandard2.0</RequiredTargetFramework> -->
+  <!-- </PackageReference> -->
+
+  <!-- <PackageReference Include="System.Runtime"></PackageReference> -->
+  <!-- <Reference Include="Microsoft.CSharp">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference> -->
+  <!-- <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference> -->
+  <!-- <Reference Include="System.Runtime.InteropServices" Version="4.3.0">
+      <RequiredTargetFramework>netstandard2.0</RequiredTargetFramework>
+    </Reference> -->
+  <!-- </ItemGroup> -->
+  <!-- <Exec ToolPath=""  -->
+  <!-- <Exec Command="msbuild.exe"/> -->
+  <!-- <CSC Sources="@Compile" OutputAssembly="$(AppName).dll" EmitDebugInformation="true"/> -->
+  <!-- </Target> -->
+  <!--<Target Name="Assemble">
+      <Message Text="Assemble"/>
+    </Target>
+    -->
+  <Target Name="Compile">
+    <!-- Run Visual C# compilation using input file of type CSFile -->
+    <CSC Sources="@(CSFile)" OutputAssembly="%(OutputDir>/$(appname).exe">
+      <!-- Optimize="$(Optimize)" -->
+      <!-- DebugType="$(DebugType)" -->
+
+      <!-- Set OutputAssembly attribute of CSC task to name of created executable file -->
+      <Output TaskParameter="OutputAssembly"
+            ItemName = "EXEFile" />
+    </CSC>
+    <!-- Log file name of output file -->
+    <Message Text="The output file is @(EXEFile)"/>
+  </Target>
+  <PropertyGroup>
+    <Flavor Condition="'$(Flavor)'==''">DEBUG</Flavor>
   </PropertyGroup>
 
-  <ItemGroup>
-    <!-- <PackageReference Include="System.Collections.Immutable" Version="9.0.2" /> -->
-  </ItemGroup>
+  <!-- Define DEBUG settings -->
+  <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">
+    <DebugType>full</DebugType>
+    <Optimize>no</Optimize>
+  </PropertyGroup>
 
+  <!-- Define RETAIL settings -->
+  <PropertyGroup Condition="'$(Flavor)'=='RETAIL'">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>yes</Optimize>
+  </PropertyGroup>
+
+  <!-- Set application name as a property -->
+  <PropertyGroup>
+    <appname>HelloWorldCS</appname>
+  </PropertyGroup>
+
+  <!-- Specify inputs by type and file name -->
+  <ItemGroup>
+    <CSFile Include = "PACount.cs">
+      <OutputDir>PA</OutputDir>
+    </CSFile>
+    <CSFile Include = "PAData.cs">
+      <OutputDir>PA</OutputDir>
+    </CSFile>
+    <CSFile Include = "PAElement.cs">
+      <OutputDir>PA</OutputDir>
+    </CSFile>
+    <CSFile Include = "PAInput.cs">
+      <OutputDir>PA</OutputDir>
+    </CSFile>
+    <CSFile Include = "PALink.cs">
+      <OutputDir>PA</OutputDir>
+    </CSFile>
+    <CSFile Include = "PAList.cs">
+      <OutputDir>PA</OutputDir>
+    </CSFile>
+    <CSFile Include = "PANode.cs">
+      <OutputDir>PA</OutputDir>
+    </CSFile>
+    <CSFile Include = "PANormalTree.cs">
+      <OutputDir>PA</OutputDir>
+    </CSFile>
+    <CSFile Include = "PANumber.cs">
+      <OutputDir>PA</OutputDir>
+    </CSFile>
+    <CSFile Include = "PAOutput.cs">
+      <OutputDir>PA</OutputDir>
+    </CSFile>
+    <CSFile Include = "PAPair.cs">
+      <OutputDir>PA</OutputDir>
+    </CSFile>
+    <CSFile Include = "PAResource.cs">
+      <OutputDir>PA</OutputDir>
+    </CSFile>
+    <CSFile Include = "PAResult.cs">
+      <OutputDir>PA</OutputDir>
+    </CSFile>
+    <CSFile Include = "PASeries.cs">
+      <OutputDir>PA</OutputDir>
+    </CSFile>
+    <CSFile Include = "PAStatus.cs">
+      <OutputDir>PA</OutputDir>
+    </CSFile>
+    <CSFile Include = "PATransposeTree.cs">
+      <OutputDir>PA</OutputDir>
+    </CSFile>
+    <CSFile Include = "PATree.cs">
+      <OutputDir>PA</OutputDir>
+    </CSFile>
+    <CSFile Include = "IStateConstruct.cs"/>
+    <CSFile Include = "IStateInitialise.cs"/>
+    <CSFile Include = "IStateDelete.cs"/>
+    <CSFile Include = "IStateFinish.cs"/>
+    <CSFile Include = "IStateMachine.cs"/>
+  </ItemGroup>
+  <!-- <ItemGroup>
+      <COMReference Include="MyComLibrary">
+        <Guid>{01234567-89AB-CDEF-0123-456789ABCDEF}</Guid>
+        <VersionMajor>1</VersionMajor>
+        <VersionMinor>0</VersionMinor>
+        <Lcid>0</Lcid>
+        <WrapperTool>tlbimp</WrapperTool>
+      </COMReference>
+    </ItemGroup> -->
+
+  <Target Name="Link">
+    <Message Text="Link"/>
+  </Target>
+
+  <Target Name="Test">
+    <Message Text="Test"/>
+  </Target>
+
+  <!-- <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference> -->
+  <!-- </ItemGroup> -->
 </Project>

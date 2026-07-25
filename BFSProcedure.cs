@@ -1,4 +1,4 @@
-﻿using PA_Library;
+﻿// using PA_Library;
 // using System;
 // using System.Collections;
 using System.Runtime.InteropServices;
@@ -25,7 +25,7 @@ namespace BFS
         [LibraryImport("pa")]
         internal static partial PAElement BFS(PAData index);
         // public Instruire(Intrare input, Arbore tree)
-        public BFSProcedure(PAInput input, PATree tree) : this()
+        internal BFSProcedure(PAInput input, PATree tree) : this()
         {
             
         }

@@ -1,4 +1,4 @@
-﻿using PA_Library;
+﻿// using PA_Library;
 // using System;
 using PA;
 using System.Runtime.InteropServices;
@@ -19,7 +19,7 @@ namespace BFS
         [LibraryImport("pa")]
         internal static partial int BFSRecordDelete(BFSRecord BFS);
         // public Rezultat(PASeries d, PACount n)
-        public BFSRecord(PASeries d, PACount n) : this()
+        internal BFSRecord(PASeries d, PACount n) : this()
 		// public Rezultat(Lista d, Cardinal n)
 		{
 			// this.d = Rezultat.d;

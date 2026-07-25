@@ -14,7 +14,7 @@
 //        //protected List<T> Adj;
 //    }
 //}
-using PA_Library;
+using PA;
 // using System;
 // using System.Collections;
 using System.Runtime.InteropServices;
@@ -24,7 +24,7 @@ using System.Runtime.InteropServices;
 namespace AL
 {
     [StructLayout(LayoutKind.Sequential)]
-    public partial struct Algorithm
+    internal partial struct Algorithm
     {
 
         [LibraryImport("pa")]
