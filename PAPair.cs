@@ -11,7 +11,7 @@ namespace PA
             PAPair pair;
             // object 
             pair = PAPairConstruct();
-            pair = PAPairInit(p,Node,Neigh);
+            pair = PAPairInit(pair,Node,Neigh);
             // node =
             // node = PAElement.PAElementPerformConstruct();
             pair.node = PAElement.PAElementPerformCopy(Node, node);

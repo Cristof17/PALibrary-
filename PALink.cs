@@ -13,8 +13,8 @@ namespace PA
 			p = new PAPair(P.node,P.neigh);
 			link = PALinkPerformConstruct();
 			link = PALinkPerformInit(link,p);
-			link.p = PAPair.PAPairPerformCopy(P,link.p);
-			p = PAPair.PAPairPerformCopy(link.p,p);
+			// link.p = PAPair.PAPairPerformCopy(P,link.p);
+			// p = PAPair.PAPairPerformCopy(link.p,p);
 			// link = PALin
 			// p = 
 			// p = Pair

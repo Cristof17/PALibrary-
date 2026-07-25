@@ -14,7 +14,7 @@ namespace PA
             output = PAOutputPerformConstruct();
             output = PAOutputPerformInit(output,result);
             // o
-            result = BFSRecord.BFSRecordPerformCopy(output.result,result);
+            // result = BFSRecord.BFSRecordPerformCopy(output.result,result);
         }
         [DllImport("pa")]
         internal static extern PAOutput PAOutputPerformConstruct();
