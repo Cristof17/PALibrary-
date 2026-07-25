@@ -8,7 +8,7 @@ namespace PA
         // s
         // STATUS_NOT_VISITED=1
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAStatus
+    public partial struct PAStatus
     {
         public PAStatus(bool Visited) : this()
         {
@@ -25,15 +25,15 @@ namespace PA
         // public PAResource resource;
 
         [LibraryImport("pa")]
-        internal static extern PAStatus PAStatusPerformConstruct();
+        internal static partial PAStatus PAStatusPerformConstruct();
         [LibraryImport("pa")]
-        internal static extern PAStatus PAStatusPerformInit([MarshalAs(UnmanagedType.IUnknown)] PAStatus Status, [MarshalAs(UnmanagedType.IUnknown)] int Visited);
+        internal static partial PAStatus PAStatusPerformInit(PAStatus Status, int Visited);
         [LibraryImport("pa")]
-        internal static extern PAStatus PAStatusPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PAStatus from, [MarshalAs(UnmanagedType.IUnknown)] PAStatus to);
+        internal static partial PAStatus PAStatusPerformCopy(PAStatus from, PAStatus to);
         [LibraryImport("pa")]
-        internal static extern PAStatus PAStatusPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAStatus PA);
+        internal static partial PAStatus PAStatusPerformDelete(PAStatus PA);
         [LibraryImport("pa")]
-        internal static extern PAStatus PAStatusPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAStatus PA);
+        internal static partial PAStatus PAStatusPerformRuin(PAStatus PA);
     }
     // }
 }

@@ -5,7 +5,7 @@ using PA;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PANumber
+    public partial struct PANumber
     {
         public PANumber(int Value) : this()
         {
@@ -19,15 +19,15 @@ namespace PA
         public int value;
 
         [LibraryImport("pa")]
-        internal static extern PANumber PANumberPerformConstruct();
+        internal static partial PANumber PANumberPerformConstruct();
         [LibraryImport("pa")]
-        internal static extern PANumber PANumberPerformInit([MarshalAs(UnmanagedType.IUnknown)] PANumber Number, int Value);
+        internal static partial PANumber PANumberPerformInit(PANumber Number, int Value);
         [LibraryImport("pa")]
-        internal static extern PANumber PANumberPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PANumber from, [MarshalAs(UnmanagedType.IUnknown)] PANumber to);
+        internal static partial PANumber PANumberPerformCopy(PANumber from, PANumber to);
         [LibraryImport("pa")]
-        internal static extern PANumber PANumberPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PANumber PA);
+        internal static partial PANumber PANumberPerformDelete(PANumber PA);
         [LibraryImport("pa")]
-        internal static extern PANumber PANumberPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PANumber PA);
+        internal static partial PANumber PANumberPerformRuin(PANumber PA);
 
         public static PANumber operator ++(PANumber Number) => PANumber.PANumberPerformInit(Number, Number.value++);
         public static bool operator <(PANumber a, PANumber b) => a.value < b.value;

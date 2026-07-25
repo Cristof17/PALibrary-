@@ -4,7 +4,7 @@ using PA;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAPair
+    public partial struct PAPair
     {
         public PAPair(PAElement Node, PAElement Neigh) : this()
         {
@@ -25,13 +25,13 @@ namespace PA
         private PAElement neigh;
 
         [LibraryImport("pa")]
-        internal static extern PAPair PAPairConstruct();
+        internal static partial PAPair PAPairConstruct();
         [LibraryImport("pa")]
-        internal static extern PAPair PAPairInit([MarshalAs(UnmanagedType.IUnknown)] PAPair p, [MarshalAs(UnmanagedType.IUnknown)] PAElement Node, [MarshalAs(UnmanagedType.IUnknown)] PAElement Neigh);
+        internal static partial PAPair PAPairInit(PAPair p, PAElement Node, PAElement Neigh);
         [LibraryImport("pa")]
-        internal static extern int PAPairDelete([MarshalAs(UnmanagedType.IUnknown)] PAElement PA);
+        internal static partial int PAPairDelete(PAElement PA);
         [LibraryImport("pa")]
-        internal static extern int PAPairRuin([MarshalAs(UnmanagedType.IUnknown)] PAPair PA);
+        internal static partial int PAPairRuin(PAPair PA);
 
     }
 }

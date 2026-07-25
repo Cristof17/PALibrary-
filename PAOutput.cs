@@ -4,7 +4,7 @@ using BFS;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAOutput
+    public partial struct PAOutput
     {
         private BFSRecord result;
 
@@ -17,18 +17,18 @@ namespace PA
             // result = BFSRecord.BFSRecordPerformCopy(output.result,result);
         }
         [LibraryImport("pa")]
-        internal static extern PAOutput PAOutputPerformConstruct();
+        internal static partial PAOutput PAOutputPerformConstruct();
         [LibraryImport("pa")]
-        internal static extern PAOutput PAOutputPerformInit([MarshalAs(UnmanagedType.IUnknown)] PAOutput Output, [MarshalAs(UnmanagedType.IUnknown)] BFSRecord Record);
+        internal static partial PAOutput PAOutputPerformInit(PAOutput Output, BFSRecord Record);
         [LibraryImport("pa")]
-        internal static extern PAOutput PAOutputPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PAOutput Output, [MarshalAs(UnmanagedType.IUnknown)] PAOutput to);
+        internal static partial PAOutput PAOutputPerformCopy(PAOutput Output, PAOutput to);
         [LibraryImport("pa")]
-        internal static extern void PAOutputPerformPrint(int resulrt);
+        internal static partial void PAOutputPerformPrint(int resulrt);
         //struct Output dispose();
         [LibraryImport("pa")]
-        internal static extern void PAOutputPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAOutput PA);
+        internal static partial void PAOutputPerformDelete(PAOutput PA);
         [LibraryImport("pa")]
-        internal static extern void PAOutputPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAOutput PA);
+        internal static partial void PAOutputPerformRuin(PAOutput PA);
 
         // public PAOutput() : this()
         // {

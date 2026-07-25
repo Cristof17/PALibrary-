@@ -31,14 +31,14 @@ namespace PA
 		private PAElement sursa;
 
 		[LibraryImport("pa")]
-		public static extern PATree PATreePerformConstruct();
+		internal static partial PATree PATreePerformConstruct();
 		[LibraryImport("pa")]
-		public  extern PATree PATreePerformInit([MarshalAs(UnmanagedType.IUnknown)] PATree Tree, [MarshalAs(UnmanagedType.IUnknown)] PACount Count, [MarshalAs(UnmanagedType.IUnknown)] PACount Count2, [MarshalAs(UnmanagedType.IUnknown)] PAList List, [MarshalAs(UnmanagedType.IUnknown)] PAElement Element);
+		internal static partial PATree PATreePerformInit(PATree Tree, PACount Count, PACount Count2, PAList List, PAElement Element);
 		[LibraryImport("pa")]
-		public extern PATree PATreePerformCopy([MarshalAs(UnmanagedType.IUnknown)] PATree from, [MarshalAs(UnmanagedType.IUnknown)] PATree to);
+		internal static partial PATree PATreePerformCopy(PATree from,PATree to);
 		[LibraryImport("pa")]
-		public static extern PATree PATreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PATree PA);
+		internal static partial PATree PATreePerformDelete(PATree PA);
 		[LibraryImport("pa")]
-		internal static partial int PATreePerformRuin(PATree PA);
+		internal static partial PATree PATreePerformRuin(PATree PA);
     }
 }

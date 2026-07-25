@@ -4,7 +4,7 @@ using PA;
 namespace PA
 {
 	[StructLayout(LayoutKind.Sequential)]
-	public struct PATransposeTree
+	public partial struct PATransposeTree
 	{
 		public PATransposeTree(PATree Tree) : this()
 		{
@@ -20,14 +20,14 @@ namespace PA
 		private PATree pa;
 
 		[LibraryImport("pa")]
-		internal static extern PATransposeTree PATransposeTreePerformConstruct();
-		[DllImport("pa")]
-		internal static extern PATransposeTree PATransposeTreePerformInit([MarshalAs(UnmanagedType.IUnknown)] PATransposeTree Tree, [MarshalAs(UnmanagedType.IUnknown)] PATree Value);
-		[DllImport("pa")]
-		internal static extern PATransposeTree PATransposeTreePerformCopy([MarshalAs(UnmanagedType.IUnknown)] PATransposeTree from, [MarshalAs(UnmanagedType.IUnknown)] PATransposeTree to);
-		[DllImport("pa")]
-		internal static extern PATransposeTree PATransposeTreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PATransposeTree PA);
-		[DllImport("pa")]
-		internal static extern PATransposeTree PATransposeTreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PATransposeTree PA);
+		internal static partial PATransposeTree PATransposeTreePerformConstruct();
+		[LibraryImport("pa")]
+		internal static partial PATransposeTree PATransposeTreePerformInit(PATransposeTree Tree, PATree Value);
+		[LibraryImport("pa")]
+		internal static partial PATransposeTree PATransposeTreePerformCopy(PATransposeTree from, PATransposeTree to);
+		[LibraryImport("pa")]
+		internal static partial PATransposeTree PATransposeTreePerformDelete(PATransposeTree PA);
+		[LibraryImport("pa")]
+		internal static partial PATransposeTree PATransposeTreePerformRuin(PATransposeTree PA);
     }
 }

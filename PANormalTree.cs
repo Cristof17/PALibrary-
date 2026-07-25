@@ -4,7 +4,7 @@ using PA;
 namespace PA
 {
 	[StructLayout(LayoutKind.Sequential)]
-	public struct PANormalTree
+	public partial struct PANormalTree
 	{
 		public PANormalTree(PATree Tree) : this()
 		{
@@ -20,14 +20,14 @@ namespace PA
 		private PATree pa;
 
 		[LibraryImport("pa")]
-		internal static extern PANormalTree PANormalTreePerformConstruct();
+		internal static partial PANormalTree PANormalTreePerformConstruct();
 		[LibraryImport("pa")]
-		internal static extern PANormalTree PANormalTreePerformInit([MarshalAs(UnmanagedType.IUnknown)] PANormalTree Tree, [MarshalAs(UnmanagedType.IUnknown)] PATree tree);
+		internal static partial PANormalTree PANormalTreePerformInit(PANormalTree Tree, PATree tree);
 		[LibraryImport("pa")]
-		internal static extern PANormalTree PANormalTreePerformCopy([MarshalAs(UnmanagedType.IUnknown)] PANormalTree from, [MarshalAs(UnmanagedType.IUnknown)] PANormalTree to);
+		internal static partial PANormalTree PANormalTreePerformCopy(PANormalTree from, PANormalTree to);
 		[LibraryImport("pa")]
-		internal static extern PANormalTree PANormalTreePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PANormalTree PA);
+		internal static partial PANormalTree PANormalTreePerformDelete(PANormalTree PA);
 		[LibraryImport("pa")]
-		internal static extern PANormalTree PANormalTreePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PANormalTree PA);
+		internal static partial PANormalTree PANormalTreePerformRuin(PANormalTree PA);
     }
 }

@@ -4,7 +4,7 @@ using PA;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PAResource
+    public partial struct PAResource
     {
         public PAResource(PANumber Number)
         {
@@ -25,16 +25,16 @@ namespace PA
         private PANumber value;
 
         [LibraryImport("pa")]
-        internal static extern PAResource PAResourcePerformConstruct();
+        internal static partial PAResource PAResourcePerformConstruct();
         [LibraryImport("pa")]
-        internal static extern PAResource PAResourcePerformInit([MarshalAs(UnmanagedType.IUnknown)] PAResource resource, [MarshalAs(UnmanagedType.IUnknown)] PANumber number);
+        internal static partial PAResource PAResourcePerformInit(PAResource resource, PANumber number);
         [LibraryImport("pa")]
-        internal static extern PAResource PAResourcePerformCopy([MarshalAs(UnmanagedType.IUnknown)] PAResource from, [MarshalAs(UnmanagedType.IUnknown)] PAResource to);
+        internal static partial PAResource PAResourcePerformCopy(PAResource from, PAResource to);
         [LibraryImport("pa")]
-        internal static extern int PAResourcePerformDelete([MarshalAs(UnmanagedType.IUnknown)] PAResource PA);
+        internal static partial int PAResourcePerformDelete(PAResource PA);
         // [DllImport("pa")]
         // static extern PAResourcePerformD();
         [LibraryImport("pa")]
-        internal static extern int PAResourcePerformRuin([MarshalAs(UnmanagedType.IUnknown)] PAResource PA);
+        internal static partial int PAResourcePerformRuin(PAResource PA);
     }
 }

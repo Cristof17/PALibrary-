@@ -5,7 +5,7 @@ using PA;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct PASeries
+    public partial struct PASeries
     {
         public PASeries(PACount M, PAElement[] array) : this()
         {
@@ -71,19 +71,19 @@ namespace PA
         private PAElement array;
 
         [LibraryImport("pa")]
-        internal static extern PASeries PASeriesPerformConstruct();
+        internal static partial PASeries PASeriesPerformConstruct();
         [LibraryImport("pa")]
-        internal static extern PASeries PASeriesPerformInit([MarshalAs(UnmanagedType.IUnknown)] PASeries Series, [MarshalAs(UnmanagedType.IUnknown)] PACount M, [MarshalAs(UnmanagedType.IUnknown)] in PAElement[] adj_node);
+        internal static partial PASeries PASeriesPerformInit(PASeries Series, PACount M, in PAElement[] adj_node);
         [LibraryImport("pa")]
-        internal static extern PASeries PASeriesPerformCopy([MarshalAs(UnmanagedType.IUnknown)] PASeries Series1, [MarshalAs(UnmanagedType.IUnknown)] PASeries Series2);
+        internal static partial PASeries PASeriesPerformCopy(PASeries Series1, PASeries Series2);
         [LibraryImport("pa")]
         // internal static extern PAResource PASeriesGet([MarshalAs(UnmanagedType.IUnknown)] PAData Data);
         // [DllImport("pa")]
-        internal static extern void PASeriesPerformPrint([MarshalAs(UnmanagedType.IUnknown)] PASeries Series);
+        internal static partial void PASeriesPerformPrint(PASeries Series);
         [LibraryImport("pa")]
-        internal static extern PASeries PASeriesPerformDelete([MarshalAs(UnmanagedType.IUnknown)] PASeries PA);
+        internal static partial PASeries PASeriesPerformDelete(PASeries PA);
         [LibraryImport("pa")]
-        internal static extern PASeries PASeriesPerformRuin([MarshalAs(UnmanagedType.IUnknown)] PASeries PA);
+        internal static partial PASeries PASeriesPerformRuin(PASeries PA);
     }
 }
 // }
