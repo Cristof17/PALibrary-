@@ -17,7 +17,7 @@ namespace PA
             // resource = PAResourcePerformInit(ref,Number);
             // resource = PAResourcePerformInit(resource,Number_
             resource = PAResourcePerformInit(resource,Number);
-            resource.value = PAResourcePerformCopy(Number,resource.value);
+            resource.value = PANumber.PANumberPerformCopy(Number,resource.value);
             value = PANumber.PANumberPerformCopy(resource.value,value);
             // value = PANumber.PANumberPerformConstruct();
             // value = PANumber.PANumberPerformCopy(Number, value);

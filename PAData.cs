@@ -12,6 +12,8 @@ namespace PA
             PAData data;
             data = PADataPerformConstruct();
             data = PADataPerformInit(data,Resource);
+            resource = default;
+            // data 
             // resource = PAResource.PAResourcePerformConstruct();
             resource = PAResource.PAResourcePerformCopy(data.resource,resource);
         }

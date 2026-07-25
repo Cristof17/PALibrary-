@@ -6,13 +6,14 @@ namespace PA
 	[StructLayout(LayoutKind.Sequential)]
 	public struct PALink
 	{
-		public PALink(PAPair P)
+		public PALink(PAPair P) : this()
         {
             // p = PAPair.PAPairConstruct();
 			PALink link;
-			p = new PAPair(P.node,P.neigh);
+			// p = new PAPair(P.node,P.neigh);
 			link = PALinkPerformConstruct();
 			link = PALinkPerformInit(link,p);
+			// link.p = PAPair.PAPairPerformCopy()
 			// link.p = PAPair.PAPairPerformCopy(P,link.p);
 			// p = PAPair.PAPairPerformCopy(link.p,p);
 			// link = PALin

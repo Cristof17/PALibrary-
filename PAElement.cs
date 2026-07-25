@@ -9,14 +9,15 @@ namespace PA
     {
         public PAElement(PAData Data) : this()
         {
-            PAElement element;
             PAStatus status;
+            PAData n;
+            PAElement element;
             // status = PAStatus.STATUS_VISITED;
             // status = PAStatus.STATUS_NOT_VISITED;
             status = new PAStatus(false);
             element = PAElementPerformConstruct();
             element = PAElementPerformInit(element,Data,status);
-            n = PAData.PADataPerformCopy(element.index,Index);
+            n = PAData.PADataPerformCopy(element.Index,Index);
             // index = 
             // index = PAData.PADataPerformConstruct();
             // status = PAStatus.PAStatusPerformConstruct();

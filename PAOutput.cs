@@ -8,7 +8,7 @@ namespace PA
     {
         private BFSRecord result;
 
-        public PAOutput(BFSRecord result)
+        public PAOutput(BFSRecord result) : this()
         {
             PAOutput output;
             output = PAOutputPerformConstruct();

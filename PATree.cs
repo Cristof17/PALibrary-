@@ -26,7 +26,7 @@ namespace PA
 
 		private PACount m;
 
-		private PASeries adj;
+		private PAList adj;
 
 		private PAElement sursa;
 

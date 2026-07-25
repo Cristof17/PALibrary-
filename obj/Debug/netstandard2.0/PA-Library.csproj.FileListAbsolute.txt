@@ -2,3 +2,8 @@
 /Users/cristoforrotsching/Downloads/PALibrary--main/obj/Debug/netstandard2.0/PA-Library.GeneratedMSBuildEditorConfig.editorconfig
 /Users/cristoforrotsching/Downloads/PALibrary--main/obj/Debug/netstandard2.0/PA-Library.csproj.CoreCompileInputs.cache
 /Users/cristoforrotsching/Downloads/PALibrary--main/obj/Debug/netstandard2.0/PA-Library.sourcelink.json
+/Users/cristoforrotsching/Downloads/PALibrary--main/bin/Debug/netstandard2.0/PA-Library.deps.json
+/Users/cristoforrotsching/Downloads/PALibrary--main/bin/Debug/netstandard2.0/PA-Library.dll
+/Users/cristoforrotsching/Downloads/PALibrary--main/bin/Debug/netstandard2.0/PA-Library.pdb
+/Users/cristoforrotsching/Downloads/PALibrary--main/obj/Debug/netstandard2.0/PA-Library.dll
+/Users/cristoforrotsching/Downloads/PALibrary--main/obj/Debug/netstandard2.0/PA-Library.pdb
