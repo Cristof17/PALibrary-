@@ -1,3 +1,10 @@
 /Users/cristoforrotsching/Downloads/PALibrary--main/obj/Debug/net70/PA-Library.GeneratedMSBuildEditorConfig.editorconfig
 /Users/cristoforrotsching/Downloads/PALibrary--main/obj/Debug/net70/PA-Library.csproj.CoreCompileInputs.cache
 /Users/cristoforrotsching/Downloads/PALibrary--main/obj/Debug/net70/PA-Library.sourcelink.json
+/Users/cristoforrotsching/Downloads/PALibrary--main/bin/Debug/net70/PA-Library.deps.json
+/Users/cristoforrotsching/Downloads/PALibrary--main/bin/Debug/net70/PA-Library.dll
+/Users/cristoforrotsching/Downloads/PALibrary--main/bin/Debug/net70/PA-Library.pdb
+/Users/cristoforrotsching/Downloads/PALibrary--main/obj/Debug/net70/PA-Library.dll
+/Users/cristoforrotsching/Downloads/PALibrary--main/obj/Debug/net70/refint/PA-Library.dll
+/Users/cristoforrotsching/Downloads/PALibrary--main/obj/Debug/net70/PA-Library.pdb
+/Users/cristoforrotsching/Downloads/PALibrary--main/obj/Debug/net70/ref/PA-Library.dll
