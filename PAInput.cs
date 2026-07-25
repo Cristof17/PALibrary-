@@ -11,17 +11,17 @@ namespace PA
         public PAInput(PACount N, PACount M, PAList Adj, PAElement Sursa) : this()
         {
             PAInput input = PAInputPerformConstruct();
-            input = PAInputPerformInit(input,N,Sursa);
+            input = PAInputPerformInit(input, N, Sursa);
             // n = 
             // n = PACount.PACountPerformConstruct();
-            n = PACount.PACountPerformCopy(input.n,n);
+            n = PACount.PACountPerformCopy(input.n, n);
             // m = PACount.PACountPerformConstruct();
-            m = PACount.PACountPerformCopy(input.m,m);
-            input.adj = PAList.PAListPerformCopy(Adj,input.adj);
+            m = PACount.PACountPerformCopy(input.m, m);
+            input.adj = PAList.PAListPerformCopy(Adj, input.adj);
             // adj = PAList.PAListPerformConstruct();
-            adj = PAList.PAListPerformCopy(input.adj,adj);
+            adj = PAList.PAListPerformCopy(input.adj, adj);
             // sursa = PAElement.PAElementPerformConstruct();
-            sursa = PAElement.PAElementPerformCopy(input.sursa,sursa);
+            sursa = PAElement.PAElementPerformCopy(input.sursa, sursa);
         }
 
         private PACount n;

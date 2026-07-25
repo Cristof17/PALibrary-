@@ -11,9 +11,9 @@ namespace PA
 			// PATreePerformConstruct tre
 			PANormalTree tree;
 			tree = PANormalTreePerformConstruct();
-			tree = PANormalTreePerformInit(tree,Tree);
+			tree = PANormalTreePerformInit(tree, Tree);
 			tree.pa = PATree.PATreePerformCopy(Tree, tree.pa);
-			pa = PATree.PATreePerformCopy(tree.pa,pa);
+			pa = PATree.PATreePerformCopy(tree.pa, pa);
 			// tree.tree = PA
 			// tree = PATree.PATreePerformConstruct();
 		}
@@ -29,5 +29,5 @@ namespace PA
 		internal static partial PANormalTree PANormalTreePerformDelete(PANormalTree PA);
 		[LibraryImport("pa")]
 		internal static partial PANormalTree PANormalTreePerformRuin(PANormalTree PA);
-    }
+	}
 }

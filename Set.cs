@@ -1,11 +1,11 @@
-﻿ using System;
+﻿using System;
 
 namespace PA_Library
 {
     public readonly struct Set
     {
         //public Set(Node Source, ArrayList[] Adj, int N, int M)
-//
+        //
         // public Multime(int N) : this()
         public Set(int N) : this()
         {

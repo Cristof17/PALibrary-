@@ -14,9 +14,9 @@ namespace PA
             // series = PASeriesPerformInit(sb)
             // series = PASeriesPerformInit(sbyte
             // ser)
-            series = PASeriesPerformInit(series,M,array);
+            series = PASeriesPerformInit(series, M, array);
             // serie
-            m = PACount.PACountPerformCopy(series.m,m);
+            m = PACount.PACountPerformCopy(series.m, m);
             // adj = 
             // m = PACount.PACountPerformConstruct();
             // m = PACount.PACountPerformCopy(M, m);

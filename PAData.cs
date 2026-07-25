@@ -11,11 +11,11 @@ namespace PA
         {
             PAData data;
             data = PADataPerformConstruct();
-            data = PADataPerformInit(data,Resource);
+            data = PADataPerformInit(data, Resource);
             resource = default;
             // data 
             // resource = PAResource.PAResourcePerformConstruct();
-            resource = PAResource.PAResourcePerformCopy(data.resource,resource);
+            resource = PAResource.PAResourcePerformCopy(data.resource, resource);
         }
         private PAResource resource;
 

@@ -16,8 +16,8 @@ namespace PA
             // status = PAStatus.STATUS_NOT_VISITED;
             status = new PAStatus(false);
             element = PAElementPerformConstruct();
-            element = PAElementPerformInit(element,Data,status);
-            n = PAData.PADataPerformCopy(element.Index,Index);
+            element = PAElementPerformInit(element, Data, status);
+            n = PAData.PADataPerformCopy(element.Index, Index);
             // index = 
             // index = PAData.PADataPerformConstruct();
             // status = PAStatus.PAStatusPerformConstruct();

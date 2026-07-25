@@ -12,13 +12,13 @@ namespace PA
 		{
 			PATree tree;
 			tree = PATreePerformConstruct();
-			tree = PATreePerformInit(tree,N,M,Adj,Sursa);
+			tree = PATreePerformInit(tree, N, M, Adj, Sursa);
 			// n = PACount.PACountPerformConstruct();
 			n = PACount.PACountPerformCopy(tree.n, n);
 			// m = PACount.PACountPerformConstruct();
 			m = PACount.PACountPerformCopy(tree.m, m);
-			tree.adj = PAList.PAListPerformCopy(Adj,tree.adj);
-			adj = PAList.PAListPerformCopy(tree.adj,adj);
+			tree.adj = PAList.PAListPerformCopy(Adj, tree.adj);
+			adj = PAList.PAListPerformCopy(tree.adj, adj);
 			// sursa = PAElement.PAElementPerformConstruct();
 			sursa = PAElement.PAElementPerformCopy(tree.sursa, sursa);
 		}
@@ -35,10 +35,10 @@ namespace PA
 		[LibraryImport("pa")]
 		internal static partial PATree PATreePerformInit(PATree Tree, PACount Count, PACount Count2, PAList List, PAElement Element);
 		[LibraryImport("pa")]
-		internal static partial PATree PATreePerformCopy(PATree from,PATree to);
+		internal static partial PATree PATreePerformCopy(PATree from, PATree to);
 		[LibraryImport("pa")]
 		internal static partial PATree PATreePerformDelete(PATree PA);
 		[LibraryImport("pa")]
 		internal static partial PATree PATreePerformRuin(PATree PA);
-    }
+	}
 }

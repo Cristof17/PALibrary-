@@ -12,7 +12,7 @@ namespace PA
         {
             PAOutput output;
             output = PAOutputPerformConstruct();
-            output = PAOutputPerformInit(output,result);
+            output = PAOutputPerformInit(output, result);
             // o
             // result = BFSRecord.BFSRecordPerformCopy(output.result,result);
         }

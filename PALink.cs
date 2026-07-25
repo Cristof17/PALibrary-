@@ -7,19 +7,19 @@ namespace PA
 	public partial struct PALink
 	{
 		public PALink(PAPair P) : this()
-        {
-            // p = PAPair.PAPairConstruct();
+		{
+			// p = PAPair.PAPairConstruct();
 			PALink link;
 			// p = new PAPair(P.node,P.neigh);
 			link = PALinkPerformConstruct();
-			link = PALinkPerformInit(link,p);
+			link = PALinkPerformInit(link, p);
 			// link.p = PAPair.PAPairPerformCopy()
 			// link.p = PAPair.PAPairPerformCopy(P,link.p);
 			// p = PAPair.PAPairPerformCopy(link.p,p);
 			// link = PALin
 			// p = 
 			// p = Pair
-        }
+		}
 		PAPair p;
 
 		[LibraryImport("pa")]
@@ -32,5 +32,5 @@ namespace PA
 		internal static partial PALink PALinkPerformDelete(PALink PA);
 		[LibraryImport("pa")]
 		internal static partial PALink PALinkPerformRuin(PALink PA);
-    }
+	}
 }

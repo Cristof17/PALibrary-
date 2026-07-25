@@ -10,10 +10,10 @@ namespace PA
 		{
 			PATransposeTree tree;
 			tree = PATransposeTreePerformConstruct();
-			tree = PATransposeTreePerformInit(tree,Tree);
+			tree = PATransposeTreePerformInit(tree, Tree);
 			// tree
-			tree.pa = PATree.PATreePerformCopy(Tree,tree.pa);
-			pa = PATree.PATreePerformCopy(tree.pa,pa);
+			tree.pa = PATree.PATreePerformCopy(Tree, tree.pa);
+			pa = PATree.PATreePerformCopy(tree.pa, pa);
 			// tree = PATree.PATreePerformConstruct();
 			// tree = PATree.PATreePerformCopy(tree, tree);
 		}
@@ -29,5 +29,5 @@ namespace PA
 		internal static partial PATransposeTree PATransposeTreePerformDelete(PATransposeTree PA);
 		[LibraryImport("pa")]
 		internal static partial PATransposeTree PATransposeTreePerformRuin(PATransposeTree PA);
-    }
+	}
 }

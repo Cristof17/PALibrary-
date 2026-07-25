@@ -4,9 +4,9 @@ using PA;
 namespace PA
 {
     // internal enum PAStatus {
-        // STATUS_VISITED=0,
-        // s
-        // STATUS_NOT_VISITED=1
+    // STATUS_VISITED=0,
+    // s
+    // STATUS_NOT_VISITED=1
     [StructLayout(LayoutKind.Sequential)]
     public partial struct PAStatus
     {
@@ -17,7 +17,7 @@ namespace PA
             // visited = (int) (Visited & (0x01));
             // PAStatus status;
             PAStatus status = PAStatusPerformConstruct();
-            status = PAStatusPerformInit(status,visited);
+            status = PAStatusPerformInit(status, visited);
             // status = PAStatusPerformInit(status,)
         }
         private int visited;

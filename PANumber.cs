@@ -12,8 +12,8 @@ namespace PA
             value = Value;
             PANumber number;
             number = PANumberPerformConstruct();
-            number = PANumberPerformInit(number,Value);
-            value = number.value ;
+            number = PANumberPerformInit(number, Value);
+            value = number.value;
             // number.value,value);
         }
         public int value;

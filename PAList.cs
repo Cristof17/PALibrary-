@@ -10,12 +10,12 @@ namespace PA
         {
             PAList list;
             list = PAListPerformConstruct();
-            list = PAListPerformInit(list,N,Adj);
+            list = PAListPerformInit(list, N, Adj);
             // n = 
             // n = PACount.PACountPerformConstruct();
             n = PACount.PACountPerformCopy(list.n, n);
-            list.adj = PASeries.PASeriesPerformCopy(Adj,list.adj);
-            adj = PASeries.PASeriesPerformCopy(list.adj,adj);
+            list.adj = PASeries.PASeriesPerformCopy(Adj, list.adj);
+            adj = PASeries.PASeriesPerformCopy(list.adj, adj);
             // PAList.PAListPerformCopy()
             // adj_node = PA
             // PACount x = PACount.PACountPerformConstruct();
