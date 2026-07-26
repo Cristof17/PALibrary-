@@ -17,7 +17,13 @@ namespace PA
         //     // resource = PAResource.PAResourcePerformConstruct();
         //     resource = PAResource.PAResourcePerformCopy(data.resource, resource);
         // }
-        public readonly PAResource resource { get; }
+        public readonly PAResource resource 
+        { 
+            get
+            {
+                return _resource;
+            }
+        }
         
         internal PAResource _resource;
 

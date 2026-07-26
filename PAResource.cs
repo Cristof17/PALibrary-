@@ -23,7 +23,13 @@ namespace PA
         //     // value = PANumber.PANumberPerformCopy(Number, value);
         // }
 
-        public readonly PANumber value { get; }
+        public readonly PANumber value
+        { 
+            get
+            {
+                return _value;    
+            }
+        }
 
         internal PANumber _value;
 

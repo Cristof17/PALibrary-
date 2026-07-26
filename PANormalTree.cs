@@ -18,10 +18,16 @@ namespace PA
 		// 	// tree = PATree.PATreePerformConstruct();
 		// }
 
-		public readonly PATree pa { get; }
+		public readonly PATree pa
+		{ 
+			get
+            {
+				return _pa;
+            } 
+		}
 
 		internal PATree _pa;
-		
+
 		[LibraryImport("pa")]
 		internal static partial PANormalTree PANormalTreePerformConstruct();
 		[LibraryImport("pa")]

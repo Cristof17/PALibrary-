@@ -20,8 +20,14 @@ namespace PA
 		// 	// p = 
 		// 	// p = Pair
 		// }
-		public readonly PAPair p { get; }
-		
+		public readonly PAPair p 
+		{ 
+			get
+            {
+                return _p;
+            } 
+		}
+
 		internal PAPair _p;
 
 		[LibraryImport("pa")]

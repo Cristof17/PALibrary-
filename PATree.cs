@@ -22,13 +22,37 @@ namespace PA
 		// 	// sursa = PAElement.PAElementPerformConstruct();
 		// 	sursa = PAElement.PAElementPerformCopy(tree.sursa, sursa);
 		// }
-		public readonly PACount n { get; }
+		public readonly PACount n 
+		{ 
+			get
+            {
+				return _n;
+            }
+		}
 
-		public readonly PACount m { get; }
+		public readonly PACount m 
+		{ 
+			get
+            {
+				return _m;
+            } 
+		}
 
-		public readonly PAList adj { get; }
+		public readonly PAList adj 
+		{ 
+			get
+            {
+                return _adj;
+            }
+		}
 
-		public readonly PAElement sursa { get; }
+		public readonly PAElement sursa 
+		{ 
+			get
+            {
+				return _sursa;
+            }
+		}
 
 		internal PACount _n;
 

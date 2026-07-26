@@ -16,8 +16,14 @@ namespace PA
         //     value = number.value;
         //     // number.value,value);
         // }
-        public readonly int value { get; }
-        
+        public readonly int value 
+        { 
+            get
+            {
+                return _value;        
+            } 
+        }
+
         internal int _value;
 
         [LibraryImport("pa")]

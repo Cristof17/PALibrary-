@@ -21,7 +21,13 @@ namespace PA
         //     neigh = PAElement.PAElementPerformCopy(pair.neigh, neigh);
         // }
 
-        public readonly PAElement node { get; }
+        public readonly PAElement node 
+        {   
+            get
+            {
+                return _node;
+            } 
+        }
 
         public readonly PAElement neigh { get; }
 

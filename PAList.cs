@@ -29,12 +29,24 @@ namespace PA
         //     // }
         // }
 
-        public readonly PACount n { get; }
+        public readonly PACount n 
+        { 
+            get
+            {
+                return _n;        
+            } 
+        }
 
-        public readonly PASeries adj { get; }
+        public readonly PASeries adj 
+        { 
+            get
+            {
+                return _adj;
+            } 
+        }
 
         internal PACount _n;
-        
+
         internal PASeries _adj;
 
         [LibraryImport("pa")]
