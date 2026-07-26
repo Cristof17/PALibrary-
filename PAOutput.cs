@@ -16,19 +16,19 @@ namespace PA
         //     // result = BFSRecord.BFSRecordPerformCopy(output.result,result);
         // }
         internal required BFSRecord result { get; set; }
-        
+
         [LibraryImport("pa")]
         internal static partial PAOutput PAOutputPerformConstruct();
         [LibraryImport("pa")]
-        internal static partial PAOutput PAOutputPerformInit(PAOutput Output, BFSRecord Record);
+        internal static partial PAOutput PAOutputPerformInit(PAOutput output, BFSRecord record);
         [LibraryImport("pa")]
-        internal static partial PAOutput PAOutputPerformCopy(PAOutput From, PAOutput To);
+        internal static partial PAOutput PAOutputPerformCopy(PAOutput from, PAOutput to);
         [LibraryImport("pa")]
-        internal static partial void PAOutputPerformRuin(PAOutput PA);
+        internal static partial void PAOutputPerformRuin(PAOutput pa);
         [LibraryImport("pa")]
-        internal static partial void PAOutputPerformDelete(PAOutput PA);
+        internal static partial void PAOutputPerformDelete(PAOutput pa);
         [LibraryImport("pa")]
-        internal static partial void PAOutputPerformPrint(int Result);
+        internal static partial void PAOutputPerformPrint(int result);
         //struct Output dispose();
 
         // public PAOutput() : this()

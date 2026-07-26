@@ -25,12 +25,12 @@ namespace PA
 		[LibraryImport("pa")]
 		internal static partial PALink PALinkPerformConstruct();
 		[LibraryImport("pa")]
-		internal static partial PALink PALinkPerformInit(PALink Link, PAPair Pair);
+		internal static partial PALink PALinkPerformInit(PALink link, PAPair link);
 		[LibraryImport("pa")]
-		internal static partial PALink PALinkPerformCopy(PALink From, PALink To);
+		internal static partial PALink PALinkPerformCopy(PALink from, PALink to);
 		[LibraryImport("pa")]
-		internal static partial PALink PALinkPerformRuin(PALink PA);
+		internal static partial PALink PALinkPerformRuin(PALink pa);
 		[LibraryImport("pa")]
-		internal static partial PALink PALinkPerformDelete(PALink PA);
+		internal static partial PALink PALinkPerformDelete(PALink pa);
 	}
 }

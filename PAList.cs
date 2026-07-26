@@ -35,9 +35,9 @@ namespace PA
         [LibraryImport("pa")]
         internal static partial PAList PAListPerformConstruct();
         [LibraryImport("pa")]
-        internal static partial PAList PAListPerformInit(PAList List, PACount N, in PASeries Adj);
+        internal static partial PAList PAListPerformInit(PAList list, PACount n, in PASeries adj);
         [LibraryImport("pa")]
-        internal static partial PAList PAListPerformCopy(PAList From, PAList To);
+        internal static partial PAList PAListPerformCopy(PAList from, PAList to);
         // DllExport void PAListDispose(void);
         // DllExport struct PAList PAListPerformCopy(struct PAList);
         // DllExportPAResult PAListPerformPutCount(struct PAList, struct PACount);

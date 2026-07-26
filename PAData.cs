@@ -22,12 +22,12 @@ namespace PA
         [LibraryImport("pa")]
         internal static partial PAData PADataPerformConstruct();
         [LibraryImport("pa")]
-        internal static partial PAData PADataPerformInit(PAData Data, PAResource Resource);
+        internal static partial PAData PADataPerformInit(PAData data, PAResource resource);
         [LibraryImport("pa")]
-        internal static partial PAData PADataPerformCopy(PAData From, PAData To);
+        internal static partial PAData PADataPerformCopy(PAData from, PAData to);
         [LibraryImport("pa")]
-        internal static partial PAData PADataPerformRuin(PAData PA);
+        internal static partial PAData PADataPerformRuin(PAData pa);
         [LibraryImport("pa")]
-        internal static partial PAData PADataPerformDelete(PAData PA);
+        internal static partial PAData PADataPerformDelete(PAData pa);
     }
 }

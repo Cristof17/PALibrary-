@@ -27,13 +27,13 @@ namespace PA
         [LibraryImport("pa")]
         internal static partial PAStatus PAStatusPerformConstruct();
         [LibraryImport("pa")]
-        internal static partial PAStatus PAStatusPerformInit(PAStatus Status, int Visited);
+        internal static partial PAStatus PAStatusPerformInit(PAStatus status, int visited);
         [LibraryImport("pa")]
-        internal static partial PAStatus PAStatusPerformCopy(PAStatus From, PAStatus To);
+        internal static partial PAStatus PAStatusPerformCopy(PAStatus from, PAStatus to);
         [LibraryImport("pa")]
-        internal static partial PAStatus PAStatusPerformRuin(PAStatus PA);
+        internal static partial PAStatus PAStatusPerformRuin(PAStatus pa);
         [LibraryImport("pa")]
-        internal static partial PAStatus PAStatusPerformDelete(PAStatus PA);
+        internal static partial PAStatus PAStatusPerformDelete(PAStatus pa);
     }
     // }
 }

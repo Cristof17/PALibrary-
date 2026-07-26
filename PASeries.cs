@@ -73,17 +73,17 @@ namespace PA
         [LibraryImport("pa")]
         internal static partial PASeries PASeriesPerformConstruct();
         [LibraryImport("pa")]
-        internal static partial PASeries PASeriesPerformInit(PASeries Series, PACount M, in PAElement[] Adj);
+        internal static partial PASeries PASeriesPerformInit(PASeries series, PACount n, in PAElement[] adj);
         [LibraryImport("pa")]
-        internal static partial PASeries PASeriesPerformCopy(PASeries From, PASeries To);
+        internal static partial PASeries PASeriesPerformCopy(PASeries from, PASeries to);
         [LibraryImport("pa")]
         // internal static extern PAResource PASeriesGet([MarshalAs(UnmanagedType.IUnknown)] PAData Data);
         // [DllImport("pa")]
-        internal static partial void PASeriesPerformPrint(PASeries Series);
+        internal static partial void PASeriesPerformPrint(PASeries series);
         [LibraryImport("pa")]
-        internal static partial PASeries PASeriesPerformRuin(PASeries PA);
+        internal static partial PASeries PASeriesPerformRuin(PASeries pa);
         [LibraryImport("pa")]
-        internal static partial PASeries PASeriesPerformDelete(PASeries PA);
+        internal static partial PASeries PASeriesPerformDelete(PASeries pa);
     }
 }
 // }

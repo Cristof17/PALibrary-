@@ -23,13 +23,13 @@ namespace PA
         [LibraryImport("pa")]
         internal static partial PACount PACountPerformConstruct();
         [LibraryImport("pa")]
-        internal static partial PACount PACountPerformInit(PACount Count, PANumber Number);
+        internal static partial PACount PACountPerformInit(PACount count, PANumber number);
         [LibraryImport("pa")]
-        internal static partial PACount PACountPerformCopy(PACount From, PACount To);
+        internal static partial PACount PACountPerformCopy(PACount from, PACount to);
         [LibraryImport("pa")]
-        internal static partial PACount PACountPerformRuin(PACount PA);
+        internal static partial PACount PACountPerformRuin(PACount pa);
         [LibraryImport("pa")]
-        internal static partial PACount PACountPerformDelete(PACount PA);
+        internal static partial PACount PACountPerformDelete(PACount pa);
 
         public static PACount operator ++(PACount count) => PACount.PACountPerformInit(count, count.value++);
         public static bool operator <(PACount a, PACount b) => a.value < b.value;

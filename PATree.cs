@@ -33,12 +33,12 @@ namespace PA
 		[LibraryImport("pa")]
 		internal static partial PATree PATreePerformConstruct();
 		[LibraryImport("pa")]
-		internal static partial PATree PATreePerformInit(PATree Tree, PACount N, PACount M, PAList List, PAElement Element);
+		internal static partial PATree PATreePerformInit(PATree tree, PACount n, PACount m, PAList list, PAElement element);
 		[LibraryImport("pa")]
-		internal static partial PATree PATreePerformCopy(PATree From, PATree To);
+		internal static partial PATree PATreePerformCopy(PATree from, PATree to);
 		[LibraryImport("pa")]
-		internal static partial PATree PATreePerformRuin(PATree PA);
+		internal static partial PATree PATreePerformRuin(PATree pa);
 		[LibraryImport("pa")]
-		internal static partial PATree PATreePerformDelete(PATree PA);
+		internal static partial PATree PATreePerformDelete(PATree pa);
 	}
 }
