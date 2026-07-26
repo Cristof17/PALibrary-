@@ -4,7 +4,7 @@ using PA;
 namespace PA
 {
 	[StructLayout(LayoutKind.Sequential)]
-	partial struct PALink
+	internal partial struct PALink
 	{
 		// public PALink(PAPair P) : this()
 		// {

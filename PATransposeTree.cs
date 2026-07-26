@@ -4,7 +4,7 @@ using PA;
 namespace PA
 {
 	[StructLayout(LayoutKind.Sequential)]
-	partial struct PATransposeTree
+	internal partial struct PATransposeTree
 	{
 		// public PATransposeTree(PATree Tree) : this()
 		// {

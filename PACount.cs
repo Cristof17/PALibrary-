@@ -7,7 +7,7 @@ using SM;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    partial struct PACount
+    internal partial struct PACount
     {
         // public PACount(PANumber Number) : this()
         // {

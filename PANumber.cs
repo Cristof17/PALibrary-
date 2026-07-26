@@ -5,7 +5,7 @@ using PA;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    partial struct PANumber
+    internal partial struct PANumber
     {
         // public PANumber(int Value) : this()
         // {
