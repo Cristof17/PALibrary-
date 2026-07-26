@@ -24,8 +24,8 @@ namespace PA
         // }
 
         public readonly PANumber value { get; }
-        
-        internal required PANumber _value;
+
+        internal PANumber _value;
 
         [LibraryImport("pa")]
         internal static partial PAResource PAResourcePerformConstruct();

@@ -29,12 +29,13 @@ namespace PA
         //     // }
         // }
 
-        internal required PACount _n;
-        internal required PASeries _adj;
-
         public readonly PACount n { get; }
-        
+
         public readonly PASeries adj { get; }
+
+        internal PACount _n;
+        
+        internal PASeries _adj;
 
         [LibraryImport("pa")]
         internal static partial PAList PAListPerformConstruct();

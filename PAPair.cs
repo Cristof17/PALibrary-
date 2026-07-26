@@ -25,9 +25,9 @@ namespace PA
 
         public readonly PAElement neigh { get; }
 
-        internal required PAElement _node;
+        internal PAElement _node;
 
-        internal required PAElement _neigh;
+        internal PAElement _neigh;
 
         [LibraryImport("pa")]
         internal static partial PAPair PAPairConstruct();

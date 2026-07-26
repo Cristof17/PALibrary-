@@ -23,13 +23,13 @@ namespace PA
         //     // status = PAStatus.PAStatusPerformConstruct();
         //     // status = PAStatus.PAStatusPerformCopy(element.status,status);
         // }
+        public readonly PAData index { get; }
+
+        public readonly PAStatus status { get; }
         internal PAData _index;
 
         internal PAStatus _status;
 
-        public readonly PAData index { get; }
-
-        public readonly PAStatus status { get; }
 
         [LibraryImport("pa")]
         internal static partial PAElement PAElementPerformConstruct();

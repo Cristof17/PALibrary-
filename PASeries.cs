@@ -71,9 +71,9 @@ namespace PA
 
         public readonly PAElement array { get; }
 
-        internal required PACount _m;
+        internal PACount _m;
 
-        internal required PAElement _array;
+        internal PAElement _array;
 
         [LibraryImport("pa")]
         internal static partial PASeries PASeriesPerformConstruct();

@@ -22,7 +22,7 @@ namespace PA
         // }
         public readonly int visited { get; }
 
-        internal required int _visited;
+        internal int _visited;
 
         // public PAResource resource;
 

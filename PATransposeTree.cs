@@ -19,7 +19,7 @@ namespace PA
 		// }
 		public readonly PATree pa { get; }
 
-		internal required PATree _pa;
+		internal PATree _pa;
 
 		[LibraryImport("pa")]
 		internal static partial PATransposeTree PATransposeTreePerformConstruct();

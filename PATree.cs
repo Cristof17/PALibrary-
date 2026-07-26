@@ -30,13 +30,13 @@ namespace PA
 
 		public readonly PAElement sursa { get; }
 
-		internal required PACount _n;
+		internal PACount _n;
 
-		internal required PACount _m;
+		internal PACount _m;
 
-		internal required PAList _adj;
+		internal PAList _adj;
 
-		internal required PAElement _sursa;
+		internal PAElement _sursa;
 
 		[LibraryImport("pa")]
 		internal static partial PATree PATreePerformConstruct();
