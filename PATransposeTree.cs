@@ -17,7 +17,7 @@ namespace PA
 			// tree = PATree.PATreePerformConstruct();
 			// tree = PATree.PATreePerformCopy(tree, tree);
 		}
-		private PATree pa;
+		private PATree pa {get; set;}
 
 		[LibraryImport("pa")]
 		internal static partial PATransposeTree PATransposeTreePerformConstruct();

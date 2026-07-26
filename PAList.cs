@@ -29,8 +29,8 @@ namespace PA
             // }
         }
 
-        private PACount n;
-        private PASeries adj;
+        private PACount n { get; set;}
+        private PASeries adj {get; set;}
 
         [LibraryImport("pa")]
         internal static partial PAList PAListPerformConstruct();
