@@ -7,15 +7,15 @@ namespace PA
     [StructLayout(LayoutKind.Sequential)]
     partial struct PANumber
     {
-        public PANumber(int Value) : this()
-        {
-            value = Value;
-            PANumber number;
-            number = PANumberPerformConstruct();
-            number = PANumberPerformInit(number, Value);
-            value = number.value;
-            // number.value,value);
-        }
+        // public PANumber(int Value) : this()
+        // {
+        //     value = Value;
+        //     PANumber number;
+        //     number = PANumberPerformConstruct();
+        //     number = PANumberPerformInit(number, Value);
+        //     value = number.value;
+        //     // number.value,value);
+        // }
         public required int value { get; set; }
 
         [LibraryImport("pa")]
@@ -37,7 +37,7 @@ namespace PA
         // public static bool operator int(PANumber a) => (int) a.value;
         public static implicit operator int(PANumber a) => (int)a.value;
         // public static explicit operator PANod
-        // public static explicit operator PANumber(int value) => new PANumber { value };
+        // public static explicit operator PANumber(int value) => PANumberPerformInit();
 
         // public override bool Equals(object obj)
         // {
