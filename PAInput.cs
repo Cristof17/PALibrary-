@@ -40,9 +40,9 @@ namespace PA
         [LibraryImport("pa")]
         internal static partial PAInput PAInputPerformCopy(PAInput From, PAInput To);
         [LibraryImport("pa")]
-        internal static partial void PAInputRuin(PAInput PA);
-        [LibraryImport("pa")]
         internal static partial PAInput PAInputPerformDelete(PAInput PA);
+        [LibraryImport("pa")]
+        internal static partial void PAInputRuin(PAInput PA);
         
     }
 }
