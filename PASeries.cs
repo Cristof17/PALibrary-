@@ -81,9 +81,9 @@ namespace PA
         // [DllImport("pa")]
         internal static partial void PASeriesPerformPrint(PASeries Series);
         [LibraryImport("pa")]
-        internal static partial PASeries PASeriesPerformDelete(PASeries PA);
-        [LibraryImport("pa")]
         internal static partial PASeries PASeriesPerformRuin(PASeries PA);
+        [LibraryImport("pa")]
+        internal static partial PASeries PASeriesPerformDelete(PASeries PA);
     }
 }
 // }

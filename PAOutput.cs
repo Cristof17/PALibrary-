@@ -23,12 +23,12 @@ namespace PA
         [LibraryImport("pa")]
         internal static partial PAOutput PAOutputPerformCopy(PAOutput From, PAOutput To);
         [LibraryImport("pa")]
-        internal static partial void PAOutputPerformPrint(int Result);
-        //struct Output dispose();
+        internal static partial void PAOutputPerformRuin(PAOutput PA);
         [LibraryImport("pa")]
         internal static partial void PAOutputPerformDelete(PAOutput PA);
         [LibraryImport("pa")]
-        internal static partial void PAOutputPerformRuin(PAOutput PA);
+        internal static partial void PAOutputPerformPrint(int Result);
+        //struct Output dispose();
 
         // public PAOutput() : this()
         // {

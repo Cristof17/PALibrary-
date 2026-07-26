@@ -31,10 +31,10 @@ namespace PA
         [LibraryImport("pa")]
         internal static partial PAResource PAResourcePerformCopy(PAResource From, PAResource To);
         [LibraryImport("pa")]
+        internal static partial int PAResourcePerformRuin(PAResource PA);
+        [LibraryImport("pa")]
         internal static partial int PAResourcePerformDelete(PAResource PA);
         // [DllImport("pa")]
         // static extern PAResourcePerformD();
-        [LibraryImport("pa")]
-        internal static partial int PAResourcePerformRuin(PAResource PA);
     }
 }

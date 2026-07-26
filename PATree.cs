@@ -37,8 +37,8 @@ namespace PA
 		[LibraryImport("pa")]
 		internal static partial PATree PATreePerformCopy(PATree From, PATree To);
 		[LibraryImport("pa")]
-		internal static partial PATree PATreePerformDelete(PATree PA);
-		[LibraryImport("pa")]
 		internal static partial PATree PATreePerformRuin(PATree PA);
+		[LibraryImport("pa")]
+		internal static partial PATree PATreePerformDelete(PATree PA);
 	}
 }
