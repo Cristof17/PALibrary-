@@ -18,7 +18,7 @@ namespace PA
         //     count.value = PANumber.PANumberPerformCopy(Number, count.value);
         //     value = PANumber.PANumberPerformCopy(count.value, value);
         // }
-        private required PANumber value { get; set; }
+        internal required PANumber value { get; set; }
 
         [LibraryImport("pa")]
         internal static partial PACount PACountPerformConstruct();
@@ -37,7 +37,7 @@ namespace PA
         // public static bool operator==(PACount a, PACount b) => a.value == b.value;
         // public static bool operator!=(PACount a, PACount b) => a.value != b.value;
         public static implicit operator int(PACount count) => (int)count.value;
-        public static explicit operator PACount(int value) => new PACount(new PANumber(value));
+        // public static explicit operator PACount(int value) => ;
 
         // public override bool Equals(object obj)
         // {

@@ -23,9 +23,9 @@ namespace PA
         //     // status = PAStatus.PAStatusPerformConstruct();
         //     // status = PAStatus.PAStatusPerformCopy(element.status,status);
         // }
-        private required PAData Index { get; set; }
+        internal required PAData Index { get; set; }
 
-        private required PAStatus Status { get; set; }
+        internal required PAStatus Status { get; set; }
 
         [LibraryImport("pa")]
         internal static partial PAElement PAElementPerformConstruct();

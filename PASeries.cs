@@ -66,9 +66,9 @@ namespace PA
         // //     return to;
         // //     // PACount fromCount = from.C
         // // }
-        private required PACount m { get; set; }
+        internal required PACount m { get; set; }
 
-        private required PAElement array { get; set; }
+        internal required PAElement array { get; set; }
 
         [LibraryImport("pa")]
         internal static partial PASeries PASeriesPerformConstruct();

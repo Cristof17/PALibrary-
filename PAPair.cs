@@ -20,9 +20,9 @@ namespace PA
         //     pair.neigh = PAElement.PAElementPerformCopy(Neigh, neigh);
         //     neigh = PAElement.PAElementPerformCopy(pair.neigh, neigh);
         // }
-        private required PAElement node { get; set; }
+        internal required PAElement node { get; set; }
 
-        private PAElement neigh { get; set; }
+        internal PAElement neigh { get; set; }
 
         [LibraryImport("pa")]
         internal static partial PAPair PAPairConstruct();
