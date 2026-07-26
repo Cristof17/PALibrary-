@@ -25,7 +25,7 @@ namespace PA
         [LibraryImport("pa")]
         internal static partial PACount PACountPerformInit(PACount Count, PANumber Number);
         [LibraryImport("pa")]
-        internal static partial PACount PACountPerformCopy(PACount from, PACount to);
+        internal static partial PACount PACountPerformCopy(PACount From, PACount To);
         [LibraryImport("pa")]
         internal static partial PACount PACountPerformRuin(PACount PA);
         [LibraryImport("pa")]

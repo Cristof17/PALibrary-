@@ -27,9 +27,9 @@ namespace PA
         [LibraryImport("pa")]
         internal static partial PAResource PAResourcePerformConstruct();
         [LibraryImport("pa")]
-        internal static partial PAResource PAResourcePerformInit(PAResource resource, PANumber number);
+        internal static partial PAResource PAResourcePerformInit(PAResource Resource, PANumber Number);
         [LibraryImport("pa")]
-        internal static partial PAResource PAResourcePerformCopy(PAResource from, PAResource to);
+        internal static partial PAResource PAResourcePerformCopy(PAResource From, PAResource To);
         [LibraryImport("pa")]
         internal static partial int PAResourcePerformDelete(PAResource PA);
         // [DllImport("pa")]

@@ -23,7 +23,7 @@ namespace PA
         [LibraryImport("pa")]
         internal static partial PANumber PANumberPerformInit(PANumber Number, int Value);
         [LibraryImport("pa")]
-        internal static partial PANumber PANumberPerformCopy(PANumber from, PANumber to);
+        internal static partial PANumber PANumberPerformCopy(PANumber From, PANumber To);
         [LibraryImport("pa")]
         internal static partial PANumber PANumberPerformDelete(PANumber PA);
         [LibraryImport("pa")]

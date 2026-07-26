@@ -33,9 +33,9 @@ namespace PA
 		[LibraryImport("pa")]
 		internal static partial PATree PATreePerformConstruct();
 		[LibraryImport("pa")]
-		internal static partial PATree PATreePerformInit(PATree Tree, PACount Count, PACount Count2, PAList List, PAElement Element);
+		internal static partial PATree PATreePerformInit(PATree Tree, PACount N, PACount M, PAList List, PAElement Element);
 		[LibraryImport("pa")]
-		internal static partial PATree PATreePerformCopy(PATree from, PATree to);
+		internal static partial PATree PATreePerformCopy(PATree From, PATree To);
 		[LibraryImport("pa")]
 		internal static partial PATree PATreePerformDelete(PATree PA);
 		[LibraryImport("pa")]

@@ -22,9 +22,9 @@ namespace PA
 		[LibraryImport("pa")]
 		internal static partial PATransposeTree PATransposeTreePerformConstruct();
 		[LibraryImport("pa")]
-		internal static partial PATransposeTree PATransposeTreePerformInit(PATransposeTree Tree, PATree Value);
+		internal static partial PATransposeTree PATransposeTreePerformInit(PATransposeTree TransposeTree, PATree Tree);
 		[LibraryImport("pa")]
-		internal static partial PATransposeTree PATransposeTreePerformCopy(PATransposeTree from, PATransposeTree to);
+		internal static partial PATransposeTree PATransposeTreePerformCopy(PATransposeTree From, PATransposeTree To);
 		[LibraryImport("pa")]
 		internal static partial PATransposeTree PATransposeTreePerformDelete(PATransposeTree PA);
 		[LibraryImport("pa")]

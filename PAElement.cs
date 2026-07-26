@@ -30,18 +30,18 @@ namespace PA
         [LibraryImport("pa")]
         internal static partial PAElement PAElementPerformConstruct();
         [LibraryImport("pa")]
-        internal static partial PAElement PAElementPerformInit(PAElement element, PAData data, PAStatus status);
+        internal static partial PAElement PAElementPerformInit(PAElement Element, PAData Data, PAStatus Status);
         [LibraryImport("pa")]
-        internal static partial void PAElementVisit(PAElement element);
+        internal static partial void PAElementVisit(PAElement Element);
         [LibraryImport("pa")]
-        internal static partial int PAElementIsVisited(PAElement element);
+        internal static partial int PAElementIsVisited(PAElement Element);
         [LibraryImport("pa")]
-        internal static partial void PAElementReset(PAElement element);
+        internal static partial void PAElementReset(PAElement Element);
         [LibraryImport("pa")]
-        internal static partial PAElement PAElementPerformCopy(PAElement element, PAElement element2);
+        internal static partial PAElement PAElementPerformCopy(PAElement From, PAElement To);
         [LibraryImport("pa")]
-        internal static partial PAElement PAElementPerformDelete(PAElement element);
+        internal static partial PAElement PAElementPerformDelete(PAElement PA);
         [LibraryImport("pa")]
-        internal static partial PAElement PAElementPerformRuin(PAElement element);
+        internal static partial PAElement PAElementPerformRuin(PAElement PA);
     }
 }

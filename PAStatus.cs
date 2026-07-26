@@ -29,7 +29,7 @@ namespace PA
         [LibraryImport("pa")]
         internal static partial PAStatus PAStatusPerformInit(PAStatus Status, int Visited);
         [LibraryImport("pa")]
-        internal static partial PAStatus PAStatusPerformCopy(PAStatus from, PAStatus to);
+        internal static partial PAStatus PAStatusPerformCopy(PAStatus From, PAStatus To);
         [LibraryImport("pa")]
         internal static partial PAStatus PAStatusPerformDelete(PAStatus PA);
         [LibraryImport("pa")]

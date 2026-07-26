@@ -22,9 +22,9 @@ namespace PA
 		[LibraryImport("pa")]
 		internal static partial PANormalTree PANormalTreePerformConstruct();
 		[LibraryImport("pa")]
-		internal static partial PANormalTree PANormalTreePerformInit(PANormalTree Tree, PATree tree);
+		internal static partial PANormalTree PANormalTreePerformInit(PANormalTree NormalTree, PATree Tree);
 		[LibraryImport("pa")]
-		internal static partial PANormalTree PANormalTreePerformCopy(PANormalTree from, PANormalTree to);
+		internal static partial PANormalTree PANormalTreePerformCopy(PANormalTree From, PANormalTree To);
 		[LibraryImport("pa")]
 		internal static partial PANormalTree PANormalTreePerformDelete(PANormalTree PA);
 		[LibraryImport("pa")]
