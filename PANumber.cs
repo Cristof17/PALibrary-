@@ -16,7 +16,7 @@ namespace PA
         //     value = number.value;
         //     // number.value,value);
         // }
-        public required int value { get; set; }
+        public required int _value { get; set; }
 
         [LibraryImport("pa")]
         internal static partial PANumber PANumberPerformConstruct();

@@ -18,7 +18,7 @@ namespace PA
         //     count.value = PANumber.PANumberPerformCopy(Number, count.value);
         //     value = PANumber.PANumberPerformCopy(count.value, value);
         // }
-        internal required PANumber value { get; set; }
+        internal required PANumber _value { get; set; }
 
         [LibraryImport("pa")]
         internal static partial PACount PACountPerformConstruct();

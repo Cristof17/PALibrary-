@@ -20,7 +20,7 @@ namespace PA
 		// 	// p = 
 		// 	// p = Pair
 		// }
-		internal required PAPair p { get; set; }
+		internal required PAPair _p { get; set; }
 
 		[LibraryImport("pa")]
 		internal static partial PALink PALinkPerformConstruct();
