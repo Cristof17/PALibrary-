@@ -9,16 +9,16 @@ namespace PA
     [StructLayout(LayoutKind.Sequential)]
     partial struct PACount
     {
-        public PACount(PANumber Number) : this()
-        {
-            // Construct(Number);
-            PACount count;
-            count = PACountPerformConstruct();
-            count = PACountPerformInit(count, Number);
-            count.value = PANumber.PANumberPerformCopy(Number, count.value);
-            value = PANumber.PANumberPerformCopy(count.value, value);
-        }
-        private PANumber value { get; set; }
+        // public PACount(PANumber Number) : this()
+        // {
+        //     // Construct(Number);
+        //     PACount count;
+        //     count = PACountPerformConstruct();
+        //     count = PACountPerformInit(count, Number);
+        //     count.value = PANumber.PANumberPerformCopy(Number, count.value);
+        //     value = PANumber.PANumberPerformCopy(count.value, value);
+        // }
+        private required PANumber value { get; set; }
 
         [LibraryImport("pa")]
         internal static partial PACount PACountPerformConstruct();

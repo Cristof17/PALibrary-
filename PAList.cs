@@ -6,31 +6,31 @@ namespace PA
     [StructLayout(LayoutKind.Sequential)]
     partial struct PAList
     {
-        public PAList(PACount N, PASeries Adj) : this()
-        {
-            PAList list;
-            list = PAListPerformConstruct();
-            list = PAListPerformInit(list, N, Adj);
-            // n = 
-            // n = PACount.PACountPerformConstruct();
-            n = PACount.PACountPerformCopy(list.n, n);
-            list.adj = PASeries.PASeriesPerformCopy(Adj, list.adj);
-            adj = PASeries.PASeriesPerformCopy(list.adj, adj);
-            // PAList.PAListPerformCopy()
-            // adj_node = PA
-            // PACount x = PACount.PACountPerformConstruct();
-            // while (x < n)
-            // {
-            //     // adj_node[x] = PASerie
-            //     PASeries aux = PASeries.PASeriesPerformConstruct();
-            //     aux = PASeries.copy(ADJ_NODE[x], aux);
-            //     adj_node[x] = PASeries.PASeriesPerformCopy(aux, adj_node[x]);
-            //     x++;
-            // }
-        }
+        // public PAList(PACount N, PASeries Adj) : this()
+        // {
+        //     PAList list;
+        //     list = PAListPerformConstruct();
+        //     list = PAListPerformInit(list, N, Adj);
+        //     // n = 
+        //     // n = PACount.PACountPerformConstruct();
+        //     n = PACount.PACountPerformCopy(list.n, n);
+        //     list.adj = PASeries.PASeriesPerformCopy(Adj, list.adj);
+        //     adj = PASeries.PASeriesPerformCopy(list.adj, adj);
+        //     // PAList.PAListPerformCopy()
+        //     // adj_node = PA
+        //     // PACount x = PACount.PACountPerformConstruct();
+        //     // while (x < n)
+        //     // {
+        //     //     // adj_node[x] = PASerie
+        //     //     PASeries aux = PASeries.PASeriesPerformConstruct();
+        //     //     aux = PASeries.copy(ADJ_NODE[x], aux);
+        //     //     adj_node[x] = PASeries.PASeriesPerformCopy(aux, adj_node[x]);
+        //     //     x++;
+        //     // }
+        // }
 
-        private PACount n { get; set; }
-        private PASeries adj { get; set; }
+        private required PACount n { get; set; }
+        private required PASeries adj { get; set; }
 
         [LibraryImport("pa")]
         internal static partial PAList PAListPerformConstruct();

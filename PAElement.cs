@@ -7,25 +7,25 @@ namespace PA
     [StructLayout(LayoutKind.Sequential)]
     internal partial struct PAElement
     {
-        public PAElement(PAData Data) : this()
-        {
-            PAStatus status;
-            PAData n;
-            PAElement element;
-            // status = PAStatus.STATUS_VISITED;
-            // status = PAStatus.STATUS_NOT_VISITED;
-            status = new PAStatus(false);
-            element = PAElementPerformConstruct();
-            element = PAElementPerformInit(element, Data, status);
-            n = PAData.PADataPerformCopy(element.Index, Index);
-            // index = 
-            // index = PAData.PADataPerformConstruct();
-            // status = PAStatus.PAStatusPerformConstruct();
-            // status = PAStatus.PAStatusPerformCopy(element.status,status);
-        }
-        private PAData Index { get; set; }
+        // public PAElement(PAData Data) : this()
+        // {
+        //     PAStatus status;
+        //     PAData n;
+        //     PAElement element;
+        //     // status = PAStatus.STATUS_VISITED;
+        //     // status = PAStatus.STATUS_NOT_VISITED;
+        //     status = new PAStatus(false);
+        //     element = PAElementPerformConstruct();
+        //     element = PAElementPerformInit(element, Data, status);
+        //     n = PAData.PADataPerformCopy(element.Index, Index);
+        //     // index = 
+        //     // index = PAData.PADataPerformConstruct();
+        //     // status = PAStatus.PAStatusPerformConstruct();
+        //     // status = PAStatus.PAStatusPerformCopy(element.status,status);
+        // }
+        private required PAData Index { get; set; }
 
-        private PAStatus Status { get; set; }
+        private required PAStatus Status { get; set; }
 
         [LibraryImport("pa")]
         internal static partial PAElement PAElementPerformConstruct();

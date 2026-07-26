@@ -10,17 +10,17 @@ namespace PA
     [StructLayout(LayoutKind.Sequential)]
     partial struct PAStatus
     {
-        internal PAStatus(bool Visited) : this()
-        {
-            // Visited = visited;
-            visited = (Visited == true) ? 0x01 : 0x00;
-            // visited = (int) (Visited & (0x01));
-            // PAStatus status;
-            PAStatus status = PAStatusPerformConstruct();
-            status = PAStatusPerformInit(status, visited);
-            // status = PAStatusPerformInit(status,)
-        }
-        private int visited { get; set; }
+        // internal PAStatus(bool Visited) : this()
+        // {
+        //     // Visited = visited;
+        //     visited = (Visited == true) ? 0x01 : 0x00;
+        //     // visited = (int) (Visited & (0x01));
+        //     // PAStatus status;
+        //     PAStatus status = PAStatusPerformConstruct();
+        //     status = PAStatusPerformInit(status, visited);
+        //     // status = PAStatusPerformInit(status,)
+        // }
+        private required int visited { get; set; }
 
         // public PAResource resource;
 

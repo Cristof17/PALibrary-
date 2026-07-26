@@ -6,18 +6,18 @@ namespace PA
 	[StructLayout(LayoutKind.Sequential)]
 	partial struct PATransposeTree
 	{
-		public PATransposeTree(PATree Tree) : this()
-		{
-			PATransposeTree tree;
-			tree = PATransposeTreePerformConstruct();
-			tree = PATransposeTreePerformInit(tree, Tree);
-			// tree
-			tree.pa = PATree.PATreePerformCopy(Tree, tree.pa);
-			pa = PATree.PATreePerformCopy(tree.pa, pa);
-			// tree = PATree.PATreePerformConstruct();
-			// tree = PATree.PATreePerformCopy(tree, tree);
-		}
-		private PATree pa { get; set; }
+		// public PATransposeTree(PATree Tree) : this()
+		// {
+		// 	PATransposeTree tree;
+		// 	tree = PATransposeTreePerformConstruct();
+		// 	tree = PATransposeTreePerformInit(tree, Tree);
+		// 	// tree
+		// 	tree.pa = PATree.PATreePerformCopy(Tree, tree.pa);
+		// 	pa = PATree.PATreePerformCopy(tree.pa, pa);
+		// 	// tree = PATree.PATreePerformConstruct();
+		// 	// tree = PATree.PATreePerformCopy(tree, tree);
+		// }
+		private required PATree pa { get; set; }
 
 		[LibraryImport("pa")]
 		internal static partial PATransposeTree PATransposeTreePerformConstruct();

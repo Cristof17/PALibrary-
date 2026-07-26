@@ -24,13 +24,13 @@ namespace PA
             sursa = PAElement.PAElementPerformCopy(input.sursa, sursa);
         }
 
-        private PACount n { get; set; }
+        private required PACount n { get; set; }
 
-        private PACount m { get; set; }
+        private required PACount m { get; set; }
 
-        private PAList adj { get; set; }
+        private required PAList adj { get; set; }
 
-        private PAElement sursa { get; set; }
+        private required PAElement sursa { get; set; }
 
         [LibraryImport("pa")]
         internal static partial PAInput PAInputPerformConstruct();

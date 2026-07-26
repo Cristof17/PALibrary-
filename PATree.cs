@@ -8,27 +8,27 @@ namespace PA
 	[StructLayout(LayoutKind.Sequential)]
 	partial struct PATree
 	{
-		public PATree(PACount N, PACount M, PAList Adj, PAElement Sursa) : this()
-		{
-			PATree tree;
-			tree = PATreePerformConstruct();
-			tree = PATreePerformInit(tree, N, M, Adj, Sursa);
-			// n = PACount.PACountPerformConstruct();
-			n = PACount.PACountPerformCopy(tree.n, n);
-			// m = PACount.PACountPerformConstruct();
-			m = PACount.PACountPerformCopy(tree.m, m);
-			tree.adj = PAList.PAListPerformCopy(Adj, tree.adj);
-			adj = PAList.PAListPerformCopy(tree.adj, adj);
-			// sursa = PAElement.PAElementPerformConstruct();
-			sursa = PAElement.PAElementPerformCopy(tree.sursa, sursa);
-		}
-		private PACount n { get; set; }
+		// public PATree(PACount N, PACount M, PAList Adj, PAElement Sursa) : this()
+		// {
+		// 	PATree tree;
+		// 	tree = PATreePerformConstruct();
+		// 	tree = PATreePerformInit(tree, N, M, Adj, Sursa);
+		// 	// n = PACount.PACountPerformConstruct();
+		// 	n = PACount.PACountPerformCopy(tree.n, n);
+		// 	// m = PACount.PACountPerformConstruct();
+		// 	m = PACount.PACountPerformCopy(tree.m, m);
+		// 	tree.adj = PAList.PAListPerformCopy(Adj, tree.adj);
+		// 	adj = PAList.PAListPerformCopy(tree.adj, adj);
+		// 	// sursa = PAElement.PAElementPerformConstruct();
+		// 	sursa = PAElement.PAElementPerformCopy(tree.sursa, sursa);
+		// }
+		private required PACount n { get; set; }
 
-		private PACount m { get; set; }
+		private required PACount m { get; set; }
 
-		private PAList adj { get; set; }
+		private required PAList adj { get; set; }
 
-		private PAElement sursa { get; set; }
+		private required PAElement sursa { get; set; }
 
 		[LibraryImport("pa")]
 		internal static partial PATree PATreePerformConstruct();

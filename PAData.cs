@@ -7,17 +7,17 @@ namespace PA
     [StructLayout(LayoutKind.Sequential)]
     partial struct PAData
     {
-        public PAData(PAResource Resource)
-        {
-            PAData data;
-            data = PADataPerformConstruct();
-            data = PADataPerformInit(data, Resource);
-            resource = default;
-            // data 
-            // resource = PAResource.PAResourcePerformConstruct();
-            resource = PAResource.PAResourcePerformCopy(data.resource, resource);
-        }
-        private PAResource resource { get; set; }
+        // public PAData(PAResource Resource)
+        // {
+        //     PAData data;
+        //     data = PADataPerformConstruct();
+        //     data = PADataPerformInit(data, Resource);
+        //     resource = default;
+        //     // data 
+        //     // resource = PAResource.PAResourcePerformConstruct();
+        //     resource = PAResource.PAResourcePerformCopy(data.resource, resource);
+        // }
+        private required PAResource resource { get; set; }
 
         [LibraryImport("pa")]
         internal static partial PAData PADataPerformConstruct();

@@ -6,16 +6,16 @@ namespace PA
     [StructLayout(LayoutKind.Sequential)]
     partial struct PAOutput
     {
-        private BFSRecord result { get; set; }
 
-        public PAOutput(BFSRecord result) : this()
-        {
-            PAOutput output;
-            output = PAOutputPerformConstruct();
-            output = PAOutputPerformInit(output, result);
-            // o
-            // result = BFSRecord.BFSRecordPerformCopy(output.result,result);
-        }
+        // public PAOutput(BFSRecord result) : this()
+        // {
+        //     PAOutput output;
+        //     output = PAOutputPerformConstruct();
+        //     output = PAOutputPerformInit(output, result);
+        //     // o
+        //     // result = BFSRecord.BFSRecordPerformCopy(output.result,result);
+        // }
+        private required BFSRecord result { get; set; }
         [LibraryImport("pa")]
         internal static partial PAOutput PAOutputPerformConstruct();
         [LibraryImport("pa")]
