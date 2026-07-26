@@ -31,12 +31,12 @@ namespace PA
         [LibraryImport("pa")]
         internal static partial PACount PACountPerformDelete(PACount pa);
 
-        public static PACount operator ++(PACount count) => PACount.PACountPerformInit(count, count.value++);
-        public static bool operator <(PACount a, PACount b) => a.value < b.value;
-        public static bool operator >(PACount a, PACount b) => a.value > b.value;
+        public static PACount operator ++(PACount count) => PACount.PACountPerformInit(count, count._value++);
+        public static bool operator <(PACount a, PACount b) => a._value < b._value;
+        public static bool operator >(PACount a, PACount b) => a._value > b._value;
         // public static bool operator==(PACount a, PACount b) => a.value == b.value;
         // public static bool operator!=(PACount a, PACount b) => a.value != b.value;
-        public static implicit operator int(PACount count) => (int)count.value;
+        public static implicit operator int(PACount count) => (int)count._value;
         // public static explicit operator PACount(int value) => ;
 
         // public override bool Equals(object obj)

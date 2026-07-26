@@ -29,13 +29,13 @@ namespace PA
         [LibraryImport("pa")]
         internal static partial PANumber PANumberPerformDelete(PANumber pa);
 
-        public static PANumber operator ++(PANumber number) => PANumber.PANumberPerformInit(number, number.value++);
-        public static bool operator <(PANumber a, PANumber b) => a.value < b.value;
-        public static bool operator >(PANumber a, PANumber b) => a.value > b.value;
+        public static PANumber operator ++(PANumber number) => PANumber.PANumberPerformInit(number, number._value++);
+        public static bool operator <(PANumber a, PANumber b) => a._value < b._value;
+        public static bool operator >(PANumber a, PANumber b) => a._value > b._value;
         // public static bool operator ==(PANumber a, PANumber b) => a.value == b.value;
         // public static bool operator !=(PANumber a, PANumber b) => a.value != b.value;
         // public static bool operator int(PANumber a) => (int) a.value;
-        public static implicit operator int(PANumber a) => (int)a.value;
+        public static implicit operator int(PANumber a) => (int)a._value;
         // public static explicit operator PANod
         // public static explicit operator PANumber(int value) => PANumberPerformInit();
 
