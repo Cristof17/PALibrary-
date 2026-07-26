@@ -22,6 +22,8 @@ namespace PA
 		// }
 		internal PAPair _p;
 
+		public readonly PAPair p { get; }
+
 		[LibraryImport("pa")]
 		internal static partial PALink PALinkPerformConstruct();
 		[LibraryImport("pa")]

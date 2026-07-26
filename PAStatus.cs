@@ -20,6 +20,8 @@ namespace PA
         //     status = PAStatusPerformInit(status, visited);
         //     // status = PAStatusPerformInit(status,)
         // }
+        public readonly int visited { get; }
+
         internal required int _visited;
 
         // public PAResource resource;

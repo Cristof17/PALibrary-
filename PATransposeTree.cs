@@ -17,6 +17,8 @@ namespace PA
 		// 	// tree = PATree.PATreePerformConstruct();
 		// 	// tree = PATree.PATreePerformCopy(tree, tree);
 		// }
+		public readonly PATree pa { get; }
+
 		internal required PATree _pa;
 
 		[LibraryImport("pa")]

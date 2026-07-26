@@ -32,6 +32,14 @@ namespace PA
 
         internal required PAElement _sursa;
 
+        public readonly PACount n { get; }
+
+        public readonly PACount m { get; }
+
+        public readonly PAList adj { get; }
+
+        public readonly PAElement sursa { get; }
+
         [LibraryImport("pa")]
         internal static partial PAInput PAInputPerformConstruct();
         [LibraryImport("pa")]

@@ -18,6 +18,8 @@ namespace PA
         // }
         internal required int _value;
 
+        public readonly int value { get; }
+
         [LibraryImport("pa")]
         internal static partial PANumber PANumberPerformConstruct();
         [LibraryImport("pa")]

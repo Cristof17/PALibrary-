@@ -66,6 +66,11 @@ namespace PA
         // //     return to;
         // //     // PACount fromCount = from.C
         // // }
+
+        public readonly PACount m { get; }
+
+        public readonly PAElement array { get; }
+
         internal required PACount _m;
 
         internal required PAElement _array;

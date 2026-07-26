@@ -17,6 +17,8 @@ namespace PA
         // }
         internal required BFSRecord _result;
 
+        public readonly BFSRecord result { get; }
+
         [LibraryImport("pa")]
         internal static partial PAOutput PAOutputPerformConstruct();
         [LibraryImport("pa")]

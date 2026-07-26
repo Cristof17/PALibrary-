@@ -22,6 +22,9 @@ namespace PA
         //     // value = PANumber.PANumberPerformConstruct();
         //     // value = PANumber.PANumberPerformCopy(Number, value);
         // }
+
+        public readonly PANumber value { get; }
+        
         internal required PANumber _value;
 
         [LibraryImport("pa")]

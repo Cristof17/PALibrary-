@@ -27,6 +27,10 @@ namespace PA
 
         internal PAStatus _status;
 
+        public readonly PAData index { get; }
+
+        public readonly PAStatus status { get; }
+
         [LibraryImport("pa")]
         internal static partial PAElement PAElementPerformConstruct();
         [LibraryImport("pa")]
