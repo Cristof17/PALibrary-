@@ -6,7 +6,7 @@ namespace PA
     [StructLayout(LayoutKind.Sequential)]
     partial struct PAOutput
     {
-        private BFSRecord result {get; set;}
+        private BFSRecord result { get; set; }
 
         public PAOutput(BFSRecord result) : this()
         {

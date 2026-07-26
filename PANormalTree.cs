@@ -17,7 +17,7 @@ namespace PA
 			// tree.tree = PA
 			// tree = PATree.PATreePerformConstruct();
 		}
-		private PATree pa {get; set;}
+		private PATree pa { get; set; }
 
 		[LibraryImport("pa")]
 		internal static partial PANormalTree PANormalTreePerformConstruct();
