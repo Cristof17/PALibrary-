@@ -17,7 +17,7 @@ namespace PA
         //     // resource = PAResource.PAResourcePerformConstruct();
         //     resource = PAResource.PAResourcePerformCopy(data.resource, resource);
         // }
-        internal required PAResource _resource { get; set; }
+        internal PAResource _resource;
 
         [LibraryImport("pa")]
         internal static partial PAData PADataPerformConstruct();

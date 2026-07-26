@@ -22,13 +22,13 @@ namespace PA
 		// 	// sursa = PAElement.PAElementPerformConstruct();
 		// 	sursa = PAElement.PAElementPerformCopy(tree.sursa, sursa);
 		// }
-		internal required PACount _n { get; set; }
+		internal required PACount _n;
 
-		internal required PACount _m { get; set; }
+		internal required PACount _m;
 
-		internal required PAList _adj { get; set; }
+		internal required PAList _adj;
 
-		internal required PAElement _sursa { get; set; }
+		internal required PAElement _sursa;
 
 		[LibraryImport("pa")]
 		internal static partial PATree PATreePerformConstruct();

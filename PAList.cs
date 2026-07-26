@@ -29,8 +29,8 @@ namespace PA
         //     // }
         // }
 
-        internal required PACount _n { get; set; }
-        internal required PASeries _adj { get; set; }
+        internal required PACount _n;
+        internal required PASeries _adj;
 
         [LibraryImport("pa")]
         internal static partial PAList PAListPerformConstruct();

@@ -22,7 +22,7 @@ namespace PA
         //     // value = PANumber.PANumberPerformConstruct();
         //     // value = PANumber.PANumberPerformCopy(Number, value);
         // }
-        internal required PANumber _value { get; set; }
+        internal required PANumber _value;
 
         [LibraryImport("pa")]
         internal static partial PAResource PAResourcePerformConstruct();
