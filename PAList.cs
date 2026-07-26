@@ -39,8 +39,6 @@ namespace PA
         [LibraryImport("pa")]
         internal static partial PAList PAListPerformCopy(PAList From, PAList To);
         // DllExport void PAListDispose(void);
-        [LibraryImport("pa")]
-        internal static partial void PAListPerformPrint(PAList List);
         // DllExport struct PAList PAListPerformCopy(struct PAList);
         // DllExportPAResult PAListPerformPutCount(struct PAList, struct PACount);
         // DllExport PAResult PAListPerformPutList(struct PAList);
@@ -48,5 +46,7 @@ namespace PA
         internal static partial PAList PAListPerformRuin(PAList PA);
         [LibraryImport("pa")]
         internal static partial PAList PAListPerformDelete(PAList PA);
+        [LibraryImport("pa")]
+        internal static partial void PAListPerformPrint(PAList List);
     }
 }
