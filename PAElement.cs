@@ -41,7 +41,5 @@ namespace PA
         internal static partial int PAElementIsVisited(PAElement Element);
         [LibraryImport("pa")]
         internal static partial void PAElementReset(PAElement Element);
-        [LibraryImport("pa")]
-        internal static partial void PAElementVisit(PAElement Element);
     }
 }

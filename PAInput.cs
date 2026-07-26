@@ -38,7 +38,7 @@ namespace PA
         // static extern Input InputPerformInit(PAInput imPACount Count, PACount Count2, PAElement Element);
         internal static partial PAInput PAInputPerformInit(PAInput Input, PACount Count, PAElement Element);
         [LibraryImport("pa")]
-        internal static partial PAInput PAInputPerformCopy(Input From, Input To);
+        internal static partial PAInput PAInputPerformCopy(PAInput From, PAInput To);
         [LibraryImport("pa")]
         internal static partial void PAInputRuin(PAInput PA);
         [LibraryImport("pa")]
