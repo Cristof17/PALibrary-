@@ -20,13 +20,13 @@ namespace PA
 		// 	// p = 
 		// 	// p = Pair
 		// }
-		public readonly PAPair p 
-		{ 
-			get
-            {
-                return _p;
-            } 
-		}
+		public readonly PAPair p => _p;
+		// { 
+		// 	get
+        //     {
+        //         return _p;
+        //     } 
+		// }
 
 		internal PAPair _p;
 

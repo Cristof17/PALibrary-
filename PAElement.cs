@@ -23,21 +23,21 @@ namespace PA
         //     // status = PAStatus.PAStatusPerformConstruct();
         //     // status = PAStatus.PAStatusPerformCopy(element.status,status);
         // }
-        public readonly PAData index 
-        {
-            get
-            {
-                return _index;
-            } 
-        }
+        public readonly PAData index => _index;
+        // {
+        //     get
+        //     {
+        //         return _index;
+        //     } 
+        // }
 
-        public readonly PAStatus status 
-        { 
-            get
-            {
-                return _status;
-            } 
-        }
+        public readonly PAStatus status => _status;
+        // { 
+        //     get
+        //     {
+        //         return _status;
+        //     } 
+        // }
         internal PAData _index;
 
         internal PAStatus _status;

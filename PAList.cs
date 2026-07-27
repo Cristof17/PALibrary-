@@ -29,21 +29,21 @@ namespace PA
         //     // }
         // }
 
-        public readonly PACount n 
-        { 
-            get
-            {
-                return _n;        
-            } 
-        }
+        public readonly PACount n => _n;
+        // { 
+        //     get
+        //     {
+        //         return _n;        
+        //     } 
+        // }
 
-        public readonly PASeries adj 
-        { 
-            get
-            {
-                return _adj;
-            } 
-        }
+        public readonly PASeries adj => _adj;
+        // { 
+        //     get
+        //     {
+        //         return _adj;
+        //     } 
+        // }
 
         internal PACount _n;
 

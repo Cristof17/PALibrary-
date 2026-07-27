@@ -18,13 +18,13 @@ namespace PA
 		// 	// tree = PATree.PATreePerformConstruct();
 		// }
 
-		public readonly PATree pa
-		{ 
-			get
-            {
-				return _pa;
-            } 
-		}
+		public readonly PATree pa => _pa;
+		// { 
+		// 	get
+        //     {
+		// 		return _pa;
+        //     } 
+		// }
 
 		internal PATree _pa;
 

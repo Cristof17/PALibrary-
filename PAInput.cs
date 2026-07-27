@@ -25,37 +25,37 @@ namespace PA
         // }
 
 
-        public readonly PACount n 
-        { 
-            get
-            {
-                return _n;   
-            } 
-        }
+        public readonly PACount n => _n;
+        // { 
+        //     get
+        //     {
+        //         return _n;   
+        //     } 
+        // }
 
-        public readonly PACount m 
-        { 
-            get
-            {
-                return _m;
-            }
-        }
+        public readonly PACount m => _m;
+        // { 
+        //     get
+        //     {
+        //         return _m;
+        //     }
+        // }
 
-        public readonly PAList adj
-        {
-             get
-            {
-                return _adj;   
-            } 
-        }
+        public readonly PAList adj => _adj;
+        // {
+        //      get
+        //     {
+        //         return _adj;   
+        //     } 
+        // }
 
-        public readonly PAElement sursa 
-        { 
-            get
-            {
-                return _sursa;
-            } 
-        }
+        public readonly PAElement sursa => _adj;
+        // { 
+        //     get
+        //     {
+        //         return _sursa;
+        //     } 
+        // }
         
         internal PACount _n;
 

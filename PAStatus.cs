@@ -20,13 +20,13 @@ namespace PA
         //     status = PAStatusPerformInit(status, visited);
         //     // status = PAStatusPerformInit(status,)
         // }
-        public readonly int visited 
-        { 
-            get
-            {
-                return _visited;        
-            } 
-        }
+        public readonly int visited => _visited;
+        // { 
+        //     get
+        //     {
+        //         return _visited;        
+        //     } 
+        // }
 
         internal int _visited;
 

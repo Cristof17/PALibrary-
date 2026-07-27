@@ -15,13 +15,13 @@ namespace PA
         //     // o
         //     // result = BFSRecord.BFSRecordPerformCopy(output.result,result);
         // }
-        public readonly BFSRecord result 
-        { 
-            get
-            {
-                return _result;       
-            }
-        }
+        public readonly BFSRecord result => _result;
+        // { 
+        //     get
+        //     {
+        //         return _result;       
+        //     }
+        // }
 
         internal BFSRecord _result;
 
