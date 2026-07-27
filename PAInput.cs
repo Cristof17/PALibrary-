@@ -49,7 +49,7 @@ namespace PA
         //     } 
         // }
 
-        public readonly PAElement sursa => _adj;
+        public readonly PAElement sursa => _sursa;
         // { 
         //     get
         //     {
