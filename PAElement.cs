@@ -33,7 +33,7 @@ namespace PA
 
         public readonly PAStatus status => _status;
 
-        public readonly PAElement next => _next;
+        // public readonly PAElement next => _next;
         // { 
         //     get
         //     {
@@ -44,7 +44,7 @@ namespace PA
 
         internal PAStatus _status;
 
-        internal PAElement _next;
+        // internal PAElement _next;
 
 
         [LibraryImport("pa")]
