@@ -33,7 +33,6 @@ namespace PA
 
         public readonly PAStatus status => _status;
 
-
         public readonly PAElement next => _next;
         // { 
         //     get
