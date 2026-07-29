@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    internal partial struct PAElement
+    public partial struct PAElement
     {
         // public PAElement(PAData Data) : this()
         // {
@@ -44,18 +44,18 @@ namespace PA
 
 
         [LibraryImport("pa")]
-        internal static partial PAElement PAElementPerformConstruct();
+        public static partial PAElement PAElementPerformConstruct();
         [LibraryImport("pa")]
-        internal static partial PAElement PAElementPerformInit(PAElement element, PAData data, PAStatus status);
+        public static partial PAElement PAElementPerformInit(PAElement element, PAData data, PAStatus status);
         [LibraryImport("pa")]
-        internal static partial PAElement PAElementPerformCopy(PAElement from, PAElement to);
+        public static partial PAElement PAElementPerformCopy(PAElement from, PAElement to);
         [LibraryImport("pa")]
-        internal static partial PAElement PAElementPerformRuin(PAElement pa);
+        public static partial PAElement PAElementPerformRuin(PAElement pa);
         [LibraryImport("pa")]
-        internal static partial PAElement PAElementPerformDelete(PAElement pa);
+        public static partial PAElement PAElementPerformDelete(PAElement pa);
         [LibraryImport("pa")]
-        internal static partial int PAElementIsVisited(PAElement element);
+        public static partial int PAElementIsVisited(PAElement element);
         [LibraryImport("pa")]
-        internal static partial void PAElementReset(PAElement element);
+        public static partial void PAElementReset(PAElement element);
     }
 }

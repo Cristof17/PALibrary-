@@ -37,13 +37,13 @@ namespace PA
         internal PAElement _neigh;
 
         [LibraryImport("pa")]
-        internal static partial PAPair PAPairConstruct();
+        public static partial PAPair PAPairConstruct();
         [LibraryImport("pa")]
-        internal static partial PAPair PAPairInit(PAPair pair, PAElement node, PAElement neigh);
+        public static partial PAPair PAPairInit(PAPair pair, PAElement node, PAElement neigh);
         [LibraryImport("pa")]
-        internal static partial int PAPairRuin(PAPair pa);
+        public static partial int PAPairRuin(PAPair pa);
         [LibraryImport("pa")]
-        internal static partial int PAPairDelete(PAElement pa);
+        public static partial int PAPairDelete(PAElement pa);
 
     }
 }

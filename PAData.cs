@@ -28,14 +28,14 @@ namespace PA
         internal PAResource _resource;
 
         [LibraryImport("pa")]
-        internal static partial PAData PADataPerformConstruct();
+        public static partial PAData PADataPerformConstruct();
         [LibraryImport("pa")]
-        internal static partial PAData PADataPerformInit(PAData data, PAResource resource);
+        public static partial PAData PADataPerformInit(PAData data, PAResource resource);
         [LibraryImport("pa")]
-        internal static partial PAData PADataPerformCopy(PAData from, PAData to);
+        public static partial PAData PADataPerformCopy(PAData from, PAData to);
         [LibraryImport("pa")]
-        internal static partial PAData PADataPerformRuin(PAData pa);
+        public static partial PAData PADataPerformRuin(PAData pa);
         [LibraryImport("pa")]
-        internal static partial PAData PADataPerformDelete(PAData pa);
+        public static partial PAData PADataPerformDelete(PAData pa);
     }
 }
