@@ -90,7 +90,7 @@ namespace PA
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformConstruct();
         [LibraryImport("pa")]
-        public static partial PASeries PASeriesPerformInit(PASeries series, PACount n, in PAElement[] adj);
+        public static partial PASeries PASeriesPerformInit(PASeries series, PACount n, in PAElement adj);
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformCopy(PASeries from, PASeries to);
         [LibraryImport("pa")]
