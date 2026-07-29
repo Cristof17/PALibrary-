@@ -4,7 +4,7 @@ using PA;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    internal partial struct PAList
+    public partial struct PAList
     {
         // public PAList(PACount N, PASeries Adj) : this()
         // {

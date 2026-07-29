@@ -8,7 +8,7 @@ namespace PA
     // s
     // STATUS_NOT_VISITED=1
     [StructLayout(LayoutKind.Sequential)]
-    internal partial struct PAStatus
+    public partial struct PAStatus
     {
         // internal PAStatus(bool Visited) : this()
         // {

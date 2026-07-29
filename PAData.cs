@@ -5,7 +5,7 @@ using PA;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    internal partial struct PAData
+    public partial struct PAData
     {
         // public PAData(PAResource Resource)
         // {
