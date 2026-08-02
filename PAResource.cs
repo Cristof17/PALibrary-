@@ -4,7 +4,7 @@ using PA;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public partial struct PAResource
+    public readonly partial struct PAResource
     {
         // public PAResource(PANumber Number)
         // {
@@ -31,7 +31,7 @@ namespace PA
         //     }
         // }
 
-        internal PANumber _value;
+        internal readonly PANumber _value;
 
         [LibraryImport("pa")]
         public static partial PAResource PAResourcePerformConstruct();

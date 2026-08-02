@@ -4,7 +4,7 @@ using PA;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public partial struct PAPair
+    public readonly partial struct PAPair
     {
         // public PAPair(PAElement Node, PAElement Neigh) : this()
         // {
@@ -32,9 +32,9 @@ namespace PA
         public readonly PAElement neigh => _neigh;
         // { get; }
 
-        internal PAElement _node;
+        internal readonly PAElement _node;
 
-        internal PAElement _neigh;
+        internal readonly PAElement _neigh;
 
         [LibraryImport("pa")]
         public static partial PAPair PAPairConstruct();

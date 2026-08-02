@@ -8,7 +8,7 @@ namespace PA
     // s
     // STATUS_NOT_VISITED=1
     [StructLayout(LayoutKind.Sequential)]
-    public partial struct PAStatus
+    public readonly partial struct PAStatus
     {
         // internal PAStatus(bool Visited) : this()
         // {
@@ -28,7 +28,7 @@ namespace PA
         //     } 
         // }
 
-        internal int _visited;
+        internal readonly int _visited;
 
         // public PAResource resource;
 

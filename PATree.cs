@@ -6,7 +6,7 @@ using PA;
 namespace PA
 {
 	[StructLayout(LayoutKind.Sequential)]
-	public partial struct PATree
+	public readonly partial struct PATree
 	{
 		// public PATree(PACount N, PACount M, PAList Adj, PAElement Sursa) : this()
 		// {
@@ -54,13 +54,13 @@ namespace PA
         //     }
 		// }
 
-		internal PACount _n;
+		internal readonly PACount _n;
 
-		internal PACount _m;
+		internal readonly PACount _m;
 
-		internal PAList _adj;
+		internal readonly PAList _adj;
 
-		internal PAElement _sursa;
+		internal readonly PAElement _sursa;
 
 		[LibraryImport("pa")]
 		internal static partial PATree PATreePerformConstruct();

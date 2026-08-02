@@ -5,7 +5,7 @@ using PA;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public partial struct PANumber
+    public readonly partial struct PANumber
     {
         // public PANumber(int Value) : this()
         // {
@@ -24,7 +24,7 @@ namespace PA
         //     } 
         // }
 
-        internal int _value;
+        internal readonly int _value;
 
         [LibraryImport("pa")]
         public static partial PANumber PANumberPerformConstruct();
@@ -37,7 +37,7 @@ namespace PA
         [LibraryImport("pa")]
         public static partial PANumber PANumberPerformDelete(PANumber pa);
 
-        public static PANumber operator ++(PANumber number) => PANumber.PANumberPerformInit(number, number._value++);
+        // public static PANumber operator ++(PANumber number) => PANumber.PANumberPerformInit(number, number._value++);
         public static bool operator <(PANumber a, PANumber b) => a._value < b._value;
         public static bool operator >(PANumber a, PANumber b) => a._value > b._value;
         // public static bool operator ==(PANumber a, PANumber b) => a.value == b.value;

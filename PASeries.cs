@@ -5,7 +5,7 @@ using AL;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public partial struct PASeries
+    public readonly partial struct PASeries
     {
         // public PASeries(PACount M, PAElement[] array) : this()
         // {
@@ -84,9 +84,9 @@ namespace PA
         //     } 
         // }
 
-        internal PACount _m;
+        internal readonly PACount _m;
 
-        internal ArrayList _array;
+        internal readonly ArrayList _array;
 
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformConstruct();

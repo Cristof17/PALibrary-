@@ -4,7 +4,7 @@ using BFS;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public partial struct PAOutput
+    public readonly partial struct PAOutput
     {
 
         // public PAOutput(BFSRecord result) : this()
@@ -23,7 +23,7 @@ namespace PA
         //     }
         // }
 
-        internal BFSRecord _result;
+        internal readonly BFSRecord _result;
 
         [LibraryImport("pa")]
         public static partial PAOutput PAOutputPerformConstruct();

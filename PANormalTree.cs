@@ -4,7 +4,7 @@ using PA;
 namespace PA
 {
 	[StructLayout(LayoutKind.Sequential)]
-	public partial struct PANormalTree
+	public readonly partial struct PANormalTree
 	{
 		// public PANormalTree(PATree Tree) : this()
 		// {
@@ -26,7 +26,7 @@ namespace PA
         //     } 
 		// }
 
-		internal PATree _pa;
+		internal readonly PATree _pa;
 
 		[LibraryImport("pa")]
 		public static partial PANormalTree PANormalTreePerformConstruct();
