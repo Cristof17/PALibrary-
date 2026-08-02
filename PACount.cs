@@ -7,7 +7,7 @@ using SM;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public partial struct PACount
+    public readonly partial struct PACount
     {
         // public PACount(PANumber Number) : this()
         // {
@@ -25,7 +25,7 @@ namespace PA
         //         return _value;
         //     }
         // }
-        internal PANumber _value;
+        internal readonly PANumber _value;
 
         [LibraryImport("pa")]
         public static partial PACount PACountPerformConstruct();
@@ -38,7 +38,7 @@ namespace PA
         [LibraryImport("pa")]
         public static partial PACount PACountPerformDelete(PACount pa);
 
-        public static PACount operator ++(PACount count) => PACount.PACountPerformInit(count, count._value++);
+        // public static PACount operator ++(PACount count) => PACount.PACountPerformInit(count, count._value++);
         public static bool operator <(PACount a, PACount b) => a._value < b._value;
         public static bool operator >(PACount a, PACount b) => a._value > b._value;
         // public static bool operator==(PACount a, PACount b) => a.value == b.value;

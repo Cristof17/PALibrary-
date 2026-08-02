@@ -4,7 +4,7 @@ using PA;
 namespace PA
 {
 	[StructLayout(LayoutKind.Sequential)]
-	public partial struct PALink
+	public readonly partial struct PALink
 	{
 		// public PALink(PAPair P) : this()
 		// {
@@ -28,7 +28,7 @@ namespace PA
         //     } 
 		// }
 
-		internal PAPair _p;
+		internal readonly PAPair _p;
 
 		[LibraryImport("pa")]
 		public static partial PALink PALinkPerformConstruct();

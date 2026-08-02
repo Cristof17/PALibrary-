@@ -6,7 +6,7 @@ using AL;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public partial struct PAInput
+    public readonly partial struct PAInput
     {
         // internal PAInput(PACount N, PACount M, PAList Adj, PAElement Sursa) : this()
         // {
@@ -57,13 +57,13 @@ namespace PA
         //     } 
         // }
         
-        internal PACount _n;
+        internal readonly PACount _n;
 
-        internal PACount _m;
+        internal readonly PACount _m;
 
-        internal PAList _adj;
+        internal readonly PAList _adj;
 
-        internal PAElement _sursa;
+        internal readonly PAElement _sursa;
 
         [LibraryImport("pa")]
         public static partial PAInput PAInputPerformConstruct();

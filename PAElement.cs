@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public partial struct PAElement
+    public readonly partial struct PAElement
     {
         // public PAElement(PAData Data) : this()
         // {
@@ -42,11 +42,11 @@ namespace PA
         //         return _status;
         //     } 
         // }
-        internal PAData _index;
+        internal readonly PAData _index;
 
-        internal PAStatus _status;
+        internal readonly PAStatus _status;
 
-        internal PAList _next;
+        internal readonly PAList _next;
 
 
         [LibraryImport("pa")]
