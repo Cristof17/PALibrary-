@@ -44,7 +44,7 @@ namespace PA
 
         internal PAStatus _status;
 
-        // internal PAElement _next;
+        internal PAList _next;
 
 
         [LibraryImport("pa")]
