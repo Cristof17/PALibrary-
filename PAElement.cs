@@ -33,6 +33,8 @@ namespace PA
 
         public readonly PAStatus status => _status;
 
+        public readonly PAList adj_node => _next;
+
         // public readonly PAElement next => _next;
         // { 
         //     get
