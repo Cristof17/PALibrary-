@@ -1,7 +1,7 @@
 ﻿using System.Runtime.InteropServices;
 // using System.Xml.Schema;
 using PA;
-
+using AL;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
@@ -75,7 +75,8 @@ namespace PA
         //     } 
         // }
 
-        public readonly PAElement array => _array;
+        // public readonly PAElement array => _array;
+        public readonly ArrayList array => _array;
         // { 
         //     get
         //     {
@@ -85,12 +86,12 @@ namespace PA
 
         internal PACount _m;
 
-        internal PAElement _array;
+        internal ArrayList _array;
 
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformConstruct();
         [LibraryImport("pa")]
-        public static partial PASeries PASeriesPerformInit(PASeries series, PACount n, in PAElement adj);
+        public static partial PASeries PASeriesPerformInit(PASeries series, PACount n, ArrayList adj);
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformCopy(PASeries from, PASeries to);
         [LibraryImport("pa")]
