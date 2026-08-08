@@ -20,7 +20,7 @@ namespace PA
 		// 	// p = 
 		// 	// p = Pair
 		// }
-		public readonly PAPair p => _p;
+		public readonly PAPair Pair => _p;
 		// { 
 		// 	get
         //     {

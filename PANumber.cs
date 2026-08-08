@@ -16,7 +16,7 @@ namespace PA
         //     value = number.value;
         //     // number.value,value);
         // }
-        public readonly int value => _value;
+        public readonly int Value => _value;
         // { 
         //     get
         //     {

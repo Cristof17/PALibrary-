@@ -29,7 +29,7 @@ namespace PA
         //     // }
         // }
 
-        public readonly PACount n => _n;
+        public readonly PACount N => _n;
         // { 
         //     get
         //     {
@@ -37,7 +37,7 @@ namespace PA
         //     } 
         // }
 
-        public readonly PASeries adj => _adj;
+        public readonly PASeries Adj => _adj;
         // { 
         //     get
         //     {

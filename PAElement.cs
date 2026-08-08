@@ -23,7 +23,7 @@ namespace PA
         //     // status = PAStatus.PAStatusPerformConstruct();
         //     // status = PAStatus.PAStatusPerformCopy(element.status,status);
         // }
-        public readonly PAData index => _index;
+        public readonly PAData Index => _index;
         // {
         //     get
         //     {
@@ -31,9 +31,9 @@ namespace PA
         //     } 
         // }
 
-        public readonly PAStatus status => _status;
+        public readonly PAStatus Status => _status;
 
-        public readonly PAList adj_node => _next;
+        public readonly PAList Adj => _next;
 
         // public readonly PAElement next => _next;
         // { 

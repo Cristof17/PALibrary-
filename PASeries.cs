@@ -67,7 +67,7 @@ namespace PA
         // //     // PACount fromCount = from.C
         // // }
 
-        public readonly PACount m => _m;
+        public readonly PACount M => _m;
         // { 
         //     get
         //     {
@@ -76,7 +76,7 @@ namespace PA
         // }
 
         // public readonly PAElement array => _array;
-        public readonly ArrayList array => _array;
+        public readonly ArrayList Array => _array;
         // { 
         //     get
         //     {

@@ -18,7 +18,7 @@ namespace PA
 		// 	// tree = PATree.PATreePerformConstruct();
 		// }
 
-		public readonly PATree pa => _pa;
+		public readonly PATree Pa => _pa;
 		// { 
 		// 	get
         //     {

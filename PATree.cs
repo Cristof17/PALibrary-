@@ -1,6 +1,8 @@
 // using System.Runtime.InteropServices;
 // // using System.Object;
 // using System.Runtime.UnmanagedType;
+using System;
+using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
 using PA;
 namespace PA
@@ -22,7 +24,7 @@ namespace PA
 		// 	// sursa = PAElement.PAElementPerformConstruct();
 		// 	sursa = PAElement.PAElementPerformCopy(tree.sursa, sursa);
 		// }
-		public readonly PACount n => _n;
+		public readonly PACount N => _n;
 		// { 
 		// 	get
         //     {
@@ -30,7 +32,7 @@ namespace PA
         //     }
 		// }
 
-		public readonly PACount m => _m;
+		public readonly PACount M => _m;
 		// { 
 		// 	get
         //     {
@@ -38,7 +40,7 @@ namespace PA
         //     } 
 		// }
 
-		public readonly PAList adj => _adj;
+		public readonly PAList Adj => _adj;
 		// { 
 		// 	get
         //     {
@@ -46,7 +48,7 @@ namespace PA
         //     }
 		// }
 
-		public readonly PAElement sursa => _sursa;
+		public readonly PAElement Sursa => _sursa;
 		// { 
 		// 	get
         //     {

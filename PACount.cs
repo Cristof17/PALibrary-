@@ -18,7 +18,7 @@ namespace PA
         //     count.value = PANumber.PANumberPerformCopy(Number, count.value);
         //     value = PANumber.PANumberPerformCopy(count.value, value);
         // }
-        public readonly PANumber value => _value;
+        public readonly PANumber Value => _value;
         // { 
         //     get
         //     {
