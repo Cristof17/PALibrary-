@@ -3,10 +3,6 @@ using PA;
 
 namespace PA
 {
-    // internal enum PAStatus {
-    // STATUS_VISITED=0,
-    // s
-    // STATUS_NOT_VISITED=1
     [StructLayout(LayoutKind.Sequential)]
     public readonly partial struct PAStatus
     {
