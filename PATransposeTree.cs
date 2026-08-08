@@ -6,24 +6,7 @@ namespace PA
 	[StructLayout(LayoutKind.Sequential)]
 	public readonly partial struct PATransposeTree
 	{
-		// public PATransposeTree(PATree Tree) : this()
-		// {
-		// 	PATransposeTree tree;
-		// 	tree = PATransposeTreePerformConstruct();
-		// 	tree = PATransposeTreePerformInit(tree, Tree);
-		// 	// tree
-		// 	tree.pa = PATree.PATreePerformCopy(Tree, tree.pa);
-		// 	pa = PATree.PATreePerformCopy(tree.pa, pa);
-		// 	// tree = PATree.PATreePerformConstruct();
-		// 	// tree = PATree.PATreePerformCopy(tree, tree);
-		// }
 		public readonly PATree Pa => _pa;
-		// { 
-		// 	get
-        //     {
-		// 		return _pa;
-        //     } 
-		// }
 
 		internal readonly PATree _pa;
 

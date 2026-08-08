@@ -8,54 +8,14 @@ namespace PA
     [StructLayout(LayoutKind.Sequential)]
     public readonly partial struct PAInput
     {
-        // internal PAInput(PACount N, PACount M, PAList Adj, PAElement Sursa) : this()
-        // {
-        //     PAInput input = PAInputPerformConstruct();
-        //     input = PAInputPerformInit(input, N, Sursa);
-        //     // n = 
-        //     // n = PACount.PACountPerformConstruct();
-        //     n = PACount.PACountPerformCopy(input.n, n);
-        //     // m = PACount.PACountPerformConstruct();
-        //     m = PACount.PACountPerformCopy(input.m, m);
-        //     input.adj = PAList.PAListPerformCopy(Adj, input.adj);
-        //     // adj = PAList.PAListPerformConstruct();
-        //     adj = PAList.PAListPerformCopy(input.adj, adj);
-        //     // sursa = PAElement.PAElementPerformConstruct();
-        //     sursa = PAElement.PAElementPerformCopy(input.sursa, sursa);
-        // }
-
 
         public readonly PACount N => _n;
-        // { 
-        //     get
-        //     {
-        //         return _n;   
-        //     } 
-        // }
 
         public readonly PACount M => _m;
-        // { 
-        //     get
-        //     {
-        //         return _m;
-        //     }
-        // }
 
         public readonly PAList Adj => _adj;
-        // {
-        //      get
-        //     {
-        //         return _adj;   
-        //     } 
-        // }
 
         public readonly PAElement Sursa => _sursa;
-        // { 
-        //     get
-        //     {
-        //         return _sursa;
-        //     } 
-        // }
         
         internal readonly PACount _n;
 

@@ -10,27 +10,9 @@ namespace PA
     [StructLayout(LayoutKind.Sequential)]
     public readonly partial struct PAStatus
     {
-        // internal PAStatus(bool Visited) : this()
-        // {
-        //     // Visited = visited;
-        //     visited = (Visited == true) ? 0x01 : 0x00;
-        //     // visited = (int) (Visited & (0x01));
-        //     // PAStatus status;
-        //     PAStatus status = PAStatusPerformConstruct();
-        //     status = PAStatusPerformInit(status, visited);
-        //     // status = PAStatusPerformInit(status,)
-        // }
         public readonly int Visited => _visited;
-        // { 
-        //     get
-        //     {
-        //         return _visited;        
-        //     } 
-        // }
 
         internal readonly int _visited;
-
-        // public PAResource resource;
 
         [LibraryImport("pa")]
         internal static partial PAStatus PAStatusPerformConstruct();

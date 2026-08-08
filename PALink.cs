@@ -6,27 +6,7 @@ namespace PA
 	[StructLayout(LayoutKind.Sequential)]
 	public readonly partial struct PALink
 	{
-		// public PALink(PAPair P) : this()
-		// {
-		// 	// p = PAPair.PAPairConstruct();
-		// 	PALink link;
-		// 	// p = new PAPair(P.node,P.neigh);
-		// 	link = PALinkPerformConstruct();
-		// 	link = PALinkPerformInit(link, p);
-		// 	// link.p = PAPair.PAPairPerformCopy()
-		// 	// link.p = PAPair.PAPairPerformCopy(P,link.p);
-		// 	// p = PAPair.PAPairPerformCopy(link.p,p);
-		// 	// link = PALin
-		// 	// p = 
-		// 	// p = Pair
-		// }
 		public readonly PAPair Pair => _p;
-		// { 
-		// 	get
-        //     {
-        //         return _p;
-        //     } 
-		// }
 
 		internal readonly PAPair _p;
 
