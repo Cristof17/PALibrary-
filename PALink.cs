@@ -3,7 +3,6 @@ using PA;
 
 namespace PA
 {
-	[StructLayout(LayoutKind.Sequential)]
 	public readonly partial struct PALink
 	{
 		public readonly PAPair Pair => _p;

@@ -4,7 +4,6 @@ using System.Runtime.InteropServices;
 // using System;
 namespace AL
 {
-    [StructLayout(LayoutKind.Sequential)]
     public partial struct ArrayList
     {
         [LibraryImport("pa")]

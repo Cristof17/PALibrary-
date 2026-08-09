@@ -7,7 +7,6 @@ using System.Runtime.InteropServices;
 using PA;
 namespace PA
 {
-	[StructLayout(LayoutKind.Sequential)]
 	public readonly partial struct PATree
 	{
 

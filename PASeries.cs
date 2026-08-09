@@ -4,7 +4,6 @@ using PA;
 using AL;
 namespace PA
 {
-    [StructLayout(LayoutKind.Sequential)]
     public readonly partial struct PASeries
     {
         public readonly PACount M => _m;

@@ -4,7 +4,6 @@ using PA;
 
 namespace PA
 {
-    [StructLayout(LayoutKind.Sequential)]
     public readonly partial struct PANumber
     {
         public readonly int Value => _value;

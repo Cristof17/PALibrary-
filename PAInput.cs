@@ -5,7 +5,6 @@ using AL;
 
 namespace PA
 {
-    [StructLayout(LayoutKind.Sequential)]
     public readonly partial struct PAInput
     {
 

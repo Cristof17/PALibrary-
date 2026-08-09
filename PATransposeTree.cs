@@ -3,7 +3,6 @@ using PA;
 
 namespace PA
 {
-	[StructLayout(LayoutKind.Sequential)]
 	public readonly partial struct PATransposeTree
 	{
 		public readonly PATree Adj_trans => _adj_trans;

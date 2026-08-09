@@ -6,7 +6,6 @@ using SM;
 
 namespace PA
 {
-    [StructLayout(LayoutKind.Sequential)]
     public readonly partial struct PACount
     {
 

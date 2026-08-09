@@ -3,7 +3,6 @@ using PA;
 
 namespace PA
 {
-    [StructLayout(LayoutKind.Sequential)]
     public readonly partial struct PAStatus
     {
         public readonly int Visited => _visited;

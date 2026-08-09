@@ -3,7 +3,6 @@ using PA;
 using BFS;
 namespace PA
 {
-    [StructLayout(LayoutKind.Sequential)]
     public readonly partial struct PAOutput
     {
         public readonly BFSRecord Result => _result;
