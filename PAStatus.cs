@@ -25,7 +25,7 @@ namespace PA
         [LibraryImport("pa")]
         internal static partial 
         PAStatus PAStatusPerformRuin(PAStatus pa);
-        
+
         [LibraryImport("pa")]
         internal static partial 
         PAStatus PAStatusPerformDelete(PAStatus pa);

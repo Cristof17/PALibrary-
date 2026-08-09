@@ -6,9 +6,9 @@ namespace PA
 	[StructLayout(LayoutKind.Sequential)]
 	public readonly partial struct PATransposeTree
 	{
-		public readonly PATree Pa => _pa;
+		public readonly PATree Adj_trans => _adj_trans;
 
-		internal readonly PATree _pa;
+		internal readonly PATree _adj_trans;
 
 		[LibraryImport("pa")]
 		internal static partial PATransposeTree PATransposeTreePerformConstruct();
