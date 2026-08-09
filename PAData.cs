@@ -6,7 +6,11 @@ namespace PA
 {
     public readonly partial struct PAData
     {
-        public readonly PAResource Resource => _resource;
+        public readonly PAResource Resource
+        {
+            get => _resource;
+        }
+        //  => _resource;
         
         internal readonly PAResource _resource;
 

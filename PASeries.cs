@@ -6,9 +6,17 @@ namespace PA
 {
     public readonly partial struct PASeries
     {
-        public readonly PACount M => _m;
+        public readonly PACount M
+        {
+            get => _m;
+            
+        } 
 
-        public readonly ArrayList Array => _array;
+        public readonly ArrayList Array
+        {
+            get => _array;
+            
+        } 
 
         internal readonly PACount _m;
 

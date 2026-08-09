@@ -10,13 +10,29 @@ namespace PA
 	public readonly partial struct PATree
 	{
 
-		public readonly PACount N => _n;
+		public readonly PACount N
+        {
+			get => _n;
+            
+        } 
 
-		public readonly PACount M => _m;
+		public readonly PACount M
+        {
+			get => _m;
+            
+        } 
 
-		public readonly PAList Adj => _adj;
+		public readonly PAList Adj
+        {
+			get => _adj;
+            
+        } 
 
-		public readonly PAElement Sursa => _sursa;
+		public readonly PAElement Sursa
+        {
+			get => _sursa;
+            
+        } 
 
 		internal readonly PACount _n;
 

@@ -6,11 +6,20 @@ namespace PA
 {
     public readonly partial struct PAElement
     {
-        public readonly PAData Index => _index;
+        public readonly PAData Index
+        {
+            get => _index;
+        }
 
-        public readonly PAStatus Status => _status;
+        public readonly PAStatus Status
+        {
+            get => _status;
+        } 
 
-        public readonly PAList Adj => _next;
+        public readonly PAList Adj
+        {    
+            get => _next;
+        }
 
         internal readonly PAData _index;
 

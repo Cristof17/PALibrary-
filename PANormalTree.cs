@@ -5,7 +5,11 @@ namespace PA
 {
 	public readonly partial struct PANormalTree
 	{
-		public readonly PATree Pa => _pa;
+		public readonly PATree Pa
+        {
+			get => _pa;
+            
+        } 
 
 		internal readonly PATree _pa;
 

@@ -6,7 +6,11 @@ namespace PA
     public readonly partial struct PAResource
     {
 
-        public readonly PANumber Value => _value;
+        public readonly PANumber Value
+        {
+            get => _value;
+            
+        } 
 
         internal readonly PANumber _value;
 

@@ -5,9 +5,17 @@ namespace PA
 {
     public readonly partial struct PAList
     {
-        public readonly PACount N => _n;
+        public readonly PACount N
+        {
+            get => _n;
+                
+        } 
 
-        public readonly PASeries Adj => _adj;
+        public readonly PASeries Adj
+        {
+            get => _adj;
+            
+        } 
 
         internal readonly PACount _n;
 
