@@ -13,8 +13,7 @@ namespace PA
 		public readonly PACount N
         {
 			get => _n;
-            
-        } 
+        }
 
 		public readonly PACount M
         {

@@ -9,7 +9,7 @@ namespace PA
         {
             get => _visited;
             
-        } 
+        }
 
         internal readonly int _visited;
 
