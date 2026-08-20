@@ -32,7 +32,13 @@ namespace PA
             }
         }
 
-        public readonly PAElement Sursa => _sursa;
+        public readonly PAElement Sursa
+        {
+            get {
+                return _sursa;
+            }
+        } 
+        // _sursa;
         
         internal readonly PACount _n;
 
