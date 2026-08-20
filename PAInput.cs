@@ -10,19 +10,31 @@ namespace PA
 
         public readonly PACount N
         {
-            get => _n;
+            get
+            {
+                return _n; 
+            }
+            // => 
             
         } 
 
         public readonly PACount M
         {
-            get => _m;
+            get
+            {
+                return _m; 
+            }
+            // => 
             
         } 
 
         public readonly PAList Adj
         {
-            get => _adj;
+            get
+            {
+                return _adj; 
+            }
+            // => 
     
         }
 

@@ -8,7 +8,11 @@ namespace PA
     {
         public readonly PAResource Resource
         {
-            get => _resource;
+            get
+            {
+                return  _resource;
+            } 
+            // =>
         }
         //  => _resource;
         

@@ -7,7 +7,11 @@ namespace PA
 	{
 		public readonly PAPair Pair
         { 
-			get => _p;
+			get
+            {
+				return _p;
+            }
+            // => 
         } 
 
 		internal readonly PAPair _p;

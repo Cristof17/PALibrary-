@@ -8,13 +8,20 @@ namespace PA
     {
         public readonly PACount M
         {
-            get => _m;
+            get
+            {
+                return _m;
+            }
+            // => 
             
         } 
 
         public readonly ArrayList Array
         {
-            get => _array;
+            get
+            {
+                return _array;  
+            } 
             
         } 
 

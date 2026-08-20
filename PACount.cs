@@ -11,7 +11,11 @@ namespace PA
 
         public readonly PANumber Value
         {
-            get => _value;
+            get
+            {
+                return _value; 
+            }
+            // => 
         } 
         // => _value;
 

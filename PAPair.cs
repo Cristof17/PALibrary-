@@ -8,13 +8,21 @@ namespace PA
 
         public readonly PAElement Node
         {
-            get => _node;
+            get
+            {
+                return _node; 
+            }
+            // => 
             
         } 
 
         public readonly PAElement Neigh
         {
-            get => _neigh;
+            get
+            {
+                return  _neigh;;  
+            }
+            // =>
             
         } 
 

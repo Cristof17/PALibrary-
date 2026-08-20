@@ -8,7 +8,11 @@ namespace PA
     {
         public readonly int Value
         {
-            get => _value;
+            get
+            {
+                return _value; 
+            }
+            // => 
             
         } 
 

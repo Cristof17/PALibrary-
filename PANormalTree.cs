@@ -7,7 +7,11 @@ namespace PA
 	{
 		public readonly PATree Pa
         {
-			get => _pa;
+			get
+            {
+				return _pa;
+            }
+            
             
         } 
 

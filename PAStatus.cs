@@ -7,7 +7,10 @@ namespace PA
     {
         public readonly int Visited
         {
-            get => _visited;
+            get
+            {
+                return _visited;   
+            }
             
         }
 

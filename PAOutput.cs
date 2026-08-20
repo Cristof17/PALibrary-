@@ -7,7 +7,11 @@ namespace PA
     {
         public readonly BFSRecord Result
         {
-            get => _result;
+            get
+            {
+                return _result; 
+            }
+            // => 
             
         } 
 

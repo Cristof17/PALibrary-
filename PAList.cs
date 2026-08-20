@@ -7,13 +7,21 @@ namespace PA
     {
         public readonly PACount N
         {
-            get => _n;
+            get
+            {
+                return _n;; 
+            }
+            // => 
                 
         } 
 
         public readonly PASeries Adj
         {
-            get => _adj;
+            get
+            {
+                return _adj; 
+            }
+            // => 
             
         } 
 

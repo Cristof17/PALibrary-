@@ -7,7 +7,10 @@ namespace PA
 	{
 		public readonly PATree Adj_trans
         {
-        	get => _adj_trans;
+        	get
+            {
+                return  _adj_trans;
+            }
             
         }
 

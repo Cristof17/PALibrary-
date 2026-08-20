@@ -8,17 +8,29 @@ namespace PA
     {
         public readonly PAData Index
         {
-            get => _index;
+            get
+            {
+                return _index; 
+            }
+            // => 
         }
 
         public readonly PAStatus Status
         {
-            get => _status;
+            get
+            {
+                return _status; 
+            }
+            // => 
         } 
 
         public readonly PAList Adj
         {    
-            get => _next;
+            get
+            {
+                return _next; 
+            }
+            // => 
         }
 
         internal readonly PAData _index;
