@@ -9,7 +9,7 @@ namespace PA
         {
             get
             {
-                return _n;; 
+                return _n;
             }
         } 
 
