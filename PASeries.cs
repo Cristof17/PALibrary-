@@ -27,6 +27,8 @@ namespace PA
         {
             get
             {
+                PAElement element = PAElement.PAElementPerformConstruct();
+                return element;
                 // return _array[node];
                 //get element at position node
             }
