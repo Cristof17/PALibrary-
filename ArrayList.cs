@@ -1,4 +1,6 @@
 using PA;
+using System;
+
 // using System;
 using System.Runtime.InteropServices;
 // using System;
@@ -6,7 +8,6 @@ namespace AL
 {
     public partial struct ArrayList
     {
-        
         [LibraryImport("pa")]
         internal static partial ArrayList ArrayListConstruct(ArrayListPosition place, int[] objects);
         [LibraryImport("pa")]
