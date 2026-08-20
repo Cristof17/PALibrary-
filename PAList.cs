@@ -19,7 +19,15 @@ namespace PA
             {
                 return _adj; 
             }
-        } 
+        }
+
+        public PAElement this[int node]
+        {
+            get
+            {
+                return _adj[node];
+            }
+        }
 
         internal readonly PACount _n;
 

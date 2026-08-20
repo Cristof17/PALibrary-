@@ -13,6 +13,14 @@ namespace PA
             }   
         }
 
+		public PAElement this[int node]
+        {
+			get
+			{
+				return _adj_trans[node];
+			}
+        }
+
 		internal readonly PATree _adj_trans;
 
 		[LibraryImport("pa")]

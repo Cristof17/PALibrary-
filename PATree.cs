@@ -40,7 +40,15 @@ namespace PA
             {
                return _sursa; 
             }
-        } 
+        }
+
+		public PAElement this[int node]
+        {
+            get
+            {
+                return _adj[node];
+            }
+        }
 
 		internal readonly PACount _n;
 

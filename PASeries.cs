@@ -2,6 +2,7 @@
 // using System.Xml.Schema;
 using PA;
 using AL;
+using System.Runtime.CompilerServices;
 namespace PA
 {
     public readonly partial struct PASeries
@@ -20,7 +21,16 @@ namespace PA
             {
                 return _array;  
             } 
-        } 
+        }
+
+        public PAElement this[int node]
+        {
+            get
+            {
+                // return _array[node];
+                //get element at position node
+            }
+        }
 
         internal readonly PACount _m;
 
