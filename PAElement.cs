@@ -22,19 +22,19 @@ namespace PA
             }
         } 
 
-        public readonly PAList Adj
-        {    
-            get
-            {
-                return _next; 
-            }
-        }
+        // public readonly unsafe PAElement* Next
+        // {    
+        //     get
+        //     {
+        //         return _next; 
+        //     }
+        // }
 
         internal readonly PAData _index;
 
         internal readonly PAStatus _status;
 
-        internal readonly PAList _next;
+        // internal readonly PAElement _next;
 
 
         [LibraryImport("pa")]
