@@ -12,8 +12,6 @@ namespace PA
             {
                 return _node; 
             }
-            // => 
-            
         } 
 
         public readonly PAElement Neigh
@@ -22,8 +20,6 @@ namespace PA
             {
                 return  _neigh;;  
             }
-            // =>
-            
         } 
 
         internal readonly PAElement _node;

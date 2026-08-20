@@ -11,7 +11,6 @@ namespace PA
             {
                 return _visited;   
             }
-            
         }
 
         internal readonly int _visited;

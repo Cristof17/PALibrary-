@@ -12,8 +12,6 @@ namespace PA
             {
                 return _m;
             }
-            // => 
-            
         } 
 
         public readonly ArrayList Array
@@ -22,7 +20,6 @@ namespace PA
             {
                 return _array;  
             } 
-            
         } 
 
         internal readonly PACount _m;

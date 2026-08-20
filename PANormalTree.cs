@@ -11,8 +11,6 @@ namespace PA
             {
 				return _pa;
             }
-            
-            
         } 
 
 		internal readonly PATree _pa;

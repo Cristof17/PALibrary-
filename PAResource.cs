@@ -12,7 +12,6 @@ namespace PA
             {
                 return _value;  
             } 
-            
         } 
 
         internal readonly PANumber _value;

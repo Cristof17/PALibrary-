@@ -24,7 +24,6 @@ namespace PA
             {
 				return _m;
             } 
-            
         } 
 
 		public readonly PAList Adj
@@ -33,8 +32,6 @@ namespace PA
             {
                 return _adj;
             }
-            // => 
-            
         } 
 
 		public readonly PAElement Sursa
@@ -43,8 +40,6 @@ namespace PA
             {
                return _sursa; 
             }
-            // => 
-            
         } 
 
 		internal readonly PACount _n;

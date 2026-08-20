@@ -11,7 +11,6 @@ namespace PA
             {
 				return _p;
             }
-            // => 
         } 
 
 		internal readonly PAPair _p;

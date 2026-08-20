@@ -11,10 +11,8 @@ namespace PA
             get
             {
                 return  _resource;
-            } 
-            // =>
+            }
         }
-        //  => _resource;
         
         internal readonly PAResource _resource;
 

@@ -10,8 +10,7 @@ namespace PA
         	get
             {
                 return  _adj_trans;
-            }
-            
+            }   
         }
 
 		internal readonly PATree _adj_trans;

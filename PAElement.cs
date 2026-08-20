@@ -12,7 +12,6 @@ namespace PA
             {
                 return _index; 
             }
-            // => 
         }
 
         public readonly PAStatus Status
@@ -21,7 +20,6 @@ namespace PA
             {
                 return _status; 
             }
-            // => 
         } 
 
         public readonly PAList Adj
@@ -30,7 +28,6 @@ namespace PA
             {
                 return _next; 
             }
-            // => 
         }
 
         internal readonly PAData _index;

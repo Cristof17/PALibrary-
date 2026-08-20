@@ -11,8 +11,6 @@ namespace PA
             {
                 return _n;; 
             }
-            // => 
-                
         } 
 
         public readonly PASeries Adj
@@ -21,8 +19,6 @@ namespace PA
             {
                 return _adj; 
             }
-            // => 
-            
         } 
 
         internal readonly PACount _n;
