@@ -19,7 +19,7 @@ namespace PA
         [LibraryImport("pa")]
         public static partial PANumber PANumberPerformConstruct();
         [LibraryImport("pa")]
-        public static partial PANumber PANumberPerformInit(PANumber number, int value);
+        public static partial PANumber PANumberPerformInit(PANumber Number, int Value);
         [LibraryImport("pa")]
         public static partial PANumber PANumberPerformCopy(PANumber from, PANumber to);
         [LibraryImport("pa")]
