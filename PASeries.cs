@@ -28,21 +28,21 @@ namespace PA
             get
             {
                 int iteration = 1;
-                PAElement curr;
+                PAElement* curr;
                 curr = _adj;
                 while (iteration < _m)
                 {
-                    if (node == curr)
+                    if (node == (*curr))
                     {
-                        return curr;
+                        return (*curr);
                     }
                     else
                     {
-                        curr = *_adj._next;
+                        curr = _adj->_next;
                         iteration++;
                     }
                 }
-                return curr;
+                return (*curr);
                 // return _adj[node];
                 // PAElement element = PAElement.PAElementPerformConstruct();
                 // return element;
@@ -53,7 +53,7 @@ namespace PA
 
         internal readonly PACount _m;
 
-        internal readonly PAElement _adj;
+        internal unsafe readonly PAElement* _adj;
 
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformConstruct();
