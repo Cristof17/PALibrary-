@@ -5,7 +5,7 @@ using AL;
 using System.Runtime.CompilerServices;
 namespace PA
 {
-    public readonly ref partial struct PASeries
+    public readonly partial struct PASeries
     {
         public readonly PACount M
         {
