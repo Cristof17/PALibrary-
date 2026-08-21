@@ -20,21 +20,21 @@ namespace PA
             {
                 return _status; 
             }
-        } 
+        }
 
-        // public readonly unsafe PAElement* Next;
-        // // {    
-        // //     get
-        // //     {
-        // //         return _next; 
-        // //     }
-        // // }
+        public readonly unsafe PAElement* Next;
+        // {    
+        //     get
+        //     {
+        //         return _next; 
+        //     }
+        // }
 
         internal readonly PAData _index;
 
         internal readonly PAStatus _status;
 
-        // internal readonly PAElement _next;
+        internal readonly unsafe PAElement* _next;
 
 
         [LibraryImport("pa")]
