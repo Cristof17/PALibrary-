@@ -23,16 +23,16 @@ namespace PA
         //     // } 
         // }
 
-        // public PAElement this[int node]
-        // {
-        //     get
-        //     {
-        //         PAElement element = PAElement.PAElementPerformConstruct();
-        //         return element;
-        //         // return _array[node];
-        //         //get element at position node
-        //     }
-        // }
+        public PAElement this[int node]
+        {
+            get
+            {
+                PAElement element = PAElement.PAElementPerformConstruct();
+                return element;
+                // return _array[node];
+                //get element at position node
+            }
+        }
 
         internal readonly PACount _m;
 
