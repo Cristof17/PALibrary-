@@ -32,6 +32,10 @@ namespace PA
                 curr = _adj;
                 while (iteration < _m)
                 {
+                    if (curr == null)
+                    {
+                        break;
+                    }
                     if (node == (*curr))
                     {
                         return (*curr);
