@@ -23,13 +23,29 @@ namespace PA
         //     // } 
         // }
 
-        public PAElement this[PAElement node]
+        public unsafe PAElement this[PAElement node]
         {
             get
             {
+                int iteration = 1;
+                PAElement curr;
+                curr = _adj;
+                while (iteration < _m)
+                {
+                    if (node == curr)
+                    {
+                        return curr;
+                    }
+                    else
+                    {
+                        curr = *_adj._next;
+                        iteration++;
+                    }
+                }
+                return curr;
                 // return _adj[node];
-                PAElement element = PAElement.PAElementPerformConstruct();
-                return element;
+                // PAElement element = PAElement.PAElementPerformConstruct();
+                // return element;
                 // return _array[node];
                 //get element at position node
             }
