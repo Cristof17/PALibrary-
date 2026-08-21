@@ -5,6 +5,7 @@ using AL;
 using System.Runtime.CompilerServices;
 using System.Numerics;
 using System.Dynamic;
+using System.Diagnostics.CodeAnalysis;
 namespace PA
 {
     public readonly partial struct PASeries
@@ -76,6 +77,16 @@ namespace PA
 
         public static unsafe bool operator ==(PASeries one, PASeries other) => (one._m == other._m) && ((*one._adj) == (*other._adj));
         public static unsafe bool operator !=(PASeries one, PASeries other) => (one._m != other._m) || ((*one._adj) != (*other._adj));
+
+        public override bool Equals([NotNullWhen(true)] object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }
 // }

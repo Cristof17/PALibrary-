@@ -3,6 +3,7 @@ using System;
 using PA;
 using AL;
 using System.Collections.Concurrent;
+using System.Diagnostics.CodeAnalysis;
 
 namespace PA
 {
@@ -64,5 +65,14 @@ namespace PA
         public static bool operator ==(PAInput from, PAInput to) => (from._n == to._n) && (from._m == to._m) && (from._adj == to._adj) && (from._sursa == to._sursa);
         public static bool operator !=(PAInput from, PAInput to) => (from._n != to._n) || (from._m != to._m) || (from._adj != to._adj) || (from._sursa != to._sursa);
 
+        public override bool Equals([NotNullWhen(true)] object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }

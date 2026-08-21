@@ -1,4 +1,5 @@
 using System.Collections.Concurrent;
+using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks.Dataflow;
 using PA;
@@ -42,5 +43,14 @@ namespace PA
         public static bool operator ==(PAPair one, PAPair other) => (one._node == other._node) && (one._neigh == other._neigh);
         public static bool operator !=(PAPair one, PAPair other) => (one._node != other._node) || (one._neigh != other._neigh);
 
+        public override bool Equals([NotNullWhen(true)] object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }

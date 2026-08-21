@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
 using System.Runtime.InteropServices;
 using PA;
@@ -49,5 +50,15 @@ namespace PA
 
         public static bool operator==(PAList one, PAList other) => (one._n == other._n) && (one._adj == other._adj);
         public static bool operator!=(PAList one, PAList other) => (one._n != other._n) || (one._adj != other._adj);
+
+        public override bool Equals([NotNullWhen(true)] object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }

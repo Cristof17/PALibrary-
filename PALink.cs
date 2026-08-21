@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 using PA;
 
@@ -28,5 +29,15 @@ namespace PA
 
 		public static bool operator ==(PALink one, PALink other) => one._p == other._p;
 		public static bool operator !=(PALink one, PALink other) => one._p != other._p;
+
+        public override bool Equals([NotNullWhen(true)] object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
 	}
 }

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
+
 // using System.Data.Common;
 using System.Runtime.InteropServices;
 using PA;
@@ -36,5 +38,14 @@ namespace PA
         public static bool operator ==(PACount from, PACount to) => from._value == to._value;
         public static bool operator !=(PACount from, PACount to) => from._value != to._value;
 
+        public override bool Equals([NotNullWhen(true)] object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }
