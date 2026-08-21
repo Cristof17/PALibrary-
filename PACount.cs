@@ -33,6 +33,8 @@ namespace PA
         public static bool operator <(PACount a, PACount b) => a._value < b._value;
         public static bool operator >(PACount a, PACount b) => a._value > b._value;
         public static implicit operator int(PACount count) => (int)count._value;
+        public static bool operator ==(PACount from, PACount to) => from._value == to._value;
+        public static bool operator !=(PACount from, PACount to) => from._value != to._value;
 
     }
 }
