@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>net70</TargetFramework>
     <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
-    <RootNamespace>PA_Library</RootNamespace>
+    <RootNamespace>PA</RootNamespace>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
