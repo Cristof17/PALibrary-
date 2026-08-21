@@ -22,13 +22,13 @@ namespace PA
             }
         } 
 
-        public readonly unsafe PAElement* Next;
-        // {    
-        //     get
-        //     {
-        //         return _next; 
-        //     }
-        // }
+        // public readonly unsafe PAElement* Next;
+        // // {    
+        // //     get
+        // //     {
+        // //         return _next; 
+        // //     }
+        // // }
 
         internal readonly PAData _index;
 

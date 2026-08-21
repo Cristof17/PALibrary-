@@ -5,7 +5,7 @@ using AL;
 using System.Runtime.CompilerServices;
 namespace PA
 {
-    public readonly partial struct PASeries
+    public readonly ref partial struct PASeries
     {
         public readonly PACount M
         {
@@ -15,13 +15,13 @@ namespace PA
             }
         } 
 
-        public readonly PAElement Adj
-        {
-            get
-            {
-                return _adj;  
-            } 
-        }
+        public readonly PAElement Adj;
+        // {
+        //     // get
+        //     // {
+        //     //     return ref _adj;  
+        //     // } 
+        // }
 
         public PAElement this[int node]
         {
