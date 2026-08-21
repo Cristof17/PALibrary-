@@ -13,7 +13,7 @@ namespace PA
             }   
         }
 
-		public PAElement this[int node]
+		public PAElement this[PAElement node]
         {
 			get
 			{
