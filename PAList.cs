@@ -36,7 +36,7 @@ namespace PA
         [LibraryImport("pa")]
         public static partial PAList PAListPerformConstruct();
         [LibraryImport("pa")]
-        public static partial PAList PAListPerformInit(PAList list, PACount n, out PASeries adj);
+        public static partial PAList PAListPerformInit(PAList list, PACount n, in PASeries adj);
         [LibraryImport("pa")]
         public static partial PAList PAListPerformCopy(PAList from, PAList to);
         [LibraryImport("pa")]
