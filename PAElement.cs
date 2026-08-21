@@ -1,5 +1,6 @@
 // using System.Linq.Expressions;
 using System.Data;
+using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -66,5 +67,15 @@ namespace PA
 
         public static unsafe bool operator==(PAElement one, PAElement other) => (one._index == other._index) && ((*one._next) == (*other._next)) && (one._status == other._status);
         public static unsafe bool operator!=(PAElement one, PAElement other) => (one._index != other._index) || ((*one._next) != (*other._next)) || (one._status != other._status);
+
+        public override bool Equals([NotNullWhen(true)] object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }
