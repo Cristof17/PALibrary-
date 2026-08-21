@@ -30,6 +30,15 @@ namespace PA
             }
         }
 
+        // public unsafe PAElement this[PAElement node]
+        // {
+        //     get
+        //     {
+        //         //do logic for iteration and comparison
+        //         return *_next;
+        //     }
+        // }
+
         internal readonly PAData _index;
 
         internal readonly PAStatus _status;

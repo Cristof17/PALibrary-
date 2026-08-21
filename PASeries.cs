@@ -27,6 +27,7 @@ namespace PA
         {
             get
             {
+                // return _adj[node];
                 PAElement element = PAElement.PAElementPerformConstruct();
                 return element;
                 // return _array[node];
@@ -36,7 +37,7 @@ namespace PA
 
         internal readonly PACount _m;
 
-        internal readonly unsafe PAElement* _adj;
+        internal readonly PAElement _adj;
 
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformConstruct();
