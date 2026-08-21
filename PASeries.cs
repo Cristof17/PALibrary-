@@ -3,6 +3,8 @@
 using PA;
 using AL;
 using System.Runtime.CompilerServices;
+using System.Numerics;
+using System.Dynamic;
 namespace PA
 {
     public readonly partial struct PASeries
@@ -71,6 +73,9 @@ namespace PA
         public static partial PASeries PASeriesPerformRuin(PASeries pa);
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformDelete(PASeries pa);
+
+        public static unsafe bool operator ==(PASeries one, PASeries other) => (one._m == other._m) && ((*one._adj) == (*other._adj));
+        public static unsafe bool operator !=(PASeries one, PASeries other) => (one._m != other._m) || ((*one._adj) != (*other._adj));
     }
 }
 // }

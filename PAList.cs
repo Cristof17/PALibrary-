@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 using System.Runtime.InteropServices;
 using PA;
 namespace PA
@@ -45,5 +46,8 @@ namespace PA
         public static partial PAList PAListPerformDelete(PAList PA);
         [LibraryImport("pa")]
         public static partial void PAListPerformPrint(PAList List);
+
+        public static bool operator==(PAList one, PAList other) => (one._n == other._n) && (one._adj == other._adj);
+        public static bool operator!=(PAList one, PAList other) => (one._n != other._n) || (one._adj != other._adj);
     }
 }

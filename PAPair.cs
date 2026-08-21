@@ -1,4 +1,6 @@
+using System.Collections.Concurrent;
 using System.Runtime.InteropServices;
+using System.Threading.Tasks.Dataflow;
 using PA;
 
 namespace PA
@@ -36,6 +38,9 @@ namespace PA
         public static partial int PAPairRuin(PAPair pa);
         [LibraryImport("pa")]
         public static partial int PAPairDelete(PAElement pa);
+
+        public static bool operator ==(PAPair one, PAPair other) => (one._node == other._node) && (one._neigh == other._neigh);
+        public static bool operator !=(PAPair one, PAPair other) => (one._node != other._node) || (one._neigh != other._neigh);
 
     }
 }

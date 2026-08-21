@@ -27,5 +27,8 @@ namespace PA
         public static partial void PAOutputPerformDelete(PAOutput pa);
         [LibraryImport("pa")]
         public static partial void PAOutputPerformPrint(int result);
+
+        // public static bool operator ==(PAOutput one, PAOutput other) => one._result == other._result;
+        // public static bool operator !=(PAOutput one, PAOutput other) => one._result != other._result;
     }
 }

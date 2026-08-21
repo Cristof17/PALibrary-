@@ -25,5 +25,8 @@ namespace PA
 		public static partial PALink PALinkPerformRuin(PALink pa);
 		[LibraryImport("pa")]
 		public static partial PALink PALinkPerformDelete(PALink pa);
+
+		public static bool operator ==(PALink one, PALink other) => one._p == other._p;
+		public static bool operator !=(PALink one, PALink other) => one._p != other._p;
 	}
 }
