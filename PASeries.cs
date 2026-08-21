@@ -58,7 +58,7 @@ namespace PA
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformConstruct();
         [LibraryImport("pa")]
-        public static unsafe partial PASeries PASeriesPerformInit(PASeries series, PACount n, PAElement* adj);
+        public static unsafe partial PASeries PASeriesPerformInit(PASeries series, PACount m, PAElement* adj);
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformCopy(PASeries from, PASeries to);
         [LibraryImport("pa")]
