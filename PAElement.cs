@@ -1,4 +1,7 @@
 // using System.Linq.Expressions;
+using System.Data;
+using System.Numerics;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 // using PA;
 
@@ -60,5 +63,8 @@ namespace PA
         public static partial int PAElementIsVisited(PAElement element);
         [LibraryImport("pa")]
         public static partial void PAElementReset(PAElement element);
+
+        public static unsafe bool operator==(PAElement one, PAElement other) => (one._index == other._index) && ((*one._next) == (*other._next)) && (one._status == other._status);
+        public static unsafe bool operator !=(PAElement one, PAElement other) => (one._index != other._index) || ((*one._next) != (*other._next)) || (one._status != other._status);
     }
 }

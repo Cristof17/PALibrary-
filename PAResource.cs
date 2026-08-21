@@ -1,3 +1,4 @@
+using System.Numerics;
 using System.Runtime.InteropServices;
 using PA;
 
@@ -26,5 +27,8 @@ namespace PA
         public static partial int PAResourcePerformRuin(PAResource pa);
         [LibraryImport("pa")]
         internal static partial int PAResourcePerformDelete(PAResource pa);
+
+        public static bool operator ==(PAResource one, PAResource other) => one._value == other._value;
+        public static bool operator !=(PAResource one, PAResource other) => one._value != other._value;
     }
 }

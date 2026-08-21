@@ -34,5 +34,8 @@ namespace PA
         [LibraryImport("pa")]
         internal static partial 
         PAStatus PAStatusPerformDelete(PAStatus pa);
+
+        public static bool operator==(PAStatus one, PAStatus other) => one._visited == other._visited;
+        public static bool operator!=(PAStatus one, PAStatus other) => one._visited != other._visited;
     }
 }

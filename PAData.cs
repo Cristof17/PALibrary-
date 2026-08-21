@@ -1,4 +1,6 @@
 using System.ComponentModel;
+using System.Data;
+using System.Numerics;
 using System.Runtime.InteropServices;
 using PA;
 
@@ -26,5 +28,8 @@ namespace PA
         public static partial PAData PADataPerformRuin(PAData pa);
         [LibraryImport("pa")]
         public static partial PAData PADataPerformDelete(PAData pa);
+
+        public static bool operator ==(PAData one, PAData other) => one._resource == other._resource;
+        public static bool operator != (PAData one, PAData other) => one._resource != other._resource;
     }
 }
