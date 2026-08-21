@@ -15,7 +15,7 @@ namespace PA
             }
         } 
 
-        public readonly ArrayList Adj
+        public readonly PAElement Adj
         {
             get
             {
@@ -36,12 +36,12 @@ namespace PA
 
         internal readonly PACount _m;
 
-        internal readonly ArrayList _adj;
+        internal readonly PAElement _adj;
 
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformConstruct();
         [LibraryImport("pa")]
-        public static partial PASeries PASeriesPerformInit(PASeries series, PACount n, ArrayList adj);
+        public static partial PASeries PASeriesPerformInit(PASeries series, PACount n, out PAElement adj);
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformCopy(PASeries from, PASeries to);
         [LibraryImport("pa")]

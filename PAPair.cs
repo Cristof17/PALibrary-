@@ -27,6 +27,8 @@ namespace PA
         internal readonly PAElement _neigh;
 
         [LibraryImport("pa")]
+        public static partial PAPair PAPairPerformCopy(PAPair from, PAPair to);
+        [LibraryImport("pa")]
         public static partial PAPair PAPairConstruct();
         [LibraryImport("pa")]
         public static partial PAPair PAPairInit(PAPair pair, PAElement node, PAElement neigh);
