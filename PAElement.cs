@@ -22,7 +22,7 @@ namespace PA
             }
         } 
 
-        // public readonly unsafe PAElement* Next
+        public readonly unsafe PAElement* Next;
         // {    
         //     get
         //     {
