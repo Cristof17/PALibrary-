@@ -5,7 +5,7 @@ using AL;
 using System.Runtime.CompilerServices;
 namespace PA
 {
-    public readonly ref partial struct PASeries
+    public readonly partial struct PASeries
     {
         public readonly PACount M
         {
@@ -13,9 +13,9 @@ namespace PA
             {
                 return _m;
             }
-        } 
+        }
 
-        public readonly PAElement Adj;
+        public readonly unsafe PAElement* Adj;
         // {
         //     // get
         //     // {
@@ -23,16 +23,16 @@ namespace PA
         //     // } 
         // }
 
-        public PAElement this[int node]
-        {
-            get
-            {
-                PAElement element = PAElement.PAElementPerformConstruct();
-                return element;
-                // return _array[node];
-                //get element at position node
-            }
-        }
+        // public PAElement this[int node]
+        // {
+        //     get
+        //     {
+        //         PAElement element = PAElement.PAElementPerformConstruct();
+        //         return element;
+        //         // return _array[node];
+        //         //get element at position node
+        //     }
+        // }
 
         internal readonly PACount _m;
 
@@ -41,7 +41,7 @@ namespace PA
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformConstruct();
         [LibraryImport("pa")]
-        public static partial PASeries PASeriesPerformInit(PASeries series, PACount n, out PAElement adj);
+        public static partial PASeries PASeriesPerformInit(PASeries series, PACount n, ref PAElement adj);
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformCopy(PASeries from, PASeries to);
         [LibraryImport("pa")]
