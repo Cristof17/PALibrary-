@@ -4,20 +4,20 @@ using PA;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public partial struct PAResource
+    partial struct PAResource
     {
 
-        public PANumber Value;
+        PANumber Value;
 
         [LibraryImport("pa")]
-        public static partial PAResource PAResourcePerformConstruct();
+        static partial PAResource PAResourcePerformConstruct();
         [LibraryImport("pa")]
-        public static partial PAResource PAResourcePerformInit(PAResource resource, PANumber number);
+        static partial PAResource PAResourcePerformInit(PAResource resource, PANumber number);
         [LibraryImport("pa")]
-        public static partial PAResource PAResourcePerformCopy(PAResource from, PAResource to);
+        static partial PAResource PAResourcePerformCopy(PAResource from, PAResource to);
         [LibraryImport("pa")]
-        public static partial int PAResourcePerformRuin(PAResource pa);
+        static partial int PAResourcePerformRuin(PAResource pa);
         [LibraryImport("pa")]
-        public static partial int PAResourcePerformDelete(PAResource pa);
+        static partial int PAResourcePerformDelete(PAResource pa);
     }
 }

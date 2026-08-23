@@ -4,21 +4,21 @@ using BFS;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public partial struct PAOutput
+    partial struct PAOutput
     {
-        public BFSRecord Result;
+        BFSRecord Result;
 
         [LibraryImport("pa")]
-        public static partial PAOutput PAOutputPerformConstruct();
+        static partial PAOutput PAOutputPerformConstruct();
         [LibraryImport("pa")]
-        public static partial PAOutput PAOutputPerformInit(PAOutput output, BFSRecord record);
+        static partial PAOutput PAOutputPerformInit(PAOutput output, BFSRecord record);
         [LibraryImport("pa")]
-        public static partial PAOutput PAOutputPerformCopy(PAOutput from, PAOutput to);
+        static partial PAOutput PAOutputPerformCopy(PAOutput from, PAOutput to);
         [LibraryImport("pa")]
-        public static partial void PAOutputPerformRuin(PAOutput pa);
+        static partial void PAOutputPerformRuin(PAOutput pa);
         [LibraryImport("pa")]
-        public static partial void PAOutputPerformDelete(PAOutput pa);
+        static partial void PAOutputPerformDelete(PAOutput pa);
         [LibraryImport("pa")]
-        public static partial void PAOutputPerformPrint(int result);
+        static partial void PAOutputPerformPrint(int result);
     }
 }

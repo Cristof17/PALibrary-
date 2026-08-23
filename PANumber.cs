@@ -7,18 +7,18 @@ namespace PA
         [StructLayout(LayoutKind.Sequential)]
     public partial struct PANumber
     {
-        public int Value;
+        int Value;
 
         [LibraryImport("pa")]
-        public static partial PANumber PANumberPerformConstruct();
+        static partial PANumber PANumberPerformConstruct();
         [LibraryImport("pa")]
-        public static partial PANumber PANumberPerformInit(PANumber Number, int Value);
+        static partial PANumber PANumberPerformInit(PANumber Number, int Value);
         [LibraryImport("pa")]
-        public static partial PANumber PANumberPerformCopy(PANumber from, PANumber to);
+        static partial PANumber PANumberPerformCopy(PANumber from, PANumber to);
         [LibraryImport("pa")]
-        public static partial PANumber PANumberPerformRuin(PANumber pa);
+        static partial PANumber PANumberPerformRuin(PANumber pa);
         [LibraryImport("pa")]
-        public static partial PANumber PANumberPerformDelete(PANumber pa);
+        static partial PANumber PANumberPerformDelete(PANumber pa);
 
         // public static bool operator <(PANumber a, PANumber b) => a._value < b._value;
         // public static bool operator >(PANumber a, PANumber b) => a._value > b._value;

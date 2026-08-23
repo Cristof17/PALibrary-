@@ -5,19 +5,19 @@ using PA;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public partial struct PAData
+    partial struct PAData
     {
-        public PAResource Resource;
+        PAResource Resource;
 
         [LibraryImport("pa")]
-        public static partial PAData PADataPerformConstruct();
+        static partial PAData PADataPerformConstruct();
         [LibraryImport("pa")]
-        public static partial PAData PADataPerformInit(PAData data, PAResource resource);
+        static partial PAData PADataPerformInit(PAData data, PAResource resource);
         [LibraryImport("pa")]
-        public static partial PAData PADataPerformCopy(PAData from, PAData to);
+        static partial PAData PADataPerformCopy(PAData from, PAData to);
         [LibraryImport("pa")]
-        public static partial PAData PADataPerformRuin(PAData pa);
+        static partial PAData PADataPerformRuin(PAData pa);
         [LibraryImport("pa")]
-        public static partial PAData PADataPerformDelete(PAData pa);
+        static partial PAData PADataPerformDelete(PAData pa);
     }
 }

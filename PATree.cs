@@ -8,26 +8,26 @@ using PA;
 namespace PA
 {
 	[StructLayout(LayoutKind.Sequential)]
-	public partial struct PATree
+	partial struct PATree
 	{
 
-		public PACount N ;
+		PACount N ;
 
-		public PACount M ;
+		PACount M ;
 
-		public PAList Adj;
+		PAList Adj;
 
-		public PAElement Sursa;
+		PAElement Sursa;
 
 		[LibraryImport("pa")]
-		public static partial PATree PATreePerformConstruct();
+		static partial PATree PATreePerformConstruct();
 		[LibraryImport("pa")]
-		public static partial PATree PATreePerformInit(PATree tree, PACount n, PACount m, PAList list, PAElement element);
+		static partial PATree PATreePerformInit(PATree tree, PACount n, PACount m, PAList list, PAElement element);
 		[LibraryImport("pa")]
-		public static partial PATree PATreePerformCopy(PATree from, PATree to);
+		static partial PATree PATreePerformCopy(PATree from, PATree to);
 		[LibraryImport("pa")]
-		public static partial PATree PATreePerformRuin(PATree pa);
+		static partial PATree PATreePerformRuin(PATree pa);
 		[LibraryImport("pa")]
-		public static partial PATree PATreePerformDelete(PATree pa);
+		static partial PATree PATreePerformDelete(PATree pa);
 	}
 }

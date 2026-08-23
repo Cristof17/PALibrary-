@@ -6,29 +6,29 @@ using AL;
 namespace PA
 {
     [StructLayout(LayoutKind.Sequential)]
-    public partial struct PAInput
+    partial struct PAInput
     {
 
-        public PACount N;
+        PACount N;
 
-        public PACount M;
+        PACount M;
 
-        public PAList Adj;
+        PAList Adj;
 
-        public PAElement Sursa;
+        PAElement Sursa;
         // _sursa;
 
         [LibraryImport("pa")]
-        public static partial PAInput PAInputPerformConstruct();
+        static partial PAInput PAInputPerformConstruct();
         [LibraryImport("pa")]
         // static extern Input InputPerformInit(PAInput imPACount Count, PACount Count2, PAElement Element);
-        public static partial PAInput PAInputPerformInit(PAInput input, PACount count, PAElement element);
+        static partial PAInput PAInputPerformInit(PAInput input, PACount count, PAElement element);
         [LibraryImport("pa")]
-        public static partial PAInput PAInputPerformCopy(PAInput from, PAInput to);
+        static partial PAInput PAInputPerformCopy(PAInput from, PAInput to);
         [LibraryImport("pa")]
-        public static partial void PAInputRuin(PAInput pa);
+        static partial void PAInputRuin(PAInput pa);
         [LibraryImport("pa")]
-        public static partial PAInput PAInputPerformDelete(PAInput pa);
+        static partial PAInput PAInputPerformDelete(PAInput pa);
 
     }
 }
