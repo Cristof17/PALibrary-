@@ -5,25 +5,18 @@ using AL;
 
 namespace PA
 {
-    public readonly partial struct PAInput
+    [StructLayout(LayoutKind.Sequential)]
+    public partial struct PAInput
     {
 
-        public readonly PACount N => _n;
+        internal PACount N;
 
-        public readonly PACount M => _m;
+        internal PACount M;
 
-        public readonly PAList Adj => _adj;
+        internal PAList Adj;
 
-        public readonly PAElement Sursa => _sursa;
+        internal PAElement Sursa;
         // _sursa;
-        
-        internal readonly PACount _n;
-
-        internal readonly PACount _m;
-
-        internal readonly PAList _adj;
-
-        internal readonly PAElement _sursa;
 
         [LibraryImport("pa")]
         public static partial PAInput PAInputPerformConstruct();

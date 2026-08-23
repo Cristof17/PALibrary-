@@ -3,13 +3,10 @@ using PA;
 
 namespace PA
 {
-	public readonly partial struct PANormalTree
+	    [StructLayout(LayoutKind.Sequential)]
+	public partial struct PANormalTree
 	{
-		public readonly PATree Adj => _adj;
-
-		public PAElement this[PAElement node] => _adj[node];
-
-		internal readonly PATree _adj;
+		internal PATree Adj;
 
 		[LibraryImport("pa")]
 		public static partial PANormalTree PANormalTreePerformConstruct();

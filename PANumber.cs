@@ -4,11 +4,10 @@ using PA;
 
 namespace PA
 {
-    public readonly partial struct PANumber
+        [StructLayout(LayoutKind.Sequential)]
+    public partial struct PANumber
     {
-        public readonly int Value => _value;
-
-        internal readonly int _value;
+        public int Value;
 
         [LibraryImport("pa")]
         public static partial PANumber PANumberPerformConstruct();
@@ -21,8 +20,8 @@ namespace PA
         [LibraryImport("pa")]
         public static partial PANumber PANumberPerformDelete(PANumber pa);
 
-        public static bool operator <(PANumber a, PANumber b) => a._value < b._value;
-        public static bool operator >(PANumber a, PANumber b) => a._value > b._value;
-        public static implicit operator int(PANumber a) => (int)a._value;
+        // public static bool operator <(PANumber a, PANumber b) => a._value < b._value;
+        // public static bool operator >(PANumber a, PANumber b) => a._value > b._value;
+        // public static implicit operator int(PANumber a) => (int)a._value;
     }
 }

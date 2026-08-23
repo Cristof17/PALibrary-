@@ -3,13 +3,10 @@ using PA;
 
 namespace PA
 {
+	    [StructLayout(LayoutKind.Sequential)]
 	public readonly partial struct PATransposeTree
 	{
-		public readonly PATree Adj_trans => _adj_trans;
-
-		public PAElement this[PAElement node] => _adj_trans[node];
-
-		internal readonly PATree _adj_trans;
+		internal PATree Adj_trans;
 
 		[LibraryImport("pa")]
 		internal static partial PATransposeTree PATransposeTreePerformConstruct();

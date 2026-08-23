@@ -3,17 +3,16 @@ using System.Runtime.InteropServices;
 using PA;
 namespace PA
 {
-    public readonly partial struct PAList
+        [StructLayout(LayoutKind.Sequential)]
+    public partial struct PAList
     {
-        public readonly PACount N => _n;
+        internal PACount N;
 
-        public readonly PASeries Adj => _adj;
+        internal PASeries Adj;
 
-        public PAElement this[PAElement node] => _adj[node];
+        internal PACount N ;
 
-        internal readonly PACount _n;
-
-        internal readonly PASeries _adj;
+        internal PASeries Adj;
 
         [LibraryImport("pa")]
         public static partial PAList PAListPerformConstruct();

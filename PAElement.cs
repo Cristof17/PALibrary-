@@ -4,31 +4,13 @@ using System.Runtime.InteropServices;
 
 namespace PA
 {
-    public readonly partial struct PAElement
+        [StructLayout(LayoutKind.Sequential)]
+    public partial struct PAElement
     {
-        public readonly PAData Index
-        {
-            get
-            {
-                return _index; 
-            }
-        }
+        internal PAData Index;
+        internal PAStatus Status;
 
-        public readonly PAStatus Status
-        {
-            get
-            {
-                return _status; 
-            }
-        }
-
-        public readonly unsafe PAElement Next => *_next;
-
-        internal readonly PAData _index;
-
-        internal readonly PAStatus _status;
-
-        internal readonly unsafe PAElement* _next;
+        // internal unsafe PAElement *Next ;
 
 
         [LibraryImport("pa")]

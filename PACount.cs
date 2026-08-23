@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net;
+
 // using System.Data.Common;
 using System.Runtime.InteropServices;
 using PA;
@@ -6,12 +8,10 @@ using SM;
 
 namespace PA
 {
-    public readonly partial struct PACount
+    [StructLayout(LayoutKind.Sequential)]
+    public partial struct PACount
     {
-
-        public readonly PANumber Value => _value;
-
-        internal readonly PANumber _value;
+        internal PANumber Value;
 
         [LibraryImport("pa")]
         public static partial PACount PACountPerformConstruct();
@@ -24,9 +24,9 @@ namespace PA
         [LibraryImport("pa")]
         public static partial PACount PACountPerformDelete(PACount pa);
 
-        public static bool operator <(PACount a, PACount b) => a._value < b._value;
-        public static bool operator >(PACount a, PACount b) => a._value > b._value;
-        public static implicit operator int(PACount count) => (int)count._value;
+        // private static bool operator <(PACount a, PACount b) => a._value < b._value;
+        // private static bool operator >(PACount a, PACount b) => a._value > b._value;
+        // private static implicit operator int(PACount count) => (int)count._value;
 
     }
 }

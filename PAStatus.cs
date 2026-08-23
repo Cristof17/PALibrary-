@@ -3,15 +3,13 @@ using PA;
 
 namespace PA
 {
-    public readonly partial struct PAStatus
+        [StructLayout(LayoutKind.Sequential)]
+    public partial struct PAStatus
     {
-        public readonly int Visited => Visited;
-
-        internal readonly int _visited;
+        public int Visited;
 
         [LibraryImport("pa")]
-        internal static partial 
-        PAStatus PAStatusPerformConstruct();
+        internal static partial PAStatus PAStatusPerformConstruct();
 
         [LibraryImport("pa")]
         internal static partial 

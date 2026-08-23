@@ -7,26 +7,17 @@ using System.Runtime.InteropServices;
 using PA;
 namespace PA
 {
-	public readonly partial struct PATree
+	[StructLayout(LayoutKind.Sequential)]
+	public partial struct PATree
 	{
 
-		public readonly PACount N => _n;
+		internal PACount N ;
 
-		public readonly PACount M => _m;
+		internal PACount M ;
 
-		public readonly PAList Adj => _adj;
+		internal PAList Adj;
 
-		public readonly PAElement Sursa => _sursa;
-
-		public PAElement this[PAElement node] => _adj[node];
-
-		internal readonly PACount _n;
-
-		internal readonly PACount _m;
-
-		internal readonly PAList _adj;
-
-		internal readonly PAElement _sursa;
+		internal PAElement Sursa;
 
 		[LibraryImport("pa")]
 		internal static partial PATree PATreePerformConstruct();
