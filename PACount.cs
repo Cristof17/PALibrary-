@@ -18,11 +18,11 @@ namespace PA
         [LibraryImport("pa")]
         static partial PACount PACountPerformInit(PACount count, PANumber number);
         [LibraryImport("pa")]
-        partial PACount PACountPerformCopy(PACount from, PACount to);
+        static partial PACount PACountPerformCopy(PACount from, PACount to);
         [LibraryImport("pa")]
-        partial PACount PACountPerformRuin(PACount pa);
+        static partial PACount PACountPerformRuin(PACount pa);
         [LibraryImport("pa")]
-        partial PACount PACountPerformDelete(PACount pa);
+        static partial PACount PACountPerformDelete(PACount pa);
 
         // private static bool operator <(PACount a, PACount b) => a._value < b._value;
         // private static bool operator >(PACount a, PACount b) => a._value > b._value;

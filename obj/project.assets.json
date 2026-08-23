@@ -1,11 +1,11 @@
 {
-  "version": 4,
+  "version": 3,
   "targets": {
-    "net70": {}
+    "net7.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net70": []
+    "net7.0": []
   },
   "packageFolders": {
     "/Users/cristoforrotsching/.nuget/packages/": {}
@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/cristoforrotsching/Downloads/PALibrary--main/PA-Library.csproj",
+      "projectUniqueName": "/Users/cristoforrotsching/Downloads/PALibrary-/PA-Library.csproj",
       "projectName": "PA-Library",
-      "projectPath": "/Users/cristoforrotsching/Downloads/PALibrary--main/PA-Library.csproj",
+      "projectPath": "/Users/cristoforrotsching/Downloads/PALibrary-/PA-Library.csproj",
       "packagesPath": "/Users/cristoforrotsching/.nuget/packages/",
-      "outputPath": "/Users/cristoforrotsching/Downloads/PALibrary--main/obj/",
+      "outputPath": "/Users/cristoforrotsching/Downloads/PALibrary-/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/cristoforrotsching/.nuget/NuGet/NuGet.Config"
@@ -29,8 +29,7 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net70": {
-          "framework": "net7.0",
+        "net7.0": {
           "targetAlias": "net70",
           "projectReferences": {}
         }
@@ -45,11 +44,10 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.300"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
-      "net70": {
-        "framework": "net7.0",
+      "net7.0": {
         "targetAlias": "net70",
         "imports": [
           "net461",
@@ -77,7 +75,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.203/RuntimeIdentifierGraph.json"
       }
     }
   }

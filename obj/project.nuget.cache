@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XQbSs7XmJSY=",
+  "dgSpecHash": "1C4yul2Ne1Y=",
   "success": true,
-  "projectFilePath": "/Users/cristoforrotsching/Downloads/PALibrary--main/PA-Library.csproj",
+  "projectFilePath": "/Users/cristoforrotsching/Downloads/PALibrary-/PA-Library.csproj",
   "expectedPackageFiles": [
     "/Users/cristoforrotsching/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
     "/Users/cristoforrotsching/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512"
