@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 
 namespace PA
 {
-        [StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Sequential)]
     public partial struct PAElement
     {
-        internal PAData Index;
-        internal PAStatus Status;
+        public PAData Index;
+        public PAStatus Status;
 
         // internal unsafe PAElement *Next ;
 

@@ -3,10 +3,10 @@ using PA;
 using BFS;
 namespace PA
 {
-        [StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Sequential)]
     public partial struct PAOutput
     {
-        internal BFSRecord Result;
+        public BFSRecord Result;
 
         [LibraryImport("pa")]
         public static partial PAOutput PAOutputPerformConstruct();

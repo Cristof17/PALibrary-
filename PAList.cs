@@ -3,16 +3,16 @@ using System.Runtime.InteropServices;
 using PA;
 namespace PA
 {
-        [StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Sequential)]
     public partial struct PAList
     {
-        internal PACount N;
+        public PACount N;
 
-        internal PASeries Adj;
+        public PASeries Adj;
 
-        internal PACount N ;
+        public PACount N ;
 
-        internal PASeries Adj;
+        public PASeries Adj;
 
         [LibraryImport("pa")]
         public static partial PAList PAListPerformConstruct();

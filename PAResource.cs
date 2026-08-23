@@ -3,11 +3,11 @@ using PA;
 
 namespace PA
 {
-        [StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Sequential)]
     public partial struct PAResource
     {
 
-        internal PANumber Value;
+        public PANumber Value;
 
         [LibraryImport("pa")]
         public static partial PAResource PAResourcePerformConstruct();
@@ -18,6 +18,6 @@ namespace PA
         [LibraryImport("pa")]
         public static partial int PAResourcePerformRuin(PAResource pa);
         [LibraryImport("pa")]
-        internal static partial int PAResourcePerformDelete(PAResource pa);
+        public static partial int PAResourcePerformDelete(PAResource pa);
     }
 }

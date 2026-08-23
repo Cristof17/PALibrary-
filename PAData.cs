@@ -4,10 +4,10 @@ using PA;
 
 namespace PA
 {
-        [StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Sequential)]
     public partial struct PAData
     {
-        internal PAResource Resource;
+        public PAResource Resource;
 
         [LibraryImport("pa")]
         public static partial PAData PADataPerformConstruct();

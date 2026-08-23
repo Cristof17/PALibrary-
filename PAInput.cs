@@ -9,13 +9,13 @@ namespace PA
     public partial struct PAInput
     {
 
-        internal PACount N;
+        public PACount N;
 
-        internal PACount M;
+        public PACount M;
 
-        internal PAList Adj;
+        public PAList Adj;
 
-        internal PAElement Sursa;
+        public PAElement Sursa;
         // _sursa;
 
         [LibraryImport("pa")]

@@ -3,20 +3,20 @@ using PA;
 
 namespace PA
 {
-	    [StructLayout(LayoutKind.Sequential)]
-	public readonly partial struct PATransposeTree
+	[StructLayout(LayoutKind.Sequential)]
+	public partial struct PATransposeTree
 	{
-		internal PATree Adj_trans;
+		public PATree Adj_trans;
 
 		[LibraryImport("pa")]
-		internal static partial PATransposeTree PATransposeTreePerformConstruct();
+		public static partial PATransposeTree PATransposeTreePerformConstruct();
 		[LibraryImport("pa")]
-		internal static partial PATransposeTree PATransposeTreePerformInit(PATransposeTree transposeTree, PATree tree);
+		public static partial PATransposeTree PATransposeTreePerformInit(PATransposeTree transposeTree, PATree tree);
 		[LibraryImport("pa")]
-		internal static partial PATransposeTree PATransposeTreePerformCopy(PATransposeTree from, PATransposeTree to);
+		public static partial PATransposeTree PATransposeTreePerformCopy(PATransposeTree from, PATransposeTree to);
 		[LibraryImport("pa")]
-		internal static partial PATransposeTree PATransposeTreePerformRuin(PATransposeTree pa);
+		public static partial PATransposeTree PATransposeTreePerformRuin(PATransposeTree pa);
 		[LibraryImport("pa")]
-		internal static partial PATransposeTree PATransposeTreePerformDelete(PATransposeTree pa);
+		public static partial PATransposeTree PATransposeTreePerformDelete(PATransposeTree pa);
 	}
 }

@@ -3,10 +3,10 @@ using PA;
 
 namespace PA
 {
-	    [StructLayout(LayoutKind.Sequential)]
+	[StructLayout(LayoutKind.Sequential)]
 	public partial struct PALink
 	{
-		internal PAPair Pair;
+		public PAPair Pair;
 
 		[LibraryImport("pa")]
 		public static partial PALink PALinkPerformConstruct();

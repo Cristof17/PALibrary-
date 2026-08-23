@@ -5,10 +5,10 @@ using AL;
 using System.Runtime.CompilerServices;
 namespace PA
 {
-        [StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Sequential)]
     public partial struct PASeries
     {
-        internal PACount M ;
+        public PACount M ;
 
         // public readonly unsafe PAElement* Adj;
         // {

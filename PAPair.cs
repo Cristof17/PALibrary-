@@ -3,13 +3,13 @@ using PA;
 
 namespace PA
 {
-        [StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Sequential)]
     public partial struct PAPair
     {
 
-        internal PAElement Node;
+        public PAElement Node;
 
-        internal PAElement Neigh;
+        public PAElement Neigh;
 
         [LibraryImport("pa")]
         public static partial PAPair PAPairPerformCopy(PAPair from, PAPair to);

@@ -11,23 +11,23 @@ namespace PA
 	public partial struct PATree
 	{
 
-		internal PACount N ;
+		public PACount N ;
 
-		internal PACount M ;
+		public PACount M ;
 
-		internal PAList Adj;
+		public PAList Adj;
 
-		internal PAElement Sursa;
+		public PAElement Sursa;
 
 		[LibraryImport("pa")]
-		internal static partial PATree PATreePerformConstruct();
+		public static partial PATree PATreePerformConstruct();
 		[LibraryImport("pa")]
-		internal static partial PATree PATreePerformInit(PATree tree, PACount n, PACount m, PAList list, PAElement element);
+		public static partial PATree PATreePerformInit(PATree tree, PACount n, PACount m, PAList list, PAElement element);
 		[LibraryImport("pa")]
-		internal static partial PATree PATreePerformCopy(PATree from, PATree to);
+		public static partial PATree PATreePerformCopy(PATree from, PATree to);
 		[LibraryImport("pa")]
-		internal static partial PATree PATreePerformRuin(PATree pa);
+		public static partial PATree PATreePerformRuin(PATree pa);
 		[LibraryImport("pa")]
-		internal static partial PATree PATreePerformDelete(PATree pa);
+		public static partial PATree PATreePerformDelete(PATree pa);
 	}
 }

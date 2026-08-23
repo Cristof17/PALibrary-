@@ -3,7 +3,7 @@ using PA;
 
 namespace PA
 {
-        [StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Sequential)]
     public partial struct PAStatus
     {
         public int Visited;

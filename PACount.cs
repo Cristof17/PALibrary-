@@ -11,7 +11,7 @@ namespace PA
     [StructLayout(LayoutKind.Sequential)]
     public partial struct PACount
     {
-        internal PANumber Value;
+        public PANumber Value;
 
         [LibraryImport("pa")]
         public static partial PACount PACountPerformConstruct();
