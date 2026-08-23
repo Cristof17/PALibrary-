@@ -9,9 +9,9 @@ namespace PA
 
         PASeries Adj;
 
-        PACount N ;
+        // PACount N ;
 
-        PASeries Adj;
+        // PASeries Adj;
 
         [LibraryImport("pa")]
         internal static partial PAList PAListPerformConstruct();
