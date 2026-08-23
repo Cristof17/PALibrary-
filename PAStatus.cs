@@ -9,22 +9,22 @@ namespace PA
         public int Visited;
 
         [LibraryImport("pa")]
-        internal static partial PAStatus PAStatusPerformConstruct();
+        public static partial PAStatus PAStatusPerformConstruct();
 
         [LibraryImport("pa")]
-        internal static partial 
+        public static partial 
         PAStatus PAStatusPerformInit(PAStatus status, int visited);
 
         [LibraryImport("pa")]
-        internal static partial 
+        public static partial 
         PAStatus PAStatusPerformCopy(PAStatus from, PAStatus to);
 
         [LibraryImport("pa")]
-        internal static partial 
+        public static partial 
         PAStatus PAStatusPerformRuin(PAStatus pa);
 
         [LibraryImport("pa")]
-        internal static partial 
+        public static partial 
         PAStatus PAStatusPerformDelete(PAStatus pa);
     }
 }
