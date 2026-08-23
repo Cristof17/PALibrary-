@@ -12,15 +12,15 @@ namespace PA
         PAElement Neigh;
 
         [LibraryImport("pa")]
-        static partial PAPair PAPairPerformCopy(PAPair from, PAPair to);
+        internal static partial PAPair PAPairPerformCopy(PAPair from, PAPair to);
         [LibraryImport("pa")]
-        static partial PAPair PAPairConstruct();
+        internal static partial PAPair PAPairConstruct();
         [LibraryImport("pa")]
-        static partial PAPair PAPairInit(PAPair pair, PAElement node, PAElement neigh);
+        internal static partial PAPair PAPairInit(PAPair pair, PAElement node, PAElement neigh);
         [LibraryImport("pa")]
-        static partial int PAPairRuin(PAPair pa);
+        internal static partial int PAPairRuin(PAPair pa);
         [LibraryImport("pa")]
-        static partial int PAPairDelete(PAElement pa);
+        internal static partial int PAPairDelete(PAElement pa);
 
     }
 }

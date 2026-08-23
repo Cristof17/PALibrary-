@@ -19,17 +19,23 @@ namespace PA
         // }
 
         [LibraryImport("pa")]
-        static partial PASeries PASeriesPerformConstruct();
+        internal static partial 
+        PASeries PASeriesPerformConstruct();
         [LibraryImport("pa")]
-        static unsafe partial PASeries PASeriesPerformInit(PASeries series, PACount n, PAElement* adj);
+        internal static unsafe partial 
+        PASeries PASeriesPerformInit(PASeries series, PACount n, PAElement* adj);
         [LibraryImport("pa")]
-        static partial PASeries PASeriesPerformCopy(PASeries from, PASeries to);
+        internal static partial 
+        PASeries PASeriesPerformCopy(PASeries from, PASeries to);
         [LibraryImport("pa")]
-        static partial void PASeriesPerformPrint(PASeries series);
+        internal static partial
+        void PASeriesPerformPrint(PASeries series);
         [LibraryImport("pa")]
-        static partial PASeries PASeriesPerformRuin(PASeries pa);
+        internal static partial 
+        PASeries PASeriesPerformRuin(PASeries pa);
         [LibraryImport("pa")]
-        static partial PASeries PASeriesPerformDelete(PASeries pa);
+        internal static partial 
+        PASeries PASeriesPerformDelete(PASeries pa);
     }
 }
 // }

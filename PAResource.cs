@@ -10,14 +10,14 @@ namespace PA
         PANumber Value;
 
         [LibraryImport("pa")]
-        static partial PAResource PAResourcePerformConstruct();
+        internal static partial PAResource PAResourcePerformConstruct();
         [LibraryImport("pa")]
-        static partial PAResource PAResourcePerformInit(PAResource resource, PANumber number);
+        internal static partial PAResource PAResourcePerformInit(PAResource resource, PANumber number);
         [LibraryImport("pa")]
-        static partial PAResource PAResourcePerformCopy(PAResource from, PAResource to);
+        internal static partial PAResource PAResourcePerformCopy(PAResource from, PAResource to);
         [LibraryImport("pa")]
-        static partial int PAResourcePerformRuin(PAResource pa);
+        internal static partial int PAResourcePerformRuin(PAResource pa);
         [LibraryImport("pa")]
-        static partial int PAResourcePerformDelete(PAResource pa);
+        internal static partial int PAResourcePerformDelete(PAResource pa);
     }
 }

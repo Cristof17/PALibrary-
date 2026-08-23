@@ -1,6 +1,5 @@
 using System.ComponentModel;
 using System.Runtime.InteropServices;
-using PA;
 
 namespace PA
 {
@@ -10,14 +9,14 @@ namespace PA
         PAResource Resource;
 
         [LibraryImport("pa")]
-        static partial PAData PADataPerformConstruct();
+        internal static partial PAData PADataPerformConstruct();
         [LibraryImport("pa")]
-        static partial PAData PADataPerformInit(PAData data, PAResource resource);
+        internal static partial PAData PADataPerformInit(PAData data, PAResource resource);
         [LibraryImport("pa")]
-        static partial PAData PADataPerformCopy(PAData from, PAData to);
+        internal static partial PAData PADataPerformCopy(PAData from, PAData to);
         [LibraryImport("pa")]
-        static partial PAData PADataPerformRuin(PAData pa);
+        internal static partial PAData PADataPerformRuin(PAData pa);
         [LibraryImport("pa")]
-        static partial PAData PADataPerformDelete(PAData pa);
+        internal static partial PAData PADataPerformDelete(PAData pa);
     }
 }

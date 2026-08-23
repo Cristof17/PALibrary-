@@ -9,14 +9,14 @@ namespace PA
 		PATree Adj_trans;
 
 		[LibraryImport("pa")]
-		static partial PATransposeTree PATransposeTreePerformConstruct();
+		internal static partial PATransposeTree PATransposeTreePerformConstruct();
 		[LibraryImport("pa")]
-		static partial PATransposeTree PATransposeTreePerformInit(PATransposeTree transposeTree, PATree tree);
+		internal static partial PATransposeTree PATransposeTreePerformInit(PATransposeTree transposeTree, PATree tree);
 		[LibraryImport("pa")]
-		static partial PATransposeTree PATransposeTreePerformCopy(PATransposeTree from, PATransposeTree to);
+		internal static partial PATransposeTree PATransposeTreePerformCopy(PATransposeTree from, PATransposeTree to);
 		[LibraryImport("pa")]
-		static partial PATransposeTree PATransposeTreePerformRuin(PATransposeTree pa);
+		internal static partial PATransposeTree PATransposeTreePerformRuin(PATransposeTree pa);
 		[LibraryImport("pa")]
-		static partial PATransposeTree PATransposeTreePerformDelete(PATransposeTree pa);
+		internal static partial PATransposeTree PATransposeTreePerformDelete(PATransposeTree pa);
 	}
 }

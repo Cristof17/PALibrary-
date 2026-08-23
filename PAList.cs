@@ -14,16 +14,16 @@ namespace PA
         PASeries Adj;
 
         [LibraryImport("pa")]
-        static partial PAList PAListPerformConstruct();
+        internal static partial PAList PAListPerformConstruct();
         [LibraryImport("pa")]
-        static partial PAList PAListPerformInit(PAList list, PACount n, PASeries adj);
+        internal static partial PAList PAListPerformInit(PAList list, PACount n, PASeries adj);
         [LibraryImport("pa")]
-        static partial PAList PAListPerformCopy(PAList from, PAList to);
+        internal static partial PAList PAListPerformCopy(PAList from, PAList to);
         [LibraryImport("pa")]
-        static partial PAList PAListPerformRuin(PAList PA);
+        internal static partial PAList PAListPerformRuin(PAList PA);
         [LibraryImport("pa")]
-        static partial PAList PAListPerformDelete(PAList PA);
+        internal static partial PAList PAListPerformDelete(PAList PA);
         [LibraryImport("pa")]
-        static partial void PAListPerformPrint(PAList List);
+        internal static partial void PAListPerformPrint(PAList List);
     }
 }

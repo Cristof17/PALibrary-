@@ -10,15 +10,15 @@ namespace PA
         int Value;
 
         [LibraryImport("pa")]
-        static partial PANumber PANumberPerformConstruct();
+        internal static partial PANumber PANumberPerformConstruct();
         [LibraryImport("pa")]
-        static partial PANumber PANumberPerformInit(PANumber Number, int Value);
+        internal static partial PANumber PANumberPerformInit(PANumber Number, int Value);
         [LibraryImport("pa")]
-        static partial PANumber PANumberPerformCopy(PANumber from, PANumber to);
+        internal static partial PANumber PANumberPerformCopy(PANumber from, PANumber to);
         [LibraryImport("pa")]
-        static partial PANumber PANumberPerformRuin(PANumber pa);
+        internal static partial PANumber PANumberPerformRuin(PANumber pa);
         [LibraryImport("pa")]
-        static partial PANumber PANumberPerformDelete(PANumber pa);
+        internal static partial PANumber PANumberPerformDelete(PANumber pa);
 
         // public static bool operator <(PANumber a, PANumber b) => a._value < b._value;
         // public static bool operator >(PANumber a, PANumber b) => a._value > b._value;

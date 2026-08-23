@@ -9,16 +9,16 @@ namespace PA
         BFSRecord Result;
 
         [LibraryImport("pa")]
-        static partial PAOutput PAOutputPerformConstruct();
+        internal static partial PAOutput PAOutputPerformConstruct();
         [LibraryImport("pa")]
-        static partial PAOutput PAOutputPerformInit(PAOutput output, BFSRecord record);
+        internal static partial PAOutput PAOutputPerformInit(PAOutput output, BFSRecord record);
         [LibraryImport("pa")]
-        static partial PAOutput PAOutputPerformCopy(PAOutput from, PAOutput to);
+        internal static partial PAOutput PAOutputPerformCopy(PAOutput from, PAOutput to);
         [LibraryImport("pa")]
-        static partial void PAOutputPerformRuin(PAOutput pa);
+        internal static partial void PAOutputPerformRuin(PAOutput pa);
         [LibraryImport("pa")]
-        static partial void PAOutputPerformDelete(PAOutput pa);
+        internal static partial void PAOutputPerformDelete(PAOutput pa);
         [LibraryImport("pa")]
-        static partial void PAOutputPerformPrint(int result);
+        internal static partial void PAOutputPerformPrint(int result);
     }
 }
