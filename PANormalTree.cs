@@ -5,21 +5,9 @@ namespace PA
 {
 	public readonly partial struct PANormalTree
 	{
-		public readonly PATree Adj
-        {
-			get
-            {
-				return _adj;
-            }
-        }
+		public readonly PATree Adj => _adj;
 
-		public PAElement this[PAElement node]
-        {
-            get
-            {
-                return _adj[node];
-            }
-        }
+		public PAElement this[PAElement node] => _adj[node];
 
 		internal readonly PATree _adj;
 

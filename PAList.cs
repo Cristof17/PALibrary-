@@ -5,29 +5,11 @@ namespace PA
 {
     public readonly partial struct PAList
     {
-        public readonly PACount N
-        {
-            get
-            {
-                return _n;
-            }
-        } 
+        public readonly PACount N => _n;
 
-        public readonly PASeries Adj
-        {
-            get
-            {
-                return _adj; 
-            }
-        }
+        public readonly PASeries Adj => _adj;
 
-        public PAElement this[PAElement node]
-        {
-            get
-            {
-                return _adj[node];
-            }
-        }
+        public PAElement this[PAElement node] => _adj[node];
 
         internal readonly PACount _n;
 

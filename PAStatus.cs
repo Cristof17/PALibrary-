@@ -5,13 +5,7 @@ namespace PA
 {
     public readonly partial struct PAStatus
     {
-        public readonly int Visited
-        {
-            get
-            {
-                return _visited;   
-            }
-        }
+        public readonly int Visited => Visited;
 
         internal readonly int _visited;
 

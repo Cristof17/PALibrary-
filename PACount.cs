@@ -9,13 +9,7 @@ namespace PA
     public readonly partial struct PACount
     {
 
-        public readonly PANumber Value
-        {
-            get
-            {
-                return _value; 
-            }
-        } 
+        public readonly PANumber Value => _value;
 
         internal readonly PANumber _value;
 

@@ -5,13 +5,7 @@ namespace PA
 {
 	public readonly partial struct PALink
 	{
-		public readonly PAPair Pair
-        { 
-			get
-            {
-				return _p;
-            }
-        } 
+		public readonly PAPair Pair => _p;
 
 		internal readonly PAPair _p;
 

@@ -6,13 +6,7 @@ namespace PA
 {
     public readonly partial struct PANumber
     {
-        public readonly int Value
-        {
-            get
-            {
-                return _value; 
-            }
-        } 
+        public readonly int Value => _value;
 
         internal readonly int _value;
 

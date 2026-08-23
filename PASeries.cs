@@ -7,13 +7,7 @@ namespace PA
 {
     public readonly partial struct PASeries
     {
-        public readonly PACount M
-        {
-            get
-            {
-                return _m;
-            }
-        }
+        public readonly PACount M => _m;
 
         // public readonly unsafe PAElement* Adj;
         // {
@@ -23,16 +17,7 @@ namespace PA
         //     // } 
         // }
 
-        public PAElement this[PAElement node]
-        {
-            get
-            {
-                PAElement element = PAElement.PAElementPerformConstruct();
-                return element;
-                // return _array[node];
-                //get element at position node
-            }
-        }
+        public PAElement this[PAElement node] => node;
 
         internal readonly PACount _m;
 

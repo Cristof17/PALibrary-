@@ -6,21 +6,9 @@ namespace PA
     public readonly partial struct PAPair
     {
 
-        public readonly PAElement Node
-        {
-            get
-            {
-                return _node; 
-            }
-        } 
+        public readonly PAElement Node => _node;
 
-        public readonly PAElement Neigh
-        {
-            get
-            {
-                return  _neigh;;  
-            }
-        } 
+        public readonly PAElement Neigh => _neigh;
 
         internal readonly PAElement _node;
 

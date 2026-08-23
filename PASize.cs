@@ -6,29 +6,11 @@ namespace PA
     {
         internal readonly unsafe byte* _digits;
         internal readonly unsafe byte* _value;
-        internal readonly unsafe ulong size;
+        internal readonly unsafe ulong _size;
 
-        public unsafe byte* Digits
-        {
-            get
-            {
-                return _digits;
-            }
-        }
-        public unsafe byte* Value
-        {
-            get
-            {
-                return _value;
-            }
-        }
+        public unsafe byte* Digits => _digits;
+        public unsafe byte* Value => _value;
 
-        public ulong Size
-        {
-            get
-            {
-                return size;
-            }
-        }
+        public ulong Size => _size;
     }
 }

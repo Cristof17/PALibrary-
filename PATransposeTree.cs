@@ -5,21 +5,9 @@ namespace PA
 {
 	public readonly partial struct PATransposeTree
 	{
-		public readonly PATree Adj_trans
-        {
-        	get
-            {
-                return  _adj_trans;
-            }   
-        }
+		public readonly PATree Adj_trans => _adj_trans;
 
-		public PAElement this[PAElement node]
-        {
-			get
-			{
-				return _adj_trans[node];
-			}
-        }
+		public PAElement this[PAElement node] => _adj_trans[node];
 
 		internal readonly PATree _adj_trans;
 
