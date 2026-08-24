@@ -10,10 +10,6 @@ namespace PA
 
         ArrayList Array;
 
-        // internal readonly PACount _m;
-
-        // internal readonly ArrayList _array;
-
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformConstruct();
         [LibraryImport("pa")]

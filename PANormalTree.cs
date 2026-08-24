@@ -7,8 +7,6 @@ namespace PA
 	{
 		PATree Pa;
 
-		// internal readonly PATree _pa;
-
 		[LibraryImport("pa")]
 		public static partial PANormalTree PANormalTreePerformConstruct();
 		[LibraryImport("pa")]

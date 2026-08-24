@@ -9,10 +9,6 @@ namespace PA
 
         PASeries Adj;
 
-        // internal readonly PACount _n;
-
-        // internal readonly PASeries _adj;
-
         [LibraryImport("pa")]
         public static partial PAList PAListPerformConstruct();
         [LibraryImport("pa")]

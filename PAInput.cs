@@ -16,14 +16,6 @@ namespace PA
 
         PAElement Sursa;
         
-        // internal readonly PACount _n;
-
-        // internal readonly PACount _m;
-
-        // internal readonly PAList _adj;
-
-        // internal readonly PAElement _sursa;
-
         [LibraryImport("pa")]
         public static partial PAInput PAInputPerformConstruct();
         [LibraryImport("pa")]

@@ -10,12 +10,6 @@ namespace PA
     {
 
         PANumber Value;
-        // {
-        //     get => _value;
-        // } 
-        // => _value;
-
-        // internal readonly PANumber _value;
 
         [LibraryImport("pa")]
         public static partial PACount PACountPerformConstruct();

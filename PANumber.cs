@@ -8,8 +8,6 @@ namespace PA
     {
         int Value;
 
-        // internal readonly int _value;
-
         [LibraryImport("pa")]
         public static partial PANumber PANumberPerformConstruct();
         [LibraryImport("pa")]

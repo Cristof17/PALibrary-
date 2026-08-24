@@ -7,8 +7,6 @@ namespace PA
 	{
 		PAPair Pair;
 
-		// internal readonly PAPair _p;
-
 		[LibraryImport("pa")]
 		public static partial PALink PALinkPerformConstruct();
 		[LibraryImport("pa")]

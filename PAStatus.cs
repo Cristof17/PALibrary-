@@ -7,8 +7,6 @@ namespace PA
     {
         int Visited;
 
-        // internal readonly int _visited;
-
         [LibraryImport("pa")]
         internal static partial 
         PAStatus PAStatusPerformConstruct();

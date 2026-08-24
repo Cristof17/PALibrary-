@@ -10,10 +10,6 @@ namespace PA
 
         PAElement Neigh;
 
-        // internal readonly PAElement _node;
-
-        // internal readonly PAElement _neigh;
-
         [LibraryImport("pa")]
         public static partial PAPair PAPairConstruct();
         [LibraryImport("pa")]

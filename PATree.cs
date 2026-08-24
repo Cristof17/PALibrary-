@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 using PA;
 namespace PA
 {
-	public readonly partial struct PATree
+	public partial struct PATree
 	{
 
 		PACount N;
@@ -17,14 +17,6 @@ namespace PA
 		PAList Adj;
 
 		PAElement Sursa;
-
-		// internal readonly PACount _n;
-
-		// internal readonly PACount _m;
-
-		// internal readonly PAList _adj;
-
-		// internal readonly PAElement _sursa;
 
 		[LibraryImport("pa")]
 		internal static partial PATree PATreePerformConstruct();

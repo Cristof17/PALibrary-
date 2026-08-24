@@ -12,13 +12,6 @@ namespace PA
 
         PAList Adj;
 
-        // internal readonly PAData _index;
-
-        // internal readonly PAStatus _status;
-
-        // internal readonly PAList _next;
-
-
         [LibraryImport("pa")]
         public static partial PAElement PAElementPerformConstruct();
         [LibraryImport("pa")]

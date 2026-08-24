@@ -7,8 +7,6 @@ namespace PA
 	{
 		PATree Adj_trans;
 
-		// internal readonly PATree _adj_trans;
-
 		[LibraryImport("pa")]
 		internal static partial PATransposeTree PATransposeTreePerformConstruct();
 		[LibraryImport("pa")]

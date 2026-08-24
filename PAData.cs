@@ -7,12 +7,6 @@ namespace PA
     public readonly partial struct PAData
     {
         PAResource Resource;
-        // {
-        //     get => _resource;
-        // }
-        //  => _resource;
-        
-        // internal readonly PAResource _resource;
 
         [LibraryImport("pa")]
         public static partial PAData PADataPerformConstruct();
