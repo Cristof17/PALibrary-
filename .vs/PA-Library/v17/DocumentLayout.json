@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\crist\\source\\repos\\PA-Library\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PA-Library.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PANod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PA-Library\\PANod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\BFSAlgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PA-Library\\BFSAlgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\BFSResult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PA-Library\\BFSResult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PANod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PA-Library\\PANod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PALista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -114,50 +106,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BFSResult.cs",
-              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\BFSResult.cs",
-              "RelativeDocumentMoniker": "PA-Library\\BFSResult.cs",
-              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\BFSResult.cs",
-              "RelativeToolTip": "PA-Library\\BFSResult.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAlwBEAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T10:23:00.015Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "PANod.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PANod.cs",
               "RelativeDocumentMoniker": "PA-Library\\PANod.cs",
               "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PANod.cs",
               "RelativeToolTip": "PA-Library\\PANod.cs",
-              "ViewState": "AgIAAJIAAAAAAAAAAAAgwJgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-27T09:28:25.265Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PA-Library.csproj",
-              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library.csproj",
-              "RelativeDocumentMoniker": "PA-Library.csproj",
-              "ToolTip": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library.csproj",
-              "RelativeToolTip": "PA-Library.csproj",
-              "ViewState": "AgIAAAoAAAAAAAAAAADwvxcAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-06-30T06:23:47.173Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "PALista.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PALista.cs",
               "RelativeDocumentMoniker": "PA-Library\\PALista.cs",
@@ -169,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "BFSInput.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\BFSInput.cs",
               "RelativeDocumentMoniker": "PA-Library\\BFSInput.cs",
@@ -192,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "PAData.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PAData.cs",
               "RelativeDocumentMoniker": "PA-Library\\PAData.cs",
@@ -204,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "BFSOutput.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\BFSOutput.cs",
               "RelativeDocumentMoniker": "PA-Library\\BFSOutput.cs",
@@ -216,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "PAMuchie.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PAMuchie.cs",
               "RelativeDocumentMoniker": "PA-Library\\PAMuchie.cs",
@@ -228,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "PAGraf.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PAGraf.cs",
               "RelativeDocumentMoniker": "PA-Library\\PAGraf.cs",
@@ -240,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "PAStare.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PAStare.cs",
               "RelativeDocumentMoniker": "PA-Library\\PAStare.cs",
@@ -252,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "PACardinal.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PACardinal.cs",
               "RelativeDocumentMoniker": "PA-Library\\PACardinal.cs",
@@ -264,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "AdjacencyList.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\AdjacencyList.cs",
               "RelativeDocumentMoniker": "PA-Library\\AdjacencyList.cs",
@@ -276,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "Algorithm.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\Algorithm.cs",
               "RelativeDocumentMoniker": "PA-Library\\Algorithm.cs",
@@ -288,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "PARezultat.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PARezultat.cs",
               "RelativeDocumentMoniker": "PA-Library\\PARezultat.cs",
@@ -300,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "PAPereche.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\PAPereche.cs",
               "RelativeDocumentMoniker": "PA-Library\\PAPereche.cs",
@@ -312,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "Edge.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\Edge.cs",
               "RelativeDocumentMoniker": "PA-Library\\Edge.cs",
@@ -324,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 15,
               "Title": "BFSState.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\BFSState.cs",
               "RelativeDocumentMoniker": "PA-Library\\BFSState.cs",
@@ -336,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 16,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\Program.cs",
               "RelativeDocumentMoniker": "PA-Library\\Program.cs",
@@ -348,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 17,
               "Title": "EqualityComparerBFS.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\EqualityComparerBFS.cs",
               "RelativeDocumentMoniker": "PA-Library\\EqualityComparerBFS.cs",
@@ -360,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 18,
               "Title": "bfs.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\bfs.cs",
               "RelativeDocumentMoniker": "PA-Library\\bfs.cs",
@@ -372,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 19,
               "Title": "Output.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\Output.cs",
               "RelativeDocumentMoniker": "PA-Library\\Output.cs",
@@ -384,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 20,
               "Title": "Set.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\Set.cs",
               "RelativeDocumentMoniker": "PA-Library\\Set.cs",
@@ -396,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 21,
               "Title": "Input.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\Input.cs",
               "RelativeDocumentMoniker": "PA-Library\\Input.cs",
@@ -408,7 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 22,
               "Title": "Node.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\Node.cs",
               "RelativeDocumentMoniker": "PA-Library\\Node.cs",
@@ -420,7 +385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 23,
               "Title": "State.cs",
               "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library\\State.cs",
               "RelativeDocumentMoniker": "PA-Library\\State.cs",
@@ -429,10 +394,6 @@
               "ViewState": "AgIAADwAAACAeyZh7L0gwBgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-01T11:19:43.925Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

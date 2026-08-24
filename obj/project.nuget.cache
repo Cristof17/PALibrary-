@@ -1,11 +1,45 @@
 {
   "version": 2,
-  "dgSpecHash": "XQbSs7XmJSY=",
-  "success": true,
-  "projectFilePath": "/Users/cristoforrotsching/Downloads/PALibrary--main/PA-Library.csproj",
-  "expectedPackageFiles": [
-    "/Users/cristoforrotsching/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
-    "/Users/cristoforrotsching/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512"
-  ],
-  "logs": []
+  "dgSpecHash": "olGdtQh9VEI=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.\r\n  An error occurred while sending the request.\r\n  The remote name could not be resolved: 'api.nuget.org'",
+      "projectPath": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library.csproj",
+      "filePath": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library.csproj",
+      "libraryId": "Microsoft.WindowsDesktop.App.Ref",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.\r\n  An error occurred while sending the request.\r\n  The remote name could not be resolved: 'api.nuget.org'",
+      "projectPath": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library.csproj",
+      "filePath": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library.csproj",
+      "libraryId": "Microsoft.NETCore.App.Ref",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.\r\n  An error occurred while sending the request.\r\n  The remote name could not be resolved: 'api.nuget.org'",
+      "projectPath": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library.csproj",
+      "filePath": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library.csproj",
+      "libraryId": "Microsoft.AspNetCore.App.Ref",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "projectPath": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\crist\\source\\repos\\PA-Library\\PA-Library.csproj",
+      "targetGraphs": []
+    }
+  ]
 }
