@@ -5,21 +5,13 @@ namespace PA
 {
     public readonly partial struct PAList
     {
-        public readonly PACount N
-        {
-            get => _n;
-                
-        } 
+        PACount N;
 
-        public readonly PASeries Adj
-        {
-            get => _adj;
-            
-        } 
+        PASeries Adj;
 
-        internal readonly PACount _n;
+        // internal readonly PACount _n;
 
-        internal readonly PASeries _adj;
+        // internal readonly PASeries _adj;
 
         [LibraryImport("pa")]
         public static partial PAList PAListPerformConstruct();

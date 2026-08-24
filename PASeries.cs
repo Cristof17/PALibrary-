@@ -6,21 +6,13 @@ namespace PA
 {
     public readonly partial struct PASeries
     {
-        public readonly PACount M
-        {
-            get => _m;
-            
-        } 
+        PACount M;
 
-        public readonly ArrayList Array
-        {
-            get => _array;
-            
-        } 
+        ArrayList Array;
 
-        internal readonly PACount _m;
+        // internal readonly PACount _m;
 
-        internal readonly ArrayList _array;
+        // internal readonly ArrayList _array;
 
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformConstruct();

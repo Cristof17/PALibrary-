@@ -9,13 +9,13 @@ namespace PA
     public readonly partial struct PACount
     {
 
-        public readonly PANumber Value
-        {
-            get => _value;
-        } 
+        PANumber Value;
+        // {
+        //     get => _value;
+        // } 
         // => _value;
 
-        internal readonly PANumber _value;
+        // internal readonly PANumber _value;
 
         [LibraryImport("pa")]
         public static partial PACount PACountPerformConstruct();
@@ -27,10 +27,6 @@ namespace PA
         public static partial PACount PACountPerformRuin(PACount pa);
         [LibraryImport("pa")]
         public static partial PACount PACountPerformDelete(PACount pa);
-
-        public static bool operator <(PACount a, PACount b) => a._value < b._value;
-        public static bool operator >(PACount a, PACount b) => a._value > b._value;
-        public static implicit operator int(PACount count) => (int)count._value;
 
     }
 }

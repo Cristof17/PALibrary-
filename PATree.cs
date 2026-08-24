@@ -10,37 +10,21 @@ namespace PA
 	public readonly partial struct PATree
 	{
 
-		public readonly PACount N
-        {
-			get => _n;
-            
-        } 
+		PACount N;
 
-		public readonly PACount M
-        {
-			get => _m;
-            
-        } 
+		PACount M;
 
-		public readonly PAList Adj
-        {
-			get => _adj;
-            
-        } 
+		PAList Adj;
 
-		public readonly PAElement Sursa
-        {
-			get => _sursa;
-            
-        } 
+		PAElement Sursa;
 
-		internal readonly PACount _n;
+		// internal readonly PACount _n;
 
-		internal readonly PACount _m;
+		// internal readonly PACount _m;
 
-		internal readonly PAList _adj;
+		// internal readonly PAList _adj;
 
-		internal readonly PAElement _sursa;
+		// internal readonly PAElement _sursa;
 
 		[LibraryImport("pa")]
 		internal static partial PATree PATreePerformConstruct();
