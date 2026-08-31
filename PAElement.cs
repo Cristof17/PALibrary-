@@ -10,7 +10,7 @@ namespace PA
 
         PAStatus Status;
 
-        PAList Adj;
+        PAElement* Next;
 
         [LibraryImport("pa")]
         public static partial PAElement PAElementPerformConstruct();
