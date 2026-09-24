@@ -28,7 +28,7 @@ namespace PA
         [LibraryImport("pa")]
         public static partial PAInput PAInputPerformDelete(PAInput pa);
         [LibraryImport("pa")]
-        public static partial PAInput PAInputPerformRuin(PAInput);
+        public static partial PAInput PAInputPerformRuin(PAInput PA);
         [LibraryImport("pa")]
         public static partial PAInput PAInputPerformDelete(PAInput i);
         [LibraryImport("pa")]

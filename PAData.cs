@@ -25,6 +25,6 @@ namespace PA
         [LibraryImport("pa")]
         public static partial PAResult PADataOperatorGreater(PAData one,PAData other);
         [LibraryImport("pa")]
-        public static partial PAResult PADataOperatorNotEqual(PAData,PAData);
+        public static partial PAResult PADataOperatorNotEqual(PAData one,PAData other);
     }
 }
