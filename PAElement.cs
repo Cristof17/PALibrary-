@@ -26,5 +26,13 @@ namespace PA
         public static partial int PAElementIsVisited(PAElement element);
         [LibraryImport("pa")]
         public static partial void PAElementReset(PAElement element);
+        [LibraryImport("pa")]
+        PAResult PAElementOperatorLess(PAElement one, PAElement other);
+        [LibraryImport("pa")]
+        PAResult PAElementOperatorEqual(PAElement one,PAElement other);
+        [LibraryImport("pa")]
+        PAResult PAElementOperatorGreater(PAElement one, PAElement other);
+        [LibraryImport("pa")]
+        PAResult PAElementOperatorNotEqual(PAElement one, PAElement other);
     }
 }

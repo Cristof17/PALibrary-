@@ -19,11 +19,11 @@ namespace PA
         [LibraryImport("pa")]
         public static partial PAData PADataPerformDelete(PAData pa);
         [LibraryImport("pa")]
-        PAResult PADataOperatorLess(PAData, PAData);
+        PAResult PADataOperatorLess(PAData one, PAData other);
         [LibraryImport("pa")]
-        PAResult PADataOperatorEqual(PAData,PAData);
+        PAResult PADataOperatorEqual(PAData one,PAData other);
         [LibraryImport("pa")]
-        PAResult PADataOperatorGreater(PAData,PAData);
+        PAResult PADataOperatorGreater(PAData one,PAData other);
         [LibraryImport("pa")]
         PAResult PADataOperatorNotEqual(PAData,PAData);
     }
