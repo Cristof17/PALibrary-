@@ -28,5 +28,9 @@ namespace PA
 		internal static partial PATree PATreePerformRuin(PATree pa);
 		[LibraryImport("pa")]
 		internal static partial PATree PATreePerformDelete(PATree pa);
+		[LibraryImport("pa")]
+		PAResult PATreeOperatorEqual(PATree one, PATree other);
+		[LibraryImport("pa")]
+		PAResult PATreeOperatorNotEqual(PATree one, PATree other);
 	}
 }
