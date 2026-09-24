@@ -27,6 +27,13 @@ namespace PA
         public static partial void PAInputRuin(PAInput pa);
         [LibraryImport("pa")]
         public static partial PAInput PAInputPerformDelete(PAInput pa);
-
+        [LibraryImport("pa")]
+        PAInput PAInputPerformRuin(PAInput);
+        [LibraryImport("pa")]
+        PAInput PAInputPerformDelete(PAInput i);
+        [LibraryImport("pa")]
+        PAResult PAInputOperatorEqual(PAInput one, PAInput other);
+        [LibraryImport("pa")]
+        PAResult PAInputOperatorNotEqual(PAInput one, PAInput other);
     }
 }
