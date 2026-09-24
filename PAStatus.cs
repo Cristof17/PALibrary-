@@ -26,5 +26,9 @@ namespace PA
         [LibraryImport("pa")]
         internal static partial 
         PAStatus PAStatusPerformDelete(PAStatus pa);
+[       LibraryImport("pa")]
+        PAResult PAStatusOperatorNotEqual(PAStatus one,PAStatus other);
+        [LibraryImport("pa")]
+        PAResult PAStatusOperatorEqual(PAStatus one,PAStatus other);
     }
 }

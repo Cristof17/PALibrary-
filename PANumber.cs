@@ -18,5 +18,13 @@ namespace PA
         public static partial PANumber PANumberPerformRuin(PANumber pa);
         [LibraryImport("pa")]
         public static partial PANumber PANumberPerformDelete(PANumber pa);
+        [LibraryImport("pa")]
+        PAResult PANumberOperatorEqual(PANumber one, PANumber other);
+        [LibraryImport("pa")]
+        PAResult PANumberOperatorNotEqual(PANumber one, PANumber other);
+        [LibraryImport("pa")]
+        PAResult PANumberOperatorLess(PANumber one, PANumber other);
+        [LibraryImport("pa")]
+        PAResult PANumberOperatorGreater(PANumber one, PANumber other);
     }
 }
