@@ -19,16 +19,12 @@ namespace PA
         [LibraryImport("pa")]
         public static partial int PAPairDelete(PAElement pa);
         [LibraryImport("pa")]
-        PAResult PAPairOperatorEqual(PAPair other,PAPair one);
+        public static partial PAResult PAResourceOperatorLess(PAResource one,PAResource other);
         [LibraryImport("pa")]
-        PAResult PAPairOperatorNotEqual(PAPair one,PAPair other);
+        public static partial PAResult PAResourceOperatorGreater(PAResource one,PAResource other);
         [LibraryImport("pa")]
-        PAResult PAResourceOperatorLess(PAResource one,PAResource other);
+        public static partial PAResult PAResourceOperatorEqual(PAResource one,PAResource other);
         [LibraryImport("pa")]
-        PAResult PAResourceOperatorGreater(PAResource one,PAResource other);
-        [LibraryImport("pa")]
-        PAResult PAResourceOperatorEqual(PAResource one,PAResource other);
-        [LibraryImport("pa")]
-        PAResult PAResourceOperatorNotEqual(PAResource one,PAResource other);
+        public static partial PAResult PAResourceOperatorNotEqual(PAResource one,PAResource other);
     } 
 }

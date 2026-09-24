@@ -18,8 +18,8 @@ namespace PA
 		[LibraryImport("pa")]
 		public static partial PANormalTree PANormalTreePerformDelete(PANormalTree pa);
 		[LibraryImport("pa")]
-		PAResult PANormalTreeOperatorEqual(PANormalTree one, PANormalTree other);
+		public static partial PAResult PANormalTreeOperatorEqual(PANormalTree one, PANormalTree other);
 		[LibraryImport("pa")]
-		PAResult PANormalTreeOperatorNotEqual(PANormalTree one, PANormalTree other);
+		public static partial PAResult PANormalTreeOperatorNotEqual(PANormalTree one, PANormalTree other);
 	}
 }

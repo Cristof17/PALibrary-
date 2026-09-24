@@ -22,15 +22,15 @@ namespace PA
         [LibraryImport("pa")]
         public static partial PACount PACountPerformDelete(PACount pa);
         [LibraryImport("pa")]
-        PACount PACountPerformDelete(PACount PA);
+        public static partial PACount PACountPerformDelete(PACount PA);
         [LibraryImport("pa")]
-        PAResult PACountOperatorLess(PACount one,PACount other);
+        public static partial PAResult PACountOperatorLess(PACount one,PACount other);
         [LibraryImport("pa")]
-        PAResult PACountOperatorEqual(PACount one,PACount other);
+        public static partial PAResult PACountOperatorEqual(PACount one,PACount other);
         [LibraryImport("pa")]
-        PAResult PACountOperatorGreater(PACount one,PACount other);
+        public static partial PAResult PACountOperatorGreater(PACount one,PACount other);
         [LibraryImport("pa")]
-        PAResult PACountOperatorNotEqual(PACount one, PACount other);
+        public static partial PAResult PACountOperatorNotEqual(PACount one, PACount other);
 
     }
 }

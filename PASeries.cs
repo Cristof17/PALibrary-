@@ -23,9 +23,9 @@ namespace PA
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformDelete(PASeries pa);
         [LibraryImport("pa")]
-        PAResult PASeriesOperatorEqual(PASeries one,PASeries other);
+        public static partial PAResult PASeriesOperatorEqual(PASeries one,PASeries other);
         [LibraryImport("pa")]
-        PAResult PASeriesOperatorNotEqual(PASeries one,PASeries other);
+        public static partial PAResult PASeriesOperatorNotEqual(PASeries one,PASeries other);
     }
 }
 // }

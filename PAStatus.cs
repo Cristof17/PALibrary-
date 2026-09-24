@@ -21,14 +21,14 @@ namespace PA
 
         [LibraryImport("pa")]
         internal static partial 
-        PAStatus PAStatusPerformRuin(PAStatus pa);
+        internal static partial PAStatus PAStatusPerformRuin(PAStatus pa);
 
         [LibraryImport("pa")]
         internal static partial 
-        PAStatus PAStatusPerformDelete(PAStatus pa);
+        internal static partial PAStatus PAStatusPerformDelete(PAStatus pa);
 [       LibraryImport("pa")]
-        PAResult PAStatusOperatorNotEqual(PAStatus one,PAStatus other);
+        internal static partial PAResult PAStatusOperatorNotEqual(PAStatus one,PAStatus other);
         [LibraryImport("pa")]
-        PAResult PAStatusOperatorEqual(PAStatus one,PAStatus other);
+        internal static partial PAResult PAStatusOperatorEqual(PAStatus one,PAStatus other);
     }
 }

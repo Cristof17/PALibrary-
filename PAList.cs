@@ -22,8 +22,8 @@ namespace PA
         [LibraryImport("pa")]
         public static partial void PAListPerformPrint(PAList List);
         [LibraryImport("pa")]
-        PAResult PAListOperatorEqual(PAList one, PAList other);
+        public static partial PAResult PAListOperatorEqual(PAList one, PAList other);
         [LibraryImport("pa")]
-        PAResult PAListOperatorNotEqual(PAList one, PAList other);
+        public static partial PAResult PAListOperatorNotEqual(PAList one, PAList other);
     }
 }

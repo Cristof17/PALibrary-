@@ -27,12 +27,12 @@ namespace PA
         [LibraryImport("pa")]
         public static partial void PAElementReset(PAElement element);
         [LibraryImport("pa")]
-        PAResult PAElementOperatorLess(PAElement one, PAElement other);
+        public static partial PAResult PAElementOperatorLess(PAElement one, PAElement other);
         [LibraryImport("pa")]
-        PAResult PAElementOperatorEqual(PAElement one,PAElement other);
+        public static partial PAResult PAElementOperatorEqual(PAElement one,PAElement other);
         [LibraryImport("pa")]
-        PAResult PAElementOperatorGreater(PAElement one, PAElement other);
+        public static partial PAResult PAElementOperatorGreater(PAElement one, PAElement other);
         [LibraryImport("pa")]
-        PAResult PAElementOperatorNotEqual(PAElement one, PAElement other);
+        public static partial PAResult PAElementOperatorNotEqual(PAElement one, PAElement other);
     }
 }

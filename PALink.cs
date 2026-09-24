@@ -18,8 +18,8 @@ namespace PA
 		[LibraryImport("pa")]
 		public static partial PALink PALinkPerformDelete(PALink pa);
 		[LibraryImport("pa")]
-		PAResult PALinkOperatorEqual(PALink one, PALink other);
+		public static partial PAResult PALinkOperatorEqual(PALink one, PALink other);
 		[LibraryImport("pa")]
-		PAResult PALinkOperatorNotEqual(PALink one, PALink other);
+		public static partial PAResult PALinkOperatorNotEqual(PALink one, PALink other);
 	}
 }

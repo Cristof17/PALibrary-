@@ -18,5 +18,14 @@ namespace PA
         public static partial int PAResourcePerformRuin(PAResource pa);
         [LibraryImport("pa")]
         internal static partial int PAResourcePerformDelete(PAResource pa);
+        [LibraryImport("pa")]
+        internal static partial PAResult PAResourceOperatorLess(PAResource one,PAResource other);
+        [LibraryImport("pa")]        [LibraryImport("pa")]
+        internal static partial PAResult PAResourceOperatorGreater(PAResource one,PAResource other);
+        [LibraryImport("pa")]
+        internal static partial PAResult PAResourceOperatorEqual(PAResource one,PAResource other);
+        [LibraryImport("pa")]
+        internal static partial PAResult PAResourceOperatorNotEqual(PAResource one,PAResource other);
+
     }
 }

@@ -20,8 +20,8 @@ namespace PA
         [LibraryImport("pa")]
         public static partial void PAOutputPerformPrint(int result);
         [LibraryImport("pa")]
-        PAResult PAOutputOperatorEqual(PAOutput on, PAOutput other);
+        public static partial PAResult PAOutputOperatorEqual(PAOutput on, PAOutput other);
         [LibraryImport("pa")]
-        PAResult PAOutputOperatorNotEqual(PAOutput one,PAOutput other);
+        public static partial PAResult PAOutputOperatorNotEqual(PAOutput one,PAOutput other);
     }
 }
