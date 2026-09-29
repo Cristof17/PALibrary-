@@ -21,7 +21,6 @@ namespace PA
         public static partial PAList PAListPerformRuin(PAList PA);
         [LibraryImport("pa")]
         public static partial PAList PAListPerformDelete(PAList PA);
-        [LibraryImport("pa")]
 
         public PAElement this[PAElement element]
         {
@@ -30,6 +29,7 @@ namespace PA
                 return Adj[element];
             }
         }
+        [LibraryImport("pa")]
         public static partial void PAListPerformPrint(PAList List);
 
         public static bool operator==(PAList one, PAList other) => (one._n == other._n) && (one._adj == other._adj);
