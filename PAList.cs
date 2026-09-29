@@ -7,9 +7,9 @@ namespace PA
 {
     public readonly partial struct PAList
     {
-        PACount N;
+        readonly PACount N;
 
-        PASeries Adj;
+        readonly PASeries Adj;
 
         [LibraryImport("pa")]
         public static partial PAList PAListPerformConstruct();
@@ -22,6 +22,14 @@ namespace PA
         [LibraryImport("pa")]
         public static partial PAList PAListPerformDelete(PAList PA);
         [LibraryImport("pa")]
+
+        public PAElement this[PAElement element]
+        {
+            get
+            {
+                return Adj[element];
+            }
+        }
         public static partial void PAListPerformPrint(PAList List);
 
         public static bool operator==(PAList one, PAList other) => (one._n == other._n) && (one._adj == other._adj);

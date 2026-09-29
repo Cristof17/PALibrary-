@@ -4,6 +4,7 @@
 using System;
 using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
+using System.Xml.Serialization;
 using PA;
 namespace PA
 {
@@ -32,5 +33,13 @@ namespace PA
 		internal static partial PAResult PATreeOperatorEqual(PATree one, PATree other);
 		[LibraryImport("pa")]
 		internal static partial PAResult PATreeOperatorNotEqual(PATree one, PATree other);
+
+		internal PAElement this[PAElement element]
+        {
+			get
+            {
+            	return Adj[element];
+            }
+        }
 	}
 }
