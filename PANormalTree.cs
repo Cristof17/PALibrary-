@@ -5,7 +5,23 @@ namespace PA
 {
 	public readonly partial struct PANormalTree
 	{
-		PATree Pa;
+		public readonly PATree Adj
+        {
+			get
+            {
+				return _adj;
+            }
+        }
+
+		public PAElement this[PAElement node]
+        {
+            get
+            {
+                return _adj[node];
+            }
+        }
+
+		internal readonly PATree _adj;
 
 		[LibraryImport("pa")]
 		public static partial PANormalTree PANormalTreePerformConstruct();
@@ -17,9 +33,6 @@ namespace PA
 		public static partial PANormalTree PANormalTreePerformRuin(PANormalTree pa);
 		[LibraryImport("pa")]
 		public static partial PANormalTree PANormalTreePerformDelete(PANormalTree pa);
-		[LibraryImport("pa")]
-		public static partial PAResult PANormalTreeOperatorEqual(PANormalTree one, PANormalTree other);
-		[LibraryImport("pa")]
-		public static partial PAResult PANormalTreeOperatorNotEqual(PANormalTree one, PANormalTree other);
+		
 	}
 }

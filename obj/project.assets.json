@@ -1,0 +1,84 @@
+{
+  "version": 4,
+  "targets": {
+    "net70": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net70": []
+  },
+  "packageFolders": {
+    "/Users/cristoforrotsching/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/cristoforrotsching/Downloads/PALibrary--main/PA-Library.csproj",
+      "projectName": "PA-Library",
+      "projectPath": "/Users/cristoforrotsching/Downloads/PALibrary--main/PA-Library.csproj",
+      "packagesPath": "/Users/cristoforrotsching/.nuget/packages/",
+      "outputPath": "/Users/cristoforrotsching/Downloads/PALibrary--main/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/cristoforrotsching/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net70"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net70": {
+          "framework": "net7.0",
+          "targetAlias": "net70",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.300"
+    },
+    "frameworks": {
+      "net70": {
+        "framework": "net7.0",
+        "targetAlias": "net70",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.20, 7.0.20]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.20, 7.0.20]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.300/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
