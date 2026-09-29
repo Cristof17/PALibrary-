@@ -6,7 +6,7 @@ namespace PA
 {
     public readonly partial struct PAStatus
     {
-        int Visited;
+        readonly int Visited;
 
         [LibraryImport("pa")]
         internal static partial 
@@ -21,7 +21,6 @@ namespace PA
         PAStatus PAStatusPerformCopy(PAStatus from, PAStatus to);
 
         [LibraryImport("pa")]
-        internal static partial 
         internal static partial PAStatus PAStatusPerformRuin(PAStatus pa);
 
         [LibraryImport("pa")]
