@@ -6,15 +6,7 @@ namespace PA
 {
     public readonly partial struct PAStatus
     {
-        public readonly int Visited
-        {
-            get
-            {
-                return _visited;   
-            }
-        }
-
-        internal readonly int _visited;
+        int Visited;
 
         [LibraryImport("pa")]
         internal static partial 
@@ -30,7 +22,7 @@ namespace PA
 
         [LibraryImport("pa")]
         internal static partial 
-        PAStatus PAStatusPerformRuin(PAStatus pa);
+        internal static partial PAStatus PAStatusPerformRuin(PAStatus pa);
 
         [LibraryImport("pa")]
         internal static partial 

@@ -9,15 +9,7 @@ namespace PA
 {
     public readonly partial struct PAData
     {
-        public readonly PAResource Resource
-        {
-            get
-            {
-                return  _resource;
-            }
-        }
-        
-        internal readonly PAResource _resource;
+        PAResource Resource;
 
         [LibraryImport("pa")]
         public static partial PAData PADataPerformConstruct();
@@ -42,5 +34,4 @@ namespace PA
         {
             return base.GetHashCode();
         }
-    }
 }

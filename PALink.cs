@@ -6,15 +6,7 @@ namespace PA
 {
 	public readonly partial struct PALink
 	{
-		public readonly PAPair Pair
-        { 
-			get
-            {
-				return _p;
-            }
-        } 
-
-		internal readonly PAPair _p;
+		PAPair Pair;
 
 		[LibraryImport("pa")]
 		public static partial PALink PALinkPerformConstruct();

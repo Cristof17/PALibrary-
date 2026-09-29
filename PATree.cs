@@ -7,56 +7,16 @@ using System.Runtime.InteropServices;
 using PA;
 namespace PA
 {
-	public readonly partial struct PATree
+	public partial struct PATree
 	{
 
-		public readonly PACount N
-        {
-			get
-            {
-				return _n;
-            } 
-        }
+		PACount N;
 
-		public readonly PACount M
-        {
-			get
-            {
-				return _m;
-            } 
-        } 
+		PACount M;
 
-		public readonly PAList Adj
-        {
-			get
-            {
-                return _adj;
-            }
-        } 
+		PAList Adj;
 
-		public readonly PAElement Sursa
-        {
-			get
-            {
-               return _sursa; 
-            }
-        }
-
-		public PAElement this[PAElement node]
-        {
-            get
-            {
-                return _adj[node];
-            }
-        }
-
-		internal readonly PACount _n;
-
-		internal readonly PACount _m;
-
-		internal readonly PAList _adj;
-
-		internal readonly PAElement _sursa;
+		PAElement Sursa;
 
 		[LibraryImport("pa")]
 		internal static partial PATree PATreePerformConstruct();
@@ -68,5 +28,9 @@ namespace PA
 		internal static partial PATree PATreePerformRuin(PATree pa);
 		[LibraryImport("pa")]
 		internal static partial PATree PATreePerformDelete(PATree pa);
+		[LibraryImport("pa")]
+		internal static partial PAResult PATreeOperatorEqual(PATree one, PATree other);
+		[LibraryImport("pa")]
+		internal static partial PAResult PATreeOperatorNotEqual(PATree one, PATree other);
 	}
 }

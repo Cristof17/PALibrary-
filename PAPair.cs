@@ -9,28 +9,10 @@ namespace PA
     public readonly partial struct PAPair
     {
 
-        public readonly PAElement Node
-        {
-            get
-            {
-                return _node; 
-            }
-        } 
+        PAElement Node;
 
-        public readonly PAElement Neigh
-        {
-            get
-            {
-                return  _neigh;;  
-            }
-        } 
+        PAElement Neigh;
 
-        internal readonly PAElement _node;
-
-        internal readonly PAElement _neigh;
-
-        [LibraryImport("pa")]
-        public static partial PAPair PAPairPerformCopy(PAPair from, PAPair to);
         [LibraryImport("pa")]
         public static partial PAPair PAPairConstruct();
         [LibraryImport("pa")]

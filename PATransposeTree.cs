@@ -5,23 +5,7 @@ namespace PA
 {
 	public readonly partial struct PATransposeTree
 	{
-		public readonly PATree Adj_trans
-        {
-        	get
-            {
-                return  _adj_trans;
-            }   
-        }
-
-		public PAElement this[PAElement node]
-        {
-			get
-			{
-				return _adj_trans[node];
-			}
-        }
-
-		internal readonly PATree _adj_trans;
+		PATree Adj_trans;
 
 		[LibraryImport("pa")]
 		internal static partial PATransposeTree PATransposeTreePerformConstruct();
@@ -33,5 +17,9 @@ namespace PA
 		internal static partial PATransposeTree PATransposeTreePerformRuin(PATransposeTree pa);
 		[LibraryImport("pa")]
 		internal static partial PATransposeTree PATransposeTreePerformDelete(PATransposeTree pa);
+		[LibraryImport("pa")]
+		internal static partial PAResult PATransposeTreeOperatorEqual(PATransposeTree one,PATransposeTree other);
+		[LibraryImport("pa")]
+		internal static partial PAResult PATransposeTreeOperatorNotEqual(PATransposeTree one,PATransposeTree other);
 	}
 }

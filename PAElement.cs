@@ -10,13 +10,7 @@ namespace PA
 {
     public readonly partial struct PAElement
     {
-        public readonly PAData Index
-        {
-            get
-            {
-                return _index; 
-            }
-        }
+        PAData Index;
 
         public readonly PAStatus Status
         {
@@ -49,6 +43,7 @@ namespace PA
 
         internal readonly unsafe PAElement* _next;
 
+        PAElement* Next;
 
         [LibraryImport("pa")]
         public static partial PAElement PAElementPerformConstruct();
@@ -77,5 +72,4 @@ namespace PA
         {
             return base.GetHashCode();
         }
-    }
 }

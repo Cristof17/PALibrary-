@@ -10,13 +10,7 @@ namespace PA
 {
     public readonly partial struct PASeries
     {
-        public readonly PACount M
-        {
-            get
-            {
-                return _m;
-            }
-        }
+        PACount M;
 
         // public readonly unsafe PAElement* Adj;
         // {
