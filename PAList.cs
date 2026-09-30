@@ -22,6 +22,12 @@ namespace PA
         [LibraryImport("pa")]
         public static partial PAList PAListPerformDelete(PAList PA);
 
+        [LibraryImport("pa")]
+        public static partial int PAListOperatorEqual(PAList one, PAList other);
+
+        [LibraryImport("pa")]
+        public static partial int PAListOperatorNotEqual(PAList one, PAList other);
+
         public PAElement this[PAElement element]
         {
             get
@@ -32,8 +38,8 @@ namespace PA
         [LibraryImport("pa")]
         public static partial void PAListPerformPrint(PAList List);
 
-        public static bool operator==(PAList one, PAList other) => (one._n == other._n) && (one._adj == other._adj);
-        public static bool operator!=(PAList one, PAList other) => (one._n != other._n) || (one._adj != other._adj);
+        public static bool operator==(PAList one, PAList other) => (PAListOperatorEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator!=(PAList one, PAList other) => (PAListOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
 
         public override bool Equals([NotNullWhen(true)] object obj)
         {
