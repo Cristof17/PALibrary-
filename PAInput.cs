@@ -10,13 +10,13 @@ namespace PA
     public readonly partial struct PAInput
     {
 
-        PACount N;
+        readonly PACount N;
 
-        PACount M;
+        readonly PACount M;
 
-        PAList Adj;
+        readonly PAList Adj;
 
-        PAElement Sursa;
+        readonly PAElement Sursa;
         
         [LibraryImport("pa")]
         public static partial PAInput PAInputPerformConstruct();
@@ -30,8 +30,14 @@ namespace PA
         [LibraryImport("pa")]
         public static partial PAInput PAInputPerformDelete(PAInput pa);
 
-        public static bool operator ==(PAInput from, PAInput to) => (from._n == to._n) && (from._m == to._m) && (from._adj == to._adj) && (from._sursa == to._sursa);
-        public static bool operator !=(PAInput from, PAInput to) => (from._n != to._n) || (from._m != to._m) || (from._adj != to._adj) || (from._sursa != to._sursa);
+        [LibraryImport("pa")]
+        public static partial int PAInputOperatorEqual(PAInput one, PAInput other);
+
+        [LibraryImport("pa")]
+        public static partial int PAInputOperatorNotEqual(PAInput one, PAInput other);
+
+        public static bool operator ==(PAInput from, PAInput to) => (PAInputOperatorEqual(from,to) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator !=(PAInput from, PAInput to) => (PAInputOperatorNotEqual(from,to) == PA.PARESULT_SUCCESS) ? true : false;
 
         public override bool Equals([NotNullWhen(true)] object obj)
         {
