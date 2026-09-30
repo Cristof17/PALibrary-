@@ -5,7 +5,7 @@ namespace PA
 {
 	public readonly partial struct PATransposeTree
 	{
-		PATree Adj_trans;
+		readonly PATree Adj_trans;
 
 		[LibraryImport("pa")]
 		internal static partial PATransposeTree PATransposeTreePerformConstruct();

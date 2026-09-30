@@ -29,7 +29,7 @@ namespace PA
                 int iteration = 1;
                 PAElement* curr;
                 curr = _adj;
-                while (((int)iteration) < _m)
+                while (iteration < (int)_m)
                 {
                     if (curr == null)
                     {
