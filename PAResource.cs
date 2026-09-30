@@ -21,8 +21,14 @@ namespace PA
         [LibraryImport("pa")]
         internal static partial int PAResourcePerformDelete(PAResource pa);
 
-        public static bool operator ==(PAResource one, PAResource other) => one._value == other._value;
-        public static bool operator !=(PAResource one, PAResource other) => one._value != other._value;
+        [LibraryImport("pa")]
+        internal static partial int PAResourceOperatorEqual(PAResource one, PAResource other);
+
+        [LibraryImport("pa")]
+        internal static partial int PAResourceOperatorNotEqual(PAResource one, PAResource other);
+
+        public static bool operator ==(PAResource one, PAResource other) => (PAResourceOperatorEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator !=(PAResource one, PAResource other) => (PAResourceOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
 
         public override bool Equals([NotNullWhen(true)] object obj)
         {
