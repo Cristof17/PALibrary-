@@ -10,7 +10,9 @@ namespace PA
 {
     public readonly partial struct PASeries
     {
-        PACount M;
+
+        internal readonly PACount _m;
+        readonly PACount M => _m;
 
         // public readonly unsafe PAElement* Adj;
         // {
@@ -27,7 +29,7 @@ namespace PA
                 int iteration = 1;
                 PAElement* curr;
                 curr = _adj;
-                while (iteration < _m)
+                while (((int)iteration) < _m)
                 {
                     if (curr == null)
                     {
@@ -52,8 +54,6 @@ namespace PA
             }
         }
 
-        internal readonly PACount _m;
-
         internal unsafe readonly PAElement* _adj;
 
         [LibraryImport("pa")]
@@ -69,8 +69,15 @@ namespace PA
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformDelete(PASeries pa);
 
-        public static unsafe bool operator ==(PASeries one, PASeries other) => (one._m == other._m) && ((*one._adj) == (*other._adj));
-        public static unsafe bool operator !=(PASeries one, PASeries other) => (one._m != other._m) || ((*one._adj) != (*other._adj));
+        [LibraryImport("pa")]
+        public static partial int PASeriesOperatorEqual(PASeries one, PASeries other);
+
+        [LibraryImport("pa")]
+        public static partial int PASeriesOperatorNotEqual(PASeries one, PASeries other);
+
+
+        public static unsafe bool operator ==(PASeries one, PASeries other) => (PASeriesOperatorEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static unsafe bool operator !=(PASeries one, PASeries other) => (PASeriesOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
 
         public override bool Equals([NotNullWhen(true)] object obj)
         {

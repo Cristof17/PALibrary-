@@ -38,6 +38,7 @@ namespace PA
         public static bool operator !=(PACount one, PACount other) => (PACountOperatorNotEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
         public static bool operator <(PACount a, PACount b) => (PACountOperatorLess(a, b) == PA.PARESULT_SUCCESS) ? true : false;
         public static bool operator >(PACount a, PACount b) => (PACountOperatorMore(a, b) == PA.PARESULT_SUCCESS) ? true : false;
+        public static int operator int(PACount count) => (int) count.Value.Value;
 
         public override bool Equals([NotNullWhen(true)] object obj)
         {

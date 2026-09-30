@@ -27,8 +27,14 @@ namespace PA
         internal static partial 
         PAStatus PAStatusPerformDelete(PAStatus pa);
 
-        public static bool operator==(PAStatus one, PAStatus other) => one._visited == other._visited;
-        public static bool operator!=(PAStatus one, PAStatus other) => one._visited != other._visited;
+        [LibraryImport("pa")]
+        public static partial int PAStatusOperatorEqual(PAStatus one, PAStatus other);
+
+        [LibraryImport("pa")]
+        public static partial int PAStatusOperatorNotEqual(PAStatus one, PAStatus other);
+
+        public static bool operator==(PAStatus one, PAStatus other) => (PAStatusOperatorEqual(one,other) == PA.PARESULT_SUCCESS ? true : false);
+        public static bool operator!=(PAStatus one, PAStatus other) => (PAStatusOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS ? true : false);
 
         public override bool Equals([NotNullWhen(true)] object obj)
         {
