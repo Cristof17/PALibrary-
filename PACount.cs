@@ -11,7 +11,7 @@ namespace PA
     public readonly partial struct PACount
     {
 
-        PANumber Value;
+        readonly PANumber Value;
 
         [LibraryImport("pa")]
         public static partial PACount PACountPerformConstruct();
@@ -23,12 +23,21 @@ namespace PA
         public static partial PACount PACountPerformRuin(PACount pa);
         [LibraryImport("pa")]
         public static partial PACount PACountPerformDelete(PACount pa);
-        public static bool operator <(PACount a, PACount b) => a._value < b._value;
-        public static bool operator >(PACount a, PACount b) => a._value > b._value;
-        public static implicit operator int(PACount count) => (int)count._value;
-        public static bool operator ==(PACount from, PACount to) => from._value == to._value;
-        public static bool operator !=(PACount from, PACount to) => from._value != to._value;
+        [LibraryImport("pa")]
+        public static partial int PACountOperatorLess(PACount one, PACount other);
+        [LibraryImport("pa")]
+        public static partial int PACountOperatorMore(PACount one, PACount other);
+        
+        [LibraryImport("pa")]
+        public static partial int PACountOperatorEqual(PACount one, PACount other);
 
+        [LibraryImport("pa")]
+        public static partial int PACountOperatorNotEqual(PACount one, PACount other);
+
+        public static bool operator ==(PACount one, PACount other) => (PACountOperatorEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator !=(PACount one, PACount other) => (PACountOperatorNotEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator <(PACount a, PACount b) => (PACountOperatorLess(a, b) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator >(PACount a, PACount b) => (PACountOperatorMore(a, b) == PA.PARESULT_SUCCESS) ? true : false;
 
         public override bool Equals([NotNullWhen(true)] object obj)
         {

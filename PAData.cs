@@ -9,7 +9,7 @@ namespace PA
 {
     public readonly partial struct PAData
     {
-        PAResource Resource;
+        readonly PAResource Resource;
 
         [LibraryImport("pa")]
         public static partial PAData PADataPerformConstruct();
@@ -22,8 +22,13 @@ namespace PA
         [LibraryImport("pa")]
         public static partial PAData PADataPerformDelete(PAData pa);
 
-        public static bool operator ==(PAData one, PAData other) => one._resource == other._resource;
-        public static bool operator != (PAData one, PAData other) => one._resource != other._resource;
+        [LibraryImport("pa")]
+        public static partial int PADataOperatorEqual(PAData one, PAData other);
+        [LibraryImport("pa")]
+        public static partial int PADataOperatorNotEqual(PAData one, PAData other);
+
+        public static bool operator ==(PAData one, PAData other) => (PADataOperatorEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator != (PAData one, PAData other) => (PADataOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
 
         public override bool Equals([NotNullWhen(true)] object obj)
         {
