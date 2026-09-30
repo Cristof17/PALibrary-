@@ -12,22 +12,6 @@ namespace PA
     {
         readonly PAData Index;
 
-        public readonly PAStatus Status
-        {
-            get
-            {
-                return _status; 
-            }
-        }
-
-        public readonly unsafe PAElement Next
-        {    
-            get
-            {
-                return *_next; 
-            }
-        }
-
         // public unsafe PAElement this[PAElement node]
         // {
         //     get
@@ -43,7 +27,7 @@ namespace PA
 
         internal readonly unsafe PAElement* _next;
 
-        internal unsafe readonly PAElement* Next;
+        internal unsafe readonly PAElement* Next { get { return _next; } }
 
         [LibraryImport("pa")]
         public static partial PAElement PAElementPerformConstruct();
