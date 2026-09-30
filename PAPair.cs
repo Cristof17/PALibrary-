@@ -9,9 +9,9 @@ namespace PA
     public readonly partial struct PAPair
     {
 
-        PAElement Node;
+        readonly PAElement Node;
 
-        PAElement Neigh;
+        readonly PAElement Neigh;
 
         [LibraryImport("pa")]
         public static partial PAPair PAPairConstruct();
@@ -22,8 +22,13 @@ namespace PA
         [LibraryImport("pa")]
         public static partial int PAPairDelete(PAElement pa);
 
-        public static bool operator ==(PAPair one, PAPair other) => (one._node == other._node) && (one._neigh == other._neigh);
-        public static bool operator !=(PAPair one, PAPair other) => (one._node != other._node) || (one._neigh != other._neigh);
+        [LibraryImport("pa")]
+        public static partial int PAPairOperatorEqual(PAPair one, PAPair other);
+        [LibraryImport("pa")]
+        public static partial int PAPairOperatorNotEqual(PAPair one, PAPair other);
+
+        public static bool operator ==(PAPair one, PAPair other) => (PAPairOperatorEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator !=(PAPair one, PAPair other) => (PAPairOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
 
         public override bool Equals([NotNullWhen(true)] object obj)
         {
