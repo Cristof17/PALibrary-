@@ -10,7 +10,7 @@ namespace PA
 {
     public readonly partial struct PAElement
     {
-        PAData Index;
+        readonly PAData Index;
 
         public readonly PAStatus Status
         {
@@ -43,7 +43,7 @@ namespace PA
 
         internal readonly unsafe PAElement* _next;
 
-        PAElement* Next;
+        internal unsafe readonly PAElement* Next;
 
         [LibraryImport("pa")]
         public static partial PAElement PAElementPerformConstruct();
@@ -60,8 +60,13 @@ namespace PA
         [LibraryImport("pa")]
         public static partial void PAElementReset(PAElement element);
 
-        public static unsafe bool operator==(PAElement one, PAElement other) => (one._index == other._index) && ((*one._next) == (*other._next)) && (one._status == other._status);
-        public static unsafe bool operator!=(PAElement one, PAElement other) => (one._index != other._index) || ((*one._next) != (*other._next)) || (one._status != other._status);
+        [LibraryImport("pa")]
+        public static partial int PAElementOperatorEqual(PAElement one, PAElement other);
+        [LibraryImport("pa")]
+        public static partial int PAElementOperatorNotEqual(PAElement one, PAElement other);
+
+        public static bool operator==(PAElement one, PAElement other) => (PAElementOperatorEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator!=(PAElement one, PAElement other) => (PAElementOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
 
         public override bool Equals([NotNullWhen(true)] object obj)
         {
