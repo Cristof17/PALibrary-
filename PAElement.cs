@@ -1,4 +1,8 @@
 // using System.Linq.Expressions;
+using System.Data;
+using System.Diagnostics.CodeAnalysis;
+using System.Numerics;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 // using PA;
 
@@ -6,11 +10,24 @@ namespace PA
 {
     public readonly partial struct PAElement
     {
-        PAData Index;
+        readonly PAData Index;
 
-        PAStatus Status;
+        // public unsafe PAElement this[PAElement node]
+        // {
+        //     get
+        //     {
+        //         //do logic for iteration and comparison
+        //         return *_next;
+        //     }
+        // }
 
-        PAElement* Next;
+        internal readonly PAData _index;
+
+        internal readonly PAStatus _status;
+
+        internal readonly unsafe PAElement* _next;
+
+        internal unsafe readonly PAElement* Next { get { return _next; } }
 
         [LibraryImport("pa")]
         public static partial PAElement PAElementPerformConstruct();
@@ -26,13 +43,23 @@ namespace PA
         public static partial int PAElementIsVisited(PAElement element);
         [LibraryImport("pa")]
         public static partial void PAElementReset(PAElement element);
+
         [LibraryImport("pa")]
-        public static partial PAResult PAElementOperatorLess(PAElement one, PAElement other);
+        public static partial int PAElementOperatorEqual(PAElement one, PAElement other);
         [LibraryImport("pa")]
-        public static partial PAResult PAElementOperatorEqual(PAElement one,PAElement other);
-        [LibraryImport("pa")]
-        public static partial PAResult PAElementOperatorGreater(PAElement one, PAElement other);
-        [LibraryImport("pa")]
-        public static partial PAResult PAElementOperatorNotEqual(PAElement one, PAElement other);
+        public static partial int PAElementOperatorNotEqual(PAElement one, PAElement other);
+
+        public static bool operator==(PAElement one, PAElement other) => (PAElementOperatorEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator!=(PAElement one, PAElement other) => (PAElementOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
+
+        public override bool Equals([NotNullWhen(true)] object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }

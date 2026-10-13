@@ -2,18 +2,64 @@
 // using System.Xml.Schema;
 using PA;
 using AL;
+using System.Runtime.CompilerServices;
+using System.Numerics;
+using System.Dynamic;
+using System.Diagnostics.CodeAnalysis;
 namespace PA
 {
     public readonly partial struct PASeries
     {
-        PACount M;
 
-        ArrayList Array;
+        internal readonly PACount _m;
+        readonly PACount M => _m;
+
+        // public readonly unsafe PAElement* Adj;
+        // {
+        //     // get
+        //     // {
+        //     //     return ref _adj;  
+        //     // } 
+        // }
+
+        public unsafe PAElement this[PAElement node]
+        {
+            get
+            {
+                int iteration = 1;
+                PAElement* curr;
+                curr = _adj;
+                while (iteration < (int)_m)
+                {
+                    if (curr == null)
+                    {
+                        break;
+                    }
+                    if (node == (*curr))
+                    {
+                        return (*curr);
+                    }
+                    else
+                    {
+                        curr = _adj->_next;
+                        iteration++;
+                    }
+                }
+                return (*curr);
+                // return _adj[node];
+                // PAElement element = PAElement.PAElementPerformConstruct();
+                // return element;
+                // return _array[node];
+                //get element at position node
+            }
+        }
+
+        internal unsafe readonly PAElement* _adj;
 
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformConstruct();
         [LibraryImport("pa")]
-        public static partial PASeries PASeriesPerformInit(PASeries series, PACount n, ArrayList adj);
+        public static unsafe partial PASeries PASeriesPerformInit(PASeries series, PACount m, PAElement* adj);
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformCopy(PASeries from, PASeries to);
         [LibraryImport("pa")]
@@ -22,10 +68,26 @@ namespace PA
         public static partial PASeries PASeriesPerformRuin(PASeries pa);
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformDelete(PASeries pa);
+
         [LibraryImport("pa")]
-        public static partial PAResult PASeriesOperatorEqual(PASeries one,PASeries other);
+        public static partial int PASeriesOperatorEqual(PASeries one, PASeries other);
+
         [LibraryImport("pa")]
-        public static partial PAResult PASeriesOperatorNotEqual(PASeries one,PASeries other);
+        public static partial int PASeriesOperatorNotEqual(PASeries one, PASeries other);
+
+
+        public static unsafe bool operator ==(PASeries one, PASeries other) => (PASeriesOperatorEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static unsafe bool operator !=(PASeries one, PASeries other) => (PASeriesOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
+
+        public override bool Equals([NotNullWhen(true)] object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }
 // }

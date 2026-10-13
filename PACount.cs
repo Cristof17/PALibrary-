@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
+
 // using System.Data.Common;
 using System.Runtime.InteropServices;
 using PA;
@@ -9,7 +11,7 @@ namespace PA
     public readonly partial struct PACount
     {
 
-        PANumber Value;
+        readonly PANumber Value;
 
         [LibraryImport("pa")]
         public static partial PACount PACountPerformConstruct();
@@ -22,15 +24,30 @@ namespace PA
         [LibraryImport("pa")]
         public static partial PACount PACountPerformDelete(PACount pa);
         [LibraryImport("pa")]
-        public static partial PACount PACountPerformDelete(PACount PA);
+        public static partial int PACountOperatorLess(PACount one, PACount other);
         [LibraryImport("pa")]
-        public static partial PAResult PACountOperatorLess(PACount one,PACount other);
+        public static partial int PACountOperatorMore(PACount one, PACount other);
+        
         [LibraryImport("pa")]
-        public static partial PAResult PACountOperatorEqual(PACount one,PACount other);
-        [LibraryImport("pa")]
-        public static partial PAResult PACountOperatorGreater(PACount one,PACount other);
-        [LibraryImport("pa")]
-        public static partial PAResult PACountOperatorNotEqual(PACount one, PACount other);
+        public static partial int PACountOperatorEqual(PACount one, PACount other);
 
+        [LibraryImport("pa")]
+        public static partial int PACountOperatorNotEqual(PACount one, PACount other);
+
+        public static bool operator ==(PACount one, PACount other) => (PACountOperatorEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator !=(PACount one, PACount other) => (PACountOperatorNotEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator <(PACount a, PACount b) => (PACountOperatorLess(a, b) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator >(PACount a, PACount b) => (PACountOperatorMore(a, b) == PA.PARESULT_SUCCESS) ? true : false;
+        public static implicit operator int(PACount count) => (int) count.Value.Value;
+
+        public override bool Equals([NotNullWhen(true)] object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }

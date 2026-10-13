@@ -2,19 +2,21 @@
 using System;
 using PA;
 using AL;
+using System.Collections.Concurrent;
+using System.Diagnostics.CodeAnalysis;
 
 namespace PA
 {
     public readonly partial struct PAInput
     {
 
-        PACount N;
+        readonly PACount N;
 
-        PACount M;
+        readonly PACount M;
 
-        PAList Adj;
+        readonly PAList Adj;
 
-        PAElement Sursa;
+        readonly PAElement Sursa;
         
         [LibraryImport("pa")]
         public static partial PAInput PAInputPerformConstruct();
@@ -27,13 +29,24 @@ namespace PA
         public static partial void PAInputRuin(PAInput pa);
         [LibraryImport("pa")]
         public static partial PAInput PAInputPerformDelete(PAInput pa);
+
         [LibraryImport("pa")]
-        public static partial PAInput PAInputPerformRuin(PAInput PA);
+        public static partial int PAInputOperatorEqual(PAInput one, PAInput other);
+
         [LibraryImport("pa")]
-        public static partial PAInput PAInputPerformDelete(PAInput i);
-        [LibraryImport("pa")]
-        public static partial PAResult PAInputOperatorEqual(PAInput one, PAInput other);
-        [LibraryImport("pa")]
-        public static partial PAResult PAInputOperatorNotEqual(PAInput one, PAInput other);
+        public static partial int PAInputOperatorNotEqual(PAInput one, PAInput other);
+
+        public static bool operator ==(PAInput from, PAInput to) => (PAInputOperatorEqual(from,to) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator !=(PAInput from, PAInput to) => (PAInputOperatorNotEqual(from,to) == PA.PARESULT_SUCCESS) ? true : false;
+
+        public override bool Equals([NotNullWhen(true)] object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }
