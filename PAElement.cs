@@ -10,7 +10,8 @@ namespace PA
 {
     public readonly partial struct PAElement
     {
-        readonly PAData Index;
+        readonly PAData Index { get {return _index;}}
+        readonly PAStatus Status { get {return _status;}}
 
         // public unsafe PAElement this[PAElement node]
         // {
