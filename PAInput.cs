@@ -10,13 +10,18 @@ namespace PA
     public readonly partial struct PAInput
     {
 
-        readonly PACount N;
+        readonly PACount N { get { return _N;}}
 
-        readonly PACount M;
+        readonly PACount M { get { return _M;}}
 
-        readonly PAList Adj;
+        readonly PAList Adj { get { return _Adj;}}
 
-        readonly PAElement Sursa;
+        readonly PAElement Sursa { get {return _Sursa;}}
+
+        internal readonly PACount _N;
+        internal readonly PACount _M;
+        internal readonly PAList _Adj;
+        internal readonly PAElement _Sursa;
         
         [LibraryImport("pa")]
         public static partial PAInput PAInputPerformConstruct();

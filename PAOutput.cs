@@ -6,7 +6,9 @@ namespace PA
 {
     public readonly partial struct PAOutput
     {
-        readonly BFSRecord Result;
+        readonly BFSRecord Result { get { return _Result;}}
+
+        internal readonly BFSResult _Result;
 
         [LibraryImport("pa")]
         public static partial PAOutput PAOutputPerformConstruct();

@@ -8,7 +8,9 @@ namespace PA
 {
     public readonly partial struct PANumber
     {
-        public readonly int Value;
+        public readonly int Value { get { return _Value;}}
+
+        internal readonly int _Value;
 
         [LibraryImport("pa")]
         public static partial PANumber PANumberPerformConstruct();
