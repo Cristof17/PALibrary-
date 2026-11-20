@@ -8,7 +8,9 @@ namespace PA
     public readonly partial struct PAResource
     {
 
-        readonly PANumber Value;
+        readonly PANumber Value { get { return _Value;}}
+
+        internal readonly PANumber _Value;
 
         [LibraryImport("pa")]
         public static partial PAResource PAResourcePerformConstruct();
