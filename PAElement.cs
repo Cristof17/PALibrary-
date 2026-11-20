@@ -25,9 +25,9 @@ namespace PA
 
         internal readonly PAStatus _status;
 
-        internal readonly unsafe PAElement* _next;
+        // internal readonly unsafe PAElement* _next;
 
-        internal unsafe readonly PAElement* Next { get { return _next; } }
+        // internal unsafe readonly PAElement* Next { get { return _next; } }
 
         [LibraryImport("pa")]
         public static partial PAElement PAElementPerformConstruct();
