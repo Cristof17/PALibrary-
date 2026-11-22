@@ -41,7 +41,7 @@ namespace PA
                     }
                     else
                     {
-                        curr = _adj->_next;
+                        // curr = _adj->;
                         iteration++;
                     }
                 }
