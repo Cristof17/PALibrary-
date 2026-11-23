@@ -6,13 +6,16 @@ using System.Runtime.CompilerServices;
 using System.Numerics;
 using System.Dynamic;
 using System.Diagnostics.CodeAnalysis;
+using System;
 namespace PA
 {
     public readonly partial struct PASeries
     {
 
         internal readonly PACount _m;
+        internal readonly UIntPtr _adj;
         readonly PACount M => _m;
+        readonly UIntPtr Adj => _adj;
 
         // public readonly unsafe PAElement* Adj;
         // {
@@ -22,30 +25,53 @@ namespace PA
         //     // } 
         // }
 
-        public unsafe PAElement this[PAElement node]
+        public unsafe UIntPtr this[PAElement node]
         {
             get
             {
-                int iteration = 1;
-                PAElement* curr;
-                curr = _adj;
-                while (iteration < (int)_m)
+                UIntPtr start = _adj;
+                PANumber number;
+                number = PANumber.PANumberPerformConstruct();
+                number = PANumber.PANumberPerformInit(number,1);
+                PACount count;
+                count = PACount.PACountPerformConstruct();
+                count = PACount.PACountPerformInit(count,number);
+                void* auxPtr;
+                PAElement* elementPtr;
+                PAElement element;
+                while (count < _m)
                 {
-                    if (curr == null)
+                    start = _adj;
+                    start += (uint)Marshal.SizeOf<PAElement>();
+                    auxPtr = start.ToPointer();
+                    elementPtr = (PAElement*) auxPtr;
+                    element = *elementPtr;
+                    if (node == element)
                     {
-                        break;
-                    }
-                    if (node == (*curr))
-                    {
-                        return (*curr);
-                    }
-                    else
-                    {
-                        // curr = _adj->;
-                        iteration++;
+                        return _adj;
                     }
                 }
-                return (*curr);
+                return UIntPtr.Zero;
+                // int iteration = 1;
+                // PAElement* curr;
+                // curr = _adj;
+                // while (iteration < (int)_m)
+                // {
+                //     if (curr == null)
+                //     {
+                //         break;
+                //     }
+                //     if (node == (*curr))
+                //     {
+                //         return (*curr);
+                //     }
+                //     else
+                //     {
+                //         // curr = _adj->;
+                //         iteration++;
+                //     }
+                // }
+                // return (*curr);
                 // return _adj[node];
                 // PAElement element = PAElement.PAElementPerformConstruct();
                 // return element;
@@ -54,7 +80,7 @@ namespace PA
             }
         }
 
-        internal unsafe readonly PAElement* _adj;
+        // internal unsafe readonly PAElement* _adj;
 
         [LibraryImport("pa")]
         public static partial PASeries PASeriesPerformConstruct();

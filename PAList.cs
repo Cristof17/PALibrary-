@@ -36,7 +36,8 @@ namespace PA
         {
             get
             {
-                return Adj[element];
+                return PAElement.PAElementPerformConstruct();
+                // return Adj[element];
             }
         }
         [LibraryImport("pa")]

@@ -35,5 +35,7 @@ namespace PA
         public static bool operator !=(PANumber one, PANumber other) => (PANumberOperatorNotEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
         public static bool operator <(PANumber one, PANumber other) => (PANumberOperatorLess(one, other) == PA.PARESULT_SUCCESS) ? true : false;
         public static bool operator >(PANumber one, PANumber other) => (PANumberOperatorGreater(one,other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static implicit operator int(PANumber number) => (int) number.Value;
+        public static implicit operator uint(PANumber number) => (uint) number.Value;
     }
 }
