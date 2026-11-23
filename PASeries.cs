@@ -26,10 +26,10 @@ namespace PA
                 UIntPtr start = _adj;
                 PANumber number;
                 number = PANumber.PANumberPerformConstruct();
-                number = PANumber.PANumberPerformInit(number,1);
+                number = PANumber.PANumberPerformInit(number, 1);
                 PACount count;
                 count = PACount.PACountPerformConstruct();
-                count = PACount.PACountPerformInit(count,number);
+                count = PACount.PACountPerformInit(count, number);
                 void* auxPtr;
                 PAElement* elementPtr;
                 PAElement element;
@@ -38,7 +38,7 @@ namespace PA
                     start = _adj;
                     start += (uint)Marshal.SizeOf<PAElement>();
                     auxPtr = start.ToPointer();
-                    elementPtr = (PAElement*) auxPtr;
+                    elementPtr = (PAElement*)auxPtr;
                     element = *elementPtr;
                     if (node == element)
                     {
@@ -96,8 +96,8 @@ namespace PA
         public static partial int PASeriesOperatorNotEqual(PASeries one, PASeries other);
 
 
-        public static bool operator ==(PASeries one, PASeries other) => (PASeriesOperatorEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
-        public static bool operator !=(PASeries one, PASeries other) => (PASeriesOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator ==(PASeries one, PASeries other) => (PASeriesOperatorEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator !=(PASeries one, PASeries other) => (PASeriesOperatorNotEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
 
     }
 }

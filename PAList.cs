@@ -4,9 +4,9 @@ namespace PA
 {
     public readonly partial struct PAList
     {
-        readonly PACount N { get {return _N;}}
+        readonly PACount N { get { return _N; } }
 
-        readonly UIntPtr Adj { get { return _Adj;}}
+        readonly UIntPtr Adj { get { return _Adj; } }
 
         internal readonly PACount _N;
 
@@ -37,9 +37,9 @@ namespace PA
                 PANumber number;
                 PACount count;
                 number = PANumber.PANumberPerformConstruct();
-                number = PANumber.PANumberPerformInit(number,1);
+                number = PANumber.PANumberPerformInit(number, 1);
                 count = PACount.PACountPerformConstruct();
-                count = PACount.PACountPerformInit(count,number);
+                count = PACount.PACountPerformInit(count, number);
                 void* auxPtr;
                 PASeries* seriesPtr;
                 PASeries series;
@@ -47,12 +47,12 @@ namespace PA
                 {
                     aux += (uint)Marshal.SizeOf<PASeries>();
                     auxPtr = aux.ToPointer();
-                    seriesPtr = (PASeries*) aux;
+                    seriesPtr = (PASeries*)aux;
                     series = *seriesPtr;
                     UIntPtr adj_node = series[element];
                     if (adj_node == UIntPtr.Zero)
                     {
-                        
+
                     }
                     else
                     {
@@ -68,7 +68,7 @@ namespace PA
         [LibraryImport("pa")]
         public static partial void PAListPerformPrint(PAList List);
 
-        public static bool operator==(PAList one, PAList other) => (PAListOperatorEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
-        public static bool operator!=(PAList one, PAList other) => (PAListOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator ==(PAList one, PAList other) => (PAListOperatorEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator !=(PAList one, PAList other) => (PAListOperatorNotEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
     }
 }

@@ -7,7 +7,7 @@ namespace PA
 {
     public readonly partial struct PANumber
     {
-        public readonly int Value { get { return _Value;}}
+        public readonly int Value { get { return _Value; } }
 
         internal readonly int _Value;
 
@@ -30,11 +30,11 @@ namespace PA
         [LibraryImport("pa")]
         public static partial int PANumberOperatorGreater(PANumber one, PANumber other);
 
-        public static bool operator ==(PANumber one, PANumber other) => (PANumberOperatorEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator ==(PANumber one, PANumber other) => (PANumberOperatorEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
         public static bool operator !=(PANumber one, PANumber other) => (PANumberOperatorNotEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
         public static bool operator <(PANumber one, PANumber other) => (PANumberOperatorLess(one, other) == PA.PARESULT_SUCCESS) ? true : false;
-        public static bool operator >(PANumber one, PANumber other) => (PANumberOperatorGreater(one,other) == PA.PARESULT_SUCCESS) ? true : false;
-        public static implicit operator int(PANumber number) => (int) number.Value;
-        public static implicit operator uint(PANumber number) => (uint) number.Value;
+        public static bool operator >(PANumber one, PANumber other) => (PANumberOperatorGreater(one, other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static implicit operator int(PANumber number) => (int)number.Value;
+        public static implicit operator uint(PANumber number) => (uint)number.Value;
     }
 }

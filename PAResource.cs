@@ -7,7 +7,7 @@ namespace PA
     public readonly partial struct PAResource
     {
 
-        readonly PANumber Value { get { return _Value;}}
+        readonly PANumber Value { get { return _Value; } }
 
         internal readonly PANumber _Value;
 
@@ -28,8 +28,8 @@ namespace PA
         [LibraryImport("pa")]
         internal static partial int PAResourceOperatorNotEqual(PAResource one, PAResource other);
 
-        public static bool operator ==(PAResource one, PAResource other) => (PAResourceOperatorEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
-        public static bool operator !=(PAResource one, PAResource other) => (PAResourceOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator ==(PAResource one, PAResource other) => (PAResourceOperatorEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator !=(PAResource one, PAResource other) => (PAResourceOperatorNotEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
 
     }
 }

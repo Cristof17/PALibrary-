@@ -4,7 +4,7 @@ namespace PA
 {
     public readonly partial struct PAOutput
     {
-        readonly BFSRecord Result { get { return _Result;}}
+        readonly BFSRecord Result { get { return _Result; } }
 
         internal readonly BFSRecord _Result;
 
@@ -27,7 +27,7 @@ namespace PA
         [LibraryImport("pa")]
         public static partial int PAOutputOperatorNotEqual(PAOutput one, PAOutput other);
 
-        public static bool operator ==(PAOutput one, PAOutput other) => (PAOutputOperatorEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator ==(PAOutput one, PAOutput other) => (PAOutputOperatorEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
         public static bool operator !=(PAOutput one, PAOutput other) => (PAOutputOperatorNotEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
 
         // public static bool operator ==(PAOutput one, PAOutput other) => one._result == other._result;

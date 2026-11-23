@@ -9,13 +9,13 @@ namespace PA
 	public partial struct PATree
 	{
 
-		readonly PACount N { get {return _n;}}
+		readonly PACount N { get { return _n; } }
 
-		readonly PACount M { get {return _m;}}
+		readonly PACount M { get { return _m; } }
 
-		readonly PAList Adj {get {return _adj;}}
+		readonly PAList Adj { get { return _adj; } }
 
-		readonly PAElement Sursa { get {return _sursa;}}
+		readonly PAElement Sursa { get { return _sursa; } }
 
 		internal readonly PACount _n;
 
@@ -41,11 +41,11 @@ namespace PA
 		internal static partial PAResult PATreeOperatorNotEqual(PATree one, PATree other);
 
 		internal UIntPtr this[PAElement element]
-        {
+		{
 			get
-            {
-            	return Adj[element];
-            }
-        }
+			{
+				return Adj[element];
+			}
+		}
 	}
 }

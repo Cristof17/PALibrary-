@@ -5,7 +5,7 @@ namespace PA
 {
 	public readonly partial struct PALink
 	{
-		readonly PAPair Pair { get { return _Pair;}}
+		readonly PAPair Pair { get { return _Pair; } }
 
 		internal readonly PAPair _Pair;
 
@@ -27,7 +27,7 @@ namespace PA
 		public static partial int PALinkOperatorNotEqual(PALink onem, PALink other);
 
 
-		public static bool operator ==(PALink one, PALink other) => (PALinkOperatorEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false ;
-		public static bool operator !=(PALink one, PALink other) => (PALinkOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
+		public static bool operator ==(PALink one, PALink other) => (PALinkOperatorEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
+		public static bool operator !=(PALink one, PALink other) => (PALinkOperatorNotEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
 	}
 }

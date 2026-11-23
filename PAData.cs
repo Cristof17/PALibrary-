@@ -7,7 +7,7 @@ namespace PA
 {
     public readonly partial struct PAData
     {
-        readonly PAResource Resource { get {return _Resource;}}
+        readonly PAResource Resource { get { return _Resource; } }
 
         internal readonly PAResource _Resource;
 
@@ -27,8 +27,8 @@ namespace PA
         [LibraryImport("pa")]
         public static partial int PADataOperatorNotEqual(PAData one, PAData other);
 
-        public static bool operator ==(PAData one, PAData other) => (PADataOperatorEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
-        public static bool operator != (PAData one, PAData other) => (PADataOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator ==(PAData one, PAData other) => (PADataOperatorEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator !=(PAData one, PAData other) => (PADataOperatorNotEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
 
     }
 }
