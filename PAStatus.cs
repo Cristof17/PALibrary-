@@ -1,6 +1,6 @@
-using System.Diagnostics.CodeAnalysis;
+
 using System.Runtime.InteropServices;
-using PA;
+
 
 namespace PA
 {
@@ -37,15 +37,5 @@ namespace PA
 
         public static bool operator==(PAStatus one, PAStatus other) => (PAStatusOperatorEqual(one,other) == PA.PARESULT_SUCCESS ? true : false);
         public static bool operator!=(PAStatus one, PAStatus other) => (PAStatusOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS ? true : false);
-
-        public override bool Equals([NotNullWhen(true)] object obj)
-        {
-            return base.Equals(obj);
-        }
-
-        public override int GetHashCode()
-        {
-            return base.GetHashCode();
-        }
     }
 }

@@ -1,11 +1,5 @@
 ﻿using System.Runtime.InteropServices;
 // using System.Xml.Schema;
-using PA;
-using AL;
-using System.Runtime.CompilerServices;
-using System.Numerics;
-using System.Dynamic;
-using System.Diagnostics.CodeAnalysis;
 using System;
 namespace PA
 {

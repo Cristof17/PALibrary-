@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Diagnostics.CodeAnalysis;
-
 // using System.Data.Common;
 using System.Runtime.InteropServices;
-using PA;
-using SM;
 
 namespace PA
 {

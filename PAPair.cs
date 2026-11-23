@@ -1,7 +1,6 @@
-using System.Collections.Concurrent;
+
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
-using System.Threading.Tasks.Dataflow;
 using PA;
 
 namespace PA
@@ -34,14 +33,5 @@ namespace PA
         public static bool operator ==(PAPair one, PAPair other) => (PAPairOperatorEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
         public static bool operator !=(PAPair one, PAPair other) => (PAPairOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
 
-        public override bool Equals([NotNullWhen(true)] object obj)
-        {
-            return base.Equals(obj);
-        }
-
-        public override int GetHashCode()
-        {
-            return base.GetHashCode();
-        }
     }
 }

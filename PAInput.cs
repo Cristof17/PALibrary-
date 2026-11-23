@@ -1,9 +1,5 @@
 ﻿using System.Runtime.InteropServices;
 using System;
-using PA;
-using AL;
-using System.Collections.Concurrent;
-using System.Diagnostics.CodeAnalysis;
 
 namespace PA
 {
@@ -43,15 +39,5 @@ namespace PA
 
         public static bool operator ==(PAInput from, PAInput to) => (PAInputOperatorEqual(from,to) == PA.PARESULT_SUCCESS) ? true : false;
         public static bool operator !=(PAInput from, PAInput to) => (PAInputOperatorNotEqual(from,to) == PA.PARESULT_SUCCESS) ? true : false;
-
-        public override bool Equals([NotNullWhen(true)] object obj)
-        {
-            return base.Equals(obj);
-        }
-
-        public override int GetHashCode()
-        {
-            return base.GetHashCode();
-        }
     }
 }

@@ -2,10 +2,8 @@
 // // using System.Object;
 // using System.Runtime.UnmanagedType;
 using System;
-using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
-using System.Xml.Serialization;
-using PA;
+
 namespace PA
 {
 	public partial struct PATree
@@ -42,7 +40,7 @@ namespace PA
 		[LibraryImport("pa")]
 		internal static partial PAResult PATreeOperatorNotEqual(PATree one, PATree other);
 
-		internal PAElement this[PAElement element]
+		internal UIntPtr this[PAElement element]
         {
 			get
             {
