@@ -6,8 +6,8 @@ namespace PA
 {
     public readonly partial struct PAElement
     {
-        readonly PAData Index { get {return _index;}}
-        readonly PAStatus Status { get {return _status;}}
+        readonly PAData Index { get { return _index; } }
+        readonly PAStatus Status { get { return _status; } }
 
         // public unsafe PAElement this[PAElement node]
         // {
@@ -46,8 +46,8 @@ namespace PA
         [LibraryImport("pa")]
         public static partial int PAElementOperatorNotEqual(PAElement one, PAElement other);
 
-        public static bool operator==(PAElement one, PAElement other) => (PAElementOperatorEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
-        public static bool operator!=(PAElement one, PAElement other) => (PAElementOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator ==(PAElement one, PAElement other) => (PAElementOperatorEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator !=(PAElement one, PAElement other) => (PAElementOperatorNotEqual(one, other) == PA.PARESULT_SUCCESS) ? true : false;
 
     }
 }
