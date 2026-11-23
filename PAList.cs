@@ -73,15 +73,5 @@ namespace PA
 
         public static bool operator==(PAList one, PAList other) => (PAListOperatorEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
         public static bool operator!=(PAList one, PAList other) => (PAListOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
-
-        public override bool Equals([NotNullWhen(true)] object obj)
-        {
-            return base.Equals(obj);
-        }
-
-        public override int GetHashCode()
-        {
-            return base.GetHashCode();
-        }
     }
 }

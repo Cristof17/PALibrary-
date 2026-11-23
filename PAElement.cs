@@ -53,14 +53,5 @@ namespace PA
         public static bool operator==(PAElement one, PAElement other) => (PAElementOperatorEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
         public static bool operator!=(PAElement one, PAElement other) => (PAElementOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
 
-        public override bool Equals([NotNullWhen(true)] object obj)
-        {
-            return base.Equals(obj);
-        }
-
-        public override int GetHashCode()
-        {
-            return base.GetHashCode();
-        }
     }
 }

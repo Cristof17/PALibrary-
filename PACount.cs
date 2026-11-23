@@ -43,14 +43,6 @@ namespace PA
         public static bool operator >(PACount a, PACount b) => (PACountOperatorMore(a, b) == PA.PARESULT_SUCCESS) ? true : false;
         public static implicit operator int(PACount count) => (int) count.Value;
         public static implicit operator uint(PACount count) => (uint) count.Value;
-        public override bool Equals([NotNullWhen(true)] object obj)
-        {
-            return base.Equals(obj);
-        }
-
-        public override int GetHashCode()
-        {
-            return base.GetHashCode();
-        }
+     
     }
 }
