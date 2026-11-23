@@ -9,11 +9,11 @@ namespace PA
     {
         readonly PACount N { get {return _N;}}
 
-        readonly PASeries Adj { get { return _Adj;}}
+        readonly UIntPtr Adj { get { return _Adj;}}
 
         internal readonly PACount _N;
 
-        internal readonly PASeries _Adj;
+        internal readonly UIntPtr _Adj;
 
         [LibraryImport("pa")]
         public static partial PAList PAListPerformConstruct();
@@ -32,11 +32,39 @@ namespace PA
         [LibraryImport("pa")]
         public static partial int PAListOperatorNotEqual(PAList one, PAList other);
 
-        public PAElement this[PAElement element]
+        public unsafe UIntPtr this[PAElement element]
         {
             get
             {
-                return PAElement.PAElementPerformConstruct();
+                UIntPtr aux = _Adj;
+                PANumber number;
+                PACount count;
+                number = PANumber.PANumberPerformConstruct();
+                number = PANumber.PANumberPerformInit(number,1);
+                count = PACount.PACountPerformConstruct();
+                count = PACount.PACountPerformInit(count,number);
+                void* auxPtr;
+                PASeries* seriesPtr;
+                PASeries series;
+                while (count < _N)
+                {
+                    aux += (uint)Marshal.SizeOf<PASeries>();
+                    auxPtr = aux.ToPointer();
+                    seriesPtr = (PASeries*) aux;
+                    series = *seriesPtr;
+                    UIntPtr adj_node = series[element];
+                    if (adj_node == UIntPtr.Zero)
+                    {
+                        
+                    }
+                    else
+                    {
+                        return adj_node;
+                    }
+                }
+                // return PA
+                return UIntPtr.Zero;
+                // return PAElement.PAElementPerformConstruct();
                 // return Adj[element];
             }
         }
