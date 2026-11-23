@@ -1,5 +1,5 @@
 
-using System.Diagnostics.CodeAnalysis;
+
 using System.Runtime.InteropServices;
 using PA;
 
@@ -30,14 +30,5 @@ namespace PA
         public static bool operator ==(PAData one, PAData other) => (PADataOperatorEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
         public static bool operator != (PAData one, PAData other) => (PADataOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
 
-        public override bool Equals([NotNullWhen(true)] object obj)
-        {
-            return base.Equals(obj);
-        }
-
-        public override int GetHashCode()
-        {
-            return base.GetHashCode();
-        }
     }
 }

@@ -96,8 +96,8 @@ namespace PA
         public static partial int PASeriesOperatorNotEqual(PASeries one, PASeries other);
 
 
-        public static unsafe bool operator ==(PASeries one, PASeries other) => (PASeriesOperatorEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
-        public static unsafe bool operator !=(PASeries one, PASeries other) => (PASeriesOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator ==(PASeries one, PASeries other) => (PASeriesOperatorEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
+        public static bool operator !=(PASeries one, PASeries other) => (PASeriesOperatorNotEqual(one,other) == PA.PARESULT_SUCCESS) ? true : false;
 
     }
 }

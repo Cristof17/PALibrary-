@@ -1,5 +1,5 @@
 using System.Runtime.InteropServices;
-
+using System;
 namespace PA
 {
 	public readonly partial struct PANormalTree
@@ -12,7 +12,7 @@ namespace PA
             }
         }
 
-		public PAElement this[PAElement node]
+		public UIntPtr this[PAElement node]
         {
             get
             {
